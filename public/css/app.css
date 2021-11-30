@@ -1,0 +1,67 @@
+html {
+  cursor: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.theme--light.v-application {
+  background-color: unset !important;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bottom {
+  bottom: 16px;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.title {
+  color: #345e76 !important;
+}
+
+.font-roboto-normal-bold {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.font-roboto-normal-normal {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.font-roboto-normal-400 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.font-roboto-normal-500 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.justify-content-end {
+  justify-content: flex-end !important;
+}

@@ -1,0 +1,49 @@
+@import "../../../../sass/app.scss";
+
+.n-title {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.75px;
+    color: #343A40;
+    @extend .font-roboto-normal-bold;
+}
+
+.n-subtitle {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.75px;
+    color: #6C757D;
+    @extend .font-roboto-normal-500;
+}
+
+/*.card-container {
+    height: 650px;
+    width: 100%;
+    overflow: auto;
+
+}
+
+.w-25 {
+    width: 50%;
+}
+.block-secondary {
+    background-color: rgba(187, 187, 187, 0.6) !important;
+    width: 150px;
+}
+
+.rounded-15 {
+    border-radius: 50px !important;
+}
+
+.font-size {
+    font-size: 13px;
+}
+
+.test {
+    width: 200px;
+}
+
+.flex-50 {
+    flex-basis: 50%;
+}*/
+
