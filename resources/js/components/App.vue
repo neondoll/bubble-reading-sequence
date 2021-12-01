@@ -1,9 +1,9 @@
 <template>
     <v-app>
         <v-app-bar app class="n-app-bar" color="#263238" dark flat>
-            <v-img :src="appLogo" max-width="35"/>
+            <v-img :src="appLogo" max-width="36"/>
 
-            <v-toolbar-title class="font-roboto-normal-500" style="margin-left: 11px;">
+            <v-toolbar-title class="font-roboto-normal-500" style="margin-left: 16.5px;">
                 Управление имуществом
             </v-toolbar-title>
 
