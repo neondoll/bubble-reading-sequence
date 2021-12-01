@@ -1,16 +1,16 @@
 @import "../../../../sass/app.scss";
 
 .n-title {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 54px;
+    line-height: 60px;
     letter-spacing: 0.75px;
     color: #343A40;
     @extend .font-roboto-normal-bold;
 }
 
 .n-subtitle {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 30px;
+    line-height: 48px;
     letter-spacing: 0.75px;
     color: #6C757D;
     @extend .font-roboto-normal-500;
