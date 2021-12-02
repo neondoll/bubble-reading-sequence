@@ -34,6 +34,11 @@ html {
     display: flex !important;
 }
 
+.flex-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+}
+
 .font-roboto-normal-bold {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -44,6 +49,12 @@ html {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
+}
+
+.font-roboto-normal-300 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .font-roboto-normal-400 {
@@ -62,6 +73,11 @@ html {
     -webkit-box-pack: justify !important;
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
+}
+
+.justify-content-start {
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
 }
 
 .justify-content-end {
