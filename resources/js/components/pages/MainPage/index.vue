@@ -43,7 +43,7 @@
 
             <v-text-field class="font-roboto-normal-normal" clearable dense outlined
                           placeholder="Введите наименование раздела или модуля"
-                          style="border-radius: 0; font-size: 24px; line-height: 36px;" type="text"/>
+                          style="border-radius: 0; font-size: 16px; line-height: 1.2;" type="text"/>
 
             <v-btn color="#6C757D" elevation="0" height="40" outlined
                    style="border-radius: 0 4px 4px 0; padding: 0 12px;" tile>
@@ -81,9 +81,8 @@
             </div>
 
             <div class="d-flex flex-wrap n-cards">
-                <div class="d-flex align-items-center"
-                     style="background: #F8F9FA; border: 0.2px solid #DFDFDF; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); box-sizing: border-box; margin: 12.5px 10px; padding: 12px 15px; width: 255px;"
-                     v-for="(cardHref, j) in groupHref.cardsHref" :key="`groupHref-${i}-cardHref-${j}`">
+                <a class="d-flex align-items-center n-card" target="_blank" v-for="(cardHref, j) in groupHref.cardsHref"
+                   :href="cardHref.href" :key="`groupHref-${i}-cardHref-${j}`">
                     <div>
                         <v-img max-width="38.5" :src="icons[cardHref.icon]"/>
                     </div>
@@ -98,7 +97,7 @@
                             {{ cardHref.text }}
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </n-page>
@@ -111,8 +110,25 @@ import {ApiMixin, HelpersMixin} from "../../../mixins";
 import MShrinkX from "../../organisms/MShrinkX/MShrinkX";
 import sliders from "../../../../assets/sliders.svg";
 import {
-    vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10, vector11, vector12, vector13,
-    vector14, vector15, vector16, vector17, vector18, vector19
+    vector1,
+    vector2,
+    vector3,
+    vector4,
+    vector5,
+    vector6,
+    vector7,
+    vector8,
+    vector9,
+    vector10,
+    vector11,
+    vector12,
+    vector13,
+    vector14,
+    vector15,
+    vector16,
+    vector17,
+    vector18,
+    vector19
 } from "../../../../assets/vectors";
 
 export default {
@@ -140,13 +156,13 @@ export default {
                         icon: 'vector1',
                         title: 'Недвижимое имущество',
                         text: 'Ведение реестра объектов капитального строительства, выгрузки, актуализация данных',
-                        href: null
+                        href: 'https://недвижимость.иасмон.рф/real-estate-list'
                     },
                     {
                         icon: 'vector2',
                         title: 'Земельные участки',
                         text: 'Ведение реестра земельных участков, выгрузки, актуализация данных, разметка границ ЗУ',
-                        href: null
+                        href: 'https://недвижимость.иасмон.рф/land-list'
                     },
                     {
                         icon: 'vector19',
@@ -234,7 +250,7 @@ export default {
                         icon: 'vector10',
                         title: 'Перераспределение',
                         text: 'Отказ от имущества, закрепление имущества, передача на иной уровень собственности',
-                        href: null
+                        href: 'https://распределение.иасмон.рф/'
                     },
                     {
                         icon: 'vector11',
@@ -316,8 +332,7 @@ export default {
         showFilters: false,*/
     }),
     async mounted() {
-        await this.getItems()
-
+        //await this.getItems()
     },
     watch: {
         filters: {
