@@ -4,7 +4,9 @@
             <v-breadcrumbs large :items="params">
                 <template v-slot:item="{ item }">
                     <v-breadcrumbs-item :disabled="item.disabled" :href="item.href">
-                        <span class="font-roboto-normal-normal">{{ item.text }}</span>
+                        <span class="font-roboto-normal-normal" style="font-size: 16px; line-height: 1.2;">
+                            {{ item.text }}
+                        </span>
                     </v-breadcrumbs-item>
                 </template>
             </v-breadcrumbs>
