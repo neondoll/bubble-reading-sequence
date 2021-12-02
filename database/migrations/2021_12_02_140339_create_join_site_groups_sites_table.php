@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class  CreateEducationTable extends Migration
+class CreateJoinSiteGroupsSitesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,12 @@ class  CreateEducationTable extends Migration
      */
     public function up()
     {
-        Schema::create('educations', function (Blueprint $table) {
+        Schema::create('join_site_groups_sites', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('form_id')->constrained();
-            $table->text('org');
-            $table->integer('start_year');
-            $table->integer('end_year');
-            $table->string('speciality');
-            $table->string('diplom');
+            $table->foreignId('site_group_id')->constrained();
+            $table->foreignId('site_id')->constrained();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -32,6 +29,6 @@ class  CreateEducationTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('educations');
+        Schema::dropIfExists('join_site_groups_sites');
     }
 }

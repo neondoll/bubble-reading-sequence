@@ -39,19 +39,18 @@
         }
     },
     "scripts": {
-        "post-install-cmd": [
+        "ide_helper": [
             "@php artisan ide-helper:generate",
             "@php artisan ide-helper:meta",
-            "@php artisan lighthouse:ide-helper"
+            "@php artisan lighthouse:ide-helper",
+            "yes | php artisan ide-helper:models"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
         ],
         "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi",
-            "yes | php artisan ide-helper:models"
-
+            "@php artisan vendor:publish --tag=laravel-assets --ansi"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""

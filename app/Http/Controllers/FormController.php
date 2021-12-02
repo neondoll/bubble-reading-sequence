@@ -17,6 +17,7 @@ use App\Models\Form;
 use App\Models\GosTainy;
 use App\Models\JobHistory;
 use App\Models\Language;
+use App\Models\Site;
 use Illuminate\Http\JsonResponse;
 use PhpOffice\PhpWord\Exception\CopyFileException;
 use PhpOffice\PhpWord\Exception\CreateTemporaryFileException;
@@ -27,6 +28,7 @@ class FormController extends Controller
 {
     public function validateInfo(FormInfoRequest $request): JsonResponse
     {
+        $a = Site::active()->get();
         return response()->json(['success' => true]);
     }
 
