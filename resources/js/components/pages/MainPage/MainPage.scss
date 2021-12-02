@@ -51,19 +51,19 @@
     }
 
     &:hover > .n-card,
-    &:focus-within > .n-card {
+    /*&:focus-within > .n-card*/ {
         opacity: 0.4;
     }
 
     &:hover > .n-card:hover,
-    &:focus-within > .n-card:focus {
+    /*&:focus-within > .n-card:focus*/ {
         transform: scale(1.1);
         opacity: 1;
     }
 
-    &:hover > .n-card:focus:not(:hover) {
+    /*&:hover > .n-card:focus:not(:hover) {
         transform: scale(1.05);
-    }/**/
+    }*/
 }
 
 @media (min-width: 275px) {
