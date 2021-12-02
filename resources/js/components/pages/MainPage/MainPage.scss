@@ -16,10 +16,54 @@
     @extend .font-roboto-normal-500;
 }
 
+.n-card {
+    background: #F8F9FA;
+    border: 0.2px solid #DFDFDF;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    margin: 12.5px 10px;
+    padding: 12px 15px;
+    text-decoration: none;
+    width: 255px;
+
+    &:-webkit-any-link {
+        cursor: pointer;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    &:not(:-webkit-any-link) {
+        cursor: default;
+        opacity: 0.4;
+        pointer-events: none;
+    }
+}
+
 .n-cards {
-    width: 100%;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    width: 100%;
+
+    & > .n-card {
+        transition: 300ms opacity, 300ms transform;
+    }
+
+    &:hover > .n-card,
+    &:focus-within > .n-card {
+        opacity: 0.4;
+    }
+
+    &:hover > .n-card:hover,
+    &:focus-within > .n-card:focus {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    &:hover > .n-card:focus:not(:hover) {
+        transform: scale(1.05);
+    }/**/
 }
 
 @media (min-width: 275px) {
