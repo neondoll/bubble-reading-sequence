@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDictionaryCommonOrgPositionsTable extends Migration
+class CreateSitesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CreateDictionaryCommonOrgPositionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('dictionary_common_org_positions', function (Blueprint $table) {
+        Schema::create('sites', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('title');
+            $table->string('text');
+            $table->string('href')->nullable();
+            $table->string('icon');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -27,6 +31,6 @@ class CreateDictionaryCommonOrgPositionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dictionary_common_org_positions');
+        Schema::dropIfExists('sites');
     }
 }
