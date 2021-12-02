@@ -40,7 +40,10 @@ class generateUsers extends Command
      */
     public function handle(): int
     {
-        User::updateOrCreate(['email' => 'admin@admin.ru'], ['password' => Hash::make('password')]);
+        User::updateOrCreate(
+            ['email' => 'admin@admin.ru'],
+            ['auth_key' => 'admin', 'password' => Hash::make('password')]
+        );
         return 0;
     }
 }

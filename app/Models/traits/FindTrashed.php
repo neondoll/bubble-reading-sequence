@@ -4,7 +4,7 @@ namespace App\Models\traits;
 
 trait FindTrashed
 {
-    public static function active(): \Illuminate\Database\Query\Builder
+    public static function active()
     {
         return self::whereNull(['deleted_at']);
     }
