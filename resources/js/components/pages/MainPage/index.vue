@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <v-alert class="text-center" shaped text>Карта</v-alert>
+        <n-map/>
 
         <div class="d-flex justify-content-between" style="margin-top: 31px;">
             <!--<v-btn color="#6C757D" elevation="0" height="40" outlined
@@ -105,6 +105,7 @@
 </template>
 
 <script>
+import NMap from "../../organisms/NMap";
 import NPage from "../../templates/NPage";
 import sliders from "../../../../assets/sliders.svg";
 import {ApiMixin, HelpersMixin} from "../../../mixins";
@@ -114,7 +115,7 @@ import {
 } from "../../../../assets/vectors";
 
 export default {
-    components: {NPage},
+    components: {NMap, NPage},
     computed: {
         siteGroupsFiltered() {
             if (this.filters.text) {

@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <v-app-bar app class="n-app-bar" color="#263238" dark flat>
+        <v-app-bar class="n-app-bar" color="#263238" dark flat>
             <v-img max-width="36" :src="appLogo"/>
 
             <v-toolbar-title class="font-roboto-normal-500"
