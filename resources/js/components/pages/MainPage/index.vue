@@ -33,17 +33,17 @@
         <v-alert class="text-center" shaped text>Карта</v-alert>
 
         <div class="d-flex justify-content-between" style="margin-top: 31px;">
-            <v-btn color="#6C757D" elevation="0" height="40" outlined
+            <!--<v-btn color="#6C757D" elevation="0" height="40" outlined
                    style="border-radius: 4px 0 0 4px; padding: 0 12px;" tile>
                  <span class="font-roboto-normal-400"
                        style="font-size: 16px; letter-spacing: 0; line-height: 1.2; text-transform: none;">
                      Поиск
                  </span>
-            </v-btn>
+            </v-btn>-->
 
             <v-text-field class="font-roboto-normal-normal" clearable dense outlined
                           placeholder="Введите наименование раздела или модуля"
-                          style="border-radius: 0; font-size: 16px; line-height: 1.2;" type="text"
+                          style="border-radius: 4px 0 0 4px; font-size: 16px; line-height: 1.2;" type="text"
                           v-model="filters.text"/>
 
             <v-btn color="#6C757D" elevation="0" height="40" outlined
@@ -52,7 +52,7 @@
             </v-btn>
         </div>
 
-        <div v-for="(siteGroup, i) in siteGroups" :key="`siteGroup-${i}`">
+        <div v-for="(siteGroup, i) in siteGroupsFiltered" :key="`siteGroup-${i}`">
             <div class="d-flex align-items-center" style="margin-top: 25px;">
                 <div class="font-roboto-normal-500"
                      style="color: #343A40; font-size: 20px; letter-spacing: 0.75px; line-height: 1.2;">
@@ -115,6 +115,37 @@ import {
 
 export default {
     components: {NPage},
+    computed: {
+        siteGroupsFiltered() {
+            if (this.filters.text) {
+                let sgf = [];
+                this.siteGroups.forEach(((siteGroup) => {
+                    if (siteGroup.title.toLowerCase().includes(this.filters.text.toLowerCase())) {
+                        sgf.push(siteGroup);
+                    } else {
+                        let sg = {
+                            created_at: siteGroup.created_at,
+                            deleted_at: siteGroup.deleted_at,
+                            id: siteGroup.id,
+                            sites: [],
+                            title: siteGroup.title,
+                            updated_at: siteGroup.updated_at
+                        };
+                        siteGroup.sites.forEach(((site) => {
+                            if (site.title.toLowerCase().includes(this.filters.text.toLowerCase())) {
+                                sg.sites.push(site);
+                            }
+                        }));
+                        if (sg.sites.length > 0) {
+                            sgf.push(sg);
+                        }
+                    }
+                }))
+                return sgf;
+            }
+            return this.siteGroups;
+        }
+    },
     data: () => ({
         breadcrumbs: [{text: 'Управление имуществом', disabled: true}],
         filters: {
@@ -300,38 +331,19 @@ export default {
         switchCCO: true
     }),
     methods: {
-        async getItems(where) {
+        async getItems() {
             this.loading = true;
-            this.siteGroups = await this.getSiteGroups(where);
+            this.siteGroups = await this.getSiteGroups();
             setTimeout(() => {
                 this.loading = false;
             }, 300)
-        },
-        filteredKeys(item) {
-            return Object.keys(item).filter(key => !this.notInArray.includes(key))
-        },
+        }
     },
     mixins: [ApiMixin, HelpersMixin],
     async mounted() {
         await this.getItems()
     },
-    name: "MainPage",
-    watch: {
-        filters: {
-            deep: true,
-            async handler(val) {
-                setTimeout(async () => {
-                    let where = 'where: {';
-                    Object.keys(val).forEach(key => {
-                        if (val[key])
-                            where += `${key}: "${val[key]}", `
-                    })
-                    where += "}"
-                    await this.getItems(where)
-                }, 500)
-            }
-        }
-    }
+    name: "MainPage"
 }
 </script>
 

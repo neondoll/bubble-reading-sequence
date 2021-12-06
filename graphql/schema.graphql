@@ -8,9 +8,9 @@ scalar Mixed @scalar(class: "MLL\\GraphQLScalars\\Mixed")
 
 type Query {
     site(id: ID @eq) : Site @find
-    sites(where: SiteFilter): [Site]
+    sites: [Site] @all
     siteGroup(id: ID @eq) : SiteGroup @find
-    siteGroups(where: SiteGroupFilter): [SiteGroup]
+    siteGroups: [SiteGroup] @all
     user(id: ID @eq): User @find
     users: [User] @all
 }
