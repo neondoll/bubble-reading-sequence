@@ -1,34 +1,25 @@
 <template>
-    <div id="login-page" class="d-flex justify-center align-center">
-        <v-card elevation="4" class="login-card">
+    <div class="d-flex justify-center align-center" id="login-page">
+        <v-card class="login-card" elevation="4">
             <v-container>
-                <v-form @submit.prevent="submit" v-model="valid">
+                <v-form v-model="valid" @submit.prevent="submit">
                     <m-errors :errors="errors"/>
-                    <v-text-field clearable autocomplete="on" v-model="form.email" label="Логин" name="email"/>
-                    <v-text-field
-                        :append-icon="showPassword ? icons.mdiEyeOutline : icons.mdiEyeOffOutline"
-                        clearable
-                        autocomplete="on"
-                        :type="showPassword ? 'text' :'password'"
-                        @click:append="showPasswordClick"
-                        v-model="form.password" label="Пароль"
-                        name="password"/>
 
+                    <v-text-field autocomplete="on" clearable label="Логин" name="email" v-model="form.email"/>
 
-                    <div class="absolute bottom ">
-                        <v-btn id="sbmBtn" text color="primary" type="submit">Войти в систему</v-btn>
-                        <v-btn id="regButton" text color="warning" :to="{name:'register'}">Регистрация</v-btn>
+                    <v-text-field autocomplete="on" clearable label="Пароль" name="password" v-model="form.password"
+                                  :append-icon="showPassword ? icons.mdiEyeOutline : icons.mdiEyeOffOutline"
+                                  :type="showPassword ? 'text' :'password'" @click:append="showPasswordClick"/>
+
+                    <div class="absolute bottom">
+                        <v-btn color="primary" id="sbmBtn" text type="submit">Войти в систему</v-btn>
+
+                        <!--<v-btn color="warning" id="regButton" text :to="{name:'register'}">Регистрация</v-btn>-->
                     </div>
-
-
                 </v-form>
             </v-container>
-
-
         </v-card>
     </div>
-
-
 </template>
 
 <script>

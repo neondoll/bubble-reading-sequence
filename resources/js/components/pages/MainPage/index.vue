@@ -43,7 +43,8 @@
 
             <v-text-field class="font-roboto-normal-normal" clearable dense outlined
                           placeholder="Введите наименование раздела или модуля"
-                          style="border-radius: 0; font-size: 16px; line-height: 1.2;" type="text"/>
+                          style="border-radius: 0; font-size: 16px; line-height: 1.2;" type="text"
+                          v-model="filters.text"/>
 
             <v-btn color="#6C757D" elevation="0" height="40" outlined
                    style="border-radius: 0 4px 4px 0; padding: 0 12px;" tile>
@@ -51,11 +52,11 @@
             </v-btn>
         </div>
 
-        <div v-for="(groupHref, i) in groupsHref" :key="`groupHref-${i}`">
+        <div v-for="(siteGroup, i) in siteGroups" :key="`siteGroup-${i}`">
             <div class="d-flex align-items-center" style="margin-top: 25px;">
                 <div class="font-roboto-normal-500"
                      style="color: #343A40; font-size: 20px; letter-spacing: 0.75px; line-height: 1.2;">
-                    {{ groupHref.title }}
+                    {{ siteGroup.title }}
                 </div>
 
                 <v-btn class="ml-2" color="#007BFF" small text>
@@ -81,20 +82,20 @@
             </div>
 
             <div class="d-flex flex-wrap n-cards">
-                <a class="d-flex align-items-center n-card" target="_blank" v-for="(cardHref, j) in groupHref.cardsHref"
-                   :href="cardHref.href" :key="`groupHref-${i}-cardHref-${j}`">
+                <a class="d-flex align-items-center n-card" target="_blank" v-for="(site, j) in siteGroup.sites"
+                   :href="site.href" :key="`siteGroup-${i}-site-${j}`">
                     <div>
-                        <v-img max-width="38.5" :src="icons[cardHref.icon]"/>
+                        <v-img max-width="38.5" :src="icons[site.icon]"/>
                     </div>
 
                     <div style="margin-left: 18.67px;">
                         <div class="font-roboto-normal-500" style="color: #343A40; font-size: 14px; line-height: 1.2;">
-                            {{ cardHref.title }}
+                            {{ site.title }}
                         </div>
 
                         <div class="font-roboto-normal-normal"
                              style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
-                            {{ cardHref.text }}
+                            {{ site.text }}
                         </div>
                     </div>
                 </a>
@@ -104,51 +105,22 @@
 </template>
 
 <script>
-import MPage from "../../organisms/MPage";
 import NPage from "../../templates/NPage";
-import {ApiMixin, HelpersMixin} from "../../../mixins";
-import MShrinkX from "../../organisms/MShrinkX/MShrinkX";
 import sliders from "../../../../assets/sliders.svg";
+import {ApiMixin, HelpersMixin} from "../../../mixins";
 import {
-    vector1,
-    vector2,
-    vector3,
-    vector4,
-    vector5,
-    vector6,
-    vector7,
-    vector8,
-    vector9,
-    vector10,
-    vector11,
-    vector12,
-    vector13,
-    vector14,
-    vector15,
-    vector16,
-    vector17,
-    vector18,
-    vector19
+    vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10, vector11, vector12,
+    vector13, vector14, vector15, vector16, vector17, vector18, vector19
 } from "../../../../assets/vectors";
 
 export default {
-    name: "MainPage",
+    components: {NPage},
     data: () => ({
-        /*keys: [
-            {key: 'job_place', text: 'Место работы'},
-            {key: 'job_position', text: 'Должность'},
-            {key: 'region', text: 'Регион', column: 'name'},
-            {key: 'city', text: 'Город'},
-            {key: 'phone', text: 'Телефон'},
-            {key: 'email', text: 'email'},
-        ],
-        loading: true,
-        notInArray: ['fio', 'id', 'created_at'],*/
-        breadcrumbs: [
-            {text: 'Объекты недвижимого имущества', disabled: false, href: 'https://недвижимость.иасмон.рф/'},
-            {text: 'Новый объект', disabled: true}
-        ],
-        groupsHref: [
+        breadcrumbs: [{text: 'Управление имуществом', disabled: true}],
+        filters: {
+            text: null
+        },
+        /*groupsHref: [
             {
                 title: 'Имущество подведомственных организаций',
                 cardsHref: [
@@ -319,21 +291,31 @@ export default {
                     }
                 ]
             }
-        ],
+        ],*/
         icons: {
             sliders, vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10,
             vector11, vector12, vector13, vector14, vector15, vector16, vector17, vector18, vector19
         },
+        siteGroups: [],
         switchCCO: true
-        /*items: [],
-        filters: {
-            fio: null
-        },
-        showFilters: false,*/
     }),
-    async mounted() {
-        //await this.getItems()
+    methods: {
+        async getItems(where) {
+            this.loading = true;
+            this.siteGroups = await this.getSiteGroups(where);
+            setTimeout(() => {
+                this.loading = false;
+            }, 300)
+        },
+        filteredKeys(item) {
+            return Object.keys(item).filter(key => !this.notInArray.includes(key))
+        },
     },
+    mixins: [ApiMixin, HelpersMixin],
+    async mounted() {
+        await this.getItems()
+    },
+    name: "MainPage",
     watch: {
         filters: {
             deep: true,
@@ -349,35 +331,10 @@ export default {
                 }, 500)
             }
         }
-    },
-    methods: {
-        async getItems(where) {
-            this.loading = true;
-            let fields = this.keys.map(k => {
-                if (k.hasOwnProperty('column')) {
-                    return `${k.key}{${k.column}}`
-                }
-                return k.key
-
-            }).concat(this.notInArray);
-
-            this.items = await this.getForms(fields, where)
-            setTimeout(() => {
-                this.loading = false
-            }, 300)
-
-        },
-        filteredKeys(item) {
-
-            return Object.keys(item).filter(key => !this.notInArray.includes(key))
-        },
-    },
-    mixins: [ApiMixin, HelpersMixin],
-    components: {MShrinkX, MPage, NPage}
+    }
 }
 </script>
 
 <style scoped lang="scss">
 @import "MainPage.scss";
-
 </style>

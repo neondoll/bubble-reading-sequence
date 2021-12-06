@@ -14,8 +14,11 @@ export const ApiMixin = {
             }).catch((e) => console.error(e))
             return result;
         },
-        async getForms(columns, where) {
-            return await this.fetch('/graphql', 'forms', columns, where)
+        async getSiteGroups(where) {
+            return await this.fetch('/graphql', 'siteGroups', [
+                'id', 'title', 'sites{id, title, text, href, icon, created_at, updated_at, deleted_at}', 'created_at',
+                'updated_at', 'deleted_at'
+            ], where);
         },
         async getForm(id) {
             return await this.fetch('/graphql', 'form', [

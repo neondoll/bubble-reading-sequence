@@ -10,6 +10,6 @@ class AuthController extends Controller
 {
     public function index(): JsonResponse
     {
-        return response()->json(['success' => Auth::user() !== null]);
+        return response()->json(['success' => Auth::user() != null]);
     }
 }
