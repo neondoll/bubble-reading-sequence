@@ -4,10 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\Site;
 use App\Models\SiteGroup;
-use App\Models\User;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
 
 class generateSites extends Command
 {
@@ -175,7 +172,7 @@ class generateSites extends Command
         $site_group->sites()->detach(Site::active()->get());
         $site_group->sites()->attach(Site::find([8, 9, 10, 11, 12, 13, 14, 15, 16]));
 
-        $site_group = SiteGroup::updateOrCreate(['id' => 3], ['title' => 'Служебные модули']);
+        $site_group = SiteGroup::updateOrCreate(['id' => 4], ['title' => 'Служебные модули']);
         $site_group->sites()->detach(Site::active()->get());
         $site_group->sites()->attach(Site::find([17, 18, 19, 20]));
 

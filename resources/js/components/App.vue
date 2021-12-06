@@ -16,15 +16,23 @@
                 </span>
             </v-btn>
 
-            <v-btn icon>
-                <v-img max-width="12" :src="account"/>
-            </v-btn>
+            <v-menu bottom offset-x right transition="slide-x-transition" v-if="$isLogged">
+                <template v-slot:activator="{ on, attrs }">
+                    <v-btn icon v-bind="attrs" v-on="on">
+                        <v-img max-width="12" :src="account"/>
+                    </v-btn>
+                </template>
 
-            <v-card v-if="$isLogged" flat>
-                <v-form action="/logout">
-                    <v-btn color="primary" class="btn-nav" type="submit">Выход</v-btn>
-                </v-form>
-            </v-card>
+                <v-list>
+                    <v-list-item>
+                        <v-list-item-content>
+                            <v-form action="/logout">
+                                <v-btn class="btn-nav" color="#007BFF" text type="submit">Выход</v-btn>
+                            </v-form>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list>
+            </v-menu>
         </v-app-bar>
 
         <v-main>
@@ -33,8 +41,8 @@
             </v-container>
         </v-main>
 
-        <v-footer app>
-            <v-container class="d-flex justify-content-start">
+        <v-footer>
+            <div class="d-flex justify-content-start n-container">
                 <div>
                     <div class="font-roboto-normal-300" style="color: black; font-size: 14px; line-height: 1.2;">
                         Техническая поддержка
@@ -70,7 +78,7 @@
                         <span class="ml-2">dp.dku@minobrnauki.gov.ru</span>
                     </div>
                 </div>
-            </v-container>
+            </div>
         </v-footer>
     </v-app>
 </template>
@@ -89,22 +97,22 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../../sass/app.scss";
+
 body {
     overflow: hidden;
 }
 
 .btn-nav {
-    box-shadow: none !important;
-    border-radius: unset;
-}
-
-.btn-nav:hover {
-    text-decoration: underline;
+    /*font-size: 16px;*/
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-transform: none;
+    @extend .font-roboto-normal-normal;
 }
 
 .n-app-bar {
-    padding-left: 7.81%;
-    padding-right: 7.81%;
+    @extend .n-container;
 }
 </style>

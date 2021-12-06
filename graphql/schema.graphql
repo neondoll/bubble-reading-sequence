@@ -7,31 +7,40 @@ scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date
 scalar Mixed @scalar(class: "MLL\\GraphQLScalars\\Mixed")
 
 type Query {
-    users: [User] @all
+    site(id: ID @eq) : Site @find
+    sites(where: SiteFilter): [Site]
+    siteGroup(id: ID @eq) : SiteGroup @find
+    siteGroups(where: SiteGroupFilter): [SiteGroup]
     user(id: ID @eq): User @find
-    forms(where: FormFilter): [Form]
-    form(id: ID @eq) : Form @find
-    regions: [Region] @all
-    region(id: ID @eq): Region @find
-    dictionary_computer_skills: [DictionaryComputerSkill] @all
-    dictionary_dpo_education_level: [DictionaryDpoEducationLevel] @all
-    dictionary_common_org_positions: [DictionaryCommonOrgPosition] @all
-    dictionary_education_levels: [DictionaryEducationLevel] @all
-    dictionary_form_spher: [DictionaryFormSpher] @all
-    dictionary_form_people: [DictionaryFormPeople] @all
-    dictionary_degrees: [DictionaryDegree] @all
-    dictionary_sphere_science: [DictionarySphereScience] @all
-    dictionary_uch_zvan: [DictionaryUchZvan] @all
+    users: [User] @all
 }
 
-input FormFilter {
-    fio: String
-    job_place: String
-    job_position: String
-    region: String
-    city: String
-    phone: String
-    email: String
+input SiteFilter {
+    text: String
+}
+
+input SiteGroupFilter {
+    text: String
+}
+
+type Site {
+    id: ID!
+    title: String
+    text: String
+    href: String
+    icon: String
+    created_at: DateTime
+    updated_at: DateTime
+    deleted_at:DateTime
+}
+
+type SiteGroup {
+    id: ID!
+    title: String
+    sites: [Site]
+    created_at: DateTime
+    updated_at: DateTime
+    deleted_at:DateTime
 }
 
 type User {
@@ -42,212 +51,4 @@ type User {
     email: String!
     created_at: DateTime!
     updated_at: DateTime!
-}
-
-type Form {
-    id: ID!
-    fio: String
-    languages: [Language]
-    computer_skills: [ComputerSkill]
-    educations: [Education]
-    dpos: [Dpo]
-    education_level: Int
-    common_orgs: [CommonOrg]
-    job_history: [JobHistory]
-    gos_tainy: [GosTainy]
-    region: Region
-    user_id: Int
-    name: String
-    lastName: String
-    middleName: String
-    sex: Int
-    old_name: String
-    old_lastName: String
-    old_middleName: String
-    passport_number: String
-    passport_serial: String
-    passport_place: String
-    passport_date: Date
-    citizenship: String
-    birthday: Date
-    birthplace: String
-    created_at: DateTime
-    updated_at: DateTime
-    index: String
-    district: String
-    city: String
-    street: String
-    house: String
-    corpus: String
-    room: String
-    ready_to_move: String
-    email: String
-    phone: String
-    job_phone: String
-    social_network: String
-    region_id: Int
-    fact_region_id: Int
-    job_place: String
-    job_position: String
-    job_position_date: Date
-    job_org_min: Int
-    stage: Int
-    stage_gos: Int
-    stage_nauka: Int
-    stage_comers: Int
-    stage_no_comers: Int
-    stage_rukovod: Int
-    sphere_uprav_id: Int
-    sphere_uprav_dop_id: Int
-    max_count_people_id: Int
-    degree_id: Int
-    sphere_n_id: Int
-    sphere_n_dop_id: Int
-    shifr: String
-    otrasl: Int
-    zvan: Int
-    hirsh: Int
-    scopus: Int
-    web_of_science: Int
-    inoe: Int
-    chin: String
-    ugolov: String
-    awards: String
-    comerc_uchast: String
-    opit_dey: String
-    kompetencii: String
-    achievements: String
-}
-type GosTainy {
-    id: ID!
-    form_id: Int
-    form: String
-    org: String
-    number: String
-    job_date: Date
-    created_at: DateTime
-    updated_at: DateTime
-}
-type JobHistory {
-    id: ID!
-    form_id: Int
-    start_year: Int
-    end_year: Int
-    short_name: String
-    org_name: String
-    org_place: String
-    position: String
-    awards: String
-    created_at: DateTime
-    updated_at: DateTime
-}
-type Region {
-    id: ID!
-    name: String!
-}
-
-type DictionaryComputerSkill {
-    id: ID!
-    name: String!
-}
-
-type ComputerSkill {
-    id: ID!
-    name: String
-    type: Int
-    level: Int
-    levelModel: DictionaryComputerSkill
-    form_id: Int
-    form: Form
-}
-type Language {
-    id: ID!
-    level: Int
-    name: String
-    form_id: Int
-    form: Form
-}
-
-type Education {
-    id: ID!
-    form_id: Int
-    org: String
-    start_year: Int
-    end_year: Int
-    speciality: String
-    diplom: String
-    created_at: DateTime
-    updated_at: DateTime
-}
-type DictionaryDpoEducationLevel {
-    id: ID!
-    value: String
-    created_at: DateTime
-    updated_at: DateTime
-}
-type DictionaryCommonOrgPosition {
-    id: ID!
-    name: String
-    created_at: DateTime
-    updated_at: DateTime
-}
-type CommonOrg {
-    id: ID!
-    form_id: Int!
-    position: Int!
-    years: String
-    locality: String
-    org: String
-    org_goal: String
-    role: String
-    created_at: DateTime
-    updated_at: DateTime
-}
-type Dpo {
-    id: ID!
-    form_id:Int!
-    education_program: String
-    org: String
-    end_year: Int
-    hours: Int
-    category: Int
-    categoryModel: DictionaryDpoEducationLevel
-    created_at: DateTime
-    updated_at: DateTime
-}
-type DictionaryEducationLevel {
-    id: ID!
-    level: String
-    created_at: DateTime
-    updated_at: DateTime
-}
-type DictionaryFormPeople {
-    id: ID!
-    value: String
-    created_at: DateTime
-    updated_at: DateTime
-}
-type DictionaryFormSpher {
-    id: ID!
-    value: String
-    created_at: DateTime
-    updated_at: DateTime
-}
-type DictionaryDegree {
-    id: ID!
-    value: String
-    created_at: DateTime
-    updated_at: DateTime
-}
-type DictionarySphereScience {
-    id: ID!
-    value: String
-    created_at: DateTime
-    updated_at: DateTime
-}
-type DictionaryUchZvan {
-    id: ID!
-    value: String
-    created_at: DateTime
-    updated_at: DateTime
 }

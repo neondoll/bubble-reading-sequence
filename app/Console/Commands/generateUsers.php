@@ -4,7 +4,6 @@ namespace App\Console\Commands;
 
 use App\Models\User;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class generateUsers extends Command
@@ -40,10 +39,7 @@ class generateUsers extends Command
      */
     public function handle(): int
     {
-        User::updateOrCreate(
-            ['email' => 'admin@admin.ru'],
-            ['auth_key' => 'admin', 'password' => Hash::make('password')]
-        );
+        User::updateOrCreate(['email' => 'admin@admin.ru'], ['auth_key' => 'admin', 'password' => Hash::make('password')]);
         return 0;
     }
 }
