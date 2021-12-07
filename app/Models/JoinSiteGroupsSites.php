@@ -25,6 +25,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Eloquent\Builder|JoinSiteGroupsSites whereSiteId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|JoinSiteGroupsSites whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @method static \Illuminate\Database\Query\Builder|JoinSiteGroupsSites onlyTrashed()
+ * @method static \Illuminate\Database\Query\Builder|JoinSiteGroupsSites withTrashed()
+ * @method static \Illuminate\Database\Query\Builder|JoinSiteGroupsSites withoutTrashed()
  */
 class JoinSiteGroupsSites extends Model
 {

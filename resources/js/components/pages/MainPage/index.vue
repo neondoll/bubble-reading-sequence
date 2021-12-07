@@ -348,7 +348,7 @@ export default {
         (await this.getOutOfSchema('iasmon', 'organizationList', ['id'], `subordination: 1, without_global_scope: true, system_status: [1], status_org: [1, 2]`)).forEach(value => {
             this.id_orgs.push(value.id);
         });
-        await this.getOutOfSchema('estate', 'realEstates', ['id', 'object_name', 'objectEgrnAddress'], `id_orgs: 100`);
+        await this.getOutOfSchema('estate', 'realEstates', ['id', 'object_name', 'objectEgrnAddress'], `id_org: 100`);
     },
     name: "MainPage"
 }

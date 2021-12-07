@@ -33,6 +33,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Query\Builder|Site withTrashed()
  * @method static \Illuminate\Database\Query\Builder|Site withoutTrashed()
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\SiteGroup[] $site_groups
+ * @property-read int|null $site_groups_count
  */
 class Site extends Model
 {
