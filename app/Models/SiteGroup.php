@@ -23,6 +23,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Eloquent\Builder|SiteGroup whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder|SiteGroup whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Site[] $sites
+ * @property-read int|null $sites_count
+ * @method static \Illuminate\Database\Query\Builder|SiteGroup onlyTrashed()
+ * @method static \Illuminate\Database\Query\Builder|SiteGroup withTrashed()
+ * @method static \Illuminate\Database\Query\Builder|SiteGroup withoutTrashed()
  */
 class SiteGroup extends Model
 {
