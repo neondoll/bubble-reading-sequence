@@ -2,6 +2,7 @@ import Vue from 'vue'
 import router from "./router";
 import vuetify from "./plugins/vuetify";
 import App from "./components/App";
+import VueSmoothScroll from 'vue-smooth-scroll';
 
 require('./vuePrototypes');
 
@@ -14,6 +15,8 @@ router.beforeEach(async (to, from, next) => {
     const isLogin = (to.name !== 'login' && to.name !== 'register' && !data.success) ? {name: 'login'} : undefined;
     next(isLogin);
 })
+
+Vue.use(VueSmoothScroll);
 
 new Vue({
     render: h => h(App),
