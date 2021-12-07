@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\ApiController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,19 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/auth', [AuthController::class, 'index']);
 Route::post('/login', [LoginController::class, 'login']);
 Route::any('/logout', [LoginController::class, 'logout'])->name('logout');
-Route::get('/auth', [AuthController::class, 'index']);
 
-Route::prefix('form')->middleware('auth')->group(function () {
-    Route::get('{id}/export', [FormController::class, 'export']);
-    Route::post('/save-info', [FormController::class, 'storeInfo']);
-    Route::post('/validate-info', [FormController::class, 'validateInfo']);
-    Route::post('/validate-educations', [FormController::class, 'validateEducations']);
-    Route::post('/validate-jobs', [FormController::class, 'validateJobs']);
-    Route::post('/validate-kval', [FormController::class, 'validateKval']);
-    Route::post('/validate-dop', [FormController::class, 'validateDop']);
+Route::prefix('/api')->middleware('auth')->group(function () {
+    Route::post('/estate', [ApiController::class, 'estate']);
+    Route::post('/iasmon', [ApiController::class, 'iasmon']);
 });
+
 
 Route::get('/{any}', function () {
     return view('main');
