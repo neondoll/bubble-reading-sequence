@@ -76,7 +76,7 @@
 
                     <div class="background-white font-roboto-normal-bold"
                          style="border-radius: 2px; font-size: 10px; line-height: 1.2; margin: 0 4px; padding: 4px 3px;">
-                        838
+                        {{ id_orgs.length }}
                     </div>
                 </div>
             </div>
@@ -328,6 +328,7 @@ export default {
             sliders, vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10,
             vector11, vector12, vector13, vector14, vector15, vector16, vector17, vector18, vector19
         },
+        id_orgs: [],
         siteGroups: [],
         switchCCO: true
     }),
@@ -342,7 +343,12 @@ export default {
     },
     mixins: [ApiMixin, HelpersMixin],
     async mounted() {
-        await this.getItems()
+        await this.getItems();
+        this.id_orgs = [];
+        (await this.getOutOfSchema('iasmon', 'organizationList', ['id'], `subordination: 1, without_global_scope: true, system_status: [1], status_org: [1, 2]`)).forEach(value => {
+            this.id_orgs.push(value.id);
+        });
+        await this.getOutOfSchema('estate', 'realEstates', ['id', 'object_name', 'objectEgrnAddress'], `id_orgs: 100`);
     },
     name: "MainPage"
 }
