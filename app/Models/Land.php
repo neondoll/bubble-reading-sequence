@@ -34,6 +34,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Eloquent\Builder|Land whereLongitude($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Land whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @method static \Illuminate\Database\Query\Builder|Land onlyTrashed()
+ * @method static \Illuminate\Database\Query\Builder|Land withTrashed()
+ * @method static \Illuminate\Database\Query\Builder|Land withoutTrashed()
  */
 class Land extends Model
 {

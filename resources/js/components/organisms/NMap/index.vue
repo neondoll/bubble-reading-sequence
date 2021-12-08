@@ -1,33 +1,14 @@
 <template>
     <div>
-        <l-map
-            v-if="mapReady"
-            ref="map"
-            class="map-styles"
-            :zoom="zoom"
-            :center="center"
-            :minZoom="4"
-            @update:zoom="zoomUpdated"
-            @update:center="centerUpdated"
-            @update:bounds="boundsUpdated"
-        >
+        <l-map class="map-styles" ref="map" v-if="mapReady" :center="center" :minZoom="4" :options="{zoomSnap: 0.5}"
+               :zoom="zoom" @update:bounds="boundsUpdated" @update:center="centerUpdated" @update:zoom="zoomUpdated">
             <l-control-fullscreen/>
-            <l-tile-layer :url="url"></l-tile-layer>
-            <vue2-leaflet-marker-cluster @clusterclick="refreshShit" ref="kke">
-                <l-marker
-                    v-for="(obj, index) in mapObjects"
-                    :key="`map-marker-${index}`"
-                    :lat-lng="[obj.longitude, obj.latitude]"
-                    :icon="markerIcon"
-                    :options="{
-                        bindObject: obj
-                    }"
-                    @click="setInformation"
-                >
-                    <l-popup
-                        :options="{ direction: 'top' }"
-                        :content="obj.fullname"
-                    />
+            <l-tile-layer :url="url"/>
+
+            <vue2-leaflet-marker-cluster ref="kke" @clusterclick="refreshShit">
+                <l-marker v-for="(obj, index) in mapObjects" :icon="markerIcon" :key="`map-marker-${index}`"
+                          :lat-lng="[obj.longitude, obj.latitude]" :options="{bindObject: obj}" @click="setInformation">
+                    <l-popup :content="obj.name" :options="{ direction: 'top' }"/>
                 </l-marker>
             </vue2-leaflet-marker-cluster>
         </l-map>
@@ -36,54 +17,40 @@
 
 <script>
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
 import "leaflet-boundary-canvas";
-import {LMap, LTileLayer, LGeoJson, LMarker, LPopup} from "vue2-leaflet";
-import LControlFullscreen from "vue2-leaflet-fullscreen";
 import geoData from "./admin_level_2.json";
+import L from "leaflet";
+import LControlFullscreen from "vue2-leaflet-fullscreen";
+import pin from "../../../../assets/pin.svg";
 //import queries from "../../graphQ";
 import Vue2LeafletMarkerCluster from "vue2-leaflet-markercluster";
-import pin from "../../../../assets/pin.svg";
+import {LGeoJson, LMap, LMarker, LPopup, LTileLayer} from "vue2-leaflet";
 
 export default {
-    components: {
-        LMap,
-        LTileLayer,
-        LControlFullscreen,
-        LGeoJson,
-        LMarker,
-        LPopup,
-        Vue2LeafletMarkerCluster,
-    },
-    props: [
-        'mapObjects'
-    ],
-    data() {
-        return {
-            markerIcon: L.icon({
-                iconUrl: pin,
-                iconSize: [26, 42],
-                iconAnchor: [13, 42],
-                shadowSize: [41, 41],
-                shadowAnchor: [13, 41]
-            }),
-            url: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
-            zoom: 4,
-            center: [63.23, 97.24],
-            bounds: null,
-            geo: geoData,
-            mapReady: false,
-            timer: null
-        };
-    },
-    async mounted() {
-        setTimeout(function () {
-            window.dispatchEvent(new Event("resize"));
-        }, 250);
-
-        this.mapReady = true;
-    },
+    components: {LControlFullscreen, LGeoJson, LMap, LMarker, LPopup, LTileLayer, Vue2LeafletMarkerCluster},
+    data: () => ({
+        bounds: null,
+        center: [63.23, 97.24],
+        geo: geoData,
+        mapReady: false,
+        markerIcon: L.icon({
+            iconUrl: pin,
+            iconSize: [26, 42],
+            iconAnchor: [13, 42],
+            shadowSize: [41, 41],
+            shadowAnchor: [13, 41]
+        }),
+        timer: null,
+        url: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+        zoom: 4
+    }),
     methods: {
+        boundsUpdated(bounds) {
+            this.bounds = bounds;
+        },
+        centerUpdated(center) {
+            this.center = center;
+        },
         refreshShit() {
             this.$refs.kke.mapObject.refreshClusters();
         },
@@ -95,13 +62,20 @@ export default {
         },
         zoomUpdated(zoom) {
             this.zoom = zoom;
-        },
-        centerUpdated(center) {
-            this.center = center;
-        },
-        boundsUpdated(bounds) {
-            this.bounds = bounds;
-        },
+        }
+    },
+    async mounted() {
+        setTimeout(function () {
+            window.dispatchEvent(new Event("resize"));
+        }, 250);
+
+        this.mapReady = true;
+    },
+    props: ['mapObjects'],
+    watch: {
+        mapObjects() {
+            console.log(this.mapObjects);
+        }
     }
 };
 </script>

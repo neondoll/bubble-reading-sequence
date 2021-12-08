@@ -2,7 +2,10 @@
 
 namespace App\Models;
 
+use App\Models\traits\FindTrashed;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * App\Models\RealEstate
@@ -36,5 +39,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class RealEstate extends Model
 {
+    use HasFactory, SoftDeletes, FindTrashed;
 
+    protected $dates = ['deleted_at'];
+
+    protected $fillable = ['id_org', 'land_id', 'name', 'address', 'cadastral_number', 'latitude', 'longitude'];
 }

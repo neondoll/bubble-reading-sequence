@@ -13,6 +13,12 @@ export const ApiMixin = {
             }).catch((e) => console.error(e))
             return result;
         },
+        async getLands() {
+            return await this.fetch('/graphql', 'lands', [
+                'id', 'id_org', 'assignment', 'address', 'cadastral_number', 'latitude', 'longitude', 'created_at',
+                'updated_at', 'deleted_at'
+            ]);
+        },
         async getOutOfSchema(schema, table, columns, where) {
             const query = where ? `${table}(${where}){${columns}}` : `${table}{${columns}}`;
             const data = {
@@ -26,11 +32,17 @@ export const ApiMixin = {
             }).catch((e) => console.error(e))
             return result;
         },
+        async getRealEstates() {
+            return await this.fetch('/graphql', 'realEstates', [
+                'id', 'id_org', 'land_id', 'name', 'address', 'cadastral_number', 'latitude', 'longitude', 'created_at',
+                'updated_at', 'deleted_at'
+            ]);
+        },
         async getSiteGroups() {
             return await this.fetch('/graphql', 'siteGroups', [
                 'id', 'title', 'sites{id, title, text, href, icon, created_at, updated_at, deleted_at}', 'created_at',
                 'updated_at', 'deleted_at'
             ]);
-        },
+        }
     }
 }
