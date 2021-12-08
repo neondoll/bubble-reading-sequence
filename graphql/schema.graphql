@@ -7,9 +7,13 @@ scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date
 scalar Mixed @scalar(class: "MLL\\GraphQLScalars\\Mixed")
 
 type Query {
-    site(id: ID @eq) : Site @find
+    land(id: ID @eq): Land @find
+    lands: [Land] @all
+    realEstate(id: ID @eq) : RealEstate @find
+    realEstates : [RealEstate] @all
+    site(id: ID @eq): Site @find
     sites: [Site] @all
-    siteGroup(id: ID @eq) : SiteGroup @find
+    siteGroup(id: ID @eq): SiteGroup @find
     siteGroups: [SiteGroup] @all
     user(id: ID @eq): User @find
     users: [User] @all
@@ -23,6 +27,33 @@ input SiteGroupFilter {
     text: String
 }
 
+type Land {
+    id: ID!
+    id_org: Int
+    assignment: String
+    address: String
+    cadastral_number: String
+    latitude: Float
+    longitude: Float
+    created_at: DateTime
+    updated_at: DateTime
+    deleted_at: DateTime
+}
+
+type RealEstate {
+    id: ID!
+    id_org: Int
+    land_id: Int
+    name: String
+    address: String
+    cadastral_number: String
+    latitude: Float
+    longitude: Float
+    created_at: DateTime
+    updated_at: DateTime
+    deleted_at: DateTime
+}
+
 type Site {
     id: ID!
     title: String
@@ -31,7 +62,7 @@ type Site {
     icon: String
     created_at: DateTime
     updated_at: DateTime
-    deleted_at:DateTime
+    deleted_at: DateTime
 }
 
 type SiteGroup {
@@ -40,7 +71,7 @@ type SiteGroup {
     sites: [Site]
     created_at: DateTime
     updated_at: DateTime
-    deleted_at:DateTime
+    deleted_at: DateTime
 }
 
 type User {

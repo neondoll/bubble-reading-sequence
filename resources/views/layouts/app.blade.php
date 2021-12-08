@@ -20,16 +20,12 @@
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
-</head>
+    <!-- Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-<style>
-    /*body {
-        background: url({{ asset('images/bg-main.svg') }}) no-repeat;
-        background-size: 100%;
-        //background-attachment: fixed;
-        z-index: -2;
-    }*/
-</style>
+    <style></style>
+</head>
 
 <body>
 <div id="wrap">

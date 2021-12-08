@@ -30,7 +30,28 @@
             </div>
         </div>
 
-        <v-alert class="text-center" shaped text>Карта</v-alert>
+        <div class="d-flex justify-content-center align-items-center" v-if="loadingMap"
+             style="background-color: #e2f7df; border-radius: 4px; height: 50vh; width: 100%;">
+            <div class="cssload-bell">
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+            </div>
+        </div>
+        <n-map v-else :map-objects="switchCCO ? realEstates : lands"/>
+
 
         <div class="d-flex justify-content-between" style="margin-top: 31px;">
             <!--<v-btn color="#6C757D" elevation="0" height="40" outlined
@@ -76,7 +97,7 @@
 
                     <div class="background-white font-roboto-normal-bold"
                          style="border-radius: 2px; font-size: 10px; line-height: 1.2; margin: 0 4px; padding: 4px 3px;">
-                        838
+                        {{ id_orgs.length }}
                     </div>
                 </div>
             </div>
@@ -105,7 +126,9 @@
 </template>
 
 <script>
+import NMap from "../../organisms/NMap";
 import NPage from "../../templates/NPage";
+import radar from "../../../../assets/radar.gif";
 import sliders from "../../../../assets/sliders.svg";
 import {ApiMixin, HelpersMixin} from "../../../mixins";
 import {
@@ -114,7 +137,7 @@ import {
 } from "../../../../assets/vectors";
 
 export default {
-    components: {NPage},
+    components: {NMap, NPage},
     computed: {
         siteGroupsFiltered() {
             if (this.filters.text) {
@@ -324,9 +347,13 @@ export default {
             }
         ],*/
         icons: {
-            sliders, vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10,
+            radar, sliders, vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10,
             vector11, vector12, vector13, vector14, vector15, vector16, vector17, vector18, vector19
         },
+        id_orgs: [],
+        lands: [],
+        loadingMap: true,
+        realEstates: [],
         siteGroups: [],
         switchCCO: true
     }),
@@ -341,12 +368,153 @@ export default {
     },
     mixins: [ApiMixin, HelpersMixin],
     async mounted() {
-        await this.getItems()
+        await this.getItems();
+        this.id_orgs = [];
+        (await this.getOutOfSchema('iasmon', 'organizationList', ['id'], `subordination: 1, without_global_scope: true, system_status: [1], status_org: [1, 2]`)).forEach(value => {
+            this.id_orgs.push(value.id);
+        });
+        this.realEstates = await this.getRealEstates();
+        this.loadingMap = false;
     },
-    name: "MainPage"
+    name: "MainPage",
+    watch: {
+        async switchCCO(newVal) {
+            this.loadingMap = true;
+            if (newVal) {
+                this.realEstates = await this.getRealEstates();
+            } else {
+                this.lands = await this.getLands();
+            }
+            this.loadingMap = false;
+        }
+    }
 }
 </script>
 
 <style scoped lang="scss">
 @import "MainPage.scss";
+
+.cssload-bell {
+    width: 150px;
+    height: 153px;
+    border-radius: 100%;
+    position: absolute;
+    left: calc(50% - 75px);
+}
+
+.cssload-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.cssload-circle .cssload-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 8px solid rgba(0,255,170,0.7);
+    border-right: none;
+    border-top: none;
+    background-clip: padding;
+    box-shadow: inset 0px 0px 15px rgba(0,255,170,0.15);
+}
+
+.cssload-circle:nth-of-type(0) {
+    transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+.cssload-circle:nth-of-type(0) .cssload-inner {
+    animation: cssload-spin 2.3s infinite linear;
+    -o-animation: cssload-spin 2.3s infinite linear;
+    -ms-animation: cssload-spin 2.3s infinite linear;
+    -webkit-animation: cssload-spin 2.3s infinite linear;
+    -moz-animation: cssload-spin 2.3s infinite linear;
+}
+
+.cssload-circle:nth-of-type(1) {
+    transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+}
+.cssload-circle:nth-of-type(1) .cssload-inner {
+    animation: cssload-spin 2.3s infinite linear;
+    -o-animation: cssload-spin 2.3s infinite linear;
+    -ms-animation: cssload-spin 2.3s infinite linear;
+    -webkit-animation: cssload-spin 2.3s infinite linear;
+    -moz-animation: cssload-spin 2.3s infinite linear;
+}
+
+.cssload-circle:nth-of-type(2) {
+    transform: rotate(140deg);
+    -o-transform: rotate(140deg);
+    -ms-transform: rotate(140deg);
+    -webkit-transform: rotate(140deg);
+    -moz-transform: rotate(140deg);
+}
+.cssload-circle:nth-of-type(2) .cssload-inner {
+    animation: cssload-spin 2.3s infinite linear;
+    -o-animation: cssload-spin 2.3s infinite linear;
+    -ms-animation: cssload-spin 2.3s infinite linear;
+    -webkit-animation: cssload-spin 2.3s infinite linear;
+    -moz-animation: cssload-spin 2.3s infinite linear;
+}
+
+.cssload-bell {
+    animation: cssload-spin 5.75s infinite linear;
+    -o-animation: cssload-spin 5.75s infinite linear;
+    -ms-animation: cssload-spin 5.75s infinite linear;
+    -webkit-animation: cssload-spin 5.75s infinite linear;
+    -moz-animation: cssload-spin 5.75s infinite linear;
+}
+
+
+
+@keyframes cssload-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes cssload-spin {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes cssload-spin {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes cssload-spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
 </style>

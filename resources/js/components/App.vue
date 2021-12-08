@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <v-app-bar app class="n-app-bar" color="#263238" dark flat>
+        <v-app-bar class="n-app-bar" color="#263238" dark flat>
             <v-img max-width="36" :src="appLogo"/>
 
             <v-toolbar-title class="font-roboto-normal-500"
@@ -37,6 +37,8 @@
 
         <v-main>
             <v-container fluid>
+                <a href="#app" id="scroll_top" title="Наверх" hidden v-smooth-scroll/>
+
                 <router-view data-app/>
             </v-container>
         </v-main>
@@ -88,12 +90,17 @@ import account from '@/assets/account.svg';
 import appLogo from '@/assets/app-logo.svg';
 
 export default {
-    name: "EntryPoint",
     data: () => ({
         icons: {},
         account,
         appLogo
-    })
+    }),
+    mounted() {
+        window.addEventListener('scroll', () => {
+            document.getElementById('scroll_top').hidden = window.pageYOffset <= 100;
+        });
+    },
+    name: "EntryPoint"
 }
 </script>
 
@@ -114,5 +121,22 @@ body {
 
 .n-app-bar {
     @extend .n-container;
+}
+
+#scroll_top {
+    //display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    background: url(../../assets/btnTop.svg) 50% 50% no-repeat;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+#scroll_top:hover {
+    opacity: 1;
 }
 </style>
