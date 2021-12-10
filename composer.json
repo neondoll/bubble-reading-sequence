@@ -12,6 +12,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
+        "lcobucci/jwt": "^4.1",
         "mll-lab/graphql-php-scalars": "^4.1",
         "nuwave/lighthouse": "^5.23",
         "phpoffice/phpword": "^0.18.2",
