@@ -17,7 +17,7 @@ class CreateRealEstatesTable extends Migration
             $table->id();
             $table->integer('id_org');
             $table->foreignId('land_id')->nullable()->constrained()->cascadeOnUpdate()->nullOnDelete();
-            $table->string('name');
+            $table->text('name');
             $table->text('address');
             $table->string('cadastral_number')->nullable();
             $table->string('latitude')->nullable();
