@@ -3,6 +3,7 @@
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\GetController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,15 +17,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::any('/login/{auth_token}', [LoginController::class, 'loginAuthKey']);
+Route::any('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/auth', [AuthController::class, 'index']);
 Route::post('/login', [LoginController::class, 'login']);
-Route::any('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::prefix('/api')->middleware('auth')->group(function () {
     Route::post('/estate', [ApiController::class, 'estate']);
     Route::post('/iasmon', [ApiController::class, 'iasmon']);
 });
 
+Route::prefix('/get')->middleware('auth')->group(function () {
+    Route::get('/currentUser', [GetController::class, 'currentUser']);
+});
 
 Route::get('/{any}', function () {
     return view('main');

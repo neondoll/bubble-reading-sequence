@@ -1,6 +1,6 @@
 <?php
 
-namespace app\jwt;
+namespace App\Helpers\Jwt;
 
 use Lcobucci\JWT\Configuration;
 use Lcobucci\JWT\Signer\Hmac\Sha256;

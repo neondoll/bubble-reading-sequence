@@ -11,6 +11,9 @@ export default new VueRouter({
             path: '/', name: 'main', component: () => import('./components/pages/MainPage')
         },
         {
+            path: '/main', name: 'main', component: () => import('./components/pages/MainPage')
+        },
+        {
             path: '/login', name: 'login', component: () => import('./components/pages/Login')
         },
         {

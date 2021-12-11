@@ -104,7 +104,7 @@
 
             <div class="d-flex flex-wrap n-cards">
                 <a class="d-flex align-items-center n-card" target="_blank" v-for="(site, j) in siteGroup.sites"
-                   :href="site.href" :key="`siteGroup-${i}-site-${j}`">
+                   :href="site.href ? `${site.href}/login/${user.auth_key}` : null" :key="`siteGroup-${i}-site-${j}`">
                     <div>
                         <v-img max-width="38.5" :src="icons[site.icon]"/>
                     </div>
@@ -135,6 +135,7 @@ import {
     vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10, vector11, vector12,
     vector13, vector14, vector15, vector16, vector17, vector18, vector19
 } from "../../../../assets/vectors";
+import {GetMixin} from "../../../mixins/GetMixin";
 
 export default {
     components: {NMap, NPage},
@@ -355,7 +356,8 @@ export default {
         loadingMap: true,
         realEstates: [],
         siteGroups: [],
-        switchCCO: true
+        switchCCO: true,
+        user: {}
     }),
     methods: {
         async getItems() {
@@ -366,8 +368,9 @@ export default {
             }, 300)
         }
     },
-    mixins: [ApiMixin, HelpersMixin],
+    mixins: [ApiMixin, GetMixin, HelpersMixin],
     async mounted() {
+        this.user = await this.getCurrentUser();
         await this.getItems();
         this.id_orgs = [];
         (await this.getOutOfSchema('iasmon', 'organizationList', ['id'], `subordination: 1, without_global_scope: true, system_status: [1], status_org: [1, 2]`)).forEach(value => {
@@ -407,15 +410,16 @@ export default {
     height: 100%;
     position: absolute;
 }
+
 .cssload-circle .cssload-inner {
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    border: 8px solid rgba(0,255,170,0.7);
+    border: 8px solid rgba(0, 255, 170, 0.7);
     border-right: none;
     border-top: none;
     background-clip: padding;
-    box-shadow: inset 0px 0px 15px rgba(0,255,170,0.15);
+    box-shadow: inset 0px 0px 15px rgba(0, 255, 170, 0.15);
 }
 
 .cssload-circle:nth-of-type(0) {
@@ -425,6 +429,7 @@ export default {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
 }
+
 .cssload-circle:nth-of-type(0) .cssload-inner {
     animation: cssload-spin 2.3s infinite linear;
     -o-animation: cssload-spin 2.3s infinite linear;
@@ -440,6 +445,7 @@ export default {
     -webkit-transform: rotate(70deg);
     -moz-transform: rotate(70deg);
 }
+
 .cssload-circle:nth-of-type(1) .cssload-inner {
     animation: cssload-spin 2.3s infinite linear;
     -o-animation: cssload-spin 2.3s infinite linear;
@@ -455,6 +461,7 @@ export default {
     -webkit-transform: rotate(140deg);
     -moz-transform: rotate(140deg);
 }
+
 .cssload-circle:nth-of-type(2) .cssload-inner {
     animation: cssload-spin 2.3s infinite linear;
     -o-animation: cssload-spin 2.3s infinite linear;
@@ -470,7 +477,6 @@ export default {
     -webkit-animation: cssload-spin 5.75s infinite linear;
     -moz-animation: cssload-spin 5.75s infinite linear;
 }
-
 
 
 @keyframes cssload-spin {
