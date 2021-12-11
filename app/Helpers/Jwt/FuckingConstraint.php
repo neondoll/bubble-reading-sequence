@@ -1,6 +1,6 @@
 <?php
 
-namespace app\jwt;
+namespace App\Helpers\Jwt;
 
 use Lcobucci\JWT\Token;
 use Lcobucci\JWT\Validation\Constraint;

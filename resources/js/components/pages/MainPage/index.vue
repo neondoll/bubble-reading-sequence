@@ -104,7 +104,7 @@
 
             <div class="d-flex flex-wrap n-cards">
                 <a class="d-flex align-items-center n-card" target="_blank" v-for="(site, j) in siteGroup.sites"
-                   :href="site.href" :key="`siteGroup-${i}-site-${j}`">
+                   :href="`${site.href}/login/`" :key="`siteGroup-${i}-site-${j}`">
                     <div>
                         <v-img max-width="38.5" :src="icons[site.icon]"/>
                     </div>
@@ -355,7 +355,8 @@ export default {
         loadingMap: true,
         realEstates: [],
         siteGroups: [],
-        switchCCO: true
+        switchCCO: true,
+        user: {}
     }),
     methods: {
         async getItems() {
@@ -368,6 +369,7 @@ export default {
     },
     mixins: [ApiMixin, HelpersMixin],
     async mounted() {
+        this.user = {};
         await this.getItems();
         this.id_orgs = [];
         (await this.getOutOfSchema('iasmon', 'organizationList', ['id'], `subordination: 1, without_global_scope: true, system_status: [1], status_org: [1, 2]`)).forEach(value => {
