@@ -3,6 +3,7 @@
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\GetController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,10 @@ Route::post('/login', [LoginController::class, 'login']);
 Route::prefix('/api')->middleware('auth')->group(function () {
     Route::post('/estate', [ApiController::class, 'estate']);
     Route::post('/iasmon', [ApiController::class, 'iasmon']);
+});
+
+Route::prefix('/get')->middleware('auth')->group(function () {
+    Route::get('/currentUser', [GetController::class, 'currentUser']);
 });
 
 Route::get('/{any}', function () {

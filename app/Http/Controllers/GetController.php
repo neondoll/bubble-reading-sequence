@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Composer\DependencyResolver\Request;
+use Illuminate\Http\Request;
 
 class GetController extends Controller
 {
-    public function currentUser(Request $request) {
+    public function currentUser(Request $request)
+    {
         return $request->user();
     }
 }
