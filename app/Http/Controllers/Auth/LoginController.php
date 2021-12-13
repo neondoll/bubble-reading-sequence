@@ -21,6 +21,11 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    public function loginByToken(string $authToken)
+    {
+
+    }
+
     public function logout(Request $request): \Illuminate\Http\RedirectResponse
     {
         Session::flush();
@@ -41,5 +46,4 @@ class LoginController extends Controller
 
         return response()->json(['success' => true]);
     }
-
 }
