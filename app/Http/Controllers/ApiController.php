@@ -10,17 +10,17 @@ use function response;
 
 class ApiController extends Controller
 {
-    public function iasmon(Request $request)
+    public function iasmon(Request $request): JsonResponse
     {
         $query = $request->input('query');
         $data = ApiHelper::iasmon($query);
-        return response()->json($data, 200);
+        return response()->json($data);
     }
 
     public function estate(Request $request): JsonResponse
     {
         $query = $request->input('query');
         $data = ApiHelper::estate($query);
-        return response()->json($data, 200);
+        return response()->json($data);
     }
 }

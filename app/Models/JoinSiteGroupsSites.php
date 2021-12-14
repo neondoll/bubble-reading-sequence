@@ -2,32 +2,36 @@
 
 namespace App\Models;
 
+use Eloquent;
+use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Query\Builder as QueryBuilder;
+use Illuminate\Support\Carbon;
 
 /**
  * App\Models\JoinSiteGroupsSites
  *
+ * @method static EloquentBuilder|JoinSiteGroupsSites newModelQuery()
+ * @method static EloquentBuilder|JoinSiteGroupsSites newQuery()
+ * @method static EloquentBuilder|JoinSiteGroupsSites query()
+ * @method static EloquentBuilder|JoinSiteGroupsSites whereCreatedAt($value)
+ * @method static EloquentBuilder|JoinSiteGroupsSites whereDeletedAt($value)
+ * @method static EloquentBuilder|JoinSiteGroupsSites whereId($value)
+ * @method static EloquentBuilder|JoinSiteGroupsSites whereSiteGroupId($value)
+ * @method static EloquentBuilder|JoinSiteGroupsSites whereSiteId($value)
+ * @method static EloquentBuilder|JoinSiteGroupsSites whereUpdatedAt($value)
+ * @method static QueryBuilder|JoinSiteGroupsSites onlyTrashed()
+ * @method static QueryBuilder|JoinSiteGroupsSites withTrashed()
+ * @method static QueryBuilder|JoinSiteGroupsSites withoutTrashed()
+ * @mixin Eloquent
  * @property int $id
  * @property int $site_group_id
  * @property int $site_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $deleted_at
- * @method static \Illuminate\Database\Eloquent\Builder|JoinSiteGroupsSites newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|JoinSiteGroupsSites newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|JoinSiteGroupsSites query()
- * @method static \Illuminate\Database\Eloquent\Builder|JoinSiteGroupsSites whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|JoinSiteGroupsSites whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|JoinSiteGroupsSites whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|JoinSiteGroupsSites whereSiteGroupId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|JoinSiteGroupsSites whereSiteId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|JoinSiteGroupsSites whereUpdatedAt($value)
- * @mixin \Eloquent
- * @method static \Illuminate\Database\Query\Builder|JoinSiteGroupsSites onlyTrashed()
- * @method static \Illuminate\Database\Query\Builder|JoinSiteGroupsSites withTrashed()
- * @method static \Illuminate\Database\Query\Builder|JoinSiteGroupsSites withoutTrashed()
  */
 class JoinSiteGroupsSites extends Model
 {

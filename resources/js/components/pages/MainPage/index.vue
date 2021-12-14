@@ -52,7 +52,6 @@
         </div>
         <n-map v-else :map-objects="switchCCO ? realEstates : lands"/>
 
-
         <div class="d-flex justify-content-between" style="margin-top: 31px;">
             <!--<v-btn color="#6C757D" elevation="0" height="40" outlined
                    style="border-radius: 4px 0 0 4px; padding: 0 12px;" tile>
@@ -103,23 +102,44 @@
             </div>
 
             <div class="d-flex flex-wrap n-cards">
-                <a class="d-flex align-items-center n-card" target="_blank" v-for="(site, j) in siteGroup.sites"
-                   :href="site.href ? `${site.href}/login/${user.auth_key}` : null" :key="`siteGroup-${i}-site-${j}`">
-                    <div>
-                        <v-img max-width="38.5" :src="icons[site.icon]"/>
-                    </div>
-
-                    <div style="margin-left: 18.67px;">
-                        <div class="font-roboto-normal-500" style="color: #343A40; font-size: 14px; line-height: 1.2;">
-                            {{ site.title }}
+                <template v-for="site in siteGroup.sites">
+                    <router-link class="d-flex align-items-center n-card" v-if="site.href_in_project && site.href"
+                                 :to="{path: site.href}">
+                        <div>
+                            <v-img max-width="38.5" :src="icons[site.icon]"/>
                         </div>
 
-                        <div class="font-roboto-normal-normal"
-                             style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
-                            {{ site.text }}
+                        <div style="margin-left: 18.67px;">
+                            <div class="font-roboto-normal-500"
+                                 style="color: #343A40; font-size: 14px; line-height: 1.2;">
+                                {{ site.title }}
+                            </div>
+
+                            <div class="font-roboto-normal-normal"
+                                 style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
+                                {{ site.text }}
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </router-link>
+                    <a class="d-flex align-items-center n-card" target="_blank" v-else :href="site.href">
+                        <div>
+                            <v-img max-width="38.5" :src="icons[site.icon]"/>
+                        </div>
+
+                        <div style="margin-left: 18.67px;">
+                            <div class="font-roboto-normal-500"
+                                 style="color: #343A40; font-size: 14px; line-height: 1.2;">
+                                {{ site.title }}
+                            </div>
+
+                            <div class="font-roboto-normal-normal"
+                                 style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
+                                {{ site.text }}
+                            </div>
+                        </div>
+                    </a>
+                </template>
+
             </div>
         </div>
     </n-page>

@@ -17,8 +17,12 @@ import vector16 from "./vector16.svg";
 import vector17 from "./vector17.svg";
 import vector18 from "./vector18.svg";
 import vector19 from "./vector19.svg";
+import vector20 from "./vector20.svg";
+import vector21 from "./vector21.svg";
+import vector22 from "./vector22.svg";
+import vector23 from "./vector23.svg";
 
 export {
     vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10, vector11, vector12,
-    vector13, vector14, vector15, vector16, vector17, vector18, vector19
+    vector13, vector14, vector15, vector16, vector17, vector18, vector19, vector20, vector21, vector22, vector23
 }

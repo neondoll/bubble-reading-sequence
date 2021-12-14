@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -24,7 +25,41 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function loginAuthToken(Request $request): \Illuminate\Http\RedirectResponse
+    /*public function login(Request $request): JsonResponse
+    {
+        $email = $request->query('email');
+        $password = $request->query('password');
+        if (Auth::attempt(['email' => $email, 'password' => $password])) {
+            $request->session()->regenerate();
+            return response()->json(['success' => true]);
+        } else {
+            $query = "{ user(login: \"$email\") { id, name, login, status, pwd } }";
+            $data = ApiHelper::iasmon($query);
+            if (in_array('data', array_keys($data)) && in_array('user', array_keys($data['data']))) {
+                $user = $data['data']['user'];
+                if ($user['login'] == $email && $user['pwd'] == $password) {
+                    $updateUser = User::updateOrCreate(['email' => $email], [
+                        'name' => $user['name'],
+                        'password' => Hash::make($password)
+                    ]);
+                    if ((int)$user['status'] == 1) {
+                        if ($updateUser->trashed()) {
+                            $updateUser->restore();
+                        }
+                        if (Auth::attempt(['email' => $email, 'password' => $password])) {
+                            $request->session()->regenerate();
+                            return response()->json(['success' => true]);
+                        }
+                    } elseif (!$updateUser->trashed()) {
+                        $updateUser->delete();
+                    }
+                }
+            }
+        }
+        return response()->json(['success' => false, 'errors' => ['login' => ['Неверные логин или пароль!']]]);
+    }*/
+
+    public function loginAuthToken(Request $request): RedirectResponse
     {
         $auth_token = $request->route('auth_token');
         if ($auth_token != "") {
@@ -59,7 +94,7 @@ class LoginController extends Controller
         return response()->redirectTo('/login');
     }
 
-    public function logout(Request $request): \Illuminate\Http\RedirectResponse
+    public function logout(Request $request): RedirectResponse
     {
         Session::flush();
         Auth::logout();

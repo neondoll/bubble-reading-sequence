@@ -2,7 +2,6 @@
 
 namespace App\Helpers\Classes;
 
-use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Http;
 
 class ApiHelper
@@ -18,7 +17,7 @@ class ApiHelper
         return json_decode($http->body(), true);
     }
 
-    public static function estate($query): JsonResponse
+    public static function estate($query)
     {
         $http = Http::post(
             "https://xn--b1adcgjb2abq4al4j.xn--80apneeq.xn--p1ai/api/graph?access-token=" . self::$accessToken,
