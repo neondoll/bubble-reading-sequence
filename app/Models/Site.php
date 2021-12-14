@@ -3,51 +3,61 @@
 namespace App\Models;
 
 use App\Models\traits\FindTrashed;
+use Eloquent;
+use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Query\Builder as QueryBuilder;
+use Illuminate\Support\Carbon;
 
 /**
  * App\Models\Site
  *
+ * @method static EloquentBuilder|Site newModelQuery()
+ * @method static EloquentBuilder|Site newQuery()
+ * @method static EloquentBuilder|Site query()
+ * @method static EloquentBuilder|Site whereCreatedAt($value)
+ * @method static EloquentBuilder|Site whereDeletedAt($value)
+ * @method static EloquentBuilder|Site whereHref($value)
+ * @method static EloquentBuilder|Site whereHrefInProject($value)
+ * @method static EloquentBuilder|Site whereIcon($value)
+ * @method static EloquentBuilder|Site whereId($value)
+ * @method static EloquentBuilder|Site whereSiteId($value)
+ * @method static EloquentBuilder|Site whereText($value)
+ * @method static EloquentBuilder|Site whereTitle($value)
+ * @method static EloquentBuilder|Site whereUpdatedAt($value)
+ * @method static QueryBuilder|Site onlyTrashed()
+ * @method static QueryBuilder|Site withTrashed()
+ * @method static QueryBuilder|Site withoutTrashed()
+ * @mixin Eloquent
  * @property int $id
  * @property string $title
  * @property string $text
+ * @property int $href_in_project
  * @property string $href
  * @property string $icon
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property \Illuminate\Support\Carbon|null $deleted_at
- * @method static \Illuminate\Database\Eloquent\Builder|Site newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Site newQuery()
- * @method static \Illuminate\Database\Query\Builder|Site onlyTrashed()
- * @method static \Illuminate\Database\Eloquent\Builder|Site query()
- * @method static \Illuminate\Database\Eloquent\Builder|Site whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Site whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Site whereHref($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Site whereIcon($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Site whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Site whereText($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Site whereTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Site whereUpdatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|Site withTrashed()
- * @method static \Illuminate\Database\Query\Builder|Site withoutTrashed()
- * @mixin \Eloquent
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\SiteGroup[] $site_groups
+ * @property int|null $site_id
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $deleted_at
+ * @property-read Collection|SiteGroup[] $site_groups
  * @property-read int|null $site_groups_count
  */
 class Site extends Model
 {
-    use HasFactory, SoftDeletes, FindTrashed;
+    use FindTrashed, HasFactory, SoftDeletes;
 
     protected $dates = ['deleted_at'];
 
-    protected $fillable = ['icon', 'href', 'text', 'title'];
+    protected $fillable = ['icon', 'href', 'href_in_project', 'site_id', 'text', 'title'];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     * @return BelongsToMany
      */
-    public function site_groups(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    public function site_groups(): BelongsToMany
     {
         return $this->belongsToMany(SiteGroup::class, 'join_site_groups_sites');
     }

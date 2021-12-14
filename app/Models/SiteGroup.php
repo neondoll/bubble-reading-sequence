@@ -2,32 +2,38 @@
 
 namespace App\Models;
 
+use Eloquent;
+use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Query\Builder as QueryBuilder;
+use Illuminate\Support\Carbon;
 
 /**
  * App\Models\SiteGroup
  *
+ * @method static EloquentBuilder|SiteGroup newModelQuery()
+ * @method static EloquentBuilder|SiteGroup newQuery()
+ * @method static EloquentBuilder|SiteGroup query()
+ * @method static EloquentBuilder|SiteGroup whereCreatedAt($value)
+ * @method static EloquentBuilder|SiteGroup whereDeletedAt($value)
+ * @method static EloquentBuilder|SiteGroup whereId($value)
+ * @method static EloquentBuilder|SiteGroup whereTitle($value)
+ * @method static EloquentBuilder|SiteGroup whereUpdatedAt($value)
+ * @method static QueryBuilder|SiteGroup onlyTrashed()
+ * @method static QueryBuilder|SiteGroup withTrashed()
+ * @method static QueryBuilder|SiteGroup withoutTrashed()
+ * @mixin Eloquent
  * @property int $id
  * @property string $title
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $deleted_at
- * @method static \Illuminate\Database\Eloquent\Builder|SiteGroup newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|SiteGroup newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|SiteGroup query()
- * @method static \Illuminate\Database\Eloquent\Builder|SiteGroup whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|SiteGroup whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|SiteGroup whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|SiteGroup whereTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|SiteGroup whereUpdatedAt($value)
- * @mixin \Eloquent
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Site[] $sites
+ * @property-read Collection|Site[] $sites
  * @property-read int|null $sites_count
- * @method static \Illuminate\Database\Query\Builder|SiteGroup onlyTrashed()
- * @method static \Illuminate\Database\Query\Builder|SiteGroup withTrashed()
- * @method static \Illuminate\Database\Query\Builder|SiteGroup withoutTrashed()
  */
 class SiteGroup extends Model
 {
@@ -38,9 +44,9 @@ class SiteGroup extends Model
     protected $fillable = ['title'];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     * @return BelongsToMany
      */
-    public function sites(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    public function sites(): BelongsToMany
     {
         return $this->belongsToMany(Site::class, 'join_site_groups_sites');
     }

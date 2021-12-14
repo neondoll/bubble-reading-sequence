@@ -17,8 +17,10 @@ class CreateSitesTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('text');
+            $table->tinyInteger('href_in_project')->default(0);
             $table->string('href')->nullable();
             $table->string('icon');
+            $table->foreignId('site_id')->nullable()->constrained()->cascadeOnUpdate()->nullOnDelete();
             $table->timestamps();
             $table->softDeletes();
         });

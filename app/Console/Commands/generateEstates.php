@@ -2,12 +2,10 @@
 
 namespace App\Console\Commands;
 
+use App\Helpers\Classes\ApiHelper;
 use App\Models\Land;
 use App\Models\RealEstate;
-use App\Models\Site;
-use App\Models\SiteGroup;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Http;
 
 class generateEstates extends Command
 {
@@ -43,22 +41,15 @@ class generateEstates extends Command
     public function handle(): int
     {
         $query = "query { organizationList(subordination: 1, without_global_scope: true, system_status: [1], status_org: [1, 2]) {id} }";
-        $http = Http::post("https://api-ias.xn--80apneeq.xn--p1ai/graphql", ['query' => $query]);
-
-        $data = json_decode($http->body(), true);
+        $data = ApiHelper::iasmon($query);
 
         $organizations = $data["data"]["organizationList"];
-
-        $url = "https://xn--b1adcgjb2abq4al4j.xn--80apneeq.xn--p1ai/api/graph?access-token=23498jfskduespq0";
 
         echo "-------- Синхронизация земельных участков и недвижимого имущества --------\n";
 
         foreach ($organizations as $organization) {
             $query = "query { lands(id_org: {$organization['id']}) { id, assignment, objectEgrnAddress, cadastral_number, latitude, longitude, system_status }, realEstates(id_org: {$organization['id']}) { id, id_land, object_name, objectEgrnAddress, cadastral_number, latitude, longitude, system_status } }";
-
-            $http = Http::post($url, ['query' => $query]);
-
-            $data = json_decode($http->body(), true);
+            $data = ApiHelper::estate($query);
 
             if (in_array("data", array_keys($data))) {
                 $api_id_lands = [];

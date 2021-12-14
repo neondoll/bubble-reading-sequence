@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use JetBrains\PhpStorm\ArrayShape;
 
@@ -17,23 +18,25 @@ class UserFactory extends Factory
     protected $model = User::class;
 
     #[ArrayShape([
-        'name' => "string",
-        'middleName' => "string",
-        'lastName' => "string",
+        'auth_key' => "string",
         'email' => "string",
         'email_verified_at' => "\Illuminate\Support\Carbon",
+        'lastName' => "string",
+        'middleName' => "string",
+        'name' => "string",
         'password' => "string",
         'remember_token' => "string"
     ])] public function definition(): array
     {
         return [
-            'name' => $this->faker->name(),
-            'middleName' => $this->faker->name(),
-            'lastName' => $this->faker->name(),
+            'auth_key' => Str::random(10),
             'email' => $this->faker->unique()->safeEmail(),
             'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-            'remember_token' => Str::random(10),
+            'lastName' => $this->faker->name(),
+            'middleName' => $this->faker->name(),
+            'name' => $this->faker->name(),
+            'password' => Hash::make('password'),
+            'remember_token' => Str::random(10)
         ];
     }
 
@@ -45,9 +48,7 @@ class UserFactory extends Factory
     public function unverified(): Factory
     {
         return $this->state(function (array $attributes) {
-            return [
-                'email_verified_at' => null,
-            ];
+            return ['email_verified_at' => null];
         });
     }
 }

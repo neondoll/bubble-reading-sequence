@@ -3,13 +3,34 @@
 namespace App\Models;
 
 use App\Models\traits\FindTrashed;
+use Eloquent;
+use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Query\Builder as QueryBuilder;
+use Illuminate\Support\Carbon;
 
 /**
  * App\Models\Land
  *
+ * @method static EloquentBuilder|Land newModelQuery()
+ * @method static EloquentBuilder|Land newQuery()
+ * @method static EloquentBuilder|Land query()
+ * @method static EloquentBuilder|Land whereAddress($value)
+ * @method static EloquentBuilder|Land whereAssignment($value)
+ * @method static EloquentBuilder|Land whereCadastralNumber($value)
+ * @method static EloquentBuilder|Land whereCreatedAt($value)
+ * @method static EloquentBuilder|Land whereDeletedAt($value)
+ * @method static EloquentBuilder|Land whereId($value)
+ * @method static EloquentBuilder|Land whereIdOrg($value)
+ * @method static EloquentBuilder|Land whereLatitude($value)
+ * @method static EloquentBuilder|Land whereLongitude($value)
+ * @method static EloquentBuilder|Land whereUpdatedAt($value)
+ * @method static QueryBuilder|Land onlyTrashed()
+ * @method static QueryBuilder|Land withTrashed()
+ * @method static QueryBuilder|Land withoutTrashed()
+ * @mixin Eloquent
  * @property int $id
  * @property int $id_org
  * @property string $assignment
@@ -17,32 +38,15 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property string $cadastral_number
  * @property string $latitude
  * @property string $longitude
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $deleted_at
- * @method static \Illuminate\Database\Eloquent\Builder|Land newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Land newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Land query()
- * @method static \Illuminate\Database\Eloquent\Builder|Land whereAddress($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Land whereAssignment($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Land whereCadastralNumber($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Land whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Land whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Land whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Land whereIdOrg($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Land whereLatitude($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Land whereLongitude($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Land whereUpdatedAt($value)
- * @mixin \Eloquent
- * @method static \Illuminate\Database\Query\Builder|Land onlyTrashed()
- * @method static \Illuminate\Database\Query\Builder|Land withTrashed()
- * @method static \Illuminate\Database\Query\Builder|Land withoutTrashed()
  */
 class Land extends Model
 {
-    use HasFactory, SoftDeletes, FindTrashed;
+    use FindTrashed, HasFactory, SoftDeletes;
 
     protected $dates = ['deleted_at'];
 
-    protected $fillable = ['id_org', 'assignment', 'address', 'cadastral_number', 'latitude', 'longitude'];
+    protected $fillable = ['address', 'assignment', 'cadastral_number', 'latitude', 'longitude', 'id_org'];
 }

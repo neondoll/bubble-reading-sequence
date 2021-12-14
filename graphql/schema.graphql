@@ -12,7 +12,7 @@ type Query {
     realEstate(id: ID @eq) : RealEstate @find
     realEstates : [RealEstate] @all
     site(id: ID @eq): Site @find
-    sites: [Site] @all
+    sites(site_id: Int @eq): [Site] @all
     siteGroup(id: ID @eq): SiteGroup @find
     siteGroups: [SiteGroup] @all
     user(id: ID @eq): User @find
@@ -58,6 +58,7 @@ type Site {
     id: ID!
     title: String
     text: String
+    href_in_project: Int
     href: String
     icon: String
     created_at: DateTime

@@ -13,6 +13,16 @@ export const ApiMixin = {
             }).catch((e) => console.error(e))
             return result;
         },
+        async getAdminPanelSites() {
+            return await this.fetch('/graphql', 'sites', [
+                'id', 'title', 'text', 'href_in_project', 'href', 'icon', 'created_at', 'updated_at', 'deleted_at'
+            ], 'site_id: 25');
+        },
+        async getGeneratorReportsSites() {
+            return await this.fetch('/graphql', 'sites', [
+                'id', 'title', 'text', 'href_in_project', 'href', 'icon', 'created_at', 'updated_at', 'deleted_at'
+            ], 'site_id: 24');
+        },
         async getLands() {
             return await this.fetch('/graphql', 'lands', [
                 'id', 'id_org', 'assignment', 'address', 'cadastral_number', 'latitude', 'longitude', 'created_at',
@@ -40,8 +50,8 @@ export const ApiMixin = {
         },
         async getSiteGroups() {
             return await this.fetch('/graphql', 'siteGroups', [
-                'id', 'title', 'sites{id, title, text, href, icon, created_at, updated_at, deleted_at}', 'created_at',
-                'updated_at', 'deleted_at'
+                'id', 'title', 'sites{id, title, text, href_in_project, href, icon, created_at, updated_at, deleted_at}',
+                'created_at', 'updated_at', 'deleted_at'
             ]);
         }
     }

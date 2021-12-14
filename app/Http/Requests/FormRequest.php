@@ -15,16 +15,13 @@ class FormRequest extends Request
         return true;
     }
 
+    public function attributes(): array
+    {
+        return [];
+    }
 
-    #[Pure]
     public function rules(): array
     {
-        return array_merge(
-            $this->dpoRules(),
-            $this->educationsRules(),
-            $this->infoRules(),
-            $this->jobRules(),
-            $this->kvalRules()
-        );
+        return $this->rules();
     }
 }

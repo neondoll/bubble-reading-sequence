@@ -7,10 +7,10 @@ export const HelpersMixin = {
     },
     methods: {
         prepareRouteByName(name) {
-            return {name}
+            return {name: name}
         },
-        async toRouteByName(name) {
-            await this.$router.push(this.prepareRouteByName(name))
+        async toRouteByName(pathName) {
+            await this.$router.push(this.prepareRouteByName(pathName));
         }
     }
 }
