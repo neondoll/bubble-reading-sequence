@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::any('/login/{auth_token}', [LoginController::class, 'loginAuthKey']);
+Route::any('/login/{auth_token}', [LoginController::class, 'loginAuthToken']);
 Route::any('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/auth', [AuthController::class, 'index']);
 Route::post('/login', [LoginController::class, 'login']);

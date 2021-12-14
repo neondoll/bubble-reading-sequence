@@ -24,7 +24,7 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function loginAuthKey(Request $request)
+    public function loginAuthToken(Request $request): \Illuminate\Http\RedirectResponse
     {
         $auth_token = $request->route('auth_token');
         if ($auth_token != "") {
@@ -79,5 +79,4 @@ class LoginController extends Controller
 
         return response()->json(['success' => true]);
     }
-
 }
