@@ -53,17 +53,17 @@
         <n-map v-else :map-objects="switchCCO ? realEstates : lands"/>
 
         <div class="d-flex justify-content-between" style="margin-top: 31px;">
-            <!--<v-btn color="#6C757D" elevation="0" height="40" outlined
-                   style="border-radius: 4px 0 0 4px; padding: 0 12px;" tile>
+            <v-btn color="#6C757D" elevation="0" height="40" outlined
+                   style="border-radius: 4px 0 0 4px; padding: 0 12px;" tile @click="search">
                  <span class="font-roboto-normal-400"
                        style="font-size: 16px; letter-spacing: 0; line-height: 1.2; text-transform: none;">
                      Поиск
                  </span>
-            </v-btn>-->
+            </v-btn>
 
             <v-text-field class="font-roboto-normal-normal" clearable dense outlined
                           placeholder="Введите наименование раздела или модуля"
-                          style="border-radius: 4px 0 0 4px; font-size: 16px; line-height: 1.2;" type="text"
+                          style="border-radius: 0; font-size: 16px; line-height: 1.2;" type="text"
                           v-model="filters.text"/>
 
             <v-btn color="#6C757D" elevation="0" height="40" outlined
@@ -103,41 +103,45 @@
 
             <div class="d-flex flex-wrap n-cards">
                 <template v-for="site in siteGroup.sites">
-                    <router-link class="d-flex align-items-center n-card" v-if="site.href_in_project && site.href"
-                                 :to="{path: site.href}">
-                        <div>
-                            <v-img max-width="38.5" :src="icons[site.icon]"/>
-                        </div>
+                    <v-lazy transition="fade-transition" v-model="site.isActive" :options="{threshold: .5}">
+                        <transition name="bounce">
+                            <router-link class="d-flex align-items-center n-card"
+                                         v-if="site.href_in_project && site.href" :to="{path: site.href}">
+                                <div>
+                                    <v-img max-width="38.5" :src="icons[site.icon]"/>
+                                </div>
 
-                        <div style="margin-left: 18.67px;">
-                            <div class="font-roboto-normal-500"
-                                 style="color: #343A40; font-size: 14px; line-height: 1.2;">
-                                {{ site.title }}
-                            </div>
+                                <div style="margin-left: 18.67px;">
+                                    <div class="font-roboto-normal-500"
+                                         style="color: #343A40; font-size: 14px; line-height: 1.2;">
+                                        {{ site.title }}
+                                    </div>
 
-                            <div class="font-roboto-normal-normal"
-                                 style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
-                                {{ site.text }}
-                            </div>
-                        </div>
-                    </router-link>
-                    <a class="d-flex align-items-center n-card" target="_blank" v-else :href="site.href">
-                        <div>
-                            <v-img max-width="38.5" :src="icons[site.icon]"/>
-                        </div>
+                                    <div class="font-roboto-normal-normal"
+                                         style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
+                                        {{ site.text }}
+                                    </div>
+                                </div>
+                            </router-link>
+                            <a class="d-flex align-items-center n-card" target="_blank" v-else :href="site.href">
+                                <div>
+                                    <v-img max-width="38.5" :src="icons[site.icon]"/>
+                                </div>
 
-                        <div style="margin-left: 18.67px;">
-                            <div class="font-roboto-normal-500"
-                                 style="color: #343A40; font-size: 14px; line-height: 1.2;">
-                                {{ site.title }}
-                            </div>
+                                <div style="margin-left: 18.67px;">
+                                    <div class="font-roboto-normal-500"
+                                         style="color: #343A40; font-size: 14px; line-height: 1.2;">
+                                        {{ site.title }}
+                                    </div>
 
-                            <div class="font-roboto-normal-normal"
-                                 style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
-                                {{ site.text }}
-                            </div>
-                        </div>
-                    </a>
+                                    <div class="font-roboto-normal-normal"
+                                         style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
+                                        {{ site.text }}
+                                    </div>
+                                </div>
+                            </a>
+                        </transition>
+                    </v-lazy>
                 </template>
 
             </div>
@@ -159,42 +163,9 @@ import {GetMixin} from "../../../mixins/GetMixin";
 
 export default {
     components: {NMap, NPage},
-    computed: {
-        siteGroupsFiltered() {
-            if (this.filters.text) {
-                let sgf = [];
-                this.siteGroups.forEach(((siteGroup) => {
-                    if (siteGroup.title.toLowerCase().includes(this.filters.text.toLowerCase())) {
-                        sgf.push(siteGroup);
-                    } else {
-                        let sg = {
-                            created_at: siteGroup.created_at,
-                            deleted_at: siteGroup.deleted_at,
-                            id: siteGroup.id,
-                            sites: [],
-                            title: siteGroup.title,
-                            updated_at: siteGroup.updated_at
-                        };
-                        siteGroup.sites.forEach(((site) => {
-                            if (site.title.toLowerCase().includes(this.filters.text.toLowerCase())) {
-                                sg.sites.push(site);
-                            }
-                        }));
-                        if (sg.sites.length > 0) {
-                            sgf.push(sg);
-                        }
-                    }
-                }))
-                return sgf;
-            }
-            return this.siteGroups;
-        }
-    },
     data: () => ({
         breadcrumbs: [{text: 'Управление имуществом', disabled: true}],
-        filters: {
-            text: null
-        },
+        filters: {text: null},
         /*groupsHref: [
             {
                 title: 'Имущество подведомственных организаций',
@@ -376,16 +347,55 @@ export default {
         loadingMap: true,
         realEstates: [],
         siteGroups: [],
+        siteGroupsFiltered: [],
         switchCCO: true,
         user: {}
     }),
     methods: {
+        filter() {
+            if (this.filters.text) {
+                let sgf = [];
+                this.siteGroups.forEach(((siteGroup) => {
+                    if (siteGroup.title.toLowerCase().includes(this.filters.text.toLowerCase())) {
+                        sgf.push(siteGroup);
+                    } else {
+                        let sg = {
+                            created_at: siteGroup.created_at,
+                            deleted_at: siteGroup.deleted_at,
+                            id: siteGroup.id,
+                            sites: [],
+                            title: siteGroup.title,
+                            updated_at: siteGroup.updated_at
+                        };
+                        siteGroup.sites.forEach(((site) => {
+                            if (site.title.toLowerCase().includes(this.filters.text.toLowerCase())) {
+                                sg.sites.push(site);
+                            }
+                        }));
+                        if (sg.sites.length > 0) {
+                            sgf.push(sg);
+                        }
+                    }
+                }))
+                return sgf;
+            }
+            return this.siteGroups;
+        },
         async getItems() {
             this.loading = true;
             this.siteGroups = await this.getSiteGroups();
+            this.siteGroups.forEach(((siteGroup) => {
+                siteGroup.sites.forEach(((site) => {
+                    site.isActive = false;
+                }));
+            }))
+            this.siteGroupsFiltered = this.siteGroups;
             setTimeout(() => {
                 this.loading = false;
             }, 300)
+        },
+        search() {
+            this.siteGroupsFiltered = this.filter();
         }
     },
     mixins: [ApiMixin, GetMixin, HelpersMixin],
@@ -416,131 +426,4 @@ export default {
 
 <style scoped lang="scss">
 @import "MainPage.scss";
-
-.cssload-bell {
-    width: 150px;
-    height: 153px;
-    border-radius: 100%;
-    position: absolute;
-    left: calc(50% - 75px);
-}
-
-.cssload-circle {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.cssload-circle .cssload-inner {
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    border: 8px solid rgba(0, 255, 170, 0.7);
-    border-right: none;
-    border-top: none;
-    background-clip: padding;
-    box-shadow: inset 0px 0px 15px rgba(0, 255, 170, 0.15);
-}
-
-.cssload-circle:nth-of-type(0) {
-    transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-}
-
-.cssload-circle:nth-of-type(0) .cssload-inner {
-    animation: cssload-spin 2.3s infinite linear;
-    -o-animation: cssload-spin 2.3s infinite linear;
-    -ms-animation: cssload-spin 2.3s infinite linear;
-    -webkit-animation: cssload-spin 2.3s infinite linear;
-    -moz-animation: cssload-spin 2.3s infinite linear;
-}
-
-.cssload-circle:nth-of-type(1) {
-    transform: rotate(70deg);
-    -o-transform: rotate(70deg);
-    -ms-transform: rotate(70deg);
-    -webkit-transform: rotate(70deg);
-    -moz-transform: rotate(70deg);
-}
-
-.cssload-circle:nth-of-type(1) .cssload-inner {
-    animation: cssload-spin 2.3s infinite linear;
-    -o-animation: cssload-spin 2.3s infinite linear;
-    -ms-animation: cssload-spin 2.3s infinite linear;
-    -webkit-animation: cssload-spin 2.3s infinite linear;
-    -moz-animation: cssload-spin 2.3s infinite linear;
-}
-
-.cssload-circle:nth-of-type(2) {
-    transform: rotate(140deg);
-    -o-transform: rotate(140deg);
-    -ms-transform: rotate(140deg);
-    -webkit-transform: rotate(140deg);
-    -moz-transform: rotate(140deg);
-}
-
-.cssload-circle:nth-of-type(2) .cssload-inner {
-    animation: cssload-spin 2.3s infinite linear;
-    -o-animation: cssload-spin 2.3s infinite linear;
-    -ms-animation: cssload-spin 2.3s infinite linear;
-    -webkit-animation: cssload-spin 2.3s infinite linear;
-    -moz-animation: cssload-spin 2.3s infinite linear;
-}
-
-.cssload-bell {
-    animation: cssload-spin 5.75s infinite linear;
-    -o-animation: cssload-spin 5.75s infinite linear;
-    -ms-animation: cssload-spin 5.75s infinite linear;
-    -webkit-animation: cssload-spin 5.75s infinite linear;
-    -moz-animation: cssload-spin 5.75s infinite linear;
-}
-
-
-@keyframes cssload-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@-o-keyframes cssload-spin {
-    from {
-        -o-transform: rotate(0deg);
-    }
-    to {
-        -o-transform: rotate(360deg);
-    }
-}
-
-@-ms-keyframes cssload-spin {
-    from {
-        -ms-transform: rotate(0deg);
-    }
-    to {
-        -ms-transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes cssload-spin {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@-moz-keyframes cssload-spin {
-    from {
-        -moz-transform: rotate(0deg);
-    }
-    to {
-        -moz-transform: rotate(360deg);
-    }
-}
 </style>
