@@ -16,16 +16,23 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Carbon;
 use Laravel\Sanctum\HasApiTokens;
 use Laravel\Sanctum\PersonalAccessToken;
+use Laratrust\Traits\LaratrustUserTrait;
 
 /**
  * App\Models\User
  *
+ * @method static UserFactory factory(...$parameters)
  * @method static EloquentBuilder|User newModelQuery()
  * @method static EloquentBuilder|User newQuery()
+ * @method static QueryBuilder|User onlyTrashed()
+ * @method static EloquentBuilder|User orWherePermissionIs($permission = '')
+ * @method static EloquentBuilder|User orWhereRoleIs($role = '', $team = null)
  * @method static EloquentBuilder|User query()
  * @method static EloquentBuilder|User whereAuthKey($value)
  * @method static EloquentBuilder|User whereCreatedAt($value)
  * @method static EloquentBuilder|User whereDeletedAt($value)
+ * @method static EloquentBuilder|User whereDoesntHavePermission()
+ * @method static EloquentBuilder|User whereDoesntHaveRole()
  * @method static EloquentBuilder|User whereEmail($value)
  * @method static EloquentBuilder|User whereEmailVerifiedAt($value)
  * @method static EloquentBuilder|User whereId($value)
@@ -33,12 +40,12 @@ use Laravel\Sanctum\PersonalAccessToken;
  * @method static EloquentBuilder|User whereMiddleName($value)
  * @method static EloquentBuilder|User whereName($value)
  * @method static EloquentBuilder|User wherePassword($value)
+ * @method static EloquentBuilder|User wherePermissionIs($permission = '', $boolean = 'and')
  * @method static EloquentBuilder|User whereRememberToken($value)
+ * @method static EloquentBuilder|User whereRoleIs($role = '', $team = null, $boolean = 'and')
  * @method static EloquentBuilder|User whereUpdatedAt($value)
- * @method static QueryBuilder|User onlyTrashed()
  * @method static QueryBuilder|User withTrashed()
  * @method static QueryBuilder|User withoutTrashed()
- * @method static UserFactory factory(...$parameters)
  * @mixin Eloquent
  * @property int $id
  * @property string $name
@@ -56,10 +63,14 @@ use Laravel\Sanctum\PersonalAccessToken;
  * @property-read int|null $notifications_count
  * @property-read Collection|PersonalAccessToken[] $tokens
  * @property-read int|null $tokens_count
+ * @property-read Collection|Permission[] $permissions
+ * @property-read int|null $permissions_count
+ * @property-read Collection|Role[] $roles
+ * @property-read int|null $roles_count
  */
 class User extends AuthUser
 {
-    use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
+    use HasApiTokens, HasFactory, LaratrustUserTrait, Notifiable, SoftDeletes;
 
     protected $attributes = ['lastName' => '', 'middleName' => '', 'name' => ''];
 

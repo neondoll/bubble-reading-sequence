@@ -17,17 +17,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::any('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/auth', [AuthController::class, 'index']);
+Route::get('/auth-data', [SecureController::class, 'getRolesAndPermissions']);
+Route::get('/error403', [SecureController::class, 'error403']);
 Route::post('/login', [LoginController::class, 'login']);
 Route::any('/login/{auth_token}', [LoginController::class, 'loginAuthToken']);
+Route::any('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::prefix('/api')->middleware('auth')->group(function () {
+Route::prefix('/api')->middleware(['verified'])->group(function () {
     Route::post('/estate', [ApiController::class, 'estate']);
     Route::post('/iasmon', [ApiController::class, 'iasmon']);
 });
 
-Route::prefix('/get')->middleware('auth')->group(function () {
+Route::prefix('/get')->middleware(['verified'])->group(function () {
     Route::get('/currentUser', [SecureController::class, 'currentUser']);
 });
 

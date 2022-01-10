@@ -30,23 +30,27 @@
             </div>
         </div>
 
-        <div class="d-flex justify-content-center align-items-center" v-if="loadingMap"
-             style="background-color: #e2f7df; border-radius: 4px; height: 50vh; width: 100%;">
+        <div class="d-flex justify-content-center align-items-center"
+             style="background-color: #e2f7df; border-radius: 4px; height: 50vh; width: 100%;" v-if="loadingMap">
             <div class="cssload-bell">
                 <div class="cssload-circle">
-                    <div class="cssload-inner"></div>
+                    <div class="cssload-inner"/>
                 </div>
+
                 <div class="cssload-circle">
-                    <div class="cssload-inner"></div>
+                    <div class="cssload-inner"/>
                 </div>
+
                 <div class="cssload-circle">
-                    <div class="cssload-inner"></div>
+                    <div class="cssload-inner"/>
                 </div>
+
                 <div class="cssload-circle">
-                    <div class="cssload-inner"></div>
+                    <div class="cssload-inner"/>
                 </div>
+
                 <div class="cssload-circle">
-                    <div class="cssload-inner"></div>
+                    <div class="cssload-inner"/>
                 </div>
             </div>
         </div>
@@ -143,7 +147,6 @@
                         </transition>
                     </v-lazy>
                 </template>
-
             </div>
         </div>
     </n-page>
@@ -159,185 +162,12 @@ import {
     vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10, vector11, vector12,
     vector13, vector14, vector15, vector16, vector17, vector18, vector19
 } from "../../../../assets/vectors";
-import {GetMixin} from "../../../mixins/GetMixin";
 
 export default {
     components: {NMap, NPage},
     data: () => ({
         breadcrumbs: [{text: 'Управление имуществом', disabled: true}],
         filters: {text: null},
-        /*groupsHref: [
-            {
-                title: 'Имущество подведомственных организаций',
-                cardsHref: [
-                    {
-                        icon: 'vector1',
-                        title: 'Недвижимое имущество',
-                        text: 'Ведение реестра объектов капитального строительства, выгрузки, актуализация данных',
-                        href: 'https://недвижимость.иасмон.рф/real-estate-list'
-                    },
-                    {
-                        icon: 'vector2',
-                        title: 'Земельные участки',
-                        text: 'Ведение реестра земельных участков, выгрузки, актуализация данных, разметка границ ЗУ',
-                        href: 'https://недвижимость.иасмон.рф/land-list'
-                    },
-                    {
-                        icon: 'vector19',
-                        title: 'ОЦДИ',
-                        text: 'Ведение реестра объектов особо ценного движимого имущества, выгрузки, актуализация данных',
-                        href: null
-                    },
-                    {
-                        icon: 'vector3',
-                        title: 'Незавершенное строительство',
-                        text: 'Ведение реестра объектов незавершенного строительства',
-                        href: null
-                    },
-                    {
-                        icon: 'vector4',
-                        title: 'Договоры аренды',
-                        text: 'Ведение реестра объектов капитального строительства, выгрузки, актуализация данных',
-                        href: null
-                    },
-                    {
-                        icon: 'vector4',
-                        title: 'Договоры безвозмездного пользования',
-                        text: 'Ведение реестра договоров безвозмездного пользования',
-                        href: null
-                    },
-                    {
-                        icon: 'vector7',
-                        title: 'Использование имущества',
-                        text: 'Ведение реестра объектов, используемых организацией',
-                        href: null
-                    }
-                ]
-            },
-            {
-                title: 'Имущество Минобрнауки России',
-                cardsHref: [
-                    {
-                        icon: 'vector1',
-                        title: 'Недвижимое имущество',
-                        text: 'Ведение реестра объектов капитального строительства, выгрузки, актуализация данных',
-                        href: null
-                    },
-                    {
-                        icon: 'vector2',
-                        title: 'Земельные участки',
-                        text: 'Ведение реестра земельных участков, выгрузки, актуализация данных, разметка границ ЗУ',
-                        href: null
-                    },
-                    {
-                        icon: 'vector4',
-                        title: 'Договоры аренды',
-                        text: 'Ведение реестра объектов капитального строительства, выгрузки, актуализация данных',
-                        href: null
-                    },
-                    {
-                        icon: 'vector4',
-                        title: 'Договоры безвозмездного пользования',
-                        text: 'Ведение реестра договоров безвозмездного пользования',
-                        href: null
-                    },
-                    {
-                        icon: 'vector7',
-                        title: 'Использование имущества',
-                        text: 'Ведение реестра объектов, используемых организацией',
-                        href: null
-                    }
-                ]
-            },
-            {
-                title: 'Модули взаимодействия',
-                cardsHref: [
-                    {
-                        icon: 'vector8',
-                        title: 'Оценка последствий',
-                        text: 'Получение заключения на оценку последствий для образовательных организаций',
-                        href: null
-                    },
-                    {
-                        icon: 'vector9',
-                        title: 'Аренда и БП',
-                        text: 'Получение согласия учредителя на передачу объекта в аренду или безвозмездное пользование',
-                        href: null
-                    },
-                    {
-                        icon: 'vector10',
-                        title: 'Перераспределение',
-                        text: 'Отказ от имущества, закрепление имущества, передача на иной уровень собственности',
-                        href: 'https://распределение.иасмон.рф/'
-                    },
-                    {
-                        icon: 'vector11',
-                        title: 'Списание имущества',
-                        text: 'Согласование крупных и иных сделок с учредителем',
-                        href: null
-                    },
-                    {
-                        icon: 'vector12',
-                        title: 'Сделки',
-                        text: 'Ведение реестра объектов, используемых организацией',
-                        href: null
-                    },
-                    {
-                        icon: 'vector13',
-                        title: 'АО Дом РФ',
-                        text: 'Изъятие объектов ДОМ.РФ, согласование с подведомственной организацией',
-                        href: null
-                    },
-                    {
-                        icon: 'vector5',
-                        title: 'Сервитут',
-                        text: 'Оформление заявок на сервитут, согласование с учредителем',
-                        href: null
-                    },
-                    {
-                        icon: 'vector14',
-                        title: 'Ядерная безопасность',
-                        text: 'Согласование объектов ядерной и радиационной безопасности с учредителем',
-                        href: null
-                    },
-                    {
-                        icon: 'vector15',
-                        title: 'Паспорта безопасности',
-                        text: 'Ведение реестров паспортов безопасности, актуализация данных',
-                        href: null
-                    }
-                ]
-            },
-            {
-                title: 'Служебные модули',
-                cardsHref: [
-                    {
-                        icon: 'vector16',
-                        title: 'Общая повестка',
-                        text: 'Получение заключения на оценку последствий для образовательных организаций',
-                        href: null
-                    },
-                    {
-                        icon: 'vector17',
-                        title: 'Жилищный фонд',
-                        text: 'Ведение реестра объектов жилищного фонда, специализированный жилищный фонд',
-                        href: null
-                    },
-                    {
-                        icon: 'vector18',
-                        title: 'Генератор отчетов',
-                        text: 'Формирование отчетов по имущественному комплексу в свободной форме',
-                        href: null
-                    },
-                    {
-                        icon: 'vector6',
-                        title: 'Панель администратора',
-                        text: 'Служебные функции управления имуществом (перенос, восстановление объектов и прочее)',
-                        href: null
-                    }
-                ]
-            }
-        ],*/
         icons: {
             radar, sliders, vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10,
             vector11, vector12, vector13, vector14, vector15, vector16, vector17, vector18, vector19
@@ -348,8 +178,7 @@ export default {
         realEstates: [],
         siteGroups: [],
         siteGroupsFiltered: [],
-        switchCCO: true,
-        user: {}
+        switchCCO: true
     }),
     methods: {
         filter() {
@@ -398,9 +227,8 @@ export default {
             this.siteGroupsFiltered = this.filter();
         }
     },
-    mixins: [ApiMixin, GetMixin, HelpersMixin],
+    mixins: [ApiMixin, HelpersMixin],
     async mounted() {
-        this.user = await this.getCurrentUser();
         await this.getItems();
         this.id_orgs = [];
         (await this.getOutOfSchema('iasmon', 'organizationList', ['id'], `subordination: 1, without_global_scope: true, system_status: [1], status_org: [1, 2]`)).forEach(value => {

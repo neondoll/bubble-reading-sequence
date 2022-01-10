@@ -11,14 +11,6 @@ use Laratrust\Models\LaratrustRole;
 /**
  * App\Models\Role
  *
- * @property int $id
- * @property string $name
- * @property string|null $display_name
- * @property string|null $description
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property-read Collection|Permission[] $permissions
- * @property-read int|null $permissions_count
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
  * @method static Builder|Role query()
@@ -29,9 +21,16 @@ use Laratrust\Models\LaratrustRole;
  * @method static Builder|Role whereName($value)
  * @method static Builder|Role whereUpdatedAt($value)
  * @mixin Eloquent
+ * @property int $id
+ * @property string $name
+ * @property string|null $display_name
+ * @property string|null $description
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read Collection|Permission[] $permissions
+ * @property-read int|null $permissions_count
  */
 class Role extends LaratrustRole
 {
     public $guarded = [];
 }
-
