@@ -42,60 +42,34 @@ class rbac extends Command
     public function handle(): int
     {
         $admin = Role::updateOrCreate(['name' => 'admin'], [
-            'display_name' => 'admin',
             'description' => 'full admin',
+            'display_name' => 'admin'
         ]);
-
-        $user = Role::updateOrCreate(['name' => 'user'], [
-            'display_name' => 'user',
-            'description' => 'simple user',
-        ]);
-
         $mon = Role::updateOrCreate(['name' => 'mon'], [
-            'display_name' => 'mon',
             'description' => 'user of mon',
+            'display_name' => 'mon'
+        ]);
+        $user = Role::updateOrCreate(['name' => 'user'], [
+            'description' => 'simple user',
+            'display_name' => 'user'
         ]);
 
-        $createForm = Permission::updateOrCreate([
-            'name' => 'create-form',
-            'display_name' => 'create-form',
-            'description' => 'create-form',
+        $adminPanel = Permission::updateOrCreate(['name' => 'admin-panel'], [
+            'description' => 'admin-panel',
+            'display_name' => 'admin-panel'
+        ]);
+        $generatorReports = Permission::updateOrCreate(['name' => 'generator-reports'], [
+            'description' => 'generator-reports',
+            'display_name' => 'generator-reports'
+        ]);
+        $main = Permission::updateOrCreate(['name' => 'main'], [
+            'description' => 'main',
+            'display_name' => 'main',
         ]);
 
-        $viewForm = Permission::updateOrCreate([
-            'name' => 'view-form',
-            'display_name' => 'view-form',
-            'description' => 'view-form',
-        ]);
-
-        $updateForm = Permission::updateOrCreate([
-            'name' => 'update-form',
-            'display_name' => 'update-form',
-            'description' => 'update-form',
-        ]);
-
-        $deleteForm = Permission::updateOrCreate([
-            'name' => 'delete-form',
-            'display_name' => 'delete-form',
-            'description' => 'delete-form',
-        ]);
-
-        $setStatusForm = Permission::updateOrCreate([
-            'name' => 'set-status-form',
-            'display_name' => 'set-status-form',
-            'description' => 'set-status-form',
-        ]);
-
-        $getAllForms = Permission::updateOrCreate([
-            'name' => 'get-all-forms',
-            'display_name' => 'get-all-forms',
-            'description' => 'get-all-forms',
-        ]);
-
-
-        $admin->syncPermissions([$createForm, $updateForm, $deleteForm, $viewForm, $setStatusForm, $getAllForms]);
-        $mon->syncPermissions([$setStatusForm, $getAllForms, $viewForm]);
-        $user->syncPermissions([$createForm, $updateForm, $deleteForm, $setStatusForm, $viewForm]);
+        $admin->syncPermissions([$adminPanel, $generatorReports, $main]);
+        $mon->syncPermissions([$adminPanel, $generatorReports, $main]);
+        $user->syncPermissions([$generatorReports, $main]);
 
         $userModel = User::whereEmail('admin@admin.ru')->first();
         $userModel->syncRoles([$admin->id]);

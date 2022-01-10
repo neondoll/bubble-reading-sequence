@@ -16,24 +16,36 @@
                 </span>
             </v-btn>
 
-            <v-menu bottom offset-x right transition="slide-x-transition" v-if="$isLogged">
-                <template v-slot:activator="{ on, attrs }">
-                    <v-btn icon v-bind="attrs" v-on="on">
-                        <v-img max-width="12" :src="account"/>
-                    </v-btn>
-                </template>
-
-                <v-list>
-                    <v-list-item>
-                        <v-list-item-content>
-                            <v-form action="/logout">
-                                <v-btn class="btn-nav" color="#007BFF" text type="submit">Выход</v-btn>
-                            </v-form>
-                        </v-list-item-content>
-                    </v-list-item>
-                </v-list>
-            </v-menu>
+            <v-btn icon v-if="$isLogged" @click="drawer = !drawer">
+                <v-img max-width="12" :src="account"/>
+            </v-btn>
         </v-app-bar>
+
+        <v-navigation-drawer absolute right temporary v-model="drawer">
+            <template v-if="$authData">
+                <v-list-item>
+                    <v-list-item-avatar color="indigo">
+                        <v-icon dark>mdi-account-circle</v-icon>
+                    </v-list-item-avatar>
+
+                    <v-list-item-content>
+                        <v-list-item-title>{{ $authData.login }}</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+
+                <v-divider/>
+            </template>
+
+            <v-list>
+                <v-list-item>
+                    <v-list-item-content>
+                        <v-form action="/logout">
+                            <v-btn block class="btn-nav" color="#007BFF" outlined type="submit">Выход</v-btn>
+                        </v-form>
+                    </v-list-item-content>
+                </v-list-item>
+            </v-list>
+        </v-navigation-drawer>
 
         <v-main>
             <v-container fluid>
@@ -91,9 +103,10 @@ import appLogo from '@/assets/app-logo.svg';
 
 export default {
     data: () => ({
-        icons: {},
         account,
-        appLogo
+        appLogo,
+        drawer: false,
+        icons: {}
     }),
     mounted() {
         window.addEventListener('scroll', () => {

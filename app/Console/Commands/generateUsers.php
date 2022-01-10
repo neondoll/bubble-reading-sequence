@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Models\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
+use Symfony\Component\Console\Command\Command as CommandAlias;
 
 class generateUsers extends Command
 {
@@ -13,7 +14,7 @@ class generateUsers extends Command
      *
      * @var string
      */
-    protected $signature = 'generateUsers';
+    protected $signature = 'generate:users';
 
     /**
      * The console command description.
@@ -39,7 +40,15 @@ class generateUsers extends Command
      */
     public function handle(): int
     {
-        User::updateOrCreate(['email' => 'admin@admin.ru'], ['auth_key' => 'admin', 'password' => Hash::make('password')]);
-        return 0;
+        User::updateOrCreate(['email' => 'admin@admin.ru'], [
+            'auth_key' => 'admin',
+            'password' => Hash::make('password')
+        ]);
+        User::updateOrCreate(['email' => 'user@admin.ru'], [
+            'auth_key' => 'user',
+            'password' => Hash::make('password')
+        ]);
+
+        return CommandAlias::SUCCESS;
     }
 }
