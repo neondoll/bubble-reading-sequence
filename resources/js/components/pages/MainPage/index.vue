@@ -105,9 +105,9 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-wrap n-cards">
+            <n-cards>
                 <template v-for="site in siteGroup.sites">
-                    <v-lazy transition="fade-transition" v-model="site.isActive" :options="{threshold: .5}">
+                    <!--<v-lazy transition="fade-transition" v-model="site.isActive" :options="{threshold: .5}">
                         <transition name="bounce">
                             <router-link class="d-flex align-items-center n-card"
                                          v-if="site.href_in_project && site.href" :to="{path: site.href}">
@@ -145,14 +145,17 @@
                                 </div>
                             </a>
                         </transition>
-                    </v-lazy>
+                    </v-lazy>-->
+                    <n-card-site :site="site"/>
                 </template>
-            </div>
+            </n-cards>
         </div>
     </n-page>
 </template>
 
 <script>
+import NCardSite from "../../organisms/NCardSite";
+import NCards from "../../atoms/NCards";
 import NMap from "../../organisms/NMap";
 import NPage from "../../templates/NPage";
 import radar from "../../../../assets/radar.gif";
@@ -164,7 +167,7 @@ import {
 } from "../../../../assets/vectors";
 
 export default {
-    components: {NMap, NPage},
+    components: {NCardSite, NCards, NMap, NPage},
     data: () => ({
         breadcrumbs: [{text: 'Управление имуществом', disabled: true}],
         filters: {text: null},

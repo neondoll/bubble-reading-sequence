@@ -20,6 +20,7 @@ class CreateSitesTable extends Migration
             $table->tinyInteger('href_in_project')->default(0);
             $table->string('href')->nullable();
             $table->string('icon');
+            $table->tinyInteger('need_token')->default(0);
             $table->foreignId('site_id')->nullable()->constrained()->cascadeOnUpdate()->nullOnDelete();
             $table->timestamps();
             $table->softDeletes();

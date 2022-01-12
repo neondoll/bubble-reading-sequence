@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Helpers\Classes\ApiHelper;
 use App\Helpers\Jwt\Parser;
 use App\Http\Controllers\Controller;
+use App\Models\Role;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -43,6 +44,7 @@ class LoginController extends Controller
                         'name' => $user['name'],
                         'password' => Hash::make($password)
                     ]);
+                    $updateUser->syncRoles([Role::whereName('user')->id]);
                     if ((int)$user['status'] == 1) {
                         if ($updateUser->trashed()) {
                             $updateUser->restore();
@@ -78,6 +80,7 @@ class LoginController extends Controller
                         'password' => Hash::make($password),
                         'auth_key' => $auth_token
                     ]);
+                    $updateUser->syncRoles([Role::whereName('user')->id]);
                     if ((int)$user['status'] == 1) {
                         if ($updateUser->trashed()) {
                             $updateUser->restore();
