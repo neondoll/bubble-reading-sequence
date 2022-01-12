@@ -669,7 +669,7 @@
 
 <script>
 import MChipSelect from "../../organisms/MChipSelect";
-import MErrors from "../../organisms/MErrors";
+import MErrors from "../../organisms/NErrors";
 import {ApiMixin} from "../../../mixins";
 import {formHelper} from "./formHelper";
 import MEditableTable from "../../organisms/MEditableTable";
