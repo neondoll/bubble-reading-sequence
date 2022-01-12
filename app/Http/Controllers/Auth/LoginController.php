@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -25,19 +26,19 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    /*public function login(Request $request): JsonResponse
+    public function login(Request $request): JsonResponse
     {
-        $email = $request->query('email');
-        $password = $request->query('password');
+        $email = $request->post('email');
+        $password = $request->post('password');
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
-            $request->session()->regenerate();
+            //$request->session()->regenerate();
             return response()->json(['success' => true]);
         } else {
             $query = "{ user(login: \"$email\") { id, name, login, status, pwd } }";
             $data = ApiHelper::iasmon($query);
             if (in_array('data', array_keys($data)) && in_array('user', array_keys($data['data']))) {
                 $user = $data['data']['user'];
-                if ($user['login'] == $email && $user['pwd'] == $password) {
+                if ($user && $user['login'] == $email && $user['pwd'] == $password) {
                     $updateUser = User::updateOrCreate(['email' => $email], [
                         'name' => $user['name'],
                         'password' => Hash::make($password)
@@ -57,7 +58,7 @@ class LoginController extends Controller
             }
         }
         return response()->json(['success' => false, 'errors' => ['login' => ['Неверные логин или пароль!']]]);
-    }*/
+    }
 
     public function loginAuthToken(Request $request): RedirectResponse
     {
@@ -71,7 +72,7 @@ class LoginController extends Controller
             $data = ApiHelper::iasmon($query);
             if (in_array('data', array_keys($data)) && in_array('user', array_keys($data['data']))) {
                 $user = $data['data']['user'];
-                if ($user['login'] == $login && $user['pwd'] == $password) {
+                if ($user && $user['login'] == $login && $user['pwd'] == $password) {
                     $updateUser = User::updateOrCreate(['email' => $login], [
                         'name' => $user['name'],
                         'password' => Hash::make($password),
