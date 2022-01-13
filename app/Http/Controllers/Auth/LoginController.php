@@ -54,7 +54,7 @@ class LoginController extends Controller
             if (in_array('data', array_keys($data)) && in_array('user', array_keys($data['data']))) {
                 $user = $data['data']['user'];
                 if ($user && $user['login'] == $email && $user['pwd'] == $password) {
-                    $updateUser = User::updateOrCreate(['email' => $login], [
+                    $updateUser = User::updateOrCreate(['email' => $email], [
                         'name' => $user['name'],
                         'org_id' => $user['podved_id'],
                         'password' => Hash::make($password)
