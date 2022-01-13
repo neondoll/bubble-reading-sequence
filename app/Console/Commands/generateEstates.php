@@ -41,40 +41,46 @@ class generateEstates extends Command
      */
     public function handle(): int
     {
-        $data = ApiHelper::iasmon(ArrayHelper::toString([
-            "query" => [
-                "organizationList(subordination: 1, without_global_scope: true, system_status: [1], status_org: [1, 2])" => "id"
-            ]
-        ]));
+        $data = ApiHelper::iasmon(
+            ArrayHelper::toString([
+                "query" => [
+                    "organizationList(subordination: 1, without_global_scope: true, system_status: [1], status_org: [1, 2])" => [
+                        "id"
+                    ]
+                ]
+            ])
+        );
 
         $organizations = $data["data"]["organizationList"];
 
         $this->info("-------- Синхронизация земельных участков и недвижимого имущества --------");
 
         foreach ($organizations as $organization) {
-            $data = ApiHelper::estate([
-                "query" => [
-                    "lands(id_org: {$organization['id']})" => [
-                        "id",
-                        "assignment",
-                        "objectEgrnAddress",
-                        "cadastral_number",
-                        "latitude",
-                        "longitude",
-                        "system_status"
-                    ],
-                    "realEstates(id_org: {$organization['id']})" => [
-                        "id",
-                        "id_land",
-                        "object_name",
-                        "objectEgrnAddress",
-                        "cadastral_number",
-                        "latitude",
-                        "longitude",
-                        "system_status"
+            $data = ApiHelper::estate(
+                ArrayHelper::toString([
+                    "query" => [
+                        "lands(id_org: {$organization['id']})" => [
+                            "id",
+                            "assignment",
+                            "objectEgrnAddress",
+                            "cadastral_number",
+                            "latitude",
+                            "longitude",
+                            "system_status"
+                        ],
+                        "realEstates(id_org: {$organization['id']})" => [
+                            "id",
+                            "id_land",
+                            "object_name",
+                            "objectEgrnAddress",
+                            "cadastral_number",
+                            "latitude",
+                            "longitude",
+                            "system_status"
+                        ]
                     ]
-                ]
-            ]);
+                ])
+            );
 
             if (in_array("data", array_keys($data))) {
                 $api_id_lands = [];
@@ -93,13 +99,17 @@ class generateEstates extends Command
                             $updateLand->restore();
                             $this->info("lands(id: $updateLand->id, id_org: $updateLand->id_org) - restore");
                         } else {
-                            $this->info("lands(id: $updateLand->id, id_org: $updateLand->id_org) - " . ($updateLand->updated_at == $updateLand->created_at ? 'create' : 'update'));
+                            $this->info(
+                                "lands(id: $updateLand->id, id_org: $updateLand->id_org) - " . ($updateLand->updated_at == $updateLand->created_at ? 'create' : 'update')
+                            );
                         }
                         $api_id_lands[] = (int)$land['id'];
                     }
                 }
 
-                foreach (Land::where('id_org', $organization['id'])->whereNotIn('id', $api_id_lands)->get() as $deleteLand) {
+                foreach (
+                    Land::where('id_org', $organization['id'])->whereNotIn('id', $api_id_lands)->get() as $deleteLand
+                ) {
                     if (!$deleteLand->trashed()) {
                         $deleteLand->delete();
                         $this->info("lands(id: $deleteLand->id, id_org: $deleteLand->id_org) - delete");
@@ -123,18 +133,27 @@ class generateEstates extends Command
                         ]);
                         if ($updateRealEstate->trashed()) {
                             $updateRealEstate->restore();
-                            $this->info("real_estates(id: $updateRealEstate->id, id_org: $updateRealEstate->id_org) - restore");
+                            $this->info(
+                                "real_estates(id: $updateRealEstate->id, id_org: $updateRealEstate->id_org) - restore"
+                            );
                         } else {
-                            $this->info("real_estates(id: $updateRealEstate->id, id_org: $updateRealEstate->id_org) - " . ($updateRealEstate->updated_at == $updateRealEstate->created_at ? 'create' : 'update'));
+                            $this->info(
+                                "real_estates(id: $updateRealEstate->id, id_org: $updateRealEstate->id_org) - " . ($updateRealEstate->updated_at == $updateRealEstate->created_at ? 'create' : 'update')
+                            );
                         }
                     }
                     $api_id_realEstates[] = (int)$realEstate['id'];
                 }
 
-                foreach (RealEstate::where('id_org', $organization['id'])->whereNotIn('id', $api_id_realEstates)->get() as $deleteRealEstate) {
+                foreach (
+                    RealEstate::where('id_org', $organization['id'])->whereNotIn('id', $api_id_realEstates)->get(
+                    ) as $deleteRealEstate
+                ) {
                     if (!$deleteRealEstate->trashed()) {
                         $deleteRealEstate->delete();
-                        $this->info("real_estates(id: $deleteRealEstate->id, id_org: $deleteRealEstate->id_org) - delete");
+                        $this->info(
+                            "real_estates(id: $deleteRealEstate->id, id_org: $deleteRealEstate->id_org) - delete"
+                        );
                     }
                 }
             } else {

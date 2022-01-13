@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Helpers\Classes\ApiHelper;
+use App\Helpers\Classes\ArrayHelper;
 use App\Helpers\Jwt\Parser;
 use App\Http\Controllers\Controller;
 use App\Models\Role;
@@ -35,16 +36,38 @@ class LoginController extends Controller
             //$request->session()->regenerate();
             return response()->json(['success' => true]);
         } else {
-            $query = "{ user(login: \"$email\") { id, name, login, status, pwd } }";
-            $data = ApiHelper::iasmon($query);
+            $data = ApiHelper::iasmon(
+                ArrayHelper::toString([
+                    "query" => [
+                        "user(login: \"$email\")" => [
+                            "access",
+                            "id",
+                            "login",
+                            "name",
+                            "podved_id",
+                            "pwd",
+                            "status"
+                        ]
+                    ]
+                ])
+            );
             if (in_array('data', array_keys($data)) && in_array('user', array_keys($data['data']))) {
                 $user = $data['data']['user'];
                 if ($user && $user['login'] == $email && $user['pwd'] == $password) {
-                    $updateUser = User::updateOrCreate(['email' => $email], [
+                    $updateUser = User::updateOrCreate(['email' => $login], [
                         'name' => $user['name'],
+                        'org_id' => $user['podved_id'],
                         'password' => Hash::make($password)
                     ]);
-                    $updateUser->syncRoles([Role::whereName('user')->id]);
+                    $updateUser->syncRoles([
+                        Role::whereName(
+                            match ($user['access']) {
+                                'admin' => 'admin',
+                                'dep10' => 'mon',
+                                default => 'user'
+                            }
+                        )->id
+                    ]);
                     if ((int)$user['status'] == 1) {
                         if ($updateUser->trashed()) {
                             $updateUser->restore();
@@ -70,17 +93,39 @@ class LoginController extends Controller
             $token = $parser->parse($auth_token);
             $login = $token->claims()->get('login');
             $password = $token->claims()->get('password');
-            $query = "{ user(login: \"$login\") { id, name, login, status, pwd } }";
-            $data = ApiHelper::iasmon($query);
+            $data = ApiHelper::iasmon(
+                ArrayHelper::toString([
+                    "query" => [
+                        "user(login: \"$login\")" => [
+                            "access",
+                            "id",
+                            "login",
+                            "name",
+                            "podved_id",
+                            "pwd",
+                            "status"
+                        ]
+                    ]
+                ])
+            );
             if (in_array('data', array_keys($data)) && in_array('user', array_keys($data['data']))) {
                 $user = $data['data']['user'];
                 if ($user && $user['login'] == $login && $user['pwd'] == $password) {
                     $updateUser = User::updateOrCreate(['email' => $login], [
+                        'auth_key' => $auth_token,
                         'name' => $user['name'],
-                        'password' => Hash::make($password),
-                        'auth_key' => $auth_token
+                        'org_id' => $user['podved_id'],
+                        'password' => Hash::make($password)
                     ]);
-                    $updateUser->syncRoles([Role::whereName('user')->id]);
+                    $updateUser->syncRoles([
+                        Role::whereName(
+                            match ($user['access']) {
+                                'admin' => 'admin',
+                                'dep10' => 'mon',
+                                default => 'user'
+                            }
+                        )->id
+                    ]);
                     if ((int)$user['status'] == 1) {
                         if ($updateUser->trashed()) {
                             $updateUser->restore();
