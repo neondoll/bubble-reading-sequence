@@ -61,6 +61,7 @@ type Site {
     href_in_project: Int
     href: String
     icon: String
+    need_token: Int
     created_at: DateTime
     updated_at: DateTime
     deleted_at: DateTime

@@ -21,7 +21,7 @@
             </v-btn>
         </v-app-bar>
 
-        <v-navigation-drawer absolute right temporary v-model="drawer">
+        <v-navigation-drawer absolute right style="z-index: 10000" temporary v-model="drawer">
             <template v-if="$authData">
                 <v-list-item>
                     <v-list-item-avatar color="indigo">
