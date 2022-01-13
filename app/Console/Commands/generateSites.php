@@ -144,7 +144,8 @@ class generateSites extends Command
                 'title' => 'Перераспределение',
                 'text' => 'Отказ от имущества, закрепление имущества, передача на иной уровень собственности',
                 'href' => 'https://xn--80aicbaauwtojcl.xn--80apneeq.xn--p1ai/index',
-                'icon' => 'vector10'
+                'icon' => 'vector10',
+                'need_token' => 1
             ],
             [
                 'id' => 16,
@@ -287,6 +288,7 @@ class generateSites extends Command
             $updateSite = Site::updateOrCreate(['id' => $site['id']], [
                 'href' => $site['href'] ?? null,
                 'icon' => $site['icon'],
+                'need_token' => $site['need_token'] ?? 0,
                 'site_id' => $site['site_id'] ?? null,
                 'text' => $site['text'],
                 'title' => $site['title']
