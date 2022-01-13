@@ -59,15 +59,15 @@ export default {
     pointer-events: none;
     width: 100%;
 
-    & > .n-card {
+    & .n-card {
         transition: 300ms opacity, 300ms transform;
     }
 
-    &:hover > .n-card {
+    &:hover .n-card {
         opacity: 0.4;
     }
 
-    &:hover > .n-card:hover {
+    &:hover .n-card:hover {
         transform: scale(1.1);
         opacity: 1;
     }

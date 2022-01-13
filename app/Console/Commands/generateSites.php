@@ -143,7 +143,7 @@ class generateSites extends Command
                 'id' => 15,
                 'title' => 'Перераспределение',
                 'text' => 'Отказ от имущества, закрепление имущества, передача на иной уровень собственности',
-                'href' => 'https://xn--80aicbaauwtojcl.xn--80apneeq.xn--p1ai/index',
+                'href' => 'https://xn--80aicbaauwtojcl.xn--80apneeq.xn--p1ai/site/login?auth-token=',
                 'icon' => 'vector10',
                 'need_token' => 1
             ],
