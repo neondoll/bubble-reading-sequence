@@ -15,65 +15,27 @@
             </v-btn>
         </div>
 
-        <div class="d-flex flex-wrap n-cards">
+        <n-cards>
             <template v-for="site in sites">
-                <v-lazy transition="fade-transition" v-model="site.isActive" :options="{threshold: .5}">
-                    <transition name="bounce">
-                        <router-link class="d-flex align-items-center n-card" v-if="site.href_in_project && site.href"
-                                     :to="{path: site.href}">
-                            <div>
-                                <v-img max-width="38.5" :src="icons[site.icon]"/>
-                            </div>
-
-                            <div style="margin-left: 18.67px;">
-                                <div class="font-roboto-normal-500"
-                                     style="color: #343A40; font-size: 14px; line-height: 1.2;">
-                                    {{ site.title }}
-                                </div>
-
-                                <div class="font-roboto-normal-normal"
-                                     style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
-                                    {{ site.text }}
-                                </div>
-                            </div>
-                        </router-link>
-                        <a class="d-flex align-items-center n-card" target="_blank" v-else :href="site.href">
-                            <div>
-                                <v-img max-width="38.5" :src="icons[site.icon]"/>
-                            </div>
-
-                            <div style="margin-left: 18.67px;">
-                                <div class="font-roboto-normal-500"
-                                     style="color: #343A40; font-size: 14px; line-height: 1.2;">
-                                    {{ site.title }}
-                                </div>
-
-                                <div class="font-roboto-normal-normal"
-                                     style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
-                                    {{ site.text }}
-                                </div>
-                            </div>
-                        </a>
-                    </transition>
-                </v-lazy>
+                <n-card-site :site="site"/>
             </template>
-        </div>
+        </n-cards>
     </n-page>
 </template>
 
 <script>
+import NCardSite from "../../organisms/NCardSite";
+import NCards from "../../atoms/NCards";
 import NPage from "../../templates/NPage";
-import {vector23} from "../../../../assets/vectors";
 import {ApiMixin, HelpersMixin} from "../../../mixins";
 
 export default {
-    components: {NPage},
+    components: {NCardSite, NCards, NPage},
     data: () => ({
         breadcrumbs: [
             {text: 'Управление имуществом', disabled: false, href: '/'},
             {text: 'Панель администратора', disabled: true}
         ],
-        icons: {vector23},
         sites: [],
         height: Math.max(window.innerHeight, document.documentElement.scrollHeight) - 164
     }),
@@ -81,9 +43,6 @@ export default {
         async getItems() {
             this.loading = true;
             this.sites = await this.getAdminPanelSites();
-            this.sites.forEach(((site) => {
-                site.isActive = false;
-            }));
             setTimeout(() => {
                 this.loading = false;
             }, 300)

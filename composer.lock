@@ -2524,16 +2524,16 @@
         },
         {
             "name": "nuwave/lighthouse",
-            "version": "v5.35.1",
+            "version": "v5.35.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "dd907bd18f87d11fec7f5b1de935722f50841be5"
+                "reference": "06d7398b63ad49f4d33b0322b088df219881d4b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/dd907bd18f87d11fec7f5b1de935722f50841be5",
-                "reference": "dd907bd18f87d11fec7f5b1de935722f50841be5",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/06d7398b63ad49f4d33b0322b088df219881d4b0",
+                "reference": "06d7398b63ad49f4d33b0322b088df219881d4b0",
                 "shasum": ""
             },
             "require": {
@@ -2550,7 +2550,7 @@
                 "illuminate/validation": "5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8",
                 "laragraph/utils": "^1",
                 "php": ">= 7.2",
-                "thecodingmachine/safe": "^1 || ^2",
+                "thecodingmachine/safe": "^1",
                 "webonyx/graphql-php": "^14.7"
             },
             "require-dev": {
@@ -2573,8 +2573,7 @@
                 "predis/predis": "^1.1",
                 "pusher/pusher-php-server": "^4 || ^5",
                 "rector/rector": "^0.12",
-                "thecodingmachine/phpstan-safe-rule": "^1",
-                "vimeo/psalm": "^4.7"
+                "thecodingmachine/phpstan-safe-rule": "^1"
             },
             "suggest": {
                 "bensampo/laravel-enum": "Convenient enum definitions that can easily be registered in your Schema",
@@ -2651,7 +2650,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-12T09:29:56+00:00"
+            "time": "2022-01-13T11:07:40+00:00"
         },
         {
             "name": "opis/closure",
@@ -10398,5 +10397,5 @@
         "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

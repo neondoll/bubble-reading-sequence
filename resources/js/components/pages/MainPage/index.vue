@@ -216,11 +216,6 @@ export default {
         async getItems() {
             this.loading = true;
             this.siteGroups = await this.getSiteGroups();
-            this.siteGroups.forEach(((siteGroup) => {
-                siteGroup.sites.forEach(((site) => {
-                    site.isActive = false;
-                }));
-            }))
             this.siteGroupsFiltered = this.siteGroups;
             setTimeout(() => {
                 this.loading = false;

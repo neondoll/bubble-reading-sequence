@@ -43,7 +43,7 @@
 <script>
 import {
     vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10, vector11, vector12,
-    vector13, vector14, vector15, vector16, vector17, vector18, vector19
+    vector13, vector14, vector15, vector16, vector17, vector18, vector19, vector20, vector21, vector22, vector23
 } from "../../../../assets/vectors";
 
 export default {
@@ -59,7 +59,8 @@ export default {
     data: () => ({
         icons: {
             vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10, vector11,
-            vector12, vector13, vector14, vector15, vector16, vector17, vector18, vector19
+            vector12, vector13, vector14, vector15, vector16, vector17, vector18, vector19, vector20, vector21,
+            vector22, vector23
         },
     }),
     name: "NCardSite",
