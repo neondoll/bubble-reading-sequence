@@ -2524,16 +2524,16 @@
         },
         {
             "name": "nuwave/lighthouse",
-            "version": "v5.35.2",
+            "version": "v5.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "06d7398b63ad49f4d33b0322b088df219881d4b0"
+                "reference": "9eee69c10da63d57a703d1d651db475824002bed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/06d7398b63ad49f4d33b0322b088df219881d4b0",
-                "reference": "06d7398b63ad49f4d33b0322b088df219881d4b0",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/9eee69c10da63d57a703d1d651db475824002bed",
+                "reference": "9eee69c10da63d57a703d1d651db475824002bed",
                 "shasum": ""
             },
             "require": {
@@ -2550,7 +2550,7 @@
                 "illuminate/validation": "5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8",
                 "laragraph/utils": "^1",
                 "php": ">= 7.2",
-                "thecodingmachine/safe": "^1",
+                "thecodingmachine/safe": "^1 || ^2",
                 "webonyx/graphql-php": "^14.7"
             },
             "require-dev": {
@@ -2650,7 +2650,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-13T11:07:40+00:00"
+            "time": "2022-01-13T12:54:37+00:00"
         },
         {
             "name": "opis/closure",
