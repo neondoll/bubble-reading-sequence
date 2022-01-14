@@ -15,23 +15,24 @@ use Illuminate\Support\Carbon;
 /**
  * App\Models\SiteGroup
  *
+ * @method static QueryBuilder|SiteGroup onlyTrashed()
  * @method static EloquentBuilder|SiteGroup newModelQuery()
  * @method static EloquentBuilder|SiteGroup newQuery()
  * @method static EloquentBuilder|SiteGroup query()
+ * @method static updateOrCreate(array $array, array $array1)
  * @method static EloquentBuilder|SiteGroup whereCreatedAt($value)
  * @method static EloquentBuilder|SiteGroup whereDeletedAt($value)
  * @method static EloquentBuilder|SiteGroup whereId($value)
  * @method static EloquentBuilder|SiteGroup whereTitle($value)
  * @method static EloquentBuilder|SiteGroup whereUpdatedAt($value)
- * @method static QueryBuilder|SiteGroup onlyTrashed()
  * @method static QueryBuilder|SiteGroup withTrashed()
  * @method static QueryBuilder|SiteGroup withoutTrashed()
  * @mixin Eloquent
+ * @property Carbon|null $created_at
+ * @property string|null $deleted_at
  * @property int $id
  * @property string $title
- * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property string|null $deleted_at
  * @property-read Collection|Site[] $sites
  * @property-read int|null $sites_count
  */
