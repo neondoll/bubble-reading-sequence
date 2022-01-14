@@ -306,13 +306,36 @@ class generateSites extends Command
         }
 
         $siteGroups = [
-            ['id' => 1, 'sites_id' => [1, 2, 3, 4, 5, 6, 7], 'title' => 'Имущество подведомственных организаций'],
-            ['id' => 2, 'sites_id' => [8, 9, 10, 11, 12], 'title' => 'Имущество Минобрнауки России'],
-            ['id' => 3, 'sites_id' => [13, 14, 15, 16, 17, 18, 19, 20, 21], 'title' => 'Модули взаимодействия'],
-            ['id' => 4, 'sites_id' => [22, 23, 24, 25], 'title' => 'Служебные модули']
+            [
+                'id' => 1,
+                'sites_id' => [1, 2, 3, 4, 5, 6, 7],
+                'statistics_page' => 'propertyOrganizationsStatistics',
+                'title' => 'Имущество подведомственных организаций'
+            ],
+            [
+                'id' => 2,
+                'sites_id' => [8, 9, 10, 11, 12],
+                'statistics_page' => 'propertyMinistryStatistics',
+                'title' => 'Имущество Минобрнауки России'
+            ],
+            [
+                'id' => 3,
+                'sites_id' => [13, 14, 15, 16, 17, 18, 19, 20, 21],
+                'statistics_page' => 'interactionModulesStatistics',
+                'title' => 'Модули взаимодействия'
+            ],
+            [
+                'id' => 4,
+                'sites_id' => [22, 23, 24, 25],
+                'statistics_page' => 'serviceModulesStatistics',
+                'title' => 'Служебные модули'
+            ]
         ];
         foreach ($siteGroups as $siteGroup) {
-            $updateSiteGroup = SiteGroup::updateOrCreate(['id' => $siteGroup['id']], ['title' => $siteGroup['title']]);
+            $updateSiteGroup = SiteGroup::updateOrCreate(['id' => $siteGroup['id']], [
+                'statistics_page' => $siteGroup['statistics_page'],
+                'title' => $siteGroup['title']
+            ]);
             $updateSiteGroup->sites()->detach(Site::withoutTrashed()->get());
             $updateSiteGroup->sites()->attach(Site::find($siteGroup['sites_id']));
             $this->info(
