@@ -2,7 +2,7 @@
     <n-page :breadcrumbs="breadcrumbs" :style="`height: ${height}px;`">
         <div class="d-flex justify-content-between" style="margin-top: 34px;">
             <div>
-                <div class="n-title">Панель администратора</div>
+                <div class="n-title">Сводная статистика</div>
             </div>
 
             <v-btn color="#007BFF" elevation="0" text @click="toRouteByName('main')">
@@ -15,48 +15,33 @@
             </v-btn>
         </div>
 
-        <n-cards>
-            <template v-for="site in sites">
-                <n-card-site :site="site"/>
-            </template>
-        </n-cards>
+        <v-alert class="font-roboto-normal-normal mt-5" style="font-size: 16px; line-height: 24px;" type="info">
+            Раздел находится в разработке
+        </v-alert>
     </n-page>
 </template>
 
 <script>
-import NCardSite from "../../organisms/NCardSite";
-import NCards from "../../atoms/NCards";
 import NPage from "../../templates/NPage";
 import {ApiMixin, HelpersMixin} from "../../../mixins";
 
 export default {
-    components: {NCardSite, NCards, NPage},
+    components: {NPage},
     data: () => ({
         breadcrumbs: [
             {text: 'Управление имуществом', disabled: false, href: '/'},
-            {text: 'Панель администратора', disabled: true}
+            {text: 'Сводная статистика', disabled: true}
         ],
-        sites: [],
         height: Math.max(window.innerHeight, document.documentElement.scrollHeight) - 164
     }),
-    methods: {
-        async getItems() {
-            this.loading = true;
-            this.sites = await this.getAdminPanelSites();
-            setTimeout(() => {
-                this.loading = false;
-            }, 300)
-        }
-    },
     mixins: [ApiMixin, HelpersMixin],
     async mounted() {
         window.scrollTo(0, 0);
-        await this.getItems();
     },
-    name: "AdminPanel"
+    name: "SummaryStatistics"
 }
 </script>
 
 <style lang="scss" scoped>
-@import "AdminPanel.scss";
+@import "SummaryStatistics.scss";
 </style>
