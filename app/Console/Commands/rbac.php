@@ -66,10 +66,14 @@ class rbac extends Command
             'description' => 'main',
             'display_name' => 'main',
         ]);
+        $summaryStatistics = Permission::updateOrCreate(['name' => 'summary-statistics'], [
+            'description' => 'summary-statistics',
+            'display_name' => 'summary-statistics',
+        ]);
 
-        $admin->syncPermissions([$adminPanel, $generatorReports, $main]);
-        $mon->syncPermissions([$adminPanel, $generatorReports, $main]);
-        $user->syncPermissions([$generatorReports, $main]);
+        $admin->syncPermissions([$adminPanel, $generatorReports, $main, $summaryStatistics]);
+        $mon->syncPermissions([$adminPanel, $generatorReports, $main, $summaryStatistics]);
+        $user->syncPermissions([$generatorReports, $main, $summaryStatistics]);
 
         $userModel = User::whereEmail('admin@admin.ru')->first();
         $userModel->syncRoles([$admin->id]);

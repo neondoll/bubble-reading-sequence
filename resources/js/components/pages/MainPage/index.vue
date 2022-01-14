@@ -7,7 +7,7 @@
                 <div class="n-subtitle" style="margin-top: 5px;">Департамент управления имуществом</div>
             </div>
 
-            <v-btn color="#007BFF" elevation="0" outlined>
+            <v-btn color="#007BFF" elevation="0" outlined @click="toRouteByName('summaryStatistics')">
                 <span class="font-roboto-normal-normal"
                       style="font-size: 16px; letter-spacing: 0; line-height: 1.2; text-transform: none;">
                     Сводная статистика
@@ -17,7 +17,7 @@
             </v-btn>
         </div>
 
-        <div class="d-flex justify-content-end">
+        <!--<div class="d-flex justify-content-end">
             <div>
                 <v-switch class="mt-0 pt-0" dense inset v-model="switchCCO">
                     <template v-slot:label>
@@ -28,42 +28,52 @@
                     </template>
                 </v-switch>
             </div>
-        </div>
+        </div>-->
 
-        <div class="d-flex justify-content-center align-items-center"
-             style="background-color: #e2f7df; border-radius: 4px; height: 50vh; width: 100%;" v-if="loadingMap">
-            <div class="cssload-bell">
-                <div class="cssload-circle">
-                    <div class="cssload-inner"/>
-                </div>
+        <div class="mt-5">
+            <div class="d-flex justify-content-center align-items-center"
+                 style="background-color: #e2f7df; border-radius: 4px; height: 50vh; width: 100%;" v-if="loadingMap">
+                <div class="cssload-bell">
+                    <div class="cssload-circle">
+                        <div class="cssload-inner"/>
+                    </div>
 
-                <div class="cssload-circle">
-                    <div class="cssload-inner"/>
-                </div>
+                    <div class="cssload-circle">
+                        <div class="cssload-inner"/>
+                    </div>
 
-                <div class="cssload-circle">
-                    <div class="cssload-inner"/>
-                </div>
+                    <div class="cssload-circle">
+                        <div class="cssload-inner"/>
+                    </div>
 
-                <div class="cssload-circle">
-                    <div class="cssload-inner"/>
-                </div>
+                    <div class="cssload-circle">
+                        <div class="cssload-inner"/>
+                    </div>
 
-                <div class="cssload-circle">
-                    <div class="cssload-inner"/>
+                    <div class="cssload-circle">
+                        <div class="cssload-inner"/>
+                    </div>
                 </div>
             </div>
+            <n-map v-else :map-objects="realEstates"/>
         </div>
-        <n-map v-else :map-objects="switchCCO ? realEstates : lands"/>
 
         <div class="d-flex justify-content-between" style="margin-top: 31px;">
-            <v-btn color="#6C757D" elevation="0" height="40" outlined
+            <!--<v-btn color="#6C757D" elevation="0" height="40" outlined
                    style="border-radius: 4px 0 0 4px; padding: 0 12px;" tile @click="search">
                  <span class="font-roboto-normal-400"
                        style="font-size: 16px; letter-spacing: 0; line-height: 1.2; text-transform: none;">
                      Поиск
                  </span>
-            </v-btn>
+            </v-btn>-->
+
+            <div class="d-flex justify-content-center align-items-center unselectable"
+                 style="background: #E9ECEF; border: 1px solid #6C757D; border-radius: 4px 0 0 4px; box-sizing: border-box; height: 40px; width: 75px;">
+                <span class="font-roboto-normal-400"
+                      style="font-size: 16px; letter-spacing: 0; line-height: 1.2; text-transform: none;">
+                    Поиск
+                </span>
+            </div>
 
             <v-text-field class="font-roboto-normal-normal" clearable dense outlined
                           placeholder="Введите наименование раздела или модуля"
@@ -107,45 +117,6 @@
 
             <n-cards>
                 <template v-for="site in siteGroup.sites">
-                    <!--<v-lazy transition="fade-transition" v-model="site.isActive" :options="{threshold: .5}">
-                        <transition name="bounce">
-                            <router-link class="d-flex align-items-center n-card"
-                                         v-if="site.href_in_project && site.href" :to="{path: site.href}">
-                                <div>
-                                    <v-img max-width="38.5" :src="icons[site.icon]"/>
-                                </div>
-
-                                <div style="margin-left: 18.67px;">
-                                    <div class="font-roboto-normal-500"
-                                         style="color: #343A40; font-size: 14px; line-height: 1.2;">
-                                        {{ site.title }}
-                                    </div>
-
-                                    <div class="font-roboto-normal-normal"
-                                         style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
-                                        {{ site.text }}
-                                    </div>
-                                </div>
-                            </router-link>
-                            <a class="d-flex align-items-center n-card" target="_blank" v-else :href="site.href">
-                                <div>
-                                    <v-img max-width="38.5" :src="icons[site.icon]"/>
-                                </div>
-
-                                <div style="margin-left: 18.67px;">
-                                    <div class="font-roboto-normal-500"
-                                         style="color: #343A40; font-size: 14px; line-height: 1.2;">
-                                        {{ site.title }}
-                                    </div>
-
-                                    <div class="font-roboto-normal-normal"
-                                         style="color: #6C757D; font-size: 9px; line-height: 1.2; margin-top: 5px;">
-                                        {{ site.text }}
-                                    </div>
-                                </div>
-                            </a>
-                        </transition>
-                    </v-lazy>-->
                     <n-card-site :site="site"/>
                 </template>
             </n-cards>
@@ -168,6 +139,11 @@ import {
 
 export default {
     components: {NCardSite, NCards, NMap, NPage},
+    computed: {
+        siteGroupsFiltered() {
+            return this.filter();
+        }
+    },
     data: () => ({
         breadcrumbs: [{text: 'Управление имуществом', disabled: true}],
         filters: {text: null},
@@ -180,12 +156,12 @@ export default {
         loadingMap: true,
         realEstates: [],
         siteGroups: [],
-        siteGroupsFiltered: [],
+        //siteGroupsFiltered: [],
         switchCCO: true
     }),
     methods: {
         filter() {
-            if (this.filters.text) {
+            if (this.filters.text && this.filters.text.length > 2) {
                 let sgf = [];
                 this.siteGroups.forEach(((siteGroup) => {
                     if (siteGroup.title.toLowerCase().includes(this.filters.text.toLowerCase())) {
