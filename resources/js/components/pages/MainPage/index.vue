@@ -81,9 +81,15 @@
                           v-model="filters.text"/>
 
             <v-btn color="#6C757D" elevation="0" height="40" outlined
-                   style="border-radius: 0 4px 4px 0; padding: 0 12px;" tile>
+                   style="border-radius: 0 4px 4px 0; padding: 0 12px;" tile @click="filterCollapse = !filterCollapse">
                 <v-img max-width="24" :src="icons.sliders"/>
             </v-btn>
+        </div>
+
+        <div
+            style="border: 1px solid black; border-radius: 4px; height: 200px;transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94); overflow: hidden; box-sizing: border-box;"
+            v-if="filterCollapse">
+
         </div>
 
         <div v-for="(siteGroup, i) in siteGroupsFiltered" :key="`siteGroup-${i}`">
@@ -145,6 +151,7 @@ export default {
     data: () => ({
         breadcrumbs: [{text: 'Управление имуществом', disabled: true}],
         filters: {text: null},
+        filterCollapse: false,
         icons: {radar, sliders},
         id_orgs: [],
         lands: [],
