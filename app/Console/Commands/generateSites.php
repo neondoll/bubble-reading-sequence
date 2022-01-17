@@ -336,8 +336,7 @@ class generateSites extends Command
                 'statistics_page' => $siteGroup['statistics_page'],
                 'title' => $siteGroup['title']
             ]);
-            $updateSiteGroup->sites()->detach(Site::withoutTrashed()->get());
-            $updateSiteGroup->sites()->attach(Site::find($siteGroup['sites_id']));
+            $updateSiteGroup->sites()->sync($siteGroup['sites_id']);
             $this->info(
                 "site_groups($updateSiteGroup->id): $updateSiteGroup->title - " .
                 ($updateSiteGroup->updated_at > $updateSiteGroup->created_at ? "update" : "create")

@@ -14,6 +14,7 @@ use Laratrust\Models\LaratrustPermission;
  * @method static Builder|Permission newModelQuery()
  * @method static Builder|Permission newQuery()
  * @method static Builder|Permission query()
+ * @method static updateOrCreate(array $attributes, array $values)
  * @method static Builder|Permission whereCreatedAt($value)
  * @method static Builder|Permission whereDescription($value)
  * @method static Builder|Permission whereDisplayName($value)

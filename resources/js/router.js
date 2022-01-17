@@ -43,14 +43,6 @@ let router = new VueRouter({
     routes: [
         {
             beforeEnter: async (to, from, next) => {
-                await checkPermission(to, next, 'main')
-            },
-            component: () => import('./components/pages/MainPage'),
-            name: 'main',
-            path: '/'
-        },
-        {
-            beforeEnter: async (to, from, next) => {
                 await checkPermission(to, next, 'admin-panel')
             },
             component: () => import('./components/pages/AdminPanel'),
@@ -66,6 +58,14 @@ let router = new VueRouter({
             path: '/generator-reports'
         },
         {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'interaction-modules-statistics')
+            },
+            component: () => import('./components/pages/InteractionModulesStatistics'),
+            name: 'interactionModulesStatistics',
+            path: '/interaction-modules-statistics'
+        },
+        {
             component: () => import('./components/pages/Login'),
             name: 'login',
             path: '/login'
@@ -75,7 +75,32 @@ let router = new VueRouter({
                 await checkPermission(to, next, 'main')
             },
             component: () => import('./components/pages/MainPage'),
-            path: '/main'
+            name: 'main',
+            path: '/'
+        },
+        {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'property-ministry-statistics')
+            },
+            component: () => import('./components/pages/PropertyMinistryStatistics'),
+            name: 'propertyMinistryStatistics',
+            path: '/property-ministry-statistics'
+        },
+        {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'property-organizations-statistics')
+            },
+            component: () => import('./components/pages/PropertyOrganizationsStatistics'),
+            name: 'propertyOrganizationsStatistics',
+            path: '/property-organizations-statistics'
+        },
+        {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'service-modules-statistics')
+            },
+            component: () => import('./components/pages/ServiceModulesStatistics'),
+            name: 'serviceModulesStatistics',
+            path: '/service-modules-statistics'
         },
         {
             beforeEnter: async (to, from, next) => {

@@ -17,6 +17,7 @@ use Illuminate\Support\Carbon;
  * @method static EloquentBuilder|RealEstate newModelQuery()
  * @method static EloquentBuilder|RealEstate newQuery()
  * @method static EloquentBuilder|RealEstate query()
+ * @method static updateOrCreate(array $attributes, array $values)
  * @method static EloquentBuilder|RealEstate whereAddress($value)
  * @method static EloquentBuilder|RealEstate whereCadastralNumber($value)
  * @method static EloquentBuilder|RealEstate whereCreatedAt($value)

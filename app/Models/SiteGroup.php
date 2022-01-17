@@ -19,7 +19,7 @@ use Illuminate\Support\Carbon;
  * @method static EloquentBuilder|SiteGroup newModelQuery()
  * @method static EloquentBuilder|SiteGroup newQuery()
  * @method static EloquentBuilder|SiteGroup query()
- * @method static updateOrCreate(array $array, array $array1)
+ * @method static updateOrCreate(array $attributes, array $values)
  * @method static EloquentBuilder|SiteGroup whereCreatedAt($value)
  * @method static EloquentBuilder|SiteGroup whereDeletedAt($value)
  * @method static EloquentBuilder|SiteGroup whereId($value)

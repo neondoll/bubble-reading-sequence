@@ -20,7 +20,7 @@ use Illuminate\Support\Carbon;
  * @method static EloquentBuilder|Site newModelQuery()
  * @method static EloquentBuilder|Site newQuery()
  * @method static EloquentBuilder|Site query()
- * @method static updateOrCreate(array $array, array $array1)
+ * @method static updateOrCreate(array $attributes, array $values)
  * @method static EloquentBuilder|Site whereCreatedAt($value)
  * @method static EloquentBuilder|Site whereDeletedAt($value)
  * @method static EloquentBuilder|Site whereHref($value)

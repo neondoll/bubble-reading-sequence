@@ -50,7 +50,6 @@ class generateEstates extends Command
                 ]
             ])
         );
-
         $organizations = $data["data"]["organizationList"];
 
         $this->info("-------- Синхронизация земельных участков и недвижимого имущества --------");
@@ -107,9 +106,7 @@ class generateEstates extends Command
                     }
                 }
 
-                foreach (
-                    Land::where('id_org', $organization['id'])->whereNotIn('id', $api_id_lands)->get() as $deleteLand
-                ) {
+                foreach (Land::whereIdOrg($organization['id'])->whereNotIn('id', $api_id_lands)->get() as $deleteLand) {
                     if (!$deleteLand->trashed()) {
                         $deleteLand->delete();
                         $this->info("lands(id: $deleteLand->id, id_org: $deleteLand->id_org) - delete");
@@ -120,7 +117,7 @@ class generateEstates extends Command
 
                 foreach ($data["data"]["realEstates"] as $realEstate) {
                     if ((int)$realEstate['system_status'] == 1) {
-                        $land = Land::find($realEstate['id_land']);
+                        $land = Land::whereId($realEstate['id_land'])->get();
 
                         $updateRealEstate = RealEstate::updateOrCreate(['id' => $realEstate['id']], [
                             'address' => $realEstate['objectEgrnAddress'],
@@ -146,8 +143,7 @@ class generateEstates extends Command
                 }
 
                 foreach (
-                    RealEstate::where('id_org', $organization['id'])->whereNotIn('id', $api_id_realEstates)->get(
-                    ) as $deleteRealEstate
+                    RealEstate::whereIdOrg($organization['id'])->whereNotIn('id', $api_id_realEstates)->get() as $deleteRealEstate
                 ) {
                     if (!$deleteRealEstate->trashed()) {
                         $deleteRealEstate->delete();

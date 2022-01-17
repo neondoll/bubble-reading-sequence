@@ -62,18 +62,43 @@ class rbac extends Command
             'description' => 'generator-reports',
             'display_name' => 'generator-reports'
         ]);
+        $interactionModulesStatistics = Permission::updateOrCreate(['name' => 'interaction-modules-statistics'], [
+            'description' => 'interaction-modules-statistics',
+            'display_name' => 'interaction-modules-statistics'
+        ]);
         $main = Permission::updateOrCreate(['name' => 'main'], [
             'description' => 'main',
-            'display_name' => 'main',
+            'display_name' => 'main'
+        ]);
+        $propertyMinistryStatistics = Permission::updateOrCreate(['name' => 'property-ministry-statistics'], [
+            'description' => 'property-ministry-statistics',
+            'display_name' => 'property-ministry-statistics'
+        ]);
+        $propertyOrganizationsStatistics = Permission::updateOrCreate(['name' => 'property-organizations-statistics'], [
+            'description' => 'property-organizations-statistics',
+            'display_name' => 'property-organizations-statistics'
+        ]);
+        $serviceModulesStatistics = Permission::updateOrCreate(['name' => 'service-modules-statistics'], [
+            'description' => 'service-modules-statistics',
+            'display_name' => 'service-modules-statistics'
         ]);
         $summaryStatistics = Permission::updateOrCreate(['name' => 'summary-statistics'], [
             'description' => 'summary-statistics',
-            'display_name' => 'summary-statistics',
+            'display_name' => 'summary-statistics'
         ]);
 
-        $admin->syncPermissions([$adminPanel, $generatorReports, $main, $summaryStatistics]);
-        $mon->syncPermissions([$adminPanel, $generatorReports, $main, $summaryStatistics]);
-        $user->syncPermissions([$generatorReports, $main, $summaryStatistics]);
+        $mainPermissions = [
+            $generatorReports,
+            $interactionModulesStatistics,
+            $main,
+            $propertyMinistryStatistics,
+            $propertyOrganizationsStatistics,
+            $serviceModulesStatistics,
+            $summaryStatistics
+        ];
+        $admin->syncPermissions(array_merge([$adminPanel], $mainPermissions));
+        $mon->syncPermissions($mainPermissions);
+        $user->syncPermissions($mainPermissions);
 
         $userModel = User::whereEmail('admin@admin.ru')->first();
         $userModel->syncRoles([$admin->id]);
