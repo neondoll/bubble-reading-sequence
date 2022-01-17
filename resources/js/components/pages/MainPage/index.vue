@@ -117,7 +117,9 @@
 
             <n-cards>
                 <template v-for="site in siteGroup.sites">
-                    <n-card-site :site="site"/>
+                    <n-card-site
+                        v-if="['generator-reports', 'admin-panel'].indexOf(site.href) === -1 || checkPermission(site.href)"
+                        :site="site"/>
                 </template>
             </n-cards>
         </div>
@@ -154,6 +156,9 @@ export default {
         switchCCO: true
     }),
     methods: {
+        checkPermission(permission) {
+            return this.$authData.permissions.find(item => item.name === permission)
+        },
         filter() {
             if (this.filters.text && this.filters.text.length > 2) {
                 let sgf = [];
@@ -186,14 +191,14 @@ export default {
         async getItems() {
             this.loading = true;
             this.siteGroups = await this.getSiteGroups();
-            this.siteGroupsFiltered = this.siteGroups;
+            //this.siteGroupsFiltered = this.siteGroups;
             setTimeout(() => {
                 this.loading = false;
             }, 300)
         },
-        search() {
+        /*search() {
             this.siteGroupsFiltered = this.filter();
-        }
+        }*/
     },
     mixins: [ApiMixin, HelpersMixin],
     async mounted() {
