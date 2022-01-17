@@ -81,9 +81,15 @@
                           v-model="filters.text"/>
 
             <v-btn color="#6C757D" elevation="0" height="40" outlined
-                   style="border-radius: 0 4px 4px 0; padding: 0 12px;" tile>
+                   style="border-radius: 0 4px 4px 0; padding: 0 12px;" tile @click="filterCollapse = !filterCollapse">
                 <v-img max-width="24" :src="icons.sliders"/>
             </v-btn>
+        </div>
+
+        <div
+            style="border: 1px solid black; border-radius: 4px; height: 200px;transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94); overflow: hidden; box-sizing: border-box;"
+            v-if="filterCollapse">
+
         </div>
 
         <div v-for="(siteGroup, i) in siteGroupsFiltered" :key="`siteGroup-${i}`">
@@ -117,7 +123,9 @@
 
             <n-cards>
                 <template v-for="site in siteGroup.sites">
-                    <n-card-site :site="site"/>
+                    <n-card-site
+                        v-if="['generator-reports', 'admin-panel'].indexOf(site.href) === -1 || checkPermission(site.href)"
+                        :site="site"/>
                 </template>
             </n-cards>
         </div>
@@ -143,6 +151,7 @@ export default {
     data: () => ({
         breadcrumbs: [{text: 'Управление имуществом', disabled: true}],
         filters: {text: null},
+        filterCollapse: false,
         icons: {radar, sliders},
         id_orgs: [],
         lands: [],
@@ -154,6 +163,9 @@ export default {
         switchCCO: true
     }),
     methods: {
+        checkPermission(permission) {
+            return this.$authData.permissions.find(item => item.name === permission)
+        },
         filter() {
             if (this.filters.text && this.filters.text.length > 2) {
                 let sgf = [];
@@ -186,14 +198,14 @@ export default {
         async getItems() {
             this.loading = true;
             this.siteGroups = await this.getSiteGroups();
-            this.siteGroupsFiltered = this.siteGroups;
+            //this.siteGroupsFiltered = this.siteGroups;
             setTimeout(() => {
                 this.loading = false;
             }, 300)
         },
-        search() {
+        /*search() {
             this.siteGroupsFiltered = this.filter();
-        }
+        }*/
     },
     mixins: [ApiMixin, HelpersMixin],
     async mounted() {
