@@ -93,7 +93,7 @@
                     {{ siteGroup.title }}
                 </div>
 
-                <v-btn class="ml-2" color="#007BFF" small text>
+                <v-btn class="ml-2" color="#007BFF" small text @click="toRouteByName(siteGroup.statistics_page)">
                     <span class="font-roboto-normal-normal"
                           style="font-size: 12px; letter-spacing: 0; line-height: 1.2; text-transform: none;">
                         К статистике

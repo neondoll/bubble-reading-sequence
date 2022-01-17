@@ -28,6 +28,7 @@ use Laratrust\Traits\LaratrustUserTrait;
  * @method static EloquentBuilder|User orWherePermissionIs($permission = '')
  * @method static EloquentBuilder|User orWhereRoleIs($role = '', $team = null)
  * @method static EloquentBuilder|User query()
+ * @method static updateOrCreate(array $attributes, array $values)
  * @method static EloquentBuilder|User whereAuthKey($value)
  * @method static EloquentBuilder|User whereCreatedAt($value)
  * @method static EloquentBuilder|User whereDeletedAt($value)

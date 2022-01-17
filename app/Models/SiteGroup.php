@@ -19,10 +19,11 @@ use Illuminate\Support\Carbon;
  * @method static EloquentBuilder|SiteGroup newModelQuery()
  * @method static EloquentBuilder|SiteGroup newQuery()
  * @method static EloquentBuilder|SiteGroup query()
- * @method static updateOrCreate(array $array, array $array1)
+ * @method static updateOrCreate(array $attributes, array $values)
  * @method static EloquentBuilder|SiteGroup whereCreatedAt($value)
  * @method static EloquentBuilder|SiteGroup whereDeletedAt($value)
  * @method static EloquentBuilder|SiteGroup whereId($value)
+ * @method static EloquentBuilder|SiteGroup whereStatisticsPage($value)
  * @method static EloquentBuilder|SiteGroup whereTitle($value)
  * @method static EloquentBuilder|SiteGroup whereUpdatedAt($value)
  * @method static QueryBuilder|SiteGroup withTrashed()
@@ -31,6 +32,7 @@ use Illuminate\Support\Carbon;
  * @property Carbon|null $created_at
  * @property string|null $deleted_at
  * @property int $id
+ * @property string|null $statistics_page
  * @property string $title
  * @property Carbon|null $updated_at
  * @property-read Collection|Site[] $sites
@@ -42,7 +44,7 @@ class SiteGroup extends Model
 
     protected $dates = ['deleted_at'];
 
-    protected $fillable = ['title'];
+    protected $fillable = ['statistics_page', 'title'];
 
     /**
      * @return BelongsToMany

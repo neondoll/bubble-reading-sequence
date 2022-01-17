@@ -51,7 +51,7 @@ export const ApiMixin = {
         async getSiteGroups() {
             return await this.fetch('/graphql', 'siteGroups', [
                 'id', 'title', 'sites{id, title, text, href_in_project, href, icon, need_token, created_at, updated_at, deleted_at}',
-                'created_at', 'updated_at', 'deleted_at'
+                'statistics_page', 'created_at', 'updated_at', 'deleted_at'
             ]);
         }
     }
