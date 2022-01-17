@@ -119,6 +119,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../../sass/app.scss";
+@import "./atoms/NContainer/NContainer.scss";
 
 body {
     overflow: hidden;

@@ -51,7 +51,7 @@ use Illuminate\Support\Carbon;
  */
 class Site extends Model
 {
-    use FindTrashed, HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes;
 
     protected $dates = ['deleted_at'];
 

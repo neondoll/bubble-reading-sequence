@@ -32,8 +32,8 @@ class LoginController extends Controller
     {
         $email = $request->post('email');
         $password = $request->post('password');
+
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
-            //$request->session()->regenerate();
             return response()->json(['success' => true]);
         } else {
             $data = ApiHelper::iasmon(
@@ -73,7 +73,6 @@ class LoginController extends Controller
                             $updateUser->restore();
                         }
                         if (Auth::attempt(['email' => $email, 'password' => $password])) {
-                            $request->session()->regenerate();
                             return response()->json(['success' => true]);
                         }
                     } elseif (!$updateUser->trashed()) {
@@ -82,12 +81,13 @@ class LoginController extends Controller
                 }
             }
         }
-        return response()->json(['success' => false, 'errors' => ['login' => ['Неверные логин или пароль!']]]);
+        return response()->json(['success' => false, 'errors' => ['login' => [['Неверные логин или пароль!']]]]);
     }
 
     public function loginAuthToken(Request $request): RedirectResponse
     {
         $auth_token = $request->route('auth_token');
+
         if ($auth_token != "") {
             $parser = new Parser();
             $token = $parser->parse($auth_token);

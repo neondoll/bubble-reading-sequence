@@ -1,20 +1,5 @@
 <template>
-    <n-page :breadcrumbs="breadcrumbs" :style="`height: ${height}px;`">
-        <div class="d-flex justify-content-between" style="margin-top: 34px;">
-            <div>
-                <div class="n-title">Панель администратора</div>
-            </div>
-
-            <v-btn color="#007BFF" elevation="0" text @click="toRouteByName('main')">
-                <v-icon large left>mdi-chevron-left</v-icon>
-
-                <span class="font-roboto-normal-normal"
-                      style="font-size: 16px; letter-spacing: 2px; line-height: 1.2;">
-                  Назад
-                </span>
-            </v-btn>
-        </div>
-
+    <n-page label="Панель администратора" :breadcrumbs="breadcrumbs" :loading="loading" :style="`height: ${height}px;`">
         <n-cards>
             <template v-for="site in sites">
                 <n-card-site :site="site"/>
@@ -36,8 +21,9 @@ export default {
             {text: 'Управление имуществом', disabled: false, href: '/'},
             {text: 'Панель администратора', disabled: true}
         ],
-        sites: [],
-        height: Math.max(window.innerHeight, document.documentElement.scrollHeight) - 164
+        height: Math.max(window.innerHeight, document.documentElement.scrollHeight) - 164,
+        loading: true,
+        sites: []
     }),
     methods: {
         async getItems() {
@@ -51,12 +37,9 @@ export default {
     mixins: [ApiMixin, HelpersMixin],
     async mounted() {
         window.scrollTo(0, 0);
+        this.loading = true;
         await this.getItems();
     },
     name: "AdminPanel"
 }
 </script>
-
-<style lang="scss" scoped>
-@import "AdminPanel.scss";
-</style>

@@ -5,7 +5,6 @@ namespace App\Console\Commands;
 use App\Models\Site;
 use App\Models\SiteGroup;
 use Illuminate\Console\Command;
-use Symfony\Component\Console\Command\Command as CommandAlias;
 
 class generateSites extends Command
 {
@@ -343,6 +342,6 @@ class generateSites extends Command
             );
         }
 
-        return CommandAlias::SUCCESS;
+        return \Symfony\Component\Console\Command\Command::SUCCESS;
     }
 }

@@ -1,5 +1,5 @@
 <template>
-    <n-page :breadcrumbs="breadcrumbs">
+    <n-page :breadcrumbs="breadcrumbs" :disable-back-btn="true" :loading="loading">
         <div class="d-flex justify-content-between" style="margin-top: 34px;">
             <div>
                 <div class="n-title">Управление имуществом</div>
@@ -132,10 +132,6 @@ import NPage from "../../templates/NPage";
 import radar from "../../../../assets/radar.gif";
 import sliders from "../../../../assets/sliders.svg";
 import {ApiMixin, HelpersMixin} from "../../../mixins";
-import {
-    vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10, vector11, vector12,
-    vector13, vector14, vector15, vector16, vector17, vector18, vector19
-} from "../../../../assets/vectors";
 
 export default {
     components: {NCardSite, NCards, NMap, NPage},
@@ -147,12 +143,10 @@ export default {
     data: () => ({
         breadcrumbs: [{text: 'Управление имуществом', disabled: true}],
         filters: {text: null},
-        icons: {
-            radar, sliders, vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9, vector10,
-            vector11, vector12, vector13, vector14, vector15, vector16, vector17, vector18, vector19
-        },
+        icons: {radar, sliders},
         id_orgs: [],
         lands: [],
+        loading: true,
         loadingMap: true,
         realEstates: [],
         siteGroups: [],

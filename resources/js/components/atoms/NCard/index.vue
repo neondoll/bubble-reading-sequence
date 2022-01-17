@@ -1,15 +1,15 @@
 <template>
-    <div class="n-container">
+    <div class="n-card">
         <slot/>
     </div>
 </template>
 
 <script>
 export default {
-    name: "NContainer"
+    name: "NCard"
 }
 </script>
 
 <style lang="scss" scoped>
-@import "NContainer.scss";
+@import "NCard.scss";
 </style>

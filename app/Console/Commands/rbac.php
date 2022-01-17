@@ -6,7 +6,6 @@ use App\Models\Permission;
 use App\Models\Role;
 use App\Models\User;
 use Illuminate\Console\Command;
-use Symfony\Component\Console\Command\Command as CommandAlias;
 
 class rbac extends Command
 {
@@ -106,6 +105,6 @@ class rbac extends Command
         $userModel = User::whereEmail('user@admin.ru')->first();
         $userModel->syncRoles([$user->id]);
 
-        return CommandAlias::SUCCESS;
+        return \Symfony\Component\Console\Command\Command::SUCCESS;
     }
 }

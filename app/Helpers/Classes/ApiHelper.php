@@ -10,9 +10,7 @@ class ApiHelper
 
     public static function iasmon($query)
     {
-        $http = Http::post("https://api-ias.xn--80apneeq.xn--p1ai/graphql", [
-            'query' => $query
-        ]);
+        $http = Http::post("https://api-ias.xn--80apneeq.xn--p1ai/graphql", ['query' => $query]);
 
         return json_decode($http->body(), true);
     }
