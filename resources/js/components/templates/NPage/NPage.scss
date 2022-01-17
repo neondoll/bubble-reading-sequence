@@ -1,0 +1,9 @@
+@import "../../../../sass/app.scss";
+
+.title {
+    color: #343A40 !important;
+    font-size: 24px !important;
+    letter-spacing: 0.75px !important;
+    line-height: 1.2 !important;
+    @extend .font-roboto-normal-500;
+}

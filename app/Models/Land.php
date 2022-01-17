@@ -45,7 +45,7 @@ use Illuminate\Support\Carbon;
  */
 class Land extends Model
 {
-    use FindTrashed, HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes;
 
     protected $dates = ['deleted_at'];
 

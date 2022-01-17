@@ -1,0 +1,43 @@
+@media (min-width: 575.98px) {
+    .n-cards {
+        max-width: 275px;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .n-cards {
+        max-width: 550px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .n-cards {
+        max-width: 825px;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .n-cards {
+        max-width: 1100px;
+    }
+}
+
+.n-cards {
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    width: 100%;
+
+    & .n-card {
+        transition: 300ms opacity, 300ms transform;
+    }
+
+    &:hover .n-card {
+        opacity: 0.4;
+    }
+
+    &:hover .n-card:hover {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}

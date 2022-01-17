@@ -1,7 +1,7 @@
 <template>
     <v-alert border="bottom" colored-border elevation="2" type="error" v-if="errors">
         <ul class="m-0">
-            <li v-for="(error,index) in Object.keys(errors)" :key="`li-${index}`">{{ errors[error][0] }}</li>
+            <li v-for="(error, index) in Object.keys(errors)" :key="`li-${index}`">{{ errors[error][0] }}</li>
         </ul>
     </v-alert>
 </template>

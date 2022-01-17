@@ -24,7 +24,13 @@
     </router-link>
     <a class="d-flex align-items-center n-card" target="_blank" v-else :href="href">
         <div>
-            <v-img max-width="38.5" :src="icons[site.icon]"/>
+            <v-img max-width="38.5" :src="icons[site.icon]">
+                <template v-slot:placeholder>
+                    <v-row align="center" class="fill-height ma-0" justify="center">
+                        <v-progress-circular color="grey lighten-5" indeterminate/>
+                    </v-row>
+                </template>
+            </v-img>
         </div>
 
         <div style="margin-left: 18.67px;">
@@ -73,48 +79,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@keyframes bounce-in {
-    0% {
-        transform: scale(0);
-    }
-    50% {
-        transform: scale(1.25);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.bounce-enter-active {
-    animation: bounce-in .5s ease-out both;
-}
-
-.bounce-leave-active {
-    animation: bounce-in .5s reverse ease-in both;
-}
-
-.n-card {
-    background: #F8F9FA;
-    border: 0.2px solid #DFDFDF;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    height: 102px;
-    margin: 12.5px 10px;
-    padding: 12px 15px;
-    text-decoration: none;
-    width: 255px;
-
-    &:-webkit-any-link {
-        cursor: pointer;
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    &:not(:-webkit-any-link) {
-        cursor: default;
-        opacity: 0.4;
-        pointer-events: none;
-    }
-}
+@import "../../atoms/NCard/NCard.scss";
 </style>

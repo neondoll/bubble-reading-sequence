@@ -157,6 +157,6 @@ class generateEstates extends Command
             }
         }
 
-        return 0;
+        return \Symfony\Component\Console\Command\Command::SUCCESS;
     }
 }

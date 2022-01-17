@@ -5,7 +5,6 @@ namespace App\Console\Commands;
 use App\Models\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
-use Symfony\Component\Console\Command\Command as CommandAlias;
 
 class generateUsers extends Command
 {
@@ -49,6 +48,6 @@ class generateUsers extends Command
             'password' => Hash::make('password')
         ]);
 
-        return CommandAlias::SUCCESS;
+        return \Symfony\Component\Console\Command\Command::SUCCESS;
     }
 }
