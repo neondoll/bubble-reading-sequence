@@ -59,7 +59,7 @@
         </div>
 
         <div class="d-flex justify-content-between" style="margin-top: 31px;">
-            <!--<v-btn color="#6C757D" elevation="0" height="40" outlined
+            <!--<v-btn color="#6C757D" elevation="0" height="36" outlined
                    style="border-radius: 4px 0 0 4px; padding: 0 12px;" tile @click="search">
                  <span class="font-roboto-normal-400"
                        style="font-size: 16px; letter-spacing: 0; line-height: 1.2; text-transform: none;">
@@ -68,29 +68,27 @@
             </v-btn>-->
 
             <div class="d-flex justify-content-center align-items-center unselectable"
-                 style="background: #E9ECEF; border: 1px solid #6C757D; border-radius: 4px 0 0 4px; box-sizing: border-box; height: 40px; width: 75px;">
+                 style="background: #E9ECEF; border: 1px solid #6C757D; border-radius: 4px 0 0 4px; box-sizing: border-box; height: 36px; width: 75px;">
                 <span class="font-roboto-normal-400"
                       style="font-size: 16px; letter-spacing: 0; line-height: 1.2; text-transform: none;">
                     Поиск
                 </span>
             </div>
 
-            <v-text-field class="font-roboto-normal-normal" clearable dense outlined
-                          placeholder="Введите наименование раздела или модуля"
-                          style="border-radius: 0; font-size: 16px; line-height: 1.2;" type="text"
-                          v-model="filters.text"/>
+            <input class="font-roboto-normal-normal n-input" placeholder="Введите наименование раздела или модуля"
+                   type="text" v-model="filters.text">
 
-            <v-btn color="#6C757D" elevation="0" height="40" outlined
+            <v-btn color="#6C757D" elevation="0" height="36" outlined
                    style="border-radius: 0 4px 4px 0; padding: 0 12px;" tile @click="filterCollapse = !filterCollapse">
                 <v-img max-width="24" :src="icons.sliders"/>
             </v-btn>
         </div>
 
-        <div
-            style="border: 1px solid black; border-radius: 4px; height: 200px;transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94); overflow: hidden; box-sizing: border-box;"
-            v-if="filterCollapse">
-
-        </div>
+        <n-collapse class="mt-2" v-model="filterCollapse">
+            <v-alert class="font-roboto-normal-normal" style="font-size: 16px; line-height: 24px;" type="info">
+                Раздел находится в разработке
+            </v-alert>
+        </n-collapse>
 
         <div v-for="(siteGroup, i) in siteGroupsFiltered" :key="`siteGroup-${i}`">
             <div class="d-flex align-items-center" style="margin-top: 25px;">
@@ -135,6 +133,7 @@
 <script>
 import NCardSite from "../../organisms/NCardSite";
 import NCards from "../../atoms/NCards";
+import NCollapse from "../../atoms/NCollapse";
 import NMap from "../../organisms/NMap";
 import NPage from "../../templates/NPage";
 import radar from "../../../../assets/radar.gif";
@@ -142,7 +141,7 @@ import sliders from "../../../../assets/sliders.svg";
 import {ApiMixin, HelpersMixin} from "../../../mixins";
 
 export default {
-    components: {NCardSite, NCards, NMap, NPage},
+    components: {NCardSite, NCards, NCollapse, NMap, NPage},
     computed: {
         siteGroupsFiltered() {
             return this.filter();
