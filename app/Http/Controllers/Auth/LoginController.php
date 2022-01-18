@@ -39,7 +39,7 @@ class LoginController extends Controller
             $data = ApiHelper::iasmon(
                 ArrayHelper::toString([
                     "query" => [
-                        "user(login: \"$email\")" => [
+                        "user(login: \"$email\", status : 1)" => [
                             "access",
                             "id",
                             "login",
@@ -68,15 +68,11 @@ class LoginController extends Controller
                             }
                         )->id
                     ]);
-                    if ((int)$user['status'] == 1) {
-                        if ($updateUser->trashed()) {
-                            $updateUser->restore();
-                        }
-                        if (Auth::attempt(['email' => $email, 'password' => $password])) {
-                            return response()->json(['success' => true]);
-                        }
-                    } elseif (!$updateUser->trashed()) {
-                        $updateUser->delete();
+                    if ($updateUser->trashed()) {
+                        $updateUser->restore();
+                    }
+                    if (Auth::attempt(['email' => $email, 'password' => $password])) {
+                        return response()->json(['success' => true]);
                     }
                 }
             }
@@ -96,7 +92,7 @@ class LoginController extends Controller
             $data = ApiHelper::iasmon(
                 ArrayHelper::toString([
                     "query" => [
-                        "user(login: \"$login\")" => [
+                        "user(login: \"$login\", status : 1)" => [
                             "access",
                             "id",
                             "login",
@@ -126,16 +122,12 @@ class LoginController extends Controller
                             }
                         )->id
                     ]);
-                    if ((int)$user['status'] == 1) {
-                        if ($updateUser->trashed()) {
-                            $updateUser->restore();
-                        }
-                        if (Auth::attempt(['email' => $login, 'password' => $password])) {
-                            $request->session()->regenerate();
-                            return redirect()->intended();
-                        }
-                    } elseif (!$updateUser->trashed()) {
-                        $updateUser->delete();
+                    if ($updateUser->trashed()) {
+                        $updateUser->restore();
+                    }
+                    if (Auth::attempt(['email' => $login, 'password' => $password])) {
+                        $request->session()->regenerate();
+                        return redirect()->intended();
                     }
                 }
             }
