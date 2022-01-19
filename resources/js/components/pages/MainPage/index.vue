@@ -106,17 +106,16 @@
                     <v-icon right>mdi-chevron-right</v-icon>
                 </v-btn>
 
-                <div class="background-primary d-flex align-items-center ml-auto"
-                     style="border-radius: 39px; padding: 6px 12px;" v-if="i === 0">
-                    <span class="font-roboto-normal-500" style="font-size: 14px; line-height: 1.2;">
-                        Реестр организаций
-                    </span>
+                <n-chip border-radius="39px" class="d-flex align-items-center ml-auto" color="primary"
+                        href="https://иасмон.рф/?option=service_podvedList" line-height="1.2" padding="6px 12px"
+                        target="_blank" v-if="i === 0">
+                    <span class="font-roboto-normal-500">Реестр организаций</span>
 
-                    <div class="background-white font-roboto-normal-bold"
-                         style="border-radius: 2px; font-size: 10px; line-height: 1.2; margin: 0 4px; padding: 4px 3px;">
+                    <n-chip border-radius="2px" class="font-roboto-normal-bold" color="white" font-size="10px"
+                            line-height="1.2" margin="0 4px" padding="4px 3px">
                         {{ id_orgs.length }}
-                    </div>
-                </div>
+                    </n-chip>
+                </n-chip>
             </div>
 
             <n-cards>
@@ -133,6 +132,7 @@
 <script>
 import NCardSite from "../../organisms/NCardSite";
 import NCards from "../../atoms/NCards";
+import NChip from "../../atoms/NChip";
 import NCollapse from "../../atoms/NCollapse";
 import NMap from "../../organisms/NMap";
 import NPage from "../../templates/NPage";
@@ -141,7 +141,7 @@ import sliders from "../../../../assets/sliders.svg";
 import {ApiMixin, HelpersMixin} from "../../../mixins";
 
 export default {
-    components: {NCardSite, NCards, NCollapse, NMap, NPage},
+    components: {NCardSite, NCards, NChip, NCollapse, NMap, NPage},
     computed: {
         siteGroupsFiltered() {
             return this.filter();
