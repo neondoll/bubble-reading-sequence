@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import NPage from "../../templates/NPage";
 import {ApiMixin, HelpersMixin} from "../../../mixins";
+import {NPage} from "../../templates";
 
 export default {
     components: {NPage},

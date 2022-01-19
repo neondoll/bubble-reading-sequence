@@ -20,8 +20,8 @@
 
 <script>
 import {HelpersMixin} from "../../../mixins";
+import {NErrors} from "../../organisms";
 import {mdiEyeOffOutline, mdiEyeOutline} from '@mdi/js'
-import NErrors from "../../organisms/NErrors";
 
 export default {
     components: {NErrors},

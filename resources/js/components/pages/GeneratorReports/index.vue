@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import NCardSite from "../../organisms/NCardSite";
-import NCards from "../../atoms/NCards";
-import NPage from "../../templates/NPage";
 import {ApiMixin, HelpersMixin} from "../../../mixins";
+import {NCardSite} from "../../organisms";
+import {NCards} from "../../atoms";
+import {NPage} from "../../templates";
 
 export default {
     components: {NCardSite, NCards, NPage},
@@ -44,7 +44,3 @@ export default {
     name: "GeneratorReports"
 }
 </script>
-
-<style scoped lang="scss">
-//@import "GeneratorReports.scss";
-</style>
