@@ -130,15 +130,12 @@
 </template>
 
 <script>
-import NCardSite from "../../organisms/NCardSite";
-import NCards from "../../atoms/NCards";
-import NChip from "../../atoms/NChip";
-import NCollapse from "../../atoms/NCollapse";
-import NMap from "../../organisms/NMap";
-import NPage from "../../templates/NPage";
 import radar from "../../../../assets/radar.gif";
 import sliders from "../../../../assets/sliders.svg";
 import {ApiMixin, HelpersMixin} from "../../../mixins";
+import {NCardSite, NMap} from "../../organisms";
+import {NCards, NChip, NCollapse} from "../../atoms";
+import {NPage} from "../../templates";
 
 export default {
     components: {NCardSite, NCards, NChip, NCollapse, NMap, NPage},

@@ -30,11 +30,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-::v-deep a.v-breadcrumbs__item {
-    color: #007BFF !important;
-}
-
-::v-deep div.v-breadcrumbs__item {
-    color: #6C757D !important;
-}
+@import "NBreadcrumbs.scss";
 </style>

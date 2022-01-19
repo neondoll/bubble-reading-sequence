@@ -10,8 +10,10 @@ before_script:
 
 stages:
   - deploy
+  - install
+  - migrate
   - build
-#  - test
+  #- test
   - optimize
   - sync
 
@@ -43,24 +45,12 @@ composer_install:
     changes:
       - composer.json
       - composer.lock
-  stage: deploy
+  stage: install
   script:
     - scp -P $PORT composer.{json,lock} $DEPLOY_USER@$DEST_SERVER:$DEST_PATH
     # Makes the server print the executed commands to stdout.
     # Required for monitoring and debug.
     - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&composer install"
-
-run_migrate:
-  only:
-    refs:
-      - master
-    changes:
-      - database/migrations/*
-  stage: deploy
-  script:
-    - >
-      ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x && /usr/bin/php $DEST_PATH/artisan
-      migrate --force"
 
 npm_install:
   only:
@@ -69,12 +59,24 @@ npm_install:
     changes:
       - package.json
       - package-lock.json
-  stage: build
+  stage: install
 
   script:
     # Makes the server print the executed commands to stdout.
     # Required for monitoring and debug.
     - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&npm install"
+
+run_migrate:
+  only:
+    refs:
+      - master
+    changes:
+      - database/migrations/*
+  stage: migrate
+  script:
+    - >
+      ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x && /usr/bin/php $DEST_PATH/artisan
+      migrate --force"
 
 build_front:
   only:
