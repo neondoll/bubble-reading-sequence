@@ -2,8 +2,8 @@
     <n-page label="Формирование отчетов по имущественному комплексу" :breadcrumbs="breadcrumbs" :loading="loading"
             :style="`height: ${height}px;`">
         <n-cards>
-            <template v-for="site in sites">
-                <n-card-site :site="site"/>
+            <template v-for="(site, i) in sites">
+                <n-card-site :id="`generator-reports-index-site-${i}`" :site="site"/>
             </template>
         </n-cards>
     </n-page>
