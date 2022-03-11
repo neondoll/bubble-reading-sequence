@@ -48,6 +48,8 @@ export default {
             const {data} = await sbm
             if (data.success) {
                 await this.toRouteByName('main')
+            } else {
+                this.errors = data.errors
             }
         }
     },
