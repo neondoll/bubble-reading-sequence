@@ -77,7 +77,7 @@ class LoginController extends Controller
                 }
             }
         }
-        return response()->json(['success' => false, 'errors' => ['login' => [['Неверные логин или пароль!']]]]);
+        return response()->json(['success' => false, 'errors' => ['login' => ['Неверные логин или пароль!']]]);
     }
 
     public function loginAuthToken(Request $request): RedirectResponse
