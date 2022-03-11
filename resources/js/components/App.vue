@@ -16,7 +16,7 @@
                 </span>
             </v-btn>
 
-            <v-btn icon v-if="$isLogged" @click="drawer = !drawer">
+            <v-btn icon id="btnAccount" v-if="$isLogged" @click="drawer = !drawer">
                 <v-img max-width="12" :src="account"/>
             </v-btn>
         </v-app-bar>
@@ -40,7 +40,9 @@
                 <v-list-item>
                     <v-list-item-content>
                         <v-form action="/logout">
-                            <v-btn block class="btn-nav" color="#007BFF" outlined type="submit">Выход</v-btn>
+                            <v-btn block class="btn-nav" color="#007BFF" id="btnLogout" outlined type="submit">
+                                Выход
+                            </v-btn>
                         </v-form>
                     </v-list-item-content>
                 </v-list-item>
