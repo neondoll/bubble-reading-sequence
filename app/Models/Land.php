@@ -17,6 +17,7 @@ use Illuminate\Support\Carbon;
  * @method static EloquentBuilder|Land newModelQuery()
  * @method static EloquentBuilder|Land newQuery()
  * @method static EloquentBuilder|Land query()
+ * @method static updateOrCreate(array $attributes, array $values)
  * @method static EloquentBuilder|Land whereAddress($value)
  * @method static EloquentBuilder|Land whereAssignment($value)
  * @method static EloquentBuilder|Land whereCadastralNumber($value)
@@ -44,7 +45,7 @@ use Illuminate\Support\Carbon;
  */
 class Land extends Model
 {
-    use FindTrashed, HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes;
 
     protected $dates = ['deleted_at'];
 

@@ -16,9 +16,11 @@ use Illuminate\Support\Carbon;
 /**
  * App\Models\Site
  *
+ * @method static QueryBuilder|Site onlyTrashed()
  * @method static EloquentBuilder|Site newModelQuery()
  * @method static EloquentBuilder|Site newQuery()
  * @method static EloquentBuilder|Site query()
+ * @method static updateOrCreate(array $attributes, array $values)
  * @method static EloquentBuilder|Site whereCreatedAt($value)
  * @method static EloquentBuilder|Site whereDeletedAt($value)
  * @method static EloquentBuilder|Site whereHref($value)
@@ -30,7 +32,6 @@ use Illuminate\Support\Carbon;
  * @method static EloquentBuilder|Site whereText($value)
  * @method static EloquentBuilder|Site whereTitle($value)
  * @method static EloquentBuilder|Site whereUpdatedAt($value)
- * @method static QueryBuilder|Site onlyTrashed()
  * @method static QueryBuilder|Site withTrashed()
  * @method static QueryBuilder|Site withoutTrashed()
  * @mixin Eloquent
@@ -50,7 +51,7 @@ use Illuminate\Support\Carbon;
  */
 class Site extends Model
 {
-    use FindTrashed, HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes;
 
     protected $dates = ['deleted_at'];
 

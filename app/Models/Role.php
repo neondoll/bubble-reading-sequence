@@ -14,6 +14,7 @@ use Laratrust\Models\LaratrustRole;
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
  * @method static Builder|Role query()
+ * @method static updateOrCreate(array $attributes, array $values)
  * @method static Builder|Role whereCreatedAt($value)
  * @method static Builder|Role whereDescription($value)
  * @method static Builder|Role whereDisplayName($value)

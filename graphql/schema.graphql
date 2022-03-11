@@ -19,14 +19,6 @@ type Query {
     users: [User] @all
 }
 
-input SiteFilter {
-    text: String
-}
-
-input SiteGroupFilter {
-    text: String
-}
-
 type Land {
     id: ID!
     id_org: Int
@@ -71,6 +63,7 @@ type SiteGroup {
     id: ID!
     title: String
     sites: [Site]
+    statistics_page: String
     created_at: DateTime
     updated_at: DateTime
     deleted_at: DateTime

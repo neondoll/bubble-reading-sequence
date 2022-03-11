@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style scoped>
-/*@import "../../../../sass/app.scss";*/
+<style lang="scss" scoped>
+@import "NContainer.scss";
 </style>

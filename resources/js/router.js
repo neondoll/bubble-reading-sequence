@@ -39,26 +39,78 @@ const checkPermission = async (to, next, permission) => {
 }
 
 let router = new VueRouter({
-    mode: 'history', routes: [{
-        beforeEnter: async (to, from, next) => {
-            await checkPermission(to, next, 'main')
-        }, component: () => import('./components/pages/MainPage'), name: 'main', path: '/'
-    }, {
-        beforeEnter: async (to, from, next) => {
-            await checkPermission(to, next, 'admin-panel')
-        }, component: () => import('./components/pages/AdminPanel'), name: 'adminPanel', path: '/admin-panel'
-    }, {
-        beforeEnter: async (to, from, next) => {
-            await checkPermission(to, next, 'generator-reports')
+    mode: 'history',
+    routes: [
+        {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'admin-panel')
+            },
+            component: () => import('./components/pages/AdminPanel'),
+            name: 'adminPanel',
+            path: '/admin-panel'
         },
-        component: () => import('./components/pages/GeneratorReports'),
-        name: 'generatorReports',
-        path: '/generator-reports'
-    }, {component: () => import('./components/pages/Login'), name: 'login', path: '/login'}, {
-        beforeEnter: async (to, from, next) => {
-            await checkPermission(to, next, 'main')
-        }, component: () => import('./components/pages/MainPage'), path: '/main'
-    },]
+        {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'generator-reports')
+            },
+            component: () => import('./components/pages/GeneratorReports'),
+            name: 'generatorReports',
+            path: '/generator-reports'
+        },
+        {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'interaction-modules-statistics')
+            },
+            component: () => import('./components/pages/InteractionModulesStatistics'),
+            name: 'interactionModulesStatistics',
+            path: '/interaction-modules-statistics'
+        },
+        {
+            component: () => import('./components/pages/Login'),
+            name: 'login',
+            path: '/login'
+        },
+        {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'main')
+            },
+            component: () => import('./components/pages/MainPage'),
+            name: 'main',
+            path: '/'
+        },
+        {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'property-ministry-statistics')
+            },
+            component: () => import('./components/pages/PropertyMinistryStatistics'),
+            name: 'propertyMinistryStatistics',
+            path: '/property-ministry-statistics'
+        },
+        {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'property-organizations-statistics')
+            },
+            component: () => import('./components/pages/PropertyOrganizationsStatistics'),
+            name: 'propertyOrganizationsStatistics',
+            path: '/property-organizations-statistics'
+        },
+        {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'service-modules-statistics')
+            },
+            component: () => import('./components/pages/ServiceModulesStatistics'),
+            name: 'serviceModulesStatistics',
+            path: '/service-modules-statistics'
+        },
+        {
+            beforeEnter: async (to, from, next) => {
+                await checkPermission(to, next, 'summary-statistics')
+            },
+            component: () => import('./components/pages/SummaryStatistics'),
+            name: 'summaryStatistics',
+            path: '/summary-statistics'
+        }
+    ]
 })
 
 router.beforeEach(async (to, from, next) => {
