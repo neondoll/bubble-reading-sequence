@@ -59,21 +59,21 @@
         </div>
 
         <div class="d-flex justify-content-between" style="margin-top: 31px;">
-            <!--<v-btn color="#6C757D" elevation="0" height="36" outlined
+            <v-btn color="#6C757D" elevation="0" height="36" id="btnSearch" outlined
                    style="border-radius: 4px 0 0 4px; padding: 0 12px;" tile @click="search">
                  <span class="font-roboto-normal-400"
                        style="font-size: 16px; letter-spacing: 0; line-height: 1.2; text-transform: none;">
                      Поиск
                  </span>
-            </v-btn>-->
+            </v-btn>
 
-            <div class="d-flex justify-content-center align-items-center unselectable"
+            <!--<div class="d-flex justify-content-center align-items-center unselectable"
                  style="background: #E9ECEF; border: 1px solid #6C757D; border-radius: 4px 0 0 4px; box-sizing: border-box; height: 36px; width: 75px;">
                 <span class="font-roboto-normal-400"
                       style="font-size: 16px; letter-spacing: 0; line-height: 1.2; text-transform: none;">
                     Поиск
                 </span>
-            </div>
+            </div>-->
 
             <input class="font-roboto-normal-normal n-input" placeholder="Введите наименование раздела или модуля"
                    type="text" v-model="filters.text">
@@ -139,11 +139,11 @@ import {NPage} from "../../templates";
 
 export default {
     components: {NCardSite, NCards, NChip, NCollapse, NMap, NPage},
-    computed: {
+    /*computed: {
         siteGroupsFiltered() {
             return this.filter();
         }
-    },
+    },*/
     data: () => ({
         breadcrumbs: [{text: 'Управление имуществом', disabled: true}],
         filters: {text: null},
@@ -155,7 +155,7 @@ export default {
         loadingMap: true,
         realEstates: [],
         siteGroups: [],
-        //siteGroupsFiltered: [],
+        siteGroupsFiltered: [],
         switchCCO: true
     }),
     methods: {
@@ -194,14 +194,14 @@ export default {
         async getItems() {
             this.loading = true;
             this.siteGroups = await this.getSiteGroups();
-            //this.siteGroupsFiltered = this.siteGroups;
+            this.siteGroupsFiltered = this.siteGroups;
             setTimeout(() => {
                 this.loading = false;
             }, 300)
         },
-        /*search() {
+        search() {
             this.siteGroupsFiltered = this.filter();
-        }*/
+        }/**/
     },
     mixins: [ApiMixin, HelpersMixin],
     async mounted() {
