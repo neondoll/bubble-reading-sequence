@@ -4,8 +4,10 @@
             <v-container>
                 <v-form v-model="valid" @submit.prevent="submit">
                     <n-errors :errors="errors"/>
-                    <v-text-field autocomplete="on" clearable label="Логин" name="email" v-model="form.email"/>
-                    <v-text-field autocomplete="on" clearable label="Пароль" name="password" v-model="form.password"
+                    <v-text-field autocomplete="on" clearable id="email" label="Логин" name="email"
+                                  v-model="form.email"/>
+                    <v-text-field autocomplete="on" clearable id="password" label="Пароль" name="password"
+                                  v-model="form.password"
                                   :append-icon="showPassword ? icons.mdiEyeOutline : icons.mdiEyeOffOutline"
                                   :type="showPassword ? 'text' :'password'" @click:append="showPasswordClick"/>
 
