@@ -2,7 +2,8 @@
     <v-alert class="p-0" color="#E9ECEF" dense>
         <v-breadcrumbs large :items="params">
             <template v-slot:item="{ item }">
-                <v-breadcrumbs-item :disabled="item.disabled" :href="item.href">
+                <v-breadcrumbs-item :id="`breadcrumbs-item-${params.indexOf(item)}`" :disabled="item.disabled"
+                                    :href="item.href">
                     <span class="font-roboto-normal-normal" style="font-size: 16px; line-height: 1.2;">
                         {{ item.text }}
                     </span>

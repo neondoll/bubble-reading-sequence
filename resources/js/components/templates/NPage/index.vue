@@ -5,7 +5,7 @@
         <div class="d-flex justify-content-between" style="margin-top: 34px;" v-if="label || !disableBackBtn">
             <p class="title" v-if="label">{{ label }}</p>
 
-            <v-btn color="#007BFF" elevation="0" text v-if="!disableBackBtn" @click="$router.back()">
+            <v-btn color="#007BFF" id="btnBack" elevation="0" text v-if="!disableBackBtn" @click="$router.back()">
                 <v-icon large left>mdi-chevron-left</v-icon>
 
                 <span class="font-roboto-normal-normal" style="font-size: 16px; letter-spacing: 2px; line-height: 1.2;">
