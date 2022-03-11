@@ -1,5 +1,5 @@
 <template>
-    <router-link class="d-flex align-items-center n-card" v-if="site.href_in_project && site.href"
+    <router-link class="d-flex align-items-center n-card" v-if="site.href_in_project && site.href" :id="cardSiteId"
                  :to="{path: site.href}">
         <div>
             <v-img max-width="38.5" :src="icons[site.icon]">
@@ -22,7 +22,7 @@
             </div>
         </div>
     </router-link>
-    <a class="d-flex align-items-center n-card" target="_blank" v-else :href="href">
+    <a class="d-flex align-items-center n-card" target="_blank" v-else :href="href" :id="cardSiteId">
         <div>
             <v-img max-width="38.5" :src="icons[site.icon]">
                 <template v-slot:placeholder>
@@ -71,6 +71,10 @@ export default {
     }),
     name: "NCardSite",
     props: {
+        cardSiteId: {
+            default: null,
+            type: String
+        },
         site: {
             type: Object
         }

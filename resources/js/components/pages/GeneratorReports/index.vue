@@ -3,7 +3,7 @@
             :style="`height: ${height}px;`">
         <n-cards>
             <template v-for="(site, i) in sites">
-                <n-card-site :id="`generator-reports-index-site-${i}`" :site="site"/>
+                <n-card-site :card-site-id="`generator-reports-index-site-${i}`" :site="site"/>
             </template>
         </n-cards>
     </n-page>
