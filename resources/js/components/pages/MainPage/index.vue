@@ -75,8 +75,8 @@
                 </span>
             </div>-->
 
-            <input class="font-roboto-normal-normal n-input" placeholder="Введите наименование раздела или модуля"
-                   type="text" v-model="filters.text">
+            <input class="font-roboto-normal-normal n-input" id="filer"
+                   placeholder="Введите наименование раздела или модуля" type="text" v-model="filters.text">
 
             <v-btn color="#6C757D" elevation="0" height="36" outlined
                    style="border-radius: 0 4px 4px 0; padding: 0 12px;" tile @click="filterCollapse = !filterCollapse">
