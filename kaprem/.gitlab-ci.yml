@@ -1,0 +1,160 @@
+variables:
+  PORT: 22
+  DEST_SERVER: "10.11.103.28"
+  DEPLOY_USER: "jenkins28"
+  DEST_PATH: /var/www/html/$CI_PROJECT_NAME
+
+before_script:
+  - eval $(ssh-agent -s)
+  - echo "$SSH_KEY_28"|base64 -d | ssh-add -
+
+stages:
+  #      - build
+  #      - test
+  - deploy
+  - build
+  #  - test
+  - optimize
+  - sync
+
+
+#deploy_job1:
+#  artifacts:
+#      paths:
+#      - build/
+# only:
+# - master
+deploy_files:
+  only:
+    - master
+  stage: deploy
+  variables:
+    INCLUDE: "{public/vendor/,resources/views/vendor}"
+    EXCLUDE: "{vendor/,.env,node_modules/,storage/framework,storage/app/public,storage/logs,public/js/,public/css/,public/images/,public/mix-manifest.json,storage/app/temporary}"
+  script:
+    - echo "$INCLUDE" and "$EXCLUDE"
+    - '[ -f rsync.log ]&& rm rsync.log'
+    - >
+      eval rsync -rl --force --del -e \'ssh -p $PORT\' --include=$INCLUDE  --exclude=$EXCLUDE ./
+      $DEPLOY_USER@$DEST_SERVER:$DEST_PATH --log-file=rsync.log
+
+composer_install:
+  only:
+    refs:
+      - master
+  stage: deploy
+  needs: [ "deploy_files" ]
+  script:
+    - scp -P $PORT composer.{json,lock} $DEPLOY_USER@$DEST_SERVER:$DEST_PATH
+    # Makes the server print the executed commands to stdout.
+    # Required for monitoring and debug.
+    - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&composer install"
+
+run_migrate:
+  only:
+    refs:
+      - master
+    changes:
+      - database/migrations/*
+  stage: deploy
+  needs: [ "deploy_files", "composer_install" ]
+  script:
+    - >
+      ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x && /usr/bin/php $DEST_PATH/artisan
+      migrate --force"
+
+npm_install:
+  only:
+    refs:
+      - master
+  stage: build
+  needs:
+    - deploy_files
+  script:
+    #    - scp -P $PORT package.json $DEPLOY_USER@$DEST_SERVER:$DEST_PATH/tmp
+    #    - scp -P $PORT package-lock.json $DEPLOY_USER@$DEST_SERVER:$DEST_PATH/tmp
+    #    - NPM_FLAG="false"
+    #    - >
+    #      if [ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "cmp /tmp/package.json package.json"]; then
+    #        NPM_FLAG="true"
+    #      fi
+    #    - >
+    #      if [ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "cmp /tmp/package-lock.json package-lock.json"]; then
+    #        NPM_FLAG="true"
+    #      fi
+    #    - >
+    #      if ["$NPN_FLAG" == "true"]; then
+    #        ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&npm install"
+    #      fi
+    - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&npm install"
+    # Makes the server print the executed commands to stdout.
+    # Required for monitoring and debug.
+
+
+build_front:
+  only:
+    refs:
+      - master
+    changes:
+      - resources/js/**/*
+  stage: build
+  needs: [ 'npm_install' ]
+  script:
+    # Makes the server print the executed commands to stdout.
+    # Required for monitoring and debug.
+    - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&npm run prod"
+
+storage_link:
+  only:
+    refs:
+      - master
+  stage: optimize
+  script:
+    - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&php artisan storage:link"
+
+cache_clean:
+  only:
+    refs:
+      - master
+  stage: optimize
+  script:
+    - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&php artisan lighthouse:clear-cache"
+    - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&php artisan optimize"
+
+db_seed:
+  only:
+    refs:
+      - master
+  stage: sync
+  when: manual
+  script:
+    - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&php artisan db:seed"
+
+filling_subsidy:
+  only:
+    refs:
+      - master
+  stage: sync
+  script:
+    - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x && /usr/bin/php $DEST_PATH/artisan filling:subsidy all"
+
+#clear_before_test:
+#  only:
+#    refs:
+#      - master
+#  stage: test
+#  when: on_success
+#  script:
+#    - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&php artisan config:clear"
+#
+#api_test:
+#  only:
+#    refs:
+#      - master
+#  stage: test
+#  when: on_success
+#  script:
+#    - ssh -p$PORT $DEPLOY_USER@$DEST_SERVER "set -x &&cd $DEST_PATH &&php artisan test"
+
+after_script:
+  - ssh-agent -k

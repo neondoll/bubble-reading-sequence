@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.font-inter-normal-400 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.font-inter-normal-700 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.font-inter-normal-800 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.font-montserrat-normal-700 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/*
+@font-face {
+  font-family: "Bellota-Bold";
+  src: url('../fonts/Bellota/Bellota-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Bellota-BoldItalic";
+  src: url('../fonts/Bellota/Bellota-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: "Bellota-Italic";
+  src: url('../fonts/Bellota/Bellota-Italic.ttf');
+}
+
+@font-face {
+  font-family: "Bellota-Light";
+  src: url('../fonts/Bellota/Bellota-Light.ttf');
+}
+
+@font-face {
+  font-family: "Bellota-LightItalic";
+  src: url('../fonts/Bellota/Bellota-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: "Bellota-Regular";
+  src: url('../fonts/Bellota/Bellota-Regular.ttf');
+  font-size: 15px;
+}
+
+$body-font-family: Bellota-Regular;
+*/
+.v-application {
+    .title { // To pin point specific classes of some components;
+        background: linear-gradient(180deg, #8450AD 0%, #3361FF 100%);
+        // font-family: 'Tinos', serif;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.m-title { // To pin point specific classes of some components;
+    background: linear-gradient(180deg, #8450AD 0%, #3361FF 100%);
+    // font-family: 'Tinos', serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+html {
+    overflow-y: auto !important;
+    background: url('../assets/bg-main.svg') no-repeat;
+    background-size: 100%;
+    cursor: auto;
+    //overflow: hidden !important;
+}
+
+
+.theme--light.v-application {
+    background-color: unset !important;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
