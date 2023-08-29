@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {
+      "id": "Besoboy-1"
+    },
+    {
+      "id": "Besoboy-2"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Besoboy-1",
+      "to": "Besoboy-2"
+    }
+  ]
+}
