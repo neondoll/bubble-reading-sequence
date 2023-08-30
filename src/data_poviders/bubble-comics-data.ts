@@ -8,7 +8,7 @@ const color_besoboy = "rgb(51, 51, 153)";
 const color_mayor_grom = "rgb(255, 94, 0)";
 const color_inok = "rgb(255, 255, 51)";
 const color_krasnaya_furiya = "rgb(119, 2, 2)";
-const color_inok_vs_besoboy = color_bubble;
+const color_inok_vs_besoboy = "rgb(153,153,102)"; // color_bubble
 const color_ekslibrium = "rgb(137, 255, 108)";
 const color_meteora = "rgb(0, 240, 255)";
 
@@ -172,6 +172,9 @@ const nodes: Record<string, Node> = {
     node_besoboy_single_29: {name: "Бесобой #29 Метро, часть 1", number: "29", size: size_single, color: color_besoboy},
     node_besoboy_single_30: {name: "Бесобой #30 Метро, часть 2", number: "30", size: size_single, color: color_besoboy},
     node_besoboy_single_31: {name: "Бесобой #31 Метро, часть 3", number: "31", size: size_single, color: color_besoboy},
+    node_besoboy_single_32: {name: "Бесобой #32 Метро, часть 4", number: "32", size: size_single, color: color_besoboy},
+    node_besoboy_single_33: {name: "Бесобой #33 Исповедь", number: "33", size: size_single, color: color_besoboy},
+    node_besoboy_single_34: {name: "Бесобой #34 Стая, часть 1", number: "34", size: size_single, color: color_besoboy},
 
     node_mayor_grom_single_1: {
         name: "Майор Гром #1 Чумной Доктор, часть 1",
@@ -359,6 +362,24 @@ const nodes: Record<string, Node> = {
         size: size_single,
         color: color_mayor_grom
     },
+    node_mayor_grom_single_32: {
+        name: "Майор Гром #32 Игра, часть 8",
+        number: "32",
+        size: size_single,
+        color: color_mayor_grom
+    },
+    node_mayor_grom_single_33: {
+        name: "Майор Гром #33 Игра, часть 9",
+        number: "33",
+        size: size_single,
+        color: color_mayor_grom
+    },
+    node_mayor_grom_single_34: {
+        name: "Майор Гром #34 Голоса, часть 1",
+        number: "34",
+        size: size_single,
+        color: color_mayor_grom
+    },
 
     node_inok_single_1: {
         name: "Инок #1 Проданная реликвия, часть 1",
@@ -516,6 +537,14 @@ const nodes: Record<string, Node> = {
         size: size_single,
         color: color_inok
     },
+    node_inok_single_32: {name: "Инок #32 Калинов мост, часть 1", number: "32", size: size_single, color: color_inok},
+    node_inok_single_33: {
+        name: "Инок #33 Калинов мост, часть 2; Спаситель",
+        number: "33",
+        size: size_single,
+        color: color_inok
+    },
+    node_inok_single_34: {name: "Инок #34 Калинов мост, часть 3", number: "34", size: size_single, color: color_inok},
 
     node_krasnaya_furiya_single_1: {
         name: "Красная Фурия #1 В поисках Грааля, часть 1",
@@ -709,6 +738,24 @@ const nodes: Record<string, Node> = {
         size: size_single,
         color: color_krasnaya_furiya
     },
+    node_krasnaya_furiya_single_32: {
+        name: "Красная Фурия #32 Любовь зла",
+        number: "32",
+        size: size_single,
+        color: color_krasnaya_furiya
+    },
+    node_krasnaya_furiya_single_33: {
+        name: "Красная Фурия #33 Отто и Лотта",
+        number: "33",
+        size: size_single,
+        color: color_krasnaya_furiya
+    },
+    node_krasnaya_furiya_single_34: {
+        name: "Красная Фурия #34 Братство",
+        number: "34",
+        size: size_single,
+        color: color_krasnaya_furiya
+    },
 
     node_inok_vs_besoboy_single_1: {
         name: "Инок против Бесобоя #1 Инок против Бесобоя, часть 3",
@@ -731,6 +778,7 @@ const nodes: Record<string, Node> = {
 
     node_besoboy_tome_1: {name: "Бесобой том 1: Имя ему Бесобой", number: "1", size: size_tome, color: color_besoboy},
     node_besoboy_tome_2: {name: "Бесобой том 2: Лицо зверя", number: "2", size: size_tome, color: color_besoboy},
+    node_besoboy_tome_3: {name: "Бесобой том 3: Три сестры", number: "3", size: size_tome, color: color_besoboy},
 
     node_mayor_grom_tome_1: {
         name: "Майор Гром том 1: Чумной Доктор часть 1",
@@ -753,6 +801,7 @@ const nodes: Record<string, Node> = {
 
     node_inok_tome_1: {name: "Инок том 1: Проданная реликвия часть 1", number: "1", size: size_tome, color: color_inok},
     node_inok_tome_2: {name: "Инок том 2: Проданная реликвия часть 2", number: "2", size: size_tome, color: color_inok},
+    node_inok_tome_3: {name: "Инок том 3: Зверь во мне часть 1", number: "3", size: size_tome, color: color_inok},
 
     node_krasnaya_furiya_tome_1: {
         name: "Красная Фурия том 1: В поисках грааля часть 1",
@@ -763,6 +812,12 @@ const nodes: Record<string, Node> = {
     node_krasnaya_furiya_tome_2: {
         name: "Красная Фурия том 2: В поисках грааля часть 2",
         number: "2",
+        size: size_tome,
+        color: color_krasnaya_furiya
+    },
+    node_krasnaya_furiya_tome_3: {
+        name: "Красная Фурия том 3: Тёмное наследие часть 1",
+        number: "3",
         size: size_tome,
         color: color_krasnaya_furiya
     },
@@ -809,6 +864,24 @@ const nodes: Record<string, Node> = {
         size: size_single,
         color: color_ekslibrium
     },
+    node_ekslibrium_single_8: {
+        name: "Экслибриум #8 Костяной дом, часть 3",
+        number: "8",
+        size: size_single,
+        color: color_ekslibrium
+    },
+    node_ekslibrium_single_9: {
+        name: "Экслибриум #9 Люди библиотеки, часть 1",
+        number: "9",
+        size: size_single,
+        color: color_ekslibrium
+    },
+    node_ekslibrium_single_10: {
+        name: "Экслибриум #10 Люди библиотеки, часть 2",
+        number: "10",
+        size: size_single,
+        color: color_ekslibrium
+    },
 
     node_meteora_single_1: {
         name: "Метеора #1 Самая опасная вещь в космосе, часть 1",
@@ -842,6 +915,14 @@ const nodes: Record<string, Node> = {
         color: color_meteora
     },
     node_meteora_single_7: {name: "Метеора #7 Блокада, часть 1", number: "7", size: size_single, color: color_meteora},
+    node_meteora_single_8: {name: "Метеора #8 Блокада, часть 2", number: "8", size: size_single, color: color_meteora},
+    node_meteora_single_9: {name: "Метеора #9 Блокада, часть 3", number: "9", size: size_single, color: color_meteora},
+    node_meteora_single_10: {
+        name: "Метеора #10 Блокада, часть 4",
+        number: "10",
+        size: size_single,
+        color: color_meteora
+    },
 
     node_inok_vs_besoboy_tome: {name: "Инок против Бесобоя", size: size_tome, color: color_inok_vs_besoboy}
 };
@@ -894,10 +975,15 @@ const edges: Record<string, Edge> = {
         dashed: true
     },
     edge_besoboy_single_18_single_19: {source: "node_besoboy_single_18", target: "node_besoboy_single_19"},
+    edge_besoboy_single_18_tome_3: {source: "node_besoboy_single_18", target: "node_besoboy_tome_3", dashed: true},
     edge_besoboy_single_19_single_20: {source: "node_besoboy_single_19", target: "node_besoboy_single_20"},
+    edge_besoboy_single_19_tome_3: {source: "node_besoboy_single_19", target: "node_besoboy_tome_3", dashed: true},
     edge_besoboy_single_20_single_21: {source: "node_besoboy_single_20", target: "node_besoboy_single_21"},
+    edge_besoboy_single_20_tome_3: {source: "node_besoboy_single_20", target: "node_besoboy_tome_3", dashed: true},
     edge_besoboy_single_21_single_22: {source: "node_besoboy_single_21", target: "node_besoboy_single_22"},
+    edge_besoboy_single_21_tome_3: {source: "node_besoboy_single_21", target: "node_besoboy_tome_3", dashed: true},
     edge_besoboy_single_22_single_23: {source: "node_besoboy_single_22", target: "node_besoboy_single_23"},
+    edge_besoboy_single_22_tome_3: {source: "node_besoboy_single_22", target: "node_besoboy_tome_3", dashed: true},
     edge_besoboy_single_23_single_24: {source: "node_besoboy_single_23", target: "node_besoboy_single_24"},
     edge_besoboy_single_24_single_25: {source: "node_besoboy_single_24", target: "node_besoboy_single_25"},
     edge_besoboy_single_25_single_26: {source: "node_besoboy_single_25", target: "node_besoboy_single_26"},
@@ -906,6 +992,9 @@ const edges: Record<string, Edge> = {
     edge_besoboy_single_28_single_29: {source: "node_besoboy_single_28", target: "node_besoboy_single_29"},
     edge_besoboy_single_29_single_30: {source: "node_besoboy_single_29", target: "node_besoboy_single_30"},
     edge_besoboy_single_30_single_31: {source: "node_besoboy_single_30", target: "node_besoboy_single_31"},
+    edge_besoboy_single_31_single_32: {source: "node_besoboy_single_31", target: "node_besoboy_single_32"},
+    edge_besoboy_single_32_single_33: {source: "node_besoboy_single_32", target: "node_besoboy_single_33"},
+    edge_besoboy_single_33_single_34: {source: "node_besoboy_single_33", target: "node_besoboy_single_34"},
 
     edge_mayor_grom_single_1_single_2: {source: "node_mayor_grom_single_1", target: "node_mayor_grom_single_2"},
     edge_mayor_grom_single_1_tome_1: {
@@ -1027,6 +1116,9 @@ const edges: Record<string, Edge> = {
     edge_mayor_grom_single_28_single_29: {source: "node_mayor_grom_single_28", target: "node_mayor_grom_single_29"},
     edge_mayor_grom_single_29_single_30: {source: "node_mayor_grom_single_29", target: "node_mayor_grom_single_30"},
     edge_mayor_grom_single_30_single_31: {source: "node_mayor_grom_single_30", target: "node_mayor_grom_single_31"},
+    edge_mayor_grom_single_31_single_32: {source: "node_mayor_grom_single_31", target: "node_mayor_grom_single_32"},
+    edge_mayor_grom_single_32_single_33: {source: "node_mayor_grom_single_32", target: "node_mayor_grom_single_33"},
+    edge_mayor_grom_single_33_single_34: {source: "node_mayor_grom_single_33", target: "node_mayor_grom_single_34"},
 
     edge_inok_single_1_single_2: {source: "node_inok_single_1", target: "node_inok_single_2"},
     edge_inok_single_1_tome_1: {source: "node_inok_single_1", target: "node_inok_tome_1", dashed: true},
@@ -1084,9 +1176,13 @@ const edges: Record<string, Edge> = {
         dashed: true
     },
     edge_inok_single_18_single_19: {source: "node_inok_single_18", target: "node_inok_single_19"},
+    edge_inok_single_18_tome_3: {source: "node_inok_single_18", target: "node_inok_tome_3", dashed: true},
     edge_inok_single_19_single_20: {source: "node_inok_single_19", target: "node_inok_single_20"},
+    edge_inok_single_19_tome_3: {source: "node_inok_single_19", target: "node_inok_tome_3", dashed: true},
     edge_inok_single_20_single_21: {source: "node_inok_single_20", target: "node_inok_single_21"},
+    edge_inok_single_20_tome_3: {source: "node_inok_single_20", target: "node_inok_tome_3", dashed: true},
     edge_inok_single_21_single_22: {source: "node_inok_single_21", target: "node_inok_single_22"},
+    edge_inok_single_21_tome_3: {source: "node_inok_single_21", target: "node_inok_tome_3", dashed: true},
     edge_inok_single_22_single_23: {source: "node_inok_single_22", target: "node_inok_single_23"},
     edge_inok_single_23_single_24: {source: "node_inok_single_23", target: "node_inok_single_24"},
     edge_inok_single_24_single_25: {source: "node_inok_single_24", target: "node_inok_single_25"},
@@ -1096,6 +1192,9 @@ const edges: Record<string, Edge> = {
     edge_inok_single_28_single_29: {source: "node_inok_single_28", target: "node_inok_single_29"},
     edge_inok_single_29_single_30: {source: "node_inok_single_29", target: "node_inok_single_30"},
     edge_inok_single_30_single_31: {source: "node_inok_single_30", target: "node_inok_single_31"},
+    edge_inok_single_31_single_32: {source: "node_inok_single_31", target: "node_inok_single_32"},
+    edge_inok_single_32_single_33: {source: "node_inok_single_32", target: "node_inok_single_33"},
+    edge_inok_single_33_single_34: {source: "node_inok_single_33", target: "node_inok_single_34"},
 
     edge_krasnaya_furiya_single_1_single_2: {
         source: "node_krasnaya_furiya_single_1",
@@ -1236,21 +1335,46 @@ const edges: Record<string, Edge> = {
         source: "node_krasnaya_furiya_single_16",
         target: "node_krasnaya_furiya_single_16_1"
     },
+    edge_krasnaya_furiya_single_16_tome_3: {
+        source: "node_krasnaya_furiya_single_16",
+        target: "node_krasnaya_furiya_tome_3",
+        dashed: true
+    },
     edge_krasnaya_furiya_single_16_1_single_17: {
         source: "node_krasnaya_furiya_single_16_1",
         target: "node_krasnaya_furiya_single_17"
+    },
+    edge_krasnaya_furiya_single_16_1_tome_3: {
+        source: "node_krasnaya_furiya_single_16_1",
+        target: "node_krasnaya_furiya_tome_3",
+        dashed: true
     },
     edge_krasnaya_furiya_single_17_single_18: {
         source: "node_krasnaya_furiya_single_17",
         target: "node_krasnaya_furiya_single_18"
     },
+    edge_krasnaya_furiya_single_17_tome_3: {
+        source: "node_krasnaya_furiya_single_17",
+        target: "node_krasnaya_furiya_tome_3",
+        dashed: true
+    },
     edge_krasnaya_furiya_single_18_single_19: {
         source: "node_krasnaya_furiya_single_18",
         target: "node_krasnaya_furiya_single_19"
     },
+    edge_krasnaya_furiya_single_18_tome_3: {
+        source: "node_krasnaya_furiya_single_18",
+        target: "node_krasnaya_furiya_tome_3",
+        dashed: true
+    },
     edge_krasnaya_furiya_single_19_single_20: {
         source: "node_krasnaya_furiya_single_19",
         target: "node_krasnaya_furiya_single_20"
+    },
+    edge_krasnaya_furiya_single_19_tome_3: {
+        source: "node_krasnaya_furiya_single_19",
+        target: "node_krasnaya_furiya_tome_3",
+        dashed: true
     },
     edge_krasnaya_furiya_single_20_single_21: {
         source: "node_krasnaya_furiya_single_20",
@@ -1296,6 +1420,18 @@ const edges: Record<string, Edge> = {
         source: "node_krasnaya_furiya_single_30",
         target: "node_krasnaya_furiya_single_31"
     },
+    edge_krasnaya_furiya_single_31_single_32: {
+        source: "node_krasnaya_furiya_single_31",
+        target: "node_krasnaya_furiya_single_32"
+    },
+    edge_krasnaya_furiya_single_32_single_33: {
+        source: "node_krasnaya_furiya_single_32",
+        target: "node_krasnaya_furiya_single_33"
+    },
+    edge_krasnaya_furiya_single_33_single_34: {
+        source: "node_krasnaya_furiya_single_33",
+        target: "node_krasnaya_furiya_single_34"
+    },
 
     edge_inok_vs_besoboy_single_1_besoboy_single_16: {
         source: "node_inok_vs_besoboy_single_1",
@@ -1339,6 +1475,7 @@ const edges: Record<string, Edge> = {
     edge_inok_tome_2_inok_vs_besoboy_tome: {source: "node_inok_tome_2", target: "node_inok_vs_besoboy_tome"},
 
     edge_krasnaya_furiya_tome_1_tome_2: {source: "node_krasnaya_furiya_tome_1", target: "node_krasnaya_furiya_tome_2"},
+    edge_krasnaya_furiya_tome_2_tome_3: {source: "node_krasnaya_furiya_tome_2", target: "node_krasnaya_furiya_tome_3"},
 
     edge_ekslibrium_single_1_single_2: {source: "node_ekslibrium_single_1", target: "node_ekslibrium_single_2"},
     edge_ekslibrium_single_2_single_3: {source: "node_ekslibrium_single_2", target: "node_ekslibrium_single_3"},
@@ -1346,13 +1483,22 @@ const edges: Record<string, Edge> = {
     edge_ekslibrium_single_4_single_5: {source: "node_ekslibrium_single_4", target: "node_ekslibrium_single_5"},
     edge_ekslibrium_single_5_single_6: {source: "node_ekslibrium_single_5", target: "node_ekslibrium_single_6"},
     edge_ekslibrium_single_6_single_7: {source: "node_ekslibrium_single_6", target: "node_ekslibrium_single_7"},
+    edge_ekslibrium_single_7_single_8: {source: "node_ekslibrium_single_7", target: "node_ekslibrium_single_8"},
+    edge_ekslibrium_single_8_single_9: {source: "node_ekslibrium_single_8", target: "node_ekslibrium_single_9"},
+    edge_ekslibrium_single_9_single_10: {source: "node_ekslibrium_single_9", target: "node_ekslibrium_single_10"},
 
     edge_meteora_single_1_single_2: {source: "node_meteora_single_1", target: "node_meteora_single_2"},
     edge_meteora_single_2_single_3: {source: "node_meteora_single_2", target: "node_meteora_single_3"},
     edge_meteora_single_3_single_4: {source: "node_meteora_single_3", target: "node_meteora_single_4"},
     edge_meteora_single_4_single_5: {source: "node_meteora_single_4", target: "node_meteora_single_5"},
     edge_meteora_single_5_single_6: {source: "node_meteora_single_5", target: "node_meteora_single_6"},
-    edge_meteora_single_6_single_7: {source: "node_meteora_single_6", target: "node_meteora_single_7"}
+    edge_meteora_single_6_single_7: {source: "node_meteora_single_6", target: "node_meteora_single_7"},
+    edge_meteora_single_7_single_8: {source: "node_meteora_single_7", target: "node_meteora_single_8"},
+    edge_meteora_single_8_single_9: {source: "node_meteora_single_8", target: "node_meteora_single_9"},
+    edge_meteora_single_9_single_10: {source: "node_meteora_single_9", target: "node_meteora_single_10"},
+
+    edge_inok_vs_besoboy_tome_besoboy_tome_3: {source: "node_inok_vs_besoboy_tome", target: "node_besoboy_tome_3"},
+    edge_inok_vs_besoboy_tome_inok_tome_3: {source: "node_inok_vs_besoboy_tome", target: "node_inok_tome_3"}
 };
 
 const difference = 60;
@@ -1403,6 +1549,9 @@ const layouts: vNG.Layouts = reactive({
         node_besoboy_single_29: {x: x_single_difference * 35, y: y_besoboy_single},
         node_besoboy_single_30: {x: x_single_difference * 36, y: y_besoboy_single},
         node_besoboy_single_31: {x: x_single_difference * 37, y: y_besoboy_single},
+        node_besoboy_single_32: {x: x_single_difference * 38, y: y_besoboy_single},
+        node_besoboy_single_33: {x: x_single_difference * 39, y: y_besoboy_single},
+        node_besoboy_single_34: {x: x_single_difference * 40, y: y_besoboy_single},
 
         node_mayor_grom_single_1: {x: x_single_difference, y: y_mayor_grom_single},
         node_mayor_grom_single_2: {x: x_single_difference * 2, y: y_mayor_grom_single},
@@ -1435,6 +1584,9 @@ const layouts: vNG.Layouts = reactive({
         node_mayor_grom_single_29: {x: x_single_difference * 29, y: y_mayor_grom_single},
         node_mayor_grom_single_30: {x: x_single_difference * 30, y: y_mayor_grom_single},
         node_mayor_grom_single_31: {x: x_single_difference * 31, y: y_mayor_grom_single},
+        node_mayor_grom_single_32: {x: x_single_difference * 32, y: y_mayor_grom_single},
+        node_mayor_grom_single_33: {x: x_single_difference * 33, y: y_mayor_grom_single},
+        node_mayor_grom_single_34: {x: x_single_difference * 34, y: y_mayor_grom_single},
 
         node_inok_single_1: {x: x_single_difference, y: y_inok_single},
         node_inok_single_2: {x: x_single_difference * 2, y: y_inok_single},
@@ -1467,6 +1619,9 @@ const layouts: vNG.Layouts = reactive({
         node_inok_single_29: {x: x_single_difference * 35, y: y_inok_single},
         node_inok_single_30: {x: x_single_difference * 36, y: y_inok_single},
         node_inok_single_31: {x: x_single_difference * 37, y: y_inok_single},
+        node_inok_single_32: {x: x_single_difference * 38, y: y_inok_single},
+        node_inok_single_33: {x: x_single_difference * 39, y: y_inok_single},
+        node_inok_single_34: {x: x_single_difference * 40, y: y_inok_single},
 
         node_krasnaya_furiya_single_1: {x: x_single_difference, y: y_krasnaya_furiya_single},
         node_krasnaya_furiya_single_2: {x: x_single_difference * 2, y: y_krasnaya_furiya_single},
@@ -1500,6 +1655,9 @@ const layouts: vNG.Layouts = reactive({
         node_krasnaya_furiya_single_29: {x: x_single_difference * 30, y: y_krasnaya_furiya_single},
         node_krasnaya_furiya_single_30: {x: x_single_difference * 31, y: y_krasnaya_furiya_single},
         node_krasnaya_furiya_single_31: {x: x_single_difference * 32, y: y_krasnaya_furiya_single},
+        node_krasnaya_furiya_single_32: {x: x_single_difference * 33, y: y_krasnaya_furiya_single},
+        node_krasnaya_furiya_single_33: {x: x_single_difference * 34, y: y_krasnaya_furiya_single},
+        node_krasnaya_furiya_single_34: {x: x_single_difference * 35, y: y_krasnaya_furiya_single},
 
         node_inok_vs_besoboy_single_1: {x: x_single_difference * 17, y: y_inok_vs_besoboy_single},
         node_inok_vs_besoboy_single_2: {x: x_single_difference * 20, y: y_inok_vs_besoboy_single},
@@ -1507,6 +1665,7 @@ const layouts: vNG.Layouts = reactive({
 
         node_besoboy_tome_1: {x: x_single_difference * 8 / 2, y: y_besoboy_tome},
         node_besoboy_tome_2: {x: x_single_difference * 22 / 2, y: y_besoboy_tome},
+        node_besoboy_tome_3: {x: x_single_difference * 52 / 2, y: y_besoboy_tome},
 
         node_mayor_grom_tome_1: {x: x_single_difference * 7 / 2, y: y_mayor_grom_tome},
         node_mayor_grom_tome_2: {x: x_single_difference * 17 / 2, y: y_mayor_grom_tome},
@@ -1514,9 +1673,11 @@ const layouts: vNG.Layouts = reactive({
 
         node_inok_tome_1: {x: x_single_difference * 8 / 2, y: y_inok_tome},
         node_inok_tome_2: {x: x_single_difference * 22 / 2, y: y_inok_tome},
+        node_inok_tome_3: {x: x_single_difference * 51 / 2, y: y_inok_tome},
 
         node_krasnaya_furiya_tome_1: {x: x_single_difference * 8 / 2, y: y_krasnaya_furiya_tome},
         node_krasnaya_furiya_tome_2: {x: x_single_difference * 23 / 2, y: y_krasnaya_furiya_tome},
+        node_krasnaya_furiya_tome_3: {x: x_single_difference * 36 / 2, y: y_krasnaya_furiya_tome},
 
         node_ekslibrium_single_1: {x: x_single_difference, y: y_ekslibrium_single},
         node_ekslibrium_single_2: {x: x_single_difference * 2, y: y_ekslibrium_single},
@@ -1525,6 +1686,9 @@ const layouts: vNG.Layouts = reactive({
         node_ekslibrium_single_5: {x: x_single_difference * 5, y: y_ekslibrium_single},
         node_ekslibrium_single_6: {x: x_single_difference * 6, y: y_ekslibrium_single},
         node_ekslibrium_single_7: {x: x_single_difference * 7, y: y_ekslibrium_single},
+        node_ekslibrium_single_8: {x: x_single_difference * 8, y: y_ekslibrium_single},
+        node_ekslibrium_single_9: {x: x_single_difference * 9, y: y_ekslibrium_single},
+        node_ekslibrium_single_10: {x: x_single_difference * 10, y: y_ekslibrium_single},
 
         node_meteora_single_1: {x: x_single_difference, y: y_meteora_single},
         node_meteora_single_2: {x: x_single_difference * 2, y: y_meteora_single},
@@ -1533,6 +1697,9 @@ const layouts: vNG.Layouts = reactive({
         node_meteora_single_5: {x: x_single_difference * 5, y: y_meteora_single},
         node_meteora_single_6: {x: x_single_difference * 6, y: y_meteora_single},
         node_meteora_single_7: {x: x_single_difference * 7, y: y_meteora_single},
+        node_meteora_single_8: {x: x_single_difference * 8, y: y_meteora_single},
+        node_meteora_single_9: {x: x_single_difference * 9, y: y_meteora_single},
+        node_meteora_single_10: {x: x_single_difference * 10, y: y_meteora_single},
 
         node_inok_vs_besoboy_tome: {x: x_single_difference * 38 / 2, y: y_inok_vs_besoboy_tome}
     }
