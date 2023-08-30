@@ -1,5 +1,5 @@
 {
-  "name": "my-vue-app",
+  "name": "bubble-reading-sequence",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,11 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dagre": "^0.8.5",
     "v-network-graph": "^0.9.7",
     "vue": "^3.3.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.66.1",
     "vite": "^4.4.5"
   }
 }
