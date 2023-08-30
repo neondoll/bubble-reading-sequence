@@ -8,7 +8,12 @@ const common = require('./webpack.common');
 module.exports = merge(common, {
     mode        : 'production',
     devtool     : false,
-    output      : {path: paths.main, publicPath: '/', filename: 'public/js/[name].[contenthash].bundle.js'},
+    output      : {
+        path: paths.main,
+        /*publicPath: '/',*/
+        //filename: 'public/js/[name].[contenthash].bundle.js'
+        filename: 'public/js/[name].bundle.js'
+    },
     module      : {
         rules: [
             {
@@ -24,10 +29,7 @@ module.exports = merge(common, {
     },
     plugins     : [
         // Extracts CSS into separate files
-        new MiniCssExtractPlugin({
-            filename     : paths.main + '/public/css/[name].[contenthash].css',
-            chunkFilename: '[id].css'
-        })
+        new MiniCssExtractPlugin({filename: 'public/css/[name].[contenthash].css', chunkFilename: '[id].css'})
     ],
     optimization: {
         minimize    : true,
