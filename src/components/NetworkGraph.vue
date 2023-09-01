@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import {VNetworkGraph} from "v-network-graph";
-import {reactive} from "vue";
 import Edge from "../data_poviders/interfaces/Edge";
 import Node from "../data_poviders/interfaces/Node";
 import data from "../data_poviders/bubble-comics-data.ts";
 import * as vNG from "v-network-graph";
 import "v-network-graph/lib/style.css";
 
-const configs = reactive(vNG.defineConfigs<Node, Edge>({
+const configs = vNG.defineConfigs<Node, Edge, vNG.Path>({
   view: {zoomEnabled: false, autoPanAndZoomOnLoad: false},
   node: {
     normal: {type: "circle", radius: node => node.size, color: node => node.color},
@@ -15,6 +14,7 @@ const configs = reactive(vNG.defineConfigs<Node, Edge>({
     label: {direction: "center", color: "#ffffff", text: "number"}
   },
   edge: {
+    gap: 40,
     normal: {
       color: edge => (edge.dashed ? "gray" : "black"),
       dasharray: edge => (edge.dashed ? "4" : "0")
@@ -33,7 +33,7 @@ const configs = reactive(vNG.defineConfigs<Node, Edge>({
       }
     }
   }
-}));
+});
 </script>
 
 <template>
