@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import {VNetworkGraph} from "v-network-graph";
-import Edge from "../data_poviders/interfaces/Edge";
-import Node from "../data_poviders/interfaces/Node";
-import data from "../data_poviders/bubble-comics-data.ts";
+import Edge from "../interfaces/Edge";
+import Node from "../interfaces/Node";
+import NodeLabel from "./atoms/NodeLabel.vue";
+import data from "../data";
 import * as vNG from "v-network-graph";
 import "v-network-graph/lib/style.css";
 
@@ -11,7 +12,10 @@ const configs = vNG.defineConfigs<Node, Edge, vNG.Path>({
   node: {
     normal: {type: "circle", radius: node => node.size, color: node => node.color},
     hover: {radius: node => node.size + 2, color: node => node.color},
-    label: {direction: "center", color: "#ffffff", text: "number"}
+    label: {
+      background: {visible: true, color: "#1761ff66", padding: 4, borderRadius: 6},
+      directionAutoAdjustment: true
+    }
   },
   edge: {
     gap: 40,
@@ -37,7 +41,18 @@ const configs = vNG.defineConfigs<Node, Edge, vNG.Path>({
 </script>
 
 <template>
-  <VNetworkGraph class="graph" :nodes="data.nodes" :edges="data.edges" :layouts="data.layouts" :configs="configs"/>
+  <VNetworkGraph class="graph" :nodes="data.nodes" :edges="data.edges" :layouts="data.layouts" :configs="configs">
+    <!--<template #override-node-label="{nodeId, scale, text, x, y, config, textAnchor, dominantBaseline}">
+      <NodeLabel :node-id="nodeId"
+                 :scale="scale"
+                 :text="text"
+                 :x="x"
+                 :y="y"
+                 :config="config"
+                 :text-anchor="textAnchor"
+                 :dominant-baseline="dominantBaseline"/>
+    </template>-->
+  </VNetworkGraph>
 </template>
 
 <style scoped lang="scss">
