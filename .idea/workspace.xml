@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7cc15e66-bfd7-4c21-9031-39ac35689ec2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NetworkGraph.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NetworkGraph.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_poviders/bubble-comics-data.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_poviders/interfaces/Edge.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Edge.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_poviders/interfaces/Node.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Node.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/edges.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/edges.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/layouts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/layouts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/nodes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/nodes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Edge.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Edge.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Node.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Node.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,28 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feat/development-vite",
-    "last_opened_file_path": "C:/Users/bonni/Documents/projects/my-vue-app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/development-vite&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bonni/Documents/projects/my-vue-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.TypeScript&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bonni\Documents\projects\bubble-reading-sequence\src" />
@@ -82,6 +85,8 @@
       <workItem from="1693378977968" duration="1051000" />
       <workItem from="1693553383091" duration="2277000" />
       <workItem from="1693748116769" duration="31322000" />
+      <workItem from="1693812660810" duration="7000" />
+      <workItem from="1693845177998" duration="15534000" />
     </task>
     <servers />
   </component>
@@ -91,10 +96,22 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/data/layouts.ts</url>
+          <line>357</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="421" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/data/layouts.ts</url>
+          <line>322</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="422" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/../bubble/database/seeders/ComicSeeder.php</url>
-          <line>2125</line>
-          <option name="timeStamp" value="395" />
+          <line>2262</line>
+          <option name="timeStamp" value="425" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {VNetworkGraph} from "v-network-graph";
+import {computed, ref} from "vue";
 import Edge from "../interfaces/Edge";
 import Node from "../interfaces/Node";
 import NodeLabel from "./atoms/NodeLabel.vue";
@@ -20,10 +21,12 @@ const configs = vNG.defineConfigs<Node, Edge, vNG.Path>({
   edge: {
     gap: 40,
     normal: {
-      color: edge => (edge.dashed ? "gray" : "black"),
+      color: edge => data.nodes[edge.source].color, // (edge.dashed ? "gray" : "black")
       dasharray: edge => (edge.dashed ? "4" : "0")
     },
-    hover: {color: edge => (edge.dashed ? "gray" : "black")},
+    hover: {
+      color: edge => data.nodes[edge.source].color, // (edge.dashed ? "gray" : "black")
+    },
     marker: {
       source: {type: "none", width: 4, height: 4, margin: -1, offset: 0, units: "strokeWidth", color: null},
       target: {
@@ -38,10 +41,16 @@ const configs = vNG.defineConfigs<Node, Edge, vNG.Path>({
     }
   }
 });
+
+const layouts = ref(data.layouts);
+
+const layoutsText = computed(() => {
+  return JSON.stringify(layouts.value, null, 2)
+})
 </script>
 
 <template>
-  <VNetworkGraph class="graph" :nodes="data.nodes" :edges="data.edges" :layouts="data.layouts" :configs="configs">
+  <VNetworkGraph class="graph" :nodes="data.nodes" :edges="data.edges" v-model:layouts="layouts" :configs="configs">
     <!--<template #override-node-label="{nodeId, scale, text, x, y, config, textAnchor, dominantBaseline}">
       <NodeLabel :node-id="nodeId"
                  :scale="scale"
@@ -53,14 +62,27 @@ const configs = vNG.defineConfigs<Node, Edge, vNG.Path>({
                  :dominant-baseline="dominantBaseline"/>
     </template>-->
   </VNetworkGraph>
+  <!--<pre class="layouts">{{ layoutsText }}</pre>-->
 </template>
 
 <style scoped lang="scss">
 .graph {
+  position: relative;
   box-sizing: border-box;
   width: calc(100vw - var(--app-padding, 2rem) * 2);
   max-width: calc(var(--app-max-width, 1280px) - var(--app-padding, 2rem) * 2);
   height: calc(100vh - var(--app-padding, 2rem) * 2);
   border: 1px solid #000000;
+}
+
+.layouts {
+  position: absolute;
+  inset: 10px 10px 10px auto;
+  padding: 10px;
+  background: #ffff0044;
+  border-radius: 4px;
+  font-size: 10px;
+  line-height: 11px;
+  overflow-y: auto;
 }
 </style>
