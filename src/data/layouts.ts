@@ -443,6 +443,12 @@ export const layouts: vNG.Layouts = {
         node_soyuzniki_single_9: {x: x_difference * 97, y: y_soyuzniki_single},
         node_druzhkomiks_single_24: {x: x_difference * 98, y: y_druzhkomiks_single},
         node_druzhkomiks_single_25: {x: x_difference * 99, y: y_druzhkomiks_single},
+        node_besoboy_vol_2_1_single_9: {x: x_difference * 99, y: y_besoboy_vol_2_1_single},
+        node_druzhkomiks_single_26: {x: x_difference * 100, y: y_druzhkomiks_single},
+        node_druzhkomiks_single_27: {x: x_difference * 101, y: y_druzhkomiks_single},
+        node_igor_grom_single_9: {x: x_difference * 101, y: y_igor_grom_single},
+        node_mirokhodtsy_single_9: {x: x_difference * 101, y: y_mirokhodtsy_single},
+        node_ekslibrium_single_35: {x: x_difference * 101, y: y_ekslibrium_single},
 
     }
 };
