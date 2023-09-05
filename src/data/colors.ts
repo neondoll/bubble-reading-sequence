@@ -7,6 +7,7 @@ export default {
     bubble: "#1761ff",
     childrens_comics,
     copyright_comics: {alena_spiridonova: "#f7dd9f", evgeny_fedotov: "#00cc99"},
+    druzhkomiks: "#005bb1",
     ekslibrium: "#89ff6c",
     igor_grom: "#ff992a",
     igor_ugor: "#ff3366",

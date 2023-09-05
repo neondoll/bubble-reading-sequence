@@ -70,7 +70,7 @@ const layoutsText = computed(() => {
   position: relative;
   box-sizing: border-box;
   width: calc(100vw - var(--app-padding, 2rem) * 2);
-  max-width: calc(var(--app-max-width, 1280px) - var(--app-padding, 2rem) * 2);
+  //max-width: calc(var(--app-max-width, 1280px) - var(--app-padding, 2rem) * 2);
   height: calc(100vh - var(--app-padding, 2rem) * 2);
   border: 1px solid #000000;
 }
