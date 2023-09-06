@@ -291,6 +291,7 @@ export const nodes: Record<string, Node> = {
     node_ekslibrium_single_37: {name: "Экслибриум #37\nХозяйка дорог,\nчасть 3", color: colors.ekslibrium, number: "37", size: sizes.single},
     node_ekslibrium_single_38: {name: "Экслибриум #38\nСказочке конец,\nчасть 1", color: colors.ekslibrium, number: "38", size: sizes.single},
     node_ekslibrium_single_39: {name: "Экслибриум #39\nСказочке конец,\nчасть 2", color: colors.ekslibrium, number: "39", size: sizes.single},
+    node_ekslibrium_single_40: {name: "Экслибриум #40\nСказочке конец,\nчасть 3", color: colors.ekslibrium, number: "40", size: sizes.single},
 
     node_ekslibrium_tome_1: {name: "Экслибриум том 1:\n...И дверь откроется", color: colors.ekslibrium, number: "1", size: sizes.tome},
     node_ekslibrium_tome_2: {name: "Экслибриум том 2:\nКостяной дом", color: colors.ekslibrium, number: "2", size: sizes.tome},
@@ -337,6 +338,7 @@ export const nodes: Record<string, Node> = {
     node_meteora_single_37: {name: "Метеора #37\nВольная птица,\nчасть 1", color: colors.meteora, number: "37", size: sizes.single},
     node_meteora_single_38: {name: "Метеора #38\nВольная птица,\nчасть 2", color: colors.meteora, number: "38", size: sizes.single},
     node_meteora_single_39: {name: "Метеора #39\nВольная птица,\nчасть 3", color: colors.meteora, number: "39", size: sizes.single},
+    node_meteora_single_40: {name: "Метеора #40\nВольная птица,\nчасть 4", color: colors.meteora, number: "40", size: sizes.single},
 
     node_meteora_tome_1: {name: "Метеора том 1:\nСамая опасная вещь в космосе", color: colors.meteora, number: "1", size: sizes.tome},
     node_meteora_tome_2: {name: "Метеора том 2:\nБлокада", color: colors.meteora, number: "2", size: sizes.tome},
@@ -394,6 +396,7 @@ export const nodes: Record<string, Node> = {
     node_besoboy_vol_2_1_single_11: {name: "Бесобой Vol.2 #11\nЧасовой,\nчасть 1", color: colors.besoboy_vol_2_1, number: "11", size: sizes.single},
     node_besoboy_vol_2_1_single_12: {name: "Бесобой Vol.2 #12\nЧасовой,\nчасть 2", color: colors.besoboy_vol_2_1, number: "12", size: sizes.single},
     node_besoboy_vol_2_1_single_13: {name: "Бесобой Vol.2 #13\nОткровения", color: colors.besoboy_vol_2_1, number: "13", size: sizes.single},
+    node_besoboy_vol_2_1_single_14: {name: "Бесобой Vol.2 #14\nИнструмент Бога", color: colors.besoboy_vol_2_1, number: "14", size: sizes.single},
 
     node_besoboy_vol_2_1_tome_1: {name: "Бесобой Vol.2 том 1:\nИсход", color: colors.besoboy_vol_2_1, number: "1", size: sizes.tome},
 
@@ -412,6 +415,7 @@ export const nodes: Record<string, Node> = {
     node_igor_grom_single_11: {name: "Игорь Гром #11\nУмный человек,\nчасть 1", color: colors.igor_grom, number: "11", size: sizes.single},
     node_igor_grom_single_12: {name: "Игорь Гром #12\nУмный человек,\nчасть 2", color: colors.igor_grom, number: "12", size: sizes.single},
     node_igor_grom_single_13: {name: "Игорь Гром #13\nУмный человек,\nчасть 3", color: colors.igor_grom, number: "13", size: sizes.single},
+    node_igor_grom_single_14: {name: "Игорь Гром #14\nУмный человек,\nчасть 4", color: colors.igor_grom, number: "14", size: sizes.single},
 
     node_igor_grom_tome_1: {name: "Игорь Гром том 1:\nНаходится на реконструкции", color: colors.igor_grom, number: "1", size: sizes.tome},
 
@@ -430,6 +434,7 @@ export const nodes: Record<string, Node> = {
     node_mirokhodtsy_single_11: {name: "Мироходцы #11\nПритяжение полюсов,\nчасть 1", color: colors.mirokhodtsy, number: "11", size: sizes.single},
     node_mirokhodtsy_single_12: {name: "Мироходцы #12\nПритяжение полюсов,\nчасть 2", color: colors.mirokhodtsy, number: "12", size: sizes.single},
     node_mirokhodtsy_single_13: {name: "Мироходцы #13\nЛицом к лицу,\nчасть 1", color: colors.mirokhodtsy, number: "13", size: sizes.single},
+    node_mirokhodtsy_single_14: {name: "Мироходцы #14\nЛицом к лицу,\nчасть 2", color: colors.mirokhodtsy, number: "14", size: sizes.single},
 
     node_mirokhodtsy_tome_1: {name: "Мироходцы том 1:\nКровь богов", color: colors.mirokhodtsy, number: "1", size: sizes.tome},
 
@@ -448,6 +453,7 @@ export const nodes: Record<string, Node> = {
     node_soyuzniki_single_11: {name: "Союзники #11\nУсловный рефлекс,\nчасть 4", color: colors.soyuzniki, number: "11", size: sizes.single},
     node_soyuzniki_single_12: {name: "Союзники #12\nОгненная земля,\nчасть 1", color: colors.soyuzniki, number: "12", size: sizes.single},
     node_soyuzniki_single_13: {name: "Союзники #13\nОгненная земля,\nчасть 2", color: colors.soyuzniki, number: "13", size: sizes.single},
+    node_soyuzniki_single_14: {name: "Союзники #14\nИмаго", color: colors.soyuzniki, number: "14", size: sizes.single},
 
     node_soyuzniki_tome_1: {name: "Союзники том 1:\nПеред рассветом", color: colors.soyuzniki, number: "1", size: sizes.tome},
 
@@ -508,8 +514,10 @@ export const nodes: Record<string, Node> = {
     node_krutiksy_single_2: {name: "Крутиксы #2", color: colors.childrens_comics, number: "2", size: sizes.single},
     node_krutiksy_single_3: {name: "Крутиксы #3", color: colors.childrens_comics, number: "3", size: sizes.single},
     node_krutiksy_single_1_2018: {name: "Крутиксы #1\n(2018)", color: colors.childrens_comics, number: "1", size: sizes.single},
+    node_krutiksy_single_2_2018: {name: "Крутиксы #2\n(2018)", color: colors.childrens_comics, number: "2", size: sizes.single},
 
     node_besoboy_i_mirokhodtsy_tome: {name: "Бесобой и Мироходцы: Новая жизнь", color: colors.besoboy_i_mirokhodtsy, size: sizes.tome},
 
-    node_teo_single_1: {name: "Тео: Круги на полях,\nчасть 1", color: colors.legends_bubble, number: "1", size: sizes.single}
+    node_teo_single_1: {name: "Тео: Круги на полях,\nчасть 1", color: colors.legends_bubble, number: "1", size: sizes.single},
+    node_teo_single_2: {name: "Тео: Круги на полях,\nчасть 2", color: colors.legends_bubble, number: "2", size: sizes.single}
 };

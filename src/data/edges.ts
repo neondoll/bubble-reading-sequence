@@ -497,6 +497,7 @@ export const edges: Record<string, Edge> = {
     edge_ekslibrium_single_36_single_37: {source: "node_ekslibrium_single_36", target: "node_ekslibrium_single_37"},
     edge_ekslibrium_single_37_single_38: {source: "node_ekslibrium_single_37", target: "node_ekslibrium_single_38"},
     edge_ekslibrium_single_38_single_39: {source: "node_ekslibrium_single_38", target: "node_ekslibrium_single_39"},
+    edge_ekslibrium_single_39_single_40: {source: "node_ekslibrium_single_39", target: "node_ekslibrium_single_40"},
 
     edge_ekslibrium_single_1_tome_1: {source: "node_ekslibrium_single_1", target: "node_ekslibrium_tome_1", dashed: true},
     edge_ekslibrium_single_2_tome_1: {source: "node_ekslibrium_single_2", target: "node_ekslibrium_tome_1", dashed: true},
@@ -571,6 +572,7 @@ export const edges: Record<string, Edge> = {
     edge_meteora_single_36_single_37: {source: "node_meteora_single_36", target: "node_meteora_single_37"},
     edge_meteora_single_37_single_38: {source: "node_meteora_single_37", target: "node_meteora_single_38"},
     edge_meteora_single_38_single_39: {source: "node_meteora_single_38", target: "node_meteora_single_39"},
+    edge_meteora_single_39_single_40: {source: "node_meteora_single_39", target: "node_meteora_single_40"},
 
     edge_meteora_single_1_tome_1: {source: "node_meteora_single_1", target: "node_meteora_tome_1", dashed: true},
     edge_meteora_single_2_tome_1: {source: "node_meteora_single_2", target: "node_meteora_tome_1", dashed: true},
@@ -683,6 +685,7 @@ export const edges: Record<string, Edge> = {
     edge_besoboy_vol_2_1_single_10_single_11: {source: "node_besoboy_vol_2_1_single_10", target: "node_besoboy_vol_2_1_single_11"},
     edge_besoboy_vol_2_1_single_11_single_12: {source: "node_besoboy_vol_2_1_single_11", target: "node_besoboy_vol_2_1_single_12"},
     edge_besoboy_vol_2_1_single_12_single_13: {source: "node_besoboy_vol_2_1_single_12", target: "node_besoboy_vol_2_1_single_13"},
+    edge_besoboy_vol_2_1_single_13_single_14: {source: "node_besoboy_vol_2_1_single_13", target: "node_besoboy_vol_2_1_single_14"},
 
     edge_besoboy_vol_2_1_single_1_tome_1: {source: "node_besoboy_vol_2_1_single_1", target: "node_besoboy_vol_2_1_tome_1", dashed: true},
     edge_besoboy_vol_2_1_single_2_tome_1: {source: "node_besoboy_vol_2_1_single_2", target: "node_besoboy_vol_2_1_tome_1", dashed: true},
@@ -711,6 +714,7 @@ export const edges: Record<string, Edge> = {
     edge_igor_grom_single_10_single_11: {source: "node_igor_grom_single_10", target: "node_igor_grom_single_11"},
     edge_igor_grom_single_11_single_12: {source: "node_igor_grom_single_11", target: "node_igor_grom_single_12"},
     edge_igor_grom_single_12_single_13: {source: "node_igor_grom_single_12", target: "node_igor_grom_single_13"},
+    edge_igor_grom_single_13_single_14: {source: "node_igor_grom_single_13", target: "node_igor_grom_single_14"},
 
     edge_igor_grom_single_1_tome_1: {source: "node_igor_grom_single_1", target: "node_igor_grom_tome_1", dashed: true},
     edge_igor_grom_single_2_tome_1: {source: "node_igor_grom_single_2", target: "node_igor_grom_tome_1", dashed: true},
@@ -741,6 +745,7 @@ export const edges: Record<string, Edge> = {
     edge_mirokhodtsy_single_10_single_11: {source: "node_mirokhodtsy_single_10", target: "node_mirokhodtsy_single_11"},
     edge_mirokhodtsy_single_11_single_12: {source: "node_mirokhodtsy_single_11", target: "node_mirokhodtsy_single_12"},
     edge_mirokhodtsy_single_12_single_13: {source: "node_mirokhodtsy_single_12", target: "node_mirokhodtsy_single_13"},
+    edge_mirokhodtsy_single_13_single_14: {source: "node_mirokhodtsy_single_13", target: "node_mirokhodtsy_single_14"},
 
     edge_mirokhodtsy_single_1_tome_1: {source: "node_mirokhodtsy_single_1", target: "node_mirokhodtsy_tome_1", dashed: true},
     edge_mirokhodtsy_single_2_tome_1: {source: "node_mirokhodtsy_single_2", target: "node_mirokhodtsy_tome_1", dashed: true},
@@ -771,6 +776,7 @@ export const edges: Record<string, Edge> = {
     edge_soyuzniki_single_10_single_11: {source: "node_soyuzniki_single_10", target: "node_soyuzniki_single_11"},
     edge_soyuzniki_single_11_single_12: {source: "node_soyuzniki_single_11", target: "node_soyuzniki_single_12"},
     edge_soyuzniki_single_12_single_13: {source: "node_soyuzniki_single_12", target: "node_soyuzniki_single_13"},
+    edge_soyuzniki_single_13_single_14: {source: "node_soyuzniki_single_13", target: "node_soyuzniki_single_14"},
 
     edge_soyuzniki_single_1_tome_1: {source: "node_soyuzniki_single_1", target: "node_soyuzniki_tome_1", dashed: true},
     edge_soyuzniki_single_2_tome_1: {source: "node_soyuzniki_single_2", target: "node_soyuzniki_tome_1", dashed: true},
@@ -858,5 +864,8 @@ export const edges: Record<string, Edge> = {
 
     edge_krutiksy_single_1_single_2: {source: "node_krutiksy_single_1", target: "node_krutiksy_single_2"},
     edge_krutiksy_single_2_single_3: {source: "node_krutiksy_single_2", target: "node_krutiksy_single_3"},
-    edge_krutiksy_single_3_single_1_2018: {source: "node_krutiksy_single_3", target: "node_krutiksy_single_1_2018"}
+    edge_krutiksy_single_3_single_1_2018: {source: "node_krutiksy_single_3", target: "node_krutiksy_single_1_2018"},
+    edge_krutiksy_single_1_2018_single_2_2018: {source: "node_krutiksy_single_1_2018", target: "node_krutiksy_single_2_2018"},
+
+    edge_teo_single_1_single_2: {source: "node_teo_single_1", target: "node_teo_single_2"}
 };

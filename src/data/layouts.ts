@@ -522,6 +522,14 @@ export const layouts: vNG.Layouts = {
         node_mirokhodtsy_single_13: {x: x_difference * 105, y: y_mirokhodtsy_single},
         node_ekslibrium_single_39: {x: x_difference * 105, y: y_ekslibrium_single},
         node_meteora_single_39: {x: x_difference * 105, y: y_meteora_single},
-        node_teo_single_1: {x: x_difference * 105, y: y_teo_single}
+        node_teo_single_1: {x: x_difference * 105, y: y_teo_single},
+        node_soyuzniki_single_14: {x: x_difference * 105, y: y_soyuzniki_single},
+        node_krutiksy_single_2_2018: {x: x_difference * 105, y: y_krutiksy_single},
+        node_besoboy_vol_2_1_single_14: {x: x_difference * 105, y: y_besoboy_vol_2_1_single},
+        node_igor_grom_single_14: {x: x_difference * 106, y: y_igor_grom_single},
+        node_mirokhodtsy_single_14: {x: x_difference * 106, y: y_mirokhodtsy_single},
+        node_ekslibrium_single_40: {x: x_difference * 106, y: y_ekslibrium_single},
+        node_meteora_single_40: {x: x_difference * 106, y: y_meteora_single},
+        node_teo_single_2: {x: x_difference * 106, y: y_teo_single}
     }
 };

@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7cc15e66-bfd7-4c21-9031-39ac35689ec2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/colors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/edges.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/edges.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/layouts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/layouts.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/nodes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/nodes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/sizes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/sizes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +85,7 @@
       <workItem from="1693845177998" duration="15534000" />
       <workItem from="1693937164355" duration="11595000" />
       <workItem from="1693982682681" duration="4000" />
-      <workItem from="1694013301804" duration="14908000" />
+      <workItem from="1694013301804" duration="16409000" />
     </task>
     <servers />
   </component>
@@ -99,8 +97,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/../bubble/database/seeders/ComicSeeder.php</url>
-          <line>2730</line>
-          <option name="timeStamp" value="595" />
+          <line>2774</line>
+          <option name="timeStamp" value="604" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
