@@ -315,6 +315,7 @@ export const nodes: Record<string, Node> = {
     node_ekslibrium_tome_8: {name: "Экслибриум том 8:\nПереворот", color: colors.ekslibrium, number: "8", size: sizes.tome},
     node_ekslibrium_tome_9: {name: "Экслибриум том 9:\nСветлая полоса", color: colors.ekslibrium, number: "9", size: sizes.tome},
     node_ekslibrium_tome_chistyy_list: {name: "Экслибриум.\nЧистый лист", color: colors.ekslibrium_chistyy_list, size: sizes.tome},
+    node_ekslibrium_tome_krasnaya_stroka: {name: "Экслибриум.\nКрасная строка", color: colors.ekslibrium_krasnaya_stroka, size: sizes.tome},
 
     node_meteora_single_1: {name: "Метеора #1\nСамая опасная вещь в космосе,\nчасть 1", color: colors.meteora, number: "1", size: sizes.single},
     node_meteora_single_2: {name: "Метеора #2\nСамая опасная вещь в космосе,\nчасть 2", color: colors.meteora, number: "2", size: sizes.single},
@@ -464,6 +465,7 @@ export const nodes: Record<string, Node> = {
     node_besoboy_vol_2_single_47: {name: "Бесобой Vol.2 #47\nДостоин,\nчасть 1", color: colors.besoboy_vol_2, number: "47", size: sizes.single},
     node_besoboy_vol_2_single_48: {name: "Бесобой Vol.2 #48\nДостоин,\nчасть 2", color: colors.besoboy_vol_2, number: "48", size: sizes.single},
     node_besoboy_vol_2_single_49: {name: "Бесобой Vol.2 #49\nТворец", color: colors.besoboy_vol_2, number: "49", size: sizes.single},
+    node_besoboy_vol_2_single_50: {name: "Бесобой Vol.2 #50\nДанила", color: colors.besoboy_vol_2, number: "50", size: sizes.single},
 
     node_besoboy_vol_2_tome_1: {name: "Бесобой Vol.2 том 1:\nИсход", color: colors.besoboy_vol_2, number: "1", size: sizes.tome},
     node_besoboy_vol_2_tome_2: {name: "Бесобой Vol.2 том 2:\nПадение", color: colors.besoboy_vol_2, number: "2", size: sizes.tome},
@@ -474,6 +476,8 @@ export const nodes: Record<string, Node> = {
     node_besoboy_vol_2_tome_7: {name: "Бесобой Vol.2 том 7:\nБунт", color: colors.besoboy_vol_2, number: "7", size: sizes.tome},
     node_besoboy_vol_2_tome_8: {name: "Бесобой Vol.2 том 8:\nВа-банк", color: colors.besoboy_vol_2, number: "8", size: sizes.tome},
     node_besoboy_vol_2_tome_9: {name: "Бесобой Vol.2 том 9:\nСмерть и Ангел", color: colors.besoboy_vol_2, number: "9", size: sizes.tome},
+    node_besoboy_vol_2_tome_10: {name: "Бесобой Vol.2 том 10:\nВойна в Аду", color: colors.besoboy_vol_2, number: "10", size: sizes.tome},
+    node_besoboy_vol_2_tome_11: {name: "Бесобой Vol.2 том 11:\nТворец", color: colors.besoboy_vol_2, number: "11", size: sizes.tome},
 
     node_besoboy_vol_2_book_1: {name: "Бесобой Vol.2. Книга 1:\nИсход", color: colors.besoboy_vol_2, number: "1", size: sizes.book},
     node_besoboy_vol_2_book_2: {name: "Бесобой Vol.2. Книга 2:\nПадение", color: colors.besoboy_vol_2, number: "2", size: sizes.book},
@@ -526,6 +530,8 @@ export const nodes: Record<string, Node> = {
     node_igor_grom_single_46: {name: "Игорь Гром #46\nЧужими глазами,\nчасть 1", color: colors.igor_grom, number: "46", size: sizes.single},
     node_igor_grom_single_47: {name: "Игорь Гром #47\nЧужими глазами,\nчасть 2", color: colors.igor_grom, number: "47", size: sizes.single},
     node_igor_grom_single_48: {name: "Игорь Гром #48\nЧужими глазами,\nчасть 3", color: colors.igor_grom, number: "48", size: sizes.single},
+    node_igor_grom_single_49: {name: "Игорь Гром #49\nЧужими глазами,\nчасть 4", color: colors.igor_grom, number: "49", size: sizes.single},
+    node_igor_grom_single_50: {name: "Игорь Гром #50\nЗавтра", color: colors.igor_grom, number: "50", size: sizes.single},
 
     node_igor_grom_tome_1: {name: "Игорь Гром том 1:\nНаходится на реконструкции", color: colors.igor_grom, number: "1", size: sizes.tome},
     node_igor_grom_tome_2: {name: "Игорь Гром том 2:\nГолодные духи", color: colors.igor_grom, number: "2", size: sizes.tome},
@@ -536,6 +542,7 @@ export const nodes: Record<string, Node> = {
     node_igor_grom_tome_7: {name: "Игорь Гром том 7:\nГори-гори ясно", color: colors.igor_grom, number: "7", size: sizes.tome},
     node_igor_grom_tome_8: {name: "Игорь Гром том 8:\nВне закона", color: colors.igor_grom, number: "8", size: sizes.tome},
     node_igor_grom_tome_9: {name: "Игорь Гром том 9:\nМёртвая вода", color: colors.igor_grom, number: "9", size: sizes.tome},
+    node_igor_grom_tome_10: {name: "Игорь Гром том 10:\nЧужими глазами", color: colors.igor_grom, number: "10", size: sizes.tome},
 
     node_igor_grom_book_1: {name: "Игорь Гром. Книга 1:\nНаходится на реконструкции", color: colors.igor_grom, number: "1", size: sizes.book},
     node_igor_grom_book_2: {name: "Игорь Гром. Книга 2:\nГолодные духи", color: colors.igor_grom, number: "2", size: sizes.book},
@@ -626,6 +633,7 @@ export const nodes: Record<string, Node> = {
 
     node_igor_ugor_tome_1: {name: "Игорь Угорь. Том 1", color: colors.igor_ugor, number: "1", size: sizes.tome},
     node_igor_ugor_tome_2: {name: "Игорь Угорь. Том 2.\nИкра", color: colors.igor_ugor, number: "2", size: sizes.tome},
+    node_igor_ugor_single_2_5: {name: "Игорь угорь 2.5:\nPress У to pay respect", color: colors.igor_ugor, number: "2.5", size: sizes.single},
 
     node_druzhkomiks_single_1: {name: "ДружКомикс #1", color: colors.druzhkomiks, number: "1", size: sizes.single},
     node_druzhkomiks_single_2: {name: "ДружКомикс #2", color: colors.druzhkomiks, number: "2", size: sizes.single},
@@ -669,8 +677,10 @@ export const nodes: Record<string, Node> = {
     node_pidzhaki_i_revolvery_tome_1: {name: "Пиджаки и Револьверы. Том 1:\nЯщик раздора", color: colors.copyright_comics.julia_zhuravleva, number: "1", size: sizes.tome},
     node_pidzhaki_i_revolvery_tome_2: {name: "Пиджаки и Револьверы. Том 2:\nПраздник в красных тонах", color: colors.copyright_comics.julia_zhuravleva, number: "2", size: sizes.tome},
     node_pidzhaki_i_revolvery_tome_3: {name: "Пиджаки и Револьверы. Том 3:\nУкраденная магия", color: colors.copyright_comics.julia_zhuravleva, number: "3", size: sizes.tome},
+    node_pidzhaki_i_revolvery_tome_4: {name: "Пиджаки и револьверы. Том 4:\nКровные узы", color: colors.copyright_comics.julia_zhuravleva, number: "4", size: sizes.tome},
 
-    node_zagovor_yedinorogov_tome_1: {name: "Заговор Единорогов. Том 1.\nНаследие", color: colors.copyright_comics.alex_hatchett, size: sizes.tome},
+    node_zagovor_yedinorogov_tome_1: {name: "Заговор Единорогов. Том 1.\nНаследие", color: colors.copyright_comics.alex_hatchett, number: "1", size: sizes.tome},
+    node_zagovor_yedinorogov_tome_2: {name: "Заговор единорогов. Том 2.\nСвои", color: colors.copyright_comics.alex_hatchett, number: "2", size: sizes.tome},
 
     node_tagar_tome_1_single_prolog: {name: "Тагар. Том 1,\nпролог", color: colors.tagar, size: sizes.single},
     node_tagar_tome_1_single_1: {name: "Тагар. Том 1,\nглава 1", color: colors.tagar, number: "1", size: sizes.single},
@@ -694,24 +704,25 @@ export const nodes: Record<string, Node> = {
     node_tagar_tome_2: {name: "Тагар. Том 2", color: colors.tagar, number: "2", size: sizes.tome},
     node_tagar_tome_3: {name: "Тагар. Том 3", color: colors.tagar, number: "3", size: sizes.tome},
 
-    node_krutiksy_single_1: {name: "Крутиксы #1", color: colors.childrens_comics, number: "1", size: sizes.single},
-    node_krutiksy_single_2: {name: "Крутиксы #2", color: colors.childrens_comics, number: "2", size: sizes.single},
-    node_krutiksy_single_3: {name: "Крутиксы #3", color: colors.childrens_comics, number: "3", size: sizes.single},
-    node_krutiksy_single_1_2018: {name: "Крутиксы #1\n(2018)", color: colors.childrens_comics, number: "1", size: sizes.single},
-    node_krutiksy_single_2_2018: {name: "Крутиксы #2\n(2018)", color: colors.childrens_comics, number: "2", size: sizes.single},
-    node_krutiksy_single_3_2018: {name: "Крутиксы #3\n(2018)", color: colors.childrens_comics, number: "3", size: sizes.single},
-    node_krutiksy_single_4_2018: {name: "Крутиксы #4\n(2018)", color: colors.childrens_comics, number: "4", size: sizes.single},
-    node_krutiksy_single_5_2018: {name: "Крутиксы #5\n(2018)", color: colors.childrens_comics, number: "5", size: sizes.single},
-    node_krutiksy_single_6_2018: {name: "Крутиксы #6\n(2018)", color: colors.childrens_comics, number: "6", size: sizes.single},
-    node_krutiksy_single_7_2018: {name: "Крутиксы #7\n(2018)", color: colors.childrens_comics, number: "7", size: sizes.single},
-    node_krutiksy_single_8_2018: {name: "Крутиксы #8\n(2018)", color: colors.childrens_comics, number: "8", size: sizes.single},
-    node_krutiksy_single_9_2018: {name: "Крутиксы #9\n(2018)", color: colors.childrens_comics, number: "9", size: sizes.single},
-    node_krutiksy_single_10_2018: {name: "Крутиксы #10\n(2018)", color: colors.childrens_comics, number: "10", size: sizes.single},
-    node_krutiksy_single_11_2018: {name: "Крутиксы #11\n(2018)", color: colors.childrens_comics, number: "11", size: sizes.single},
-    node_krutiksy_single_12_2018: {name: "Крутиксы #12\n(2018)", color: colors.childrens_comics, number: "12", size: sizes.single},
-    node_krutiksy_single_novogodniy_spetsvypusk: {name: "Крутиксы:\nНовогодний спецвыпуск", color: colors.childrens_comics, size: sizes.single},
+    node_krutiksy_single_1: {name: "Крутиксы #1", color: colors.krutiksy, number: "1", size: sizes.single},
+    node_krutiksy_single_2: {name: "Крутиксы #2", color: colors.krutiksy, number: "2", size: sizes.single},
+    node_krutiksy_single_3: {name: "Крутиксы #3", color: colors.krutiksy, number: "3", size: sizes.single},
+    node_krutiksy_single_1_2018: {name: "Крутиксы #1\n(2018)", color: colors.krutiksy, number: "1", size: sizes.single},
+    node_krutiksy_single_2_2018: {name: "Крутиксы #2\n(2018)", color: colors.krutiksy, number: "2", size: sizes.single},
+    node_krutiksy_single_3_2018: {name: "Крутиксы #3\n(2018)", color: colors.krutiksy, number: "3", size: sizes.single},
+    node_krutiksy_single_4_2018: {name: "Крутиксы #4\n(2018)", color: colors.krutiksy, number: "4", size: sizes.single},
+    node_krutiksy_single_5_2018: {name: "Крутиксы #5\n(2018)", color: colors.krutiksy, number: "5", size: sizes.single},
+    node_krutiksy_single_6_2018: {name: "Крутиксы #6\n(2018)", color: colors.krutiksy, number: "6", size: sizes.single},
+    node_krutiksy_single_7_2018: {name: "Крутиксы #7\n(2018)", color: colors.krutiksy, number: "7", size: sizes.single},
+    node_krutiksy_single_8_2018: {name: "Крутиксы #8\n(2018)", color: colors.krutiksy, number: "8", size: sizes.single},
+    node_krutiksy_single_9_2018: {name: "Крутиксы #9\n(2018)", color: colors.krutiksy, number: "9", size: sizes.single},
+    node_krutiksy_single_10_2018: {name: "Крутиксы #10\n(2018)", color: colors.krutiksy, number: "10", size: sizes.single},
+    node_krutiksy_single_11_2018: {name: "Крутиксы #11\n(2018)", color: colors.krutiksy, number: "11", size: sizes.single},
+    node_krutiksy_single_12_2018: {name: "Крутиксы #12\n(2018)", color: colors.krutiksy, number: "12", size: sizes.single},
+    node_krutiksy_single_novogodniy_spetsvypusk: {name: "Крутиксы:\nНовогодний спецвыпуск", color: colors.krutiksy, size: sizes.single},
 
-    node_krutiksy_tome_1: {name: "Крутиксы.\nКрутые комиксы.\nКнига 1", color: colors.childrens_comics, number: "1", size: sizes.tome},
+    node_krutiksy_tome_1: {name: "Крутиксы.\nКрутые комиксы.\nКнига 1", color: colors.krutiksy, number: "1", size: sizes.tome},
+    node_krutiksy_tome_2: {name: "Крутиксы.\nКрутые комиксы.\nКнига 2", color: colors.krutiksy, number: "2", size: sizes.tome},
 
     node_besoboy_i_mirokhodtsy_tome: {name: "Бесобой и Мироходцы:\nНовая жизнь", color: colors.besoboy_i_mirokhodtsy, size: sizes.tome},
 
@@ -776,11 +787,20 @@ export const nodes: Record<string, Node> = {
     node_vor_teney_single_3: {name: "Вор Теней #3\nТройка коллекторов", color: colors.vor_teney, number: "3", size: sizes.single},
     node_vor_teney_single_4: {name: "Вор Теней #4\nЧетвёртый глаз", color: colors.vor_teney, number: "4", size: sizes.single},
     node_vor_teney_single_5: {name: "Вор Теней #5\nСомнамбулический поиск неведомого Коврова", color: colors.vor_teney, number: "5", size: sizes.single},
+    node_vor_teney_single_6: {name: "Вор Теней #6\nДача Ложных Показаний", color: colors.vor_teney, number: "6", size: sizes.single},
+    node_vor_teney_single_7: {name: "Вор Теней #7\nНевидимая рука рынка", color: colors.vor_teney, number: "7", size: sizes.single},
+    node_vor_teney_single_8: {name: "Вор Теней #8\nКладбище времени", color: colors.vor_teney, number: "8", size: sizes.single},
+
+    node_vor_teney_tome_1: {name: "Вор Теней", color: colors.vor_teney, number: "1", size: sizes.tome},
 
     node_sestra_single: {name: "Сестра.\nКукки", color: colors.sestra, size: sizes.single},
 
     node_sokol_single_1: {name: "Сокол #1\nОбщий интерес", color: colors.sokol, number: "1", size: sizes.single},
     node_sokol_single_2: {name: "Сокол #2\nЧужие правила", color: colors.sokol, number: "2", size: sizes.single},
+    node_sokol_single_3: {name: "Сокол #3\nВ клетке,\nчасть 1", color: colors.sokol, number: "3", size: sizes.single},
+    node_sokol_single_4: {name: "Сокол #4\nВ клетке,\nчасть 2", color: colors.sokol, number: "4", size: sizes.single},
+
+    node_sokol_tome_1: {name: "Сокол. Том 1", color: colors.sokol, number: "1", size: sizes.tome},
 
     node_plyushevyy_politseyskiy_single: {name: "Плюшевый полицейский.\nИдеальный план", color: colors.sestra, size: sizes.single},
 
@@ -813,9 +833,24 @@ export const nodes: Record<string, Node> = {
     node_ekslibrium_zhizn_vtoraya_single_12: {name: "Экслибриум.\nЖизнь вторая #12\nЩепки,\nчасть 4", color: colors.ekslibrium_zhizn_vtoraya, number: "12", size: sizes.single},
     node_ekslibrium_zhizn_vtoraya_single_13: {name: "Экслибриум.\nЖизнь вторая #13\nТочка сборки,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "13", size: sizes.single},
     node_ekslibrium_zhizn_vtoraya_single_14: {name: "Экслибриум.\nЖизнь вторая #14\nТочка сборки,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "14", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_15: {name: "Экслибриум.\nЖизнь вторая #15\nПраздник жизни,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "15", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_16: {name: "Экслибриум.\nЖизнь вторая #16\nПраздник жизни,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "16", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_17: {name: "Экслибриум.\nЖизнь вторая #17\nПраздник жизни,\nчасть 3", color: colors.ekslibrium_zhizn_vtoraya, number: "17", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_18: {name: "Экслибриум.\nЖизнь вторая #18\nПраздник жизни,\nчасть 4", color: colors.ekslibrium_zhizn_vtoraya, number: "18", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_19: {name: "Экслибриум.\nЖизнь вторая #19\nВенец творения,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "19", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_20: {name: "Экслибриум.\nЖизнь вторая #20\nВенец творения,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "20", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_21: {name: "Экслибриум.\nЖизнь вторая #21\nВенец творения,\nчасть 3", color: colors.ekslibrium_zhizn_vtoraya, number: "21", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_22: {name: "Экслибриум.\nЖизнь вторая #22\nБабочки в горсти", color: colors.ekslibrium_zhizn_vtoraya, number: "22", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_23: {name: "Экслибриум.\nЖизнь вторая #23\nПетля,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "23", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_24: {name: "Экслибриум.\nЖизнь вторая #24\nПетля,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "24", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_25: {name: "Экслибриум.\nЖизнь вторая #25\nЧёрные капли,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "25", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_26: {name: "Экслибриум.\nЖизнь вторая #26\nЧёрные капли,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "26", size: sizes.single},
 
     node_ekslibrium_zhizn_vtoraya_tome_1: {name: "Экслибриум.\nЖизнь вторая. Том 1.\nБезвозвратно", color: colors.ekslibrium_zhizn_vtoraya, number: "1", size: sizes.tome},
     node_ekslibrium_zhizn_vtoraya_tome_2: {name: "Экслибриум.\nЖизнь вторая. Том 2.\nКупель дракона", color: colors.ekslibrium_zhizn_vtoraya, number: "2", size: sizes.tome},
+    node_ekslibrium_zhizn_vtoraya_tome_3: {name: "Экслибриум.\nЖизнь вторая. Том 3.\nЩепки", color: colors.ekslibrium_zhizn_vtoraya, number: "3", size: sizes.tome},
+    node_ekslibrium_zhizn_vtoraya_tome_4: {name: "Экслибриум.\nЖизнь вторая. Том 4.\nПраздник Жизни", color: colors.ekslibrium_zhizn_vtoraya, number: "4", size: sizes.tome},
+    node_ekslibrium_zhizn_vtoraya_tome_5: {name: "Экслибриум.\nЖизнь вторая. Том 5.\nВенец творения", color: colors.ekslibrium_zhizn_vtoraya, number: "5", size: sizes.tome},
 
     node_balor_i_yana_tome: {name: "Балор и Яна.\nЛовец снов", color: colors.balor_i_yana, size: sizes.tome},
 
@@ -831,8 +866,19 @@ export const nodes: Record<string, Node> = {
     node_chumnoy_doktor_single_3: {name: "Чумной Доктор №3", color: colors.chumnoy_doktor, number: "3", size: sizes.single},
     node_chumnoy_doktor_single_4: {name: "Чумной Доктор №4", color: colors.chumnoy_doktor, number: "4", size: sizes.single},
     node_chumnoy_doktor_single_spetsialnyy_zimniy_spetsvypusk: {name: "Специальный зимний\nспецвыпуск \"Чумной Доктор\"", color: colors.chumnoy_doktor, size: sizes.single},
+    node_chumnoy_doktor_single_5: {name: "Чумной Доктор №5", color: colors.chumnoy_doktor, number: "5", size: sizes.single},
+    node_chumnoy_doktor_single_6: {name: "Чумной Доктор №6", color: colors.chumnoy_doktor, number: "6", size: sizes.single},
+    node_chumnoy_doktor_single_7: {name: "Чумной Доктор №7", color: colors.chumnoy_doktor, number: "7", size: sizes.single},
+    node_chumnoy_doktor_single_8: {name: "Чумной Доктор №8", color: colors.chumnoy_doktor, number: "8", size: sizes.single},
+    node_chumnoy_doktor_single_9: {name: "Чумной Доктор №9", color: colors.chumnoy_doktor, number: "9", size: sizes.single},
+    node_chumnoy_doktor_single_10: {name: "Чумной Доктор №10", color: colors.chumnoy_doktor, number: "10", size: sizes.single},
+    node_mayor_igor_grom_x_chumnoy_doktor_single_11: {name: "Майор Игорь Гром x\nЧумной Доктор №11\nБрат твой по мраку", color: colors.mayor_igor_grom_x_chumnoy_doktor, number: "11", size: sizes.single},
+    node_mayor_igor_grom_x_chumnoy_doktor_single_12: {name: "Майор Игорь Гром x\nЧумной Доктор №12\nБрат твой по мраку,\nчасть 2", color: colors.mayor_igor_grom_x_chumnoy_doktor, number: "12", size: sizes.single},
+    node_mayor_igor_grom_x_chumnoy_doktor_single_13: {name: "Майор Игорь Гром x\nЧумной Доктор №13\nБрат твой по мраку,\nчасть 3", color: colors.mayor_igor_grom_x_chumnoy_doktor, number: "13", size: sizes.single},
 
     node_chumnoy_doktor_tome_1: {name: "Чумной Доктор. Том 1:\nКапкан", color: colors.chumnoy_doktor, number: "1", size: sizes.tome},
+    node_chumnoy_doktor_tome_2: {name: "Чумной Доктор. Том 2:\nЗолотой цветок", color: colors.chumnoy_doktor, number: "2", size: sizes.tome},
+    node_chumnoy_doktor_tome_3: {name: "Чумной Доктор. Том 3:\nНа руинах", color: colors.chumnoy_doktor, number: "3", size: sizes.tome},
 
     node_redaktor_single: {name: "Редактор:\nСигнальный экземпляр", color: colors.redaktor, size: sizes.single},
 
@@ -855,19 +901,58 @@ export const nodes: Record<string, Node> = {
     node_izbrannitsa_luny_tome: {name: "Избранница Луны", color: colors.izbrannitsa_luny, size: sizes.tome},
 
     node_gromada_single_1: {name: "Громада", color: colors.gromada, number: "1", size: sizes.single},
+    node_gromada_single_2: {name: "Громада №2", color: colors.gromada, number: "2", size: sizes.single},
+    node_gromada_single_3: {name: "Громада №3", color: colors.gromada, number: "3", size: sizes.single},
+    node_gromada_single_4: {name: "Громада №4", color: colors.gromada, number: "4", size: sizes.single},
+
+    node_gromada_tome: {name: "Громада", color: colors.gromada, size: sizes.tome},
 
     node_mir_single_1: {name: "МИР #01\nПервый", color: colors.mir, number: "1", size: sizes.single},
     node_mir_single_2: {name: "МИР #02\nДве беды,\nчасть 1", color: colors.mir, number: "2", size: sizes.single},
     node_mir_single_3: {name: "МИР #03\nДве беды,\nчасть 2", color: colors.mir, number: "3", size: sizes.single},
     node_mir_single_4: {name: "МИР #04\nПрощай, оружие,\nчасть 1", color: colors.mir, number: "4", size: sizes.single},
+    node_mir_single_5: {name: "МИР #05\nПрощай, оружие,\nчасть 2", color: colors.mir, number: "5", size: sizes.single},
+    node_mir_single_vechnaya_pamyat: {name: "МИР:\nВечная Память", color: colors.mir, size: sizes.single},
+    node_mir_single_6: {name: "МИР #06\nТебя слышит враг,\nчасть 1", color: colors.mir, number: "6", size: sizes.single},
+    node_mir_single_7: {name: "МИР #07\nТебя слышит враг,\nчасть 2", color: colors.mir, number: "7", size: sizes.single},
+    node_mir_single_8: {name: "МИР #08\nВторое солнце,\nчасть 1", color: colors.mir, number: "8", size: sizes.single},
+    node_mir_single_9: {name: "МИР #09\nВторое солнце,\nчасть 2", color: colors.mir, number: "9", size: sizes.single},
 
     node_mir_tome_1: {name: "МИР. Том 1:\nПервый", color: colors.mir, number: "1", size: sizes.tome},
     node_mir_tome_2: {name: "МИР. Том 2:\nДве беды", color: colors.mir, number: "2", size: sizes.tome},
     node_mir_tome_3: {name: "МИР. Том 3:\nПрощай, оружие", color: colors.mir, number: "3", size: sizes.tome},
+    node_mir_tome_4: {name: "МИР. Книга 4.\nТебя слышит враг", color: colors.mir, number: "4", size: sizes.tome},
+    node_mir_tome_5: {name: "МИР. Том 5:\nВторое солнце", color: colors.mir, number: "5", size: sizes.tome},
 
     node_mayor_grom_geroy_navsegda_single_1: {name: "Майор Гром:\nГерой Навсегда,\nчасть 1", color: colors.mayor_grom, number: "1", size: sizes.single},
 
     node_mayor_grom_geroy_navsegda_tome: {name: "Майор Гром:\nГерой Навсегда", color: colors.mayor_grom, size: sizes.tome},
 
-    node_turbocarp_tome: {name: "ТурбоКарп", color: colors.turbocarp, size: sizes.tome}
+    node_turbocarp_tome: {name: "ТурбоКарп", color: colors.turbocarp, size: sizes.tome},
+
+    node_mayor_igor_grom_single_1: {name: "Майор Игорь Гром #01\nФейк,\nчасть 1", color: colors.mayor_igor_grom, number: "1", size: sizes.single},
+    node_mayor_igor_grom_single_2: {name: "Майор Игорь Гром #02\nФейк,\nчасть 2", color: colors.mayor_igor_grom, number: "2", size: sizes.single},
+    node_mayor_igor_grom_single_3: {name: "Майор Игорь Гром #03\nФейк,\nчасть 3", color: colors.mayor_igor_grom, number: "3", size: sizes.single},
+    node_mayor_igor_grom_single_4: {name: "Майор Игорь Гром #04\nФейк,\nчасть 4", color: colors.mayor_igor_grom, number: "4", size: sizes.single},
+    node_mayor_igor_grom_single_5: {name: "Майор Игорь Гром #05\nИдеальный хищник,\nчасть 1", color: colors.mayor_igor_grom, number: "5", size: sizes.single},
+    node_mayor_igor_grom_single_6: {name: "Майор Игорь Гром #06\nИдеальный хищник,\nчасть 2", color: colors.mayor_igor_grom, number: "6", size: sizes.single},
+    node_mayor_igor_grom_single_7: {name: "Майор Игорь Гром #07\nИдеальный хищник,\nчасть 3", color: colors.mayor_igor_grom, number: "7", size: sizes.single},
+
+    node_mayor_igor_grom_tome_1: {name: "Майор Игорь Гром. Том 1.\nФейк", color: colors.mayor_igor_grom, number: "1", size: sizes.tome},
+
+    node_bubble_khellouin_single: {name: "BUBBLE Хэллоуин", color: colors.bubble_khellouin, size: sizes.single},
+
+    node_krutiksy_znakomstvo_s_akademiyey_single: {name: "Крутиксы.\nЗнакомство с академией", color: colors.krutiksy, size: sizes.single},
+
+    node_spetsvypusk_volkov_peklo_single: {name: "Спецвыпуск \"Волков. Пекло\"", color: colors.spetsvypusk_volkov_peklo, size: sizes.single},
+
+    node_spetsvypusk_prokopenko_single: {name: "Спецвыпуск «Прокопенко. Гром на восходе»", color: colors.spetsvypusk_prokopenko, size: sizes.single},
+
+    node_soyuzmultkomiks_single: {name: "СоюзМультКомикс", color: colors.soyuzmultkomiks, size: sizes.single},
+
+    node_ledi_siyaniya_single_1: {name: "Леди Сияния,\nглава 1", color: colors.ledi_siyaniya, number: "1", size: sizes.single},
+    node_ledi_siyaniya_single_2: {name: "Леди Сияния,\nглава 2", color: colors.ledi_siyaniya, number: "2", size: sizes.single},
+    node_ledi_siyaniya_single_3: {name: "Леди Сияния,\nглава 3", color: colors.ledi_siyaniya, number: "3", size: sizes.single},
+
+    node_zolotoy_voin_tome: {name: "Золотой Воин", color: colors.zolotoy_voin, size: sizes.tome}
 };
