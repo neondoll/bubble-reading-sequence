@@ -55,6 +55,7 @@ export default {
     krestovyy_pokhod_volk: bubble,
     krutiksy: childrens_comics,
     ledi_siyaniya: bubble_manga,
+    likoris: bubble_manga,
     magistr: "#bf897f",                          // inok + legends_bubble
     mayor_grom_i_krasnaya_furiya: "#bb3001",     // mayor_grom + krasnaya_furiya
     mayor_grom_kak_na_voyne: "#bf3865",          // mayor_grom + legends_bubble
@@ -72,6 +73,7 @@ export default {
     sestra: new_bubble_heroes,
     sokol: new_bubble_heroes,
     soyuzmultkomiks: childrens_comics,
+    spetsvypusk_faeton: mir,
     spetsvypusk_prokopenko: "#d47a54", // mayor_grom + legends_bubble + mayor_igor_grom
     spetsvypusk_volkov_peklo: chumnoy_doktor,
     tagar: "#4037be", // legends_bubble + copyright_comics.marina_privalova

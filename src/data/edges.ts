@@ -627,6 +627,8 @@ export const edges: Record<string, Edge> = {
     edge_meteora_single_47_single_48: {source: "node_meteora_single_47", target: "node_meteora_single_48"},
     edge_meteora_single_48_single_49: {source: "node_meteora_single_48", target: "node_meteora_single_49"},
     edge_meteora_single_49_single_50: {source: "node_meteora_single_49", target: "node_meteora_single_50"},
+    edge_meteora_single_50_single_storibuk: {source: "node_meteora_single_50", target: "node_meteora_single_storibuk"},
+    edge_meteora_tome_9_single_storibuk: {source: "node_meteora_tome_9", target: "node_meteora_single_storibuk"},
 
     edge_meteora_single_1_tome_1: {source: "node_meteora_single_1", target: "node_meteora_tome_1", dashed: true},
     edge_meteora_single_2_tome_1: {source: "node_meteora_single_2", target: "node_meteora_tome_1", dashed: true},
@@ -1328,6 +1330,13 @@ export const edges: Record<string, Edge> = {
     edge_krutiksy_single_6_2018_tome_2: {source: "node_krutiksy_single_6_2018", target: "node_krutiksy_tome_2", dashed: true},
     edge_krutiksy_single_7_2018_tome_2: {source: "node_krutiksy_single_7_2018", target: "node_krutiksy_tome_2", dashed: true},
     edge_krutiksy_tome_1_tome_2: {source: "node_krutiksy_tome_1", target: "node_krutiksy_tome_2"},
+    edge_krutiksy_single_8_2018_tome_3: {source: "node_krutiksy_single_8_2018", target: "node_krutiksy_tome_3", dashed: true},
+    edge_krutiksy_single_9_2018_tome_3: {source: "node_krutiksy_single_9_2018", target: "node_krutiksy_tome_3", dashed: true},
+    edge_krutiksy_single_10_2018_tome_3: {source: "node_krutiksy_single_10_2018", target: "node_krutiksy_tome_3", dashed: true},
+    edge_krutiksy_single_11_2018_tome_3: {source: "node_krutiksy_single_11_2018", target: "node_krutiksy_tome_3", dashed: true},
+    edge_krutiksy_single_12_2018_tome_3: {source: "node_krutiksy_single_12_2018", target: "node_krutiksy_tome_3", dashed: true},
+    edge_krutiksy_single_novogodniy_spetsvypusk_tome_3: {source: "node_krutiksy_single_novogodniy_spetsvypusk", target: "node_krutiksy_tome_3", dashed: true},
+    edge_krutiksy_tome_2_tome_3: {source: "node_krutiksy_tome_2", target: "node_krutiksy_tome_3"},
 
     edge_mirokhodtsy_single_21_besoboy_i_mirokhodtsy_tome: {source: "node_mirokhodtsy_single_21", target: "node_besoboy_i_mirokhodtsy_tome"},
     edge_besoboy_vol_2_single_50_besoboy_i_mirokhodtsy_tome: {source: "node_besoboy_vol_2_single_50", target: "node_besoboy_i_mirokhodtsy_tome"},
@@ -1429,6 +1438,7 @@ export const edges: Record<string, Edge> = {
     edge_vor_teney_single_5_single_6: {source: "node_vor_teney_single_5", target: "node_vor_teney_single_6"},
     edge_vor_teney_single_6_single_7: {source: "node_vor_teney_single_6", target: "node_vor_teney_single_7"},
     edge_vor_teney_single_7_single_8: {source: "node_vor_teney_single_7", target: "node_vor_teney_single_8"},
+    edge_vor_teney_single_8_single_9: {source: "node_vor_teney_single_8", target: "node_vor_teney_single_9"},
 
     edge_vor_teney_single_1_tome_1: {source: "node_vor_teney_single_1", target: "node_vor_teney_tome_1", dashed: true},
     edge_vor_teney_single_2_tome_1: {source: "node_vor_teney_single_2", target: "node_vor_teney_tome_1", dashed: true},
@@ -1476,6 +1486,11 @@ export const edges: Record<string, Edge> = {
     edge_ekslibrium_zhizn_vtoraya_single_23_single_24: {source: "node_ekslibrium_zhizn_vtoraya_single_23", target: "node_ekslibrium_zhizn_vtoraya_single_24"},
     edge_ekslibrium_zhizn_vtoraya_single_24_single_25: {source: "node_ekslibrium_zhizn_vtoraya_single_24", target: "node_ekslibrium_zhizn_vtoraya_single_25"},
     edge_ekslibrium_zhizn_vtoraya_single_25_single_26: {source: "node_ekslibrium_zhizn_vtoraya_single_25", target: "node_ekslibrium_zhizn_vtoraya_single_26"},
+    edge_ekslibrium_zhizn_vtoraya_single_26_single_27: {source: "node_ekslibrium_zhizn_vtoraya_single_26", target: "node_ekslibrium_zhizn_vtoraya_single_27"},
+    edge_ekslibrium_zhizn_vtoraya_single_27_single_28: {source: "node_ekslibrium_zhizn_vtoraya_single_27", target: "node_ekslibrium_zhizn_vtoraya_single_28"},
+    edge_ekslibrium_zhizn_vtoraya_single_28_single_29: {source: "node_ekslibrium_zhizn_vtoraya_single_28", target: "node_ekslibrium_zhizn_vtoraya_single_29"},
+    edge_ekslibrium_zhizn_vtoraya_single_29_single_30: {source: "node_ekslibrium_zhizn_vtoraya_single_29", target: "node_ekslibrium_zhizn_vtoraya_single_30"},
+    edge_ekslibrium_zhizn_vtoraya_single_30_single_31: {source: "node_ekslibrium_zhizn_vtoraya_single_30", target: "node_ekslibrium_zhizn_vtoraya_single_31"},
 
     edge_ekslibrium_zhizn_vtoraya_single_0_tome_1: {source: "node_ekslibrium_zhizn_vtoraya_single_0", target: "node_ekslibrium_zhizn_vtoraya_tome_1", dashed: true},
     edge_ekslibrium_zhizn_vtoraya_single_1_tome_1: {source: "node_ekslibrium_zhizn_vtoraya_single_1", target: "node_ekslibrium_zhizn_vtoraya_tome_1", dashed: true},
@@ -1505,6 +1520,12 @@ export const edges: Record<string, Edge> = {
     edge_ekslibrium_zhizn_vtoraya_single_21_tome_5: {source: "node_ekslibrium_zhizn_vtoraya_single_21", target: "node_ekslibrium_zhizn_vtoraya_tome_5", dashed: true},
     edge_ekslibrium_zhizn_vtoraya_single_22_tome_5: {source: "node_ekslibrium_zhizn_vtoraya_single_22", target: "node_ekslibrium_zhizn_vtoraya_tome_5", dashed: true},
     edge_ekslibrium_zhizn_vtoraya_tome_4_tome_5: {source: "node_ekslibrium_zhizn_vtoraya_tome_4", target: "node_ekslibrium_zhizn_vtoraya_tome_5"},
+    edge_ekslibrium_zhizn_vtoraya_single_23_tome_6: {source: "node_ekslibrium_zhizn_vtoraya_single_23", target: "node_ekslibrium_zhizn_vtoraya_tome_6", dashed: true},
+    edge_ekslibrium_zhizn_vtoraya_single_24_tome_6: {source: "node_ekslibrium_zhizn_vtoraya_single_24", target: "node_ekslibrium_zhizn_vtoraya_tome_6", dashed: true},
+    edge_ekslibrium_zhizn_vtoraya_single_25_tome_6: {source: "node_ekslibrium_zhizn_vtoraya_single_25", target: "node_ekslibrium_zhizn_vtoraya_tome_6", dashed: true},
+    edge_ekslibrium_zhizn_vtoraya_single_26_tome_6: {source: "node_ekslibrium_zhizn_vtoraya_single_26", target: "node_ekslibrium_zhizn_vtoraya_tome_6", dashed: true},
+    edge_ekslibrium_zhizn_vtoraya_single_27_tome_6: {source: "node_ekslibrium_zhizn_vtoraya_single_27", target: "node_ekslibrium_zhizn_vtoraya_tome_6", dashed: true},
+    edge_ekslibrium_zhizn_vtoraya_tome_5_tome_6: {source: "node_ekslibrium_zhizn_vtoraya_tome_5", target: "node_ekslibrium_zhizn_vtoraya_tome_6"},
 
     edge_besoboy_single_50_balor_i_yana_tome: {source: "node_besoboy_single_50", target: "node_balor_i_yana_tome"},
     edge_besoboy_tome_9_balor_i_yana_tome: {source: "node_besoboy_tome_9", target: "node_balor_i_yana_tome"},
@@ -1531,8 +1552,14 @@ export const edges: Record<string, Edge> = {
     edge_chumnoy_doktor_single_9_single_10: {source: "node_chumnoy_doktor_single_9", target: "node_chumnoy_doktor_single_10"},
     edge_chumnoy_doktor_single_10_single_spetsialnyy_zimniy_spetsvypusk: {source: "node_chumnoy_doktor_single_10", target: "node_chumnoy_doktor_single_spetsialnyy_zimniy_spetsvypusk"},
     edge_chumnoy_doktor_single_spetsialnyy_zimniy_spetsvypusk_mayor_igor_grom_x_chumnoy_doktor_single_11: {source: "node_chumnoy_doktor_single_spetsialnyy_zimniy_spetsvypusk", target: "node_mayor_igor_grom_x_chumnoy_doktor_single_11"},
+    edge_mayor_igor_grom_single_8_mayor_igor_grom_x_chumnoy_doktor_single_11: {source: "node_mayor_igor_grom_single_8", target: "node_mayor_igor_grom_x_chumnoy_doktor_single_11"},
     edge_mayor_igor_grom_x_chumnoy_doktor_single_11_single_12: {source: "node_mayor_igor_grom_x_chumnoy_doktor_single_11", target: "node_mayor_igor_grom_x_chumnoy_doktor_single_12"},
     edge_mayor_igor_grom_x_chumnoy_doktor_single_12_single_13: {source: "node_mayor_igor_grom_x_chumnoy_doktor_single_12", target: "node_mayor_igor_grom_x_chumnoy_doktor_single_13"},
+    edge_mayor_igor_grom_x_chumnoy_doktor_single_13_single_14: {source: "node_mayor_igor_grom_x_chumnoy_doktor_single_13", target: "node_mayor_igor_grom_x_chumnoy_doktor_single_14"},
+    edge_mayor_igor_grom_x_chumnoy_doktor_single_14_chumnoy_doktor_single_15: {source: "node_mayor_igor_grom_x_chumnoy_doktor_single_14", target: "node_chumnoy_doktor_single_15"},
+    edge_chumnoy_doktor_single_15_single_16: {source: "node_chumnoy_doktor_single_15", target: "node_chumnoy_doktor_single_16"},
+    edge_chumnoy_doktor_single_16_single_17: {source: "node_chumnoy_doktor_single_16", target: "node_chumnoy_doktor_single_17"},
+    edge_chumnoy_doktor_single_17_single_18: {source: "node_chumnoy_doktor_single_17", target: "node_chumnoy_doktor_single_18"},
 
     edge_chumnoy_doktor_single_1_tome_1: {source: "node_chumnoy_doktor_single_1", target: "node_chumnoy_doktor_tome_1", dashed: true},
     edge_chumnoy_doktor_single_2_tome_1: {source: "node_chumnoy_doktor_single_2", target: "node_chumnoy_doktor_tome_1", dashed: true},
@@ -1547,6 +1574,12 @@ export const edges: Record<string, Edge> = {
     edge_chumnoy_doktor_single_10_tome_3: {source: "node_chumnoy_doktor_single_10", target: "node_chumnoy_doktor_tome_3", dashed: true},
     edge_chumnoy_doktor_single_spetsialnyy_zimniy_spetsvypusk_tome_3: {source: "node_chumnoy_doktor_single_spetsialnyy_zimniy_spetsvypusk", target: "node_chumnoy_doktor_tome_3", dashed: true},
     edge_chumnoy_doktor_tome_2_tome_3: {source: "node_chumnoy_doktor_tome_2", target: "node_chumnoy_doktor_tome_3"},
+    edge_mayor_igor_grom_x_chumnoy_doktor_single_11_tome_4: {source: "node_mayor_igor_grom_x_chumnoy_doktor_single_11", target: "node_mayor_igor_grom_x_chumnoy_doktor_tome_4", dashed: true},
+    edge_mayor_igor_grom_x_chumnoy_doktor_single_12_tome_4: {source: "node_mayor_igor_grom_x_chumnoy_doktor_single_12", target: "node_mayor_igor_grom_x_chumnoy_doktor_tome_4", dashed: true},
+    edge_mayor_igor_grom_x_chumnoy_doktor_single_13_tome_4: {source: "node_mayor_igor_grom_x_chumnoy_doktor_single_13", target: "node_mayor_igor_grom_x_chumnoy_doktor_tome_4", dashed: true},
+    edge_mayor_igor_grom_x_chumnoy_doktor_single_14_tome_4: {source: "node_mayor_igor_grom_x_chumnoy_doktor_single_14", target: "node_mayor_igor_grom_x_chumnoy_doktor_tome_4", dashed: true},
+    edge_chumnoy_doktor_tome_3_mayor_igor_grom_x_chumnoy_doktor_tome_4: {source: "node_chumnoy_doktor_tome_3", target: "node_mayor_igor_grom_x_chumnoy_doktor_tome_4"},
+    edge_mayor_igor_grom_tome_2_mayor_igor_grom_x_chumnoy_doktor_tome_4: {source: "node_mayor_igor_grom_tome_2", target: "node_mayor_igor_grom_x_chumnoy_doktor_tome_4"},
 
     edge_besoboy_vol_2_single_50_karantinnaya_kniga_tome: {source: "node_besoboy_vol_2_single_50", target: "node_karantinnaya_kniga_tome"},
     edge_besoboy_vol_2_tome_11_karantinnaya_kniga_tome: {source: "node_besoboy_vol_2_tome_11", target: "node_karantinnaya_kniga_tome"},
@@ -1590,6 +1623,10 @@ export const edges: Record<string, Edge> = {
     edge_mir_single_6_single_7: {source: "node_mir_single_6", target: "node_mir_single_7"},
     edge_mir_single_7_single_8: {source: "node_mir_single_7", target: "node_mir_single_8"},
     edge_mir_single_8_single_9: {source: "node_mir_single_8", target: "node_mir_single_9"},
+    edge_mir_single_9_single_10: {source: "node_mir_single_9", target: "node_mir_single_10"},
+    edge_mir_single_10_single_11: {source: "node_mir_single_10", target: "node_mir_single_11"},
+    edge_mir_single_11_single_12: {source: "node_mir_single_11", target: "node_mir_single_12"},
+    edge_mir_single_12_single_13: {source: "node_mir_single_12", target: "node_mir_single_13"},
 
     edge_mir_single_1_tome_1: {source: "node_mir_single_1", target: "node_mir_tome_1", dashed: true},
     edge_mir_single_2_tome_2: {source: "node_mir_single_2", target: "node_mir_tome_2", dashed: true},
@@ -1604,6 +1641,10 @@ export const edges: Record<string, Edge> = {
     edge_mir_single_8_tome_5: {source: "node_mir_single_8", target: "node_mir_tome_5", dashed: true},
     edge_mir_single_9_tome_5: {source: "node_mir_single_9", target: "node_mir_tome_5", dashed: true},
     edge_mir_tome_4_tome_5: {source: "node_mir_tome_4", target: "node_mir_tome_5"},
+    edge_mir_single_10_tome_6: {source: "node_mir_single_10", target: "node_mir_tome_6", dashed: true},
+    edge_mir_single_11_tome_6: {source: "node_mir_single_11", target: "node_mir_tome_6", dashed: true},
+    edge_mir_single_12_tome_6: {source: "node_mir_single_12", target: "node_mir_tome_6", dashed: true},
+    edge_mir_tome_5_tome_6: {source: "node_mir_tome_5", target: "node_mir_tome_6"},
 
     edge_mayor_grom_single_50_mayor_grom_geroy_navsegda_single_1: {source: "node_mayor_grom_single_50", target: "node_mayor_grom_geroy_navsegda_single_1"},
 
@@ -1617,18 +1658,31 @@ export const edges: Record<string, Edge> = {
     edge_mayor_igor_grom_single_4_single_5: {source: "node_mayor_igor_grom_single_4", target: "node_mayor_igor_grom_single_5"},
     edge_mayor_igor_grom_single_5_single_6: {source: "node_mayor_igor_grom_single_5", target: "node_mayor_igor_grom_single_6"},
     edge_mayor_igor_grom_single_6_single_7: {source: "node_mayor_igor_grom_single_6", target: "node_mayor_igor_grom_single_7"},
+    edge_mayor_igor_grom_single_7_single_8: {source: "node_mayor_igor_grom_single_7", target: "node_mayor_igor_grom_single_8"},
+    edge_mayor_igor_grom_x_chumnoy_doktor_single_14_mayor_igor_grom_single_9: {source: "node_mayor_igor_grom_x_chumnoy_doktor_single_14", target: "node_mayor_igor_grom_single_9"},
+    edge_mayor_igor_grom_single_9_single_10: {source: "node_mayor_igor_grom_single_9", target: "node_mayor_igor_grom_single_10"},
+    edge_mayor_igor_grom_single_10_single_11: {source: "node_mayor_igor_grom_single_10", target: "node_mayor_igor_grom_single_11"},
 
     edge_mayor_igor_grom_single_1_tome_1: {source: "node_mayor_igor_grom_single_1", target: "node_mayor_igor_grom_tome_1", dashed: true},
     edge_mayor_igor_grom_single_2_tome_1: {source: "node_mayor_igor_grom_single_2", target: "node_mayor_igor_grom_tome_1", dashed: true},
     edge_mayor_igor_grom_single_3_tome_1: {source: "node_mayor_igor_grom_single_3", target: "node_mayor_igor_grom_tome_1", dashed: true},
     edge_mayor_igor_grom_single_4_tome_1: {source: "node_mayor_igor_grom_single_4", target: "node_mayor_igor_grom_tome_1", dashed: true},
     edge_igor_grom_tome_10_mayor_igor_grom_tome_1: {source: "node_igor_grom_tome_10", target: "node_mayor_igor_grom_tome_1"},
+    edge_mayor_igor_grom_single_5_tome_2: {source: "node_mayor_igor_grom_single_5", target: "node_mayor_igor_grom_tome_2", dashed: true},
+    edge_mayor_igor_grom_single_6_tome_2: {source: "node_mayor_igor_grom_single_6", target: "node_mayor_igor_grom_tome_2", dashed: true},
+    edge_mayor_igor_grom_single_7_tome_2: {source: "node_mayor_igor_grom_single_7", target: "node_mayor_igor_grom_tome_2", dashed: true},
+    edge_mayor_igor_grom_single_8_tome_2: {source: "node_mayor_igor_grom_single_8", target: "node_mayor_igor_grom_tome_2", dashed: true},
+    edge_mayor_igor_grom_tome_1_tome_2: {source: "node_mayor_igor_grom_tome_1", target: "node_mayor_igor_grom_tome_2"},
 
     edge_krutiksy_single_novogodniy_spetsvypusk_krutiksy_znakomstvo_s_akademiyey_single: {source: "node_krutiksy_single_novogodniy_spetsvypusk", target: "node_krutiksy_znakomstvo_s_akademiyey_single", dashed: true},
+    edge_krutiksy_tome_3_krutiksy_znakomstvo_s_akademiyey_single: {source: "node_krutiksy_tome_3", target: "node_krutiksy_znakomstvo_s_akademiyey_single", dashed: true},
 
     edge_mayor_grom_single_50_spetsvypusk_prokopenko_single: {source: "node_mayor_grom_single_50", target: "node_spetsvypusk_prokopenko_single"},
     edge_mayor_grom_tome_8_spetsvypusk_prokopenko_single: {source: "node_mayor_grom_tome_8", target: "node_spetsvypusk_prokopenko_single"},
 
     edge_ledi_siyaniya_single_1_single_2: {source: "node_ledi_siyaniya_single_1", target: "node_ledi_siyaniya_single_2"},
-    edge_ledi_siyaniya_single_2_single_3: {source: "node_ledi_siyaniya_single_2", target: "node_ledi_siyaniya_single_3"}
+    edge_ledi_siyaniya_single_2_single_3: {source: "node_ledi_siyaniya_single_2", target: "node_ledi_siyaniya_single_3"},
+    edge_ledi_siyaniya_single_3_single_4: {source: "node_ledi_siyaniya_single_3", target: "node_ledi_siyaniya_single_4"},
+
+    edge_likoris_single_1_tome_1: {source: "node_likoris_single_1", target: "node_likoris_tome_1", dashed: true}
 };
