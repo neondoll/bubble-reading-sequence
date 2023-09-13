@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7cc15e66-bfd7-4c21-9031-39ac35689ec2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/colors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/edges.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/edges.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/layouts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/layouts.ts" afterDir="false" />
@@ -92,7 +91,9 @@
       <workItem from="1694161039751" duration="24000" />
       <workItem from="1694254987662" duration="27188000" />
       <workItem from="1694418781111" duration="13000" />
-      <workItem from="1694545320793" duration="6742000" />
+      <workItem from="1694545320793" duration="7007000" />
+      <workItem from="1694588757933" duration="14000" />
+      <workItem from="1694617378684" duration="21348000" />
     </task>
     <servers />
   </component>
@@ -104,8 +105,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/../bubble/database/seeders/ComicSeeder.php</url>
-          <line>5114</line>
-          <option name="timeStamp" value="1016" />
+          <line>5664</line>
+          <option name="timeStamp" value="1129" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
