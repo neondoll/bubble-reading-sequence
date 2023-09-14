@@ -64,6 +64,7 @@ export default {
     karantinnaya_kniga: besoboy_vol_2,
     khudozhestvennyy_roman_besoboy: besoboy,
     khudozhestvennyy_roman_razumovskiy: mayor_grom,
+    khudozhestvennyy_roman_devyat_zhizney_agaty: "#5ee669", // ekslibrium + ekslibrium_zhizn_vtoraya
     kletka: new_bubble_heroes,
     kniga_igra_naydi_drakona: chumnoy_doktor,
     kniga_igra_teper_ty_vor_teney: vor_teney,
@@ -87,6 +88,7 @@ export default {
     redaktor: legends_bubble,
     reki: "#bf567a",                                  // legends_bubble + igor_grom
     russkiye_narodnyye_skazki_v_komiksakh: "#8092b3", // childrens_comics + copyright_comics.evgeny_yakovlev
+    seraya_gonchaya: bubble_manga,
     sestra: new_bubble_heroes,
     sokol: new_bubble_heroes,
     soyuzmultkomiks: childrens_comics,

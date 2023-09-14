@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7cc15e66-bfd7-4c21-9031-39ac35689ec2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/colors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/edges.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/edges.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/layouts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/layouts.ts" afterDir="false" />
@@ -23,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="Vue Composition API Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -93,7 +94,8 @@
       <workItem from="1694418781111" duration="13000" />
       <workItem from="1694545320793" duration="7007000" />
       <workItem from="1694588757933" duration="14000" />
-      <workItem from="1694617378684" duration="21348000" />
+      <workItem from="1694617378684" duration="21806000" />
+      <workItem from="1694721809303" duration="5450000" />
     </task>
     <servers />
   </component>
@@ -105,8 +107,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/../bubble/database/seeders/ComicSeeder.php</url>
-          <line>5664</line>
-          <option name="timeStamp" value="1129" />
+          <line>5715</line>
+          <option name="timeStamp" value="1139" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

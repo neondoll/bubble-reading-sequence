@@ -99,26 +99,27 @@ const y_gromada_single = y_difference * 75;
 const y_gromada_tome = y_gromada_single + y_difference;
 const y_turbocarp_tome = y_difference * 77;
 const y_bubble_khellouin_single = y_difference * 78;
-const y_spetsvypusk_volkov_peklo_single = y_difference * 79;
-const y_soyuzmultkomiks_single = y_difference * 80;
-const y_ledi_siyaniya_single = y_difference * 81;
-const y_zolotoy_voin_tome = y_difference * 82;
-//const y_spetsvypusk_faeton_single = y_difference * 83;
-const y_likoris_single = y_difference * 83;
+//const y_spetsvypusk_volkov_peklo_single = y_difference * 79;
+const y_soyuzmultkomiks_single = y_difference * 79;
+const y_ledi_siyaniya_single = y_difference * 80;
+const y_zolotoy_voin_tome = y_difference * 81;
+//const y_spetsvypusk_faeton_single = y_difference * 82;
+const y_likoris_single = y_difference * 82;
 const y_likoris_tome = y_likoris_single + y_difference;
-const y_chernilnyy_prints_i_knizhnyy_rytsar_single = y_difference * 85;
+const y_chernilnyy_prints_i_knizhnyy_rytsar_single = y_difference * 84;
 const y_chernilnyy_prints_i_knizhnyy_rytsar_tome = y_chernilnyy_prints_i_knizhnyy_rytsar_single + y_difference;
-const y_brat_25_let_tome = y_difference * 87;
-const y_vedma_single = y_difference * 88;
+const y_brat_25_let_tome = y_difference * 86;
+const y_vedma_single = y_difference * 87;
 const y_vedma_tome = y_vedma_single + y_difference;
-const y_bubble_triptih_single = y_difference * 90;
-const y_bubble_gam_almanakh_single = y_difference * 91;
-const y_shkola_bubble_single = y_difference * 92;
-const y_kniga_igra_single = y_difference * 93;
-const y_yablochnyy_spas_single = y_difference * 94;
-const y_khudozhestvennyy_roman_book = y_difference * 95;
-const y_vera_vulf_tome = y_difference * 96;
-const y_ekslibrium_tsveta_nashikh_chuvstv_raskraska_dosye_single = y_difference * 97;
+const y_bubble_triptih_single = y_difference * 89;
+const y_bubble_gam_almanakh_single = y_difference * 90;
+const y_shkola_bubble_single = y_difference * 91;
+const y_kniga_igra_single = y_difference * 92;
+//const y_yablochnyy_spas_single = y_difference * 93;
+const y_khudozhestvennyy_roman_book = y_difference * 93;
+const y_vera_vulf_tome = y_difference * 94;
+const y_ekslibrium_tsveta_nashikh_chuvstv_raskraska_dosye_single = y_difference * 95;
+const y_seraya_gonchaya_single = y_difference * 96;
 
 export const layouts: vNG.Layouts = {
     nodes: {
@@ -732,7 +733,7 @@ export const layouts: vNG.Layouts = {
         node_sokol_single_1: {x: x_difference * 100, y: y_sokol_single},
         node_plyushevyy_politseyskiy_single: {x: x_difference * 100, y: y_plyushevyy_politseyskiy_single},
         node_chornaya_ruka_single: {x: x_difference * 100, y: y_chornaya_ruka_single},
-        node_ekslibrium_tome_chistyy_list: {x: x_difference * 100, y: (y_ekslibrium_single + y_ekslibrium_tome) / 2},
+        node_ekslibrium_tome_chistyy_list: {x: x_difference * 161, y: (y_ekslibrium_single + y_ekslibrium_tome + y_ekslibrium_zhizn_vtoraya_single + y_ekslibrium_zhizn_vtoraya_tome) / 4}, /* {x: x_difference * 100, y: (y_ekslibrium_single + y_ekslibrium_tome) / 2} */
         node_besoboy_vol_2_tome_4: {x: x_difference * 88.5, y: y_besoboy_vol_2_tome}, /* 16 - 19 */
         node_besoboy_vol_2_tome_5: {x: x_difference * 92.5, y: y_besoboy_vol_2_tome}, /* 20 - 23 */
         node_druzhkomiks_single_27: {x: x_difference * 101, y: y_druzhkomiks_single},
@@ -917,7 +918,7 @@ export const layouts: vNG.Layouts = {
         node_mir_single_7: {x: x_difference * 129, y: y_mir_single},
         node_ekslibrium_zhizn_vtoraya_single_20: {x: x_difference * 130, y: y_ekslibrium_zhizn_vtoraya_single},
         node_chumnoy_doktor_single_8: {x: x_difference * 130, y: y_chumnoy_doktor_single},
-        node_ekslibrium_tome_krasnaya_stroka: {x: x_difference * 130, y: (y_ekslibrium_single + y_ekslibrium_tome) / 2},
+        node_ekslibrium_tome_krasnaya_stroka: {x: x_difference * 162, y: (y_ekslibrium_single + y_ekslibrium_tome + y_ekslibrium_zhizn_vtoraya_single + y_ekslibrium_zhizn_vtoraya_tome) / 4}, /* {x: x_difference * 130, y: (y_ekslibrium_single + y_ekslibrium_tome) / 2} */
         node_gromada_single_2: {x: x_difference * 130, y: y_gromada_single},
         node_gromada_tome: {x: x_difference * 124, y: y_gromada_tome}, /* 1 - 4 */
         node_mayor_igor_grom_single_2: {x: x_difference * 130, y: y_mayor_igor_grom_single},
@@ -943,7 +944,7 @@ export const layouts: vNG.Layouts = {
         node_chumnoy_doktor_tome_3: {x: x_difference * 132, y: y_chumnoy_doktor_tome}, /* 9 - 10, szs */
         node_ekslibrium_zhizn_vtoraya_single_23: {x: x_difference * 133, y: y_ekslibrium_zhizn_vtoraya_single},
         node_mayor_igor_grom_x_chumnoy_doktor_single_11: {x: x_difference * 139, y: y_mayor_igor_grom_x_chumnoy_doktor_single},
-        node_spetsvypusk_volkov_peklo_single: {x: x_difference * 133, y: y_spetsvypusk_volkov_peklo_single},
+        node_spetsvypusk_volkov_peklo_single: {x: x_difference * 161, y: (y_chumnoy_doktor_single + y_chumnoy_doktor_tome) / 2}, /* {x: x_difference * 133, y: y_spetsvypusk_volkov_peklo_single} */
         node_mir_tome_5: {x: x_difference * 133.5, y: y_mir_tome}, /* 8 - 9 */
         node_mir_single_8: {x: x_difference * 133, y: y_mir_single},
         node_sokol_single_4: {x: x_difference * 133, y: y_sokol_single},
@@ -951,7 +952,7 @@ export const layouts: vNG.Layouts = {
         node_vor_teney_tome_1: {x: x_difference * 109, y: y_vor_teney_tome}, /* 1 - 5 */
         node_ekslibrium_zhizn_vtoraya_single_24: {x: x_difference * 134, y: y_ekslibrium_zhizn_vtoraya_single},
         node_mayor_igor_grom_x_chumnoy_doktor_single_12: {x: x_difference * 140, y: y_mayor_igor_grom_x_chumnoy_doktor_single},
-        node_spetsvypusk_prokopenko_single: {x: x_difference * 134, y: (y_mayor_grom_single + y_mayor_grom_tome) / 2},
+        node_spetsvypusk_prokopenko_single: {x: x_difference * 161, y: (y_mayor_grom_single + y_mayor_grom_tome + y_mayor_igor_grom_single + y_mayor_igor_grom_tome) / 4}, /* {x: x_difference * 134, y: (y_mayor_grom_single + y_mayor_grom_tome) / 2} */
         node_soyuzmultkomiks_single: {x: x_difference * 134, y: y_soyuzmultkomiks_single},
         node_mir_single_9: {x: x_difference * 134, y: y_mir_single},
         node_vor_teney_single_6: {x: x_difference * 134, y: y_vor_teney_single},
@@ -1041,7 +1042,7 @@ export const layouts: vNG.Layouts = {
         node_chumnoy_doktor_single_23: {x: x_difference * 154, y: y_chumnoy_doktor_single},
         node_mayor_grom_tome_zagadka_sfinksa: {x: x_difference * 60, y: y_mayor_grom_tome}, /* 42 - 44 */
         node_chernilnyy_prints_i_knizhnyy_rytsar_single_4: {x: x_difference * 154, y: y_chernilnyy_prints_i_knizhnyy_rytsar_single},
-        node_mayor_igor_grom_single_spetsvypusk_dolg: {x: x_difference * 154, y: y_mayor_igor_grom_single},
+        node_mayor_igor_grom_single_spetsvypusk_dolg: {x: x_difference * 161, y: y_mayor_igor_grom_single}, /* {x: x_difference * 154, y: y_mayor_igor_grom_single} */
         node_grom_tome_trudnoye_detstvo: {x: x_difference * 154, y: (y_mayor_grom_single + y_mayor_grom_tome) / 2},
         node_chasovoy_single_4: {x: x_difference * 154, y: y_besoboy_single},
         node_chumnoy_doktor_single_24: {x: x_difference * 155, y: y_chumnoy_doktor_single},
@@ -1076,7 +1077,7 @@ export const layouts: vNG.Layouts = {
         node_bubble_gam_almanakh_single_2: {x: x_difference * 157, y: y_bubble_gam_almanakh_single},
         node_impuls_tome_1: {x: x_difference * 106.5, y: y_impuls_tome}, /* 1 - 2 */
         node_sokol_single_5: {x: x_difference * 157, y: y_sokol_single},
-        node_yablochnyy_spas_single: {x: x_difference * 157, y: y_yablochnyy_spas_single},
+        node_yablochnyy_spas_single: {x: x_difference * 162, y: (y_chumnoy_doktor_single + y_chumnoy_doktor_tome) / 2}, /* {x: x_difference * 157, y: y_yablochnyy_spas_single} */
         node_khudozhestvennyy_roman_book_razumovskiy: {x: x_difference * 157, y: y_khudozhestvennyy_roman_book},
         node_mayor_igor_grom_single_19: {x: x_difference * 158, y: y_mayor_igor_grom_single},
         node_vor_teney_tome_2: {x: x_difference * 140.5, y: y_vor_teney_tome}, /* 6 - 10 */
@@ -1098,6 +1099,14 @@ export const layouts: vNG.Layouts = {
         node_ekslibrium_zhizn_vtoraya_tome_8: {x: x_difference * 156.5, y: y_ekslibrium_zhizn_vtoraya_tome}, /* 33 - 36 */
         node_sokol_single_7: {x: x_difference * 159, y: y_sokol_single},
         node_ekslibrium_tsveta_nashikh_chuvstv_raskraska_dosye_single: {x: x_difference * 159, y: y_ekslibrium_tsveta_nashikh_chuvstv_raskraska_dosye_single},
+        node_chumnoy_doktor_single_28: {x: x_difference * 159, y: y_chumnoy_doktor_single},
+        node_bubble_gam_almanakh_single_3: {x: x_difference * 159, y: y_bubble_gam_almanakh_single},
+        node_mayor_igor_grom_single_21: {x: x_difference * 160, y: y_mayor_igor_grom_single},
+        node_ekslibrium_zhizn_vtoraya_single_38: {x: x_difference * 160, y: y_ekslibrium_zhizn_vtoraya_single},
+        node_chumnoy_doktor_single_29: {x: x_difference * 160, y: y_chumnoy_doktor_single},
+        node_seraya_gonchaya_tome_1_single_1: {x: x_difference * 160, y: y_seraya_gonchaya_single},
+        node_chumnoy_doktor_tome_7: {x: x_difference * 158, y: y_chumnoy_doktor_tome},   /* 25 - 29 */
+        node_khudozhestvennyy_roman_book_devyat_zhizney_agaty_zhizn_pervaya_kupel_drakona: {x: x_difference * 160, y: y_khudozhestvennyy_roman_book},
 
     }
 };

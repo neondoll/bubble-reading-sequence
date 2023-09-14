@@ -882,6 +882,7 @@ export const nodes: Record<string, Node> = {
     node_ekslibrium_zhizn_vtoraya_single_35: {name: "Экслибриум.\nЖизнь вторая #35\nПосле дождичка,\nчасть 3", color: colors.ekslibrium_zhizn_vtoraya, number: "35", size: sizes.single},
     node_ekslibrium_zhizn_vtoraya_single_36: {name: "Экслибриум.\nЖизнь вторая #36\nПосле дождичка,\nчасть 4", color: colors.ekslibrium_zhizn_vtoraya, number: "36", size: sizes.single},
     node_ekslibrium_zhizn_vtoraya_single_37: {name: "Экслибриум.\nЖизнь вторая #37\nБудущее – светло,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "37", size: sizes.single},
+    node_ekslibrium_zhizn_vtoraya_single_38: {name: "Экслибриум.\nЖизнь вторая #38\nБудущее – светло,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "38", size: sizes.single},
 
     node_ekslibrium_zhizn_vtoraya_tome_1: {name: "Экслибриум.\nЖизнь вторая. Том 1.\nБезвозвратно", color: colors.ekslibrium_zhizn_vtoraya, number: "1", size: sizes.tome},
     node_ekslibrium_zhizn_vtoraya_tome_2: {name: "Экслибриум.\nЖизнь вторая. Том 2.\nКупель дракона", color: colors.ekslibrium_zhizn_vtoraya, number: "2", size: sizes.tome},
@@ -929,6 +930,8 @@ export const nodes: Record<string, Node> = {
     node_chumnoy_doktor_single_25: {name: "Чумной Доктор №25\nРагнар,\nчасть 5", color: colors.chumnoy_doktor, number: "25", size: sizes.single},
     node_chumnoy_doktor_single_26: {name: "Чумной Доктор №26\nРагнар,\nчасть 6", color: colors.chumnoy_doktor, number: "26", size: sizes.single},
     node_chumnoy_doktor_single_27: {name: "Чумной Доктор №27\nРагнар,\nчасть 7", color: colors.chumnoy_doktor, number: "27", size: sizes.single},
+    node_chumnoy_doktor_single_28: {name: "Чумной Доктор №28\nРагнар,\nчасть 8", color: colors.chumnoy_doktor, number: "28", size: sizes.single},
+    node_chumnoy_doktor_single_29: {name: "Чумной Доктор №29\nРагнар,\nэпилог", color: colors.chumnoy_doktor, number: "29", size: sizes.single},
 
     node_chumnoy_doktor_tome_1: {name: "Чумной Доктор. Том 1:\nКапкан", color: colors.chumnoy_doktor, number: "1", size: sizes.tome},
     node_chumnoy_doktor_tome_2: {name: "Чумной Доктор. Том 2:\nЗолотой цветок", color: colors.chumnoy_doktor, number: "2", size: sizes.tome},
@@ -936,6 +939,7 @@ export const nodes: Record<string, Node> = {
     node_mayor_igor_grom_x_chumnoy_doktor_tome_4: {name: "Майор Игорь Гром x\nЧумной Доктор. Книга 4.\nБрат твой по мраку", color: colors.mayor_igor_grom_x_chumnoy_doktor, number: "4", size: sizes.tome},
     node_chumnoy_doktor_tome_5: {name: "Чумной Доктор. Том 5:\nМахаон", color: colors.chumnoy_doktor, number: "5", size: sizes.tome},
     node_chumnoy_doktor_tome_6: {name: "Чумной Доктор. Том 6.\nРагнар.\nЧасть 1", color: colors.chumnoy_doktor, number: "6", size: sizes.tome},
+    node_chumnoy_doktor_tome_7: {name: "Чумной Доктор. Том 7.\nРагнар.\nЧасть 2", color: colors.chumnoy_doktor, number: "7", size: sizes.tome},
 
     node_redaktor_single: {name: "Редактор:\nСигнальный экземпляр", color: colors.redaktor, size: sizes.single},
 
@@ -1020,6 +1024,7 @@ export const nodes: Record<string, Node> = {
     node_mayor_igor_grom_single_18: {name: "Майор Игорь Гром #18\nОтпуск,\nчасть 2", color: colors.mayor_igor_grom, number: "18", size: sizes.single},
     node_mayor_igor_grom_single_19: {name: "Майор Игорь Гром #19\nОтпуск,\nчасть 3", color: colors.mayor_igor_grom, number: "19", size: sizes.single},
     node_mayor_igor_grom_single_20: {name: "Майор Игорь Гром #20\nОтпуск,\nчасть 4", color: colors.mayor_igor_grom, number: "20", size: sizes.single},
+    node_mayor_igor_grom_single_21: {name: "Майор Игорь Гром #21\nПравда,\nчасть 1", color: colors.mayor_igor_grom, number: "21", size: sizes.single},
 
     node_mayor_igor_grom_tome_1: {name: "Майор Игорь Гром. Том 1.\nФейк", color: colors.mayor_igor_grom, number: "1", size: sizes.tome},
     node_mayor_igor_grom_tome_2: {name: "Майор Игорь Гром. Том 2.\nИдеальный хищник", color: colors.mayor_igor_grom, number: "2", size: sizes.tome},
@@ -1095,6 +1100,7 @@ export const nodes: Record<string, Node> = {
 
     node_bubble_gam_almanakh_single_1: {name: "BUBBLE ГАМ.\nАльманах #1", color: colors.bubble_gam_almanakh, number: "1", size: sizes.single},
     node_bubble_gam_almanakh_single_2: {name: "BUBBLE ГАМ.\nАльманах #2", color: colors.bubble_gam_almanakh, number: "2", size: sizes.single},
+    node_bubble_gam_almanakh_single_3: {name: "BUBBLE ГАМ.\nАльманах #3", color: colors.bubble_gam_almanakh, number: "3", size: sizes.single},
 
     node_shkola_bubble_single_1: {name: "Школа BUBBLE. Том 1.\nУрок жизни", color: colors.shkola_bubble, number: "1", size: sizes.single},
 
@@ -1105,8 +1111,11 @@ export const nodes: Record<string, Node> = {
 
     node_khudozhestvennyy_roman_book_razumovskiy: {name: "Художественный\nроман\n\"Разумовский\"", color: colors.khudozhestvennyy_roman_razumovskiy, size: sizes.book},
     node_khudozhestvennyy_roman_book_besoboy: {name: "Художественный\nроман\n\"Бесобой\"", color: colors.khudozhestvennyy_roman_besoboy, size: sizes.book},
+    node_khudozhestvennyy_roman_book_devyat_zhizney_agaty_zhizn_pervaya_kupel_drakona: {name: "Художественный\nроман\n\"Девять жизней Агаты.\nЖизнь первая.\nКупель Дракона\"", color: colors.khudozhestvennyy_roman_devyat_zhizney_agaty, size: sizes.book},
 
     node_vera_vulf_tome: {name: "Вера Вульф", color: colors.vera_vulf, size: sizes.tome},
 
-    node_ekslibrium_tsveta_nashikh_chuvstv_raskraska_dosye_single: {name: "Экслибриум:\nЦвета наших чувств.\nРаскраска-досье", color: colors.ekslibrium_tsveta_nashikh_chuvstv_raskraska_dosye, size: sizes.single}
+    node_ekslibrium_tsveta_nashikh_chuvstv_raskraska_dosye_single: {name: "Экслибриум:\nЦвета наших чувств.\nРаскраска-досье", color: colors.ekslibrium_tsveta_nashikh_chuvstv_raskraska_dosye, size: sizes.single},
+
+    node_seraya_gonchaya_tome_1_single_1: {name: "Серая Гончая. Том 1,\nглава 1", color: colors.seraya_gonchaya, number: "1", size: sizes.single}
 };
