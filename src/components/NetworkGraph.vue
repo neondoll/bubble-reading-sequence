@@ -4,7 +4,7 @@ import {computed, ref} from "vue";
 import Edge from "../interfaces/Edge";
 import Node from "../interfaces/Node";
 import NodeLabel from "./atoms/NodeLabel.vue";
-import data from "../data";
+import data from "../data/v-network-graph";
 import * as vNG from "v-network-graph";
 import "v-network-graph/lib/style.css";
 
