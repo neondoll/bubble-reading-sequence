@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7cc15e66-bfd7-4c21-9031-39ac35689ec2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NetworkGraph.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NetworkGraph.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ranges.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ranges.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/Range.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/color_functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/color_functions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/comics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/comics.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/v-network-graph.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/v-network-graph.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,8 @@
       <workItem from="1694617378684" duration="21806000" />
       <workItem from="1694721809303" duration="6783000" />
       <workItem from="1694761075266" duration="358000" />
-      <workItem from="1694855702233" duration="10931000" />
+      <workItem from="1694855702233" duration="11245000" />
+      <workItem from="1694887220394" duration="22255000" />
     </task>
     <servers />
   </component>
@@ -108,8 +108,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/../bubble/database/seeders/ComicSeeder.php</url>
-          <line>27</line>
-          <option name="timeStamp" value="1143" />
+          <line>549</line>
+          <option name="timeStamp" value="1233" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

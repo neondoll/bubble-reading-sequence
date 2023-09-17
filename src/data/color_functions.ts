@@ -1,4 +1,4 @@
-const modifyHex = hex => {
+const modifyHex = (hex) => {
     if (hex.length === 4) {
         hex = hex.replace("#", "");
     }
@@ -8,7 +8,7 @@ const modifyHex = hex => {
     return hex;
 };
 
-const colorMixingHex = colors => {
+const colorMixingHex = (colors) => {
     let rgb = [0, 0, 0];
     colors.forEach(color => {
         let hex = color.replace("#", "");
