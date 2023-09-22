@@ -16,11 +16,11 @@ export interface Range {
 
 export type Ranges = Record<string, Range>;
 
-export type ComicType = "single" | "tome" | "book";
+export type ComicType = "single" | "book" | "hardcover_book";
 
 export interface Comic {
     name: string;
-    number: string;
+    number?: string;
     type: ComicType;
     ranges: string[];
     including_comics?: string[];

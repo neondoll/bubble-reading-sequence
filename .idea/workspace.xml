@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7cc15e66-bfd7-4c21-9031-39ac35689ec2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/color_functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/color_functions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/comics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/comics.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/v-network-graph.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/v-network-graph.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +95,8 @@
       <workItem from="1694761075266" duration="358000" />
       <workItem from="1694855702233" duration="11245000" />
       <workItem from="1694887220394" duration="22255000" />
+      <workItem from="1694944388166" duration="2221000" />
+      <workItem from="1695018072677" duration="16000" />
     </task>
     <servers />
   </component>
@@ -108,8 +108,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/../bubble/database/seeders/ComicSeeder.php</url>
-          <line>549</line>
-          <option name="timeStamp" value="1233" />
+          <line>579</line>
+          <option name="timeStamp" value="1238" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
