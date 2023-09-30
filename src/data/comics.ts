@@ -1,2054 +1,2288 @@
 import {Comics} from "../interfaces";
 
 export const comics: Comics = {
-    comic_besoboy_1                     : {
-        name            : "Бесобой #1 Имя ему Бесобой, часть 1",
-        number          : "1",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_1: {
+        name: "Бесобой #1 Имя ему Бесобой, часть 1",
+        number: "1",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_1"],
-        next_comics     : ["comic_besoboy_2"],
-        release_at      : {year: 2012, month: 10, day: 1}
+        next_comics: ["comic_besoboy_2"],
+        release_at: {year: 2012, month: 10, day: 1}
     },
-    comic_major_grom_1                  : {
-        name            : "Майор Гром #1 Чумной Доктор, часть 1",
-        number          : "1",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_1: {
+        name: "Майор Гром #1 Чумной Доктор, часть 1",
+        number: "1",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_1"],
-        next_comics     : ["comic_major_grom_2"],
-        release_at      : {year: 2012, month: 10, day: 8}
+        next_comics: ["comic_major_grom_2"],
+        release_at: {year: 2012, month: 10, day: 8}
     },
-    comic_enoch_1                       : {
-        name            : "Инок #1 Проданная реликвия, часть 1",
-        number          : "1",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_1: {
+        name: "Инок #1 Проданная реликвия, часть 1",
+        number: "1",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_1"],
-        next_comics     : ["comic_enoch_2"],
-        release_at      : {year: 2012, month: 10, day: 15}
+        next_comics: ["comic_enoch_2"],
+        release_at: {year: 2012, month: 10, day: 15}
     },
-    comic_red_fury_1                    : {
-        name            : "Красная Фурия #1 В поисках Грааля, часть 1",
-        number          : "1",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_1: {
+        name: "Красная Фурия #1 В поисках Грааля, часть 1",
+        number: "1",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_1"],
-        next_comics     : ["comic_red_fury_2"],
-        release_at      : {year: 2012, month: 10, day: 22}
+        next_comics: ["comic_red_fury_2"],
+        release_at: {year: 2012, month: 10, day: 22}
     },
-    comic_besoboy_2                     : {
-        name            : "Бесобой #2 Имя ему Бесобой, часть 2",
-        number          : "2",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_2: {
+        name: "Бесобой #2 Имя ему Бесобой, часть 2",
+        number: "2",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_1"],
-        previous_comics : ["comic_besoboy_1"],
-        next_comics     : ["comic_besoboy_3"],
-        release_at      : {year: 2012, month: 11, day: 1}
+        previous_comics: ["comic_besoboy_1"],
+        next_comics: ["comic_besoboy_3"],
+        release_at: {year: 2012, month: 11, day: 1}
     },
-    comic_major_grom_2                  : {
-        name            : "Майор Гром #2 Чумной Доктор, часть 2",
-        number          : "2",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_2: {
+        name: "Майор Гром #2 Чумной Доктор, часть 2",
+        number: "2",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_1"],
-        previous_comics : ["comic_major_grom_1"],
-        next_comics     : ["comic_major_grom_3"],
-        release_at      : {year: 2012, month: 11, day: 8}
+        previous_comics: ["comic_major_grom_1"],
+        next_comics: ["comic_major_grom_3"],
+        release_at: {year: 2012, month: 11, day: 8}
     },
-    comic_enoch_2                       : {
-        name            : "Инок #2 Проданная реликвия, часть 2",
-        number          : "2",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_2: {
+        name: "Инок #2 Проданная реликвия, часть 2",
+        number: "2",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_1"],
-        previous_comics : ["comic_enoch_1"],
-        next_comics     : ["comic_enoch_3"],
-        release_at      : {year: 2012, month: 11, day: 15}
+        previous_comics: ["comic_enoch_1"],
+        next_comics: ["comic_enoch_3"],
+        release_at: {year: 2012, month: 11, day: 15}
     },
-    comic_red_fury_2                    : {
-        name            : "Красная Фурия #2 В поисках Грааля, часть 2",
-        number          : "2",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_2: {
+        name: "Красная Фурия #2 В поисках Грааля, часть 2",
+        number: "2",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_1"],
-        previous_comics : ["comic_red_fury_1"],
-        next_comics     : ["comic_red_fury_3"],
-        release_at      : {year: 2012, month: 11, day: 22}
+        previous_comics: ["comic_red_fury_1"],
+        next_comics: ["comic_red_fury_3"],
+        release_at: {year: 2012, month: 11, day: 22}
     },
-    comic_besoboy_3                     : {
-        name            : "Бесобой #3 Имя ему Бесобой, часть 3",
-        number          : "3",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_3: {
+        name: "Бесобой #3 Имя ему Бесобой, часть 3",
+        number: "3",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_1"],
-        previous_comics : ["comic_besoboy_2"],
-        next_comics     : ["comic_besoboy_4"],
-        release_at      : {year: 2012, month: 12, day: 1}
+        previous_comics: ["comic_besoboy_2"],
+        next_comics: ["comic_besoboy_4"],
+        release_at: {year: 2012, month: 12, day: 1}
     },
-    comic_major_grom_3                  : {
-        name            : "Майор Гром #3 Чумной Доктор, часть 3",
-        number          : "3",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_3: {
+        name: "Майор Гром #3 Чумной Доктор, часть 3",
+        number: "3",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_1"],
-        previous_comics : ["comic_major_grom_2"],
-        next_comics     : ["comic_major_grom_4"],
-        release_at      : {year: 2012, month: 12, day: 8}
+        previous_comics: ["comic_major_grom_2"],
+        next_comics: ["comic_major_grom_4"],
+        release_at: {year: 2012, month: 12, day: 8}
     },
-    comic_enoch_3                       : {
-        name            : "Инок #3 Проданная реликвия, часть 3",
-        number          : "3",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_3: {
+        name: "Инок #3 Проданная реликвия, часть 3",
+        number: "3",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_1"],
-        previous_comics : ["comic_enoch_2"],
-        next_comics     : ["comic_enoch_4"],
-        release_at      : {year: 2012, month: 12, day: 15}
+        previous_comics: ["comic_enoch_2"],
+        next_comics: ["comic_enoch_4"],
+        release_at: {year: 2012, month: 12, day: 15}
     },
-    comic_red_fury_3                    : {
-        name            : "Красная Фурия #3 В поисках Грааля, часть 3",
-        number          : "3",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_3: {
+        name: "Красная Фурия #3 В поисках Грааля, часть 3",
+        number: "3",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_1"],
-        previous_comics : ["comic_red_fury_2"],
-        next_comics     : ["comic_red_fury_4"],
-        release_at      : {year: 2012, month: 12, day: 22}
+        previous_comics: ["comic_red_fury_2"],
+        next_comics: ["comic_red_fury_4"],
+        release_at: {year: 2012, month: 12, day: 22}
     },
-    comic_besoboy_4                     : {
-        name            : "Бесобой #4 Яблоко раздора; Призраки прошлого",
-        number          : "4",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_4: {
+        name: "Бесобой #4 Яблоко раздора; Призраки прошлого",
+        number: "4",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_1"],
-        previous_comics : ["comic_besoboy_3"],
-        next_comics     : ["comic_besoboy_5"],
-        release_at      : {year: 2013, month: 1, day: 1}
+        previous_comics: ["comic_besoboy_3"],
+        next_comics: ["comic_besoboy_5"],
+        release_at: {year: 2013, month: 1, day: 1}
     },
-    comic_major_grom_4                  : {
-        name            : "Майор Гром #4 Бабочки в животе; Ва-банк",
-        number          : "4",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_4: {
+        name: "Майор Гром #4 Бабочки в животе; Ва-банк",
+        number: "4",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_1"],
-        previous_comics : ["comic_major_grom_3"],
-        next_comics     : ["comic_major_grom_5"],
-        release_at      : {year: 2013, month: 1, day: 8}
+        previous_comics: ["comic_major_grom_3"],
+        next_comics: ["comic_major_grom_5"],
+        release_at: {year: 2013, month: 1, day: 8}
     },
-    comic_enoch_4                       : {
-        name            : "Инок #4 Подарок; По воле совета",
-        number          : "4",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_4: {
+        name: "Инок #4 Подарок; По воле совета",
+        number: "4",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_1"],
-        previous_comics : ["comic_enoch_3"],
-        next_comics     : ["comic_enoch_5"],
-        release_at      : {year: 2013, month: 1, day: 15}
+        previous_comics: ["comic_enoch_3"],
+        next_comics: ["comic_enoch_5"],
+        release_at: {year: 2013, month: 1, day: 15}
     },
-    comic_red_fury_4                    : {
-        name            : "Красная Фурия #4 Миллионер; Око Шивы",
-        number          : "4",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_4: {
+        name: "Красная Фурия #4 Миллионер; Око Шивы",
+        number: "4",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_1"],
-        previous_comics : ["comic_red_fury_3"],
-        next_comics     : ["comic_red_fury_5"],
-        release_at      : {year: 2013, month: 1, day: 22}
+        previous_comics: ["comic_red_fury_3"],
+        next_comics: ["comic_red_fury_5"],
+        release_at: {year: 2013, month: 1, day: 22}
     },
-    comic_besoboy_5                     : {
-        name            : "Бесобой #5 Имя ему Бесобой, часть 4",
-        number          : "5",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_5: {
+        name: "Бесобой #5 Имя ему Бесобой, часть 4",
+        number: "5",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_1"],
-        previous_comics : ["comic_besoboy_4"],
-        next_comics     : ["comic_besoboy_6"],
-        release_at      : {year: 2013, month: 2, day: 1}
+        previous_comics: ["comic_besoboy_4"],
+        next_comics: ["comic_besoboy_6"],
+        release_at: {year: 2013, month: 2, day: 1}
     },
-    comic_major_grom_5                  : {
-        name            : "Майор Гром #5 Чумной Доктор, часть 4",
-        number          : "5",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_5: {
+        name: "Майор Гром #5 Чумной Доктор, часть 4",
+        number: "5",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_1"],
-        previous_comics : ["comic_major_grom_4"],
-        next_comics     : ["comic_major_grom_6"],
-        release_at      : {year: 2013, month: 2, day: 8}
+        previous_comics: ["comic_major_grom_4"],
+        next_comics: ["comic_major_grom_6"],
+        release_at: {year: 2013, month: 2, day: 8}
     },
-    comic_enoch_5                       : {
-        name            : "Инок #5 Проданная реликвия, часть 4",
-        number          : "5",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_5: {
+        name: "Инок #5 Проданная реликвия, часть 4",
+        number: "5",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_1"],
-        previous_comics : ["comic_enoch_4"],
-        next_comics     : ["comic_enoch_6"],
-        release_at      : {year: 2013, month: 2, day: 15}
+        previous_comics: ["comic_enoch_4"],
+        next_comics: ["comic_enoch_6"],
+        release_at: {year: 2013, month: 2, day: 15}
     },
-    comic_red_fury_5                    : {
-        name            : "Красная Фурия #5 В поисках Грааля, часть 4",
-        number          : "5",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_5: {
+        name: "Красная Фурия #5 В поисках Грааля, часть 4",
+        number: "5",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_1"],
-        previous_comics : ["comic_red_fury_4"],
-        next_comics     : ["comic_red_fury_6"],
-        release_at      : {year: 2013, month: 2, day: 22}
+        previous_comics: ["comic_red_fury_4"],
+        next_comics: ["comic_red_fury_6"],
+        release_at: {year: 2013, month: 2, day: 22}
     },
-    comic_besoboy_6                     : {
-        name            : "Бесобой #6 Недетские игры, часть 1",
-        number          : "6",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_6: {
+        name: "Бесобой #6 Недетские игры, часть 1",
+        number: "6",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_1"],
-        previous_comics : ["comic_besoboy_5"],
-        next_comics     : ["comic_besoboy_7"],
-        release_at      : {year: 2013, month: 3, day: 1}
+        previous_comics: ["comic_besoboy_5"],
+        next_comics: ["comic_besoboy_7"],
+        release_at: {year: 2013, month: 3, day: 1}
     },
-    comic_major_grom_6                  : {
-        name            : "Майор Гром #6 Чумной Доктор, часть 5",
-        number          : "6",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_6: {
+        name: "Майор Гром #6 Чумной Доктор, часть 5",
+        number: "6",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_1"],
-        previous_comics : ["comic_major_grom_5"],
-        next_comics     : ["comic_major_grom_7"],
-        release_at      : {year: 2013, month: 3, day: 8}
+        previous_comics: ["comic_major_grom_5"],
+        next_comics: ["comic_major_grom_7"],
+        release_at: {year: 2013, month: 3, day: 8}
     },
-    comic_enoch_6                       : {
-        name            : "Инок #6 Проданная реликвия, часть 5",
-        number          : "6",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_6: {
+        name: "Инок #6 Проданная реликвия, часть 5",
+        number: "6",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_1"],
-        previous_comics : ["comic_enoch_5"],
-        next_comics     : ["comic_enoch_7"],
-        release_at      : {year: 2013, month: 3, day: 15}
+        previous_comics: ["comic_enoch_5"],
+        next_comics: ["comic_enoch_7"],
+        release_at: {year: 2013, month: 3, day: 15}
     },
-    comic_red_fury_6                    : {
-        name            : "Красная Фурия #6 В поисках Грааля, часть 5",
-        number          : "6",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_6: {
+        name: "Красная Фурия #6 В поисках Грааля, часть 5",
+        number: "6",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_1"],
-        previous_comics : ["comic_red_fury_5"],
-        next_comics     : ["comic_red_fury_7"],
-        release_at      : {year: 2013, month: 3, day: 22}
+        previous_comics: ["comic_red_fury_5"],
+        next_comics: ["comic_red_fury_7"],
+        release_at: {year: 2013, month: 3, day: 22}
     },
-    comic_besoboy_7                     : {
-        name            : "Бесобой #7 Недетские игры, часть 2",
-        number          : "7",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_7: {
+        name: "Бесобой #7 Недетские игры, часть 2",
+        number: "7",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_1"],
-        previous_comics : ["comic_besoboy_6"],
-        next_comics     : ["comic_besoboy_8"],
-        release_at      : {year: 2013, month: 4, day: 1}
+        previous_comics: ["comic_besoboy_6"],
+        next_comics: ["comic_besoboy_8"],
+        release_at: {year: 2013, month: 4, day: 1}
     },
-    comic_major_grom_7                  : {
-        name            : "Майор Гром #7 Чумной Доктор, часть 6",
-        number          : "7",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_7: {
+        name: "Майор Гром #7 Чумной Доктор, часть 6",
+        number: "7",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_2"],
-        previous_comics : ["comic_major_grom_6"],
-        next_comics     : ["comic_major_grom_8"],
-        release_at      : {year: 2013, month: 4, day: 8}
+        previous_comics: ["comic_major_grom_6"],
+        next_comics: ["comic_major_grom_8"],
+        release_at: {year: 2013, month: 4, day: 8}
     },
-    comic_enoch_7                       : {
-        name            : "Инок #7 Проданная реликвия, часть 6",
-        number          : "7",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_7: {
+        name: "Инок #7 Проданная реликвия, часть 6",
+        number: "7",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_1"],
-        previous_comics : ["comic_enoch_6"],
-        next_comics     : ["comic_enoch_8"],
-        release_at      : {year: 2013, month: 4, day: 15}
+        previous_comics: ["comic_enoch_6"],
+        next_comics: ["comic_enoch_8"],
+        release_at: {year: 2013, month: 4, day: 15}
     },
-    comic_red_fury_7                    : {
-        name            : "Красная Фурия #7 В поисках Грааля, часть 6",
-        number          : "7",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_7: {
+        name: "Красная Фурия #7 В поисках Грааля, часть 6",
+        number: "7",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_1"],
-        previous_comics : ["comic_red_fury_6"],
-        next_comics     : ["comic_red_fury_8"],
-        release_at      : {year: 2013, month: 4, day: 22}
+        previous_comics: ["comic_red_fury_6"],
+        next_comics: ["comic_red_fury_8"],
+        release_at: {year: 2013, month: 4, day: 22}
     },
-    comic_besoboy_8                     : {
-        name            : "Бесобой #8 Страшная тайна, часть 1",
-        number          : "8",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_8: {
+        name: "Бесобой #8 Страшная тайна, часть 1",
+        number: "8",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_2"],
-        previous_comics : ["comic_besoboy_7"],
-        next_comics     : ["comic_besoboy_9"],
-        release_at      : {year: 2013, month: 5, day: 1}
+        previous_comics: ["comic_besoboy_7"],
+        next_comics: ["comic_besoboy_9"],
+        release_at: {year: 2013, month: 5, day: 1}
     },
-    comic_major_grom_8                  : {
-        name            : "Майор Гром #8 Чумной Доктор, часть 7",
-        number          : "8",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_8: {
+        name: "Майор Гром #8 Чумной Доктор, часть 7",
+        number: "8",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_2"],
-        previous_comics : ["comic_major_grom_7"],
-        next_comics     : ["comic_major_grom_9"],
-        release_at      : {year: 2013, month: 5, day: 8}
+        previous_comics: ["comic_major_grom_7"],
+        next_comics: ["comic_major_grom_9"],
+        release_at: {year: 2013, month: 5, day: 8}
     },
-    comic_enoch_8                       : {
-        name            : "Инок #8 Проданная реликвия, часть 7",
-        number          : "8",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_8: {
+        name: "Инок #8 Проданная реликвия, часть 7",
+        number: "8",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_2"],
-        previous_comics : ["comic_enoch_7"],
-        next_comics     : ["comic_enoch_9"],
-        release_at      : {year: 2013, month: 5, day: 15}
+        previous_comics: ["comic_enoch_7"],
+        next_comics: ["comic_enoch_9"],
+        release_at: {year: 2013, month: 5, day: 15}
     },
-    comic_red_fury_8                    : {
-        name            : "Красная Фурия #8 В поисках Грааля, часть 7",
-        number          : "8",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_8: {
+        name: "Красная Фурия #8 В поисках Грааля, часть 7",
+        number: "8",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_2"],
-        previous_comics : ["comic_red_fury_7"],
-        next_comics     : ["comic_red_fury_9"],
-        release_at      : {year: 2013, month: 5, day: 22}
+        previous_comics: ["comic_red_fury_7"],
+        next_comics: ["comic_red_fury_9"],
+        release_at: {year: 2013, month: 5, day: 22}
     },
-    comic_besoboy_9                     : {
-        name            : "Бесобой #9 Страшная тайна, часть 2",
-        number          : "9",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_9: {
+        name: "Бесобой #9 Страшная тайна, часть 2",
+        number: "9",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_2"],
-        previous_comics : ["comic_besoboy_8"],
-        next_comics     : ["comic_besoboy_10"],
-        release_at      : {year: 2013, month: 6, day: 1}
+        previous_comics: ["comic_besoboy_8"],
+        next_comics: ["comic_besoboy_10"],
+        release_at: {year: 2013, month: 6, day: 1}
     },
-    comic_major_grom_9                  : {
-        name            : "Майор Гром #9 Чумной Доктор, часть 8",
-        number          : "9",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_9: {
+        name: "Майор Гром #9 Чумной Доктор, часть 8",
+        number: "9",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_2"],
-        previous_comics : ["comic_major_grom_8"],
-        next_comics     : ["comic_major_grom_10"],
-        release_at      : {year: 2013, month: 6, day: 8}
+        previous_comics: ["comic_major_grom_8"],
+        next_comics: ["comic_major_grom_10"],
+        release_at: {year: 2013, month: 6, day: 8}
     },
-    comic_enoch_9                       : {
-        name            : "Инок #9 Проданная реликвия, часть 8",
-        number          : "9",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_9: {
+        name: "Инок #9 Проданная реликвия, часть 8",
+        number: "9",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_2"],
-        previous_comics : ["comic_enoch_8"],
-        next_comics     : ["comic_enoch_10"],
-        release_at      : {year: 2013, month: 6, day: 15}
+        previous_comics: ["comic_enoch_8"],
+        next_comics: ["comic_enoch_10"],
+        release_at: {year: 2013, month: 6, day: 15}
     },
-    comic_red_fury_9                    : {
-        name            : "Красная Фурия #9 В поисках Грааля, часть 8",
-        number          : "9",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_9: {
+        name: "Красная Фурия #9 В поисках Грааля, часть 8",
+        number: "9",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_2"],
-        previous_comics : ["comic_red_fury_8"],
-        next_comics     : ["comic_red_fury_10"],
-        release_at      : {year: 2013, month: 6, day: 22}
+        previous_comics: ["comic_red_fury_8"],
+        next_comics: ["comic_red_fury_10"],
+        release_at: {year: 2013, month: 6, day: 22}
     },
-    comic_besoboy_10                    : {
-        name            : "Бесобой #10 Лицо зверя, часть 1",
-        number          : "10",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_10: {
+        name: "Бесобой #10 Лицо зверя, часть 1",
+        number: "10",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_2"],
-        previous_comics : ["comic_besoboy_9"],
-        next_comics     : ["comic_besoboy_11"],
-        release_at      : {year: 2013, month: 7, day: 1}
+        previous_comics: ["comic_besoboy_9"],
+        next_comics: ["comic_besoboy_11"],
+        release_at: {year: 2013, month: 7, day: 1}
     },
-    comic_major_grom_10                 : {
-        name            : "Майор Гром #10 Блогофобия; Сувенир; Метаморфоза",
-        number          : "10",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_10: {
+        name: "Майор Гром #10 Блогофобия; Сувенир; Метаморфоза",
+        number: "10",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_2"],
-        previous_comics : ["comic_major_grom_9"],
-        next_comics     : ["comic_major_grom_11"],
-        release_at      : {year: 2013, month: 7, day: 8}
+        previous_comics: ["comic_major_grom_9"],
+        next_comics: ["comic_major_grom_11"],
+        release_at: {year: 2013, month: 7, day: 8}
     },
-    comic_enoch_10                      : {
-        name            : "Инок #10 Проданная реликвия, часть 9",
-        number          : "10",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_10: {
+        name: "Инок #10 Проданная реликвия, часть 9",
+        number: "10",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_2"],
-        previous_comics : ["comic_enoch_9"],
-        next_comics     : ["comic_enoch_11"],
-        release_at      : {year: 2013, month: 7, day: 15}
+        previous_comics: ["comic_enoch_9"],
+        next_comics: ["comic_enoch_11"],
+        release_at: {year: 2013, month: 7, day: 15}
     },
-    comic_red_fury_10                   : {
-        name            : "Красная Фурия #10 Арабская ночь; Ангел Смерти; Меч возмездия",
-        number          : "10",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_10: {
+        name: "Красная Фурия #10 Арабская ночь; Ангел Смерти; Меч возмездия",
+        number: "10",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_2"],
-        previous_comics : ["comic_red_fury_9"],
-        next_comics     : ["comic_red_fury_11"],
-        release_at      : {year: 2013, month: 7, day: 22}
+        previous_comics: ["comic_red_fury_9"],
+        next_comics: ["comic_red_fury_11"],
+        release_at: {year: 2013, month: 7, day: 22}
     },
-    comic_besoboy_11                    : {
-        name            : "Бесобой #11 Лицо зверя, часть 2",
-        number          : "11",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_11: {
+        name: "Бесобой #11 Лицо зверя, часть 2",
+        number: "11",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_2"],
-        previous_comics : ["comic_besoboy_10"],
-        next_comics     : ["comic_besoboy_12"],
-        release_at      : {year: 2013, month: 8, day: 1}
+        previous_comics: ["comic_besoboy_10"],
+        next_comics: ["comic_besoboy_12"],
+        release_at: {year: 2013, month: 8, day: 1}
     },
-    comic_major_grom_11                 : {
-        name            : "Майор Гром #11 День Святого Патрика, часть 1",
-        number          : "11",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_11: {
+        name: "Майор Гром #11 День Святого Патрика, часть 1",
+        number: "11",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_3"],
-        previous_comics : ["comic_major_grom_10"],
-        next_comics     : ["comic_major_grom_12"],
-        release_at      : {year: 2013, month: 8, day: 8}
+        previous_comics: ["comic_major_grom_10"],
+        next_comics: ["comic_major_grom_12"],
+        release_at: {year: 2013, month: 8, day: 8}
     },
-    comic_enoch_11                      : {
-        name            : "Инок #11 Проданная реликвия, часть 10",
-        number          : "11",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_11: {
+        name: "Инок #11 Проданная реликвия, часть 10",
+        number: "11",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_2"],
-        previous_comics : ["comic_enoch_10"],
-        next_comics     : ["comic_enoch_12"],
-        release_at      : {year: 2013, month: 8, day: 15}
+        previous_comics: ["comic_enoch_10"],
+        next_comics: ["comic_enoch_12"],
+        release_at: {year: 2013, month: 8, day: 15}
     },
-    comic_red_fury_11                   : {
-        name            : "Красная Фурия #11 Джунгли зовут, часть 1",
-        number          : "11",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_11: {
+        name: "Красная Фурия #11 Джунгли зовут, часть 1",
+        number: "11",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_2"],
-        previous_comics : ["comic_red_fury_10"],
-        next_comics     : ["comic_red_fury_12"],
-        release_at      : {year: 2013, month: 8, day: 22}
+        previous_comics: ["comic_red_fury_10"],
+        next_comics: ["comic_red_fury_12"],
+        release_at: {year: 2013, month: 8, day: 22}
     },
-    comic_besoboy_12                    : {
-        name            : "Бесобой #12 Лицо зверя, часть 3",
-        number          : "12",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_12: {
+        name: "Бесобой #12 Лицо зверя, часть 3",
+        number: "12",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_2"],
-        previous_comics : ["comic_besoboy_11"],
-        next_comics     : ["comic_besoboy_13"],
-        release_at      : {year: 2013, month: 9, day: 1}
+        previous_comics: ["comic_besoboy_11"],
+        next_comics: ["comic_besoboy_13"],
+        release_at: {year: 2013, month: 9, day: 1}
     },
-    comic_major_grom_12                 : {
-        name            : "Майор Гром #12 День Святого Патрика, часть 2",
-        number          : "12",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_12: {
+        name: "Майор Гром #12 День Святого Патрика, часть 2",
+        number: "12",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_3"],
-        previous_comics : ["comic_major_grom_11"],
-        next_comics     : ["comic_major_grom_13"],
-        release_at      : {year: 2013, month: 9, day: 9}
+        previous_comics: ["comic_major_grom_11"],
+        next_comics: ["comic_major_grom_13"],
+        release_at: {year: 2013, month: 9, day: 9}
     },
-    comic_enoch_12                      : {
-        name            : "Инок #12 Проданная реликвия, часть 11",
-        number          : "12",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_12: {
+        name: "Инок #12 Проданная реликвия, часть 11",
+        number: "12",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_2"],
-        previous_comics : ["comic_enoch_11"],
-        next_comics     : ["comic_enoch_13"],
-        release_at      : {year: 2013, month: 9, day: 15}
+        previous_comics: ["comic_enoch_11"],
+        next_comics: ["comic_enoch_13"],
+        release_at: {year: 2013, month: 9, day: 15}
     },
-    comic_red_fury_12                   : {
-        name            : "Красная Фурия #12 Джунгли зовут, часть 2",
-        number          : "12",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_12: {
+        name: "Красная Фурия #12 Джунгли зовут, часть 2",
+        number: "12",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_2"],
-        previous_comics : ["comic_red_fury_11"],
-        next_comics     : ["comic_red_fury_13"],
-        release_at      : {year: 2013, month: 9, day: 22}
+        previous_comics: ["comic_red_fury_11"],
+        next_comics: ["comic_red_fury_13"],
+        release_at: {year: 2013, month: 9, day: 22}
     },
-    comic_besoboy_13                    : {
-        name            : "Бесобой #13 Лицо зверя, часть 4",
-        number          : "13",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_13: {
+        name: "Бесобой #13 Лицо зверя, часть 4",
+        number: "13",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_2"],
-        previous_comics : ["comic_besoboy_12"],
-        next_comics     : ["comic_besoboy_14"],
-        release_at      : {year: 2013, month: 10, day: 1}
+        previous_comics: ["comic_besoboy_12"],
+        next_comics: ["comic_besoboy_14"],
+        release_at: {year: 2013, month: 10, day: 1}
     },
-    comic_major_grom_13                 : {
-        name            : "Майор Гром #13 День Святого Патрика, часть 3",
-        number          : "13",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_13: {
+        name: "Майор Гром #13 День Святого Патрика, часть 3",
+        number: "13",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_3"],
-        previous_comics : ["comic_major_grom_12"],
-        next_comics     : ["comic_major_grom_14"],
-        release_at      : {year: 2013, month: 10, day: 8}
+        previous_comics: ["comic_major_grom_12"],
+        next_comics: ["comic_major_grom_14"],
+        release_at: {year: 2013, month: 10, day: 8}
     },
-    comic_enoch_13                      : {
-        name            : "Инок #13 Проданная реликвия, часть 12",
-        number          : "13",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_13: {
+        name: "Инок #13 Проданная реликвия, часть 12",
+        number: "13",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_2"],
-        previous_comics : ["comic_enoch_12"],
-        next_comics     : ["comic_enoch_14"],
-        release_at      : {year: 2013, month: 10, day: 15}
+        previous_comics: ["comic_enoch_12"],
+        next_comics: ["comic_enoch_14"],
+        release_at: {year: 2013, month: 10, day: 15}
     },
-    comic_red_fury_13                   : {
-        name            : "Красная Фурия #13 Джунгли зовут, часть 3",
-        number          : "13",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_13: {
+        name: "Красная Фурия #13 Джунгли зовут, часть 3",
+        number: "13",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_2"],
-        previous_comics : ["comic_red_fury_12"],
-        next_comics     : ["comic_red_fury_14"],
-        release_at      : {year: 2013, month: 10, day: 22}
+        previous_comics: ["comic_red_fury_12"],
+        next_comics: ["comic_red_fury_14"],
+        release_at: {year: 2013, month: 10, day: 22}
     },
-    comic_besoboy_14                    : {
-        name            : "Бесобой #14 Лицо зверя: Эпилог",
-        number          : "14",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_14: {
+        name: "Бесобой #14 Лицо зверя: Эпилог",
+        number: "14",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_2"],
-        previous_comics : ["comic_besoboy_13"],
-        next_comics     : ["comic_besoboy_15"],
-        release_at      : {year: 2013, month: 11, day: 1}
+        previous_comics: ["comic_besoboy_13"],
+        next_comics: ["comic_besoboy_15"],
+        release_at: {year: 2013, month: 11, day: 1}
     },
-    comic_major_grom_14                 : {
-        name            : "Майор Гром #14 День Святого Патрика, часть 4",
-        number          : "14",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_14: {
+        name: "Майор Гром #14 День Святого Патрика, часть 4",
+        number: "14",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_3"],
-        previous_comics : ["comic_major_grom_13"],
-        next_comics     : ["comic_major_grom_15"],
-        release_at      : {year: 2013, month: 11, day: 8}
+        previous_comics: ["comic_major_grom_13"],
+        next_comics: ["comic_major_grom_15"],
+        release_at: {year: 2013, month: 11, day: 8}
     },
-    comic_enoch_14                      : {
-        name            : "Инок #14 Крест; Союз; Чёрный Ворон",
-        number          : "14",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_14: {
+        name: "Инок #14 Крест; Союз; Чёрный Ворон",
+        number: "14",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_2"],
-        previous_comics : ["comic_enoch_13"],
-        next_comics     : ["comic_besoboy_15"],
-        release_at      : {year: 2013, month: 11, day: 15}
+        previous_comics: ["comic_enoch_13"],
+        next_comics: ["comic_besoboy_15"],
+        release_at: {year: 2013, month: 11, day: 15}
     },
-    comic_red_fury_14                   : {
-        name            : "Красная Фурия #14 Джунгли зовут, часть 4",
-        number          : "14",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_14: {
+        name: "Красная Фурия #14 Джунгли зовут, часть 4",
+        number: "14",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_2"],
-        previous_comics : ["comic_red_fury_13"],
-        next_comics     : ["comic_red_fury_15"],
-        release_at      : {year: 2013, month: 11, day: 22}
+        previous_comics: ["comic_red_fury_13"],
+        next_comics: ["comic_red_fury_15"],
+        release_at: {year: 2013, month: 11, day: 22}
     },
-    comic_besoboy_15                    : {
-        name            : "Бесобой #15 Инок против Бесобоя, часть 1",
-        number          : "15",
-        type            : "single",
-        ranges          : ["range_besoboy", "range_crossovers"],
+    comic_besoboy_15: {
+        name: "Бесобой #15 Инок против Бесобоя, часть 1",
+        number: "15",
+        type: "single",
+        ranges: ["range_besoboy", "range_crossovers"],
         including_comics: ["comic_enoch_vs_besoboy"],
-        previous_comics : ["comic_besoboy_14", "comic_enoch_14"],
-        next_comics     : ["comic_enoch_15"],
-        release_at      : {year: 2013, month: 12, day: 1}
+        previous_comics: ["comic_besoboy_14", "comic_enoch_14"],
+        next_comics: ["comic_enoch_15"],
+        release_at: {year: 2013, month: 12, day: 1}
     },
-    comic_major_grom_15                 : {
-        name            : "Майор Гром #15 День Святого Патрика, часть 5",
-        number          : "15",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_15: {
+        name: "Майор Гром #15 День Святого Патрика, часть 5",
+        number: "15",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_3"],
-        previous_comics : ["comic_major_grom_14"],
-        next_comics     : ["comic_major_grom_16"],
-        release_at      : {year: 2013, month: 12, day: 8}
+        previous_comics: ["comic_major_grom_14"],
+        next_comics: ["comic_major_grom_16"],
+        release_at: {year: 2013, month: 12, day: 8}
     },
-    comic_enoch_15                      : {
-        name            : "Инок #15 Инок против Бесобоя, часть 2",
-        number          : "15",
-        type            : "single",
-        ranges          : ["range_enoch", "range_crossovers"],
+    comic_enoch_15: {
+        name: "Инок #15 Инок против Бесобоя, часть 2",
+        number: "15",
+        type: "single",
+        ranges: ["range_enoch", "range_crossovers"],
         including_comics: ["comic_enoch_vs_besoboy"],
-        previous_comics : ["comic_besoboy_15"],
-        next_comics     : ["comic_enoch_vs_besoboy_1"],
-        release_at      : {year: 2013, month: 12, day: 15}
+        previous_comics: ["comic_besoboy_15"],
+        next_comics: ["comic_enoch_vs_besoboy_1"],
+        release_at: {year: 2013, month: 12, day: 15}
     },
-    comic_red_fury_15                   : {
-        name            : "Красная Фурия #15 День Рождения",
-        number          : "15",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_15: {
+        name: "Красная Фурия #15 День Рождения",
+        number: "15",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_2"],
-        previous_comics : ["comic_red_fury_14"],
-        next_comics     : ["comic_red_fury_16"],
-        release_at      : {year: 2013, month: 12, day: 22}
+        previous_comics: ["comic_red_fury_14"],
+        next_comics: ["comic_red_fury_16"],
+        release_at: {year: 2013, month: 12, day: 22}
     },
-    comic_enoch_vs_besoboy_1            : {
-        name            : "Инок против Бесобоя #1 Инок против Бесобоя, часть 3",
-        number          : "1",
-        type            : "single",
-        ranges          : ["range_besoboy", "range_enoch", "range_crossovers"],
+    comic_enoch_vs_besoboy_1: {
+        name: "Инок против Бесобоя #1 Инок против Бесобоя, часть 3",
+        number: "1",
+        type: "single",
+        ranges: ["range_besoboy", "range_enoch", "range_crossovers"],
         including_comics: ["comic_enoch_vs_besoboy"],
-        previous_comics : ["comic_enoch_15"],
-        next_comics     : ["comic_besoboy_16"],
-        release_at      : {year: 2013, month: 12, day: 28}
+        previous_comics: ["comic_enoch_15"],
+        next_comics: ["comic_besoboy_16"],
+        release_at: {year: 2013, month: 12, day: 28}
     },
-    comic_besoboy_16                    : {
-        name            : "Бесобой #16 Инок против Бесобоя, часть 4",
-        number          : "16",
-        type            : "single",
-        ranges          : ["range_besoboy", "range_crossovers"],
+    comic_besoboy_16: {
+        name: "Бесобой #16 Инок против Бесобоя, часть 4",
+        number: "16",
+        type: "single",
+        ranges: ["range_besoboy", "range_crossovers"],
         including_comics: ["comic_enoch_vs_besoboy"],
-        previous_comics : ["comic_enoch_vs_besoboy_1"],
-        next_comics     : ["comic_enoch_16"],
-        release_at      : {year: 2014, month: 1, day: 1}
+        previous_comics: ["comic_enoch_vs_besoboy_1"],
+        next_comics: ["comic_enoch_16"],
+        release_at: {year: 2014, month: 1, day: 1}
     },
-    comic_major_grom_16                 : {
-        name            : "Майор Гром #16 День Святого Патрика, часть 6",
-        number          : "16",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_16: {
+        name: "Майор Гром #16 День Святого Патрика, часть 6",
+        number: "16",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_3"],
-        previous_comics : ["comic_major_grom_15"],
-        next_comics     : ["comic_major_grom_17"],
-        release_at      : {year: 2014, month: 1, day: 8}
+        previous_comics: ["comic_major_grom_15"],
+        next_comics: ["comic_major_grom_17"],
+        release_at: {year: 2014, month: 1, day: 8}
     },
-    comic_enoch_16                      : {
-        name            : "Инок #16 Инок против Бесобоя, часть 5",
-        number          : "16",
-        type            : "single",
-        ranges          : ["range_enoch", "range_crossovers"],
+    comic_enoch_16: {
+        name: "Инок #16 Инок против Бесобоя, часть 5",
+        number: "16",
+        type: "single",
+        ranges: ["range_enoch", "range_crossovers"],
         including_comics: ["comic_enoch_vs_besoboy"],
-        previous_comics : ["comic_besoboy_16"],
-        next_comics     : ["comic_enoch_vs_besoboy_2"],
-        release_at      : {year: 2014, month: 1, day: 15}
+        previous_comics: ["comic_besoboy_16"],
+        next_comics: ["comic_enoch_vs_besoboy_2"],
+        release_at: {year: 2014, month: 1, day: 15}
     },
-    comic_red_fury_16                   : {
-        name            : "Красная Фурия #16 Затишье перед бурей",
-        number          : "16",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_16: {
+        name: "Красная Фурия #16 Затишье перед бурей",
+        number: "16",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_3"],
-        previous_comics : ["comic_red_fury_15"],
-        next_comics     : ["comic_red_fury_16_1"],
-        release_at      : {year: 2014, month: 1, day: 22}
+        previous_comics: ["comic_red_fury_15"],
+        next_comics: ["comic_red_fury_16_1"],
+        release_at: {year: 2014, month: 1, day: 22}
     },
-    comic_enoch_vs_besoboy_2            : {
-        name            : "Инок против Бесобоя #2 Инок против Бесобоя, часть 6",
-        number          : "2",
-        type            : "single",
-        ranges          : ["range_besoboy", "range_enoch", "range_crossovers"],
+    comic_enoch_vs_besoboy_2: {
+        name: "Инок против Бесобоя #2 Инок против Бесобоя, часть 6",
+        number: "2",
+        type: "single",
+        ranges: ["range_besoboy", "range_enoch", "range_crossovers"],
         including_comics: ["comic_enoch_vs_besoboy"],
-        previous_comics : ["comic_enoch_16"],
-        next_comics     : ["comic_besoboy_17"],
-        release_at      : {year: 2014, month: 1, day: 28}
+        previous_comics: ["comic_enoch_16"],
+        next_comics: ["comic_besoboy_17"],
+        release_at: {year: 2014, month: 1, day: 28}
     },
-    comic_besoboy_17                    : {
-        name            : "Бесобой #17 Инок против Бесобоя, часть 7",
-        number          : "17",
-        type            : "single",
-        ranges          : ["range_besoboy", "range_crossovers"],
+    comic_besoboy_17: {
+        name: "Бесобой #17 Инок против Бесобоя, часть 7",
+        number: "17",
+        type: "single",
+        ranges: ["range_besoboy", "range_crossovers"],
         including_comics: ["comic_enoch_vs_besoboy"],
-        previous_comics : ["comic_enoch_vs_besoboy_2"],
-        next_comics     : ["comic_enoch_17"],
-        release_at      : {year: 2014, month: 2, day: 1}
+        previous_comics: ["comic_enoch_vs_besoboy_2"],
+        next_comics: ["comic_enoch_17"],
+        release_at: {year: 2014, month: 2, day: 1}
     },
-    comic_major_grom_17                 : {
-        name            : "Майор Гром #17 День Святого Патрика, часть 7",
-        number          : "17",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_17: {
+        name: "Майор Гром #17 День Святого Патрика, часть 7",
+        number: "17",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_3"],
-        previous_comics : ["comic_major_grom_16"],
-        next_comics     : ["comic_major_grom_18"],
-        release_at      : {year: 2014, month: 2, day: 2}
+        previous_comics: ["comic_major_grom_16"],
+        next_comics: ["comic_major_grom_18"],
+        release_at: {year: 2014, month: 2, day: 2}
     },
-    comic_enoch_17                      : {
-        name            : "Инок #17 Инок против Бесобоя, часть 8",
-        number          : "17",
-        type            : "single",
-        ranges          : ["range_enoch", "range_crossovers"],
+    comic_enoch_17: {
+        name: "Инок #17 Инок против Бесобоя, часть 8",
+        number: "17",
+        type: "single",
+        ranges: ["range_enoch", "range_crossovers"],
         including_comics: ["comic_enoch_vs_besoboy"],
-        previous_comics : ["comic_besoboy_17"],
-        next_comics     : ["comic_enoch_vs_besoboy_3"],
-        release_at      : {year: 2014, month: 2, day: 15}
+        previous_comics: ["comic_besoboy_17"],
+        next_comics: ["comic_enoch_vs_besoboy_3"],
+        release_at: {year: 2014, month: 2, day: 15}
     },
-    comic_red_fury_17                   : {
-        name            : "Красная Фурия #17 Тёмное наследие, часть 1",
-        number          : "17",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_17: {
+        name: "Красная Фурия #17 Тёмное наследие, часть 1",
+        number: "17",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_3"],
-        previous_comics : ["comic_red_fury_16_1"],
-        next_comics     : ["comic_red_fury_18"],
-        release_at      : {year: 2014, month: 2, day: 22}
+        previous_comics: ["comic_red_fury_16_1"],
+        next_comics: ["comic_red_fury_18"],
+        release_at: {year: 2014, month: 2, day: 22}
     },
-    comic_enoch_vs_besoboy_3            : {
-        name            : "Инок против Бесобоя #3 Инок против Бесобоя, часть 9",
-        number          : "3",
-        type            : "single",
-        ranges          : ["range_besoboy", "range_enoch", "range_crossovers"],
+    comic_enoch_vs_besoboy_3: {
+        name: "Инок против Бесобоя #3 Инок против Бесобоя, часть 9",
+        number: "3",
+        type: "single",
+        ranges: ["range_besoboy", "range_enoch", "range_crossovers"],
         including_comics: ["comic_enoch_vs_besoboy"],
-        previous_comics : ["comic_enoch_17"],
-        next_comics     : ["comic_besoboy_18", "comic_enoch_18"],
-        release_at      : {year: 2014, month: 2, day: 28}
+        previous_comics: ["comic_enoch_17"],
+        next_comics: ["comic_besoboy_18", "comic_enoch_18"],
+        release_at: {year: 2014, month: 2, day: 28}
     },
-    comic_besoboy_18                    : {
-        name            : "Бесобой #18 Три сестры, часть 1",
-        number          : "18",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_18: {
+        name: "Бесобой #18 Три сестры, часть 1",
+        number: "18",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_3"],
-        previous_comics : ["comic_enoch_vs_besoboy_3"],
-        next_comics     : ["comic_besoboy_19"],
-        release_at      : {year: 2014, month: 3, day: 1}
+        previous_comics: ["comic_enoch_vs_besoboy_3"],
+        next_comics: ["comic_besoboy_19"],
+        release_at: {year: 2014, month: 3, day: 1}
     },
-    comic_major_grom_18                 : {
-        name            : "Майор Гром #18 День Святого Патрика, часть 8",
-        number          : "18",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_18: {
+        name: "Майор Гром #18 День Святого Патрика, часть 8",
+        number: "18",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_3"],
-        previous_comics : ["comic_major_grom_17"],
-        next_comics     : ["comic_major_grom_19"],
-        release_at      : {year: 2014, month: 3, day: 8}
+        previous_comics: ["comic_major_grom_17"],
+        next_comics: ["comic_major_grom_19"],
+        release_at: {year: 2014, month: 3, day: 8}
     },
-    comic_enoch_18                      : {
-        name            : "Инок #18 Прощание, часть 1",
-        number          : "18",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_18: {
+        name: "Инок #18 Прощание, часть 1",
+        number: "18",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_3"],
-        previous_comics : ["comic_enoch_vs_besoboy_3"],
-        next_comics     : ["comic_enoch_19"],
-        release_at      : {year: 2014, month: 3, day: 15}
+        previous_comics: ["comic_enoch_vs_besoboy_3"],
+        next_comics: ["comic_enoch_19"],
+        release_at: {year: 2014, month: 3, day: 15}
     },
-    comic_red_fury_18                   : {
-        name            : "Красная Фурия #18 Тёмное наследие, часть 2",
-        number          : "18",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_18: {
+        name: "Красная Фурия #18 Тёмное наследие, часть 2",
+        number: "18",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_3"],
-        previous_comics : ["comic_red_fury_17"],
-        next_comics     : ["comic_red_fury_19"],
-        release_at      : {year: 2014, month: 3, day: 22}
+        previous_comics: ["comic_red_fury_17"],
+        next_comics: ["comic_red_fury_19"],
+        release_at: {year: 2014, month: 3, day: 22}
     },
-    comic_besoboy_19                    : {
-        name            : "Бесобой #19 Три сестры, часть 2",
-        number          : "19",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_19: {
+        name: "Бесобой #19 Три сестры, часть 2",
+        number: "19",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_3"],
-        previous_comics : ["comic_besoboy_18"],
-        next_comics     : ["comic_besoboy_20"],
-        release_at      : {year: 2014, month: 4, day: 1}
+        previous_comics: ["comic_besoboy_18"],
+        next_comics: ["comic_besoboy_20"],
+        release_at: {year: 2014, month: 4, day: 1}
     },
-    comic_major_grom_19                 : {
-        name            : "Майор Гром #19 Как в сказке, часть 1",
-        number          : "19",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_19: {
+        name: "Майор Гром #19 Как в сказке, часть 1",
+        number: "19",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_4"],
-        previous_comics : ["comic_major_grom_18"],
-        next_comics     : ["comic_major_grom_20"],
-        release_at      : {year: 2014, month: 4, day: 8}
+        previous_comics: ["comic_major_grom_18"],
+        next_comics: ["comic_major_grom_20"],
+        release_at: {year: 2014, month: 4, day: 8}
     },
-    comic_enoch_19                      : {
-        name            : "Инок #19 Прощание, часть 2",
-        number          : "19",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_19: {
+        name: "Инок #19 Прощание, часть 2",
+        number: "19",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_3"],
-        previous_comics : ["comic_enoch_18"],
-        next_comics     : ["comic_enoch_20"],
-        release_at      : {year: 2014, month: 4, day: 15}
+        previous_comics: ["comic_enoch_18"],
+        next_comics: ["comic_enoch_20"],
+        release_at: {year: 2014, month: 4, day: 15}
     },
-    comic_red_fury_19                   : {
-        name            : "Красная Фурия #19 Тёмное наследие, часть 3",
-        number          : "19",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_19: {
+        name: "Красная Фурия #19 Тёмное наследие, часть 3",
+        number: "19",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_3"],
-        previous_comics : ["comic_red_fury_18"],
-        next_comics     : ["comic_red_fury_20"],
-        release_at      : {year: 2014, month: 4, day: 22}
+        previous_comics: ["comic_red_fury_18"],
+        next_comics: ["comic_red_fury_20"],
+        release_at: {year: 2014, month: 4, day: 22}
     },
-    comic_besoboy_20                    : {
-        name            : "Бесобой #20 Три сестры, часть 3",
-        number          : "20",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_20: {
+        name: "Бесобой #20 Три сестры, часть 3",
+        number: "20",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_3"],
-        previous_comics : ["comic_besoboy_19"],
-        next_comics     : ["comic_besoboy_21"],
-        release_at      : {year: 2014, month: 5, day: 1}
+        previous_comics: ["comic_besoboy_19"],
+        next_comics: ["comic_besoboy_21"],
+        release_at: {year: 2014, month: 5, day: 1}
     },
-    comic_major_grom_20                 : {
-        name            : "Майор Гром #20 Как в сказке, часть 2",
-        number          : "20",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_20: {
+        name: "Майор Гром #20 Как в сказке, часть 2",
+        number: "20",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_4"],
-        previous_comics : ["comic_major_grom_19"],
-        next_comics     : ["comic_major_grom_21"],
-        release_at      : {year: 2014, month: 5, day: 8}
+        previous_comics: ["comic_major_grom_19"],
+        next_comics: ["comic_major_grom_21"],
+        release_at: {year: 2014, month: 5, day: 8}
     },
-    comic_enoch_20                      : {
-        name            : "Инок #20 Прощание, часть 3",
-        number          : "20",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_20: {
+        name: "Инок #20 Прощание, часть 3",
+        number: "20",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_3"],
-        previous_comics : ["comic_enoch_19"],
-        next_comics     : ["comic_enoch_21"],
-        release_at      : {year: 2014, month: 5, day: 15}
+        previous_comics: ["comic_enoch_19"],
+        next_comics: ["comic_enoch_21"],
+        release_at: {year: 2014, month: 5, day: 15}
     },
-    comic_red_fury_20                   : {
-        name            : "Красная Фурия #20 Тёмное наследие, часть 4",
-        number          : "20",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_20: {
+        name: "Красная Фурия #20 Тёмное наследие, часть 4",
+        number: "20",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_4"],
-        previous_comics : ["comic_red_fury_19"],
-        next_comics     : ["comic_red_fury_21"],
-        release_at      : {year: 2014, month: 5, day: 22}
+        previous_comics: ["comic_red_fury_19"],
+        next_comics: ["comic_red_fury_21"],
+        release_at: {year: 2014, month: 5, day: 22}
     },
-    comic_besoboy_21                    : {
-        name            : "Бесобой #21 Три сестры, часть 4",
-        number          : "21",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_21: {
+        name: "Бесобой #21 Три сестры, часть 4",
+        number: "21",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_3"],
-        previous_comics : ["comic_besoboy_20"],
-        next_comics     : ["comic_besoboy_22"],
-        release_at      : {year: 2014, month: 6, day: 1}
+        previous_comics: ["comic_besoboy_20"],
+        next_comics: ["comic_besoboy_22"],
+        release_at: {year: 2014, month: 6, day: 1}
     },
-    comic_major_grom_21                 : {
-        name            : "Майор Гром #21 Как в сказке, часть 3",
-        number          : "21",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_21: {
+        name: "Майор Гром #21 Как в сказке, часть 3",
+        number: "21",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_4"],
-        previous_comics : ["comic_major_grom_20"],
-        next_comics     : ["comic_major_grom_22"],
-        release_at      : {year: 2014, month: 6, day: 8}
+        previous_comics: ["comic_major_grom_20"],
+        next_comics: ["comic_major_grom_22"],
+        release_at: {year: 2014, month: 6, day: 8}
     },
-    comic_enoch_21                      : {
-        name            : "Инок #21 Зверь во мне, часть 1",
-        number          : "21",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_21: {
+        name: "Инок #21 Зверь во мне, часть 1",
+        number: "21",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_3"],
-        previous_comics : ["comic_enoch_20"],
-        next_comics     : ["comic_enoch_22"],
-        release_at      : {year: 2014, month: 6, day: 15}
+        previous_comics: ["comic_enoch_20"],
+        next_comics: ["comic_enoch_22"],
+        release_at: {year: 2014, month: 6, day: 15}
     },
-    comic_red_fury_21                   : {
-        name            : "Красная Фурия #21 Тёмное наследие, часть 5",
-        number          : "21",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_21: {
+        name: "Красная Фурия #21 Тёмное наследие, часть 5",
+        number: "21",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_4"],
-        previous_comics : ["comic_red_fury_20"],
-        next_comics     : ["comic_red_fury_22"],
-        release_at      : {year: 2014, month: 6, day: 22}
+        previous_comics: ["comic_red_fury_20"],
+        next_comics: ["comic_red_fury_22"],
+        release_at: {year: 2014, month: 6, day: 22}
     },
-    comic_besoboy_22                    : {
-        name            : "Бесобой #22 Три сестры, часть 5",
-        number          : "22",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_22: {
+        name: "Бесобой #22 Три сестры, часть 5",
+        number: "22",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_3"],
-        previous_comics : ["comic_besoboy_21"],
-        next_comics     : ["comic_besoboy_23"],
-        release_at      : {year: 2014, month: 7, day: 1}
+        previous_comics: ["comic_besoboy_21"],
+        next_comics: ["comic_besoboy_23"],
+        release_at: {year: 2014, month: 7, day: 1}
     },
-    comic_major_grom_22                 : {
-        name            : "Майор Гром #22 Как в сказке, часть 4",
-        number          : "22",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_22: {
+        name: "Майор Гром #22 Как в сказке, часть 4",
+        number: "22",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_4"],
-        previous_comics : ["comic_major_grom_21"],
-        next_comics     : ["comic_major_grom_23"],
-        release_at      : {year: 2014, month: 7, day: 8}
+        previous_comics: ["comic_major_grom_21"],
+        next_comics: ["comic_major_grom_23"],
+        release_at: {year: 2014, month: 7, day: 8}
     },
-    comic_red_fury_16_1                 : {
-        name            : "Красная Фурия #16.1 Буря во льдах (спецвыпуск)",
-        number          : "16.1",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_16_1: {
+        name: "Красная Фурия #16.1 Буря во льдах (спецвыпуск)",
+        number: "16.1",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_3"],
-        previous_comics : ["comic_red_fury_16"],
-        next_comics     : ["comic_red_fury_17"],
-        release_at      : {year: 2014, month: 7, day: 12}
+        previous_comics: ["comic_red_fury_16"],
+        next_comics: ["comic_red_fury_17"],
+        release_at: {year: 2014, month: 7, day: 12}
     },
-    comic_enoch_22                      : {
-        name            : "Инок #22 Зверь во мне, часть 2",
-        number          : "22",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_22: {
+        name: "Инок #22 Зверь во мне, часть 2",
+        number: "22",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_4"],
-        previous_comics : ["comic_enoch_21"],
-        next_comics     : ["comic_enoch_23"],
-        release_at      : {year: 2014, month: 7, day: 15}
+        previous_comics: ["comic_enoch_21"],
+        next_comics: ["comic_enoch_23"],
+        release_at: {year: 2014, month: 7, day: 15}
     },
-    comic_red_fury_22                   : {
-        name            : "Красная Фурия #22 Тёмное наследие, часть 6",
-        number          : "22",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_22: {
+        name: "Красная Фурия #22 Тёмное наследие, часть 6",
+        number: "22",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_4"],
-        previous_comics : ["comic_red_fury_21"],
-        next_comics     : ["comic_red_fury_23"],
-        release_at      : {year: 2014, month: 7, day: 22}
+        previous_comics: ["comic_red_fury_21"],
+        next_comics: ["comic_red_fury_23"],
+        release_at: {year: 2014, month: 7, day: 22}
     },
-    comic_besoboy_23                    : {
-        name            : "Бесобой #23 Равновесие, часть 1",
-        number          : "23",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_23: {
+        name: "Бесобой #23 Равновесие, часть 1",
+        number: "23",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_4"],
-        previous_comics : ["comic_besoboy_22"],
-        next_comics     : ["comic_besoboy_24"],
-        release_at      : {year: 2014, month: 8, day: 1}
+        previous_comics: ["comic_besoboy_22"],
+        next_comics: ["comic_besoboy_24"],
+        release_at: {year: 2014, month: 8, day: 1}
     },
-    comic_major_grom_23                 : {
-        name            : "Майор Гром #23 Как в сказке, часть 5",
-        number          : "23",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_23: {
+        name: "Майор Гром #23 Как в сказке, часть 5",
+        number: "23",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_4"],
-        previous_comics : ["comic_major_grom_22"],
-        next_comics     : ["comic_major_grom_24"],
-        release_at      : {year: 2014, month: 8, day: 8}
+        previous_comics: ["comic_major_grom_22"],
+        next_comics: ["comic_major_grom_24"],
+        release_at: {year: 2014, month: 8, day: 8}
     },
-    comic_enoch_23                      : {
-        name            : "Инок #23 Зверь во мне, часть 3",
-        number          : "23",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_23: {
+        name: "Инок #23 Зверь во мне, часть 3",
+        number: "23",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_4"],
-        previous_comics : ["comic_enoch_22"],
-        next_comics     : ["comic_enoch_24"],
-        release_at      : {year: 2014, month: 8, day: 15}
+        previous_comics: ["comic_enoch_22"],
+        next_comics: ["comic_enoch_24"],
+        release_at: {year: 2014, month: 8, day: 15}
     },
-    comic_red_fury_23                   : {
-        name            : "Красная Фурия #23 Потеря",
-        number          : "23",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_23: {
+        name: "Красная Фурия #23 Потеря",
+        number: "23",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_4"],
-        previous_comics : ["comic_red_fury_22"],
-        next_comics     : ["comic_red_fury_24"],
-        release_at      : {year: 2014, month: 8, day: 22}
+        previous_comics: ["comic_red_fury_22"],
+        next_comics: ["comic_red_fury_24"],
+        release_at: {year: 2014, month: 8, day: 22}
     },
-    comic_besoboy_24                    : {
-        name            : "Бесобой #24 Равновесие, часть 2",
-        number          : "24",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_24: {
+        name: "Бесобой #24 Равновесие, часть 2",
+        number: "24",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_4"],
-        previous_comics : ["comic_besoboy_23"],
-        next_comics     : ["comic_besoboy_25"],
-        release_at      : {year: 2014, month: 9, day: 1}
+        previous_comics: ["comic_besoboy_23"],
+        next_comics: ["comic_besoboy_25"],
+        release_at: {year: 2014, month: 9, day: 1}
     },
-    comic_major_grom_24                 : {
-        name            : "Майор Гром #24 Как в сказке, часть 6",
-        number          : "24",
-        type            : "single",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_24: {
+        name: "Майор Гром #24 Как в сказке, часть 6",
+        number: "24",
+        type: "single",
+        ranges: ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_4"],
-        previous_comics : ["comic_major_grom_23"],
-        next_comics     : ["comic_major_grom_25"],
-        release_at      : {year: 2014, month: 9, day: 8}
+        previous_comics: ["comic_major_grom_23"],
+        next_comics: ["comic_major_grom_25"],
+        release_at: {year: 2014, month: 9, day: 8}
     },
-    comic_enoch_24                      : {
-        name            : "Инок #24 Зверь во мне, часть 4",
-        number          : "24",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_24: {
+        name: "Инок #24 Зверь во мне, часть 4",
+        number: "24",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_4"],
-        previous_comics : ["comic_enoch_23"],
-        next_comics     : ["comic_enoch_25"],
-        release_at      : {year: 2014, month: 9, day: 15}
+        previous_comics: ["comic_enoch_23"],
+        next_comics: ["comic_enoch_25"],
+        release_at: {year: 2014, month: 9, day: 15}
     },
-    comic_red_fury_24                   : {
-        name            : "Красная Фурия #24 После бури",
-        number          : "24",
-        type            : "single",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_24: {
+        name: "Красная Фурия #24 После бури",
+        number: "24",
+        type: "single",
+        ranges: ["range_red_fury"],
         including_comics: ["comic_red_fury_tome_4"],
-        previous_comics : ["comic_red_fury_23"],
-        next_comics     : ["comic_red_fury_25"],
-        release_at      : {year: 2014, month: 9, day: 22}
+        previous_comics: ["comic_red_fury_23"],
+        next_comics: ["comic_red_fury_25"],
+        release_at: {year: 2014, month: 9, day: 22}
     },
-    comic_besoboy_25                    : {
-        name            : "Бесобой #25 Чистая душа",
-        number          : "25",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_25: {
+        name: "Бесобой #25 Чистая душа",
+        number: "25",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_4"],
-        previous_comics : ["comic_besoboy_24"],
-        next_comics     : ["comic_besoboy_26"],
-        release_at      : {year: 2014, month: 10, day: 1}
+        previous_comics: ["comic_besoboy_24"],
+        next_comics: ["comic_besoboy_26"],
+        release_at: {year: 2014, month: 10, day: 1}
     },
-    comic_besoboy_tome_1                : {
-        name            : "Бесобой том 1: Имя ему Бесобой",
-        number          : "1",
-        type            : "book",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_tome_1: {
+        name: "Бесобой том 1: Имя ему Бесобой",
+        number: "1",
+        type: "book",
+        ranges: ["range_besoboy"],
         contained_comics: ["comic_besoboy_1", "comic_besoboy_2", "comic_besoboy_3", "comic_besoboy_4",
-                           "comic_besoboy_5", "comic_besoboy_6", "comic_besoboy_7"],
-        next_comics     : ["comic_besoboy_tome_2"],
-        release_at      : {year: 2014, month: 10, day: 1}
+            "comic_besoboy_5", "comic_besoboy_6", "comic_besoboy_7"],
+        next_comics: ["comic_besoboy_tome_2"],
+        release_at: {year: 2014, month: 10, day: 1}
     },
-    comic_major_grom_tome_1             : {
-        name            : "Майор Гром том 1: Чумной Доктор часть 1",
-        number          : "1",
-        type            : "book",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_tome_1: {
+        name: "Майор Гром том 1: Чумной Доктор часть 1",
+        number: "1",
+        type: "book",
+        ranges: ["range_major_grom"],
         contained_comics: ["comic_major_grom_1", "comic_major_grom_2", "comic_major_grom_3", "comic_major_grom_4",
-                           "comic_major_grom_5", "comic_major_grom_6"],
-        next_comics     : ["comic_major_grom_tome_2"],
-        release_at      : {year: 2014, month: 10, day: 1}
+            "comic_major_grom_5", "comic_major_grom_6"],
+        next_comics: ["comic_major_grom_tome_2"],
+        release_at: {year: 2014, month: 10, day: 1}
     },
-    comic_enoch_tome_1                  : {
-        name            : "Инок том 1: Проданная реликвия часть 1",
-        number          : "1",
-        type            : "book",
-        ranges          : ["range_enoch"],
+    comic_enoch_tome_1: {
+        name: "Инок том 1: Проданная реликвия часть 1",
+        number: "1",
+        type: "book",
+        ranges: ["range_enoch"],
         contained_comics: ["comic_enoch_1", "comic_enoch_2", "comic_enoch_3", "comic_enoch_4", "comic_enoch_5",
-                           "comic_enoch_6", "comic_enoch_7"],
-        next_comics     : ["comic_enoch_tome_2"],
-        release_at      : {year: 2014, month: 10, day: 1}
+            "comic_enoch_6", "comic_enoch_7"],
+        next_comics: ["comic_enoch_tome_2"],
+        release_at: {year: 2014, month: 10, day: 1}
     },
-    comic_red_fury_tome_1               : {
-        name            : "Красная Фурия том 1: В поисках грааля часть 1",
-        number          : "1",
-        type            : "book",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_tome_1: {
+        name: "Красная Фурия том 1: В поисках грааля часть 1",
+        number: "1",
+        type: "book",
+        ranges: ["range_red_fury"],
         contained_comics: ["comic_red_fury_1", "comic_red_fury_2", "comic_red_fury_3", "comic_red_fury_4",
-                           "comic_red_fury_5", "comic_red_fury_6", "comic_red_fury_7"],
-        next_comics     : ["comic_red_fury_tome_2"],
-        release_at      : {year: 2014, month: 10, day: 1}
+            "comic_red_fury_5", "comic_red_fury_6", "comic_red_fury_7"],
+        next_comics: ["comic_red_fury_tome_2"],
+        release_at: {year: 2014, month: 10, day: 1}
     },
-    comic_major_grom_25                 : {
-        name           : "Майор Гром #25 Игра, часть 1",
-        number         : "25",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_25: {
+        name: "Майор Гром #25 Игра, часть 1",
+        number: "25",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_24"],
-        next_comics    : ["comic_major_grom_26"],
-        release_at     : {year: 2014, month: 10, day: 5}
+        next_comics: ["comic_major_grom_26"],
+        release_at: {year: 2014, month: 10, day: 5}
     },
-    comic_enoch_25                      : {
-        name            : "Инок #25 Владыка, часть 1",
-        number          : "25",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_25: {
+        name: "Инок #25 Владыка, часть 1",
+        number: "25",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_4"],
-        previous_comics : ["comic_enoch_24"],
-        next_comics     : ["comic_enoch_26"],
-        release_at      : {year: 2014, month: 10, day: 10}
+        previous_comics: ["comic_enoch_24"],
+        next_comics: ["comic_enoch_26"],
+        release_at: {year: 2014, month: 10, day: 10}
     },
-    comic_red_fury_25                   : {
-        name           : "Красная Фурия #25 Ничего личного, просто бизнес, часть 1",
-        number         : "25",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_25: {
+        name: "Красная Фурия #25 Ничего личного, просто бизнес, часть 1",
+        number: "25",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_24"],
-        next_comics    : ["comic_red_fury_26"],
-        release_at     : {year: 2014, month: 10, day: 15}
+        next_comics: ["comic_red_fury_26"],
+        release_at: {year: 2014, month: 10, day: 15}
     },
-    comic_ekslibrium_1                  : {
-        name            : "Экслибриум #1 ...и дверь откроется, часть 1",
-        number          : "1",
-        type            : "single",
-        ranges          : ["range_exlibrium"],
+    comic_ekslibrium_1: {
+        name: "Экслибриум #1 ...и дверь откроется, часть 1",
+        number: "1",
+        type: "single",
+        ranges: ["range_exlibrium"],
         including_comics: ["comic_ekslibrium_tome_1"],
-        next_comics     : ["comic_ekslibrium_2"],
-        release_at      : {year: 2014, month: 10, day: 20}
+        next_comics: ["comic_ekslibrium_2"],
+        release_at: {year: 2014, month: 10, day: 20}
     },
-    comic_meteora_1                     : {
-        name            : "Метеора #1 Самая опасная вещь в космосе, часть 1",
-        number          : "1",
-        type            : "single",
-        ranges          : ["range_meteora"],
+    comic_meteora_1: {
+        name: "Метеора #1 Самая опасная вещь в космосе, часть 1",
+        number: "1",
+        type: "single",
+        ranges: ["range_meteora"],
         including_comics: ["comic_meteora_tome_1"],
-        next_comics     : ["comic_meteora_2"],
-        release_at      : {year: 2014, month: 10, day: 25}
+        next_comics: ["comic_meteora_2"],
+        release_at: {year: 2014, month: 10, day: 25}
     },
-    comic_besoboy_26                    : {
-        name            : "Бесобой #26 Друг",
-        number          : "26",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_26: {
+        name: "Бесобой #26 Друг",
+        number: "26",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_4"],
-        previous_comics : ["comic_besoboy_25"],
-        next_comics     : ["comic_besoboy_27"],
-        release_at      : {year: 2014, month: 11, day: 1}
+        previous_comics: ["comic_besoboy_25"],
+        next_comics: ["comic_besoboy_27"],
+        release_at: {year: 2014, month: 11, day: 1}
     },
-    comic_major_grom_26                 : {
-        name           : "Майор Гром #26 Игра, часть 2",
-        number         : "26",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_26: {
+        name: "Майор Гром #26 Игра, часть 2",
+        number: "26",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_25"],
-        next_comics    : ["comic_major_grom_27"],
-        release_at     : {year: 2014, month: 11, day: 5}
+        next_comics: ["comic_major_grom_27"],
+        release_at: {year: 2014, month: 11, day: 5}
     },
-    comic_enoch_26                      : {
-        name            : "Инок #26 Владыка, часть 2",
-        number          : "26",
-        type            : "single",
-        ranges          : ["range_enoch"],
+    comic_enoch_26: {
+        name: "Инок #26 Владыка, часть 2",
+        number: "26",
+        type: "single",
+        ranges: ["range_enoch"],
         including_comics: ["comic_enoch_tome_4"],
-        previous_comics : ["comic_enoch_25"],
-        next_comics     : ["comic_enoch_27"],
-        release_at      : {year: 2014, month: 11, day: 10}
+        previous_comics: ["comic_enoch_25"],
+        next_comics: ["comic_enoch_27"],
+        release_at: {year: 2014, month: 11, day: 10}
     },
-    comic_red_fury_26                   : {
-        name           : "Красная Фурия #26 Ничего личного, просто бизнес, часть 2",
-        number         : "26",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_26: {
+        name: "Красная Фурия #26 Ничего личного, просто бизнес, часть 2",
+        number: "26",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_25"],
-        next_comics    : ["comic_red_fury_27"],
-        release_at     : {year: 2014, month: 11, day: 15}
+        next_comics: ["comic_red_fury_27"],
+        release_at: {year: 2014, month: 11, day: 15}
     },
-    comic_ekslibrium_2                  : {
-        name            : "Экслибриум #2 ...и дверь откроется, часть 2",
-        number          : "2",
-        type            : "single",
-        ranges          : ["range_exlibrium"],
+    comic_ekslibrium_2: {
+        name: "Экслибриум #2 ...и дверь откроется, часть 2",
+        number: "2",
+        type: "single",
+        ranges: ["range_exlibrium"],
         including_comics: ["comic_ekslibrium_tome_1"],
-        previous_comics : ["comic_ekslibrium_1"],
-        next_comics     : ["comic_ekslibrium_3"],
-        release_at      : {year: 2014, month: 11, day: 20}
+        previous_comics: ["comic_ekslibrium_1"],
+        next_comics: ["comic_ekslibrium_3"],
+        release_at: {year: 2014, month: 11, day: 20}
     },
-    comic_meteora_2                     : {
-        name            : "Метеора #2 Самая опасная вещь в космосе, часть 2",
-        number          : "2",
-        type            : "single",
-        ranges          : ["range_meteora"],
+    comic_meteora_2: {
+        name: "Метеора #2 Самая опасная вещь в космосе, часть 2",
+        number: "2",
+        type: "single",
+        ranges: ["range_meteora"],
         including_comics: ["comic_meteora_tome_1"],
-        previous_comics : ["comic_meteora_1"],
-        next_comics     : ["comic_meteora_3"],
-        release_at      : {year: 2014, month: 11, day: 25}
+        previous_comics: ["comic_meteora_1"],
+        next_comics: ["comic_meteora_3"],
+        release_at: {year: 2014, month: 11, day: 25}
     },
-    comic_besoboy_27                    : {
-        name            : "Бесобой #27 Балор",
-        number          : "27",
-        type            : "single",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_27: {
+        name: "Бесобой #27 Балор",
+        number: "27",
+        type: "single",
+        ranges: ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_4"],
-        previous_comics : ["comic_besoboy_26"],
-        next_comics     : ["comic_besoboy_28"],
-        release_at      : {year: 2014, month: 12, day: 1}
+        previous_comics: ["comic_besoboy_26"],
+        next_comics: ["comic_besoboy_28"],
+        release_at: {year: 2014, month: 12, day: 1}
     },
-    comic_major_grom_27                 : {
-        name           : "Майор Гром #27 Игра, часть 3",
-        number         : "27",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_27: {
+        name: "Майор Гром #27 Игра, часть 3",
+        number: "27",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_26"],
-        next_comics    : ["comic_major_grom_28"],
-        release_at     : {year: 2014, month: 12, day: 5}
+        next_comics: ["comic_major_grom_28"],
+        release_at: {year: 2014, month: 12, day: 5}
     },
-    comic_enoch_27                      : {
-        name           : "Инок #27 Высокое напряжение, часть 1",
-        number         : "27",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_27: {
+        name: "Инок #27 Высокое напряжение, часть 1",
+        number: "27",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_26"],
-        next_comics    : ["comic_enoch_28"],
-        release_at     : {year: 2014, month: 12, day: 10}
+        next_comics: ["comic_enoch_28"],
+        release_at: {year: 2014, month: 12, day: 10}
     },
-    comic_red_fury_27                   : {
-        name           : "Красная Фурия #27 Ничего личного, просто бизнес, часть 3",
-        number         : "27",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_27: {
+        name: "Красная Фурия #27 Ничего личного, просто бизнес, часть 3",
+        number: "27",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_26"],
-        next_comics    : ["comic_red_fury_28"],
-        release_at     : {year: 2014, month: 12, day: 15}
+        next_comics: ["comic_red_fury_28"],
+        release_at: {year: 2014, month: 12, day: 15}
     },
-    comic_ekslibrium_3                  : {
-        name            : "Экслибриум #3 ...и дверь откроется, часть 3",
-        number          : "3",
-        type            : "single",
-        ranges          : ["range_exlibrium"],
+    comic_ekslibrium_3: {
+        name: "Экслибриум #3 ...и дверь откроется, часть 3",
+        number: "3",
+        type: "single",
+        ranges: ["range_exlibrium"],
         including_comics: ["comic_ekslibrium_tome_1"],
-        previous_comics : ["comic_ekslibrium_2"],
-        next_comics     : ["comic_ekslibrium_4"],
-        release_at      : {year: 2014, month: 12, day: 20}
+        previous_comics: ["comic_ekslibrium_2"],
+        next_comics: ["comic_ekslibrium_4"],
+        release_at: {year: 2014, month: 12, day: 20}
     },
-    comic_besoboy_tome_2                : {
-        name            : "Бесобой том 2: Лицо зверя",
-        number          : "2",
-        type            : "book",
-        ranges          : ["range_besoboy"],
+    comic_besoboy_tome_2: {
+        name: "Бесобой том 2: Лицо зверя",
+        number: "2",
+        type: "book",
+        ranges: ["range_besoboy"],
         contained_comics: ["comic_besoboy_8", "comic_besoboy_9", "comic_besoboy_10", "comic_besoboy_11",
-                           "comic_besoboy_12", "comic_besoboy_13", "comic_besoboy_14"],
-        previous_comics : ["comic_besoboy_tome_1"],
-        next_comics     : ["comic_enoch_vs_besoboy"],
-        release_at      : {year: 2014, month: 12, day: 20}
+            "comic_besoboy_12", "comic_besoboy_13", "comic_besoboy_14"],
+        previous_comics: ["comic_besoboy_tome_1"],
+        next_comics: ["comic_enoch_vs_besoboy"],
+        release_at: {year: 2014, month: 12, day: 20}
     },
-    comic_major_grom_tome_2             : {
-        name            : "Майор Гром том 2: Чумной Доктор часть 2",
-        number          : "2",
-        type            : "book",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_tome_2: {
+        name: "Майор Гром том 2: Чумной Доктор часть 2",
+        number: "2",
+        type: "book",
+        ranges: ["range_major_grom"],
         contained_comics: ["comic_major_grom_7", "comic_major_grom_8", "comic_major_grom_9", "comic_major_grom_10"],
-        previous_comics : ["comic_major_grom_tome_1"],
-        next_comics     : ["comic_major_grom_tome_3"],
-        release_at      : {year: 2014, month: 12, day: 20}
+        previous_comics: ["comic_major_grom_tome_1"],
+        next_comics: ["comic_major_grom_tome_3"],
+        release_at: {year: 2014, month: 12, day: 20}
     },
-    comic_enoch_tome_2                  : {
-        name            : "Инок том 2: Проданная реликвия часть 2",
-        number          : "2",
-        type            : "book",
-        ranges          : ["range_enoch"],
+    comic_enoch_tome_2: {
+        name: "Инок том 2: Проданная реликвия часть 2",
+        number: "2",
+        type: "book",
+        ranges: ["range_enoch"],
         contained_comics: ["comic_enoch_8", "comic_enoch_9", "comic_enoch_10", "comic_enoch_11", "comic_enoch_12",
-                           "comic_enoch_13", "comic_enoch_14"],
-        previous_comics : ["comic_enoch_tome_1"],
-        next_comics     : ["comic_enoch_vs_besoboy"],
-        release_at      : {year: 2014, month: 12, day: 20}
+            "comic_enoch_13", "comic_enoch_14"],
+        previous_comics: ["comic_enoch_tome_1"],
+        next_comics: ["comic_enoch_vs_besoboy"],
+        release_at: {year: 2014, month: 12, day: 20}
     },
-    comic_red_fury_tome_2               : {
-        name            : "Красная Фурия том 2: В поисках грааля часть 2",
-        number          : "2",
-        type            : "book",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_tome_2: {
+        name: "Красная Фурия том 2: В поисках грааля часть 2",
+        number: "2",
+        type: "book",
+        ranges: ["range_red_fury"],
         contained_comics: ["comic_red_fury_8", "comic_red_fury_9", "comic_red_fury_10", "comic_red_fury_11",
-                           "comic_red_fury_12", "comic_red_fury_13", "comic_red_fury_14", "comic_red_fury_15"],
-        previous_comics : ["comic_red_fury_tome_1"],
-        next_comics     : ["comic_red_fury_tome_3"],
-        release_at      : {year: 2014, month: 12, day: 20}
+            "comic_red_fury_12", "comic_red_fury_13", "comic_red_fury_14", "comic_red_fury_15"],
+        previous_comics: ["comic_red_fury_tome_1"],
+        next_comics: ["comic_red_fury_tome_3"],
+        release_at: {year: 2014, month: 12, day: 20}
     },
-    comic_meteora_3                     : {
-        name            : "Метеора #3 Прорыв, часть 1",
-        number          : "3",
-        type            : "single",
-        ranges          : ["range_meteora"],
+    comic_meteora_3: {
+        name: "Метеора #3 Прорыв, часть 1",
+        number: "3",
+        type: "single",
+        ranges: ["range_meteora"],
         including_comics: ["comic_meteora_tome_1"],
-        previous_comics : ["comic_meteora_2"],
-        next_comics     : ["comic_meteora_4"],
-        release_at      : {year: 2014, month: 12, day: 25}
+        previous_comics: ["comic_meteora_2"],
+        next_comics: ["comic_meteora_4"],
+        release_at: {year: 2014, month: 12, day: 25}
     },
-    comic_besoboy_28                    : {
-        name           : "Бесобой #28 Курьер; Неизбежность",
-        number         : "28",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_28: {
+        name: "Бесобой #28 Курьер; Неизбежность",
+        number: "28",
+        type: "single",
+        ranges: ["range_besoboy"],
+        including_comics: ["comic_besoboy_tome_5"],
         previous_comics: ["comic_besoboy_27"],
-        next_comics    : ["comic_besoboy_29"],
-        release_at     : {year: 2015, month: 1, day: 1}
+        next_comics: ["comic_besoboy_29"],
+        release_at: {year: 2015, month: 1, day: 1}
     },
-    comic_major_grom_28                 : {
-        name           : "Майор Гром #28 Игра, часть 4",
-        number         : "28",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_28: {
+        name: "Майор Гром #28 Игра, часть 4",
+        number: "28",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_27"],
-        next_comics    : ["comic_major_grom_29"],
-        release_at     : {year: 2015, month: 1, day: 12}
+        next_comics: ["comic_major_grom_29"],
+        release_at: {year: 2015, month: 1, day: 12}
     },
-    comic_enoch_28                      : {
-        name           : "Инок #28 Высокое напряжение, часть 2; Старый новый гад",
-        number         : "28",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_28: {
+        name: "Инок #28 Высокое напряжение, часть 2; Старый новый гад",
+        number: "28",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_27"],
-        next_comics    : ["comic_enoch_29"],
-        release_at     : {year: 2015, month: 1, day: 12}
+        next_comics: ["comic_enoch_29"],
+        release_at: {year: 2015, month: 1, day: 12}
     },
-    comic_red_fury_28                   : {
-        name           : "Красная Фурия #28 Ничего личного, просто бизнес, часть 4; Новая Жизнь",
-        number         : "28",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_28: {
+        name: "Красная Фурия #28 Ничего личного, просто бизнес, часть 4; Новая Жизнь",
+        number: "28",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_27"],
-        next_comics    : ["comic_red_fury_29"],
-        release_at     : {year: 2015, month: 1, day: 15}
+        next_comics: ["comic_red_fury_29"],
+        release_at: {year: 2015, month: 1, day: 15}
     },
-    comic_ekslibrium_4                  : {
-        name            : "Экслибриум #4 ...и дверь откроется, часть 4; Черная дорога",
-        number          : "4",
-        type            : "single",
-        ranges          : ["range_exlibrium"],
+    comic_ekslibrium_4: {
+        name: "Экслибриум #4 ...и дверь откроется, часть 4; Черная дорога",
+        number: "4",
+        type: "single",
+        ranges: ["range_exlibrium"],
         including_comics: ["comic_ekslibrium_tome_1"],
-        previous_comics : ["comic_ekslibrium_3"],
-        next_comics     : ["comic_ekslibrium_5"],
-        release_at      : {year: 2015, month: 1, day: 20}
+        previous_comics: ["comic_ekslibrium_3"],
+        next_comics: ["comic_ekslibrium_5"],
+        release_at: {year: 2015, month: 1, day: 20}
     },
-    comic_meteora_4                     : {
-        name            : "Метеора #4 Прорыв, часть 2; Новая реальность",
-        number          : "4",
-        type            : "single",
-        ranges          : ["range_meteora"],
+    comic_meteora_4: {
+        name: "Метеора #4 Прорыв, часть 2; Новая реальность",
+        number: "4",
+        type: "single",
+        ranges: ["range_meteora"],
         including_comics: ["comic_meteora_tome_1"],
-        previous_comics : ["comic_meteora_3"],
-        next_comics     : ["comic_meteora_5"],
-        release_at      : {year: 2015, month: 1, day: 25}
+        previous_comics: ["comic_meteora_3"],
+        next_comics: ["comic_meteora_5"],
+        release_at: {year: 2015, month: 1, day: 25}
     },
-    comic_besoboy_29                    : {
-        name           : "Бесобой #29 Метро, часть 1",
-        number         : "29",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_29: {
+        name: "Бесобой #29 Метро, часть 1",
+        number: "29",
+        type: "single",
+        ranges: ["range_besoboy"],
+        including_comics: ["comic_besoboy_tome_5"],
         previous_comics: ["comic_besoboy_28"],
-        next_comics    : ["comic_besoboy_30"],
-        release_at     : {year: 2015, month: 2, day: 2}
+        next_comics: ["comic_besoboy_30"],
+        release_at: {year: 2015, month: 2, day: 2}
     },
-    comic_major_grom_29                 : {
-        name           : "Майор Гром #29 Игра, часть 5",
-        number         : "29",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_29: {
+        name: "Майор Гром #29 Игра, часть 5",
+        number: "29",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_28"],
-        next_comics    : ["comic_major_grom_30"],
-        release_at     : {year: 2015, month: 2, day: 5}
+        next_comics: ["comic_major_grom_30"],
+        release_at: {year: 2015, month: 2, day: 5}
     },
-    comic_enoch_29                      : {
-        name           : "Инок #29 Высокое напряжение, часть 3",
-        number         : "29",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_29: {
+        name: "Инок #29 Высокое напряжение, часть 3",
+        number: "29",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_28"],
-        next_comics    : ["comic_enoch_30"],
-        release_at     : {year: 2015, month: 2, day: 10}
+        next_comics: ["comic_enoch_30"],
+        release_at: {year: 2015, month: 2, day: 10}
     },
-    comic_red_fury_29                   : {
-        name           : "Красная Фурия #29 Сила мысли, часть 1",
-        number         : "29",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_29: {
+        name: "Красная Фурия #29 Сила мысли, часть 1",
+        number: "29",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_28"],
-        next_comics    : ["comic_red_fury_30"],
-        release_at     : {year: 2015, month: 2, day: 15}
+        next_comics: ["comic_red_fury_30"],
+        release_at: {year: 2015, month: 2, day: 15}
     },
-    comic_ekslibrium_5                  : {
-        name            : "Экслибриум #5 ...и дверь откроется, часть 5",
-        number          : "5",
-        type            : "single",
-        ranges          : ["range_exlibrium"],
+    comic_ekslibrium_5: {
+        name: "Экслибриум #5 ...и дверь откроется, часть 5",
+        number: "5",
+        type: "single",
+        ranges: ["range_exlibrium"],
         including_comics: ["comic_ekslibrium_tome_1"],
-        previous_comics : ["comic_ekslibrium_4"],
-        next_comics     : ["comic_ekslibrium_6"],
-        release_at      : {year: 2015, month: 2, day: 20}
+        previous_comics: ["comic_ekslibrium_4"],
+        next_comics: ["comic_ekslibrium_6"],
+        release_at: {year: 2015, month: 2, day: 20}
     },
-    comic_meteora_5                     : {
-        name            : "Метеора #5 Дело чести, часть 1",
-        number          : "5",
-        type            : "single",
-        ranges          : ["range_meteora"],
+    comic_meteora_5: {
+        name: "Метеора #5 Дело чести, часть 1",
+        number: "5",
+        type: "single",
+        ranges: ["range_meteora"],
         including_comics: ["comic_meteora_tome_1"],
-        previous_comics : ["comic_meteora_4"],
-        next_comics     : ["comic_meteora_6"],
-        release_at      : {year: 2015, month: 2, day: 25}
+        previous_comics: ["comic_meteora_4"],
+        next_comics: ["comic_meteora_6"],
+        release_at: {year: 2015, month: 2, day: 25}
     },
-    comic_besoboy_30                    : {
-        name           : "Бесобой #30 Метро, часть 2",
-        number         : "30",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_30: {
+        name: "Бесобой #30 Метро, часть 2",
+        number: "30",
+        type: "single",
+        ranges: ["range_besoboy"],
+        including_comics: ["comic_besoboy_tome_5"],
         previous_comics: ["comic_besoboy_29"],
-        next_comics    : ["comic_besoboy_31"],
-        release_at     : {year: 2015, month: 3, day: 1}
+        next_comics: ["comic_besoboy_31"],
+        release_at: {year: 2015, month: 3, day: 1}
     },
-    comic_major_grom_30                 : {
-        name           : "Майор Гром #30 Игра, часть 6",
-        number         : "30",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_30: {
+        name: "Майор Гром #30 Игра, часть 6",
+        number: "30",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_29"],
-        next_comics    : ["comic_major_grom_31"],
-        release_at     : {year: 2015, month: 3, day: 5}
+        next_comics: ["comic_major_grom_31"],
+        release_at: {year: 2015, month: 3, day: 5}
     },
-    comic_enoch_30                      : {
-        name           : "Инок #30 Высокое напряжение, часть 4",
-        number         : "30",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_30: {
+        name: "Инок #30 Высокое напряжение, часть 4",
+        number: "30",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_29"],
-        next_comics    : ["comic_enoch_31"],
-        release_at     : {year: 2015, month: 3, day: 10}
+        next_comics: ["comic_enoch_31"],
+        release_at: {year: 2015, month: 3, day: 10}
     },
-    comic_red_fury_30                   : {
-        name           : "Красная Фурия #30 Сила мысли, часть 2",
-        number         : "30",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_30: {
+        name: "Красная Фурия #30 Сила мысли, часть 2",
+        number: "30",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_29"],
-        next_comics    : ["comic_red_fury_31"],
-        release_at     : {year: 2015, month: 3, day: 15}
+        next_comics: ["comic_red_fury_31"],
+        release_at: {year: 2015, month: 3, day: 15}
     },
-    comic_ekslibrium_6                  : {
-        name           : "Экслибриум #6 Костяной дом, часть 1",
-        number         : "6",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
+    comic_ekslibrium_6: {
+        name: "Экслибриум #6 Костяной дом, часть 1",
+        number: "6",
+        type: "single",
+        ranges: ["range_exlibrium"],
         previous_comics: ["comic_ekslibrium_5"],
-        next_comics    : ["comic_ekslibrium_7"],
-        release_at     : {year: 2015, month: 3, day: 20}
+        next_comics: ["comic_ekslibrium_7"],
+        release_at: {year: 2015, month: 3, day: 20}
     },
-    comic_major_grom_tome_3             : {
-        name            : "Майор Гром том 3: День святого Патрика",
-        number          : "3",
-        type            : "book",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_tome_3: {
+        name: "Майор Гром том 3: День святого Патрика",
+        number: "3",
+        type: "book",
+        ranges: ["range_major_grom"],
         contained_comics: ["comic_major_grom_11", "comic_major_grom_12", "comic_major_grom_13", "comic_major_grom_14",
-                           "comic_major_grom_15", "comic_major_grom_16", "comic_major_grom_17", "comic_major_grom_18"],
-        previous_comics : ["comic_major_grom_tome_2"],
-        next_comics     : ["comic_major_grom_tome_4"],
-        release_at      : {year: 2015, month: 3, day: 21}
+            "comic_major_grom_15", "comic_major_grom_16", "comic_major_grom_17", "comic_major_grom_18"],
+        previous_comics: ["comic_major_grom_tome_2"],
+        next_comics: ["comic_major_grom_tome_4"],
+        release_at: {year: 2015, month: 3, day: 21}
     },
-    comic_enoch_vs_besoboy              : {
-        name            : "Инок против Бесобоя",
-        type            : "book",
-        ranges          : ["range_besoboy", "range_enoch", "range_crossovers"],
+    comic_enoch_vs_besoboy: {
+        name: "Инок против Бесобоя",
+        type: "book",
+        ranges: ["range_besoboy", "range_enoch", "range_crossovers"],
         contained_comics: ["comic_besoboy_15", "comic_enoch_15", "comic_enoch_vs_besoboy_1", "comic_besoboy_16",
-                           "comic_enoch_16", "comic_enoch_vs_besoboy_2", "comic_besoboy_17", "comic_enoch_17",
-                           "comic_enoch_vs_besoboy_3"],
-        previous_comics : ["comic_besoboy_tome_2", "comic_enoch_tome_2"],
-        next_comics     : ["comic_besoboy_tome_3", "comic_enoch_tome_3"],
-        release_at      : {year: 2015, month: 3, day: 21}
+            "comic_enoch_16", "comic_enoch_vs_besoboy_2", "comic_besoboy_17", "comic_enoch_17",
+            "comic_enoch_vs_besoboy_3"],
+        previous_comics: ["comic_besoboy_tome_2", "comic_enoch_tome_2"],
+        next_comics: ["comic_besoboy_tome_3", "comic_enoch_tome_3"],
+        release_at: {year: 2015, month: 3, day: 21}
     },
-    comic_meteora_6                     : {
-        name            : "Метеора #6 Дело чести, часть 2",
-        number          : "6",
-        type            : "single",
-        ranges          : ["range_meteora"],
+    comic_meteora_6: {
+        name: "Метеора #6 Дело чести, часть 2",
+        number: "6",
+        type: "single",
+        ranges: ["range_meteora"],
         including_comics: ["comic_meteora_tome_1"],
-        previous_comics : ["comic_meteora_5"],
-        next_comics     : ["comic_meteora_7"],
-        release_at      : {year: 2015, month: 3, day: 25}
+        previous_comics: ["comic_meteora_5"],
+        next_comics: ["comic_meteora_7"],
+        release_at: {year: 2015, month: 3, day: 25}
     },
-    comic_besoboy_31                    : {
-        name           : "Бесобой #31 Метро, часть 3",
-        number         : "31",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_31: {
+        name: "Бесобой #31 Метро, часть 3",
+        number: "31",
+        type: "single",
+        ranges: ["range_besoboy"],
+        including_comics: ["comic_besoboy_tome_5"],
         previous_comics: ["comic_besoboy_30"],
-        next_comics    : ["comic_besoboy_32"],
-        release_at     : {year: 2015, month: 4, day: 1}
+        next_comics: ["comic_besoboy_32"],
+        release_at: {year: 2015, month: 4, day: 1}
     },
-    comic_major_grom_31                 : {
-        name           : "Майор Гром #31 Игра, часть 7",
-        number         : "31",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_31: {
+        name: "Майор Гром #31 Игра, часть 7",
+        number: "31",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_30"],
-        next_comics    : ["comic_major_grom_32"],
-        release_at     : {year: 2015, month: 4, day: 5}
+        next_comics: ["comic_major_grom_32"],
+        release_at: {year: 2015, month: 4, day: 5}
     },
-    comic_enoch_31                      : {
-        name           : "Инок #31 Высокое напряжение, часть 5",
-        number         : "31",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_31: {
+        name: "Инок #31 Высокое напряжение, часть 5",
+        number: "31",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_30"],
-        next_comics    : ["comic_enoch_32"],
-        release_at     : {year: 2015, month: 4, day: 10}
+        next_comics: ["comic_enoch_32"],
+        release_at: {year: 2015, month: 4, day: 10}
     },
-    comic_red_fury_31                   : {
-        name           : "Красная Фурия #31 Сила мысли, часть 3",
-        number         : "31",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_31: {
+        name: "Красная Фурия #31 Сила мысли, часть 3",
+        number: "31",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_30"],
-        next_comics    : ["comic_red_fury_32"],
-        release_at     : {year: 2015, month: 4, day: 13}
+        next_comics: ["comic_red_fury_32"],
+        release_at: {year: 2015, month: 4, day: 13}
     },
-    comic_ekslibrium_7                  : {
-        name           : "Экслибриум #7 Костяной дом, часть 2",
-        number         : "7",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
+    comic_ekslibrium_7: {
+        name: "Экслибриум #7 Костяной дом, часть 2",
+        number: "7",
+        type: "single",
+        ranges: ["range_exlibrium"],
         previous_comics: ["comic_ekslibrium_6"],
-        next_comics    : ["comic_ekslibrium_8"],
-        release_at     : {year: 2015, month: 4, day: 20}
+        next_comics: ["comic_ekslibrium_8"],
+        release_at: {year: 2015, month: 4, day: 20}
     },
-    comic_meteora_7                     : {
-        name           : "Метеора #7 Блокада, часть 1",
-        number         : "7",
-        type           : "single",
-        ranges         : ["range_meteora"],
+    comic_meteora_7: {
+        name: "Метеора #7 Блокада, часть 1",
+        number: "7",
+        type: "single",
+        ranges: ["range_meteora"],
         previous_comics: ["comic_meteora_6"],
-        next_comics    : ["comic_meteora_8"],
-        release_at     : {year: 2015, month: 4, day: 25}
+        next_comics: ["comic_meteora_8"],
+        release_at: {year: 2015, month: 4, day: 25}
     },
-    comic_besoboy_32                    : {
-        name           : "Бесобой #32 Метро, часть 4",
-        number         : "32",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_32: {
+        name: "Бесобой #32 Метро, часть 4",
+        number: "32",
+        type: "single",
+        ranges: ["range_besoboy"],
+        including_comics: ["comic_besoboy_tome_5"],
         previous_comics: ["comic_besoboy_31"],
-        next_comics    : ["comic_besoboy_33"],
-        release_at     : {year: 2015, month: 5, day: 1}
-    },
-    comic_chronicles_of_enoch           : {
-        name      : "Хроники Инока: Штурм Берлина",
-        type      : "book",
-        ranges    : ["range_enoch", "range_crossovers", "range_bubble_legends"],
+        next_comics: ["comic_besoboy_33"],
         release_at: {year: 2015, month: 5, day: 1}
     },
-    comic_major_grom_32                 : {
-        name           : "Майор Гром #32 Игра, часть 8",
-        number         : "32",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_chronicles_of_enoch: {
+        name: "Хроники Инока: Штурм Берлина",
+        type: "book",
+        ranges: ["range_enoch", "range_crossovers", "range_bubble_legends"],
+        release_at: {year: 2015, month: 5, day: 1}
+    },
+    comic_major_grom_32: {
+        name: "Майор Гром #32 Игра, часть 8",
+        number: "32",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_31"],
-        next_comics    : ["comic_major_grom_33"],
-        release_at     : {year: 2015, month: 5, day: 5}
+        next_comics: ["comic_major_grom_33"],
+        release_at: {year: 2015, month: 5, day: 5}
     },
-    comic_enoch_32                      : {
-        name           : "Инок #32 Калинов мост, часть 1",
-        number         : "32",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_32: {
+        name: "Инок #32 Калинов мост, часть 1",
+        number: "32",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_31"],
-        next_comics    : ["comic_enoch_33"],
-        release_at     : {year: 2015, month: 5, day: 12}
+        next_comics: ["comic_enoch_33"],
+        release_at: {year: 2015, month: 5, day: 12}
     },
-    comic_red_fury_32                   : {
-        name           : "Красная Фурия #32 Любовь зла",
-        number         : "32",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_32: {
+        name: "Красная Фурия #32 Любовь зла",
+        number: "32",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_31"],
-        next_comics    : ["comic_red_fury_33"],
-        release_at     : {year: 2015, month: 5, day: 15}
+        next_comics: ["comic_red_fury_33"],
+        release_at: {year: 2015, month: 5, day: 15}
     },
-    comic_ekslibrium_8                  : {
-        name           : "Экслибриум #8 Костяной дом, часть 3",
-        number         : "8",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
+    comic_ekslibrium_8: {
+        name: "Экслибриум #8 Костяной дом, часть 3",
+        number: "8",
+        type: "single",
+        ranges: ["range_exlibrium"],
         previous_comics: ["comic_ekslibrium_7"],
-        next_comics    : ["comic_ekslibrium_9"],
-        release_at     : {year: 2015, month: 5, day: 18}
+        next_comics: ["comic_ekslibrium_9"],
+        release_at: {year: 2015, month: 5, day: 18}
     },
-    comic_meteora_8                     : {
-        name           : "Метеора #8 Блокада, часть 2",
-        number         : "8",
-        type           : "single",
-        ranges         : ["range_meteora"],
+    comic_meteora_8: {
+        name: "Метеора #8 Блокада, часть 2",
+        number: "8",
+        type: "single",
+        ranges: ["range_meteora"],
         previous_comics: ["comic_meteora_7"],
-        next_comics    : ["comic_meteora_9"],
-        release_at     : {year: 2015, month: 5, day: 25}
+        next_comics: ["comic_meteora_9"],
+        release_at: {year: 2015, month: 5, day: 25}
     },
-    comic_besoboy_33                    : {
-        name           : "Бесобой #33 Исповедь",
-        number         : "33",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_33: {
+        name: "Бесобой #33 Исповедь",
+        number: "33",
+        type: "single",
+        ranges: ["range_besoboy"],
+        including_comics: ["comic_besoboy_tome_5"],
         previous_comics: ["comic_besoboy_32"],
-        next_comics    : ["comic_besoboy_34"],
-        release_at     : {year: 2015, month: 6, day: 1}
+        next_comics: ["comic_besoboy_34"],
+        release_at: {year: 2015, month: 6, day: 1}
     },
-    comic_major_grom_33                 : {
-        name           : "Майор Гром #33 Игра, часть 9",
-        number         : "33",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_33: {
+        name: "Майор Гром #33 Игра, часть 9",
+        number: "33",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_32"],
-        next_comics    : ["comic_major_grom_34"],
-        release_at     : {year: 2015, month: 6, day: 8}
+        next_comics: ["comic_major_grom_34"],
+        release_at: {year: 2015, month: 6, day: 8}
     },
-    comic_enoch_33                      : {
-        name           : "Инок #33 Калинов мост, часть 2; Спаситель",
-        number         : "33",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_33: {
+        name: "Инок #33 Калинов мост, часть 2; Спаситель",
+        number: "33",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_32"],
-        next_comics    : ["comic_enoch_34"],
-        release_at     : {year: 2015, month: 6, day: 12}
+        next_comics: ["comic_enoch_34"],
+        release_at: {year: 2015, month: 6, day: 12}
     },
-    comic_red_fury_33                   : {
-        name           : "Красная Фурия #33 Отто и Лотта",
-        number         : "33",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_33: {
+        name: "Красная Фурия #33 Отто и Лотта",
+        number: "33",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_32"],
-        next_comics    : ["comic_red_fury_34"],
-        release_at     : {year: 2015, month: 6, day: 16}
+        next_comics: ["comic_red_fury_34"],
+        release_at: {year: 2015, month: 6, day: 16}
     },
-    comic_ekslibrium_9                  : {
-        name           : "Экслибриум #9 Люди библиотеки, часть 1",
-        number         : "9",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
+    comic_ekslibrium_9: {
+        name: "Экслибриум #9 Люди библиотеки, часть 1",
+        number: "9",
+        type: "single",
+        ranges: ["range_exlibrium"],
         previous_comics: ["comic_ekslibrium_8"],
-        next_comics    : ["comic_ekslibrium_10"],
-        release_at     : {year: 2015, month: 6, day: 18}
+        next_comics: ["comic_ekslibrium_10"],
+        release_at: {year: 2015, month: 6, day: 18}
     },
-    comic_meteora_9                     : {
-        name           : "Метеора #9 Блокада, часть 3",
-        number         : "9",
-        type           : "single",
-        ranges         : ["range_meteora"],
+    comic_meteora_9: {
+        name: "Метеора #9 Блокада, часть 3",
+        number: "9",
+        type: "single",
+        ranges: ["range_meteora"],
         previous_comics: ["comic_meteora_8"],
-        next_comics    : ["comic_meteora_10"],
-        release_at     : {year: 2015, month: 6, day: 25}
+        next_comics: ["comic_meteora_10"],
+        release_at: {year: 2015, month: 6, day: 25}
     },
-    comic_besoboy_34                    : {
-        name           : "Бесобой #34 Стая, часть 1",
-        number         : "34",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_34: {
+        name: "Бесобой #34 Стая, часть 1",
+        number: "34",
+        type: "single",
+        ranges: ["range_besoboy"],
         previous_comics: ["comic_besoboy_33"],
-        next_comics    : ["comic_besoboy_35"],
-        release_at     : {year: 2015, month: 7, day: 1}
+        next_comics: ["comic_besoboy_35"],
+        release_at: {year: 2015, month: 7, day: 1}
     },
-    comic_major_grom_34                 : {
-        name           : "Майор Гром #34 Голоса, часть 1",
-        number         : "34",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_34: {
+        name: "Майор Гром #34 Голоса, часть 1",
+        number: "34",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_33"],
-        next_comics    : ["comic_major_grom_35"],
-        release_at     : {year: 2015, month: 7, day: 6}
+        next_comics: ["comic_major_grom_35"],
+        release_at: {year: 2015, month: 7, day: 6}
     },
-    comic_enoch_34                      : {
-        name           : "Инок #34 Калинов мост, часть 3",
-        number         : "34",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_34: {
+        name: "Инок #34 Калинов мост, часть 3",
+        number: "34",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_33"],
-        next_comics    : ["comic_enoch_35"],
-        release_at     : {year: 2015, month: 7, day: 10}
+        next_comics: ["comic_enoch_35"],
+        release_at: {year: 2015, month: 7, day: 10}
     },
-    comic_red_fury_34                   : {
-        name           : "Красная Фурия #34 Братство",
-        number         : "34",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_34: {
+        name: "Красная Фурия #34 Братство",
+        number: "34",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_33"],
-        next_comics    : ["comic_red_fury_35"],
-        release_at     : {year: 2015, month: 7, day: 16}
+        next_comics: ["comic_red_fury_35"],
+        release_at: {year: 2015, month: 7, day: 16}
     },
-    comic_ekslibrium_10                 : {
-        name           : "Экслибриум #10 Люди библиотеки, часть 2",
-        number         : "10",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
+    comic_ekslibrium_10: {
+        name: "Экслибриум #10 Люди библиотеки, часть 2",
+        number: "10",
+        type: "single",
+        ranges: ["range_exlibrium"],
         previous_comics: ["comic_ekslibrium_9"],
-        next_comics    : ["comic_ekslibrium_11"],
-        release_at     : {year: 2015, month: 7, day: 20}
+        next_comics: ["comic_ekslibrium_11"],
+        release_at: {year: 2015, month: 7, day: 20}
     },
-    comic_meteora_10                    : {
-        name           : "Метеора #10 Блокада, часть 4",
-        number         : "10",
-        type           : "single",
-        ranges         : ["range_meteora"],
+    comic_meteora_10: {
+        name: "Метеора #10 Блокада, часть 4",
+        number: "10",
+        type: "single",
+        ranges: ["range_meteora"],
         previous_comics: ["comic_meteora_9"],
-        next_comics    : ["comic_meteora_11"],
-        release_at     : {year: 2015, month: 7, day: 25}
+        next_comics: ["comic_meteora_11"],
+        release_at: {year: 2015, month: 7, day: 25}
     },
-    comic_besoboy_tome_3                : {
-        name            : "Бесобой том 3: Три сестры",
-        number          : "3",
-        type            : "book",
-        ranges          : ["range_besoboy"],
-        contained_comics: ["comic_besoboy_18", "comic_besoboy_19", "comic_besoboy_20", "comic_besoboy_21",
-                           "comic_besoboy_22"],
-        previous_comics : ["comic_enoch_vs_besoboy"],
-        next_comics     : ["comic_besoboy_tome_4"],
-        release_at      : {year: 2015, month: 7, day: 30}
+    comic_besoboy_tome_3: {
+        name: "Бесобой том 3: Три сестры",
+        number: "3",
+        type: "book",
+        ranges: ["range_besoboy"],
+        contained_comics: ["comic_besoboy_18", "comic_besoboy_19", "comic_besoboy_20", "comic_besoboy_21", "comic_besoboy_22"],
+        previous_comics: ["comic_enoch_vs_besoboy"],
+        next_comics: ["comic_besoboy_tome_4"],
+        release_at: {year: 2015, month: 7, day: 30}
     },
-    comic_enoch_tome_3                  : {
-        name            : "Инок том 3: Зверь во мне часть 1",
-        number          : "3",
-        type            : "book",
-        ranges          : ["range_enoch"],
+    comic_enoch_tome_3: {
+        name: "Инок том 3: Зверь во мне часть 1",
+        number: "3",
+        type: "book",
+        ranges: ["range_enoch"],
         contained_comics: ["comic_enoch_18", "comic_enoch_19", "comic_enoch_20", "comic_enoch_21"],
-        previous_comics : ["comic_enoch_vs_besoboy"],
-        next_comics     : ["comic_enoch_tome_4"],
-        release_at      : {year: 2015, month: 7, day: 30}
+        previous_comics: ["comic_enoch_vs_besoboy"],
+        next_comics: ["comic_enoch_tome_4"],
+        release_at: {year: 2015, month: 7, day: 30}
     },
-    comic_red_fury_tome_3               : {
-        name            : "Красная Фурия том 3: Тёмное наследие часть 1",
-        number          : "3",
-        type            : "book",
-        ranges          : ["range_red_fury"],
-        contained_comics: ["comic_red_fury_16", "comic_red_fury_16_1", "comic_red_fury_17", "comic_red_fury_18",
-                           "comic_red_fury_19"],
-        previous_comics : ["comic_red_fury_tome_2"],
-        next_comics     : ["comic_red_fury_tome_4"],
-        release_at      : {year: 2015, month: 7, day: 30}
+    comic_red_fury_tome_3: {
+        name: "Красная Фурия том 3: Тёмное наследие часть 1",
+        number: "3",
+        type: "book",
+        ranges: ["range_red_fury"],
+        contained_comics: ["comic_red_fury_16", "comic_red_fury_16_1", "comic_red_fury_17", "comic_red_fury_18", "comic_red_fury_19"],
+        previous_comics: ["comic_red_fury_tome_2"],
+        next_comics: ["comic_red_fury_tome_4"],
+        release_at: {year: 2015, month: 7, day: 30}
     },
-    comic_besoboy_35                    : {
-        name           : "Бесобой #35 Стая, часть 2",
-        number         : "35",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_35: {
+        name: "Бесобой #35 Стая, часть 2",
+        number: "35",
+        type: "single",
+        ranges: ["range_besoboy"],
         previous_comics: ["comic_besoboy_34"],
-        next_comics    : ["comic_besoboy_36"],
-        release_at     : {year: 2015, month: 7, day: 31}
+        next_comics: ["comic_besoboy_36"],
+        release_at: {year: 2015, month: 7, day: 31}
     },
-    comic_major_grom_35                 : {
-        name           : "Майор Гром #35 Голоса, часть 2",
-        number         : "35",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_35: {
+        name: "Майор Гром #35 Голоса, часть 2",
+        number: "35",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_34"],
-        next_comics    : ["comic_major_grom_36"],
-        release_at     : {year: 2015, month: 8, day: 5}
+        next_comics: ["comic_major_grom_36"],
+        release_at: {year: 2015, month: 8, day: 5}
     },
-    comic_enoch_35                      : {
-        name           : "Инок #35 Сердце монстра, часть 1",
-        number         : "35",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_35: {
+        name: "Инок #35 Сердце монстра, часть 1",
+        number: "35",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_34"],
-        next_comics    : ["comic_enoch_36"],
-        release_at     : {year: 2015, month: 8, day: 10}
+        next_comics: ["comic_enoch_36"],
+        release_at: {year: 2015, month: 8, day: 10}
     },
-    comic_red_fury_35                   : {
-        name           : "Красная Фурия #35 Башня ворона, часть 1",
-        number         : "35",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_35: {
+        name: "Красная Фурия #35 Башня ворона, часть 1",
+        number: "35",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_34"],
-        next_comics    : ["comic_red_fury_36"],
-        release_at     : {year: 2015, month: 8, day: 14}
+        next_comics: ["comic_red_fury_36"],
+        release_at: {year: 2015, month: 8, day: 14}
     },
-    comic_ekslibrium_11                 : {
-        name           : "Экслибриум #11 Благими намерениями, часть 1",
-        number         : "11",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
+    comic_ekslibrium_11: {
+        name: "Экслибриум #11 Благими намерениями, часть 1",
+        number: "11",
+        type: "single",
+        ranges: ["range_exlibrium"],
         previous_comics: ["comic_ekslibrium_10"],
-        next_comics    : ["comic_ekslibrium_12"],
-        release_at     : {year: 2015, month: 8, day: 20}
+        next_comics: ["comic_ekslibrium_12"],
+        release_at: {year: 2015, month: 8, day: 20}
     },
-    comic_meteora_11                    : {
-        name           : "Метеора #11 Блокада, часть 5",
-        number         : "11",
-        type           : "single",
-        ranges         : ["range_meteora"],
+    comic_meteora_11: {
+        name: "Метеора #11 Блокада, часть 5",
+        number: "11",
+        type: "single",
+        ranges: ["range_meteora"],
         previous_comics: ["comic_meteora_10"],
-        next_comics    : ["comic_meteora_12"],
-        release_at     : {year: 2015, month: 8, day: 25}
+        next_comics: ["comic_meteora_12"],
+        release_at: {year: 2015, month: 8, day: 25}
     },
-    comic_red_fury_tome_4               : {
-        name            : "Красная Фурия том 4: Тёмное наследие часть 2",
-        number          : "4",
-        type            : "book",
-        ranges          : ["range_red_fury"],
+    comic_red_fury_tome_4: {
+        name: "Красная Фурия том 4: Тёмное наследие часть 2",
+        number: "4",
+        type: "book",
+        ranges: ["range_red_fury"],
         contained_comics: ["comic_red_fury_20", "comic_red_fury_21", "comic_red_fury_22", "comic_red_fury_23",
-                           "comic_red_fury_24"],
-        previous_comics : ["comic_red_fury_tome_3"],
-        release_at      : {year: 2015, month: 7, day: 30}
+            "comic_red_fury_24"],
+        previous_comics: ["comic_red_fury_tome_3"],
+        release_at: {year: 2015, month: 7, day: 30}
     },
-    comic_besoboy_36                    : {
-        name           : "Бесобой #36 Стая, часть 3",
-        number         : "36",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_36: {
+        name: "Бесобой #36 Стая, часть 3",
+        number: "36",
+        type: "single",
+        ranges: ["range_besoboy"],
         previous_comics: ["comic_besoboy_35"],
-        next_comics    : ["comic_besoboy_37"],
-        release_at     : {year: 2015, month: 8, day: 31}
+        next_comics: ["comic_besoboy_37"],
+        release_at: {year: 2015, month: 8, day: 31}
     },
-    comic_enoch_tome_4                  : {
-        name            : "Инок том 4: Зверь во мне часть 2",
-        number          : "4",
-        type            : "book",
-        ranges          : ["range_enoch"],
+    comic_enoch_tome_4: {
+        name: "Инок том 4: Зверь во мне часть 2",
+        number: "4",
+        type: "book",
+        ranges: ["range_enoch"],
         contained_comics: ["comic_enoch_22", "comic_enoch_23", "comic_enoch_24", "comic_enoch_25", "comic_enoch_26"],
-        previous_comics : ["comic_enoch_tome_3"],
-        release_at      : {year: 2015, month: 9, day: 1}
+        previous_comics: ["comic_enoch_tome_3"],
+        release_at: {year: 2015, month: 9, day: 1}
     },
-    comic_major_grom_36                 : {
-        name           : "Майор Гром #36 Голоса, часть 3",
-        number         : "36",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_36: {
+        name: "Майор Гром #36 Голоса, часть 3",
+        number: "36",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_35"],
-        next_comics    : ["comic_major_grom_37"],
-        release_at     : {year: 2015, month: 9, day: 4}
+        next_comics: ["comic_major_grom_37"],
+        release_at: {year: 2015, month: 9, day: 4}
     },
-    comic_enoch_36                      : {
-        name           : "Инок #36 Сердце монстра, часть 2",
-        number         : "36",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_36: {
+        name: "Инок #36 Сердце монстра, часть 2",
+        number: "36",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_35"],
-        next_comics    : ["comic_enoch_37"],
-        release_at     : {year: 2015, month: 9, day: 9}
+        next_comics: ["comic_enoch_37"],
+        release_at: {year: 2015, month: 9, day: 9}
     },
-    comic_red_fury_36                   : {
-        name           : "Красная Фурия #36 Башня ворона, часть 2",
-        number         : "36",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_36: {
+        name: "Красная Фурия #36 Башня ворона, часть 2",
+        number: "36",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_35"],
-        next_comics    : ["comic_red_fury_37"],
-        release_at     : {year: 2015, month: 9, day: 14}
+        next_comics: ["comic_red_fury_37"],
+        release_at: {year: 2015, month: 9, day: 14}
     },
-    comic_ekslibrium_12                 : {
-        name           : "Экслибриум #12 Благими намерениями, часть 2",
-        number         : "12",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
+    comic_ekslibrium_12: {
+        name: "Экслибриум #12 Благими намерениями, часть 2",
+        number: "12",
+        type: "single",
+        ranges: ["range_exlibrium"],
         previous_comics: ["comic_ekslibrium_11"],
-        next_comics    : ["comic_ekslibrium_13"],
-        release_at     : {year: 2015, month: 9, day: 18}
+        next_comics: ["comic_ekslibrium_13"],
+        release_at: {year: 2015, month: 9, day: 18}
     },
-    comic_meteora_12                    : {
-        name           : "Метеора #12 Блокада, часть 6",
-        number         : "12",
-        type           : "single",
-        ranges         : ["range_meteora"],
+    comic_meteora_12: {
+        name: "Метеора #12 Блокада, часть 6",
+        number: "12",
+        type: "single",
+        ranges: ["range_meteora"],
         previous_comics: ["comic_meteora_11"],
-        next_comics    : ["comic_meteora_13"],
-        release_at     : {year: 2015, month: 9, day: 25}
+        next_comics: ["comic_meteora_13"],
+        release_at: {year: 2015, month: 9, day: 25}
     },
-    comic_besoboy_37                    : {
-        name           : "Бесобой #37 Стая, часть 4",
-        number         : "37",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_37: {
+        name: "Бесобой #37 Стая, часть 4",
+        number: "37",
+        type: "single",
+        ranges: ["range_besoboy"],
         previous_comics: ["comic_besoboy_36"],
-        next_comics    : ["comic_time_of_raven_prologue"],
-        release_at     : {year: 2015, month: 9, day: 28}
+        next_comics: ["comic_time_of_raven_prologue"],
+        release_at: {year: 2015, month: 9, day: 28}
     },
-    comic_major_grom_37                 : {
-        name           : "Майор Гром #37 Голоса, часть 4",
-        number         : "37",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_37: {
+        name: "Майор Гром #37 Голоса, часть 4",
+        number: "37",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_major_grom_36"],
-        next_comics    : ["comic_time_of_raven_1"],
-        release_at     : {year: 2015, month: 10, day: 1}
+        next_comics: ["comic_time_of_raven_1"],
+        release_at: {year: 2015, month: 10, day: 1}
     },
-    comic_ziggi_1                       : {
-        name       : "Зигги: космический хомяк №1. Планета Фастфуд",
-        number     : "1",
-        type       : "single",
-        ranges     : ["range_childrens_comics"],
+    comic_ziggi_1: {
+        name: "Зигги: космический хомяк №1. Планета Фастфуд",
+        number: "1",
+        type: "single",
+        ranges: ["range_childrens_comics"],
         next_comics: ["comic_ziggi_2"],
-        release_at : {year: 2015, month: 10, day: 1}
+        release_at: {year: 2015, month: 10, day: 1}
     },
-    comic_besoboy_tome_4                : {
-        name            : "Бесобой том 4: Балор",
-        number          : "4",
-        type            : "book",
-        ranges          : ["range_besoboy"],
-        contained_comics: ["comic_besoboy_23", "comic_besoboy_24", "comic_besoboy_25", "comic_besoboy_26",
-                           "comic_besoboy_27"],
-        previous_comics : ["comic_besoboy_tome_3"],
-        release_at      : {year: 2015, month: 10, day: 1}
+    comic_besoboy_tome_4: {
+        name: "Бесобой том 4: Балор",
+        number: "4",
+        type: "book",
+        ranges: ["range_besoboy"],
+        contained_comics: ["comic_besoboy_23", "comic_besoboy_24", "comic_besoboy_25", "comic_besoboy_26", "comic_besoboy_27"],
+        previous_comics: ["comic_besoboy_tome_3"],
+        next_comics: ["comic_besoboy_tome_5"],
+        release_at: {year: 2015, month: 10, day: 1}
     },
-    comic_major_grom_tome_4             : {
-        name            : "Майор Гром том 4: Как в сказке",
-        number          : "4",
-        type            : "book",
-        ranges          : ["range_major_grom"],
+    comic_major_grom_tome_4: {
+        name: "Майор Гром том 4: Как в сказке",
+        number: "4",
+        type: "book",
+        ranges: ["range_major_grom"],
         contained_comics: ["comic_major_grom_19", "comic_major_grom_20", "comic_major_grom_21", "comic_major_grom_22",
-                           "comic_major_grom_23", "comic_major_grom_24"],
-        previous_comics : ["comic_major_grom_tome_3"],
-        release_at      : {year: 2015, month: 10, day: 1}
+            "comic_major_grom_23", "comic_major_grom_24"],
+        previous_comics: ["comic_major_grom_tome_3"],
+        release_at: {year: 2015, month: 10, day: 1}
     },
-    comic_ekslibrium_tome_1             : {
-        name            : "Экслибриум том 1: ...И дверь откроется",
-        number          : "1",
-        type            : "book",
-        ranges          : ["range_exlibrium"],
+    comic_ekslibrium_tome_1: {
+        name: "Экслибриум том 1: ...И дверь откроется",
+        number: "1",
+        type: "book",
+        ranges: ["range_exlibrium"],
         contained_comics: ["comic_ekslibrium_1", "comic_ekslibrium_2", "comic_ekslibrium_3", "comic_ekslibrium_4",
-                           "comic_ekslibrium_5"],
-        release_at      : {year: 2015, month: 10, day: 1}
+            "comic_ekslibrium_5"],
+        release_at: {year: 2015, month: 10, day: 1}
     },
-    comic_meteora_tome_1                : {
-        name            : "Метеора том 1: Самая опасная вещь в космосе",
-        number          : "1",
-        type            : "book",
-        ranges          : ["range_meteora"],
+    comic_meteora_tome_1: {
+        name: "Метеора том 1: Самая опасная вещь в космосе",
+        number: "1",
+        type: "book",
+        ranges: ["range_meteora"],
         contained_comics: ["comic_meteora_1", "comic_meteora_2", "comic_meteora_3", "comic_meteora_4",
-                           "comic_meteora_5", "comic_meteora_6"],
-        release_at      : {year: 2015, month: 10, day: 1}
+            "comic_meteora_5", "comic_meteora_6"],
+        release_at: {year: 2015, month: 10, day: 1}
     },
     comic_time_of_raven_backstory_single: {
-        name            : "Время Ворона: Предыстория",
-        type            : "single",
-        ranges          : ["range_time_of_raven"],
+        name: "Время Ворона: Предыстория",
+        type: "single",
+        ranges: ["range_time_of_raven"],
         including_comics: ["comic_time_of_raven_backstory_book"],
-        next_comics     : ["comic_time_of_raven_prologue"],
-        release_at      : {year: 2015, month: 10, day: 1}
+        next_comics: ["comic_time_of_raven_prologue"],
+        release_at: {year: 2015, month: 10, day: 1}
     },
-    comic_time_of_raven_backstory_book  : {
-        name            : "Время Ворона: Предыстория",
-        type            : "book",
-        ranges          : ["range_time_of_raven"],
+    comic_time_of_raven_backstory_book: {
+        name: "Время Ворона: Предыстория",
+        type: "book",
+        ranges: ["range_time_of_raven"],
         contained_comics: ["comic_time_of_raven_backstory_single"],
-        release_at      : {year: 2015, month: 10, day: 1}
+        release_at: {year: 2015, month: 10, day: 1}
     },
-    comic_time_of_raven_prologue        : {
-        name           : "Время Ворона: Пролог",
-        type           : "single",
-        ranges         : ["range_time_of_raven"],
+    comic_time_of_raven_prologue: {
+        name: "Время Ворона: Пролог",
+        type: "single",
+        ranges: ["range_time_of_raven"],
         previous_comics: ["comic_besoboy_37", "comic_time_of_raven_backstory_single"],
-        next_comics    : ["comic_time_of_raven_1", "comic_besoboy_38"],
-        release_at     : {year: 2015, month: 10, day: 1}
+        next_comics: ["comic_time_of_raven_1", "comic_besoboy_38"],
+        release_at: {year: 2015, month: 10, day: 1}
     },
-    comic_enoch_37                      : {
-        name           : "Инок #37 Сердце монстра, часть 3",
-        number         : "37",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_37: {
+        name: "Инок #37 Сердце монстра, часть 3",
+        number: "37",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_36"],
-        next_comics    : ["comic_enoch_38"],
-        release_at     : {year: 2015, month: 10, day: 9}
+        next_comics: ["comic_enoch_38"],
+        release_at: {year: 2015, month: 10, day: 9}
     },
-    comic_red_fury_37                   : {
-        name           : "Красная Фурия #37 Апгрейд",
-        number         : "37",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_37: {
+        name: "Красная Фурия #37 Апгрейд",
+        number: "37",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_red_fury_36"],
-        next_comics    : ["comic_time_of_raven_1"],
-        release_at     : {year: 2015, month: 10, day: 14}
+        next_comics: ["comic_time_of_raven_1"],
+        release_at: {year: 2015, month: 10, day: 14}
     },
-    comic_ekslibrium_13                 : {
-        name           : "Экслибриум #13 Благими намерениями, часть 3",
-        number         : "13",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
+    comic_ekslibrium_13: {
+        name: "Экслибриум #13 Благими намерениями, часть 3",
+        number: "13",
+        type: "single",
+        ranges: ["range_exlibrium"],
         previous_comics: ["comic_ekslibrium_12"],
-        next_comics    : ["comic_ekslibrium_14"],
-        release_at     : {year: 2015, month: 10, day: 19}
+        next_comics: ["comic_ekslibrium_14"],
+        release_at: {year: 2015, month: 10, day: 19}
     },
-    comic_meteora_13                    : {
-        name           : "Метеора #13 Свинцовые небеса",
-        number         : "13",
-        type           : "single",
-        ranges         : ["range_meteora"],
+    comic_meteora_13: {
+        name: "Метеора #13 Свинцовые небеса",
+        number: "13",
+        type: "single",
+        ranges: ["range_meteora"],
         previous_comics: ["comic_meteora_12"],
-        next_comics    : ["comic_meteora_14"],
-        release_at     : {year: 2015, month: 10, day: 26}
+        next_comics: ["comic_meteora_14"],
+        release_at: {year: 2015, month: 10, day: 26}
     },
-    comic_time_of_raven_1               : {
-        name           : "Время Ворона #1",
-        number         : "1",
-        type           : "single",
-        ranges         : ["range_time_of_raven"],
+    comic_time_of_raven_1: {
+        name: "Время Ворона #1",
+        number: "1",
+        type: "single",
+        ranges: ["range_time_of_raven"],
         previous_comics: ["comic_major_grom_37", "comic_time_of_raven_prologue", "comic_red_fury_37"],
-        next_comics    : ["comic_major_grom_38", "comic_enoch_38", "comic_red_fury_38", "comic_time_of_raven_2"],
-        release_at     : {year: 2015, month: 10, day: 28}
+        next_comics: ["comic_major_grom_38", "comic_enoch_38", "comic_red_fury_38", "comic_time_of_raven_2"],
+        release_at: {year: 2015, month: 10, day: 28}
     },
-    comic_besoboy_38                    : {
-        name           : "Бесобой #38 Хищные сны, часть 1",
-        number         : "38",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_38: {
+        name: "Бесобой #38 Хищные сны, часть 1",
+        number: "38",
+        type: "single",
+        ranges: ["range_besoboy"],
         previous_comics: ["comic_time_of_raven_prologue"],
-        next_comics    : ["comic_besoboy_39"],
-        release_at     : {year: 2015, month: 11, day: 2}
+        next_comics: ["comic_besoboy_39"],
+        release_at: {year: 2015, month: 11, day: 2}
     },
-    comic_major_grom_38                 : {
-        name           : "Майор Гром #38 Одержимость",
-        number         : "38",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_38: {
+        name: "Майор Гром #38 Одержимость",
+        number: "38",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_time_of_raven_1"],
-        next_comics    : ["comic_time_of_raven_2"],
-        release_at     : {year: 2015, month: 11, day: 5}
+        next_comics: ["comic_time_of_raven_2"],
+        release_at: {year: 2015, month: 11, day: 5}
     },
-    comic_enoch_38                      : {
-        name           : "Инок #38 Сердце монстра, часть 4",
-        number         : "38",
-        type           : "single",
-        ranges         : ["range_enoch"],
+    comic_enoch_38: {
+        name: "Инок #38 Сердце монстра, часть 4",
+        number: "38",
+        type: "single",
+        ranges: ["range_enoch"],
         previous_comics: ["comic_enoch_37", "comic_time_of_raven_1"],
-        next_comics    : ["comic_time_of_raven_2"],
-        release_at     : {year: 2015, month: 11, day: 9}
+        next_comics: ["comic_time_of_raven_2", "comic_enoch_39"],
+        release_at: {year: 2015, month: 11, day: 9}
     },
-    comic_red_fury_38                   : {
-        name           : "Красная Фурия #38 Прозрение",
-        number         : "38",
-        type           : "single",
-        ranges         : ["range_red_fury"],
+    comic_red_fury_38: {
+        name: "Красная Фурия #38 Прозрение",
+        number: "38",
+        type: "single",
+        ranges: ["range_red_fury"],
         previous_comics: ["comic_time_of_raven_1"],
-        next_comics    : ["comic_time_of_raven_2"],
-        release_at     : {year: 2015, month: 11, day: 16}
+        next_comics: ["comic_time_of_raven_2"],
+        release_at: {year: 2015, month: 11, day: 16}
     },
-    comic_ekslibrium_14                 : {
-        name           : "Экслибриум #14 Благими намерениями, часть 4",
-        number         : "14",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
+    comic_ekslibrium_14: {
+        name: "Экслибриум #14 Благими намерениями, часть 4",
+        number: "14",
+        type: "single",
+        ranges: ["range_exlibrium"],
         previous_comics: ["comic_ekslibrium_13"],
-        release_at     : {year: 2015, month: 11, day: 20}
+        next_comics: ["comic_ekslibrium_15"],
+        release_at: {year: 2015, month: 11, day: 20}
     },
-    comic_meteora_14                    : {
-        name           : "Метеора #14 Окончательное решение, часть 1",
-        number         : "14",
-        type           : "single",
-        ranges         : ["range_meteora"],
+    comic_meteora_14: {
+        name: "Метеора #14 Окончательное решение, часть 1",
+        number: "14",
+        type: "single",
+        ranges: ["range_meteora"],
         previous_comics: ["comic_meteora_13"],
-        release_at     : {year: 2015, month: 11, day: 24}
+        next_comics: ["comic_meteora_15"],
+        release_at: {year: 2015, month: 11, day: 24}
     },
-    comic_time_of_raven_2               : {
-        name           : "Время Ворона #2",
-        number         : "2",
-        type           : "single",
-        ranges         : ["range_time_of_raven"],
+    comic_time_of_raven_2: {
+        name: "Время Ворона #2",
+        number: "2",
+        type: "single",
+        ranges: ["range_time_of_raven"],
         previous_comics: ["comic_time_of_raven_1", "comic_major_grom_38", "comic_enoch_38", "comic_red_fury_38"],
-        next_comics    : ["comic_major_grom_39"],
-        release_at     : {year: 2015, month: 11, day: 27}
+        next_comics: ["comic_major_grom_39", "comic_red_fury_39", "comic_time_of_raven_3"],
+        release_at: {year: 2015, month: 11, day: 27}
     },
-    comic_besoboy_39                    : {
-        name           : "Бесобой #39 Хищные сны, часть 2",
-        number         : "39",
-        type           : "single",
-        ranges         : ["range_besoboy"],
+    comic_besoboy_39: {
+        name: "Бесобой #39 Хищные сны, часть 2",
+        number: "39",
+        type: "single",
+        ranges: ["range_besoboy"],
         previous_comics: ["comic_besoboy_38"],
-        release_at     : {year: 2015, month: 12, day: 2}
+        next_comics: ["comic_time_of_raven_3", "comic_besoboy_40"],
+        release_at: {year: 2015, month: 12, day: 2}
     },
-    comic_ziggi_2                       : {
-        name           : "Зигги: космический хомяк №2. Новогоднее чудо",
-        number         : "2",
-        type           : "single",
-        ranges         : ["range_childrens_comics"],
+    comic_ziggi_2: {
+        name: "Зигги: космический хомяк №2. Новогоднее чудо",
+        number: "2",
+        type: "single",
+        ranges: ["range_childrens_comics"],
         previous_comics: ["comic_ziggi_1"],
-        release_at     : {year: 2015, month: 12, day: 5}
+        next_comics: ["comic_ziggi_3"],
+        release_at: {year: 2015, month: 12, day: 5}
     },
-    comic_major_grom_39                 : {
-        name           : "Майор Гром #39 Чувство Долга",
-        number         : "39",
-        type           : "single",
-        ranges         : ["range_major_grom"],
+    comic_major_grom_39: {
+        name: "Майор Гром #39 Чувство Долга",
+        number: "39",
+        type: "single",
+        ranges: ["range_major_grom"],
         previous_comics: ["comic_time_of_raven_2"],
-        release_at     : {year: 2015, month: 12, day: 5}
+        next_comics: ["comic_time_of_raven_3"],
+        release_at: {year: 2015, month: 12, day: 5}
     },
-    comic_koshki_myshki_tome_1          : {
-        name      : "Кошки-мышки том 1: Старый новый друг",
-        number    : "1",
-        type      : "single",
-        ranges    : ["range_evgeny_fedotov"],
+    comic_koshki_myshki_tome_1: {
+        name: "Кошки-мышки том 1: Старый новый друг",
+        number: "1",
+        type: "single",
+        ranges: ["range_evgeny_fedotov"],
         release_at: {year: 2015, month: 12, day: 7}
     },
+    comic_enoch_39: {
+        name: "Инок #39 Мёртвая хватка, часть 1",
+        number: "39",
+        type: "single",
+        ranges: ["range_enoch"],
+        previous_comics: ["comic_enoch_38"],
+        next_comics: ["comic_enoch__40"],
+        release_at: {year: 2015, month: 12, day: 10}
+    },
+    comic_red_fury_39: {
+        name: "Красная Фурия #39 Отражение",
+        number: "39",
+        type: "single",
+        ranges: ["range_red_fury"],
+        previous_comics: ["comic_time_of_raven_2"],
+        next_comics: ["comic_time_of_raven_3"],
+        release_at: {year: 2015, month: 12, day: 14}
+    },
+    comic_ekslibrium_15: {
+        name: "Экслибриум #15 Меж трех огней, часть 1",
+        number: "15",
+        type: "single",
+        ranges: ["range_exlibrium"],
+        previous_comics: ["comic_ekslibrium_14"],
+        next_comics: ["comic_ekslibrium_16"],
+        release_at: {year: 2015, month: 12, day: 21}
+    },
+    comic_meteora_15: {
+        name: "Метеора #15 Окончательное решение, часть 2",
+        number: "15",
+        type: "single",
+        ranges: ["range_meteora"],
+        previous_comics: ["comic_meteora_14"],
+        next_comics: ["comic_meteora_16"],
+        release_at: {year: 2015, month: 12, day: 25}
+    },
+    comic_time_of_raven_3: {
+        name: "Время Ворона #3",
+        number: "3",
+        type: "single",
+        ranges: ["range_time_of_raven"],
+        previous_comics: ["comic_time_of_raven_2", "comic_besoboy_39", "comic_major_grom_39", "comic_red_fury_39"],
+        next_comics: ["comic_besoboy_40", "comic_major_grom_40", "comic_time_of_raven_4"],
+        release_at: {year: 2015, month: 12, day: 28}
+    },
+    comic_caesar_magnificent_1: {
+        name: "Цезарь Великолепный #1 Когда земля ближе облака",
+        number: "1",
+        type: "single",
+        ranges: ["range_alena_spiridonova"],
+        next_comics: ["comic_caesar_magnificent_2"],
+        release_at: {year: 2016}
+    },
+    comic_caesar_magnificent_2: {
+        name: "Цезарь Великолепный #2 Связь",
+        number: "2",
+        type: "single",
+        ranges: ["range_alena_spiridonova"],
+        previous_comics: ["comic_caesar_magnificent_1"],
+        next_comics: ["comic_caesar_magnificent_3"],
+        release_at: {year: 2016}
+    },
+    comic_caesar_magnificent_3: {
+        name: "Цезарь Великолепный #3 Ставрополь, прощай",
+        number: "3",
+        type: "single",
+        ranges: ["range_alena_spiridonova"],
+        previous_comics: ["comic_caesar_magnificent_2"],
+        next_comics: ["comic_caesar_magnificent_4"],
+        release_at: {year: 2016}
+    },
+    comic_caesar_magnificent_4: {
+        name: "Цезарь Великолепный #4 Там, где живет легенда",
+        number: "4",
+        type: "single",
+        ranges: ["range_alena_spiridonova"],
+        previous_comics: ["comic_caesar_magnificent_3"],
+        next_comics: ["comic_caesar_magnificent_5"],
+        release_at: {year: 2016}
+    },
+    comic_caesar_magnificent_5: {
+        name: "Цезарь Великолепный #5 В капкане",
+        number: "5",
+        type: "single",
+        ranges: ["range_alena_spiridonova"],
+        previous_comics: ["comic_caesar_magnificent_4"],
+        release_at: {year: 2016}
+    },
+    comic_besoboy_40: {
+        name: "Бесобой #40 Дьявол в деталях, часть 1",
+        number: "40",
+        type: "single",
+        ranges: ["range_besoboy"],
+        previous_comics: ["comic_besoboy_39", "comic_time_of_raven_3"],
+        next_comics: ["comic_besoboy_41"],
+        release_at: {year: 2016, month: 1, day: 11}
+    },
+    comic_enoch__40: {
+        name: "Инок #40 Мёртвая хватка, часть 2",
+        number: "40",
+        type: "single",
+        ranges: ["range_enoch"],
+        previous_comics: ["comic_enoch_39"],
+        next_comics: ["comic_enoch_41"],
+        release_at: {year: 2016, month: 1, day: 11}
+    },
+    comic_major_grom_40: {
+        name: "Майор Гром #40 В сердце тьмы, часть 1",
+        number: "40",
+        type: "single",
+        ranges: ["range_major_grom", "range_crossovers"],
+        previous_comics: ["comic_time_of_raven_3"],
+        next_comics: ["comic_red_fury_40"],
+        release_at: {year: 2016, month: 1, day: 18}
+    },
+    comic_red_fury_40: {
+        name: "Красная Фурия #40 В сердце тьмы, часть 2",
+        number: "40",
+        type: "single",
+        ranges: ["range_red_fury", "range_crossovers"],
+        previous_comics: ["comic_major_grom_40"],
+        next_comics: ["comic_time_of_raven_4"],
+        release_at: {year: 2016, month: 1, day: 18}
+    },
+    comic_ekslibrium_16: {
+        name: "Экслибриум #16 Меж трех огней, часть 2",
+        number: "16",
+        type: "single",
+        ranges: ["range_exlibrium"],
+        previous_comics: ["comic_ekslibrium_15"],
+        next_comics: ["comic_ekslibrium_17"],
+        release_at: {year: 2016, month: 1, day: 20}
+    },
+    comic_meteora_16: {
+        name: "Метеора #16 Окончательное решение, часть 3",
+        number: "16",
+        type: "single",
+        ranges: ["range_meteora"],
+        previous_comics: ["comic_meteora_15"],
+        next_comics: ["comic_meteora_17"],
+        release_at: {year: 2016, month: 1, day: 25}
+    },
+    comic_time_of_raven_4: {
+        name: "Время Ворона #4",
+        number: "4",
+        type: "single",
+        ranges: ["range_time_of_raven"],
+        previous_comics: ["comic_time_of_raven_3", "comic_red_fury_40", "comic_besoboy_41"],
+        next_comics: ["comic_red_fury_41", "comic_major_grom_41", "comic_time_of_raven_5"],
+        release_at: {year: 2016, month: 1, day: 30}
+    },
+    comic_besoboy_41: {
+        name: "Бесобой #41 Дьявол в деталях, часть 2",
+        number: "41",
+        type: "single",
+        ranges: ["range_besoboy"],
+        previous_comics: ["comic_besoboy_40"],
+        next_comics: ["comic_time_of_raven_4"],
+        release_at: {year: 2016, month: 2, day: 1}
+    },
+    comic_red_fury_41: {
+        name: "Красная Фурия #41 Крах",
+        number: "41",
+        type: "single",
+        ranges: ["range_red_fury"],
+        previous_comics: ["comic_time_of_raven_4"],
+        next_comics: ["comic_time_of_raven_5"],
+        release_at: {year: 2016, month: 2, day: 5}
+    },
+    comic_enoch_41: {
+        name: "Инок #41 Мёртвая хватка, часть 3",
+        number: "41",
+        type: "single",
+        ranges: ["range_enoch"],
+        previous_comics: ["comic_enoch__40"],
+        release_at: {year: 2016, month: 2, day: 10}
+    },
+    comic_major_grom_41: {
+        name: "Майор Гром #41 Идеальный день",
+        number: "41",
+        type: "single",
+        ranges: ["range_major_grom"],
+        previous_comics: ["comic_time_of_raven_4"],
+        next_comics: ["comic_time_of_raven_5"],
+        release_at: {year: 2016, month: 2, day: 15}
+    },
+    comic_ekslibrium_17: {
+        name: "Экслибриум #17 Меж трех огней, часть 3",
+        number: "17",
+        type: "single",
+        ranges: ["range_exlibrium"],
+        previous_comics: ["comic_ekslibrium_16"],
+        release_at: {year: 2016, month: 2, day: 19}
+    },
+    comic_meteora_17: {
+        name: "Метеора #17 Лицо человека",
+        number: "17",
+        type: "single",
+        ranges: ["range_meteora"],
+        previous_comics: ["comic_meteora_16"],
+        release_at: {year: 2016, month: 2, day: 25}
+    },
+    comic_time_of_raven_5: {
+        name: "Время Ворона #5",
+        number: "5",
+        type: "single",
+        ranges: ["range_time_of_raven"],
+        previous_comics: ["comic_time_of_raven_4", "comic_red_fury_41", "comic_major_grom_41"],
+        release_at: {year: 2016, month: 3, day: 13}
+    },
+    comic_ziggi_3: {
+        name: "Зигги: космический хомяк №3. Гонки на Планете Вулканов",
+        number: "3",
+        type: "single",
+        ranges: ["range_childrens_comics"],
+        previous_comics: ["comic_ziggi_2"],
+        release_at: {year: 2016, month: 3, day: 13}
+    },
+    comic_besoboy_tome_5: {
+        name: "Бесобой том 5: Метро",
+        number: "5",
+        type: "book",
+        ranges: ["range_besoboy"],
+        contained_comics: ["comic_besoboy_28", "comic_besoboy_29", "comic_besoboy_30", "comic_besoboy_31", "comic_besoboy_32", "comic_besoboy_33"],
+        previous_comics: ["comic_besoboy_tome_4"],
+        release_at: {year: 2016, month: 3, day: 13}
+    },
 
-    /*node_besoboy_single_40: {name: "Бесобой #40\nДьявол в деталях,\nчасть 1", color: colors.besoboy, number: "40", size: sizes.single},
-    node_besoboy_single_41: {name: "Бесобой #41\nДьявол в деталях,\nчасть 2", color: colors.besoboy, number: "41", size: sizes.single},
-    node_besoboy_single_42: {name: "Бесобой #42\nЖертвы обстоятельств", color: colors.besoboy, number: "42", size: sizes.single},
+    /*node_besoboy_single_42: {name: "Бесобой #42\nЖертвы обстоятельств", color: colors.besoboy, number: "42", size: sizes.single},
     node_besoboy_single_43: {name: "Бесобой #43\nРыковы", color: colors.besoboy, number: "43", size: sizes.single},
     node_besoboy_single_44: {name: "Бесобой #44\nГончие Ада,\nчасть 1", color: colors.besoboy, number: "44", size: sizes.single},
     node_besoboy_single_45: {name: "Бесобой #45\nГончие Ада,\nчасть 2", color: colors.besoboy, number: "45", size: sizes.single},
@@ -2058,14 +2292,11 @@ export const comics: Comics = {
     node_besoboy_single_49: {name: "Бесобой #49\nИ ад следовал за ним,\nчасть 1", color: colors.besoboy, number: "49", size: sizes.single},
     node_besoboy_single_50: {name: "Бесобой #50\nИ ад следовал за ним,\nчасть 2", color: colors.besoboy, number: "50", size: sizes.single},
 
-    node_besoboy_tome_5: {name: "Бесобой том 5:\nМетро", color: colors.besoboy, number: "5", size: sizes.tome},
     node_besoboy_tome_6: {name: "Бесобой том 6:\nСтая", color: colors.besoboy, number: "6", size: sizes.tome},
     node_besoboy_tome_7: {name: "Бесобой том 7:\nЖертвы обстоятельств", color: colors.besoboy, number: "7", size: sizes.tome},
     node_besoboy_tome_8: {name: "Бесобой том 8:\nГончие Ада", color: colors.besoboy, number: "8", size: sizes.tome},
     node_besoboy_tome_9: {name: "Бесобой том 9:\nЧъреба", color: colors.besoboy, number: "9", size: sizes.tome},
 
-    node_major_grom_single_40: {name: "Майор Гром #40\nВ сердце тьмы,\nчасть 1", color: colors.mayor_grom, number: "40", size: sizes.single},
-    node_major_grom_single_41: {name: "Майор Гром #41\nИдеальный день", color: colors.mayor_grom, number: "41", size: sizes.single},
     node_major_grom_single_42: {name: "Майор Гром #42\nЗагадка сфинкса,\nчасть 1", color: colors.mayor_grom, number: "42", size: sizes.single},
     node_major_grom_single_43: {name: "Майор Гром #43\nЗагадка сфинкса,\nчасть 2", color: colors.mayor_grom, number: "43", size: sizes.single},
     node_major_grom_single_44: {name: "Майор Гром #44\nЗагадка сфинкса,\nчасть 3", color: colors.mayor_grom, number: "44", size: sizes.single},
@@ -2085,9 +2316,6 @@ export const comics: Comics = {
     node_major_grom_tome_1939: {name: "Майор Гром:\n1939", color: colors.mayor_grom, size: sizes.tome},
     node_major_grom_tome_zagadka_sfinksa: {name: "Майор Гром.\nЗагадка сфинкса", color: colors.mayor_grom, size: sizes.tome},
 
-    node_enoch_single_39: {name: "Инок #39\nМёртвая хватка,\nчасть 1", color: colors.inok, number: "39", size: sizes.single},
-    node_enoch_single_40: {name: "Инок #40\nМёртвая хватка,\nчасть 2", color: colors.inok, number: "40", size: sizes.single},
-    node_enoch_single_41: {name: "Инок #41\nМёртвая хватка,\nчасть 3", color: colors.inok, number: "41", size: sizes.single},
     node_enoch_single_42: {name: "Инок #42\nМёртвая хватка,\nчасть 4", color: colors.inok, number: "42", size: sizes.single},
     node_enoch_single_43: {name: "Инок #43\nПуть к бессмертию,\nчасть 1", color: colors.inok, number: "43", size: sizes.single},
     node_enoch_single_44: {name: "Инок #44\nПуть к бессмертию,\nчасть 2", color: colors.inok, number: "44", size: sizes.single},
@@ -2104,9 +2332,6 @@ export const comics: Comics = {
     node_enoch_tome_7: {name: "Инок том 7:\nМёртвая хватка", color: colors.inok, number: "7", size: sizes.tome},
     node_enoch_tome_8: {name: "Инок том 8:\nПуть к бессмертию", color: colors.inok, number: "8", size: sizes.tome},
 
-    node_red_fury_single_39: {name: "Красная Фурия #39\nОтражение", color: colors.krasnaya_furiya, number: "39", size: sizes.single},
-    node_red_fury_single_40: {name: "Красная Фурия #40\nВ сердце тьмы,\nчасть 2", color: colors.krasnaya_furiya, number: "40", size: sizes.single},
-    node_red_fury_single_41: {name: "Красная Фурия #41\nКрах", color: colors.krasnaya_furiya, number: "41", size: sizes.single},
     node_red_fury_single_42: {name: "Красная Фурия #42\nАгент Симмонс,\nчасть 1", color: colors.krasnaya_furiya, number: "42", size: sizes.single},
     node_red_fury_single_43: {name: "Красная Фурия #43\nАгент Симмонс,\nчасть 2", color: colors.krasnaya_furiya, number: "43", size: sizes.single},
     node_red_fury_single_44: {name: "Красная Фурия #44\nЖажда смерти", color: colors.krasnaya_furiya, number: "44", size: sizes.single},
@@ -2123,9 +2348,6 @@ export const comics: Comics = {
     node_red_fury_tome_9: {name: "Красная Фурия том 9:\nФинальный рывок", color: colors.krasnaya_furiya, number: "9", size: sizes.tome},
     node_red_fury_tome_1966: {name: "Красная Фурия:\n1966", color: colors.krasnaya_furiya, size: sizes.tome},
 
-    node_ekslibrium_single_15: {name: "Экслибриум #15\nМеж трех огней,\nчасть 1", color: colors.ekslibrium, number: "15", size: sizes.single},
-    node_ekslibrium_single_16: {name: "Экслибриум #16\nМеж трех огней,\nчасть 2", color: colors.ekslibrium, number: "16", size: sizes.single},
-    node_ekslibrium_single_17: {name: "Экслибриум #17\nМеж трех огней,\nчасть 3", color: colors.ekslibrium, number: "17", size: sizes.single},
     node_ekslibrium_single_18: {name: "Экслибриум #18\nНе сахар", color: colors.ekslibrium, number: "18", size: sizes.single},
     node_ekslibrium_single_19: {name: "Экслибриум #19\nСуд", color: colors.ekslibrium, number: "19", size: sizes.single},
     node_ekslibrium_single_20: {name: "Экслибриум #20\nСоль на рану,\nчасть 1", color: colors.ekslibrium, number: "20", size: sizes.single},
@@ -2171,9 +2393,6 @@ export const comics: Comics = {
     node_ekslibrium_tome_chistyy_list: {name: "Экслибриум.\nЧистый лист", color: colors.ekslibrium_chistyy_list, size: sizes.tome},
     node_ekslibrium_tome_krasnaya_stroka: {name: "Экслибриум.\nКрасная строка", color: colors.ekslibrium_krasnaya_stroka, size: sizes.tome},
 
-    node_meteora_single_15: {name: "Метеора #15\nОкончательное решение,\nчасть 2", color: colors.meteora, number: "15", size: sizes.single},
-    node_meteora_single_16: {name: "Метеора #16\nОкончательное решение,\nчасть 3", color: colors.meteora, number: "16", size: sizes.single},
-    node_meteora_single_17: {name: "Метеора #17\nЛицо человека", color: colors.meteora, number: "17", size: sizes.single},
     node_meteora_single_18: {name: "Метеора #18\nТам, где обитают драконы", color: colors.meteora, number: "18", size: sizes.single},
     node_meteora_single_19: {name: "Метеора #19\nОхота,\nчасть 1", color: colors.meteora, number: "19", size: sizes.single},
     node_meteora_single_20: {name: "Метеора #20\nОхота,\nчасть 2", color: colors.meteora, number: "20", size: sizes.single},
@@ -2218,15 +2437,10 @@ export const comics: Comics = {
     node_meteora_tome_8: {name: "Метеора том 8:\nКороль и плут", color: colors.meteora, number: "8", size: sizes.tome},
     node_meteora_tome_9: {name: "Метеора том 9:\nСтоп машина!", color: colors.meteora, number: "9", size: sizes.tome},
 
-    node_ziggi_single_3: {name: "Зигги: космический хомяк №3.\nГонки на Планете Вулканов", color: colors.ziggi, number: "3", size: sizes.single},
     node_ziggi_single_4: {name: "Зигги: космический хомяк №4.\nЗа гранью вселеннной", color: colors.ziggi, number: "4", size: sizes.single},
     node_ziggi_single_5: {name: "Зигги: космический хомяк №5.\nРок и звёзды", color: colors.ziggi, number: "5", size: sizes.single},
 
     node_ziggi_tome: {name: "Зигги: Космический хомяк", color: colors.ziggi, size: sizes.tome},
-
-    node_vremya_vorona_single_3: {name: "Время Ворона #3", color: colors.vremya_vorona, number: "3", size: sizes.single},
-    node_vremya_vorona_single_4: {name: "Время Ворона #4", color: colors.vremya_vorona, number: "4", size: sizes.single},
-    node_vremya_vorona_single_5: {name: "Время Ворона #5", color: colors.vremya_vorona, number: "5", size: sizes.single},
 
     node_vremya_vorona_tome: {name: "Время Ворона", color: colors.vremya_vorona, size: sizes.tome},
     node_vremya_vorona_tome_epilog: {name: "Время Ворона:\nЭпилог", color: colors.vremya_vorona, size: sizes.tome},
@@ -2234,13 +2448,7 @@ export const comics: Comics = {
     node_koshki_myshki_tome_2: {name: "Кошки-мышки том 2:\nПодвиг каждый день", color: colors.copyright_comics.evgeny_fedotov, number: "2", size: sizes.tome},
     node_koshki_myshki_tome_3: {name: "Кошки-мышки том 3:\nСчастье в твоих руках", color: colors.copyright_comics.evgeny_fedotov, number: "3", size: sizes.tome},
 
-    node_tsezar_velikolepnyy_single_1: {name: "Цезарь Великолепный #1\nКогда земля ближе облака", color: colors.copyright_comics.alena_spiridonova, number: "1", size: sizes.single},
-    node_tsezar_velikolepnyy_single_2: {name: "Цезарь Великолепный #2\nСвязь", color: colors.copyright_comics.alena_spiridonova, number: "2", size: sizes.single},
-    node_tsezar_velikolepnyy_single_3: {name: "Цезарь Великолепный #3\nСтаврополь, прощай", color: colors.copyright_comics.alena_spiridonova, number: "3", size: sizes.single},
-    node_tsezar_velikolepnyy_single_4: {name: "Цезарь Великолепный #4\nТам, где живет легенда", color: colors.copyright_comics.alena_spiridonova, number: "4", size: sizes.single},
-    node_tsezar_velikolepnyy_single_5: {name: "Цезарь Великолепный #5\nВ капкане", color: colors.copyright_comics.alena_spiridonova, number: "5", size: sizes.single},
-
-    node_tsezar_velikolepnyy_tome: {name: "Цезарь великолепный", color: colors.copyright_comics.alena_spiridonova, size: sizes.tome},
+   node_tsezar_velikolepnyy_tome: {name: "Цезарь великолепный", color: colors.copyright_comics.alena_spiridonova, size: sizes.tome},
 
     node_inok_korol_vecherinok_single: {name: "Инок: Король вечеринок", color: colors.inok_korol_vecherinok, size: sizes.single},
     node_inok_korol_vecherinok_single_nikakikh_bolshe_vecherinok: {name: "Инок: Король вечеринок.\nНикаких больше вечерИНОК", color: colors.inok_korol_vecherinok, size: sizes.single},

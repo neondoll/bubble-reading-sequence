@@ -12,6 +12,7 @@ export interface Range {
     name: string;
     color?: string;
     release_at: Date;
+    position_y?: number;
 }
 
 export type Ranges = Record<string, Range>;
