@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7cc15e66-bfd7-4c21-9031-39ac35689ec2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/comics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/comics.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/ranges.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ranges.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/v-network-graph.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/v-network-graph.ts" afterDir="false" />
@@ -23,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -101,7 +100,8 @@
       <workItem from="1694887220394" duration="22255000" />
       <workItem from="1694944388166" duration="2221000" />
       <workItem from="1695018072677" duration="16000" />
-      <workItem from="1696027322307" duration="6859000" />
+      <workItem from="1696027322307" duration="6901000" />
+      <workItem from="1696088426857" duration="30942000" />
     </task>
     <servers />
   </component>
@@ -113,8 +113,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/../bubble/database/seeders/ComicSeeder.php</url>
-          <line>1479</line>
-          <option name="timeStamp" value="1283" />
+          <line>2334</line>
+          <option name="timeStamp" value="1446" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

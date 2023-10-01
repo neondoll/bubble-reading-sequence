@@ -29,6 +29,8 @@ export interface Comic {
     previous_comics?: string[];
     next_comics?: string[];
     release_at: Date;
+    position_x_func?: Function;
+    position_y?: number;
 }
 
 export type Comics = Record<string, Comic>;
