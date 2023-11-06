@@ -12,7 +12,6 @@ export interface Range {
     name: string;
     color?: string;
     release_at: Date;
-    position_y?: number;
 }
 
 export type Ranges = Record<string, Range>;
@@ -29,8 +28,6 @@ export interface Comic {
     previous_comics?: string[];
     next_comics?: string[];
     release_at: Date;
-    position_x_func?: Function;
-    position_y?: number;
 }
 
 export type Comics = Record<string, Comic>;

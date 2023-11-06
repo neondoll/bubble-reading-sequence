@@ -1,18 +1,4 @@
 import {Comics} from "../interfaces";
-import {ranges} from "./ranges";
-import {getMaxOfArray} from "./functions/array_func";
-
-const position_x_difference = 100;
-const position_y_difference = 110;
-const positions_y = {
-    allies_book              : ranges.range_allies.position_y + position_y_difference * 2,
-    besoboy_and_planeswalkers: (ranges.range_besoboy_vol_2.position_y + ranges.range_planeswalkers.position_y) / 2,
-    besoboy_vol_2_book       : ranges.range_besoboy_vol_2.position_y + position_y_difference * 2,
-    enoch_vs_besoboy         : (ranges.range_besoboy.position_y + ranges.range_enoch.position_y) / 2,
-    igor_grom_book           : ranges.range_igor_grom.position_y + position_y_difference * 2,
-    major_grom_and_red_fury  : (ranges.range_major_grom.position_y + ranges.range_red_fury.position_y) / 2,
-    planeswalkers_book       : ranges.range_planeswalkers.position_y + position_y_difference * 2
-}
 
 export const comics: Comics = {
     comic_besoboy_1                                  : {
@@ -579,8 +565,7 @@ export const comics: Comics = {
         including_comics: ["comic_enoch_vs_besoboy"],
         previous_comics : ["comic_besoboy_14", "comic_enoch_14"],
         next_comics     : ["comic_enoch_15"],
-        release_at      : {year: 2013, month: 12, day: 1},
-        position_y      : positions_y.enoch_vs_besoboy
+        release_at      : {year: 2013, month: 12, day: 1}
     },
     comic_major_grom_15                              : {
         name            : "Майор Гром #15 День Святого Патрика, часть 5",
@@ -600,8 +585,7 @@ export const comics: Comics = {
         including_comics: ["comic_enoch_vs_besoboy"],
         previous_comics : ["comic_besoboy_15"],
         next_comics     : ["comic_enoch_vs_besoboy_1"],
-        release_at      : {year: 2013, month: 12, day: 15},
-        position_y      : positions_y.enoch_vs_besoboy
+        release_at      : {year: 2013, month: 12, day: 15}
     },
     comic_red_fury_15                                : {
         name            : "Красная Фурия #15 День Рождения",
@@ -631,8 +615,7 @@ export const comics: Comics = {
         including_comics: ["comic_enoch_vs_besoboy"],
         previous_comics : ["comic_enoch_vs_besoboy_1"],
         next_comics     : ["comic_enoch_16"],
-        release_at      : {year: 2014, month: 1, day: 1},
-        position_y      : positions_y.enoch_vs_besoboy
+        release_at      : {year: 2014, month: 1, day: 1}
     },
     comic_major_grom_16                              : {
         name            : "Майор Гром #16 День Святого Патрика, часть 6",
@@ -652,8 +635,7 @@ export const comics: Comics = {
         including_comics: ["comic_enoch_vs_besoboy"],
         previous_comics : ["comic_besoboy_16"],
         next_comics     : ["comic_enoch_vs_besoboy_2"],
-        release_at      : {year: 2014, month: 1, day: 15},
-        position_y      : positions_y.enoch_vs_besoboy
+        release_at      : {year: 2014, month: 1, day: 15}
     },
     comic_red_fury_16                                : {
         name            : "Красная Фурия #16 Затишье перед бурей",
@@ -683,8 +665,7 @@ export const comics: Comics = {
         including_comics: ["comic_enoch_vs_besoboy"],
         previous_comics : ["comic_enoch_vs_besoboy_2"],
         next_comics     : ["comic_enoch_17"],
-        release_at      : {year: 2014, month: 2, day: 1},
-        position_y      : positions_y.enoch_vs_besoboy
+        release_at      : {year: 2014, month: 2, day: 1}
     },
     comic_major_grom_17                              : {
         name            : "Майор Гром #17 День Святого Патрика, часть 7",
@@ -704,8 +685,7 @@ export const comics: Comics = {
         including_comics: ["comic_enoch_vs_besoboy"],
         previous_comics : ["comic_besoboy_17"],
         next_comics     : ["comic_enoch_vs_besoboy_3"],
-        release_at      : {year: 2014, month: 2, day: 15},
-        position_y      : positions_y.enoch_vs_besoboy
+        release_at      : {year: 2014, month: 2, day: 15}
     },
     comic_red_fury_17                                : {
         name            : "Красная Фурия #17 Тёмное наследие, часть 1",
@@ -1550,12 +1530,21 @@ export const comics: Comics = {
         next_comics     : ["comic_besoboy_33"],
         release_at      : {year: 2015, month: 5, day: 1}
     },
-    comic_chronicles_of_enoch                        : {
-        name           : "Хроники Инока: Штурм Берлина",
-        type           : "book",
-        ranges         : ["range_enoch", "range_crossovers", "range_bubble_legends"],
-        previous_comics: ["comic_enoch_50", "comic_enoch_tome_8"],
-        release_at     : {year: 2015, month: 5, day: 1}
+    comic_chronicles_of_enoch_single                 : {
+        name            : "Хроники Инока: Штурм Берлина",
+        type            : "single",
+        ranges          : ["range_enoch", "range_crossovers", "range_bubble_legends"],
+        including_comics: ["comic_chronicles_of_enoch_book"],
+        previous_comics : ["comic_enoch_50"],
+        release_at      : {year: 2015, month: 5, day: 1}
+    },
+    comic_chronicles_of_enoch_book                   : {
+        name            : "Хроники Инока: Штурм Берлина",
+        type            : "book",
+        ranges          : ["range_enoch", "range_crossovers", "range_bubble_legends"],
+        contained_comics: ["comic_chronicles_of_enoch_single"],
+        previous_comics : ["comic_enoch_tome_8"],
+        release_at      : {year: 2015, month: 5, day: 1}
     },
     comic_major_grom_32                              : {
         name            : "Майор Гром #32 Игра, часть 8",
@@ -2064,8 +2053,7 @@ export const comics: Comics = {
         including_comics: ["comic_major_grom_and_red_fury_tome_7"],
         previous_comics : ["comic_time_of_raven_1"],
         next_comics     : ["comic_time_of_raven_2"],
-        release_at      : {year: 2015, month: 11, day: 5},
-        position_y      : positions_y.major_grom_and_red_fury
+        release_at      : {year: 2015, month: 11, day: 5}
     },
     comic_enoch_38                                   : {
         name            : "Инок #38 Сердце монстра, часть 4",
@@ -2085,14 +2073,7 @@ export const comics: Comics = {
         including_comics: ["comic_major_grom_and_red_fury_tome_7"],
         previous_comics : ["comic_time_of_raven_1"],
         next_comics     : ["comic_time_of_raven_2"],
-        release_at      : {year: 2015, month: 11, day: 16},
-        position_x_func : (layouts_nodes) => {
-            const layouts_nodes_x = Object.keys(layouts_nodes)
-                .map((layouts_node_id) => layouts_nodes[layouts_node_id].x);
-
-            return getMaxOfArray(layouts_nodes_x) + position_x_difference;
-        },
-        position_y      : positions_y.major_grom_and_red_fury
+        release_at      : {year: 2015, month: 11, day: 16}
     },
     comic_exlibrium_14                               : {
         name            : "Экслибриум #14 Благими намерениями, часть 4",
@@ -2152,8 +2133,7 @@ export const comics: Comics = {
         including_comics: ["comic_major_grom_and_red_fury_tome_7"],
         previous_comics : ["comic_time_of_raven_2"],
         next_comics     : ["comic_time_of_raven_3"],
-        release_at      : {year: 2015, month: 12, day: 5},
-        position_y      : positions_y.major_grom_and_red_fury
+        release_at      : {year: 2015, month: 12, day: 5}
     },
     comic_cat_and_mouse_tome_1                       : {
         name       : "Кошки-мышки том 1: Старый новый друг",
@@ -2181,14 +2161,7 @@ export const comics: Comics = {
         including_comics: ["comic_major_grom_and_red_fury_tome_7"],
         previous_comics : ["comic_time_of_raven_2"],
         next_comics     : ["comic_time_of_raven_3"],
-        release_at      : {year: 2015, month: 12, day: 14},
-        position_x_func : (layouts_nodes) => {
-            const layouts_nodes_x = Object.keys(layouts_nodes)
-                .map((layouts_node_id) => layouts_nodes[layouts_node_id].x);
-
-            return getMaxOfArray(layouts_nodes_x) + position_x_difference;
-        },
-        position_y      : positions_y.major_grom_and_red_fury
+        release_at      : {year: 2015, month: 12, day: 14}
     },
     comic_exlibrium_15                               : {
         name            : "Экслибриум #15 Меж трех огней, часть 1",
@@ -2296,8 +2269,7 @@ export const comics: Comics = {
         including_comics: ["comic_major_grom_and_red_fury_tome_7"],
         previous_comics : ["comic_time_of_raven_3"],
         next_comics     : ["comic_red_fury_40"],
-        release_at      : {year: 2016, month: 1, day: 18},
-        position_y      : positions_y.major_grom_and_red_fury
+        release_at      : {year: 2016, month: 1, day: 18}
     },
     comic_red_fury_40                                : {
         name            : "Красная Фурия #40 В сердце тьмы, часть 2",
@@ -2307,8 +2279,7 @@ export const comics: Comics = {
         including_comics: ["comic_major_grom_and_red_fury_tome_7"],
         previous_comics : ["comic_major_grom_40"],
         next_comics     : ["comic_time_of_raven_4"],
-        release_at      : {year: 2016, month: 1, day: 18},
-        position_y      : positions_y.major_grom_and_red_fury
+        release_at      : {year: 2016, month: 1, day: 18}
     },
     comic_exlibrium_16                               : {
         name            : "Экслибриум #16 Меж трех огней, часть 2",
@@ -2358,8 +2329,7 @@ export const comics: Comics = {
         including_comics: ["comic_major_grom_and_red_fury_tome_7"],
         previous_comics : ["comic_time_of_raven_4"],
         next_comics     : ["comic_time_of_raven_5"],
-        release_at      : {year: 2016, month: 2, day: 5},
-        position_y      : positions_y.major_grom_and_red_fury
+        release_at      : {year: 2016, month: 2, day: 5}
     },
     comic_enoch_41                                   : {
         name            : "Инок #41 Мёртвая хватка, часть 3",
@@ -2379,14 +2349,7 @@ export const comics: Comics = {
         including_comics: ["comic_major_grom_and_red_fury_tome_7"],
         previous_comics : ["comic_time_of_raven_4"],
         next_comics     : ["comic_time_of_raven_5"],
-        release_at      : {year: 2016, month: 2, day: 15},
-        position_x_func : (layouts_nodes) => {
-            const layouts_nodes_x = Object.keys(layouts_nodes)
-                .map((layouts_node_id) => layouts_nodes[layouts_node_id].x);
-
-            return getMaxOfArray(layouts_nodes_x) + position_x_difference;
-        },
-        position_y      : positions_y.major_grom_and_red_fury
+        release_at      : {year: 2016, month: 2, day: 15}
     },
     comic_exlibrium_17                               : {
         name            : "Экслибриум #17 Меж трех огней, часть 3",
@@ -3169,7 +3132,7 @@ export const comics: Comics = {
         ranges          : ["range_besoboy"],
         including_comics: ["comic_besoboy_tome_9"],
         previous_comics : ["comic_besoboy_49"],
-        next_comics     : ["comic_besoboy_vol_2_1", "comic_black_dog_1"],
+        next_comics     : ["comic_besoboy_vol_2_1", "comic_black_dog_1", "comic_yarkh_step_forward_1"],
         release_at      : {year: 2016, month: 12, day: 24}
     },
     comic_major_grom_50                              : {
@@ -3179,7 +3142,8 @@ export const comics: Comics = {
         ranges          : ["range_major_grom"],
         including_comics: ["comic_major_grom_tome_8"],
         previous_comics : ["comic_major_grom_49"],
-        next_comics     : ["comic_igor_grom_1", "comic_major_grom_chance", "comic_dubin_dima_1"],
+        next_comics     : ["comic_igor_grom_1", "comic_major_grom_chance_single", "comic_dubin_dima_1",
+                           "comic_major_grom_promise"],
         release_at      : {year: 2016, month: 12, day: 24}
     },
     comic_enoch_50                                   : {
@@ -3189,7 +3153,7 @@ export const comics: Comics = {
         ranges          : ["range_enoch"],
         including_comics: ["comic_enoch_tome_8"],
         previous_comics : ["comic_enoch_49"],
-        next_comics     : ["comic_chronicles_of_enoch", "comic_planeswalkers_1"],
+        next_comics     : ["comic_chronicles_of_enoch_single", "comic_planeswalkers_1", "comic_master_single"],
         release_at      : {year: 2016, month: 12, day: 24}
     },
     comic_red_fury_50                                : {
@@ -3335,12 +3299,21 @@ export const comics: Comics = {
         next_comics     : ["comic_planeswalkers_3"],
         release_at      : {year: 2017, month: 2, day: 14}
     },
-    comic_major_grom_chance                          : {
-        name           : "Майор Гром: Шанс",
-        type           : "single",
-        ranges         : ["range_major_grom"],
-        previous_comics: ["comic_major_grom_50", "comic_major_grom_tome_8"],
-        release_at     : {year: 2017, month: 2, day: 15}
+    comic_major_grom_chance_single                   : {
+        name            : "Майор Гром: Шанс",
+        type            : "single",
+        ranges          : ["range_major_grom"],
+        including_comics: ["comic_major_grom_chance_book"],
+        previous_comics : ["comic_major_grom_50"],
+        release_at      : {year: 2017, month: 2, day: 15}
+    },
+    comic_major_grom_chance_book                     : {
+        name            : "Майор Гром: Шанс",
+        type            : "book",
+        ranges          : ["range_major_grom"],
+        contained_comics: ["comic_major_grom_chance_single"],
+        previous_comics : ["comic_major_grom_tome_8"],
+        release_at      : {year: 2017, month: 2, day: 15}
     },
     comic_exlibrium_28                               : {
         name            : "Экслибриум #28 Невинная история, часть 1",
@@ -3433,11 +3406,12 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 3, day: 31}
     },
     comic_igor_ugor_tome_1                           : {
-        name      : "Игорь Угорь. Том 1",
-        number    : "1",
-        type      : "book",
-        ranges    : ["range_igor_ugor"],
-        release_at: {year: 2017, month: 4, day: 1}
+        name       : "Игорь Угорь. Том 1",
+        number     : "1",
+        type       : "book",
+        ranges     : ["range_igor_ugor"],
+        next_comics: ["comic_igor_ugor_tome_2"],
+        release_at : {year: 2017, month: 4, day: 1}
     },
     comic_besoboy_vol_2_4                            : {
         name            : "Бесобой Vol.2 #4 Исход, часть 4",
@@ -3490,13 +3464,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 4, day: 24}
     },
     comic_allies_5                                   : {
-        name           : "Союзники #5 Естественный отбор, часть 1",
-        number         : "5",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_4"],
-        next_comics    : ["comic_allies_6"],
-        release_at     : {year: 2017, month: 5, day: 2}
+        name            : "Союзники #5 Естественный отбор, часть 1",
+        number          : "5",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_book_2", "comic_allies_tome_2"],
+        previous_comics : ["comic_allies_4"],
+        next_comics     : ["comic_allies_6"],
+        release_at      : {year: 2017, month: 5, day: 2}
     },
     comic_besoboy_vol_2_5                            : {
         name            : "Бесобой Vol.2 #5 Исход, часть 5",
@@ -3559,13 +3534,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 5, day: 25}
     },
     comic_allies_6                                   : {
-        name           : "Союзники #6 Естественный отбор, часть 2",
-        number         : "6",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_5"],
-        next_comics    : ["comic_allies_7"],
-        release_at     : {year: 2017, month: 6, day: 1}
+        name            : "Союзники #6 Естественный отбор, часть 2",
+        number          : "6",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_book_2", "comic_allies_tome_2"],
+        previous_comics : ["comic_allies_5"],
+        next_comics     : ["comic_allies_7"],
+        release_at      : {year: 2017, month: 6, day: 1}
     },
     comic_major_grom_tome_8                          : {
         name            : "Майор Гром том 8: Последнее дело",
@@ -3576,7 +3552,8 @@ export const comics: Comics = {
                            "comic_major_grom_46", "comic_major_grom_47", "comic_major_grom_48", "comic_major_grom_49",
                            "comic_major_grom_50"],
         previous_comics : ["comic_time_of_raven_epilogue_book", "comic_major_grom_and_red_fury_tome_7"],
-        next_comics     : ["comic_major_grom_chance", "comic_igor_grom_book_1", "comic_igor_grom_tome_1"],
+        next_comics     : ["comic_major_grom_chance_book", "comic_igor_grom_book_1", "comic_igor_grom_tome_1",
+                           "comic_dubin_dima", "comic_major_grom_promise"],
         release_at      : {year: 2017, month: 6, day: 1}
     },
     comic_enoch_tome_8                               : {
@@ -3587,17 +3564,19 @@ export const comics: Comics = {
         contained_comics: ["comic_enoch_43", "comic_enoch_44", "comic_enoch_45", "comic_enoch_46", "comic_enoch_47",
                            "comic_enoch_48", "comic_enoch_49", "comic_enoch_50"],
         previous_comics : ["comic_time_of_raven_epilogue_book", "comic_enoch_tome_7"],
-        next_comics     : ["comic_chronicles_of_enoch", "comic_planeswalkers_book_1", "comic_planeswalkers_tome_1"],
+        next_comics     : ["comic_chronicles_of_enoch_book", "comic_planeswalkers_book_1", "comic_planeswalkers_tome_1",
+                           "comic_master_book"],
         release_at      : {year: 2017, month: 6, day: 1}
     },
     comic_besoboy_vol_2_6                            : {
-        name           : "Бесобой Vol.2 #6 Мастер войны, часть 1",
-        number         : "6",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_5"],
-        next_comics    : ["comic_besoboy_vol_2_7"],
-        release_at     : {year: 2017, month: 6, day: 5}
+        name            : "Бесобой Vol.2 #6 Мастер войны, часть 1",
+        number          : "6",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_tome_2"],
+        previous_comics : ["comic_besoboy_vol_2_5"],
+        next_comics     : ["comic_besoboy_vol_2_7"],
+        release_at      : {year: 2017, month: 6, day: 5}
     },
     comic_igor_grom_6                                : {
         name            : "Игорь Гром #6 Дикая охота, часть 3",
@@ -3651,13 +3630,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 6, day: 26}
     },
     comic_allies_7                                   : {
-        name           : "Союзники #7 Естественный отбор, часть 3",
-        number         : "7",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_6"],
-        next_comics    : ["comic_allies_8"],
-        release_at     : {year: 2017, month: 6, day: 30}
+        name            : "Союзники #7 Естественный отбор, часть 3",
+        number          : "7",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_book_2", "comic_allies_tome_2"],
+        previous_comics : ["comic_allies_6"],
+        next_comics     : ["comic_allies_8"],
+        release_at      : {year: 2017, month: 6, day: 30}
     },
     comic_friends_comics_1                           : {
         name            : "ДружКомикс #1",
@@ -3669,13 +3649,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 7, day: 3}
     },
     comic_besoboy_vol_2_7                            : {
-        name           : "Бесобой Vol.2 #7 Мастер войны, часть 2",
-        number         : "7",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_6"],
-        next_comics    : ["comic_besoboy_vol_2_8"],
-        release_at     : {year: 2017, month: 7, day: 5}
+        name            : "Бесобой Vol.2 #7 Мастер войны, часть 2",
+        number          : "7",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_tome_2"],
+        previous_comics : ["comic_besoboy_vol_2_6"],
+        next_comics     : ["comic_besoboy_vol_2_8"],
+        release_at      : {year: 2017, month: 7, day: 5}
     },
     comic_friends_comics_2                           : {
         name            : "ДружКомикс #2",
@@ -3698,13 +3679,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 7, day: 7}
     },
     comic_igor_grom_7                                : {
-        name           : "Игорь Гром #7 Голодные духи, часть 1",
-        number         : "7",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_6"],
-        next_comics    : ["comic_igor_grom_8"],
-        release_at     : {year: 2017, month: 7, day: 10}
+        name            : "Игорь Гром #7 Голодные духи, часть 1",
+        number          : "7",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_tome_2"],
+        previous_comics : ["comic_igor_grom_6"],
+        next_comics     : ["comic_igor_grom_8"],
+        release_at      : {year: 2017, month: 7, day: 10}
     },
     comic_friends_comics_4                           : {
         name            : "ДружКомикс #4",
@@ -3727,13 +3709,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 7, day: 12}
     },
     comic_planeswalkers_7                            : {
-        name           : "Мироходцы #7 Луна, часть 1",
-        number         : "7",
-        type           : "single",
-        ranges         : ["range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_6"],
-        next_comics    : ["comic_planeswalkers_8"],
-        release_at     : {year: 2017, month: 7, day: 15}
+        name            : "Мироходцы #7 Луна, часть 1",
+        number          : "7",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_tome_2"],
+        previous_comics : ["comic_planeswalkers_6"],
+        next_comics     : ["comic_planeswalkers_8"],
+        release_at      : {year: 2017, month: 7, day: 15}
     },
     comic_friends_comics_6                           : {
         name            : "ДружКомикс #6",
@@ -3838,13 +3821,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 7, day: 31}
     },
     comic_allies_8                                   : {
-        name           : "Союзники #8 Условный рефлекс, часть 1",
-        number         : "8",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_7"],
-        next_comics    : ["comic_allies_9"],
-        release_at     : {year: 2017, month: 8, day: 1}
+        name            : "Союзники #8 Условный рефлекс, часть 1",
+        number          : "8",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_book_2", "comic_allies_tome_2"],
+        previous_comics : ["comic_allies_7"],
+        next_comics     : ["comic_allies_9"],
+        release_at      : {year: 2017, month: 8, day: 1}
     },
     comic_friends_comics_12                          : {
         name            : "ДружКомикс #12",
@@ -3867,13 +3851,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 8, day: 4}
     },
     comic_besoboy_vol_2_8                            : {
-        name           : "Бесобой Vol.2 #8 Падение, часть 1",
-        number         : "8",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_7"],
-        next_comics    : ["comic_besoboy_vol_2_9"],
-        release_at     : {year: 2017, month: 8, day: 5}
+        name            : "Бесобой Vol.2 #8 Падение, часть 1",
+        number          : "8",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_tome_2"],
+        previous_comics : ["comic_besoboy_vol_2_7"],
+        next_comics     : ["comic_besoboy_vol_2_9"],
+        release_at      : {year: 2017, month: 8, day: 5}
     },
     comic_friends_comics_14                          : {
         name            : "ДружКомикс #14",
@@ -3896,13 +3881,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 8, day: 9}
     },
     comic_igor_grom_8                                : {
-        name           : "Игорь Гром #8 Голодные духи, часть 2",
-        number         : "8",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_7"],
-        next_comics    : ["comic_igor_grom_9"],
-        release_at     : {year: 2017, month: 8, day: 10}
+        name            : "Игорь Гром #8 Голодные духи, часть 2",
+        number          : "8",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_tome_2"],
+        previous_comics : ["comic_igor_grom_7"],
+        next_comics     : ["comic_igor_grom_9"],
+        release_at      : {year: 2017, month: 8, day: 10}
     },
     comic_friends_comics_16                          : {
         name            : "ДружКомикс #16",
@@ -3925,13 +3911,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 8, day: 14}
     },
     comic_planeswalkers_8                            : {
-        name           : "Мироходцы #8 Луна, часть 2",
-        number         : "8",
-        type           : "single",
-        ranges         : ["range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_7"],
-        next_comics    : ["comic_planeswalkers_9"],
-        release_at     : {year: 2017, month: 8, day: 15}
+        name            : "Мироходцы #8 Луна, часть 2",
+        number          : "8",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_tome_2"],
+        previous_comics : ["comic_planeswalkers_7"],
+        next_comics     : ["comic_planeswalkers_9"],
+        release_at      : {year: 2017, month: 8, day: 15}
     },
     comic_friends_comics_18                          : {
         name            : "ДружКомикс #18",
@@ -4014,13 +4001,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 8, day: 30}
     },
     comic_allies_9                                   : {
-        name           : "Союзники #9 Условный рефлекс, часть 2",
-        number         : "9",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_8"],
-        next_comics    : ["comic_allies_10"],
-        release_at     : {year: 2017, month: 9, day: 1}
+        name            : "Союзники #9 Условный рефлекс, часть 2",
+        number          : "9",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_book_2", "comic_allies_tome_2"],
+        previous_comics : ["comic_allies_8"],
+        next_comics     : ["comic_allies_10"],
+        release_at      : {year: 2017, month: 9, day: 1}
     },
     comic_friends_comics_24                          : {
         name            : "ДружКомикс #24",
@@ -4043,13 +4031,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 9, day: 4}
     },
     comic_besoboy_vol_2_9                            : {
-        name           : "Бесобой Vol.2 #9 Падение, часть 2",
-        number         : "9",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_8"],
-        next_comics    : ["comic_besoboy_vol_2_10"],
-        release_at     : {year: 2017, month: 9, day: 5}
+        name            : "Бесобой Vol.2 #9 Падение, часть 2",
+        number          : "9",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_tome_2"],
+        previous_comics : ["comic_besoboy_vol_2_8"],
+        next_comics     : ["comic_besoboy_vol_2_10"],
+        release_at      : {year: 2017, month: 9, day: 5}
     },
     comic_friends_comics_26                          : {
         name            : "ДружКомикс #26",
@@ -4071,31 +4060,34 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 9, day: 8}
     },
     comic_igor_grom_9                                : {
-        name           : "Игорь Гром #9 Голодные духи, часть 3",
-        number         : "9",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_8"],
-        next_comics    : ["comic_igor_grom_10"],
-        release_at     : {year: 2017, month: 9, day: 11}
+        name            : "Игорь Гром #9 Голодные духи, часть 3",
+        number          : "9",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_tome_2"],
+        previous_comics : ["comic_igor_grom_8"],
+        next_comics     : ["comic_igor_grom_10"],
+        release_at      : {year: 2017, month: 9, day: 11}
     },
     comic_planeswalkers_9                            : {
-        name           : "Мироходцы #9 Луна, часть 3",
-        number         : "9",
-        type           : "single",
-        ranges         : ["range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_8"],
-        next_comics    : ["comic_planeswalkers_10"],
-        release_at     : {year: 2017, month: 9, day: 15}
+        name            : "Мироходцы #9 Луна, часть 3",
+        number          : "9",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_tome_2"],
+        previous_comics : ["comic_planeswalkers_8"],
+        next_comics     : ["comic_planeswalkers_10"],
+        release_at      : {year: 2017, month: 9, day: 15}
     },
     comic_exlibrium_35                               : {
-        name           : "Экслибриум #35 Хозяйка дорог, часть 1",
-        number         : "35",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
-        previous_comics: ["comic_exlibrium_34"],
-        next_comics    : ["comic_exlibrium_36"],
-        release_at     : {year: 2017, month: 9, day: 20}
+        name            : "Экслибриум #35 Хозяйка дорог, часть 1",
+        number          : "35",
+        type            : "single",
+        ranges          : ["range_exlibrium"],
+        including_comics: ["comic_exlibrium_tome_7"],
+        previous_comics : ["comic_exlibrium_34"],
+        next_comics     : ["comic_exlibrium_36"],
+        release_at      : {year: 2017, month: 9, day: 20}
     },
     comic_meteora_35                                 : {
         name            : "Метеора #35 Танцуй, Серебристая леди",
@@ -4125,8 +4117,8 @@ export const comics: Comics = {
         contained_comics: ["comic_besoboy_vol_2_1", "comic_besoboy_vol_2_2", "comic_besoboy_vol_2_3",
                            "comic_besoboy_vol_2_4", "comic_besoboy_vol_2_5"],
         previous_comics : ["comic_besoboy_tome_9"],
-        release_at      : {year: 2017, month: 9, day: 28},
-        position_y      : positions_y.besoboy_vol_2_book
+        next_comics     : ["comic_besoboy_vol_2_book_2"],
+        release_at      : {year: 2017, month: 9, day: 28}
     },
     comic_besoboy_vol_2_tome_1                       : {
         name            : "Бесобой Vol.2 том 1: Исход",
@@ -4136,6 +4128,7 @@ export const comics: Comics = {
         contained_comics: ["comic_besoboy_vol_2_1", "comic_besoboy_vol_2_2", "comic_besoboy_vol_2_3",
                            "comic_besoboy_vol_2_4", "comic_besoboy_vol_2_5"],
         previous_comics : ["comic_besoboy_tome_9"],
+        next_comics     : ["comic_besoboy_vol_2_tome_2"],
         release_at      : {year: 2017, month: 9, day: 28}
     },
     comic_igor_grom_book_1                           : {
@@ -4146,8 +4139,8 @@ export const comics: Comics = {
         contained_comics: ["comic_igor_grom_1", "comic_igor_grom_2", "comic_igor_grom_3", "comic_igor_grom_4",
                            "comic_igor_grom_5", "comic_igor_grom_6"],
         previous_comics : ["comic_major_grom_tome_8"],
-        release_at      : {year: 2017, month: 9, day: 28},
-        position_y      : positions_y.igor_grom_book
+        next_comics     : ["comic_igor_grom_book_2"],
+        release_at      : {year: 2017, month: 9, day: 28}
     },
     comic_igor_grom_tome_1                           : {
         name            : "Игорь Гром том 1: Находится на реконструкции",
@@ -4157,6 +4150,7 @@ export const comics: Comics = {
         contained_comics: ["comic_igor_grom_1", "comic_igor_grom_2", "comic_igor_grom_3", "comic_igor_grom_4",
                            "comic_igor_grom_5", "comic_igor_grom_6"],
         previous_comics : ["comic_major_grom_tome_8"],
+        next_comics     : ["comic_igor_grom_tome_2"],
         release_at      : {year: 2017, month: 9, day: 28}
     },
     comic_allies_book_1                              : {
@@ -4166,8 +4160,8 @@ export const comics: Comics = {
         ranges          : ["range_allies"],
         contained_comics: ["comic_allies_1", "comic_allies_2", "comic_allies_3", "comic_allies_4"],
         previous_comics : ["comic_red_fury_tome_9"],
-        release_at      : {year: 2017, month: 9, day: 28},
-        position_y      : positions_y.allies_book
+        next_comics     : ["comic_allies_book_2"],
+        release_at      : {year: 2017, month: 9, day: 28}
     },
     comic_allies_tome_1                              : {
         name            : "Союзники том 1: Перед рассветом",
@@ -4176,6 +4170,7 @@ export const comics: Comics = {
         ranges          : ["range_allies"],
         contained_comics: ["comic_allies_1", "comic_allies_2", "comic_allies_3", "comic_allies_4"],
         previous_comics : ["comic_red_fury_tome_9"],
+        next_comics     : ["comic_allies_tome_2"],
         release_at      : {year: 2017, month: 9, day: 28}
     },
     comic_planeswalkers_book_1                       : {
@@ -4186,8 +4181,8 @@ export const comics: Comics = {
         contained_comics: ["comic_planeswalkers_1", "comic_planeswalkers_2", "comic_planeswalkers_3",
                            "comic_planeswalkers_4", "comic_planeswalkers_5", "comic_planeswalkers_6"],
         previous_comics : ["comic_enoch_tome_8"],
-        release_at      : {year: 2017, month: 9, day: 28},
-        position_y      : positions_y.planeswalkers_book
+        next_comics     : ["comic_planeswalkers_book_2"],
+        release_at      : {year: 2017, month: 9, day: 28}
     },
     comic_planeswalkers_tome_1                       : {
         name            : "Мироходцы том 1: Кровь богов",
@@ -4197,6 +4192,7 @@ export const comics: Comics = {
         contained_comics: ["comic_planeswalkers_1", "comic_planeswalkers_2", "comic_planeswalkers_3",
                            "comic_planeswalkers_4", "comic_planeswalkers_5", "comic_planeswalkers_6"],
         previous_comics : ["comic_enoch_tome_8"],
+        next_comics     : ["comic_planeswalkers_tome_2"],
         release_at      : {year: 2017, month: 9, day: 28}
     },
     comic_exlibrium_tome_5                           : {
@@ -4228,11 +4224,12 @@ export const comics: Comics = {
         release_at: {year: 2017, month: 9, day: 28}
     },
     comic_jackets_and_revolvers_tome_1               : {
-        name      : "Пиджаки и Револьверы. Том 1: Ящик раздора",
-        number    : "1",
-        type      : "book",
-        ranges    : ["range_yulia_zhuravleva"],
-        release_at: {year: 2017, month: 9, day: 28}
+        name       : "Пиджаки и Револьверы. Том 1: Ящик раздора",
+        number     : "1",
+        type       : "book",
+        ranges     : ["range_yulia_zhuravleva"],
+        next_comics: ["comic_jackets_and_revolvers_tome_2"],
+        release_at : {year: 2017, month: 9, day: 28}
     },
     comic_unicorn_conspiracy_tome_1                  : {
         name      : "Заговор Единорогов. Том 1. Наследие",
@@ -4286,6 +4283,7 @@ export const comics: Comics = {
         ranges          : ["range_bubble_manga", "range_marina_privalova"],
         including_comics: ["comic_tagar_tome_1"],
         previous_comics : ["comic_tagar_tome_1_chapter_3"],
+        next_comics     : ["comic_tagar_tome_2_chapter_1"],
         release_at      : {year: 2017, month: 9, day: 28}
     },
     comic_tagar_tome_1                               : {
@@ -4296,6 +4294,7 @@ export const comics: Comics = {
         contained_comics: ["comic_tagar_tome_1_prologue", "comic_tagar_tome_1_chapter_1",
                            "comic_tagar_tome_1_chapter_2", "comic_tagar_tome_1_chapter_3",
                            "comic_tagar_tome_1_chapter_4"],
+        next_comics     : ["comic_tagar_tome_2"],
         release_at      : {year: 2017, month: 9, day: 28}
     },
     comic_friends_comics                             : {
@@ -4322,13 +4321,14 @@ export const comics: Comics = {
         release_at     : {year: 2017, month: 9, day: 28}
     },
     comic_allies_10                                  : {
-        name           : "Союзники #10 Условный рефлекс, часть 3",
-        number         : "10",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_9"],
-        next_comics    : ["comic_allies_11"],
-        release_at     : {year: 2017, month: 10, day: 2}
+        name            : "Союзники #10 Условный рефлекс, часть 3",
+        number          : "10",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_book_2", "comic_allies_tome_3"],
+        previous_comics : ["comic_allies_9"],
+        next_comics     : ["comic_allies_11"],
+        release_at      : {year: 2017, month: 10, day: 2}
     },
     comic_krutiks_1                                  : {
         name       : "Крутиксы #1",
@@ -4339,49 +4339,54 @@ export const comics: Comics = {
         release_at : {year: 2017, month: 10, day: 3}
     },
     comic_besoboy_vol_2_10                           : {
-        name           : "Бесобой Vol.2 #10 Падение, часть 3",
-        number         : "10",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_9"],
-        next_comics    : ["comic_besoboy_vol_2_11"],
-        release_at     : {year: 2017, month: 10, day: 5}
+        name            : "Бесобой Vol.2 #10 Падение, часть 3",
+        number          : "10",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_tome_2"],
+        previous_comics : ["comic_besoboy_vol_2_9"],
+        next_comics     : ["comic_besoboy_vol_2_11"],
+        release_at      : {year: 2017, month: 10, day: 5}
     },
     comic_igor_grom_10                               : {
-        name           : "Игорь Гром #10 Голодные духи, часть 4",
-        number         : "10",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_9"],
-        next_comics    : ["comic_igor_grom_11"],
-        release_at     : {year: 2017, month: 10, day: 10}
+        name            : "Игорь Гром #10 Голодные духи, часть 4",
+        number          : "10",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_tome_2"],
+        previous_comics : ["comic_igor_grom_9"],
+        next_comics     : ["comic_igor_grom_11"],
+        release_at      : {year: 2017, month: 10, day: 10}
     },
     comic_planeswalkers_10                           : {
-        name           : "Мироходцы #10 Луна, часть 4",
-        number         : "10",
-        type           : "single",
-        ranges         : ["range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_9"],
-        next_comics    : ["comic_planeswalkers_11"],
-        release_at     : {year: 2017, month: 10, day: 15}
+        name            : "Мироходцы #10 Луна, часть 4",
+        number          : "10",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_tome_2"],
+        previous_comics : ["comic_planeswalkers_9"],
+        next_comics     : ["comic_planeswalkers_11"],
+        release_at      : {year: 2017, month: 10, day: 15}
     },
     comic_exlibrium_36                               : {
-        name           : "Экслибриум #36 Хозяйка дорог, часть 2",
-        number         : "36",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
-        previous_comics: ["comic_exlibrium_35"],
-        next_comics    : ["comic_exlibrium_37"],
-        release_at     : {year: 2017, month: 10, day: 20}
+        name            : "Экслибриум #36 Хозяйка дорог, часть 2",
+        number          : "36",
+        type            : "single",
+        ranges          : ["range_exlibrium"],
+        including_comics: ["comic_exlibrium_tome_7"],
+        previous_comics : ["comic_exlibrium_35"],
+        next_comics     : ["comic_exlibrium_37"],
+        release_at      : {year: 2017, month: 10, day: 20}
     },
     comic_meteora_36                                 : {
-        name           : "Метеора #36 Зверолов",
-        number         : "36",
-        type           : "single",
-        ranges         : ["range_meteora"],
-        previous_comics: ["comic_meteora_35"],
-        next_comics    : ["comic_meteora_37"],
-        release_at     : {year: 2017, month: 10, day: 25}
+        name            : "Метеора #36 Зверолов",
+        number          : "36",
+        type            : "single",
+        ranges          : ["range_meteora"],
+        including_comics: ["comic_meteora_tome_7"],
+        previous_comics : ["comic_meteora_35"],
+        next_comics     : ["comic_meteora_37"],
+        release_at      : {year: 2017, month: 10, day: 25}
     },
     comic_black_dog_2                                : {
         name            : "Чёрный Пёс: Своё время, часть 2",
@@ -4394,13 +4399,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 10, day: 28}
     },
     comic_allies_11                                  : {
-        name           : "Союзники #11 Условный рефлекс, часть 4",
-        number         : "11",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_10"],
-        next_comics    : ["comic_allies_12"],
-        release_at     : {year: 2017, month: 11, day: 1}
+        name            : "Союзники #11 Условный рефлекс, часть 4",
+        number          : "11",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_book_2", "comic_allies_tome_3"],
+        previous_comics : ["comic_allies_10"],
+        next_comics     : ["comic_allies_12"],
+        release_at      : {year: 2017, month: 11, day: 1}
     },
     comic_krutiks_2                                  : {
         name           : "Крутиксы #2",
@@ -4412,49 +4418,54 @@ export const comics: Comics = {
         release_at     : {year: 2017, month: 11, day: 3}
     },
     comic_besoboy_vol_2_11                           : {
-        name           : "Бесобой Vol.2 #11 Часовой, часть 1",
-        number         : "11",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_10"],
-        next_comics    : ["comic_besoboy_vol_2_12"],
-        release_at     : {year: 2017, month: 11, day: 5}
+        name            : "Бесобой Vol.2 #11 Часовой, часть 1",
+        number          : "11",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_tome_3"],
+        previous_comics : ["comic_besoboy_vol_2_10"],
+        next_comics     : ["comic_besoboy_vol_2_12"],
+        release_at      : {year: 2017, month: 11, day: 5}
     },
     comic_igor_grom_11                               : {
-        name           : "Игорь Гром #11 Умный человек, часть 1",
-        number         : "11",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_10"],
-        next_comics    : ["comic_igor_grom_12"],
-        release_at     : {year: 2017, month: 11, day: 10}
+        name            : "Игорь Гром #11 Умный человек, часть 1",
+        number          : "11",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_tome_3"],
+        previous_comics : ["comic_igor_grom_10"],
+        next_comics     : ["comic_igor_grom_12"],
+        release_at      : {year: 2017, month: 11, day: 10}
     },
     comic_planeswalkers_11                           : {
-        name           : "Мироходцы #11 Притяжение полюсов, часть 1",
-        number         : "11",
-        type           : "single",
-        ranges         : ["range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_10"],
-        next_comics    : ["comic_planeswalkers_12"],
-        release_at     : {year: 2017, month: 11, day: 15}
+        name            : "Мироходцы #11 Притяжение полюсов, часть 1",
+        number          : "11",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_tome_3"],
+        previous_comics : ["comic_planeswalkers_10"],
+        next_comics     : ["comic_planeswalkers_12"],
+        release_at      : {year: 2017, month: 11, day: 15}
     },
     comic_exlibrium_37                               : {
-        name           : "Экслибриум #37 Хозяйка дорог, часть 3",
-        number         : "37",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
-        previous_comics: ["comic_exlibrium_36"],
-        next_comics    : ["comic_exlibrium_38"],
-        release_at     : {year: 2017, month: 11, day: 20}
+        name            : "Экслибриум #37 Хозяйка дорог, часть 3",
+        number          : "37",
+        type            : "single",
+        ranges          : ["range_exlibrium"],
+        including_comics: ["comic_exlibrium_tome_7"],
+        previous_comics : ["comic_exlibrium_36"],
+        next_comics     : ["comic_exlibrium_38"],
+        release_at      : {year: 2017, month: 11, day: 20}
     },
     comic_meteora_37                                 : {
-        name           : "Метеора #37 Вольная птица, часть 1",
-        number         : "37",
-        type           : "single",
-        ranges         : ["range_meteora"],
-        previous_comics: ["comic_meteora_36"],
-        next_comics    : ["comic_meteora_38"],
-        release_at     : {year: 2017, month: 11, day: 24}
+        name            : "Метеора #37 Вольная птица, часть 1",
+        number          : "37",
+        type            : "single",
+        ranges          : ["range_meteora"],
+        including_comics: ["comic_meteora_tome_7"],
+        previous_comics : ["comic_meteora_36"],
+        next_comics     : ["comic_meteora_38"],
+        release_at      : {year: 2017, month: 11, day: 24}
     },
     comic_black_dog_3                                : {
         name            : "Чёрный Пёс: Своё время, часть 3",
@@ -4467,13 +4478,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 11, day: 27}
     },
     comic_allies_12                                  : {
-        name           : "Союзники #12 Огненная земля, часть 1",
-        number         : "12",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_11"],
-        next_comics    : ["comic_allies_13"],
-        release_at     : {year: 2017, month: 12, day: 1}
+        name            : "Союзники #12 Огненная земля, часть 1",
+        number          : "12",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_book_2", "comic_allies_tome_3"],
+        previous_comics : ["comic_allies_11"],
+        next_comics     : ["comic_allies_13"],
+        release_at      : {year: 2017, month: 12, day: 1}
     },
     comic_krutiks_3                                  : {
         name           : "Крутиксы #3",
@@ -4485,40 +4497,44 @@ export const comics: Comics = {
         release_at     : {year: 2017, month: 12, day: 3}
     },
     comic_besoboy_vol_2_12                           : {
-        name           : "Бесобой Vol.2 #12 Часовой, часть 2",
-        number         : "12",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_11"],
-        next_comics    : ["comic_besoboy_vol_2_13"],
-        release_at     : {year: 2017, month: 12, day: 5}
+        name            : "Бесобой Vol.2 #12 Часовой, часть 2",
+        number          : "12",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_tome_3"],
+        previous_comics : ["comic_besoboy_vol_2_11"],
+        next_comics     : ["comic_besoboy_vol_2_13"],
+        release_at      : {year: 2017, month: 12, day: 5}
     },
     comic_igor_grom_12                               : {
-        name           : "Игорь Гром #12 Умный человек, часть 2",
-        number         : "12",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_11"],
-        next_comics    : ["comic_igor_grom_13"],
-        release_at     : {year: 2017, month: 12, day: 11}
+        name            : "Игорь Гром #12 Умный человек, часть 2",
+        number          : "12",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_tome_3"],
+        previous_comics : ["comic_igor_grom_11"],
+        next_comics     : ["comic_igor_grom_13"],
+        release_at      : {year: 2017, month: 12, day: 11}
     },
     comic_planeswalkers_12                           : {
-        name           : "Мироходцы #12 Притяжение полюсов, часть 2",
-        number         : "12",
-        type           : "single",
-        ranges         : ["range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_11"],
-        next_comics    : ["comic_planeswalkers_13"],
-        release_at     : {year: 2017, month: 12, day: 15}
+        name            : "Мироходцы #12 Притяжение полюсов, часть 2",
+        number          : "12",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_tome_3"],
+        previous_comics : ["comic_planeswalkers_11"],
+        next_comics     : ["comic_planeswalkers_13"],
+        release_at      : {year: 2017, month: 12, day: 15}
     },
     comic_exlibrium_38                               : {
-        name           : "Экслибриум #38 Сказочке конец, часть 1",
-        number         : "38",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
-        previous_comics: ["comic_exlibrium_37"],
-        next_comics    : ["comic_exlibrium_39"],
-        release_at     : {year: 2017, month: 12, day: 20}
+        name            : "Экслибриум #38 Сказочке конец, часть 1",
+        number          : "38",
+        type            : "single",
+        ranges          : ["range_exlibrium"],
+        including_comics: ["comic_exlibrium_tome_7"],
+        previous_comics : ["comic_exlibrium_37"],
+        next_comics     : ["comic_exlibrium_39"],
+        release_at      : {year: 2017, month: 12, day: 20}
     },
     comic_black_dog_4                                : {
         name            : "Чёрный Пёс: Своё время, часть 4",
@@ -4534,6 +4550,7 @@ export const comics: Comics = {
         type            : "single",
         ranges          : ["range_crossovers", "range_bubble_legends", "range_besoboy_vol_2"],
         including_comics: ["comic_besoboy_and_planeswalkers_book"],
+        previous_comics : ["comic_planeswalkers_21"],
         release_at      : {year: 2017, month: 12, day: 23}
     },
     comic_besoboy_and_planeswalkers_book             : {
@@ -4541,25 +4558,28 @@ export const comics: Comics = {
         type            : "book",
         ranges          : ["range_crossovers", "range_bubble_legends", "range_besoboy_vol_2"],
         contained_comics: ["comic_besoboy_and_planeswalkers_single"],
+        previous_comics : ["comic_planeswalkers_tome_4"],
         release_at      : {year: 2017, month: 12, day: 23}
     },
     comic_meteora_38                                 : {
-        name           : "Метеора #38 Вольная птица, часть 2",
-        number         : "38",
-        type           : "single",
-        ranges         : ["range_meteora"],
-        previous_comics: ["comic_meteora_37"],
-        next_comics    : ["comic_meteora_39"],
-        release_at     : {year: 2017, month: 12, day: 25}
+        name            : "Метеора #38 Вольная птица, часть 2",
+        number          : "38",
+        type            : "single",
+        ranges          : ["range_meteora"],
+        including_comics: ["comic_meteora_tome_7"],
+        previous_comics : ["comic_meteora_37"],
+        next_comics     : ["comic_meteora_39"],
+        release_at      : {year: 2017, month: 12, day: 25}
     },
     comic_allies_13                                  : {
-        name           : "Союзники #13 Огненная земля, часть 2",
-        number         : "13",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_12"],
-        next_comics    : ["comic_allies_14"],
-        release_at     : {year: 2018, month: 1, day: 1}
+        name            : "Союзники #13 Огненная земля, часть 2",
+        number          : "13",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_book_2", "comic_allies_tome_3"],
+        previous_comics : ["comic_allies_12"],
+        next_comics     : ["comic_allies_14"],
+        release_at      : {year: 2018, month: 1, day: 1}
     },
     comic_krutiks_1_2018                             : {
         name           : "Крутиксы #1 (2018)",
@@ -4571,49 +4591,54 @@ export const comics: Comics = {
         release_at     : {year: 2018, month: 1, day: 3}
     },
     comic_besoboy_vol_2_13                           : {
-        name           : "Бесобой Vol.2 #13 Откровения",
-        number         : "13",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_12"],
-        next_comics    : ["comic_besoboy_vol_2_14"],
-        release_at     : {year: 2018, month: 1, day: 5}
+        name            : "Бесобой Vol.2 #13 Откровения",
+        number          : "13",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_tome_3"],
+        previous_comics : ["comic_besoboy_vol_2_12"],
+        next_comics     : ["comic_besoboy_vol_2_14"],
+        release_at      : {year: 2018, month: 1, day: 5}
     },
     comic_igor_grom_13                               : {
-        name           : "Игорь Гром #13 Умный человек, часть 3",
-        number         : "13",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_12"],
-        next_comics    : ["comic_igor_grom_14"],
-        release_at     : {year: 2018, month: 1, day: 5}
+        name            : "Игорь Гром #13 Умный человек, часть 3",
+        number          : "13",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_tome_3"],
+        previous_comics : ["comic_igor_grom_12"],
+        next_comics     : ["comic_igor_grom_14"],
+        release_at      : {year: 2018, month: 1, day: 5}
     },
     comic_planeswalkers_13                           : {
-        name           : "Мироходцы #13 Лицом к лицу, часть 1",
-        number         : "13",
-        type           : "single",
-        ranges         : ["range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_12"],
-        next_comics    : ["comic_planeswalkers_14"],
-        release_at     : {year: 2018, month: 1, day: 15}
+        name            : "Мироходцы #13 Лицом к лицу, часть 1",
+        number          : "13",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_tome_3"],
+        previous_comics : ["comic_planeswalkers_12"],
+        next_comics     : ["comic_planeswalkers_14"],
+        release_at      : {year: 2018, month: 1, day: 15}
     },
     comic_exlibrium_39                               : {
-        name           : "Экслибриум #39 Сказочке конец, часть 2",
-        number         : "39",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
-        previous_comics: ["comic_exlibrium_38"],
-        next_comics    : ["comic_exlibrium_40"],
-        release_at     : {year: 2018, month: 1, day: 19}
+        name            : "Экслибриум #39 Сказочке конец, часть 2",
+        number          : "39",
+        type            : "single",
+        ranges          : ["range_exlibrium"],
+        including_comics: ["comic_exlibrium_tome_7"],
+        previous_comics : ["comic_exlibrium_38"],
+        next_comics     : ["comic_exlibrium_40"],
+        release_at      : {year: 2018, month: 1, day: 19}
     },
     comic_meteora_39                                 : {
-        name           : "Метеора #39 Вольная птица, часть 3",
-        number         : "39",
-        type           : "single",
-        ranges         : ["range_meteora"],
-        previous_comics: ["comic_meteora_38"],
-        next_comics    : ["comic_meteora_40"],
-        release_at     : {year: 2018, month: 1, day: 25}
+        name            : "Метеора #39 Вольная птица, часть 3",
+        number          : "39",
+        type            : "single",
+        ranges          : ["range_meteora"],
+        including_comics: ["comic_meteora_tome_7"],
+        previous_comics : ["comic_meteora_38"],
+        next_comics     : ["comic_meteora_40"],
+        release_at      : {year: 2018, month: 1, day: 25}
     },
     comic_teo_1                                      : {
         name            : "Тео: Круги на полях, часть 1",
@@ -4625,13 +4650,14 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 1, day: 29}
     },
     comic_allies_14                                  : {
-        name           : "Союзники #14 Имаго",
-        number         : "14",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_13"],
-        next_comics    : ["comic_allies_15"],
-        release_at     : {year: 2018, month: 2, day: 1}
+        name            : "Союзники #14 Имаго",
+        number          : "14",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_book_2", "comic_allies_tome_3"],
+        previous_comics : ["comic_allies_13"],
+        next_comics     : ["comic_allies_15"],
+        release_at      : {year: 2018, month: 2, day: 1}
     },
     comic_krutiks_2_2018                             : {
         name           : "Крутиксы #2 (2018)",
@@ -4643,49 +4669,54 @@ export const comics: Comics = {
         release_at     : {year: 2018, month: 2, day: 3}
     },
     comic_besoboy_vol_2_14                           : {
-        name           : "Бесобой Vol.2 #14 Инструмент Бога",
-        number         : "14",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_13"],
-        next_comics    : ["comic_besoboy_vol_2_15"],
-        release_at     : {year: 2018, month: 2, day: 5}
+        name            : "Бесобой Vol.2 #14 Инструмент Бога",
+        number          : "14",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_tome_3"],
+        previous_comics : ["comic_besoboy_vol_2_13"],
+        next_comics     : ["comic_besoboy_vol_2_15"],
+        release_at      : {year: 2018, month: 2, day: 5}
     },
     comic_igor_grom_14                               : {
-        name           : "Игорь Гром #14 Умный человек, часть 4",
-        number         : "14",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_13"],
-        next_comics    : ["comic_igor_grom_15"],
-        release_at     : {year: 2018, month: 2, day: 9}
+        name            : "Игорь Гром #14 Умный человек, часть 4",
+        number          : "14",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_tome_3"],
+        previous_comics : ["comic_igor_grom_13"],
+        next_comics     : ["comic_igor_grom_15"],
+        release_at      : {year: 2018, month: 2, day: 9}
     },
     comic_planeswalkers_14                           : {
-        name           : "Мироходцы #14 Лицом к лицу, часть 2",
-        number         : "14",
-        type           : "single",
-        ranges         : ["range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_13"],
-        next_comics    : ["comic_planeswalkers_15"],
-        release_at     : {year: 2018, month: 2, day: 15}
+        name            : "Мироходцы #14 Лицом к лицу, часть 2",
+        number          : "14",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_tome_3"],
+        previous_comics : ["comic_planeswalkers_13"],
+        next_comics     : ["comic_planeswalkers_15"],
+        release_at      : {year: 2018, month: 2, day: 15}
     },
     comic_exlibrium_40                               : {
-        name           : "Экслибриум #40 Сказочке конец, часть 3",
-        number         : "40",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
-        previous_comics: ["comic_exlibrium_39"],
-        next_comics    : ["comic_exlibrium_41"],
-        release_at     : {year: 2018, month: 2, day: 19}
+        name            : "Экслибриум #40 Сказочке конец, часть 3",
+        number          : "40",
+        type            : "single",
+        ranges          : ["range_exlibrium"],
+        including_comics: ["comic_exlibrium_tome_7"],
+        previous_comics : ["comic_exlibrium_39"],
+        next_comics     : ["comic_exlibrium_41"],
+        release_at      : {year: 2018, month: 2, day: 19}
     },
     comic_meteora_40                                 : {
-        name           : "Метеора #40 Вольная птица, часть 4",
-        number         : "40",
-        type           : "single",
-        ranges         : ["range_meteora"],
-        previous_comics: ["comic_meteora_39"],
-        next_comics    : ["comic_meteora_41"],
-        release_at     : {year: 2018, month: 2, day: 26}
+        name            : "Метеора #40 Вольная птица, часть 4",
+        number          : "40",
+        type            : "single",
+        ranges          : ["range_meteora"],
+        including_comics: ["comic_meteora_tome_8"],
+        previous_comics : ["comic_meteora_39"],
+        next_comics     : ["comic_meteora_41"],
+        release_at      : {year: 2018, month: 2, day: 26}
     },
     comic_teo_2                                      : {
         name            : "Тео: Круги на полях, часть 2",
@@ -4698,12 +4729,13 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 2, day: 26}
     },
     comic_witch_hunt_prologue                        : {
-        name       : "Охота на ведьм: Пролог",
-        type       : "single",
-        ranges     : ["range_crossovers", "range_besoboy_vol_2", "range_igor_grom", "range_allies",
-                      "range_planeswalkers"],
-        next_comics: ["comic_allies_15"],
-        release_at : {year: 2018, month: 3, day: 1}
+        name            : "Охота на ведьм: Пролог",
+        type            : "single",
+        ranges          : ["range_crossovers", "range_besoboy_vol_2", "range_igor_grom", "range_allies",
+                           "range_planeswalkers"],
+        including_comics: ["comic_witch_hunt"],
+        next_comics     : ["comic_allies_15"],
+        release_at      : {year: 2018, month: 3, day: 1}
     },
     comic_krutiks_3_2018                             : {
         name           : "Крутиксы #3 (2018)",
@@ -4715,58 +4747,64 @@ export const comics: Comics = {
         release_at     : {year: 2018, month: 3, day: 3}
     },
     comic_allies_15                                  : {
-        name           : "Союзники #15 Охота на ведьм",
-        number         : "15",
-        type           : "single",
-        ranges         : ["range_crossovers", "range_allies"],
-        previous_comics: ["comic_allies_14", "comic_witch_hunt_prologue"],
-        next_comics    : ["comic_besoboy_vol_2_15", "comic_allies_16"],
-        release_at     : {year: 2018, month: 3, day: 5}
+        name            : "Союзники #15 Охота на ведьм",
+        number          : "15",
+        type            : "single",
+        ranges          : ["range_crossovers", "range_allies"],
+        including_comics: ["comic_witch_hunt"],
+        previous_comics : ["comic_allies_14", "comic_witch_hunt_prologue"],
+        next_comics     : ["comic_besoboy_vol_2_15", "comic_allies_16"],
+        release_at      : {year: 2018, month: 3, day: 5}
     },
     comic_besoboy_vol_2_15                           : {
-        name           : "Бесобой Vol.2 #15 Охота на ведьм",
-        number         : "15",
-        type           : "single",
-        ranges         : ["range_crossovers", "range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_14", "comic_allies_15"],
-        next_comics    : ["comic_igor_grom_15", "comic_besoboy_vol_2_16"],
-        release_at     : {year: 2018, month: 3, day: 5}
+        name            : "Бесобой Vol.2 #15 Охота на ведьм",
+        number          : "15",
+        type            : "single",
+        ranges          : ["range_crossovers", "range_besoboy_vol_2"],
+        including_comics: ["comic_witch_hunt"],
+        previous_comics : ["comic_besoboy_vol_2_14", "comic_allies_15"],
+        next_comics     : ["comic_igor_grom_15", "comic_besoboy_vol_2_16"],
+        release_at      : {year: 2018, month: 3, day: 5}
     },
     comic_igor_grom_15                               : {
-        name           : "Игорь Гром #15 Охота на ведьм",
-        number         : "15",
-        type           : "single",
-        ranges         : ["range_crossovers", "range_igor_grom"],
-        previous_comics: ["comic_igor_grom_14", "comic_besoboy_vol_2_15"],
-        next_comics    : ["comic_planeswalkers_15", "comic_igor_grom_16"],
-        release_at     : {year: 2018, month: 3, day: 9}
+        name            : "Игорь Гром #15 Охота на ведьм",
+        number          : "15",
+        type            : "single",
+        ranges          : ["range_crossovers", "range_igor_grom"],
+        including_comics: ["comic_witch_hunt"],
+        previous_comics : ["comic_igor_grom_14", "comic_besoboy_vol_2_15"],
+        next_comics     : ["comic_planeswalkers_15", "comic_igor_grom_16"],
+        release_at      : {year: 2018, month: 3, day: 9}
     },
     comic_planeswalkers_15                           : {
-        name           : "Мироходцы #15 Охота на ведьм",
-        number         : "15",
-        type           : "single",
-        ranges         : ["range_crossovers", "range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_14", "comic_igor_grom_15"],
-        next_comics    : ["comic_witch_hunt_finale", "comic_planeswalkers_16"],
-        release_at     : {year: 2018, month: 3, day: 15}
+        name            : "Мироходцы #15 Охота на ведьм",
+        number          : "15",
+        type            : "single",
+        ranges          : ["range_crossovers", "range_planeswalkers"],
+        including_comics: ["comic_witch_hunt"],
+        previous_comics : ["comic_planeswalkers_14", "comic_igor_grom_15"],
+        next_comics     : ["comic_witch_hunt_finale", "comic_planeswalkers_16"],
+        release_at      : {year: 2018, month: 3, day: 15}
     },
     comic_exlibrium_41                               : {
-        name           : "Экслибриум #41 Переворот, часть 1",
-        number         : "41",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
-        previous_comics: ["comic_exlibrium_40"],
-        next_comics    : ["comic_exlibrium_42"],
-        release_at     : {year: 2018, month: 3, day: 20}
+        name            : "Экслибриум #41 Переворот, часть 1",
+        number          : "41",
+        type            : "single",
+        ranges          : ["range_exlibrium"],
+        including_comics: ["comic_exlibrium_tome_8"],
+        previous_comics : ["comic_exlibrium_40"],
+        next_comics     : ["comic_exlibrium_42"],
+        release_at      : {year: 2018, month: 3, day: 20}
     },
     comic_meteora_41                                 : {
-        name           : "Метеора #41 Вольная птица, часть 5",
-        number         : "41",
-        type           : "single",
-        ranges         : ["range_meteora"],
-        previous_comics: ["comic_meteora_40"],
-        next_comics    : ["comic_meteora_42"],
-        release_at     : {year: 2018, month: 3, day: 26}
+        name            : "Метеора #41 Вольная птица, часть 5",
+        number          : "41",
+        type            : "single",
+        ranges          : ["range_meteora"],
+        including_comics: ["comic_meteora_tome_8"],
+        previous_comics : ["comic_meteora_40"],
+        next_comics     : ["comic_meteora_42"],
+        release_at      : {year: 2018, month: 3, day: 26}
     },
     comic_teo_3                                      : {
         name            : "Тео: Круги на полях, часть 3",
@@ -4779,12 +4817,13 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 3, day: 28}
     },
     comic_witch_hunt_finale                          : {
-        name           : "Охота на ведьм: Финал",
-        type           : "single",
-        ranges         : ["range_crossovers", "range_besoboy_vol_2", "range_igor_grom", "range_allies",
-                          "range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_15"],
-        release_at     : {year: 2018, month: 4, day: 1}
+        name            : "Охота на ведьм: Финал",
+        type            : "single",
+        ranges          : ["range_crossovers", "range_besoboy_vol_2", "range_igor_grom", "range_allies",
+                           "range_planeswalkers"],
+        including_comics: ["comic_witch_hunt"],
+        previous_comics : ["comic_planeswalkers_15"],
+        release_at      : {year: 2018, month: 4, day: 1}
     },
     comic_exlibrium_tome_6                           : {
         name            : "Экслибриум том 6: Бумажный порез",
@@ -4794,6 +4833,7 @@ export const comics: Comics = {
         contained_comics: ["comic_exlibrium_30", "comic_exlibrium_31", "comic_exlibrium_32", "comic_exlibrium_33",
                            "comic_exlibrium_34"],
         previous_comics : ["comic_exlibrium_tome_5"],
+        next_comics     : ["comic_exlibrium_tome_7"],
         release_at      : {year: 2018, month: 1, day: 1}
     },
     comic_meteora_tome_6                             : {
@@ -4804,6 +4844,7 @@ export const comics: Comics = {
         contained_comics: ["comic_meteora_31", "comic_meteora_32", "comic_meteora_33", "comic_meteora_34",
                            "comic_meteora_35"],
         previous_comics : ["comic_meteora_tome_5"],
+        next_comics     : ["comic_meteora_tome_7"],
         release_at      : {year: 2018, month: 1, day: 1}
     },
     comic_black_dog                                  : {
@@ -4815,20 +4856,21 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 1, day: 1}
     },
     comic_allies_16                                  : {
-        name           : "Союзники #16 Без ума, часть 1",
-        number         : "16",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_15"],
-        next_comics    : ["comic_allies_17"],
-        release_at     : {year: 2018, month: 4, day: 1}
+        name            : "Союзники #16 Без ума, часть 1",
+        number          : "16",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_4"],
+        previous_comics : ["comic_allies_15"],
+        next_comics     : ["comic_allies_17"],
+        release_at      : {year: 2018, month: 4, day: 1}
     },
     comic_ziggy_and_shmyg_destroy_the_bubble_universe: {
-        name      : "Зигги и Шмыг уничтожают вселенную BUBBLE",
-        type      : "book",
-        ranges    : ["range_ziggy_and_shmyg"],
-        release_at: {year: 2018, month: 1, day: 1}
-
+        name       : "Зигги и Шмыг уничтожают вселенную BUBBLE",
+        type       : "book",
+        ranges     : ["range_ziggy_and_shmyg"],
+        next_comics: ["comic_ziggy_and_shmyg_save_comiccon"],
+        release_at : {year: 2018, month: 1, day: 1}
     },
     comic_krutiks_4_2018                             : {
         name           : "Крутиксы #4 (2018)",
@@ -4840,49 +4882,54 @@ export const comics: Comics = {
         release_at     : {year: 2018, month: 4, day: 3}
     },
     comic_besoboy_vol_2_16                           : {
-        name           : "Бесобой Vol.2 #16 Иуда",
-        number         : "16",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_15"],
-        next_comics    : ["comic_besoboy_vol_2_17"],
-        release_at     : {year: 2018, month: 4, day: 5}
+        name            : "Бесобой Vol.2 #16 Иуда",
+        number          : "16",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_4"],
+        previous_comics : ["comic_besoboy_vol_2_15"],
+        next_comics     : ["comic_besoboy_vol_2_17"],
+        release_at      : {year: 2018, month: 4, day: 5}
     },
     comic_igor_grom_16                               : {
-        name           : "Игорь Гром #16 Вспоминай",
-        number         : "16",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_15"],
-        next_comics    : ["comic_igor_grom_17"],
-        release_at     : {year: 2018, month: 4, day: 9}
+        name            : "Игорь Гром #16 Вспоминай",
+        number          : "16",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_4"],
+        previous_comics : ["comic_igor_grom_15"],
+        next_comics     : ["comic_igor_grom_17"],
+        release_at      : {year: 2018, month: 4, day: 9}
     },
     comic_planeswalkers_16                           : {
-        name           : "Мироходцы #16 Чужая воля",
-        number         : "16",
-        type           : "single",
-        ranges         : ["range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_15"],
-        next_comics    : ["comic_planeswalkers_17"],
-        release_at     : {year: 2018, month: 4, day: 16}
+        name            : "Мироходцы #16 Чужая воля",
+        number          : "16",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_tome_4"],
+        previous_comics : ["comic_planeswalkers_15"],
+        next_comics     : ["comic_planeswalkers_17"],
+        release_at      : {year: 2018, month: 4, day: 16}
     },
     comic_exlibrium_42                               : {
-        name           : "Экслибриум #42 Переворот, часть 2",
-        number         : "42",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
-        previous_comics: ["comic_exlibrium_41"],
-        next_comics    : ["comic_exlibrium_43"],
-        release_at     : {year: 2018, month: 4, day: 20}
+        name            : "Экслибриум #42 Переворот, часть 2",
+        number          : "42",
+        type            : "single",
+        ranges          : ["range_exlibrium"],
+        including_comics: ["comic_exlibrium_tome_8"],
+        previous_comics : ["comic_exlibrium_41"],
+        next_comics     : ["comic_exlibrium_43"],
+        release_at      : {year: 2018, month: 4, day: 20}
     },
     comic_meteora_42                                 : {
-        name           : "Метеора #42 Вольная птица, часть 6",
-        number         : "42",
-        type           : "single",
-        ranges         : ["range_meteora"],
-        previous_comics: ["comic_meteora_41"],
-        next_comics    : ["comic_meteora_43"],
-        release_at     : {year: 2018, month: 4, day: 25}
+        name            : "Метеора #42 Вольная птица, часть 6",
+        number          : "42",
+        type            : "single",
+        ranges          : ["range_meteora"],
+        including_comics: ["comic_meteora_tome_8"],
+        previous_comics : ["comic_meteora_41"],
+        next_comics     : ["comic_meteora_43"],
+        release_at      : {year: 2018, month: 4, day: 25}
     },
     comic_teo_4                                      : {
         name            : "Тео: Круги на полях, часть 4",
@@ -4894,22 +4941,24 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 4, day: 28}
     },
     comic_besoboy_vol_2_17                           : {
-        name           : "Бесобой Vol.2 #17 Красный фильтр, часть 1",
-        number         : "17",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_16"],
-        next_comics    : ["comic_besoboy_vol_2_18"],
-        release_at     : {year: 2018, month: 4, day: 30}
+        name            : "Бесобой Vol.2 #17 Красный фильтр, часть 1",
+        number          : "17",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_4"],
+        previous_comics : ["comic_besoboy_vol_2_16"],
+        next_comics     : ["comic_besoboy_vol_2_18"],
+        release_at      : {year: 2018, month: 4, day: 30}
     },
     comic_allies_17                                  : {
-        name           : "Союзники #17 Без ума, часть 2",
-        number         : "17",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_16"],
-        next_comics    : ["comic_allies_18"],
-        release_at     : {year: 2018, month: 4, day: 30}
+        name            : "Союзники #17 Без ума, часть 2",
+        number          : "17",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_4"],
+        previous_comics : ["comic_allies_16"],
+        next_comics     : ["comic_allies_18"],
+        release_at      : {year: 2018, month: 4, day: 30}
     },
     comic_krutiks_5_2018                             : {
         name           : "Крутиксы #5 (2018)",
@@ -4921,54 +4970,64 @@ export const comics: Comics = {
         release_at     : {year: 2018, month: 5, day: 3}
     },
     comic_igor_grom_17                               : {
-        name           : "Игорь Гром #17 Метод Локи, часть 1",
-        number         : "17",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_16"],
-        next_comics    : ["comic_igor_grom_18"],
-        release_at     : {year: 2018, month: 5, day: 10}
+        name            : "Игорь Гром #17 Метод Локи, часть 1",
+        number          : "17",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_4"],
+        previous_comics : ["comic_igor_grom_16"],
+        next_comics     : ["comic_igor_grom_18"],
+        release_at      : {year: 2018, month: 5, day: 10}
     },
     comic_planeswalkers_17                           : {
-        name           : "Мироходцы #17 Псы войны, часть 1",
-        number         : "17",
-        type           : "single",
-        ranges         : ["range_planeswalkers"],
-        previous_comics: ["comic_planeswalkers_16"],
-        release_at     : {year: 2018, month: 5, day: 15}
+        name            : "Мироходцы #17 Псы войны, часть 1",
+        number          : "17",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_tome_4"],
+        previous_comics : ["comic_planeswalkers_16"],
+        next_comics     : ["comic_planeswalkers_18"],
+        release_at      : {year: 2018, month: 5, day: 15}
     },
     comic_exlibrium_43                               : {
-        name           : "Экслибриум #43 Возвращение, часть 1",
-        number         : "43",
-        type           : "single",
-        ranges         : ["range_exlibrium"],
-        previous_comics: ["comic_exlibrium_42"],
-        release_at     : {year: 2018, month: 5, day: 21}
+        name            : "Экслибриум #43 Возвращение, часть 1",
+        number          : "43",
+        type            : "single",
+        ranges          : ["range_exlibrium"],
+        including_comics: ["comic_exlibrium_tome_8"],
+        previous_comics : ["comic_exlibrium_42"],
+        next_comics     : ["comic_exlibrium_44"],
+        release_at      : {year: 2018, month: 5, day: 21}
     },
     comic_meteora_43                                 : {
-        name           : "Метеора #43 Король и плут, часть 1",
-        number         : "43",
-        type           : "single",
-        ranges         : ["range_meteora"],
-        previous_comics: ["comic_meteora_42"],
-        release_at     : {year: 2018, month: 5, day: 25}
+        name            : "Метеора #43 Король и плут, часть 1",
+        number          : "43",
+        type            : "single",
+        ranges          : ["range_meteora"],
+        including_comics: ["comic_meteora_tome_8"],
+        previous_comics : ["comic_meteora_42"],
+        next_comics     : ["comic_meteora_44"],
+        release_at      : {year: 2018, month: 5, day: 25}
     },
     comic_dubin_dima_1                               : {
-        name           : "Дубин Дима: Провинциальные каникулы, часть 1",
-        number         : "1",
-        type           : "single",
-        ranges         : ["range_major_grom", "range_bubble_legends"],
-        previous_comics: ["comic_major_grom_50"],
-        next_comics    : ["comic_dubin_dima_2"],
-        release_at     : {year: 2018, month: 5, day: 28}
+        name            : "Дубин Дима: Провинциальные каникулы, часть 1",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_major_grom", "range_bubble_legends"],
+        including_comics: ["comic_dubin_dima"],
+        previous_comics : ["comic_major_grom_50"],
+        next_comics     : ["comic_dubin_dima_2"],
+        release_at      : {year: 2018, month: 5, day: 28}
     },
     comic_allies_18                                  : {
-        name           : "Союзники #18 Без ума, часть 3",
-        number         : "18",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_17"],
-        release_at     : {year: 2018, month: 6, day: 1}
+        name            : "Союзники #18 Без ума, часть 3",
+        number          : "18",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_4"],
+        previous_comics : ["comic_allies_17"],
+        next_comics     : ["comic_allies_19"],
+        release_at      : {year: 2018, month: 6, day: 1}
     },
     comic_krutiks_6_2018                             : {
         name           : "Крутиксы #6 (2018)",
@@ -4976,31 +5035,38 @@ export const comics: Comics = {
         type           : "single",
         ranges         : ["range_childrens_comics"],
         previous_comics: ["comic_krutiks_5_2018"],
+        next_comics    : ["comic_krutiks_7_2018"],
         release_at     : {year: 2018, month: 6, day: 3}
     },
     comic_besoboy_vol_2_18                           : {
-        name           : "Бесобой Vol.2 #18 Красный фильтр, часть 2",
-        number         : "18",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_17"],
-        release_at     : {year: 2018, month: 6, day: 5}
+        name            : "Бесобой Vol.2 #18 Красный фильтр, часть 2",
+        number          : "18",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_4"],
+        previous_comics : ["comic_besoboy_vol_2_17"],
+        next_comics     : ["comic_besoboy_vol_2_19"],
+        release_at      : {year: 2018, month: 6, day: 5}
     },
     comic_igor_grom_18                               : {
-        name           : "Игорь Гром #18 Метод Локи, часть 2",
-        number         : "18",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_17"],
-        release_at     : {year: 2018, month: 6, day: 10}
+        name            : "Игорь Гром #18 Метод Локи, часть 2",
+        number          : "18",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_4"],
+        previous_comics : ["comic_igor_grom_17"],
+        next_comics     : ["comic_igor_grom_19"],
+        release_at      : {year: 2018, month: 6, day: 10}
     },
     comic_dubin_dima_2                               : {
-        name           : "Дубин Дима: Провинциальные каникулы, часть 2",
-        number         : "2",
-        type           : "single",
-        ranges         : ["range_major_grom", "range_bubble_legends"],
-        previous_comics: ["comic_dubin_dima_1"],
-        release_at     : {year: 2018, month: 6, day: 10}
+        name            : "Дубин Дима: Провинциальные каникулы, часть 2",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_major_grom", "range_bubble_legends"],
+        including_comics: ["comic_dubin_dima"],
+        previous_comics : ["comic_dubin_dima_1"],
+        next_comics     : ["comic_dubin_dima_3"],
+        release_at      : {year: 2018, month: 6, day: 10}
     },
     comic_teo                                        : {
         name            : "Тео: Круги на полях",
@@ -5009,56 +5075,1175 @@ export const comics: Comics = {
         contained_comics: ["comic_teo_1", "comic_teo_2", "comic_teo_3", "comic_teo_4"],
         release_at      : {year: 2018, month: 1, day: 1}
     },
+    comic_planeswalkers_18                           : {
+        name            : "Мироходцы #18 Псы войны, часть 2",
+        number          : "18",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_tome_4"],
+        previous_comics : ["comic_planeswalkers_17"],
+        next_comics     : ["comic_planeswalkers_19"],
+        release_at      : {year: 2018, month: 6, day: 15}
+    },
+    comic_exlibrium_44                               : {
+        name            : "Экслибриум #44 Возвращение, часть 2",
+        number          : "44",
+        type            : "single",
+        ranges          : ["range_exlibrium"],
+        including_comics: ["comic_exlibrium_tome_8"],
+        previous_comics : ["comic_exlibrium_43"],
+        next_comics     : ["comic_exlibrium_45"],
+        release_at      : {year: 2018, month: 6, day: 20}
+    },
+    comic_meteora_44                                 : {
+        name            : "Метеора #44 Король и плут, часть 2",
+        number          : "44",
+        type            : "single",
+        ranges          : ["range_meteora"],
+        including_comics: ["comic_meteora_tome_8"],
+        previous_comics : ["comic_meteora_43"],
+        next_comics     : ["comic_meteora_45"],
+        release_at      : {year: 2018, month: 6, day: 25}
+    },
+    comic_allies_19                                  : {
+        name            : "Союзники #19 Отчуждение",
+        number          : "19",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_4"],
+        previous_comics : ["comic_allies_18"],
+        next_comics     : ["comic_allies_20"],
+        release_at      : {year: 2018, month: 7, day: 2}
+    },
+    comic_krutiks_7_2018                             : {
+        name           : "Крутиксы #7 (2018)",
+        number         : "7",
+        type           : "single",
+        ranges         : ["range_childrens_comics"],
+        previous_comics: ["comic_krutiks_6_2018"],
+        next_comics    : ["comic_krutiks_8_2018"],
+        release_at     : {year: 2018, month: 7, day: 3}
+    },
+    comic_besoboy_vol_2_19                           : {
+        name            : "Бесобой Vol.2 #19 В расчёте",
+        number          : "19",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_4"],
+        previous_comics : ["comic_besoboy_vol_2_18"],
+        next_comics     : ["comic_besoboy_vol_2_20"],
+        release_at      : {year: 2018, month: 7, day: 5}
+    },
+    comic_igor_grom_19                               : {
+        name            : "Игорь Гром #19 Метод Локи, часть 3",
+        number          : "19",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_4"],
+        previous_comics : ["comic_igor_grom_18"],
+        next_comics     : ["comic_igor_grom_20"],
+        release_at      : {year: 2018, month: 7, day: 10}
+    },
+    comic_planeswalkers_19                           : {
+        name            : "Мироходцы #19 Битва за Эдем, часть 1",
+        number          : "19",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_tome_4"],
+        previous_comics : ["comic_planeswalkers_18"],
+        next_comics     : ["comic_planeswalkers_20"],
+        release_at      : {year: 2018, month: 7, day: 16}
+    },
+    comic_exlibrium_45                               : {
+        name            : "Экслибриум #45 Возвращение, часть 3",
+        number          : "45",
+        type            : "single",
+        ranges          : ["range_exlibrium"],
+        including_comics: ["comic_exlibrium_tome_8"],
+        previous_comics : ["comic_exlibrium_44"],
+        next_comics     : ["comic_exlibrium_46"],
+        release_at      : {year: 2018, month: 7, day: 20}
+    },
+    comic_meteora_45                                 : {
+        name           : "Метеора #45 Стоп машина! часть 1",
+        number         : "45",
+        type           : "single",
+        ranges         : ["range_meteora"],
+        previous_comics: ["comic_meteora_44"],
+        next_comics    : ["comic_meteora_46"],
+        release_at     : {year: 2018, month: 7, day: 25}
+    },
+    comic_dubin_dima_3                               : {
+        name            : "Дубин Дима: Провинциальные каникулы, часть 3",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_major_grom", "range_bubble_legends"],
+        including_comics: ["comic_dubin_dima"],
+        previous_comics : ["comic_dubin_dima_2"],
+        next_comics     : ["comic_dubin_dima_4"],
+        release_at      : {year: 2018, month: 7, day: 27}
+    },
+    comic_allies_20                                  : {
+        name           : "Союзники #20 Изгои",
+        number         : "20",
+        type           : "single",
+        ranges         : ["range_allies"],
+        previous_comics: ["comic_allies_19"],
+        next_comics    : ["comic_allies_21"],
+        release_at     : {year: 2018, month: 8, day: 1}
+    },
+    comic_krutiks_8_2018                             : {
+        name           : "Крутиксы #8 (2018)",
+        number         : "8",
+        type           : "single",
+        ranges         : ["range_childrens_comics"],
+        previous_comics: ["comic_krutiks_7_2018"],
+        next_comics    : ["comic_krutiks_9_2018"],
+        release_at     : {year: 2018, month: 8, day: 3}
+    },
+    comic_besoboy_vol_2_20                           : {
+        name            : "Бесобой Vol.2 #20 Воля мёртвых, часть 1",
+        number          : "20",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_5"],
+        previous_comics : ["comic_besoboy_vol_2_19"],
+        next_comics     : ["comic_besoboy_vol_2_21"],
+        release_at      : {year: 2018, month: 8, day: 6}
+    },
+    comic_igor_grom_20                               : {
+        name            : "Игорь Гром #20 Метод Локи, часть 4",
+        number          : "20",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_4"],
+        previous_comics : ["comic_igor_grom_19"],
+        next_comics     : ["comic_igor_grom_21"],
+        release_at      : {year: 2018, month: 8, day: 10}
+    },
+    comic_planeswalkers_20                           : {
+        name            : "Мироходцы #20 Битва за Эдем, часть 2",
+        number          : "20",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_tome_4"],
+        previous_comics : ["comic_planeswalkers_19"],
+        next_comics     : ["comic_planeswalkers_21"],
+        release_at      : {year: 2018, month: 8, day: 11}
+    },
+    comic_wolf_helsing                               : {
+        name      : "Вольф Хельсинг",
+        type      : "single",
+        ranges    : ["range_evgeny_yakovlev"],
+        release_at: {year: 2018, month: 8, day: 11}
+    },
+    comic_besoboy_vol_2_book_2                       : {
+        name            : "Бесобой Vol.2. Книга 2: Падение",
+        number          : "2",
+        type            : "hardcover_book",
+        ranges          : ["range_besoboy_vol_2"],
+        contained_comics: ["comic_besoboy_vol_2_6", "comic_besoboy_vol_2_7", "comic_besoboy_vol_2_8",
+                           "comic_besoboy_vol_2_9", "comic_besoboy_vol_2_10", "comic_besoboy_vol_2_11",
+                           "comic_besoboy_vol_2_12", "comic_besoboy_vol_2_13", "comic_besoboy_vol_2_14"],
+        previous_comics : ["comic_besoboy_vol_2_book_1"],
+        next_comics     : ["comic_witch_hunt"],
+        release_at      : {year: 2018, month: 8, day: 13}
+    },
+    comic_besoboy_vol_2_tome_2                       : {
+        name            : "Бесобой Vol.2 том 2: Падение",
+        number          : "2",
+        type            : "book",
+        ranges          : ["range_besoboy_vol_2"],
+        contained_comics: ["comic_besoboy_vol_2_6", "comic_besoboy_vol_2_7", "comic_besoboy_vol_2_8",
+                           "comic_besoboy_vol_2_9", "comic_besoboy_vol_2_10"],
+        previous_comics : ["comic_besoboy_vol_2_tome_1"],
+        next_comics     : ["comic_besoboy_vol_2_tome_3"],
+        release_at      : {year: 2018, month: 8, day: 13}
+    },
+    comic_igor_grom_book_2                           : {
+        name            : "Игорь Гром. Книга 2: Голодные духи",
+        number          : "2",
+        type            : "hardcover_book",
+        ranges          : ["range_igor_grom"],
+        contained_comics: ["comic_igor_grom_7", "comic_igor_grom_8", "comic_igor_grom_9", "comic_igor_grom_10",
+                           "comic_igor_grom_11", "comic_igor_grom_12", "comic_igor_grom_13", "comic_igor_grom_14"],
+        previous_comics : ["comic_igor_grom_book_1"],
+        next_comics     : ["comic_witch_hunt"],
+        release_at      : {year: 2018, month: 8, day: 13}
+    },
+    comic_igor_grom_tome_2                           : {
+        name            : "Игорь Гром том 2: Голодные духи",
+        number          : "2",
+        type            : "book",
+        ranges          : ["range_igor_grom"],
+        contained_comics: ["comic_igor_grom_7", "comic_igor_grom_8", "comic_igor_grom_9", "comic_igor_grom_10"],
+        previous_comics : ["comic_igor_grom_tome_1"],
+        next_comics     : ["comic_igor_grom_tome_3"],
+        release_at      : {year: 2018, month: 8, day: 13}
+    },
+    comic_allies_book_2                              : {
+        name            : "Союзники. Книга 2: Условный рефлекс",
+        number          : "2",
+        type            : "hardcover_book",
+        ranges          : ["range_allies"],
+        contained_comics: ["comic_allies_5", "comic_allies_6", "comic_allies_7", "comic_allies_8", "comic_allies_9",
+                           "comic_allies_10", "comic_allies_11", "comic_allies_12", "comic_allies_13",
+                           "comic_allies_14"],
+        previous_comics : ["comic_allies_book_1"],
+        next_comics     : ["comic_witch_hunt"],
+        release_at      : {year: 2018, month: 8, day: 13}
+    },
+    comic_allies_tome_2                              : {
+        name            : "Союзники том 2: Условный рефлекс",
+        number          : "2",
+        type            : "book",
+        ranges          : ["range_allies"],
+        contained_comics: ["comic_allies_5", "comic_allies_6", "comic_allies_7", "comic_allies_8", "comic_allies_9"],
+        previous_comics : ["comic_allies_tome_1"],
+        next_comics     : ["comic_allies_tome_3"],
+        release_at      : {year: 2018, month: 8, day: 13}
+    },
+    comic_planeswalkers_book_2                       : {
+        name            : "Мироходцы. Книга 2: Притяжение полюсов",
+        number          : "2",
+        type            : "hardcover_book",
+        ranges          : ["range_planeswalkers"],
+        contained_comics: ["comic_planeswalkers_7", "comic_planeswalkers_8", "comic_planeswalkers_9",
+                           "comic_planeswalkers_10", "comic_planeswalkers_11", "comic_planeswalkers_12",
+                           "comic_planeswalkers_13", "comic_planeswalkers_14"],
+        previous_comics : ["comic_planeswalkers_book_1"],
+        next_comics     : ["comic_witch_hunt"],
+        release_at      : {year: 2018, month: 8, day: 13}
+    },
+    comic_planeswalkers_tome_2                       : {
+        name            : "Мироходцы том 2: Луна",
+        number          : "2",
+        type            : "book",
+        ranges          : ["range_planeswalkers"],
+        contained_comics: ["comic_planeswalkers_7", "comic_planeswalkers_8", "comic_planeswalkers_9",
+                           "comic_planeswalkers_10"],
+        previous_comics : ["comic_planeswalkers_tome_1"],
+        next_comics     : ["comic_planeswalkers_tome_3"],
+        release_at      : {year: 2018, month: 8, day: 13}
+    },
+    comic_exlibrium_46                               : {
+        name           : "Экслибриум #46 Светлая полоса, часть 1",
+        number         : "46",
+        type           : "single",
+        ranges         : ["range_exlibrium"],
+        previous_comics: ["comic_exlibrium_45"],
+        next_comics    : ["comic_exlibrium_47"],
+        release_at     : {year: 2018, month: 8, day: 20}
+    },
+    comic_meteora_46                                 : {
+        name           : "Метеора #46 Стоп машина! часть 2",
+        number         : "46",
+        type           : "single",
+        ranges         : ["range_meteora"],
+        previous_comics: ["comic_meteora_45"],
+        next_comics    : ["comic_meteora_47"],
+        release_at     : {year: 2018, month: 8, day: 24}
+    },
+    comic_dubin_dima_4                               : {
+        name            : "Дубин Дима: Провинциальные каникулы, часть 4",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_major_grom", "range_bubble_legends"],
+        including_comics: ["comic_dubin_dima"],
+        previous_comics : ["comic_dubin_dima_3"],
+        release_at      : {year: 2018, month: 8, day: 28}
+    },
+    comic_allies_21                                  : {
+        name           : "Союзники #21 Оборотная сторона, часть 1",
+        number         : "21",
+        type           : "single",
+        ranges         : ["range_allies"],
+        previous_comics: ["comic_allies_20"],
+        next_comics    : ["comic_allies_22"],
+        release_at     : {year: 2018, month: 8, day: 31}
+    },
+    comic_krutiks_9_2018                             : {
+        name           : "Крутиксы #9 (2018)",
+        number         : "9",
+        type           : "single",
+        ranges         : ["range_childrens_comics"],
+        previous_comics: ["comic_krutiks_8_2018"],
+        next_comics    : ["comic_krutiks_10_2018"],
+        release_at     : {year: 2018, month: 9, day: 3}
+    },
+    comic_besoboy_vol_2_21                           : {
+        name            : "Бесобой Vol.2 #21 Воля мёртвых, часть 2",
+        number          : "21",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_5"],
+        previous_comics : ["comic_besoboy_vol_2_20"],
+        next_comics     : ["comic_besoboy_vol_2_22"],
+        release_at      : {year: 2018, month: 9, day: 5}
+    },
+    comic_igor_grom_21                               : {
+        name            : "Игорь Гром #21 На пепелище",
+        number          : "21",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_4"],
+        previous_comics : ["comic_igor_grom_20"],
+        next_comics     : ["comic_igor_grom_22"],
+        release_at      : {year: 2018, month: 9, day: 10}
+    },
+    comic_planeswalkers_21                           : {
+        name            : "Мироходцы #21 Просто сон",
+        number          : "21",
+        type            : "single",
+        ranges          : ["range_planeswalkers"],
+        including_comics: ["comic_planeswalkers_tome_4"],
+        previous_comics : ["comic_planeswalkers_20"],
+        next_comics     : ["comic_besoboy_and_planeswalkers_single", "comic_crusade_prologue", "comic_crusade_wolf_1"],
+        release_at      : {year: 2018, month: 9, day: 14}
+    },
+    comic_exlibrium_47                               : {
+        name           : "Экслибриум #47 Светлая полоса, часть 2",
+        number         : "47",
+        type           : "single",
+        ranges         : ["range_exlibrium"],
+        previous_comics: ["comic_exlibrium_46"],
+        next_comics    : ["comic_exlibrium_48"],
+        release_at     : {year: 2018, month: 9, day: 20}
+    },
+    comic_meteora_47                                 : {
+        name           : "Метеора #47 Стоп машина! часть 3",
+        number         : "47",
+        type           : "single",
+        ranges         : ["range_meteora"],
+        previous_comics: ["comic_meteora_46"],
+        next_comics    : ["comic_meteora_48"],
+        release_at     : {year: 2018, month: 9, day: 24}
+    },
+    comic_seven_sons_jaykarn                         : {
+        name      : "Семь сыновей. Джайкарн. Глава первая",
+        type      : "book",
+        ranges    : ["range_anastasia_kim"],
+        release_at: {year: 2018, month: 10}
+    },
+    comic_allies_22                                  : {
+        name           : "Союзники #22 Оборотная сторона, часть 2",
+        number         : "22",
+        type           : "single",
+        ranges         : ["range_allies"],
+        previous_comics: ["comic_allies_21"],
+        next_comics    : ["comic_allies_23"],
+        release_at     : {year: 2018, month: 10, day: 1}
+    },
+    comic_krutiks_10_2018                            : {
+        name           : "Крутиксы #10 (2018)",
+        number         : "10",
+        type           : "single",
+        ranges         : ["range_childrens_comics"],
+        previous_comics: ["comic_krutiks_9_2018"],
+        next_comics    : ["comic_krutiks_11_2018"],
+        release_at     : {year: 2018, month: 10, day: 3}
+    },
+    comic_besoboy_vol_2_22                           : {
+        name            : "Бесобой Vol.2 #22 Воля мёртвых, часть 3",
+        number          : "22",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_5"],
+        previous_comics : ["comic_besoboy_vol_2_21"],
+        next_comics     : ["comic_besoboy_vol_2_23"],
+        release_at      : {year: 2018, month: 10, day: 4}
+    },
+    comic_igor_grom_22                               : {
+        name           : "Игорь Гром #22 Повторяй за мной, часть 1",
+        number         : "22",
+        type           : "single",
+        ranges         : ["range_igor_grom"],
+        previous_comics: ["comic_igor_grom_21"],
+        next_comics    : ["comic_igor_grom_23"],
+        release_at     : {year: 2018, month: 10, day: 4}
+    },
+    comic_crusade_prologue                           : {
+        name           : "Крестовый поход: Пролог",
+        type           : "single",
+        ranges         : ["range_crossovers", "range_planeswalkers"],
+        previous_comics: ["comic_planeswalkers_21"],
+        next_comics    : ["comic_crusade_1"],
+        release_at     : {year: 2018, month: 10, day: 4}
+    },
+    comic_yarkh_step_forward_1                       : {
+        name           : "Ярх. Шаг вперёд, часть 1",
+        number         : "1",
+        type           : "single",
+        ranges         : ["range_bubble_legends"],
+        previous_comics: ["comic_besoboy_50"],
+        next_comics    : ["comic_yarkh_step_forward_2"],
+        release_at     : {year: 2018, month: 10, day: 4}
+    },
+    comic_exlibrium_tome_7                           : {
+        name            : "Экслибриум том 7: Сказочке конец",
+        number          : "7",
+        type            : "book",
+        ranges          : ["range_exlibrium"],
+        contained_comics: ["comic_exlibrium_35", "comic_exlibrium_36", "comic_exlibrium_37", "comic_exlibrium_38",
+                           "comic_exlibrium_39", "comic_exlibrium_40"],
+        previous_comics : ["comic_exlibrium_tome_6"],
+        next_comics     : ["comic_exlibrium_tome_8"],
+        release_at      : {year: 2018, month: 10, day: 4}
+    },
+    comic_meteora_tome_7                             : {
+        name            : "Метеора том 7: Вольная птица",
+        number          : "7",
+        type            : "book",
+        ranges          : ["range_meteora"],
+        contained_comics: ["comic_meteora_36", "comic_meteora_37", "comic_meteora_38", "comic_meteora_39"],
+        previous_comics : ["comic_meteora_tome_6"],
+        next_comics     : ["comic_meteora_tome_8"],
+        release_at      : {year: 2018, month: 10, day: 4}
+    },
+    comic_dubin_dima                                 : {
+        name            : "Дубин Дима: Провинциальные каникулы",
+        type            : "book",
+        ranges          : ["range_major_grom", "range_bubble_legends"],
+        contained_comics: ["comic_dubin_dima_1", "comic_dubin_dima_2", "comic_dubin_dima_3", "comic_dubin_dima_4"],
+        previous_comics : ["comic_major_grom_tome_8"],
+        release_at      : {year: 2018, month: 10, day: 4}
+    },
+    comic_master_single                              : {
+        name            : "Магистр. Смерть – это только начало",
+        type            : "single",
+        ranges          : ["range_enoch", "range_bubble_legends"],
+        including_comics: ["comic_master_book"],
+        previous_comics : ["comic_enoch_50"],
+        release_at      : {year: 2018, month: 10, day: 4}
+    },
+    comic_master_book                                : {
+        name            : "Магистр. Смерть – это только начало",
+        type            : "book",
+        ranges          : ["range_enoch", "range_bubble_legends"],
+        contained_comics: ["comic_master_single"],
+        previous_comics : ["comic_enoch_tome_8"],
+        release_at      : {year: 2018, month: 10, day: 4}
+    },
+    comic_ziggy_and_shmyg_save_comiccon              : {
+        name           : "Зигги и Шмыг спасают ComicCon",
+        type           : "book",
+        ranges         : ["range_ziggy_and_shmyg"],
+        previous_comics: ["comic_ziggy_and_shmyg_destroy_the_bubble_universe"],
+        release_at     : {year: 2018, month: 10, day: 4}
+    },
+    comic_besoboy_vol_2_tome_3                       : {
+        name            : "Бесобой Vol.2 том 3: Откровения",
+        number          : "3",
+        type            : "book",
+        ranges          : ["range_besoboy_vol_2"],
+        contained_comics: ["comic_besoboy_vol_2_11", "comic_besoboy_vol_2_12", "comic_besoboy_vol_2_13",
+                           "comic_besoboy_vol_2_14"],
+        previous_comics : ["comic_besoboy_vol_2_tome_2"],
+        next_comics     : ["comic_witch_hunt"],
+        release_at      : {year: 2018, month: 10, day: 15}
+    },
+    comic_igor_grom_tome_3                           : {
+        name            : "Игорь Гром том 3: Умный человек",
+        number          : "3",
+        type            : "book",
+        ranges          : ["range_igor_grom"],
+        contained_comics: ["comic_igor_grom_11", "comic_igor_grom_12", "comic_igor_grom_13", "comic_igor_grom_14"],
+        previous_comics : ["comic_igor_grom_tome_2"],
+        next_comics     : ["comic_witch_hunt"],
+        release_at      : {year: 2018, month: 8, day: 13}
+    },
+    comic_planeswalkers_tome_3                       : {
+        name            : "Мироходцы том 3: Лицом к лицу",
+        number          : "3",
+        type            : "book",
+        ranges          : ["range_planeswalkers"],
+        contained_comics: ["comic_planeswalkers_11", "comic_planeswalkers_12", "comic_planeswalkers_13",
+                           "comic_planeswalkers_14"],
+        previous_comics : ["comic_planeswalkers_tome_2"],
+        next_comics     : ["comic_witch_hunt"],
+        release_at      : {year: 2018, month: 10, day: 15}
+    },
+    comic_allies_tome_3                              : {
+        name            : "Союзники том 3: Имаго",
+        number          : "3",
+        type            : "book",
+        ranges          : ["range_allies"],
+        contained_comics: ["comic_allies_10", "comic_allies_11", "comic_allies_12", "comic_allies_13",
+                           "comic_allies_14"],
+        previous_comics : ["comic_allies_tome_2"],
+        next_comics     : ["comic_witch_hunt"],
+        release_at      : {year: 2018, month: 10, day: 15}
+    },
+    comic_witch_hunt                                 : {
+        name            : "Охота на ведьм",
+        type            : "book",
+        ranges          : ["range_crossovers", "range_besoboy_vol_2", "range_igor_grom", "range_allies",
+                           "range_planeswalkers"],
+        contained_comics: ["comic_witch_hunt_prologue", "comic_allies_15", "comic_besoboy_vol_2_15",
+                           "comic_igor_grom_15", "comic_planeswalkers_15", "comic_witch_hunt_finale"],
+        previous_comics : ["comic_besoboy_vol_2_book_2", "comic_igor_grom_book_2", "comic_allies_book_2",
+                           "comic_planeswalkers_book_2", "comic_besoboy_vol_2_tome_3", "comic_igor_grom_tome_3",
+                           "comic_planeswalkers_tome_3", "comic_allies_tome_3"],
+        next_comics     : ["comic_planeswalkers_tome_4", "comic_besoboy_vol_2_tome_4", "comic_allies_tome_4",
+                           "comic_igor_grom_tome_4"],
+        release_at      : {year: 2018, month: 10, day: 15}
+    },
+    comic_jackets_and_revolvers_tome_2               : {
+        name           : "Пиджаки и Револьверы. Том 2: Праздник в красных тонах",
+        number         : "2",
+        type           : "book",
+        ranges         : ["range_yulia_zhuravleva"],
+        previous_comics: ["comic_jackets_and_revolvers_tome_1"],
+        release_at     : {year: 2018, month: 10, day: 17}
+    },
+    comic_exlibrium_48                               : {
+        name           : "Экслибриум #48 Светлая полоса, часть 3",
+        number         : "48",
+        type           : "single",
+        ranges         : ["range_exlibrium"],
+        previous_comics: ["comic_exlibrium_47"],
+        next_comics    : ["comic_exlibrium_49"],
+        release_at     : {year: 2018, month: 10, day: 19}
+    },
+    comic_meteora_48                                 : {
+        name           : "Метеора #48 Стоп машина! часть 4",
+        number         : "48",
+        type           : "single",
+        ranges         : ["range_meteora"],
+        previous_comics: ["comic_meteora_47"],
+        next_comics    : ["comic_meteora_49"],
+        release_at     : {year: 2018, month: 10, day: 25}
+    },
+    comic_yarkh_step_forward_2                       : {
+        name           : "Ярх. Шаг вперёд, часть 2",
+        number         : "2",
+        type           : "single",
+        ranges         : ["range_bubble_legends"],
+        previous_comics: ["comic_yarkh_step_forward_1"],
+        next_comics    : ["comic_yarkh_step_forward_3"],
+        release_at     : {year: 2018, month: 10, day: 29}
+    },
+    comic_allies_23                                  : {
+        name           : "Союзники #23 Оборотная сторона, часть 3",
+        number         : "23",
+        type           : "single",
+        ranges         : ["range_allies"],
+        previous_comics: ["comic_allies_22"],
+        next_comics    : ["comic_allies_24"],
+        release_at     : {year: 2018, month: 11, day: 1}
+    },
+    comic_krutiks_11_2018                            : {
+        name           : "Крутиксы #11 (2018)",
+        number         : "11",
+        type           : "single",
+        ranges         : ["range_childrens_comics"],
+        previous_comics: ["comic_krutiks_10_2018"],
+        next_comics    : ["comic_krutiks_12_2018"],
+        release_at     : {year: 2018, month: 11, day: 3}
+    },
+    comic_besoboy_vol_2_23                           : {
+        name            : "Бесобой Vol.2 #23 Власть",
+        number          : "23",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_5"],
+        previous_comics : ["comic_besoboy_vol_2_22"],
+        next_comics     : ["comic_besoboy_vol_2_24"],
+        release_at      : {year: 2018, month: 11, day: 5}
+    },
+    comic_igor_grom_23                               : {
+        name           : "Игорь Гром #23 Повторяй за мной, часть 2",
+        number         : "23",
+        type           : "single",
+        ranges         : ["range_igor_grom"],
+        previous_comics: ["comic_igor_grom_22"],
+        next_comics    : ["comic_igor_grom_24"],
+        release_at     : {year: 2018, month: 11, day: 9}
+    },
+    comic_crusade_1                                  : {
+        name           : "Крестовый поход #1",
+        number         : "1",
+        type           : "single",
+        ranges         : ["range_crossovers", "range_planeswalkers"],
+        previous_comics: ["comic_crusade_prologue"],
+        next_comics    : ["comic_crusade_2"],
+        release_at     : {year: 2018, month: 11, day: 15}
+    },
+    comic_crusade_wolf_1                             : {
+        name           : "Крестовый поход: Волк. Часть 1",
+        number         : "1",
+        type           : "single",
+        ranges         : ["range_crossovers", "range_planeswalkers"],
+        previous_comics: ["comic_planeswalkers_21"],
+        next_comics    : ["comic_crusade_wolf_2"],
+        release_at     : {year: 2018, month: 11, day: 15}
+    },
+    comic_exlibrium_49                               : {
+        name           : "Экслибриум #49 Светлая полоса, часть 4",
+        number         : "49",
+        type           : "single",
+        ranges         : ["range_exlibrium"],
+        previous_comics: ["comic_exlibrium_48"],
+        next_comics    : ["comic_exlibrium_50"],
+        release_at     : {year: 2018, month: 11, day: 19}
+    },
+    comic_meteora_49                                 : {
+        name           : "Метеора #49 Стоп машина! часть 5",
+        number         : "49",
+        type           : "single",
+        ranges         : ["range_meteora"],
+        previous_comics: ["comic_meteora_48"],
+        next_comics    : ["comic_meteora_50"],
+        release_at     : {year: 2018, month: 11, day: 26}
+    },
+    comic_yarkh_step_forward_3                       : {
+        name           : "Ярх. Шаг вперёд, часть 3",
+        number         : "3",
+        type           : "single",
+        ranges         : ["range_bubble_legends"],
+        previous_comics: ["comic_yarkh_step_forward_2"],
+        next_comics    : ["comic_yarkh_step_forward_4"],
+        release_at     : {year: 2018, month: 11, day: 28}
+    },
+    comic_allies_24                                  : {
+        name           : "Союзники #24 Работа над ошибками, часть 1",
+        number         : "24",
+        type           : "single",
+        ranges         : ["range_allies"],
+        previous_comics: ["comic_allies_23"],
+        next_comics    : ["comic_allies_25"],
+        release_at     : {year: 2018, month: 11, day: 30}
+    },
+    comic_krutiks_12_2018                            : {
+        name           : "Крутиксы #12 (2018)",
+        number         : "12",
+        type           : "single",
+        ranges         : ["range_childrens_comics"],
+        previous_comics: ["comic_krutiks_11_2018"],
+        next_comics    : ["comic_krutiks_new_years_special"],
+        release_at     : {year: 2018, month: 12, day: 3}
+    },
+    comic_besoboy_vol_2_24                           : {
+        name           : "Бесобой Vol.2 #24 Зачистка, часть 1",
+        number         : "24",
+        type           : "single",
+        ranges         : ["range_besoboy_vol_2"],
+        previous_comics: ["comic_besoboy_vol_2_23"],
+        next_comics    : ["comic_besoboy_vol_2_25"],
+        release_at     : {year: 2018, month: 12, day: 5}
+    },
+    comic_igor_grom_24                               : {
+        name           : "Игорь Гром #24 Повторяй за мной, часть 3",
+        number         : "24",
+        type           : "single",
+        ranges         : ["range_igor_grom"],
+        previous_comics: ["comic_igor_grom_23"],
+        next_comics    : ["comic_igor_grom_25"],
+        release_at     : {year: 2018, month: 12, day: 10}
+    },
+    comic_crusade_wolf_2                             : {
+        name           : "Крестовый поход: Волк. Часть 2",
+        number         : "2",
+        type           : "single",
+        ranges         : ["range_crossovers", "range_planeswalkers"],
+        previous_comics: ["comic_crusade_wolf_1"],
+        next_comics    : ["comic_crusade_wolf_3"],
+        release_at     : {year: 2018, month: 12, day: 14}
+    },
+    comic_crusade_2                                  : {
+        name           : "Крестовый поход #2",
+        number         : "2",
+        type           : "single",
+        ranges         : ["range_crossovers", "range_planeswalkers"],
+        previous_comics: ["comic_crusade_1"],
+        next_comics    : ["comic_besoboy_vol_2_25", "comic_crusade_3"],
+        release_at     : {year: 2018, month: 12, day: 20}
+    },
+    comic_major_grom_promise                         : {
+        name           : "Майор Гром. Обещание",
+        type           : "single",
+        ranges         : ["range_major_grom", "range_bubble_legends", "range_igor_grom"],
+        previous_comics: ["comic_major_grom_50", "comic_major_grom_tome_8"],
+        release_at     : {year: 2018, month: 12, day: 29}
+    },
+    comic_exlibrium_50                               : {
+        name           : "Экслибриум #50 Светлая полоса, часть 5",
+        number         : "50",
+        type           : "single",
+        ranges         : ["range_exlibrium"],
+        previous_comics: ["comic_exlibrium_49"],
+        next_comics    : ["comic_exlibrium_blank_sheet_single"],
+        release_at     : {year: 2018, month: 12, day: 29}
+    },
+    comic_meteora_50                                 : {
+        name           : "Метеора #50 Стоп машина! часть 6",
+        number         : "50",
+        type           : "single",
+        ranges         : ["range_meteora"],
+        previous_comics: ["comic_meteora_49"],
+        release_at     : {year: 2018, month: 12, day: 30}
+    },
+    comic_igor_ugor_tome_2                           : {
+        name           : "Игорь Угорь. Том 2. Икра",
+        number         : "2",
+        type           : "book",
+        ranges         : ["range_igor_ugor"],
+        previous_comics: ["comic_igor_ugor_tome_1"],
+        release_at     : {year: 2019}
+    },
+    comic_russian_folk_tales_in_comics               : {
+        name      : "Русские народные сказки в комиксах",
+        type      : "book",
+        ranges    : ["range_childrens_comics", "range_evgeny_yakovlev"],
+        release_at: {year: 2019}
+    },
+    comic_thief_of_shadows_1                         : {
+        name       : "Вор Теней #1 Час Волка",
+        number     : "1",
+        type       : "single",
+        ranges     : ["range_thief_of_shadows"],
+        next_comics: ["comic_thief_of_shadows_2"],
+        release_at : {year: 2019}
+    },
+    comic_thief_of_shadows_2                         : {
+        name           : "Вор Теней #2 Вор Теней против бандитов-футуристов",
+        number         : "2",
+        type           : "single",
+        ranges         : ["range_thief_of_shadows"],
+        previous_comics: ["comic_thief_of_shadows_1"],
+        release_at     : {year: 2019}
+    },
+    comic_allies_25                                  : {
+        name           : "Союзники #25 Работа над ошибками, часть 2",
+        number         : "25",
+        type           : "single",
+        ranges         : ["range_allies"],
+        previous_comics: ["comic_allies_24"],
+        next_comics    : ["comic_allies_26"],
+        release_at     : {year: 2019, month: 1, day: 1}
+    },
+    comic_krutiks_new_years_special                  : {
+        name           : "Крутиксы: Новогодний спецвыпуск",
+        type           : "single",
+        ranges         : ["range_childrens_comics"],
+        previous_comics: ["comic_krutiks_12_2018"],
+        release_at     : {year: 2019, month: 1, day: 3}
+    },
+    comic_besoboy_vol_2_25                           : {
+        name           : "Бесобой Vol.2 #25 Зачистка, часть 2",
+        number         : "25",
+        type           : "single",
+        ranges         : ["range_besoboy_vol_2"],
+        previous_comics: ["comic_besoboy_vol_2_24", "comic_crusade_2"],
+        next_comics    : ["comic_besoboy_vol_2_26"],
+        release_at     : {year: 2019, month: 1, day: 5}
+    },
+    comic_igor_grom_25                               : {
+        name           : "Игорь Гром #25 Повторяй за мной, часть 4",
+        number         : "25",
+        type           : "single",
+        ranges         : ["range_igor_grom"],
+        previous_comics: ["comic_igor_grom_24"],
+        next_comics    : ["comic_igor_grom_26"],
+        release_at     : {year: 2019, month: 1, day: 15}
+    },
+    comic_crusade_3                                  : {
+        name           : "Крестовый поход #3",
+        number         : "3",
+        type           : "single",
+        ranges         : ["range_crossovers", "range_planeswalkers"],
+        previous_comics: ["comic_crusade_2"],
+        next_comics    : ["comic_besoboy_vol_2_26", "comic_crusade_4"],
+        release_at     : {year: 2019, month: 1, day: 21}
+    },
+    comic_crusade_wolf_3                             : {
+        name           : "Крестовый поход: Волк. Часть 3",
+        number         : "3",
+        type           : "single",
+        ranges         : ["range_crossovers", "range_planeswalkers"],
+        previous_comics: ["comic_crusade_wolf_2"],
+        next_comics    : ["comic_crusade_wolf_4"],
+        release_at     : {year: 2019, month: 1, day: 21}
+    },
+    comic_yarkh_step_forward_4                       : {
+        name           : "Ярх. Шаг вперёд, часть 4",
+        number         : "4",
+        type           : "single",
+        ranges         : ["range_bubble_legends"],
+        previous_comics: ["comic_yarkh_step_forward_3"],
+        next_comics    : ["comic_yarkh_step_forward_5"],
+        release_at     : {year: 2019, month: 1, day: 28}
+    },
+    comic_allies_26                                  : {
+        name           : "Союзники #26 Работа над ошибками, часть 3",
+        number         : "26",
+        type           : "single",
+        ranges         : ["range_allies"],
+        previous_comics: ["comic_allies_25"],
+        next_comics    : ["comic_allies_27"],
+        release_at     : {year: 2019, month: 2, day: 1}
+    },
+    comic_besoboy_vol_2_26                           : {
+        name           : "Бесобой Vol.2 #26 Зачистка, часть 3",
+        number         : "26",
+        type           : "single",
+        ranges         : ["range_besoboy_vol_2"],
+        previous_comics: ["comic_besoboy_vol_2_25", "comic_crusade_3"],
+        next_comics    : ["comic_besoboy_vol_2_27"],
+        release_at     : {year: 2019, month: 2, day: 5}
+    },
+    comic_igor_grom_26                               : {
+        name           : "Игорь Гром #26 Игра в солдатики, часть 1",
+        number         : "26",
+        type           : "single",
+        ranges         : ["range_igor_grom"],
+        previous_comics: ["comic_igor_grom_25"],
+        next_comics    : ["comic_igor_grom_27"],
+        release_at     : {year: 2019, month: 2, day: 11}
+    },
+    comic_crusade_wolf_4                             : {
+        name           : "Крестовый поход: Волк. Часть 4",
+        number         : "4",
+        type           : "single",
+        ranges         : ["range_crossovers", "range_planeswalkers"],
+        previous_comics: ["comic_crusade_wolf_3"],
+        next_comics    : ["comic_crusade_wolf_5"],
+        release_at     : {year: 2019, month: 2, day: 18}
+    },
+    comic_yarkh_step_forward_5                       : {
+        name           : "Ярх. Шаг вперёд, часть 5",
+        number         : "5",
+        type           : "single",
+        ranges         : ["range_bubble_legends"],
+        previous_comics: ["comic_yarkh_step_forward_4"],
+        next_comics    : ["comic_yarkh_step_forward_6"],
+        release_at     : {year: 2019, month: 2, day: 28}
+    },
+    comic_allies_27                                  : {
+        name           : "Союзники #27 Работа над ошибками, часть 4",
+        number         : "27",
+        type           : "single",
+        ranges         : ["range_allies"],
+        previous_comics: ["comic_allies_26"],
+        next_comics    : ["comic_allies_28"],
+        release_at     : {year: 2019, month: 3, day: 1}
+    },
+    comic_crusade_4                                  : {
+        name           : "Крестовый поход #4",
+        number         : "4",
+        type           : "single",
+        ranges         : ["range_crossovers", "range_planeswalkers"],
+        previous_comics: ["comic_crusade_3"],
+        next_comics    : ["comic_crusade_epilogue"],
+        release_at     : {year: 2019, month: 3, day: 8}
+    },
+    comic_besoboy_vol_2_27                           : {
+        name           : "Бесобой Vol.2 #27 На руинах, часть 1",
+        number         : "27",
+        type           : "single",
+        ranges         : ["range_besoboy_vol_2"],
+        previous_comics: ["comic_besoboy_vol_2_26"],
+        next_comics    : ["comic_besoboy_vol_2_28"],
+        release_at     : {year: 2019, month: 3, day: 11}
+    },
+    comic_igor_grom_27                               : {
+        name           : "Игорь Гром #27 Игра в солдатики, часть 2",
+        number         : "27",
+        type           : "single",
+        ranges         : ["range_igor_grom"],
+        previous_comics: ["comic_igor_grom_26"],
+        next_comics    : ["comic_igor_grom_28"],
+        release_at     : {year: 2019, month: 3, day: 15}
+    },
+    comic_crusade_wolf_5                             : {
+        name           : "Крестовый поход: Волк. Часть 5",
+        number         : "5",
+        type           : "single",
+        ranges         : ["range_crossovers", "range_planeswalkers"],
+        previous_comics: ["comic_crusade_wolf_4"],
+        release_at     : {year: 2019, month: 3, day: 20}
+    },
+    comic_yarkh_step_forward_6                       : {
+        name           : "Ярх. Шаг вперёд, часть 6",
+        number         : "6",
+        type           : "single",
+        ranges         : ["range_bubble_legends"],
+        previous_comics: ["comic_yarkh_step_forward_5"],
+        release_at     : {year: 2019, month: 3, day: 28}
+    },
+    comic_crusade_epilogue                           : {
+        name           : "Крестовый поход: Эпилог",
+        type           : "single",
+        ranges         : ["range_crossovers", "range_planeswalkers"],
+        previous_comics: ["comic_crusade_4"],
+        release_at     : {year: 2019, month: 3, day: 29}
+    },
+    comic_allies_28                                  : {
+        name           : "Союзники #28 Джали, истребительница упырей",
+        number         : "28",
+        type           : "single",
+        ranges         : ["range_allies"],
+        previous_comics: ["comic_allies_27"],
+        next_comics    : ["comic_allies_29"],
+        release_at     : {year: 2019, month: 4, day: 1}
+    },
+    comic_besoboy_vol_2_28                           : {
+        name           : "Бесобой Vol.2 #28 На руинах, часть 2",
+        number         : "28",
+        type           : "single",
+        ranges         : ["range_besoboy_vol_2"],
+        previous_comics: ["comic_besoboy_vol_2_27"],
+        next_comics    : ["comic_besoboy_vol_2_29"],
+        release_at     : {year: 2019, month: 4, day: 8}
+    },
+    comic_meteora_tome_8                             : {
+        name            : "Метеора том 8: Король и плут",
+        number          : "8",
+        type            : "book",
+        ranges          : ["range_meteora"],
+        contained_comics: ["comic_meteora_40", "comic_meteora_41", "comic_meteora_42", "comic_meteora_43",
+                           "comic_meteora_44"],
+        previous_comics : ["comic_meteora_tome_7"],
+        release_at      : {year: 2019, month: 4, day: 8}
+    },
+    comic_planeswalkers_tome_4                       : {
+        name            : "Мироходцы том 4: Битва за Эдем",
+        number          : "4",
+        type            : "book",
+        ranges          : ["range_planeswalkers"],
+        contained_comics: ["comic_planeswalkers_16", "comic_planeswalkers_17", "comic_planeswalkers_18",
+                           "comic_planeswalkers_19", "comic_planeswalkers_20", "comic_planeswalkers_21"],
+        previous_comics : ["comic_witch_hunt"],
+        next_comics     : ["comic_besoboy_and_planeswalkers_book"],
+        release_at      : {year: 2018, month: 10, day: 15}
+    },
+    comic_igor_grom_28                               : {
+        name           : "Игорь Гром #28 Игра в солдатики, часть 3",
+        number         : "28",
+        type           : "single",
+        ranges         : ["range_igor_grom"],
+        previous_comics: ["comic_igor_grom_27"],
+        next_comics    : ["comic_igor_grom_29"],
+        release_at     : {year: 2019, month: 4, day: 15}
+    },
+    comic_sister_kukki_1                             : {
+        name            : "Сестра. Кукки (часть 1)",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        including_comics: ["comic_sister_kukki"],
+        release_at      : {year: 2019, month: 4, day: 21}
+    },
+    comic_falcon_1                                   : {
+        name      : "Сокол #1 Общий интерес",
+        number    : "1",
+        type      : "single",
+        ranges    : ["range_bubble_legends", "range_new_bubble_heroes"],
+        release_at: {year: 2019, month: 4, day: 21}
+    },
+    comic_plush_policeman_the_perfect_plan           : {
+        name      : "Плюшевый полицейский. Идеальный план",
+        type      : "single",
+        ranges    : ["range_bubble_legends", "range_new_bubble_heroes"],
+        release_at: {year: 2019, month: 4, day: 21}
+    },
+    comic_black_hand_and_mysterious_package          : {
+        name      : "Чёрная рука и загадочная посылка",
+        type      : "single",
+        ranges    : ["range_bubble_legends", "range_new_bubble_heroes"],
+        release_at: {year: 2019, month: 4, day: 21}
+    },
+    comic_exlibrium_blank_sheet_single               : {
+        name            : "Экслибриум. Чистый лист",
+        type            : "single",
+        ranges          : ["range_exlibrium", "range_bubble_legends", "range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_blank_sheet_book"],
+        previous_comics : ["comic_exlibrium_50"],
+        release_at      : {year: 2019, month: 4, day: 21}
+    },
+    comic_exlibrium_blank_sheet_book                 : {
+        name            : "Экслибриум. Чистый лист",
+        type            : "book",
+        ranges          : ["range_exlibrium", "range_bubble_legends", "range_exlibrium_second_life"],
+        contained_comics: ["comic_exlibrium_blank_sheet_single"],
+        release_at      : {year: 2019, month: 4, day: 21}
+    },
+    comic_besoboy_vol_2_tome_4                       : {
+        name            : "Бесобой Vol.2 том 4: В расчёте",
+        number          : "4",
+        type            : "book",
+        ranges          : ["range_besoboy_vol_2"],
+        contained_comics: ["comic_besoboy_vol_2_16", "comic_besoboy_vol_2_17", "comic_besoboy_vol_2_18",
+                           "comic_besoboy_vol_2_19"],
+        previous_comics : ["comic_witch_hunt"],
+        next_comics     : ["comic_besoboy_vol_2_tome_5"],
+        release_at      : {year: 2019, month: 4, day: 25}
+    },
+    comic_besoboy_vol_2_tome_5                       : {
+        name            : "Бесобой Vol.2 том 5: Воля Мёртвых",
+        number          : "5",
+        type            : "book",
+        ranges          : ["range_besoboy_vol_2"],
+        contained_comics: ["comic_besoboy_vol_2_20", "comic_besoboy_vol_2_21", "comic_besoboy_vol_2_22",
+                           "comic_besoboy_vol_2_23"],
+        previous_comics : ["comic_besoboy_vol_2_tome_4"],
+        release_at      : {year: 2019, month: 4, day: 25}
+    },
+    comic_allies_29                                  : {
+        name           : "Союзники #29 Падение Голиафа",
+        number         : "29",
+        type           : "single",
+        ranges         : ["range_allies"],
+        previous_comics: ["comic_allies_28"],
+        release_at     : {year: 2019, month: 5, day: 1}
+    },
+    comic_besoboy_vol_2_29                           : {
+        name           : "Бесобой Vol.2 #29 По душам",
+        number         : "29",
+        type           : "single",
+        ranges         : ["range_besoboy_vol_2"],
+        previous_comics: ["comic_besoboy_vol_2_28"],
+        release_at     : {year: 2019, month: 5, day: 8}
+    },
+    comic_allies_tome_4                              : {
+        name            : "Союзники том 4: Без ума",
+        number          : "4",
+        type            : "book",
+        ranges          : ["range_allies"],
+        contained_comics: ["comic_allies_16", "comic_allies_17", "comic_allies_18", "comic_allies_19"],
+        previous_comics : ["comic_witch_hunt"],
+        release_at      : {year: 2019, month: 5, day: 10}
+    },
+    comic_igor_grom_29                               : {
+        name           : "Игорь Гром #29 Игра в солдатики, часть 4",
+        number         : "29",
+        type           : "single",
+        ranges         : ["range_igor_grom"],
+        previous_comics: ["comic_igor_grom_28"],
+        release_at     : {year: 2019, month: 5, day: 17}
+    },
+    comic_anna_input                                 : {
+        name      : "АННА. Input",
+        type      : "single",
+        ranges    : ["range_bubble_legends", "range_new_bubble_heroes"],
+        release_at: {year: 2019, month: 5, day: 17}
+    },
+    comic_cell_split                                 : {
+        name      : "Клетка. Раскол",
+        type      : "single",
+        ranges    : ["range_bubble_legends", "range_new_bubble_heroes"],
+        release_at: {year: 2019, month: 5, day: 17}
+    },
+    comic_pulse_heros_voice                          : {
+        name      : "Импульс. Голос героя",
+        type      : "single",
+        ranges    : ["range_bubble_legends", "range_new_bubble_heroes"],
+        release_at: {year: 2019, month: 5, day: 17}
+    },
+    comic_exlibrium_tome_8                           : {
+        name            : "Экслибриум том 8: Переворот",
+        number          : "8",
+        type            : "book",
+        ranges          : ["range_exlibrium"],
+        contained_comics: ["comic_exlibrium_41", "comic_exlibrium_42", "comic_exlibrium_43", "comic_exlibrium_44",
+                           "comic_exlibrium_45"],
+        previous_comics : ["comic_exlibrium_tome_7"],
+        release_at      : {year: 2019, month: 5, day: 17}
+    },
+    comic_igor_grom_tome_4                           : {
+        name            : "Игорь Гром том 4: Метод Локи",
+        number          : "4",
+        type            : "book",
+        ranges          : ["range_igor_grom"],
+        contained_comics: ["comic_igor_grom_16", "comic_igor_grom_17", "comic_igor_grom_18", "comic_igor_grom_19",
+                           "comic_igor_grom_20", "comic_igor_grom_21"],
+        previous_comics : ["comic_witch_hunt"],
+        release_at      : {year: 2019, month: 5, day: 22}
+    },
+    comic_tagar_tome_2_chapter_1                     : {
+        name            : "Тагар. Том 2, глава 1",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_2"],
+        previous_comics : ["comic_tagar_tome_1_chapter_4"],
+        next_comics     : ["comic_tagar_tome_2_chapter_2"],
+        release_at      : {year: 2019, month: 5, day: 30}
+    },
+    comic_tagar_tome_2_chapter_2                     : {
+        name            : "Тагар. Том 2, глава 2",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_2"],
+        previous_comics : ["comic_tagar_tome_2_chapter_1"],
+        next_comics     : ["comic_tagar_tome_2_chapter_3"],
+        release_at      : {year: 2019, month: 5, day: 30}
+    },
+    comic_tagar_tome_2_chapter_3                     : {
+        name            : "Тагар. Том 2, глава 3",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_2"],
+        previous_comics : ["comic_tagar_tome_2_chapter_2"],
+        next_comics     : ["comic_tagar_tome_2_chapter_4"],
+        release_at      : {year: 2019, month: 5, day: 30}
+    },
+    comic_tagar_tome_2_chapter_4                     : {
+        name            : "Тагар. Том 2, глава 4",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_2"],
+        previous_comics : ["comic_tagar_tome_2_chapter_3"],
+        next_comics     : ["comic_tagar_tome_2_chapter_5"],
+        release_at      : {year: 2019, month: 5, day: 30}
+    },
+    comic_tagar_tome_2_chapter_5                     : {
+        name            : "Тагар. Том 2, глава 5",
+        number          : "5",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_2"],
+        previous_comics : ["comic_tagar_tome_2_chapter_4"],
+        release_at      : {year: 2019, month: 5, day: 30}
+    },
+    comic_tagar_tome_2                               : {
+        name            : "Тагар. Том 2",
+        number          : "2",
+        type            : "book",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        contained_comics: ["comic_tagar_tome_2_chapter_1", "comic_tagar_tome_2_chapter_2",
+                           "comic_tagar_tome_2_chapter_3", "comic_tagar_tome_2_chapter_4",
+                           "comic_tagar_tome_2_chapter_5"],
+        previous_comics : ["comic_tagar_tome_1"],
+        release_at      : {year: 2019, month: 5, day: 30}
+    },
+    comic_sister_kukki                               : {
+        name            : "Сестра. Кукки",
+        type            : "book",
+        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        contained_comics: ["comic_sister_kukki_1"],
+        release_at      : {year: 2023}
+    },
 
-    /*node_major_grom_single_obeshchaniye: {name: "Майор Гром.\nОбещание", color: colors.mayor_grom_obeshchaniye, size: sizes.single},
-
-    node_major_grom_tome_1939: {name: "Майор Гром:\n1939", color: colors.mayor_grom, size: sizes.tome},
+    /*node_major_grom_tome_1939: {name: "Майор Гром:\n1939", color: colors.mayor_grom, size: sizes.tome},
     node_major_grom_tome_zagadka_sfinksa: {name: "Майор Гром.\nЗагадка сфинкса", color: colors.mayor_grom, size: sizes.tome},
 
     node_enoch_single_naslediye: {name: "Инок.\nНаследие", color: colors.inok, size: sizes.single},
 
     node_red_fury_tome_1966: {name: "Красная Фурия:\n1966", color: colors.krasnaya_furiya, size: sizes.tome},
 
-    node_exlibrium_single_44: {name: "Экслибриум #44\nВозвращение,\nчасть 2", color: colors.ekslibrium, number: "44", size: sizes.single},
-    node_exlibrium_single_45: {name: "Экслибриум #45\nВозвращение,\nчасть 3", color: colors.ekslibrium, number: "45", size: sizes.single},
-    node_exlibrium_single_46: {name: "Экслибриум #46\nСветлая полоса,\nчасть 1", color: colors.ekslibrium, number: "46", size: sizes.single},
-    node_exlibrium_single_47: {name: "Экслибриум #47\nСветлая полоса,\nчасть 2", color: colors.ekslibrium, number: "47", size: sizes.single},
-    node_exlibrium_single_48: {name: "Экслибриум #48\nСветлая полоса,\nчасть 3", color: colors.ekslibrium, number: "48", size: sizes.single},
-    node_exlibrium_single_49: {name: "Экслибриум #49\nСветлая полоса,\nчасть 4", color: colors.ekslibrium, number: "49", size: sizes.single},
-    node_exlibrium_single_50: {name: "Экслибриум #50\nСветлая полоса,\nчасть 5", color: colors.ekslibrium, number: "50", size: sizes.single},
-
-    node_exlibrium_tome_7: {name: "Экслибриум том 7:\nСказочке конец", color: colors.ekslibrium, number: "7", size: sizes.tome},
-    node_exlibrium_tome_8: {name: "Экслибриум том 8:\nПереворот", color: colors.ekslibrium, number: "8", size: sizes.tome},
     node_exlibrium_tome_9: {name: "Экслибриум том 9:\nСветлая полоса", color: colors.ekslibrium, number: "9", size: sizes.tome},
-    node_exlibrium_tome_chistyy_list: {name: "Экслибриум.\nЧистый лист", color: colors.ekslibrium_chistyy_list, size: sizes.tome},
     node_exlibrium_tome_krasnaya_stroka: {name: "Экслибриум.\nКрасная строка", color: colors.ekslibrium_krasnaya_stroka, size: sizes.tome},
 
-    node_meteora_single_44: {name: "Метеора #44\nКороль и плут,\nчасть 2", color: colors.meteora, number: "44", size: sizes.single},
-    node_meteora_single_45: {name: "Метеора #45\nСтоп машина!\nчасть 1", color: colors.meteora, number: "45", size: sizes.single},
-    node_meteora_single_46: {name: "Метеора #46\nСтоп машина!\nчасть 2", color: colors.meteora, number: "46", size: sizes.single},
-    node_meteora_single_47: {name: "Метеора #47\nСтоп машина!\nчасть 3", color: colors.meteora, number: "47", size: sizes.single},
-    node_meteora_single_48: {name: "Метеора #48\nСтоп машина!\nчасть 4", color: colors.meteora, number: "48", size: sizes.single},
-    node_meteora_single_49: {name: "Метеора #49\nСтоп машина!\nчасть 5", color: colors.meteora, number: "49", size: sizes.single},
-    node_meteora_single_50: {name: "Метеора #50\nСтоп машина!\nчасть 6", color: colors.meteora, number: "50", size: sizes.single},
     node_meteora_single_storibuk: {name: "Метеора.\nСторибук.\nОбманный манёвр", color: colors.meteora, size: sizes.single},
 
-    node_meteora_tome_7: {name: "Метеора том 7:\nВольная птица", color: colors.meteora, number: "7", size: sizes.tome},
-    node_meteora_tome_8: {name: "Метеора том 8:\nКороль и плут", color: colors.meteora, number: "8", size: sizes.tome},
     node_meteora_tome_9: {name: "Метеора том 9:\nСтоп машина!", color: colors.meteora, number: "9", size: sizes.tome},
 
     node_inok_korol_vecherinok_single_nikakikh_bolshe_vecherinok: {name: "Инок: Король вечеринок.\nНикаких больше вечерИНОК", color: colors.inok_korol_vecherinok, size: sizes.single},
 
-    node_besoboy_vol_2_single_19: {name: "Бесобой Vol.2 #19\nВ расчёте", color: colors.besoboy_vol_2, number: "19", size: sizes.single},
-    node_besoboy_vol_2_single_20: {name: "Бесобой Vol.2 #20\nВоля мёртвых,\nчасть 1", color: colors.besoboy_vol_2, number: "20", size: sizes.single},
-    node_besoboy_vol_2_single_21: {name: "Бесобой Vol.2 #21\nВоля мёртвых,\nчасть 2", color: colors.besoboy_vol_2, number: "21", size: sizes.single},
-    node_besoboy_vol_2_single_22: {name: "Бесобой Vol.2 #22\nВоля мёртвых,\nчасть 3", color: colors.besoboy_vol_2, number: "22", size: sizes.single},
-    node_besoboy_vol_2_single_23: {name: "Бесобой Vol.2 #23\nВласть", color: colors.besoboy_vol_2, number: "23", size: sizes.single},
-    node_besoboy_vol_2_single_24: {name: "Бесобой Vol.2 #24\nЗачистка,\nчасть 1", color: colors.besoboy_vol_2, number: "24", size: sizes.single},
-    node_besoboy_vol_2_single_25: {name: "Бесобой Vol.2 #25\nЗачистка,\nчасть 2", color: colors.besoboy_vol_2, number: "25", size: sizes.single},
-    node_besoboy_vol_2_single_26: {name: "Бесобой Vol.2 #26\nЗачистка,\nчасть 3", color: colors.besoboy_vol_2, number: "26", size: sizes.single},
-    node_besoboy_vol_2_single_27: {name: "Бесобой Vol.2 #27\nНа руинах,\nчасть 1", color: colors.besoboy_vol_2, number: "27", size: sizes.single},
-    node_besoboy_vol_2_single_28: {name: "Бесобой Vol.2 #28\nНа руинах,\nчасть 2", color: colors.besoboy_vol_2, number: "28", size: sizes.single},
-    node_besoboy_vol_2_single_29: {name: "Бесобой Vol.2 #29\nПо душам", color: colors.besoboy_vol_2, number: "29", size: sizes.single},
     node_besoboy_vol_2_single_30: {name: "Бесобой Vol.2 #30\nБунт,\nчасть 1", color: colors.besoboy_vol_2, number: "30", size: sizes.single},
     node_besoboy_vol_2_single_31: {name: "Бесобой Vol.2 #31\nБунт,\nчасть 2", color: colors.besoboy_vol_2, number: "31", size: sizes.single},
     node_besoboy_vol_2_single_32: {name: "Бесобой Vol.2 #32\nБунт,\nчасть 3", color: colors.besoboy_vol_2, number: "32", size: sizes.single},
@@ -5081,10 +6266,6 @@ export const comics: Comics = {
     node_besoboy_vol_2_single_49: {name: "Бесобой Vol.2 #49\nТворец", color: colors.besoboy_vol_2, number: "49", size: sizes.single},
     node_besoboy_vol_2_single_50: {name: "Бесобой Vol.2 #50\nДанила", color: colors.besoboy_vol_2, number: "50", size: sizes.single},
 
-    node_besoboy_vol_2_tome_2: {name: "Бесобой Vol.2 том 2:\nПадение", color: colors.besoboy_vol_2, number: "2", size: sizes.tome},
-    node_besoboy_vol_2_tome_3: {name: "Бесобой Vol.2 том 3:\nОткровения", color: colors.besoboy_vol_2, number: "3", size: sizes.tome},
-    node_besoboy_vol_2_tome_4: {name: "Бесобой Vol.2 том 4:\nВ расчёте", color: colors.besoboy_vol_2, number: "4", size: sizes.tome},
-    node_besoboy_vol_2_tome_5: {name: "Бесобой Vol.2 том 5:\nВоля Мёртвых", color: colors.besoboy_vol_2, number: "5", size: sizes.tome},
     node_besoboy_vol_2_tome_6: {name: "Бесобой Vol.2 том 6:\nЗачистка", color: colors.besoboy_vol_2, number: "6", size: sizes.tome},
     node_besoboy_vol_2_tome_7: {name: "Бесобой Vol.2 том 7:\nБунт", color: colors.besoboy_vol_2, number: "7", size: sizes.tome},
     node_besoboy_vol_2_tome_8: {name: "Бесобой Vol.2 том 8:\nВа-банк", color: colors.besoboy_vol_2, number: "8", size: sizes.tome},
@@ -5092,19 +6273,6 @@ export const comics: Comics = {
     node_besoboy_vol_2_tome_10: {name: "Бесобой Vol.2 том 10:\nВойна в Аду", color: colors.besoboy_vol_2, number: "10", size: sizes.tome},
     node_besoboy_vol_2_tome_11: {name: "Бесобой Vol.2 том 11:\nТворец", color: colors.besoboy_vol_2, number: "11", size: sizes.tome},
 
-    node_besoboy_vol_2_book_2: {name: "Бесобой Vol.2. Книга 2:\nПадение", color: colors.besoboy_vol_2, number: "2", size: sizes.book},
-
-    node_igor_grom_single_19: {name: "Игорь Гром #19\nМетод Локи,\nчасть 3", color: colors.igor_grom, number: "19", size: sizes.single},
-    node_igor_grom_single_20: {name: "Игорь Гром #20\nМетод Локи,\nчасть 4", color: colors.igor_grom, number: "20", size: sizes.single},
-    node_igor_grom_single_21: {name: "Игорь Гром #21\nНа пепелище", color: colors.igor_grom, number: "21", size: sizes.single},
-    node_igor_grom_single_22: {name: "Игорь Гром #22\nПовторяй за мной,\nчасть 1", color: colors.igor_grom, number: "22", size: sizes.single},
-    node_igor_grom_single_23: {name: "Игорь Гром #23\nПовторяй за мной,\nчасть 2", color: colors.igor_grom, number: "23", size: sizes.single},
-    node_igor_grom_single_24: {name: "Игорь Гром #24\nПовторяй за мной,\nчасть 3", color: colors.igor_grom, number: "24", size: sizes.single},
-    node_igor_grom_single_25: {name: "Игорь Гром #25\nПовторяй за мной,\nчасть 4", color: colors.igor_grom, number: "25", size: sizes.single},
-    node_igor_grom_single_26: {name: "Игорь Гром #26\nИгра в солдатики,\nчасть 1", color: colors.igor_grom, number: "26", size: sizes.single},
-    node_igor_grom_single_27: {name: "Игорь Гром #27\nИгра в солдатики,\nчасть 2", color: colors.igor_grom, number: "27", size: sizes.single},
-    node_igor_grom_single_28: {name: "Игорь Гром #28\nИгра в солдатики,\nчасть 3", color: colors.igor_grom, number: "28", size: sizes.single},
-    node_igor_grom_single_29: {name: "Игорь Гром #29\nИгра в солдатики,\nчасть 4", color: colors.igor_grom, number: "29", size: sizes.single},
     node_igor_grom_single_30: {name: "Игорь Гром #30\nРебята с нашего двора", color: colors.igor_grom, number: "30", size: sizes.single},
     node_igor_grom_single_31: {name: "Игорь Гром #31\nГори-гори ясно,\nчасть 1", color: colors.igor_grom, number: "31", size: sizes.single},
     node_igor_grom_single_32: {name: "Игорь Гром #32\nГори-гори ясно,\nчасть 2", color: colors.igor_grom, number: "32", size: sizes.single},
@@ -5127,9 +6295,6 @@ export const comics: Comics = {
     node_igor_grom_single_49: {name: "Игорь Гром #49\nЧужими глазами,\nчасть 4", color: colors.igor_grom, number: "49", size: sizes.single},
     node_igor_grom_single_50: {name: "Игорь Гром #50\nЗавтра", color: colors.igor_grom, number: "50", size: sizes.single},
 
-    node_igor_grom_tome_2: {name: "Игорь Гром том 2:\nГолодные духи", color: colors.igor_grom, number: "2", size: sizes.tome},
-    node_igor_grom_tome_3: {name: "Игорь Гром том 3:\nУмный человек", color: colors.igor_grom, number: "3", size: sizes.tome},
-    node_igor_grom_tome_4: {name: "Игорь Гром том 4:\nМетод Локи", color: colors.igor_grom, number: "4", size: sizes.tome},
     node_igor_grom_tome_5: {name: "Игорь Гром том 5:\nПовторяй за мной", color: colors.igor_grom, number: "5", size: sizes.tome},
     node_igor_grom_tome_6: {name: "Игорь Гром том 6:\nИгра в солдатики", color: colors.igor_grom, number: "6", size: sizes.tome},
     node_igor_grom_tome_7: {name: "Игорь Гром том 7:\nГори-гори ясно", color: colors.igor_grom, number: "7", size: sizes.tome},
@@ -5137,30 +6302,6 @@ export const comics: Comics = {
     node_igor_grom_tome_9: {name: "Игорь Гром том 9:\nМёртвая вода", color: colors.igor_grom, number: "9", size: sizes.tome},
     node_igor_grom_tome_10: {name: "Игорь Гром том 10:\nЧужими глазами", color: colors.igor_grom, number: "10", size: sizes.tome},
 
-    node_igor_grom_book_2: {name: "Игорь Гром. Книга 2:\nГолодные духи", color: colors.igor_grom, number: "2", size: sizes.book},
-
-    node_planeswalkers_single_18: {name: "Мироходцы #18\nПсы войны,\nчасть 2", color: colors.mirokhodtsy, number: "18", size: sizes.single},
-    node_planeswalkers_single_19: {name: "Мироходцы #19\nБитва за Эдем,\nчасть 1", color: colors.mirokhodtsy, number: "19", size: sizes.single},
-    node_planeswalkers_single_20: {name: "Мироходцы #20\nБитва за Эдем,\nчасть 2", color: colors.mirokhodtsy, number: "20", size: sizes.single},
-    node_planeswalkers_single_21: {name: "Мироходцы #21\nПросто сон", color: colors.mirokhodtsy, number: "21", size: sizes.single},
-
-    node_planeswalkers_tome_2: {name: "Мироходцы том 2:\nЛуна", color: colors.mirokhodtsy, number: "2", size: sizes.tome},
-    node_planeswalkers_tome_3: {name: "Мироходцы том 3:\nЛицом к лицу", color: colors.mirokhodtsy, number: "3", size: sizes.tome},
-    node_planeswalkers_tome_4: {name: "Мироходцы том 4:\nБитва за Эдем", color: colors.mirokhodtsy, number: "4", size: sizes.tome},
-
-    node_planeswalkers_book_2: {name: "Мироходцы. Книга 2:\nПритяжение полюсов", color: colors.mirokhodtsy, number: "2", size: sizes.book},
-
-    node_allies_single_19: {name: "Союзники #19\nОтчуждение", color: colors.soyuzniki, number: "19", size: sizes.single},
-    node_allies_single_20: {name: "Союзники #20\nИзгои", color: colors.soyuzniki, number: "20", size: sizes.single},
-    node_allies_single_21: {name: "Союзники #21\nОборотная сторона,\nчасть 1", color: colors.soyuzniki, number: "21", size: sizes.single},
-    node_allies_single_22: {name: "Союзники #22\nОборотная сторона,\nчасть 2", color: colors.soyuzniki, number: "22", size: sizes.single},
-    node_allies_single_23: {name: "Союзники #23\nОборотная сторона,\nчасть 3", color: colors.soyuzniki, number: "23", size: sizes.single},
-    node_allies_single_24: {name: "Союзники #24\nРабота над ошибками,\nчасть 1", color: colors.soyuzniki, number: "24", size: sizes.single},
-    node_allies_single_25: {name: "Союзники #25\nРабота над ошибками,\nчасть 2", color: colors.soyuzniki, number: "25", size: sizes.single},
-    node_allies_single_26: {name: "Союзники #26\nРабота над ошибками,\nчасть 3", color: colors.soyuzniki, number: "26", size: sizes.single},
-    node_allies_single_27: {name: "Союзники #27\nРабота над ошибками,\nчасть 4", color: colors.soyuzniki, number: "27", size: sizes.single},
-    node_allies_single_28: {name: "Союзники #28\nДжали, истребительница упырей", color: colors.soyuzniki, number: "28", size: sizes.single},
-    node_allies_single_29: {name: "Союзники #29\nПадение Голиафа", color: colors.soyuzniki, number: "29", size: sizes.single},
     node_allies_single_30: {name: "Союзники #30\nПожинающий бурю,\nчасть 1", color: colors.soyuzniki, number: "30", size: sizes.single},
     node_allies_single_31: {name: "Союзники #31\nПожинающий бурю,\nчасть 2", color: colors.soyuzniki, number: "31", size: sizes.single},
     node_allies_single_32: {name: "Союзники #32\nЦена прощения,\nчасть 1", color: colors.soyuzniki, number: "32", size: sizes.single},
@@ -5175,31 +6316,19 @@ export const comics: Comics = {
     node_allies_single_41: {name: "Союзники #41\nЦепная реакция,\nчасть 4", color: colors.soyuzniki, number: "41", size: sizes.single},
     node_allies_single_spetsvypusk_idilliya: {name: "Союзники.\nСпецвыпуск.\nИдиллия", color: colors.soyuzniki, size: sizes.single},
 
-    node_allies_tome_2: {name: "Союзники том 2:\nУсловный рефлекс", color: colors.soyuzniki, number: "2", size: sizes.tome},
-    node_allies_tome_3: {name: "Союзники том 3:\nИмаго", color: colors.soyuzniki, number: "3", size: sizes.tome},
-    node_allies_tome_4: {name: "Союзники том 4:\nБез ума", color: colors.soyuzniki, number: "4", size: sizes.tome},
     node_allies_tome_5: {name: "Союзники том 5.\nОборотная сторона", color: colors.soyuzniki, number: "5", size: sizes.tome},
     node_allies_tome_6: {name: "Союзники том 6:\nРабота над ошибками", color: colors.soyuzniki, number: "6", size: sizes.tome},
     node_allies_tome_7: {name: "Союзники том 7:\nПадение Голиафа", color: colors.soyuzniki, number: "7", size: sizes.tome},
     node_allies_tome_8: {name: "Союзники том 8:\nЦепная реакция", color: colors.soyuzniki, number: "8", size: sizes.tome},
 
-    node_allies_book_2: {name: "Союзники. Книга 2:\nУсловный рефлекс", color: colors.soyuzniki, number: "2", size: sizes.book},
-
-    node_igor_ugor_tome_2: {name: "Игорь Угорь. Том 2.\nИкра", color: colors.igor_ugor, number: "2", size: sizes.tome},
     node_igor_ugor_single_2_5: {name: "Игорь угорь 2.5:\nPress У to pay respect", color: colors.igor_ugor, number: "2.5", size: sizes.single},
     node_igor_ugor_single_3: {name: "Игорь угорь 3:\nМрачный перезапуск", color: colors.igor_ugor, number: "3", size: sizes.single},
 
-    node_pidzhaki_i_revolvery_tome_2: {name: "Пиджаки и Револьверы. Том 2:\nПраздник в красных тонах", color: colors.copyright_comics.julia_zhuravleva, number: "2", size: sizes.tome},
     node_pidzhaki_i_revolvery_tome_3: {name: "Пиджаки и Револьверы. Том 3:\nУкраденная магия", color: colors.copyright_comics.julia_zhuravleva, number: "3", size: sizes.tome},
     node_pidzhaki_i_revolvery_tome_4: {name: "Пиджаки и револьверы. Том 4:\nКровные узы", color: colors.copyright_comics.julia_zhuravleva, number: "4", size: sizes.tome},
 
     node_zagovor_yedinorogov_tome_2: {name: "Заговор единорогов. Том 2.\nСвои", color: colors.copyright_comics.alex_hatchett, number: "2", size: sizes.tome},
 
-    node_tagar_tome_2_single_1: {name: "Тагар. Том 2,\nглава 1", color: colors.tagar, number: "1", size: sizes.single},
-    node_tagar_tome_2_single_2: {name: "Тагар. Том 2,\nглава 2", color: colors.tagar, number: "2", size: sizes.single},
-    node_tagar_tome_2_single_3: {name: "Тагар. Том 2,\nглава 3", color: colors.tagar, number: "3", size: sizes.single},
-    node_tagar_tome_2_single_4: {name: "Тагар. Том 2,\nглава 4", color: colors.tagar, number: "4", size: sizes.single},
-    node_tagar_tome_2_single_5: {name: "Тагар. Том 2,\nглава 5", color: colors.tagar, number: "5", size: sizes.single},
     node_tagar_tome_3_single_1: {name: "Тагар. Том 3,\nглава 1", color: colors.tagar, number: "1", size: sizes.single},
     node_tagar_tome_3_single_2: {name: "Тагар. Том 3,\nглава 2", color: colors.tagar, number: "2", size: sizes.single},
     node_tagar_tome_3_single_3: {name: "Тагар. Том 3,\nглава 3", color: colors.tagar, number: "3", size: sizes.single},
@@ -5214,67 +6343,19 @@ export const comics: Comics = {
     node_tagar_tome_4_single_5: {name: "Тагар. Том 4,\nглава 5", color: colors.tagar, number: "5", size: sizes.single},
     node_tagar_tome_4_single_6: {name: "Тагар. Том 4,\nглава 6", color: colors.tagar, number: "6", size: sizes.single},
 
-    node_tagar_tome_2: {name: "Тагар. Том 2", color: colors.tagar, number: "2", size: sizes.tome},
     node_tagar_tome_3: {name: "Тагар. Том 3", color: colors.tagar, number: "3", size: sizes.tome},
     node_tagar_tome_4: {name: "Тагар. Том 4", color: colors.tagar, number: "4", size: sizes.tome},
-
-    node_krutiks_single_7_2018: {name: "Крутиксы #7\n(2018)", color: colors.krutiksy, number: "7", size: sizes.single},
-    node_krutiks_single_8_2018: {name: "Крутиксы #8\n(2018)", color: colors.krutiksy, number: "8", size: sizes.single},
-    node_krutiks_single_9_2018: {name: "Крутиксы #9\n(2018)", color: colors.krutiksy, number: "9", size: sizes.single},
-    node_krutiks_single_10_2018: {name: "Крутиксы #10\n(2018)", color: colors.krutiksy, number: "10", size: sizes.single},
-    node_krutiks_single_11_2018: {name: "Крутиксы #11\n(2018)", color: colors.krutiksy, number: "11", size: sizes.single},
-    node_krutiks_single_12_2018: {name: "Крутиксы #12\n(2018)", color: colors.krutiksy, number: "12", size: sizes.single},
-    node_krutiks_single_novogodniy_spetsvypusk: {name: "Крутиксы:\nНовогодний спецвыпуск", color: colors.krutiksy, size: sizes.single},
 
     node_krutiks_tome_1: {name: "Крутиксы.\nКрутые комиксы.\nКнига 1", color: colors.krutiksy, number: "1", size: sizes.tome},
     node_krutiks_tome_2: {name: "Крутиксы.\nКрутые комиксы.\nКнига 2", color: colors.krutiksy, number: "2", size: sizes.tome},
     node_krutiks_tome_3: {name: "Крутиксы.\nКрутые комиксы.\nКнига 3", color: colors.krutiksy, number: "3", size: sizes.tome},
 
-    node_okhota_na_vedm_tome: {name: "Охота на ведьм", color: colors.okhota_na_vedm, size: sizes.tome},
-
-    node_ziggi_i_shmyg_spasayut_comiccon_tome: {name: "Зигги и Шмыг спасают ComicCon", color: colors.ziggi_i_shmyg, size: sizes.tome},
-
-    node_dubin_dima_single_3: {name: "Дубин Дима:\nПровинциальные каникулы,\nчасть 3", color: colors.dubin_dima, number: "3", size: sizes.single},
-    node_dubin_dima_single_4: {name: "Дубин Дима:\nПровинциальные каникулы,\nчасть 4", color: colors.dubin_dima, number: "4", size: sizes.single},
-
-    node_dubin_dima_tome: {name: "Дубин Дима:\nПровинциальные каникулы", color: colors.dubin_dima, size: sizes.tome},
-
-    node_volf_khelsing_single: {name: "Вольф Хельсинг", color: colors.copyright_comics.evgeny_yakovlev, size: sizes.single},
-
-    node_sem_synovey_tome: {name: "Семь сыновей.\nДжайкарн.\nГлава первая", color: colors.copyright_comics.anastasia_kim, size: sizes.tome},
-
-    node_krestovyy_pokhod_single_prolog: {name: "Крестовый поход:\nПролог", color: colors.krestovyy_pokhod, size: sizes.single},
-    node_krestovyy_pokhod_single_1: {name: "Крестовый поход #1", color: colors.krestovyy_pokhod, number: "1", size: sizes.single},
-    node_krestovyy_pokhod_single_2: {name: "Крестовый поход #2", color: colors.krestovyy_pokhod, number: "2", size: sizes.single},
-    node_krestovyy_pokhod_single_3: {name: "Крестовый поход #3", color: colors.krestovyy_pokhod, number: "3", size: sizes.single},
-    node_krestovyy_pokhod_single_4: {name: "Крестовый поход #4", color: colors.krestovyy_pokhod, number: "4", size: sizes.single},
-    node_krestovyy_pokhod_single_epilog: {name: "Крестовый поход:\nЭпилог", color: colors.krestovyy_pokhod, size: sizes.single},
-
     node_krestovyy_pokhod_tome: {name: "Крестовый поход", color: colors.krestovyy_pokhod, size: sizes.tome},
 
-    node_yarkh_single_1: {name: "Ярх.\nШаг вперёд,\nчасть 1", color: colors.yarkh, number: "1", size: sizes.single},
-    node_yarkh_single_2: {name: "Ярх.\nШаг вперёд,\nчасть 2", color: colors.yarkh, number: "2", size: sizes.single},
-    node_yarkh_single_3: {name: "Ярх.\nШаг вперёд,\nчасть 3", color: colors.yarkh, number: "3", size: sizes.single},
-    node_yarkh_single_4: {name: "Ярх.\nШаг вперёд,\nчасть 4", color: colors.yarkh, number: "4", size: sizes.single},
-    node_yarkh_single_5: {name: "Ярх.\nШаг вперёд,\nчасть 5", color: colors.yarkh, number: "5", size: sizes.single},
-    node_yarkh_single_6: {name: "Ярх.\nШаг вперёд,\nчасть 6", color: colors.yarkh, number: "6", size: sizes.single},
-
-    node_yarkh_tome: {name: "Ярх.\nШаг вперёд", color: colors.yarkh, size: sizes.tome},
-
-    node_magistr_tome: {name: "Магистр.\nСмерть – это только начало", color: colors.magistr, size: sizes.tome},
-
-    node_krestovyy_pokhod_volk_single_1: {name: "Крестовый поход:\nВолк.\nЧасть 1", color: colors.krestovyy_pokhod_volk, number: "1", size: sizes.single},
-    node_krestovyy_pokhod_volk_single_2: {name: "Крестовый поход:\nВолк.\nЧасть 2", color: colors.krestovyy_pokhod_volk, number: "2", size: sizes.single},
-    node_krestovyy_pokhod_volk_single_3: {name: "Крестовый поход:\nВолк.\nЧасть 3", color: colors.krestovyy_pokhod_volk, number: "3", size: sizes.single},
-    node_krestovyy_pokhod_volk_single_4: {name: "Крестовый поход:\nВолк.\nЧасть 4", color: colors.krestovyy_pokhod_volk, number: "4", size: sizes.single},
-    node_krestovyy_pokhod_volk_single_5: {name: "Крестовый поход:\nВолк.\nЧасть 5", color: colors.krestovyy_pokhod_volk, number: "5", size: sizes.single},
+    node_yarkh_step_forward_tome: {name: "Ярх.\nШаг вперёд", color: colors.yarkh, size: sizes.tome},
 
     node_krestovyy_pokhod_volk_tome: {name: "Крестовый поход:\nВолк", color: colors.krestovyy_pokhod_volk, size: sizes.tome},
 
-    node_russkiye_narodnyye_skazki_v_komiksakh_tome: {name: "Русские народные сказки в комиксах", color: colors.russkiye_narodnyye_skazki_v_komiksakh, size: sizes.tome},
-
-    node_vor_teney_single_1: {name: "Вор Теней #1\nЧас Волка", color: colors.vor_teney, number: "1", size: sizes.single},
-    node_vor_teney_single_2: {name: "Вор Теней #2\nВор Теней против\nбандитов-футуристов", color: colors.vor_teney, number: "2", size: sizes.single},
     node_vor_teney_single_3: {name: "Вор Теней #3\nТройка коллекторов", color: colors.vor_teney, number: "3", size: sizes.single},
     node_vor_teney_single_4: {name: "Вор Теней #4\nЧетвёртый глаз", color: colors.vor_teney, number: "4", size: sizes.single},
     node_vor_teney_single_5: {name: "Вор Теней #5\nСомнамбулический поиск неведомого Коврова", color: colors.vor_teney, number: "5", size: sizes.single},
@@ -5290,9 +6371,6 @@ export const comics: Comics = {
     node_vor_teney_tome_2: {name: "Вор Теней. Том 2", color: colors.vor_teney, number: "2", size: sizes.tome},
     node_vor_teney_tome_3: {name: "Вор Теней. Том 3", color: colors.vor_teney, number: "3", size: sizes.tome},
 
-    node_sestra_single: {name: "Сестра.\nКукки", color: colors.sestra, size: sizes.single},
-
-    node_sokol_single_1: {name: "Сокол #1\nОбщий интерес", color: colors.sokol, number: "1", size: sizes.single},
     node_sokol_single_2: {name: "Сокол #2\nЧужие правила", color: colors.sokol, number: "2", size: sizes.single},
     node_sokol_single_3: {name: "Сокол #3\nВ клетке,\nчасть 1", color: colors.sokol, number: "3", size: sizes.single},
     node_sokol_single_4: {name: "Сокол #4\nВ клетке,\nчасть 2", color: colors.sokol, number: "4", size: sizes.single},
@@ -5303,16 +6381,8 @@ export const comics: Comics = {
     node_sokol_tome_1: {name: "Сокол. Том 1", color: colors.sokol, number: "1", size: sizes.tome},
     node_sokol_tome_2: {name: "Сокол. Том 2", color: colors.sokol, number: "2", size: sizes.tome},
 
-    node_plyushevyy_politseyskiy_single: {name: "Плюшевый полицейский.\nИдеальный план", color: colors.sestra, size: sizes.single},
-
-    node_chornaya_ruka_single: {name: "Чёрная рука и загадочная посылка", color: colors.chornaya_ruka, size: sizes.single},
-
-    node_anna_single_1: {name: "АННА.\nInput", color: colors.anna, number: "1", size: sizes.single},
     node_anna_single_2: {name: "АННА.\nПространство вариантов", color: colors.anna, number: "2", size: sizes.single},
 
-    node_kletka_single: {name: "Клетка.\nРаскол", color: colors.kletka, size: sizes.single},
-
-    node_impuls_single_1: {name: "Импульс.\nГолос героя", color: colors.impuls, number: "1", size: sizes.single},
     node_impuls_single_2: {name: "Импульс.\nПремьера", color: colors.impuls, number: "2", size: sizes.single},
 
     node_impuls_tome_1: {name: "Импульс. Том 1.\nВзлёты и падения", color: colors.impuls, number: "1", size: sizes.tome},

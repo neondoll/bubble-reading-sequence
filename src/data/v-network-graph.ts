@@ -4,6 +4,7 @@ import {ranges} from "./ranges";
 import * as vNG from "v-network-graph";
 import Edge from "../interfaces/Edge";
 import Node from "../interfaces/Node";
+import positions from "./positions";
 import sizes from "./sizes";
 
 function getArrayInArray(needle, haystack) {
@@ -38,7 +39,7 @@ function getTextWrapping(text: string, line_length: number) {
     let current_line_length = 0;
     let current_text = "";
     text.split(" ").forEach(word => {
-        //console.log(word.length);
+        //console.log(word, word.length);
         if (current_line_length > 0) {
             if (current_line_length + word.length > line_length) {
                 current_text += ("\n" + word);
@@ -55,12 +56,10 @@ function getTextWrapping(text: string, line_length: number) {
     return current_text;
 }
 
-const x_difference = 100;
-const y_difference = 110;
-
 const nodes: Record<string, Node> = {};
 const edges: Record<string, Edge> = {};
 const layouts: vNG.Layouts = {nodes: {}};
+const positions_keys = Object.keys(positions);
 
 Object.keys(comics).forEach((comic_id) => {
     const comic = comics[comic_id];
@@ -68,16 +67,17 @@ Object.keys(comics).forEach((comic_id) => {
     const node_colors = comic.ranges
         .filter((range_ids) => Boolean(ranges[range_ids].color))
         .map((range_ids) => ranges[range_ids].color);
+    const node_colors_length = node_colors.length;
 
     // -----------------------------------------------------------------------------
     // nodes
     // -----------------------------------------------------------------------------
 
     nodes[node_id] = {
-        name: comic.name.length > 13 ? getTextWrapping(comic.name, 13) : comic.name,
-        color: node_colors.length > 1 ? colorMixingHex(node_colors) : node_colors[0],
+        name  : comic.name.length > 19 ? getTextWrapping(comic.name, 19) : comic.name,
+        color : node_colors_length ? (node_colors_length > 1 ? colorMixingHex(node_colors) : node_colors[0]) : "#000000",
         number: comic.number,
-        size: sizes[comic.type]
+        size  : sizes[comic.type]
     };
 
     // -----------------------------------------------------------------------------
@@ -117,8 +117,8 @@ Object.keys(comics).forEach((comic_id) => {
 
     let node_x, node_y;
 
-    if (comic.position_x_func) {
-        node_x = comic.position_x_func(layouts.nodes);
+    if (positions_keys.indexOf(comic_id) !== -1 && positions[comic_id].x_func) {
+        node_x = positions[comic_id].x_func(layouts.nodes);
     } else {
         if (comic.contained_comics) {
             const contained_nodes_x = comic.contained_comics
@@ -138,7 +138,7 @@ Object.keys(comics).forEach((comic_id) => {
                     .filter((previous_node_id) => layouts_nodes_id.indexOf(previous_node_id) !== -1)
                     .map((previous_node_id) => layouts.nodes[previous_node_id].x);
 
-                node_x = getMaxOfArray(previous_nodes_x) + x_difference;
+                node_x = getMaxOfArray(previous_nodes_x) + positions.difference.x;
 
                 if (!next_nodes_id.length && node_x < max_layouts_node_x) {
                     node_x = max_layouts_node_x
@@ -147,31 +147,31 @@ Object.keys(comics).forEach((comic_id) => {
                 if (layouts_nodes_id.length) {
                     node_x = max_layouts_node_x;
                 } else {
-                    node_x = x_difference;
+                    node_x = positions.difference.x;
                 }
             }
         }
     }
 
-    if (comic.position_y) {
-        node_y = comic.position_y;
+    if (positions_keys.indexOf(comic_id) !== -1 && positions[comic_id].y) {
+        node_y = positions[comic_id].y;
     } else {
         const comic_positions_y = comic.ranges
-            .filter((range_id) => ranges[range_id].position_y)
-            .map((range_id) => ranges[range_id].position_y);
+            .filter((range_id) => positions_keys.indexOf(range_id) !== -1 && positions[range_id].y)
+            .map((range_id) => positions[range_id].y);
 
         if (comic_positions_y.length) {
             node_y = (getMinOfArray(comic_positions_y) + getMaxOfArray(comic_positions_y)) / 2;
         } else {
             const positions_y = Object.keys(ranges)
-                .filter((range_id) => ranges[range_id].position_y)
-                .map((range_id) => ranges[range_id].position_y);
+                .filter((range_id) => positions_keys.indexOf(range_id) !== -1 && positions[range_id].y)
+                .map((range_id) => positions[range_id].y);
 
-            node_y = getMaxOfArray(positions_y) + y_difference;
+            node_y = getMaxOfArray(positions_y) + positions.difference.y;
         }
 
         if (comic.contained_comics) {
-            node_y += y_difference;
+            node_y += positions.difference.y;
         }
     }
 
@@ -180,7 +180,24 @@ Object.keys(comics).forEach((comic_id) => {
     if (next_nodes_id.length) {
         next_nodes_id.forEach((next_node_id) => {
             if (layouts.nodes[next_node_id].x <= node_x) {
-                layouts.nodes[next_node_id].x = node_x + x_difference;
+                layouts.nodes[next_node_id].x = node_x + positions.difference.x;
+
+                const including_comics = comics[getNodeIdToComicId(next_node_id)].including_comics;
+                const including_nodes_id = including_comics
+                    ? including_comics
+                        .map((including_comic_id) => getComicIdToNodeId(including_comic_id))
+                        .filter((including_node_id) => layouts_nodes_id.indexOf(including_node_id) !== -1)
+                    : [];
+
+                including_nodes_id.forEach((including_node_id) => {
+                    const contained_comics = comics[getNodeIdToComicId(including_node_id)].contained_comics;
+                    const contained_nodes_x = contained_comics
+                        .map((contained_comic_id) => getComicIdToNodeId(contained_comic_id))
+                        .filter((contained_node_id) => layouts_nodes_id.indexOf(contained_node_id) !== -1)
+                        .map((contained_node_id) => layouts.nodes[contained_node_id].x);
+
+                    layouts.nodes[including_node_id].x = (getMinOfArray(contained_nodes_x) + getMaxOfArray(contained_nodes_x)) / 2;
+                });
             }
         });
     }
