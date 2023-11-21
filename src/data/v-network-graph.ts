@@ -61,6 +61,44 @@ const edges: Record<string, Edge> = {};
 const layouts: vNG.Layouts = {nodes: {}};
 const positions_keys = Object.keys(positions);
 
+function offsetOfNextNodes(comic_id: string) {
+    const comic = comics[comic_id];
+    const layouts_nodes_id = Object.keys(layouts.nodes);
+    const layouts_node = layouts.nodes[getComicIdToNodeId(comic_id)];
+    const next_nodes_id = comic.next_comics
+        ? comic.next_comics
+            .map((next_comic_id) => getComicIdToNodeId(next_comic_id))
+            .filter((next_node_id) => layouts_nodes_id.indexOf(next_node_id) !== -1)
+        : [];
+
+    if (next_nodes_id.length) {
+        next_nodes_id.forEach((next_node_id) => {
+            if (layouts.nodes[next_node_id].x <= layouts_node.x) {
+                layouts.nodes[next_node_id].x = layouts_node.x + positions.difference.x;
+
+                const including_comics = comics[getNodeIdToComicId(next_node_id)].including_comics;
+                const including_nodes_id = including_comics
+                    ? including_comics
+                        .map((including_comic_id) => getComicIdToNodeId(including_comic_id))
+                        .filter((including_node_id) => layouts_nodes_id.indexOf(including_node_id) !== -1)
+                    : [];
+
+                including_nodes_id.forEach((including_node_id) => {
+                    const contained_comics = comics[getNodeIdToComicId(including_node_id)].contained_comics;
+                    const contained_nodes_x = contained_comics
+                        .map((contained_comic_id) => getComicIdToNodeId(contained_comic_id))
+                        .filter((contained_node_id) => layouts_nodes_id.indexOf(contained_node_id) !== -1)
+                        .map((contained_node_id) => layouts.nodes[contained_node_id].x);
+
+                    layouts.nodes[including_node_id].x = (getMinOfArray(contained_nodes_x) + getMaxOfArray(contained_nodes_x)) / 2;
+                });
+
+                offsetOfNextNodes(getNodeIdToComicId(next_node_id));
+            }
+        });
+    }
+}
+
 Object.keys(comics).forEach((comic_id) => {
     const comic = comics[comic_id];
     const node_id = getComicIdToNodeId(comic_id);
@@ -177,30 +215,7 @@ Object.keys(comics).forEach((comic_id) => {
 
     layouts.nodes[node_id] = {x: node_x, y: node_y};
 
-    if (next_nodes_id.length) {
-        next_nodes_id.forEach((next_node_id) => {
-            if (layouts.nodes[next_node_id].x <= node_x) {
-                layouts.nodes[next_node_id].x = node_x + positions.difference.x;
-
-                const including_comics = comics[getNodeIdToComicId(next_node_id)].including_comics;
-                const including_nodes_id = including_comics
-                    ? including_comics
-                        .map((including_comic_id) => getComicIdToNodeId(including_comic_id))
-                        .filter((including_node_id) => layouts_nodes_id.indexOf(including_node_id) !== -1)
-                    : [];
-
-                including_nodes_id.forEach((including_node_id) => {
-                    const contained_comics = comics[getNodeIdToComicId(including_node_id)].contained_comics;
-                    const contained_nodes_x = contained_comics
-                        .map((contained_comic_id) => getComicIdToNodeId(contained_comic_id))
-                        .filter((contained_node_id) => layouts_nodes_id.indexOf(contained_node_id) !== -1)
-                        .map((contained_node_id) => layouts.nodes[contained_node_id].x);
-
-                    layouts.nodes[including_node_id].x = (getMinOfArray(contained_nodes_x) + getMaxOfArray(contained_nodes_x)) / 2;
-                });
-            }
-        });
-    }
+    offsetOfNextNodes(comic_id);
 });
 
 const paths: vNG.Paths = {};

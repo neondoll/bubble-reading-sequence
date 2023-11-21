@@ -6,15 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7cc15e66-bfd7-4c21-9031-39ac35689ec2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/comics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/comics.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ranges.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ranges.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/positions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/positions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/v-network-graph.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/v-network-graph.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +49,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feat/development-vite&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/bonni/Documents/projects/NeuroStartUp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bonni/Documents/projects/property_change2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -114,7 +108,10 @@
       <workItem from="1698650869428" duration="8000" />
       <workItem from="1699115058191" duration="30574000" />
       <workItem from="1699285641828" duration="31000" />
-      <workItem from="1699288872608" duration="10902000" />
+      <workItem from="1699288872608" duration="11237000" />
+      <workItem from="1699429939778" duration="18000" />
+      <workItem from="1699429964671" duration="112000" />
+      <workItem from="1700562369574" duration="6059000" />
     </task>
     <servers />
   </component>
@@ -126,8 +123,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/../bubble/database/seeders/ComicSeeder.php</url>
-          <line>3655</line>
-          <option name="timeStamp" value="1738" />
+          <line>3824</line>
+          <option name="timeStamp" value="1776" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
