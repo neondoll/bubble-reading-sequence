@@ -8,7 +8,7 @@ const getRangeId = (rangeId) => rangeId.replace("range_", "");
   <div class="ranges container" style="padding-top:1rem;padding-bottom:1rem">
     <ul class="ranges__list">
       <template v-for="(range, rangeId) in ranges">
-        <li class="ranges__item item-ranges" :style="{'--item-ranges-hover-bg':range.color}">
+        <li class="ranges__item item-ranges" :style="{'--item-hover-bg':range.color}">
           <RouterLink class="item-ranges__link" :to="{name:'range',params:{rangeId:getRangeId(rangeId)}}">
             {{ range.name }}
           </RouterLink>
