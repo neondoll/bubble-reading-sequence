@@ -3145,8 +3145,8 @@ export const comics: Comics = {
         including_comics: ["comic_major_grom_tome_8"],
         previous_comics : ["comic_major_grom_49"],
         next_comics     : ["comic_igor_grom_1", "comic_major_grom_chance_single", "comic_dubin_dima_1",
-                           "comic_major_grom_promise", "comic_major_grom_1939_single",
-                           "comic_major_grom_like_in_war_1"],
+                           "comic_major_grom_1939_single", "comic_major_grom_like_in_war_1",
+                           "comic_major_grom_hero_forever_1", "comic_special_prokopenko_grom_at_sunrise_single"],
         release_at      : {year: 2016, month: 12, day: 24}
     },
     comic_enoch_50                                   : {
@@ -3557,8 +3557,8 @@ export const comics: Comics = {
                            "comic_major_grom_50"],
         previous_comics : ["comic_time_of_raven_epilogue_book", "comic_major_grom_and_red_fury_tome_7"],
         next_comics     : ["comic_major_grom_chance_book", "comic_igor_grom_book_1", "comic_igor_grom_tome_1",
-                           "comic_dubin_dima", "comic_major_grom_promise", "comic_major_grom_1939_book",
-                           "comic_major_grom_like_in_war"],
+                           "comic_dubin_dima", "comic_major_grom_1939_book", "comic_major_grom_like_in_war",
+                           "comic_major_grom_hero_forever", "comic_special_prokopenko_grom_at_sunrise_book"],
         release_at      : {year: 2017, month: 6, day: 1}
     },
     comic_enoch_tome_8                               : {
@@ -4237,11 +4237,12 @@ export const comics: Comics = {
         release_at : {year: 2017, month: 9, day: 28}
     },
     comic_unicorn_conspiracy_tome_1                  : {
-        name      : "Заговор Единорогов. Том 1. Наследие",
-        number    : "1",
-        type      : "book",
-        ranges    : ["range_alex_hatchett"],
-        release_at: {year: 2017, month: 9, day: 28}
+        name       : "Заговор Единорогов. Том 1. Наследие",
+        number     : "1",
+        type       : "book",
+        ranges     : ["range_alex_hatchett"],
+        next_comics: ["comic_unicorn_conspiracy_tome_2"],
+        release_at : {year: 2017, month: 9, day: 28}
     },
     comic_tagar_tome_1_prologue                      : {
         name            : "Тагар. Том 1, пролог",
@@ -4336,12 +4337,13 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 10, day: 2}
     },
     comic_krutiks_1                                  : {
-        name       : "Крутиксы #1",
-        number     : "1",
-        type       : "single",
-        ranges     : ["range_childrens_comics"],
-        next_comics: ["comic_krutiks_2"],
-        release_at : {year: 2017, month: 10, day: 3}
+        name            : "Крутиксы #1",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_childrens_comics"],
+        including_comics: ["comic_krutiks_cool_comics_book_1"],
+        next_comics     : ["comic_krutiks_2"],
+        release_at      : {year: 2017, month: 10, day: 3}
     },
     comic_besoboy_vol_2_10                           : {
         name            : "Бесобой Vol.2 #10 Падение, часть 3",
@@ -4414,13 +4416,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 11, day: 1}
     },
     comic_krutiks_2                                  : {
-        name           : "Крутиксы #2",
-        number         : "2",
-        type           : "single",
-        ranges         : ["range_childrens_comics"],
-        previous_comics: ["comic_krutiks_1"],
-        next_comics    : ["comic_krutiks_3"],
-        release_at     : {year: 2017, month: 11, day: 3}
+        name            : "Крутиксы #2",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_childrens_comics"],
+        including_comics: ["comic_krutiks_cool_comics_book_1"],
+        previous_comics : ["comic_krutiks_1"],
+        next_comics     : ["comic_krutiks_3"],
+        release_at      : {year: 2017, month: 11, day: 3}
     },
     comic_besoboy_vol_2_11                           : {
         name            : "Бесобой Vol.2 #11 Часовой, часть 1",
@@ -4493,13 +4496,14 @@ export const comics: Comics = {
         release_at      : {year: 2017, month: 12, day: 1}
     },
     comic_krutiks_3                                  : {
-        name           : "Крутиксы #3",
-        number         : "3",
-        type           : "single",
-        ranges         : ["range_childrens_comics"],
-        previous_comics: ["comic_krutiks_2"],
-        next_comics    : ["comic_krutiks_1_2018"],
-        release_at     : {year: 2017, month: 12, day: 3}
+        name            : "Крутиксы #3",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_childrens_comics"],
+        including_comics: ["comic_krutiks_cool_comics_book_1"],
+        previous_comics : ["comic_krutiks_2"],
+        next_comics     : ["comic_krutiks_1_2018"],
+        release_at      : {year: 2017, month: 12, day: 3}
     },
     comic_besoboy_vol_2_12                           : {
         name            : "Бесобой Vol.2 #12 Часовой, часть 2",
@@ -4555,7 +4559,7 @@ export const comics: Comics = {
         type            : "single",
         ranges          : ["range_crossovers", "range_bubble_legends", "range_besoboy_vol_2"],
         including_comics: ["comic_besoboy_and_planeswalkers_book"],
-        previous_comics : ["comic_planeswalkers_21"],
+        previous_comics : ["comic_planeswalkers_21", "comic_besoboy_vol_2_50"],
         release_at      : {year: 2017, month: 12, day: 23}
     },
     comic_besoboy_and_planeswalkers_book             : {
@@ -4563,7 +4567,7 @@ export const comics: Comics = {
         type            : "book",
         ranges          : ["range_crossovers", "range_bubble_legends", "range_besoboy_vol_2"],
         contained_comics: ["comic_besoboy_and_planeswalkers_single"],
-        previous_comics : ["comic_planeswalkers_tome_4"],
+        previous_comics : ["comic_planeswalkers_tome_4", "comic_besoboy_vol_2_tome_11"],
         release_at      : {year: 2017, month: 12, day: 23}
     },
     comic_meteora_38                                 : {
@@ -4587,13 +4591,14 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 1, day: 1}
     },
     comic_krutiks_1_2018                             : {
-        name           : "Крутиксы #1 (2018)",
-        number         : "1",
-        type           : "single",
-        ranges         : ["range_childrens_comics"],
-        previous_comics: ["comic_krutiks_3"],
-        next_comics    : ["comic_krutiks_2_2018"],
-        release_at     : {year: 2018, month: 1, day: 3}
+        name            : "Крутиксы #1 (2018)",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_childrens_comics"],
+        including_comics: ["comic_krutiks_cool_comics_book_1"],
+        previous_comics : ["comic_krutiks_3"],
+        next_comics     : ["comic_krutiks_2_2018"],
+        release_at      : {year: 2018, month: 1, day: 3}
     },
     comic_besoboy_vol_2_13                           : {
         name            : "Бесобой Vol.2 #13 Откровения",
@@ -4666,13 +4671,14 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 2, day: 1}
     },
     comic_krutiks_2_2018                             : {
-        name           : "Крутиксы #2 (2018)",
-        number         : "2",
-        type           : "single",
-        ranges         : ["range_childrens_comics"],
-        previous_comics: ["comic_krutiks_1_2018"],
-        next_comics    : ["comic_krutiks_3_2018"],
-        release_at     : {year: 2018, month: 2, day: 3}
+        name            : "Крутиксы #2 (2018)",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_childrens_comics"],
+        including_comics: ["comic_krutiks_cool_comics_book_1"],
+        previous_comics : ["comic_krutiks_1_2018"],
+        next_comics     : ["comic_krutiks_3_2018"],
+        release_at      : {year: 2018, month: 2, day: 3}
     },
     comic_besoboy_vol_2_14                           : {
         name            : "Бесобой Vol.2 #14 Инструмент Бога",
@@ -4744,13 +4750,14 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 3, day: 1}
     },
     comic_krutiks_3_2018                             : {
-        name           : "Крутиксы #3 (2018)",
-        number         : "3",
-        type           : "single",
-        ranges         : ["range_childrens_comics"],
-        previous_comics: ["comic_krutiks_2_2018"],
-        next_comics    : ["comic_krutiks_4_2018"],
-        release_at     : {year: 2018, month: 3, day: 3}
+        name            : "Крутиксы #3 (2018)",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_childrens_comics"],
+        including_comics: ["comic_krutiks_cool_comics_book_2"],
+        previous_comics : ["comic_krutiks_2_2018"],
+        next_comics     : ["comic_krutiks_4_2018"],
+        release_at      : {year: 2018, month: 3, day: 3}
     },
     comic_allies_15                                  : {
         name            : "Союзники #15 Охота на ведьм",
@@ -4879,13 +4886,14 @@ export const comics: Comics = {
         release_at : {year: 2018, month: 1, day: 1}
     },
     comic_krutiks_4_2018                             : {
-        name           : "Крутиксы #4 (2018)",
-        number         : "4",
-        type           : "single",
-        ranges         : ["range_childrens_comics"],
-        previous_comics: ["comic_krutiks_3_2018"],
-        next_comics    : ["comic_krutiks_5_2018"],
-        release_at     : {year: 2018, month: 4, day: 3}
+        name            : "Крутиксы #4 (2018)",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_childrens_comics"],
+        including_comics: ["comic_krutiks_cool_comics_book_2"],
+        previous_comics : ["comic_krutiks_3_2018"],
+        next_comics     : ["comic_krutiks_5_2018"],
+        release_at      : {year: 2018, month: 4, day: 3}
     },
     comic_besoboy_vol_2_16                           : {
         name            : "Бесобой Vol.2 #16 Иуда",
@@ -4967,13 +4975,14 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 4, day: 30}
     },
     comic_krutiks_5_2018                             : {
-        name           : "Крутиксы #5 (2018)",
-        number         : "5",
-        type           : "single",
-        ranges         : ["range_childrens_comics"],
-        previous_comics: ["comic_krutiks_4_2018"],
-        next_comics    : ["comic_krutiks_6_2018"],
-        release_at     : {year: 2018, month: 5, day: 3}
+        name            : "Крутиксы #5 (2018)",
+        number          : "5",
+        type            : "single",
+        ranges          : ["range_childrens_comics"],
+        including_comics: ["comic_krutiks_cool_comics_book_2"],
+        previous_comics : ["comic_krutiks_4_2018"],
+        next_comics     : ["comic_krutiks_6_2018"],
+        release_at      : {year: 2018, month: 5, day: 3}
     },
     comic_igor_grom_17                               : {
         name            : "Игорь Гром #17 Метод Локи, часть 1",
@@ -5036,13 +5045,14 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 6, day: 1}
     },
     comic_krutiks_6_2018                             : {
-        name           : "Крутиксы #6 (2018)",
-        number         : "6",
-        type           : "single",
-        ranges         : ["range_childrens_comics"],
-        previous_comics: ["comic_krutiks_5_2018"],
-        next_comics    : ["comic_krutiks_7_2018"],
-        release_at     : {year: 2018, month: 6, day: 3}
+        name            : "Крутиксы #6 (2018)",
+        number          : "6",
+        type            : "single",
+        ranges          : ["range_childrens_comics"],
+        including_comics: ["comic_krutiks_cool_comics_book_2"],
+        previous_comics : ["comic_krutiks_5_2018"],
+        next_comics     : ["comic_krutiks_7_2018"],
+        release_at      : {year: 2018, month: 6, day: 3}
     },
     comic_besoboy_vol_2_18                           : {
         name            : "Бесобой Vol.2 #18 Красный фильтр, часть 2",
@@ -5123,13 +5133,14 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 7, day: 2}
     },
     comic_krutiks_7_2018                             : {
-        name           : "Крутиксы #7 (2018)",
-        number         : "7",
-        type           : "single",
-        ranges         : ["range_childrens_comics"],
-        previous_comics: ["comic_krutiks_6_2018"],
-        next_comics    : ["comic_krutiks_8_2018"],
-        release_at     : {year: 2018, month: 7, day: 3}
+        name            : "Крутиксы #7 (2018)",
+        number          : "7",
+        type            : "single",
+        ranges          : ["range_childrens_comics"],
+        including_comics: ["comic_krutiks_cool_comics_book_2"],
+        previous_comics : ["comic_krutiks_6_2018"],
+        next_comics     : ["comic_krutiks_8_2018"],
+        release_at      : {year: 2018, month: 7, day: 3}
     },
     comic_besoboy_vol_2_19                           : {
         name            : "Бесобой Vol.2 #19 В расчёте",
@@ -5794,11 +5805,13 @@ export const comics: Comics = {
         release_at      : {year: 2018, month: 12, day: 20}
     },
     comic_major_grom_promise                         : {
-        name           : "Майор Гром. Обещание",
-        type           : "single",
-        ranges         : ["range_major_grom", "range_bubble_legends", "range_igor_grom"],
-        previous_comics: ["comic_major_grom_50", "comic_major_grom_tome_8"],
-        release_at     : {year: 2018, month: 12, day: 29}
+        name            : "Майор Гром. Обещание",
+        type            : "single",
+        ranges          : ["range_major_grom", "range_bubble_legends", "range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_7"],
+        previous_comics : ["comic_igor_grom_34"],
+        next_comics     : ["comic_igor_grom_35"],
+        release_at      : {year: 2018, month: 12, day: 29}
     },
     comic_exlibrium_50                               : {
         name            : "Экслибриум #50 Светлая полоса, часть 5",
@@ -5807,7 +5820,8 @@ export const comics: Comics = {
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_tome_9"],
         previous_comics : ["comic_exlibrium_49"],
-        next_comics     : ["comic_exlibrium_blank_sheet_single", "comic_exlibrium_second_life"],
+        next_comics     : ["comic_exlibrium_blank_sheet_single", "comic_exlibrium_second_life",
+                           "comic_exlibrium_red_line_single"],
         release_at      : {year: 2018, month: 12, day: 29}
     },
     comic_meteora_50                                 : {
@@ -5826,6 +5840,7 @@ export const comics: Comics = {
         type           : "book",
         ranges         : ["range_igor_ugor"],
         previous_comics: ["comic_igor_ugor_tome_1"],
+        next_comics    : ["comic_igor_ugor_2_5"],
         release_at     : {year: 2019}
     },
     comic_russian_folk_tales_in_comics               : {
@@ -5835,20 +5850,23 @@ export const comics: Comics = {
         release_at: {year: 2019}
     },
     comic_thief_of_shadows_1                         : {
-        name       : "Вор Теней #1 Час Волка",
-        number     : "1",
-        type       : "single",
-        ranges     : ["range_thief_of_shadows"],
-        next_comics: ["comic_thief_of_shadows_2"],
-        release_at : {year: 2019}
+        name            : "Вор Теней #1 Час Волка",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_thief_of_shadows"],
+        including_comics: ["comic_thief_of_shadows_tome_1"],
+        next_comics     : ["comic_thief_of_shadows_2"],
+        release_at      : {year: 2019}
     },
     comic_thief_of_shadows_2                         : {
-        name           : "Вор Теней #2 Вор Теней против бандитов-футуристов",
-        number         : "2",
-        type           : "single",
-        ranges         : ["range_thief_of_shadows"],
-        previous_comics: ["comic_thief_of_shadows_1"],
-        release_at     : {year: 2019}
+        name            : "Вор Теней #2 Вор Теней против бандитов-футуристов",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_thief_of_shadows"],
+        including_comics: ["comic_thief_of_shadows_tome_1"],
+        previous_comics : ["comic_thief_of_shadows_1"],
+        next_comics     : ["comic_thief_of_shadows_3"],
+        release_at      : {year: 2019}
     },
     comic_allies_25                                  : {
         name            : "Союзники #25 Работа над ошибками, часть 2",
@@ -6094,12 +6112,13 @@ export const comics: Comics = {
         release_at      : {year: 2019, month: 4, day: 21}
     },
     comic_falcon_1                                   : {
-        name       : "Сокол #1 Общий интерес",
-        number     : "1",
-        type       : "single",
-        ranges     : ["range_bubble_legends", "range_new_bubble_heroes"],
-        next_comics: ["comic_falcon_2"],
-        release_at : {year: 2019, month: 4, day: 21}
+        name            : "Сокол #1 Общий интерес",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        including_comics: ["comic_falcon_tome_1"],
+        next_comics     : ["comic_falcon_2"],
+        release_at      : {year: 2019, month: 4, day: 21}
     },
     comic_plush_policeman_the_perfect_plan           : {
         name      : "Плюшевый полицейский. Идеальный план",
@@ -6280,6 +6299,7 @@ export const comics: Comics = {
         ranges          : ["range_bubble_manga", "range_marina_privalova"],
         including_comics: ["comic_tagar_tome_2"],
         previous_comics : ["comic_tagar_tome_2_chapter_4"],
+        next_comics     : ["comic_tagar_tome_3_chapter_1"],
         release_at      : {year: 2019, month: 5, day: 30}
     },
     comic_tagar_tome_2                               : {
@@ -6291,6 +6311,7 @@ export const comics: Comics = {
                            "comic_tagar_tome_2_chapter_3", "comic_tagar_tome_2_chapter_4",
                            "comic_tagar_tome_2_chapter_5"],
         previous_comics : ["comic_tagar_tome_1"],
+        next_comics     : ["comic_tagar_tome_3"],
         release_at      : {year: 2019, month: 5, day: 30}
     },
     comic_allies_30                                  : {
@@ -6354,13 +6375,14 @@ export const comics: Comics = {
         release_at      : {year: 2019, month: 7, day: 10}
     },
     comic_igor_grom_31                               : {
-        name           : "Игорь Гром #31 Гори-гори ясно, часть 1",
-        number         : "31",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_30"],
-        next_comics    : ["comic_igor_grom_32"],
-        release_at     : {year: 2019, month: 7, day: 15}
+        name            : "Игорь Гром #31 Гори-гори ясно, часть 1",
+        number          : "31",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_7"],
+        previous_comics : ["comic_igor_grom_30"],
+        next_comics     : ["comic_igor_grom_32"],
+        release_at      : {year: 2019, month: 7, day: 15}
     },
     comic_dont_be_reckless_quatrefoil                : {
         name      : "Не буди лихо. Четырехлистник",
@@ -6379,13 +6401,14 @@ export const comics: Comics = {
         release_at      : {year: 2019, month: 8, day: 9}
     },
     comic_igor_grom_32                               : {
-        name           : "Игорь Гром #32 Гори-гори ясно, часть 2",
-        number         : "32",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_31"],
-        next_comics    : ["comic_igor_grom_33"],
-        release_at     : {year: 2019, month: 8, day: 15}
+        name            : "Игорь Гром #32 Гори-гори ясно, часть 2",
+        number          : "32",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_7"],
+        previous_comics : ["comic_igor_grom_31"],
+        next_comics     : ["comic_igor_grom_33"],
+        release_at      : {year: 2019, month: 8, day: 15}
     },
     comic_allies_32                                  : {
         name            : "Союзники #32 Цена прощения, часть 1",
@@ -6470,7 +6493,8 @@ export const comics: Comics = {
         contained_comics: ["comic_exlibrium_46", "comic_exlibrium_47", "comic_exlibrium_48", "comic_exlibrium_49",
                            "comic_exlibrium_50"],
         previous_comics : ["comic_exlibrium_tome_8"],
-        next_comics     : ["comic_exlibrium_blank_sheet_book", "comic_exlibrium_second_life_tome_1"],
+        next_comics     : ["comic_exlibrium_blank_sheet_book", "comic_exlibrium_second_life_tome_1",
+                           "comic_exlibrium_red_line_book"],
         release_at      : {year: 2019, month: 10, day: 3}
     },
     comic_meteora_tome_9                             : {
@@ -6521,22 +6545,24 @@ export const comics: Comics = {
         release_at      : {year: 2019, month: 10, day: 3}
     },
     comic_besoboy_vol_2_33                           : {
-        name           : "Бесобой Vol.2 #33 Ва-банк, часть 1",
-        number         : "33",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_32"],
-        next_comics    : ["comic_besoboy_vol_2_34"],
-        release_at     : {year: 2019, month: 10, day: 5}
+        name            : "Бесобой Vol.2 #33 Ва-банк, часть 1",
+        number          : "33",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_8"],
+        previous_comics : ["comic_besoboy_vol_2_32"],
+        next_comics     : ["comic_besoboy_vol_2_34"],
+        release_at      : {year: 2019, month: 10, day: 5}
     },
     comic_igor_grom_33                               : {
-        name           : "Игорь Гром #33 Гори-гори ясно, часть 3",
-        number         : "33",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_32"],
-        next_comics    : ["comic_igor_grom_34"],
-        release_at     : {year: 2019, month: 10, day: 5}
+        name            : "Игорь Гром #33 Гори-гори ясно, часть 3",
+        number          : "33",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_7"],
+        previous_comics : ["comic_igor_grom_32"],
+        next_comics     : ["comic_igor_grom_34"],
+        release_at      : {year: 2019, month: 10, day: 5}
     },
     comic_major_grom_1939_single                     : {
         name            : "Майор Гром: 1939",
@@ -6555,31 +6581,34 @@ export const comics: Comics = {
         release_at      : {year: 2019, month: 10, day: 21}
     },
     comic_allies_34                                  : {
-        name           : "Союзники #34 На круги своя, часть 1",
-        number         : "34",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_33"],
-        next_comics    : ["comic_allies_35"],
-        release_at     : {year: 2019, month: 10, day: 28}
+        name            : "Союзники #34 На круги своя, часть 1",
+        number          : "34",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_8"],
+        previous_comics : ["comic_allies_33"],
+        next_comics     : ["comic_allies_35"],
+        release_at      : {year: 2019, month: 10, day: 28}
     },
     comic_besoboy_vol_2_34                           : {
-        name           : "Бесобой Vol.2 #34 Ва-банк, часть 2",
-        number         : "34",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_33"],
-        next_comics    : ["comic_besoboy_vol_2_35"],
-        release_at     : {year: 2019, month: 11, day: 8}
+        name            : "Бесобой Vol.2 #34 Ва-банк, часть 2",
+        number          : "34",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_8"],
+        previous_comics : ["comic_besoboy_vol_2_33"],
+        next_comics     : ["comic_besoboy_vol_2_35"],
+        release_at      : {year: 2019, month: 11, day: 8}
     },
     comic_igor_grom_34                               : {
-        name           : "Игорь Гром #34 Гори-гори ясно, часть 4",
-        number         : "34",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_33"],
-        next_comics    : ["comic_igor_grom_35"],
-        release_at     : {year: 2019, month: 11, day: 15}
+        name            : "Игорь Гром #34 Гори-гори ясно, часть 4",
+        number          : "34",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_7"],
+        previous_comics : ["comic_igor_grom_33"],
+        next_comics     : ["comic_major_grom_promise"],
+        release_at      : {year: 2019, month: 11, day: 15}
     },
     comic_major_grom_like_in_war_1                   : {
         name            : "Майор Гром: Как на войне, часть 1",
@@ -6592,31 +6621,34 @@ export const comics: Comics = {
         release_at      : {year: 2019, month: 12}
     },
     comic_allies_35                                  : {
-        name           : "Союзники #35 На круги своя, часть 2",
-        number         : "35",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_34"],
-        next_comics    : ["comic_allies_36"],
-        release_at     : {year: 2019, month: 12, day: 2}
+        name            : "Союзники #35 На круги своя, часть 2",
+        number          : "35",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_8"],
+        previous_comics : ["comic_allies_34"],
+        next_comics     : ["comic_allies_36"],
+        release_at      : {year: 2019, month: 12, day: 2}
     },
     comic_besoboy_vol_2_35                           : {
-        name           : "Бесобой Vol.2 #35 Ва-банк, часть 3",
-        number         : "35",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_34"],
-        next_comics    : ["comic_besoboy_vol_2_36"],
-        release_at     : {year: 2019, month: 12, day: 9}
+        name            : "Бесобой Vol.2 #35 Ва-банк, часть 3",
+        number          : "35",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_8"],
+        previous_comics : ["comic_besoboy_vol_2_34"],
+        next_comics     : ["comic_besoboy_vol_2_36"],
+        release_at      : {year: 2019, month: 12, day: 9}
     },
     comic_igor_grom_35                               : {
-        name           : "Игорь Гром #35 Вне закона, часть 1",
-        number         : "35",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_34"],
-        next_comics    : ["comic_igor_grom_36"],
-        release_at     : {year: 2019, month: 12, day: 16}
+        name            : "Игорь Гром #35 Вне закона, часть 1",
+        number          : "35",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_8"],
+        previous_comics : ["comic_major_grom_promise"],
+        next_comics     : ["comic_igor_grom_36"],
+        release_at      : {year: 2019, month: 12, day: 16}
     },
     comic_exlibrium_second_life_1                    : {
         name            : "Экслибриум. Жизнь вторая #01 Безвозвратно, часть 1",
@@ -6629,13 +6661,14 @@ export const comics: Comics = {
         release_at      : {year: 2019, month: 12, day: 28}
     },
     comic_allies_36                                  : {
-        name           : "Союзники #36 На круги своя, часть 3",
-        number         : "36",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_35"],
-        next_comics    : ["comic_allies_37"],
-        release_at     : {year: 2019, month: 12, day: 30}
+        name            : "Союзники #36 На круги своя, часть 3",
+        number          : "36",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_8"],
+        previous_comics : ["comic_allies_35"],
+        next_comics     : ["comic_allies_37"],
+        release_at      : {year: 2019, month: 12, day: 30}
     },
     comic_major_grom_like_in_war_2                   : {
         name            : "Майор Гром: Как на войне, часть 2",
@@ -6667,22 +6700,24 @@ export const comics: Comics = {
         release_at      : {year: 2020}
     },
     comic_besoboy_vol_2_36                           : {
-        name           : "Бесобой Vol.2 #36 Ва-банк, часть 4",
-        number         : "36",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_35"],
-        next_comics    : ["comic_besoboy_vol_2_37"],
-        release_at     : {year: 2020, month: 1, day: 16}
+        name            : "Бесобой Vol.2 #36 Ва-банк, часть 4",
+        number          : "36",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_8"],
+        previous_comics : ["comic_besoboy_vol_2_35"],
+        next_comics     : ["comic_besoboy_vol_2_37"],
+        release_at      : {year: 2020, month: 1, day: 16}
     },
     comic_igor_grom_36                               : {
-        name           : "Игорь Гром #36 Вне закона, часть 2",
-        number         : "36",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_35"],
-        next_comics    : ["comic_igor_grom_37"],
-        release_at     : {year: 2020, month: 1, day: 20}
+        name            : "Игорь Гром #36 Вне закона, часть 2",
+        number          : "36",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_8"],
+        previous_comics : ["comic_igor_grom_35"],
+        next_comics     : ["comic_igor_grom_37"],
+        release_at      : {year: 2020, month: 1, day: 20}
     },
     comic_exlibrium_second_life_2                    : {
         name            : "Экслибриум. Жизнь вторая #02 Безвозвратно, часть 2",
@@ -6695,31 +6730,34 @@ export const comics: Comics = {
         release_at      : {year: 2020, month: 1, day: 28}
     },
     comic_allies_37                                  : {
-        name           : "Союзники #37 На круги своя, часть 4",
-        number         : "37",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_36"],
-        next_comics    : ["comic_allies_38"],
-        release_at     : {year: 2020, month: 2, day: 1}
+        name            : "Союзники #37 На круги своя, часть 4",
+        number          : "37",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_8"],
+        previous_comics : ["comic_allies_36"],
+        next_comics     : ["comic_allies_38"],
+        release_at      : {year: 2020, month: 2, day: 1}
     },
     comic_igor_grom_37                               : {
-        name           : "Игорь Гром #37 Вне закона, часть 3",
-        number         : "37",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_36"],
-        next_comics    : ["comic_igor_grom_38"],
-        release_at     : {year: 2020, month: 2, day: 7}
+        name            : "Игорь Гром #37 Вне закона, часть 3",
+        number          : "37",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_8"],
+        previous_comics : ["comic_igor_grom_36"],
+        next_comics     : ["comic_igor_grom_38"],
+        release_at      : {year: 2020, month: 2, day: 7}
     },
     comic_besoboy_vol_2_37                           : {
-        name           : "Бесобой Vol.2 #37 Ва-банк, часть 5",
-        number         : "37",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_36"],
-        next_comics    : ["comic_besoboy_vol_2_38"],
-        release_at     : {year: 2020, month: 2, day: 14}
+        name            : "Бесобой Vol.2 #37 Ва-банк, часть 5",
+        number          : "37",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_8"],
+        previous_comics : ["comic_besoboy_vol_2_36"],
+        next_comics     : ["comic_besoboy_vol_2_38"],
+        release_at      : {year: 2020, month: 2, day: 14}
     },
     comic_major_grom_like_in_war                     : {
         name            : "Майор Гром: Как на войне",
@@ -6741,13 +6779,14 @@ export const comics: Comics = {
         release_at      : {year: 2020, month: 2, day: 28}
     },
     comic_allies_38                                  : {
-        name           : "Союзники #38 Цепная реакция, часть 1",
-        number         : "38",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_37"],
-        next_comics    : ["comic_allies_39"],
-        release_at     : {year: 2020, month: 3, day: 1}
+        name            : "Союзники #38 Цепная реакция, часть 1",
+        number          : "38",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_8"],
+        previous_comics : ["comic_allies_37"],
+        next_comics     : ["comic_allies_39"],
+        release_at      : {year: 2020, month: 3, day: 1}
     },
     comic_jackets_and_revolvers_tome_3               : {
         name           : "Пиджаки и Револьверы. Том 3: Украденная магия",
@@ -6755,16 +6794,18 @@ export const comics: Comics = {
         type           : "book",
         ranges         : ["range_yulia_zhuravleva"],
         previous_comics: ["comic_jackets_and_revolvers_tome_2"],
+        next_comics    : ["comic_jackets_and_revolvers_tome_4"],
         release_at     : {year: 2020, month: 3, day: 3}
     },
     comic_besoboy_vol_2_38                           : {
-        name           : "Бесобой Vol.2 #38 Ва-банк, часть 6",
-        number         : "38",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_37"],
-        next_comics    : ["comic_besoboy_vol_2_39"],
-        release_at     : {year: 2020, month: 3, day: 16}
+        name            : "Бесобой Vol.2 #38 Ва-банк, часть 6",
+        number          : "38",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_8"],
+        previous_comics : ["comic_besoboy_vol_2_37"],
+        next_comics     : ["comic_besoboy_vol_2_39"],
+        release_at      : {year: 2020, month: 3, day: 16}
     },
     comic_allies_tome_7                              : {
         name            : "Союзники том 7: Падение Голиафа",
@@ -6774,6 +6815,7 @@ export const comics: Comics = {
         contained_comics: ["comic_allies_29", "comic_allies_30", "comic_allies_31", "comic_allies_32",
                            "comic_allies_33"],
         previous_comics : ["comic_allies_tome_6"],
+        next_comics     : ["comic_allies_tome_8"],
         release_at      : {year: 2020, month: 3, day: 20}
     },
     comic_igor_grom_tome_6                           : {
@@ -6784,6 +6826,7 @@ export const comics: Comics = {
         contained_comics: ["comic_igor_grom_26", "comic_igor_grom_27", "comic_igor_grom_28", "comic_igor_grom_29",
                            "comic_igor_grom_30"],
         previous_comics : ["comic_igor_grom_tome_5"],
+        next_comics     : ["comic_igor_grom_tome_7"],
         release_at      : {year: 2020, month: 3, day: 22}
     },
     comic_exlibrium_second_life_4                    : {
@@ -6797,20 +6840,24 @@ export const comics: Comics = {
         release_at      : {year: 2020, month: 3, day: 28}
     },
     comic_igor_grom_38                               : {
-        name           : "Игорь Гром #38 Вне закона, часть 4",
-        number         : "38",
-        type           : "single",
-        ranges         : ["range_igor_grom"],
-        previous_comics: ["comic_igor_grom_37"],
-        release_at     : {year: 2020, month: 3}
+        name            : "Игорь Гром #38 Вне закона, часть 4",
+        number          : "38",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_8"],
+        previous_comics : ["comic_igor_grom_37"],
+        next_comics     : ["comic_igor_grom_39"],
+        release_at      : {year: 2020, month: 3}
     },
     comic_allies_39                                  : {
-        name           : "Союзники #39 Цепная реакция, часть 2",
-        number         : "39",
-        type           : "single",
-        ranges         : ["range_allies"],
-        previous_comics: ["comic_allies_38"],
-        release_at     : {year: 2020, month: 4, day: 1}
+        name            : "Союзники #39 Цепная реакция, часть 2",
+        number          : "39",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_8"],
+        previous_comics : ["comic_allies_38"],
+        next_comics     : ["comic_allies_40"],
+        release_at      : {year: 2020, month: 4, day: 1}
     },
     comic_enoch_party_king_no_more_parties           : {
         name           : "Инок: Король вечеринок. Никаких больше вечерИНОК",
@@ -6820,12 +6867,14 @@ export const comics: Comics = {
         release_at     : {year: 2020, month: 4, day: 1}
     },
     comic_falcon_2                                   : {
-        name           : "Сокол #2 Чужие правила",
-        number         : "2",
-        type           : "single",
-        ranges         : ["range_bubble_legends", "range_new_bubble_heroes"],
-        previous_comics: ["comic_falcon_1"],
-        release_at     : {year: 2020, month: 4, day: 12}
+        name            : "Сокол #2 Чужие правила",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        including_comics: ["comic_falcon_tome_1"],
+        previous_comics : ["comic_falcon_1"],
+        next_comics     : ["comic_falcon_3"],
+        release_at      : {year: 2020, month: 4, day: 12}
     },
     comic_anna_space_of_options                      : {
         name           : "АННА. Пространство вариантов",
@@ -6849,23 +6898,28 @@ export const comics: Comics = {
         contained_comics: ["comic_besoboy_vol_2_29", "comic_besoboy_vol_2_30", "comic_besoboy_vol_2_31",
                            "comic_besoboy_vol_2_32"],
         previous_comics : ["comic_besoboy_vol_2_tome_6"],
+        next_comics     : ["comic_besoboy_vol_2_tome_8"],
         release_at      : {year: 2020, month: 4, day: 15}
     },
     comic_besoboy_vol_2_39                           : {
-        name           : "Бесобой Vol.2 #39 Убить человека",
-        number         : "39",
-        type           : "single",
-        ranges         : ["range_besoboy_vol_2"],
-        previous_comics: ["comic_besoboy_vol_2_38"],
-        release_at     : {year: 2020, month: 4, day: 16}
+        name            : "Бесобой Vol.2 #39 Убить человека",
+        number          : "39",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_9"],
+        previous_comics : ["comic_besoboy_vol_2_38"],
+        next_comics     : ["comic_besoboy_vol_2_40"],
+        release_at      : {year: 2020, month: 4, day: 16}
     },
     comic_exlibrium_second_life_5                    : {
-        name           : "Экслибриум. Жизнь вторая #05 Купель Дракона, часть 1",
-        number         : "5",
-        type           : "single",
-        ranges         : ["range_exlibrium_second_life"],
-        previous_comics: ["comic_exlibrium_second_life_4"],
-        release_at     : {year: 2020, month: 4, day: 28}
+        name            : "Экслибриум. Жизнь вторая #05 Купель Дракона, часть 1",
+        number          : "5",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_2"],
+        previous_comics : ["comic_exlibrium_second_life_4"],
+        next_comics     : ["comic_exlibrium_second_life_6"],
+        release_at      : {year: 2020, month: 4, day: 28}
     },
     comic_exlibrium_second_life_tome_1               : {
         name            : "Экслибриум. Жизнь вторая. Том 1. Безвозвратно",
@@ -6876,7 +6930,1621 @@ export const comics: Comics = {
                            "comic_exlibrium_second_life_2", "comic_exlibrium_second_life_3",
                            "comic_exlibrium_second_life_4"],
         previous_comics : ["comic_exlibrium_tome_9"],
+        next_comics     : ["comic_exlibrium_second_life_tome_2"],
         release_at      : {year: 2020, month: 4, day: 30}
+    },
+    comic_igor_grom_39                               : {
+        name            : "Игорь Гром #39 Вне закона, часть 5",
+        number          : "39",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_8"],
+        previous_comics : ["comic_igor_grom_38"],
+        next_comics     : ["comic_igor_grom_40"],
+        release_at      : {year: 2020, month: 4}
+    },
+    comic_allies_40                                  : {
+        name            : "Союзники #40 Цепная реакция, часть 3",
+        number          : "40",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_8"],
+        previous_comics : ["comic_allies_39"],
+        next_comics     : ["comic_allies_41"],
+        release_at      : {year: 2020, month: 5, day: 1}
+    },
+    comic_plague_doctor_1                            : {
+        name            : "Чумной Доктор",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_plague_doctor"],
+        including_comics: ["comic_plague_doctor_tome_1"],
+        next_comics     : ["comic_plague_doctor_2"],
+        release_at      : {year: 2020, month: 5, day: 4}
+    },
+    comic_igor_grom_40                               : {
+        name            : "Игорь Гром #40 Мёртвая вода, часть 1",
+        number          : "40",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_9"],
+        previous_comics : ["comic_igor_grom_39"],
+        next_comics     : ["comic_igor_grom_41"],
+        release_at      : {year: 2020, month: 5, day: 12}
+    },
+    comic_besoboy_vol_2_40                           : {
+        name            : "Бесобой Vol.2 #40 Смерть и ангел, часть 1",
+        number          : "40",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_9"],
+        previous_comics : ["comic_besoboy_vol_2_39"],
+        next_comics     : ["comic_besoboy_vol_2_41"],
+        release_at      : {year: 2020, month: 5, day: 18}
+    },
+    comic_exlibrium_second_life_6                    : {
+        name            : "Экслибриум. Жизнь вторая #06 Купель Дракона, часть 2",
+        number          : "6",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_2"],
+        previous_comics : ["comic_exlibrium_second_life_5"],
+        next_comics     : ["comic_exlibrium_second_life_7"],
+        release_at      : {year: 2020, month: 5, day: 28}
+    },
+    comic_allies_41                                  : {
+        name            : "Союзники #41 Цепная реакция, часть 4",
+        number          : "41",
+        type            : "single",
+        ranges          : ["range_allies"],
+        including_comics: ["comic_allies_tome_8"],
+        previous_comics : ["comic_allies_40"],
+        release_at      : {year: 2020, month: 6, day: 1}
+    },
+    comic_editor                                     : {
+        name      : "Редактор: Сигнальный экземпляр",
+        type      : "single",
+        ranges    : ["range_bubble_legends", "range_new_bubble_heroes"],
+        release_at: {year: 2020, month: 6, day: 1}
+    },
+    comic_quarantine_book_single                     : {
+        name            : "Карантинная книга",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_quarantine_book_book"],
+        previous_comics : ["comic_besoboy_vol_2_50"],
+        release_at      : {year: 2020, month: 6, day: 1}
+    },
+    comic_quarantine_book_book                       : {
+        name            : "Карантинная книга",
+        type            : "book",
+        ranges          : ["range_besoboy_vol_2"],
+        contained_comics: ["comic_quarantine_book_single"],
+        previous_comics : ["comic_besoboy_vol_2_tome_11"],
+        release_at      : {year: 2020, month: 6, day: 1}
+    },
+    comic_igor_grom_41                               : {
+        name            : "Игорь Гром #41 Мёртвая вода, часть 2",
+        number          : "41",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_9"],
+        previous_comics : ["comic_igor_grom_40"],
+        next_comics     : ["comic_igor_grom_42"],
+        release_at      : {year: 2020, month: 6, day: 10}
+    },
+    comic_besoboy_vol_2_41                           : {
+        name            : "Бесобой Vol.2 #41 Смерть и ангел, часть 2",
+        number          : "41",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_9"],
+        previous_comics : ["comic_besoboy_vol_2_40"],
+        next_comics     : ["comic_besoboy_vol_2_42"],
+        release_at      : {year: 2020, month: 6, day: 17}
+    },
+    comic_exlibrium_second_life_7                    : {
+        name            : "Экслибриум. Жизнь вторая #07 Купель Дракона, часть 3",
+        number          : "7",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_2"],
+        previous_comics : ["comic_exlibrium_second_life_6"],
+        next_comics     : ["comic_exlibrium_second_life_8"],
+        release_at      : {year: 2020, month: 6, day: 28}
+    },
+    comic_devilry_1                                  : {
+        name            : "Нечистая Сила #01 Заложные покойники",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_bubble_legends"],
+        including_comics: ["comic_devilry"],
+        next_comics     : ["comic_devilry_2"],
+        release_at      : {year: 2020, month: 7, day: 1}
+    },
+    comic_chosen_one_of_the_moon_1                   : {
+        name            : "Избранница Луны, глава 1",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_bubble_manga"],
+        including_comics: ["comic_chosen_one_of_the_moon"],
+        next_comics     : ["comic_chosen_one_of_the_moon_2"],
+        release_at      : {year: 2020, month: 7, day: 1}
+    },
+    comic_igor_grom_tome_7                           : {
+        name            : "Игорь Гром том 7: Гори-гори ясно",
+        number          : "7",
+        type            : "book",
+        ranges          : ["range_igor_grom"],
+        contained_comics: ["comic_igor_grom_31", "comic_igor_grom_32", "comic_igor_grom_33", "comic_igor_grom_34",
+                           "comic_major_grom_promise"],
+        previous_comics : ["comic_igor_grom_tome_6"],
+        next_comics     : ["comic_igor_grom_tome_8"],
+        release_at      : {year: 2020, month: 7, day: 12}
+    },
+    comic_igor_grom_42                               : {
+        name            : "Игорь Гром #42 Мёртвая вода, часть 3",
+        number          : "42",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_9"],
+        previous_comics : ["comic_igor_grom_41"],
+        next_comics     : ["comic_igor_grom_43"],
+        release_at      : {year: 2020, month: 7, day: 15}
+    },
+    comic_besoboy_vol_2_42                           : {
+        name            : "Бесобой Vol.2 #42 Их легионы",
+        number          : "42",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_9"],
+        previous_comics : ["comic_besoboy_vol_2_41"],
+        next_comics     : ["comic_besoboy_vol_2_43"],
+        release_at      : {year: 2020, month: 7, day: 20}
+    },
+    comic_allies_tome_8                              : {
+        name            : "Союзники том 8: Цепная реакция",
+        number          : "8",
+        type            : "book",
+        ranges          : ["range_allies"],
+        contained_comics: ["comic_allies_34", "comic_allies_35", "comic_allies_36", "comic_allies_37",
+                           "comic_allies_38", "comic_allies_39", "comic_allies_40", "comic_allies_41"],
+        previous_comics : ["comic_allies_tome_7"],
+        release_at      : {year: 2020, month: 7, day: 24}
+    },
+    comic_exlibrium_second_life_8                    : {
+        name            : "Экслибриум. Жизнь вторая #08 Замкнутый",
+        number          : "8",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_2"],
+        previous_comics : ["comic_exlibrium_second_life_7"],
+        next_comics     : ["comic_exlibrium_second_life_9"],
+        release_at      : {year: 2020, month: 7, day: 28}
+    },
+    comic_devilry_2                                  : {
+        name            : "Нечистая Сила #02 Дорогая подачка",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_bubble_legends"],
+        including_comics: ["comic_devilry"],
+        previous_comics : ["comic_devilry_1"],
+        next_comics     : ["comic_devilry_3"],
+        release_at      : {year: 2020, month: 8}
+    },
+    comic_community_1                                : {
+        name            : "Громада",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_bubble_legends", "range_childrens_comics"],
+        including_comics: ["comic_community"],
+        next_comics     : ["comic_community_2"],
+        release_at      : {year: 2020, month: 8, day: 3}
+    },
+    comic_world_1                                    : {
+        name            : "МИР #01 Первый",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_world"],
+        including_comics: ["comic_world_tome_1"],
+        next_comics     : ["comic_world_2"],
+        release_at      : {year: 2020, month: 8, day: 7}
+    },
+    comic_world_tome_1                               : {
+        name            : "МИР. Том 1: Первый",
+        number          : "1",
+        type            : "book",
+        ranges          : ["range_world"],
+        contained_comics: ["comic_world_1"],
+        next_comics     : ["comic_world_tome_2"],
+        release_at      : {year: 2020, month: 8, day: 7}
+    },
+    comic_chosen_one_of_the_moon_2                   : {
+        name            : "Избранница Луны, глава 2",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_bubble_manga"],
+        including_comics: ["comic_chosen_one_of_the_moon"],
+        previous_comics : ["comic_chosen_one_of_the_moon_1"],
+        next_comics     : ["comic_chosen_one_of_the_moon_3"],
+        release_at      : {year: 2020, month: 8, day: 12}
+    },
+    comic_igor_grom_43                               : {
+        name            : "Игорь Гром #43 Мёртвая вода, часть 4",
+        number          : "43",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_9"],
+        previous_comics : ["comic_igor_grom_42"],
+        next_comics     : ["comic_igor_grom_44"],
+        release_at      : {year: 2020, month: 8, day: 19}
+    },
+    comic_besoboy_vol_2_43                           : {
+        name            : "Бесобой Vol.2 #43 Война в Аду, часть 1",
+        number          : "43",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_10"],
+        previous_comics : ["comic_besoboy_vol_2_42"],
+        next_comics     : ["comic_besoboy_vol_2_44"],
+        release_at      : {year: 2020, month: 8, day: 24}
+    },
+    comic_exlibrium_second_life_9                    : {
+        name            : "Экслибриум. Жизнь вторая #09 Щепки, часть 1",
+        number          : "9",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_3"],
+        previous_comics : ["comic_exlibrium_second_life_8"],
+        next_comics     : ["comic_exlibrium_second_life_10"],
+        release_at      : {year: 2020, month: 8, day: 28}
+    },
+    comic_devilry_3                                  : {
+        name            : "Нечистая Сила #03 Твоё место в саду",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_bubble_legends"],
+        including_comics: ["comic_devilry"],
+        previous_comics : ["comic_devilry_2"],
+        next_comics     : ["comic_devilry_4"],
+        release_at      : {year: 2020, month: 9}
+    },
+    comic_exlibrium_second_life_tome_2               : {
+        name            : "Экслибриум. Жизнь вторая. Том 2. Купель дракона",
+        number          : "2",
+        type            : "book",
+        ranges          : ["range_exlibrium_second_life"],
+        contained_comics: ["comic_exlibrium_second_life_5", "comic_exlibrium_second_life_6",
+                           "comic_exlibrium_second_life_7", "comic_exlibrium_second_life_8"],
+        previous_comics : ["comic_exlibrium_second_life_tome_1"],
+        next_comics     : ["comic_exlibrium_second_life_tome_3"],
+        release_at      : {year: 2020, month: 9, day: 3}
+    },
+    comic_besoboy_vol_2_tome_8                       : {
+        name            : "Бесобой Vol.2 том 8: Ва-банк",
+        number          : "8",
+        type            : "book",
+        ranges          : ["range_besoboy_vol_2"],
+        contained_comics: ["comic_besoboy_vol_2_33", "comic_besoboy_vol_2_34", "comic_besoboy_vol_2_35",
+                           "comic_besoboy_vol_2_36", "comic_besoboy_vol_2_37", "comic_besoboy_vol_2_38"],
+        previous_comics : ["comic_besoboy_vol_2_tome_7"],
+        next_comics     : ["comic_besoboy_vol_2_tome_9"],
+        release_at      : {year: 2020, month: 9, day: 7}
+    },
+    comic_chosen_one_of_the_moon_3                   : {
+        name            : "Избранница Луны, глава 3",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_bubble_manga"],
+        including_comics: ["comic_chosen_one_of_the_moon"],
+        previous_comics : ["comic_chosen_one_of_the_moon_2"],
+        next_comics     : ["comic_chosen_one_of_the_moon_4"],
+        release_at      : {year: 2020, month: 9, day: 10}
+    },
+    comic_igor_grom_tome_8                           : {
+        name            : "Игорь Гром том 8: Вне закона",
+        number          : "8",
+        type            : "book",
+        ranges          : ["range_igor_grom"],
+        contained_comics: ["comic_igor_grom_35", "comic_igor_grom_36", "comic_igor_grom_37", "comic_igor_grom_38",
+                           "comic_igor_grom_39"],
+        previous_comics : ["comic_igor_grom_tome_7"],
+        next_comics     : ["comic_igor_grom_tome_9"],
+        release_at      : {year: 2020, month: 9, day: 12}
+    },
+    comic_besoboy_vol_2_44                           : {
+        name            : "Бесобой Vol.2 #44 Война в Аду, часть 2",
+        number          : "44",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_10"],
+        previous_comics : ["comic_besoboy_vol_2_43"],
+        next_comics     : ["comic_besoboy_vol_2_45"],
+        release_at      : {year: 2020, month: 9, day: 24}
+    },
+    comic_exlibrium_second_life_10                   : {
+        name            : "Экслибриум. Жизнь вторая #10 Щепки, часть 2",
+        number          : "10",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_3"],
+        previous_comics : ["comic_exlibrium_second_life_9"],
+        next_comics     : ["comic_exlibrium_second_life_11"],
+        release_at      : {year: 2020, month: 9, day: 28}
+    },
+    comic_igor_grom_44                               : {
+        name            : "Игорь Гром #44 Мёртвая вода, часть 5",
+        number          : "44",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_9"],
+        previous_comics : ["comic_igor_grom_43"],
+        next_comics     : ["comic_igor_grom_45"],
+        release_at      : {year: 2020, month: 9, day: 30}
+    },
+    comic_major_grom_hero_forever_1                  : {
+        name            : "Майор Гром: Герой Навсегда, часть 1",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_major_grom"],
+        including_comics: ["comic_major_grom_hero_forever"],
+        previous_comics : ["comic_major_grom_50"],
+        release_at      : {year: 2020, month: 10}
+    },
+    comic_devilry_4                                  : {
+        name            : "Нечистая Сила #04 Не слишком ли много желаний для одного джинна?",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_bubble_legends"],
+        including_comics: ["comic_devilry"],
+        previous_comics : ["comic_devilry_3"],
+        release_at      : {year: 2020, month: 10}
+    },
+    comic_major_grom_hero_forever                    : {
+        name            : "Майор Гром: Герой Навсегда",
+        type            : "book",
+        ranges          : ["range_major_grom"],
+        contained_comics: ["comic_major_grom_hero_forever_1"],
+        previous_comics : ["comic_major_grom_tome_8"],
+        release_at      : {year: 2020, month: 10}
+    },
+    comic_devilry                                    : {
+        name            : "Нечистая Сила",
+        type            : "book",
+        ranges          : ["range_bubble_legends"],
+        contained_comics: ["comic_devilry_1", "comic_devilry_2", "comic_devilry_3", "comic_devilry_4"],
+        release_at      : {year: 2020, month: 10}
+    },
+    comic_turbocarp                                  : {
+        name      : "ТурбоКарп",
+        type      : "book",
+        ranges    : ["range_turbocarp"],
+        release_at: {year: 2020, month: 10}
+    },
+    comic_world_2                                    : {
+        name            : "МИР #02 Две беды, часть 1",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_world"],
+        including_comics: ["comic_world_tome_2"],
+        previous_comics : ["comic_world_1"],
+        next_comics     : ["comic_world_3"],
+        release_at      : {year: 2020, month: 10, day: 3}
+    },
+    comic_world_tome_2                               : {
+        name            : "МИР. Том 2: Две беды",
+        number          : "2",
+        type            : "book",
+        ranges          : ["range_world"],
+        contained_comics: ["comic_world_2", "comic_world_3"],
+        previous_comics : ["comic_world_tome_1"],
+        next_comics     : ["comic_world_tome_3"],
+        release_at      : {year: 2020, month: 10, day: 3}
+    },
+    comic_plague_doctor_2                            : {
+        name            : "Чумной Доктор №2",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_plague_doctor"],
+        including_comics: ["comic_plague_doctor_tome_1"],
+        previous_comics : ["comic_plague_doctor_1"],
+        next_comics     : ["comic_plague_doctor_3"],
+        release_at      : {year: 2020, month: 10, day: 4}
+    },
+    comic_chosen_one_of_the_moon_4                   : {
+        name            : "Избранница Луны, глава 4",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_bubble_manga"],
+        including_comics: ["comic_chosen_one_of_the_moon"],
+        previous_comics : ["comic_chosen_one_of_the_moon_3"],
+        next_comics     : ["comic_chosen_one_of_the_moon_5"],
+        release_at      : {year: 2020, month: 10, day: 9}
+    },
+    comic_igor_grom_45                               : {
+        name            : "Игорь Гром #45 Живая вода",
+        number          : "45",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_10"],
+        previous_comics : ["comic_igor_grom_44"],
+        next_comics     : ["comic_igor_grom_46"],
+        release_at      : {year: 2020, month: 10, day: 16}
+    },
+    comic_besoboy_vol_2_45                           : {
+        name            : "Бесобой Vol.2 #45 Война в Аду, часть 3",
+        number          : "45",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_10"],
+        previous_comics : ["comic_besoboy_vol_2_44"],
+        next_comics     : ["comic_besoboy_vol_2_46"],
+        release_at      : {year: 2020, month: 10, day: 28}
+    },
+    comic_exlibrium_second_life_11                   : {
+        name            : "Экслибриум. Жизнь вторая #11 Щепки, часть 3",
+        number          : "11",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_3"],
+        previous_comics : ["comic_exlibrium_second_life_10"],
+        next_comics     : ["comic_exlibrium_second_life_12"],
+        release_at      : {year: 2020, month: 10, day: 28}
+    },
+    comic_world_3                                    : {
+        name            : "МИР #03 Две беды, часть 2",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_world"],
+        including_comics: ["comic_world_tome_2"],
+        previous_comics : ["comic_world_2"],
+        next_comics     : ["comic_world_4"],
+        release_at      : {year: 2020, month: 11, day: 3}
+    },
+    comic_chosen_one_of_the_moon_5                   : {
+        name            : "Избранница Луны, глава 5",
+        number          : "5",
+        type            : "single",
+        ranges          : ["range_bubble_manga"],
+        including_comics: ["comic_chosen_one_of_the_moon"],
+        previous_comics : ["comic_chosen_one_of_the_moon_4"],
+        next_comics     : ["comic_chosen_one_of_the_moon_6"],
+        release_at      : {year: 2020, month: 11, day: 11}
+    },
+    comic_besoboy_vol_2_46                           : {
+        name            : "Бесобой Vol.2 #46 Месть",
+        number          : "46",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_10"],
+        previous_comics : ["comic_besoboy_vol_2_45"],
+        next_comics     : ["comic_besoboy_vol_2_47"],
+        release_at      : {year: 2020, month: 11, day: 23}
+    },
+    comic_thief_of_shadows_3                         : {
+        name            : "Вор Теней #3 Тройка коллекторов",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_thief_of_shadows"],
+        including_comics: ["comic_thief_of_shadows_tome_1"],
+        previous_comics : ["comic_thief_of_shadows_2"],
+        next_comics     : ["comic_thief_of_shadows_4"],
+        release_at      : {year: 2020, month: 11, day: 24}
+    },
+    comic_thief_of_shadows_4                         : {
+        name            : "Вор Теней #4 Четвёртый глаз",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_thief_of_shadows"],
+        including_comics: ["comic_thief_of_shadows_tome_1"],
+        previous_comics : ["comic_thief_of_shadows_3"],
+        next_comics     : ["comic_thief_of_shadows_5"],
+        release_at      : {year: 2020, month: 11, day: 24}
+    },
+    comic_thief_of_shadows_5                         : {
+        name            : "Вор Теней #5 Сомнамбулический поиск неведомого Коврова",
+        number          : "5",
+        type            : "single",
+        ranges          : ["range_thief_of_shadows"],
+        including_comics: ["comic_thief_of_shadows_tome_1"],
+        previous_comics : ["comic_thief_of_shadows_4"],
+        next_comics     : ["comic_thief_of_shadows_6"],
+        release_at      : {year: 2020, month: 11, day: 24}
+    },
+    comic_igor_grom_46                               : {
+        name            : "Игорь Гром #46 Чужими глазами, часть 1",
+        number          : "46",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_10"],
+        previous_comics : ["comic_igor_grom_45"],
+        next_comics     : ["comic_igor_grom_47"],
+        release_at      : {year: 2020, month: 11, day: 26}
+    },
+    comic_exlibrium_second_life_12                   : {
+        name            : "Экслибриум. Жизнь вторая #12 Щепки, часть 4",
+        number          : "12",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_3"],
+        previous_comics : ["comic_exlibrium_second_life_11"],
+        next_comics     : ["comic_exlibrium_second_life_13"],
+        release_at      : {year: 2020, month: 11, day: 28}
+    },
+    comic_plague_doctor_3                            : {
+        name            : "Чумной Доктор №3",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_plague_doctor"],
+        including_comics: ["comic_plague_doctor_tome_1"],
+        previous_comics : ["comic_plague_doctor_2"],
+        next_comics     : ["comic_plague_doctor_4"],
+        release_at      : {year: 2020, month: 11, day: 29}
+    },
+    comic_plague_doctor_tome_1                       : {
+        name            : "Чумной Доктор. Том 1: Капкан",
+        number          : "1",
+        type            : "book",
+        ranges          : ["range_plague_doctor"],
+        contained_comics: ["comic_plague_doctor_1", "comic_plague_doctor_2", "comic_plague_doctor_3",
+                           "comic_plague_doctor_4"],
+        next_comics     : ["comic_plague_doctor_tome_2"],
+        release_at      : {year: 2020, month: 12}
+    },
+    comic_tagar_tome_3_chapter_1                     : {
+        name            : "Тагар. Том 3, глава 1",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_3"],
+        previous_comics : ["comic_tagar_tome_2_chapter_5"],
+        next_comics     : ["comic_tagar_tome_3_chapter_2"],
+        release_at      : {year: 2020, month: 12, day: 9}
+    },
+    comic_tagar_tome_3_chapter_2                     : {
+        name            : "Тагар. Том 3, глава 2",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_3"],
+        previous_comics : ["comic_tagar_tome_3_chapter_1"],
+        next_comics     : ["comic_tagar_tome_3_chapter_3"],
+        release_at      : {year: 2020, month: 12, day: 9}
+    },
+    comic_tagar_tome_3_chapter_3                     : {
+        name            : "Тагар. Том 3, глава 3",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_3"],
+        previous_comics : ["comic_tagar_tome_3_chapter_2"],
+        next_comics     : ["comic_tagar_tome_3_chapter_4"],
+        release_at      : {year: 2020, month: 12, day: 9}
+    },
+    comic_tagar_tome_3_chapter_4                     : {
+        name            : "Тагар. Том 3, глава 4",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_3"],
+        previous_comics : ["comic_tagar_tome_3_chapter_3"],
+        next_comics     : ["comic_tagar_tome_3_chapter_5"],
+        release_at      : {year: 2020, month: 12, day: 9}
+    },
+    comic_tagar_tome_3_chapter_5                     : {
+        name            : "Тагар. Том 3, глава 5",
+        number          : "5",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_3"],
+        previous_comics : ["comic_tagar_tome_3_chapter_4"],
+        next_comics     : ["comic_tagar_tome_3_chapter_6"],
+        release_at      : {year: 2020, month: 12, day: 9}
+    },
+    comic_tagar_tome_3_chapter_6                     : {
+        name            : "Тагар. Том 3, глава 6",
+        number          : "6",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_3"],
+        previous_comics : ["comic_tagar_tome_3_chapter_5"],
+        next_comics     : ["comic_tagar_tome_3_chapter_7"],
+        release_at      : {year: 2020, month: 12, day: 9}
+    },
+    comic_tagar_tome_3_chapter_7                     : {
+        name            : "Тагар. Том 3, глава 7",
+        number          : "7",
+        type            : "single",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        including_comics: ["comic_tagar_tome_3"],
+        previous_comics : ["comic_tagar_tome_3_chapter_6"],
+        release_at      : {year: 2020, month: 12, day: 9}
+    },
+    comic_tagar_tome_3                               : {
+        name            : "Тагар. Том 3",
+        number          : "3",
+        type            : "book",
+        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        contained_comics: ["comic_tagar_tome_3_chapter_1", "comic_tagar_tome_3_chapter_2",
+                           "comic_tagar_tome_3_chapter_3", "comic_tagar_tome_3_chapter_4",
+                           "comic_tagar_tome_3_chapter_5", "comic_tagar_tome_3_chapter_6",
+                           "comic_tagar_tome_3_chapter_7"],
+        previous_comics : ["comic_tagar_tome_2"],
+        release_at      : {year: 2020, month: 12, day: 9}
+    },
+    comic_chosen_one_of_the_moon_6                   : {
+        name            : "Избранница Луны, глава 6",
+        number          : "6",
+        type            : "single",
+        ranges          : ["range_bubble_manga"],
+        including_comics: ["comic_chosen_one_of_the_moon"],
+        previous_comics : ["comic_chosen_one_of_the_moon_5"],
+        release_at      : {year: 2020, month: 12, day: 18}
+    },
+    comic_chosen_one_of_the_moon                     : {
+        name            : "Избранница Луны",
+        type            : "book",
+        ranges          : ["range_bubble_manga"],
+        contained_comics: ["comic_chosen_one_of_the_moon_1", "comic_chosen_one_of_the_moon_2",
+                           "comic_chosen_one_of_the_moon_3", "comic_chosen_one_of_the_moon_4",
+                           "comic_chosen_one_of_the_moon_5", "comic_chosen_one_of_the_moon_6"],
+        release_at      : {year: 2020, month: 12, day: 23}
+    },
+    comic_igor_grom_47                               : {
+        name            : "Игорь Гром #47 Чужими глазами, часть 2",
+        number          : "47",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_10"],
+        previous_comics : ["comic_igor_grom_46"],
+        next_comics     : ["comic_igor_grom_48"],
+        release_at      : {year: 2020, month: 12, day: 25}
+    },
+    comic_world_tome_3                               : {
+        name            : "МИР. Том 3: Прощай, оружие",
+        number          : "3",
+        type            : "book",
+        ranges          : ["range_world"],
+        contained_comics: ["comic_world_4", "comic_world_5"],
+        previous_comics : ["comic_world_tome_2"],
+        next_comics     : ["comic_world_tome_4"],
+        release_at      : {year: 2020, month: 12, day: 25}
+    },
+    comic_plague_doctor_4                            : {
+        name            : "Чумной Доктор №4",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_plague_doctor"],
+        including_comics: ["comic_plague_doctor_tome_1"],
+        previous_comics : ["comic_plague_doctor_3"],
+        next_comics     : ["comic_plague_doctor_5"],
+        release_at      : {year: 2020, month: 12, day: 28}
+    },
+    comic_exlibrium_second_life_13                   : {
+        name            : "Экслибриум. Жизнь вторая #13 Точка сборки, часть 1",
+        number          : "13",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_4"],
+        previous_comics : ["comic_exlibrium_second_life_12"],
+        next_comics     : ["comic_exlibrium_second_life_14"],
+        release_at      : {year: 2020, month: 12, day: 28}
+    },
+    comic_besoboy_vol_2_47                           : {
+        name            : "Бесобой Vol.2 #47 Достоин, часть 1",
+        number          : "47",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_11"],
+        previous_comics : ["comic_besoboy_vol_2_46"],
+        next_comics     : ["comic_besoboy_vol_2_48"],
+        release_at      : {year: 2020, month: 12, day: 30}
+    },
+    comic_krutiks_cool_comics_book_1                 : {
+        name            : "Крутиксы. Крутые комиксы. Книга 1",
+        number          : "1",
+        type            : "book",
+        ranges          : ["range_childrens_comics"],
+        contained_comics: ["comic_krutiks_1", "comic_krutiks_2", "comic_krutiks_3", "comic_krutiks_1_2018",
+                           "comic_krutiks_2_2018"],
+        next_comics     : ["comic_krutiks_cool_comics_book_2"],
+        release_at      : {year: 2021}
+    },
+    comic_besoboy_vol_2_48                           : {
+        name            : "Бесобой Vol.2 #48 Достоин, часть 2",
+        number          : "48",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_11"],
+        previous_comics : ["comic_besoboy_vol_2_47"],
+        next_comics     : ["comic_besoboy_vol_2_49"],
+        release_at      : {year: 2021, month: 1, day: 8}
+    },
+    comic_winter_special_plague_doctor               : {
+        name            : "Специальный зимний спецвыпуск \"Чумной Доктор\"",
+        type            : "single",
+        ranges          : ["range_plague_doctor"],
+        including_comics: ["comic_plague_doctor_tome_3"],
+        previous_comics : ["comic_plague_doctor_10"],
+        next_comics     : ["comic_major_igor_grom_x_plague_doctor_11"],
+        release_at      : {year: 2021, month: 1, day: 13}
+    },
+    comic_igor_grom_tome_9                           : {
+        name            : "Игорь Гром том 9: Мёртвая вода",
+        number          : "9",
+        type            : "book",
+        ranges          : ["range_igor_grom"],
+        contained_comics: ["comic_igor_grom_40", "comic_igor_grom_41", "comic_igor_grom_42", "comic_igor_grom_43",
+                           "comic_igor_grom_44"],
+        previous_comics : ["comic_igor_grom_tome_8"],
+        next_comics     : ["comic_igor_grom_tome_10"],
+        release_at      : {year: 2021, month: 1, day: 22}
+    },
+    comic_exlibrium_second_life_14                   : {
+        name            : "Экслибриум. Жизнь вторая #14 Точка сборки, часть 2",
+        number          : "14",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_4"],
+        previous_comics : ["comic_exlibrium_second_life_13"],
+        next_comics     : ["comic_exlibrium_second_life_15"],
+        release_at      : {year: 2021, month: 1, day: 28}
+    },
+    comic_igor_grom_48                               : {
+        name            : "Игорь Гром #48 Чужими глазами, часть 3",
+        number          : "48",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_10"],
+        previous_comics : ["comic_igor_grom_47"],
+        next_comics     : ["comic_igor_grom_49"],
+        release_at      : {year: 2021, month: 1, day: 29}
+    },
+    comic_besoboy_vol_2_49                           : {
+        name            : "Бесобой Vol.2 #49 Творец",
+        number          : "49",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_11"],
+        previous_comics : ["comic_besoboy_vol_2_48"],
+        next_comics     : ["comic_besoboy_vol_2_50"],
+        release_at      : {year: 2021, month: 2, day: 8}
+    },
+    comic_world_4                                    : {
+        name            : "МИР #04 Прощай, оружие, часть 1",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_world"],
+        including_comics: ["comic_world_tome_3"],
+        previous_comics : ["comic_world_3"],
+        next_comics     : ["comic_world_5"],
+        release_at      : {year: 2021, month: 2, day: 14}
+    },
+    comic_besoboy_vol_2_tome_9                       : {
+        name            : "Бесобой Vol.2 том 9: Смерть и Ангел",
+        number          : "9",
+        type            : "book",
+        ranges          : ["range_besoboy_vol_2"],
+        contained_comics: ["comic_besoboy_vol_2_39", "comic_besoboy_vol_2_40", "comic_besoboy_vol_2_41",
+                           "comic_besoboy_vol_2_42"],
+        previous_comics : ["comic_besoboy_vol_2_tome_8"],
+        next_comics     : ["comic_besoboy_vol_2_tome_10"],
+        release_at      : {year: 2021, month: 2, day: 17}
+    },
+    comic_igor_grom_49                               : {
+        name            : "Игорь Гром #49 Чужими глазами, часть 4",
+        number          : "49",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_10"],
+        previous_comics : ["comic_igor_grom_48"],
+        next_comics     : ["comic_igor_grom_50"],
+        release_at      : {year: 2021, month: 2, day: 26}
+    },
+    comic_exlibrium_second_life_15                   : {
+        name            : "Экслибриум. Жизнь вторая #15 Праздник жизни, часть 1",
+        number          : "15",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_4"],
+        previous_comics : ["comic_exlibrium_second_life_14"],
+        next_comics     : ["comic_exlibrium_second_life_16"],
+        release_at      : {year: 2021, month: 2, day: 28}
+    },
+    comic_plague_doctor_5                            : {
+        name            : "Чумной Доктор №5",
+        number          : "5",
+        type            : "single",
+        ranges          : ["range_plague_doctor"],
+        including_comics: ["comic_plague_doctor_tome_2"],
+        previous_comics : ["comic_plague_doctor_4"],
+        next_comics     : ["comic_plague_doctor_6"],
+        release_at      : {year: 2021, month: 3, day: 3}
+    },
+    comic_exlibrium_second_life_tome_3               : {
+        name            : "Экслибриум. Жизнь вторая. Том 3. Щепки",
+        number          : "3",
+        type            : "book",
+        ranges          : ["range_exlibrium_second_life"],
+        contained_comics: ["comic_exlibrium_second_life_9", "comic_exlibrium_second_life_10",
+                           "comic_exlibrium_second_life_11", "comic_exlibrium_second_life_12"],
+        previous_comics : ["comic_exlibrium_second_life_tome_2"],
+        next_comics     : ["comic_exlibrium_second_life_tome_4"],
+        release_at      : {year: 2021, month: 3, day: 5}
+    },
+    comic_world_5                                    : {
+        name            : "МИР #05 Прощай, оружие, часть 2",
+        number          : "5",
+        type            : "single",
+        ranges          : ["range_world"],
+        including_comics: ["comic_world_tome_3"],
+        previous_comics : ["comic_world_4"],
+        next_comics     : ["comic_world_6"],
+        release_at      : {year: 2021, month: 3, day: 24}
+    },
+    comic_exlibrium_second_life_16                   : {
+        name            : "Экслибриум. Жизнь вторая #16 Праздник жизни, часть 2",
+        number          : "16",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_4"],
+        previous_comics : ["comic_exlibrium_second_life_15"],
+        next_comics     : ["comic_exlibrium_second_life_17"],
+        release_at      : {year: 2021, month: 3, day: 28}
+    },
+    comic_exlibrium_second_life_17                   : {
+        name            : "Экслибриум. Жизнь вторая #17 Праздник жизни, часть 3",
+        number          : "17",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_4"],
+        previous_comics : ["comic_exlibrium_second_life_16"],
+        next_comics     : ["comic_exlibrium_second_life_18"],
+        release_at      : {year: 2021, month: 4, day: 28}
+    },
+    comic_world_eternal_memory_single                : {
+        name            : "МИР: Вечная Память",
+        type            : "single",
+        ranges          : ["range_world"],
+        including_comics: ["comic_world_eternal_memory_book"],
+        release_at      : {year: 2021, month: 5, day: 9}
+    },
+    comic_world_eternal_memory_book                  : {
+        name            : "МИР: Вечная Память",
+        type            : "book",
+        ranges          : ["range_world"],
+        contained_comics: ["comic_world_eternal_memory_single"],
+        release_at      : {year: 2021, month: 5, day: 9}
+    },
+    comic_igor_grom_50                               : {
+        name            : "Игорь Гром #50 Завтра",
+        number          : "50",
+        type            : "single",
+        ranges          : ["range_igor_grom"],
+        including_comics: ["comic_igor_grom_tome_10"],
+        previous_comics : ["comic_igor_grom_49"],
+        next_comics     : ["comic_major_igor_grom_1"],
+        release_at      : {year: 2021, month: 5, day: 10}
+    },
+    comic_besoboy_vol_2_50                           : {
+        name            : "Бесобой Vol.2 #50 Данила",
+        number          : "50",
+        type            : "single",
+        ranges          : ["range_besoboy_vol_2"],
+        including_comics: ["comic_besoboy_vol_2_tome_11"],
+        previous_comics : ["comic_besoboy_vol_2_49"],
+        next_comics     : ["comic_besoboy_and_planeswalkers_single", "comic_quarantine_book_single"],
+        release_at      : {year: 2021, month: 5, day: 13}
+    },
+    comic_world_tome_4                               : {
+        name            : "МИР. Книга 4. Тебя слышит враг",
+        number          : "4",
+        type            : "book",
+        ranges          : ["range_world"],
+        contained_comics: ["comic_world_6", "comic_world_7"],
+        previous_comics : ["comic_world_tome_3"],
+        next_comics     : ["comic_world_tome_5"],
+        release_at      : {year: 2021, month: 5, day: 17}
+    },
+    comic_plague_doctor_6                            : {
+        name            : "Чумной Доктор №6",
+        number          : "6",
+        type            : "single",
+        ranges          : ["range_plague_doctor"],
+        including_comics: ["comic_plague_doctor_tome_2"],
+        previous_comics : ["comic_plague_doctor_5"],
+        next_comics     : ["comic_plague_doctor_7"],
+        release_at      : {year: 2021, month: 5, day: 27}
+    },
+    comic_exlibrium_second_life_18                   : {
+        name            : "Экслибриум. Жизнь вторая #18 Праздник жизни, часть 4",
+        number          : "18",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_4"],
+        previous_comics : ["comic_exlibrium_second_life_17"],
+        next_comics     : ["comic_exlibrium_second_life_19"],
+        release_at      : {year: 2021, month: 5, day: 28}
+    },
+    comic_world_6                                    : {
+        name            : "МИР #06 Тебя слышит враг, часть 1",
+        number          : "6",
+        type            : "single",
+        ranges          : ["range_world"],
+        including_comics: ["comic_world_tome_4"],
+        previous_comics : ["comic_world_5"],
+        next_comics     : ["comic_world_7"],
+        release_at      : {year: 2021, month: 6, day: 4}
+    },
+    comic_igor_grom_tome_10                          : {
+        name            : "Игорь Гром том 10: Чужими глазами",
+        number          : "10",
+        type            : "book",
+        ranges          : ["range_igor_grom"],
+        contained_comics: ["comic_igor_grom_45", "comic_igor_grom_46", "comic_igor_grom_47", "comic_igor_grom_48",
+                           "comic_igor_grom_49", "comic_igor_grom_50"],
+        previous_comics : ["comic_igor_grom_tome_9"],
+        next_comics     : ["comic_major_igor_grom_tome_1"],
+        release_at      : {year: 2021, month: 6, day: 18}
+    },
+    comic_plague_doctor_7                            : {
+        name            : "Чумной Доктор №7",
+        number          : "7",
+        type            : "single",
+        ranges          : ["range_plague_doctor"],
+        including_comics: ["comic_plague_doctor_tome_2"],
+        previous_comics : ["comic_plague_doctor_6"],
+        next_comics     : ["comic_plague_doctor_8"],
+        release_at      : {year: 2021, month: 6, day: 27}
+    },
+    comic_exlibrium_second_life_19                   : {
+        name            : "Экслибриум. Жизнь вторая #19 Венец творения, часть 1",
+        number          : "19",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_5"],
+        previous_comics : ["comic_exlibrium_second_life_18"],
+        next_comics     : ["comic_exlibrium_second_life_20"],
+        release_at      : {year: 2021, month: 6, day: 28}
+    },
+    comic_major_igor_grom_1                          : {
+        name            : "Майор Игорь Гром #01 Фейк, часть 1",
+        number          : "1",
+        type            : "single",
+        ranges          : ["range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_tome_1"],
+        previous_comics : ["comic_igor_grom_50"],
+        next_comics     : ["comic_major_igor_grom_2"],
+        release_at      : {year: 2021, month: 7, day: 2}
+    },
+    comic_exlibrium_second_life_tome_4               : {
+        name            : "Экслибриум. Жизнь вторая. Том 4. Праздник Жизни",
+        number          : "4",
+        type            : "book",
+        ranges          : ["range_exlibrium_second_life"],
+        contained_comics: ["comic_exlibrium_second_life_13", "comic_exlibrium_second_life_14",
+                           "comic_exlibrium_second_life_15", "comic_exlibrium_second_life_16",
+                           "comic_exlibrium_second_life_17", "comic_exlibrium_second_life_18"],
+        previous_comics : ["comic_exlibrium_second_life_tome_3"],
+        next_comics     : ["comic_exlibrium_second_life_tome_5"],
+        release_at      : {year: 2021, month: 7, day: 8}
+    },
+    comic_world_7                                    : {
+        name            : "МИР #07 Тебя слышит враг, часть 2",
+        number          : "7",
+        type            : "single",
+        ranges          : ["range_world"],
+        including_comics: ["comic_world_tome_4"],
+        previous_comics : ["comic_world_6"],
+        next_comics     : ["comic_world_8"],
+        release_at      : {year: 2021, month: 7, day: 9}
+    },
+    comic_exlibrium_second_life_20                   : {
+        name            : "Экслибриум. Жизнь вторая #20 Венец творения, часть 2",
+        number          : "20",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_5"],
+        previous_comics : ["comic_exlibrium_second_life_19"],
+        next_comics     : ["comic_exlibrium_second_life_21"],
+        release_at      : {year: 2021, month: 7, day: 28}
+    },
+    comic_plague_doctor_8                            : {
+        name            : "Чумной Доктор №8",
+        number          : "8",
+        type            : "single",
+        ranges          : ["range_plague_doctor"],
+        including_comics: ["comic_plague_doctor_tome_2"],
+        previous_comics : ["comic_plague_doctor_7"],
+        next_comics     : ["comic_plague_doctor_9"],
+        release_at      : {year: 2021, month: 7, day: 30}
+    },
+    comic_exlibrium_red_line_single                  : {
+        name            : "Экслибриум. Красная строка",
+        type            : "single",
+        ranges          : ["range_exlibrium", "range_bubble_legends", "range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_red_line_book"],
+        previous_comics : ["comic_exlibrium_50"],
+        release_at      : {year: 2021, month: 7, day: 30}
+    },
+    comic_exlibrium_red_line_book                    : {
+        name            : "Экслибриум. Красная строка",
+        type            : "book",
+        ranges          : ["range_exlibrium", "range_bubble_legends", "range_exlibrium_second_life"],
+        contained_comics: ["comic_exlibrium_red_line_single"],
+        previous_comics : ["comic_exlibrium_tome_9"],
+        release_at      : {year: 2021, month: 7, day: 30}
+    },
+    comic_community_2                                : {
+        name            : "Громада №2",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_bubble_legends", "range_childrens_comics"],
+        including_comics: ["comic_community"],
+        previous_comics : ["comic_community_1"],
+        next_comics     : ["comic_community_3"],
+        release_at      : {year: 2021, month: 8}
+    },
+    comic_community                                  : {
+        name            : "Громада",
+        type            : "book",
+        ranges          : ["range_bubble_legends", "range_childrens_comics"],
+        contained_comics: ["comic_community_1", "comic_community_2", "comic_community_3", "comic_community_4"],
+        release_at      : {year: 2021, month: 8}
+    },
+    comic_major_igor_grom_2                          : {
+        name            : "Майор Игорь Гром #02 Фейк, часть 2",
+        number          : "2",
+        type            : "single",
+        ranges          : ["range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_tome_1"],
+        previous_comics : ["comic_major_igor_grom_1"],
+        next_comics     : ["comic_major_igor_grom_3"],
+        release_at      : {year: 2021, month: 8, day: 4}
+    },
+    comic_besoboy_vol_2_tome_10                      : {
+        name            : "Бесобой Vol.2 том 10: Война в Аду",
+        number          : "10",
+        type            : "book",
+        ranges          : ["range_besoboy_vol_2"],
+        contained_comics: ["comic_besoboy_vol_2_43", "comic_besoboy_vol_2_44", "comic_besoboy_vol_2_45",
+                           "comic_besoboy_vol_2_46"],
+        previous_comics : ["comic_besoboy_vol_2_tome_9"],
+        next_comics     : ["comic_besoboy_vol_2_tome_11"],
+        release_at      : {year: 2021, month: 8, day: 6}
+    },
+    comic_igor_ugor_2_5                              : {
+        name           : "Игорь угорь 2.5: Press У to pay respect",
+        number         : "2.5",
+        type           : "single",
+        ranges         : ["range_igor_ugor"],
+        previous_comics: ["comic_igor_ugor_tome_2"],
+        release_at     : {year: 2021, month: 8, day: 21}
+    },
+    comic_exlibrium_second_life_21                   : {
+        name            : "Экслибриум. Жизнь вторая #21 Венец творения, часть 3",
+        number          : "21",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_5"],
+        previous_comics : ["comic_exlibrium_second_life_20"],
+        next_comics     : ["comic_exlibrium_second_life_22"],
+        release_at      : {year: 2021, month: 8, day: 28}
+    },
+    comic_plague_doctor_tome_2                       : {
+        name            : "Чумной Доктор. Том 2: Золотой цветок",
+        number          : "2",
+        type            : "book",
+        ranges          : ["range_plague_doctor"],
+        contained_comics: ["comic_plague_doctor_5", "comic_plague_doctor_6", "comic_plague_doctor_7",
+                           "comic_plague_doctor_8"],
+        previous_comics : ["comic_plague_doctor_tome_1"],
+        next_comics     : ["comic_plague_doctor_tome_3"],
+        release_at      : {year: 2021, month: 8, day: 28}
+    },
+    comic_plague_doctor_9                            : {
+        name            : "Чумной Доктор №9",
+        number          : "9",
+        type            : "single",
+        ranges          : ["range_plague_doctor"],
+        including_comics: ["comic_plague_doctor_tome_3"],
+        previous_comics : ["comic_plague_doctor_8"],
+        next_comics     : ["comic_plague_doctor_10"],
+        release_at      : {year: 2021, month: 8, day: 31}
+    },
+    comic_community_3                                : {
+        name            : "Громада №3",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_bubble_legends", "range_childrens_comics"],
+        including_comics: ["comic_community"],
+        previous_comics : ["comic_community_2"],
+        next_comics     : ["comic_community_4"],
+        release_at      : {year: 2021, month: 9}
+    },
+    comic_major_igor_grom_3                          : {
+        name            : "Майор Игорь Гром #03 Фейк, часть 3",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_tome_1"],
+        previous_comics : ["comic_major_igor_grom_2"],
+        next_comics     : ["comic_major_igor_grom_4"],
+        release_at      : {year: 2021, month: 9, day: 3}
+    },
+    comic_besoboy_vol_2_tome_11                      : {
+        name            : "Бесобой Vol.2 том 11: Творец",
+        number          : "11",
+        type            : "book",
+        ranges          : ["range_besoboy_vol_2"],
+        contained_comics: ["comic_besoboy_vol_2_47", "comic_besoboy_vol_2_48", "comic_besoboy_vol_2_49",
+                           "comic_besoboy_vol_2_50"],
+        previous_comics : ["comic_besoboy_vol_2_tome_10"],
+        next_comics     : ["comic_besoboy_and_planeswalkers_book", "comic_quarantine_book_book"],
+        release_at      : {year: 2021, month: 9, day: 15}
+    },
+    comic_falcon_tome_1                              : {
+        name            : "Сокол. Том 1",
+        number          : "1",
+        type            : "book",
+        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        contained_comics: ["comic_falcon_1", "comic_falcon_2", "comic_falcon_3", "comic_falcon_4"],
+        release_at      : {year: 2021, month: 9, day: 22}
+    },
+    comic_jackets_and_revolvers_tome_4               : {
+        name           : "Пиджаки и револьверы. Том 4: Кровные узы",
+        number         : "4",
+        type           : "book",
+        ranges         : ["range_yulia_zhuravleva"],
+        previous_comics: ["comic_jackets_and_revolvers_tome_3"],
+        release_at     : {year: 2021, month: 9, day: 24}
+    },
+    comic_exlibrium_second_life_22                   : {
+        name            : "Экслибриум. Жизнь вторая #22 Бабочки в горсти",
+        number          : "22",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_5"],
+        previous_comics : ["comic_exlibrium_second_life_21"],
+        next_comics     : ["comic_exlibrium_second_life_23"],
+        release_at      : {year: 2021, month: 9, day: 28}
+    },
+    comic_plague_doctor_10                           : {
+        name            : "Чумной Доктор №10",
+        number          : "10",
+        type            : "single",
+        ranges          : ["range_plague_doctor"],
+        including_comics: ["comic_plague_doctor_tome_3"],
+        previous_comics : ["comic_plague_doctor_9"],
+        next_comics     : ["comic_winter_special_plague_doctor"],
+        release_at      : {year: 2021, month: 9, day: 29}
+    },
+    comic_community_4                                : {
+        name            : "Громада №4",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_bubble_legends", "range_childrens_comics"],
+        including_comics: ["comic_community"],
+        previous_comics : ["comic_community_3"],
+        release_at      : {year: 2021, month: 10}
+    },
+    comic_bubble_halloween                           : {
+        name      : "BUBBLE Хэллоуин",
+        type      : "single",
+        ranges    : ["range_bubble_legends"],
+        release_at: {year: 2021, month: 10}
+    },
+    comic_krutiks_introduction_to_the_academy        : {
+        name      : "Крутиксы. Знакомство с академией",
+        type      : "single",
+        ranges    : ["range_childrens_comics"],
+        release_at: {year: 2021, month: 10}
+    },
+    comic_major_igor_grom_4                          : {
+        name            : "Майор Игорь Гром #04 Фейк, часть 4",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_tome_1"],
+        previous_comics : ["comic_major_igor_grom_3"],
+        next_comics     : ["comic_major_igor_grom_5"],
+        release_at      : {year: 2021, month: 10, day: 6}
+    },
+    comic_major_igor_grom_tome_1                     : {
+        name            : "Майор Игорь Гром. Том 1. Фейк",
+        number          : "1",
+        type            : "book",
+        ranges          : ["range_major_igor_grom"],
+        contained_comics: ["comic_major_igor_grom_1", "comic_major_igor_grom_2", "comic_major_igor_grom_3",
+                           "comic_major_igor_grom_4"],
+        previous_comics : ["comic_igor_grom_tome_10"],
+        next_comics     : ["comic_major_igor_grom_tome_2"],
+        release_at      : {year: 2021, month: 10, day: 7}
+    },
+    comic_exlibrium_second_life_tome_5               : {
+        name            : "Экслибриум. Жизнь вторая. Том 5. Венец творения",
+        number          : "5",
+        type            : "book",
+        ranges          : ["range_exlibrium_second_life"],
+        contained_comics: ["comic_exlibrium_second_life_19", "comic_exlibrium_second_life_20",
+                           "comic_exlibrium_second_life_21", "comic_exlibrium_second_life_22"],
+        previous_comics : ["comic_exlibrium_second_life_tome_4"],
+        next_comics     : ["comic_exlibrium_second_life_tome_6"],
+        release_at      : {year: 2021, month: 10, day: 19}
+    },
+    comic_falcon_3                                   : {
+        name            : "Сокол #3 В клетке, часть 1",
+        number          : "3",
+        type            : "single",
+        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        including_comics: ["comic_falcon_tome_1"],
+        previous_comics : ["comic_falcon_2"],
+        next_comics     : ["comic_falcon_4"],
+        release_at      : {year: 2021, month: 10, day: 20}
+    },
+    comic_plague_doctor_tome_3                       : {
+        name            : "Чумной Доктор. Том 3: На руинах",
+        number          : "3",
+        type            : "book",
+        ranges          : ["range_plague_doctor"],
+        contained_comics: ["comic_plague_doctor_9", "comic_plague_doctor_10", "comic_winter_special_plague_doctor"],
+        previous_comics : ["comic_plague_doctor_tome_2"],
+        next_comics     : ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        release_at      : {year: 2021, month: 10, day: 25}
+    },
+    comic_exlibrium_second_life_23                   : {
+        name            : "Экслибриум. Жизнь вторая #23 Петля, часть 1",
+        number          : "23",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_6"],
+        previous_comics : ["comic_exlibrium_second_life_22"],
+        next_comics     : ["comic_exlibrium_second_life_24"],
+        release_at      : {year: 2021, month: 10, day: 28}
+    },
+    comic_major_igor_grom_x_plague_doctor_11         : {
+        name            : "Майор Игорь Гром x Чумной Доктор №11 Брат твой по мраку",
+        number          : "11",
+        type            : "single",
+        ranges          : ["range_crossovers", "range_plague_doctor", "range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        previous_comics : ["comic_winter_special_plague_doctor", "comic_major_igor_grom_8"],
+        next_comics     : ["comic_major_igor_grom_x_plague_doctor_12"],
+        release_at      : {year: 2021, month: 10, day: 30}
+    },
+    comic_special_volkov_inferno                     : {
+        name      : "Спецвыпуск \"Волков. Пекло\"",
+        type      : "single",
+        ranges    : ["range_plague_doctor"],
+        release_at: {year: 2021, month: 10, day: 30}
+    },
+    comic_world_tome_5                               : {
+        name            : "МИР. Том 5: Второе солнце",
+        number          : "5",
+        type            : "book",
+        ranges          : ["range_world"],
+        contained_comics: ["comic_world_8", "comic_world_9"],
+        previous_comics : ["comic_world_tome_4"],
+        release_at      : {year: 2021, month: 10, day: 30}
+    },
+    comic_world_8                                    : {
+        name            : "МИР #08 Второе солнце, часть 1",
+        number          : "8",
+        type            : "single",
+        ranges          : ["range_world"],
+        including_comics: ["comic_world_tome_5"],
+        previous_comics : ["comic_world_7"],
+        next_comics     : ["comic_world_9"],
+        release_at      : {year: 2021, month: 11, day: 3}
+    },
+    comic_falcon_4                                   : {
+        name            : "Сокол #4 В клетке, часть 2",
+        number          : "4",
+        type            : "single",
+        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        including_comics: ["comic_falcon_tome_1"],
+        previous_comics : ["comic_falcon_3"],
+        release_at      : {year: 2021, month: 11, day: 10}
+    },
+    comic_major_igor_grom_5                          : {
+        name            : "Майор Игорь Гром #05 Идеальный хищник, часть 1",
+        number          : "5",
+        type            : "single",
+        ranges          : ["range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_tome_2"],
+        previous_comics : ["comic_major_igor_grom_4"],
+        next_comics     : ["comic_major_igor_grom_6"],
+        release_at      : {year: 2021, month: 11, day: 19}
+    },
+    comic_thief_of_shadows_tome_1                    : {
+        name            : "Вор Теней",
+        number          : "1",
+        type            : "book",
+        ranges          : ["range_thief_of_shadows"],
+        contained_comics: ["comic_thief_of_shadows_1", "comic_thief_of_shadows_2", "comic_thief_of_shadows_3",
+                           "comic_thief_of_shadows_4", "comic_thief_of_shadows_5"],
+        release_at      : {year: 2021, month: 11, day: 26}
+    },
+    comic_exlibrium_second_life_24                   : {
+        name            : "Экслибриум. Жизнь вторая #24 Петля, часть 2",
+        number          : "24",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_6"],
+        previous_comics : ["comic_exlibrium_second_life_23"],
+        next_comics     : ["comic_exlibrium_second_life_25"],
+        release_at      : {year: 2021, month: 11, day: 28}
+    },
+    comic_major_igor_grom_x_plague_doctor_12         : {
+        name            : "Майор Игорь Гром x Чумной Доктор №12 Брат твой по мраку, часть 2",
+        number          : "12",
+        type            : "single",
+        ranges          : ["range_crossovers", "range_plague_doctor", "range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        previous_comics : ["comic_major_igor_grom_x_plague_doctor_11"],
+        next_comics     : ["comic_major_igor_grom_x_plague_doctor_13"],
+        release_at      : {year: 2021, month: 11, day: 30}
+    },
+    comic_special_prokopenko_grom_at_sunrise_single  : {
+        name            : "Спецвыпуск «Прокопенко. Гром на восходе»",
+        type            : "single",
+        ranges          : ["range_major_grom", "range_bubble_legends", "range_major_igor_grom"],
+        including_comics: ["comic_special_prokopenko_grom_at_sunrise_book"],
+        previous_comics : ["comic_major_grom_50"],
+        release_at      : {year: 2021, month: 12}
+    },
+    comic_special_prokopenko_grom_at_sunrise_book    : {
+        name            : "Спецвыпуск «Прокопенко. Гром на восходе»",
+        type            : "book",
+        ranges          : ["range_major_grom", "range_bubble_legends", "range_major_igor_grom"],
+        contained_comics: ["comic_special_prokopenko_grom_at_sunrise_single"],
+        previous_comics : ["comic_major_grom_tome_8"],
+        release_at      : {year: 2021, month: 12}
+    },
+    comic_soyuzmultcomics                            : {
+        name      : "СоюзМультКомикс",
+        type      : "book",
+        ranges    : ["range_childrens_comics"],
+        release_at: {year: 2021, month: 12}
+    },
+    comic_world_9                                    : {
+        name            : "МИР #09 Второе солнце, часть 2",
+        number          : "9",
+        type            : "single",
+        ranges          : ["range_world"],
+        including_comics: ["comic_world_tome_5"],
+        previous_comics : ["comic_world_8"],
+        next_comics     : ["comic_world_10"],
+        release_at      : {year: 2021, month: 12, day: 1}
+    },
+    comic_thief_of_shadows_6                         : {
+        name           : "Вор Теней #6 Дача Ложных Показаний",
+        number         : "6",
+        type           : "single",
+        ranges         : ["range_thief_of_shadows"],
+        previous_comics: ["comic_thief_of_shadows_5"],
+        next_comics    : ["comic_thief_of_shadows_7"],
+        release_at     : {year: 2021, month: 12, day: 8}
+    },
+    comic_lady_of_radiance_1                         : {
+        name       : "Леди Сияния, глава 1",
+        number     : "1",
+        type       : "single",
+        ranges     : ["range_bubble_manga"],
+        next_comics: ["comic_lady_of_radiance_2"],
+        release_at : {year: 2021, month: 12, day: 15}
+    },
+    comic_unicorn_conspiracy_tome_2                  : {
+        name           : "Заговор единорогов. Том 2. Свои",
+        number         : "2",
+        type           : "book",
+        ranges         : ["range_alex_hatchett"],
+        previous_comics: ["comic_unicorn_conspiracy_tome_1"],
+        release_at     : {year: 2021, month: 12, day: 18}
+    },
+    comic_major_igor_grom_6                          : {
+        name            : "Майор Игорь Гром #06 Идеальный хищник, часть 2",
+        number          : "6",
+        type            : "single",
+        ranges          : ["range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_tome_2"],
+        previous_comics : ["comic_major_igor_grom_5"],
+        next_comics     : ["comic_major_igor_grom_7"],
+        release_at      : {year: 2021, month: 12, day: 23}
+    },
+    comic_exlibrium_second_life_25                   : {
+        name            : "Экслибриум. Жизнь вторая #25 Чёрные капли, часть 1",
+        number          : "25",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_6"],
+        previous_comics : ["comic_exlibrium_second_life_24"],
+        next_comics     : ["comic_exlibrium_second_life_26"],
+        release_at      : {year: 2021, month: 12, day: 28}
+    },
+    comic_thief_of_shadows_7                         : {
+        name           : "Вор Теней #7 Невидимая рука рынка",
+        number         : "7",
+        type           : "single",
+        ranges         : ["range_thief_of_shadows"],
+        previous_comics: ["comic_thief_of_shadows_6"],
+        next_comics    : ["comic_thief_of_shadows_8"],
+        release_at     : {year: 2022, month: 1, day: 7}
+    },
+    comic_lady_of_radiance_2                         : {
+        name           : "Леди Сияния, глава 2",
+        number         : "2",
+        type           : "single",
+        ranges         : ["range_bubble_manga"],
+        previous_comics: ["comic_lady_of_radiance_1"],
+        next_comics    : ["comic_lady_of_radiance_3"],
+        release_at     : {year: 2022, month: 1, day: 14}
+    },
+    comic_major_igor_grom_7                          : {
+        name            : "Майор Игорь Гром #07 Идеальный хищник, часть 3",
+        number          : "7",
+        type            : "single",
+        ranges          : ["range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_tome_2"],
+        previous_comics : ["comic_major_igor_grom_6"],
+        next_comics     : ["comic_major_igor_grom_8"],
+        release_at      : {year: 2022, month: 1, day: 28}
+    },
+    comic_exlibrium_second_life_26                   : {
+        name            : "Экслибриум. Жизнь вторая #26 Чёрные капли, часть 2",
+        number          : "26",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_6"],
+        previous_comics : ["comic_exlibrium_second_life_25"],
+        next_comics     : ["comic_exlibrium_second_life_27"],
+        release_at      : {year: 2022, month: 1, day: 28}
+    },
+    comic_krutiks_cool_comics_book_2                 : {
+        name            : "Крутиксы. Крутые комиксы. Книга 2",
+        number          : "2",
+        type            : "book",
+        ranges          : ["range_childrens_comics"],
+        contained_comics: ["comic_krutiks_3_2018", "comic_krutiks_4_2018", "comic_krutiks_5_2018",
+                           "comic_krutiks_6_2018", "comic_krutiks_7_2018"],
+        previous_comics : ["comic_krutiks_cool_comics_book_1"],
+        release_at      : {year: 2022, month: 2}
+    },
+    comic_thief_of_shadows_8                         : {
+        name           : "Вор Теней #8 Кладбище времени",
+        number         : "8",
+        type           : "single",
+        ranges         : ["range_thief_of_shadows"],
+        previous_comics: ["comic_thief_of_shadows_7"],
+        next_comics    : ["comic_thief_of_shadows_9"],
+        release_at     : {year: 2022, month: 2, day: 4}
+    },
+    comic_lady_of_radiance_3                         : {
+        name           : "Леди Сияния, глава 3",
+        number         : "3",
+        type           : "single",
+        ranges         : ["range_bubble_manga"],
+        previous_comics: ["comic_lady_of_radiance_2"],
+        next_comics    : ["comic_lady_of_radiance_4"],
+        release_at     : {year: 2022, month: 2, day: 11}
+    },
+    comic_major_igor_grom_x_plague_doctor_13         : {
+        name            : "Майор Игорь Гром x Чумной Доктор №13 Брат твой по мраку, часть 3",
+        number          : "13",
+        type            : "single",
+        ranges          : ["range_crossovers", "range_plague_doctor", "range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        previous_comics : ["comic_major_igor_grom_x_plague_doctor_12"],
+        next_comics     : ["comic_major_igor_grom_x_plague_doctor_14"],
+        release_at      : {year: 2022, month: 2, day: 18}
+    },
+    comic_golden_warrior                             : {
+        name      : "Золотой Воин",
+        type      : "book",
+        ranges    : ["range_madibek_musabekov"],
+        release_at: {year: 2022, month: 2, day: 18}
+    },
+    comic_exlibrium_second_life_27                   : {
+        name            : "Экслибриум. Жизнь вторая #27 Чёрные капли, часть 3",
+        number          : "27",
+        type            : "single",
+        ranges          : ["range_exlibrium_second_life"],
+        including_comics: ["comic_exlibrium_second_life_tome_6"],
+        previous_comics : ["comic_exlibrium_second_life_26"],
+        next_comics     : ["comic_exlibrium_second_life_28"],
+        release_at      : {year: 2022, month: 2, day: 28}
+    },
+    comic_major_igor_grom_x_plague_doctor_14         : {
+        name            : "Майор Игорь Гром x Чумной Доктор №14 Брат твой по мраку, эпилог",
+        number          : "14",
+        type            : "single",
+        ranges          : ["range_crossovers", "range_plague_doctor", "range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        previous_comics : ["comic_major_igor_grom_x_plague_doctor_13"],
+        next_comics     : ["comic_plague_doctor_15"],
+        release_at      : {year: 2022, month: 3, day: 2}
+    },
+    comic_thief_of_shadows_9                         : {
+        name           : "Вор Теней #9 Пятая... лишняя!",
+        number         : "9",
+        type           : "single",
+        ranges         : ["range_thief_of_shadows"],
+        previous_comics: ["comic_thief_of_shadows_8"],
+        release_at     : {year: 2022, month: 3, day: 4}
+    },
+    comic_lady_of_radiance_4                         : {
+        name           : "Леди Сияния, глава 4",
+        number         : "4",
+        type           : "single",
+        ranges         : ["range_bubble_manga"],
+        previous_comics: ["comic_lady_of_radiance_3"],
+        release_at     : {year: 2022, month: 3, day: 11}
+    },
+    comic_plague_doctor_15                           : {
+        name           : "Чумной Доктор №15 Махаон, часть 1",
+        number         : "15",
+        type           : "single",
+        ranges         : ["range_plague_doctor"],
+        previous_comics: ["comic_major_igor_grom_x_plague_doctor_14"],
+        release_at     : {year: 2022, month: 3, day: 18}
+    },
+    comic_exlibrium_second_life_28                   : {
+        name           : "Экслибриум. Жизнь вторая #28 Чёрные капли, часть 4",
+        number         : "28",
+        type           : "single",
+        ranges         : ["range_exlibrium_second_life"],
+        previous_comics: ["comic_exlibrium_second_life_27"],
+        release_at     : {year: 2022, month: 3, day: 28}
+    },
+    comic_major_igor_grom_8                          : {
+        name            : "Майор Игорь Гром #08 Идеальный хищник, часть 4",
+        number          : "8",
+        type            : "single",
+        ranges          : ["range_major_igor_grom"],
+        including_comics: ["comic_major_igor_grom_tome_2"],
+        previous_comics : ["comic_major_igor_grom_7"],
+        next_comics     : ["comic_major_igor_grom_x_plague_doctor_11"],
+        release_at      : {year: 2022, month: 3, day: 31}
+    },
+    comic_major_igor_grom_x_plague_doctor_book_4     : {
+        name            : "Майор Игорь Гром x Чумной Доктор. Книга 4. Брат твой по мраку",
+        number          : "4",
+        type            : "book",
+        ranges          : ["range_crossovers", "range_plague_doctor", "range_major_igor_grom"],
+        contained_comics: ["comic_major_igor_grom_x_plague_doctor_11", "comic_major_igor_grom_x_plague_doctor_12",
+                           "comic_major_igor_grom_x_plague_doctor_13", "comic_major_igor_grom_x_plague_doctor_14"],
+        previous_comics : ["comic_plague_doctor_tome_3", "comic_major_igor_grom_tome_2"],
+        release_at      : {year: 2022, month: 3, day: 31}
+    },
+    comic_world_10                                   : {
+        name           : "МИР #10 Серый лёд, часть 1",
+        number         : "10",
+        type           : "single",
+        ranges         : ["range_world"],
+        previous_comics: ["comic_world_9"],
+        release_at     : {year: 2022, month: 4, day: 8}
+    },
+    comic_major_igor_grom_tome_2                     : {
+        name            : "Майор Игорь Гром. Том 2. Идеальный хищник",
+        number          : "2",
+        type            : "book",
+        ranges          : ["range_major_igor_grom"],
+        contained_comics: ["comic_major_igor_grom_5", "comic_major_igor_grom_6", "comic_major_igor_grom_7",
+                           "comic_major_igor_grom_8"],
+        previous_comics : ["comic_major_igor_grom_tome_1"],
+        next_comics     : ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        release_at      : {year: 2022, month: 4, day: 8}
+    },
+    comic_exlibrium_second_life_tome_6               : {
+        name            : "Экслибриум. Жизнь вторая. Том 6. Чёрные капли",
+        number          : "6",
+        type            : "book",
+        ranges          : ["range_exlibrium_second_life"],
+        contained_comics: ["comic_exlibrium_second_life_23", "comic_exlibrium_second_life_24",
+                           "comic_exlibrium_second_life_25", "comic_exlibrium_second_life_26",
+                           "comic_exlibrium_second_life_27"],
+        previous_comics : ["comic_exlibrium_second_life_tome_5"],
+        release_at      : {year: 2022, month: 4, day: 8}
     },
     comic_sister_kukki                               : {
         name            : "Сестра. Кукки",
@@ -6892,65 +8560,12 @@ export const comics: Comics = {
 
     node_red_fury_tome_1966: {name: "Красная Фурия:\n1966", color: colors.krasnaya_furiya, size: sizes.tome},
 
-    node_exlibrium_tome_krasnaya_stroka: {name: "Экслибриум.\nКрасная строка", color: colors.ekslibrium_krasnaya_stroka, size: sizes.tome},
-
     node_meteora_single_storibuk: {name: "Метеора.\nСторибук.\nОбманный манёвр", color: colors.meteora, size: sizes.single},
 
-    node_besoboy_vol_2_single_40: {name: "Бесобой Vol.2 #40\nСмерть и ангел,\nчасть 1", color: colors.besoboy_vol_2, number: "40", size: sizes.single},
-    node_besoboy_vol_2_single_41: {name: "Бесобой Vol.2 #41\nСмерть и ангел,\nчасть 2", color: colors.besoboy_vol_2, number: "41", size: sizes.single},
-    node_besoboy_vol_2_single_42: {name: "Бесобой Vol.2 #42\nИх легионы", color: colors.besoboy_vol_2, number: "42", size: sizes.single},
-    node_besoboy_vol_2_single_43: {name: "Бесобой Vol.2 #43\nВойна в Аду,\nчасть 1", color: colors.besoboy_vol_2, number: "43", size: sizes.single},
-    node_besoboy_vol_2_single_44: {name: "Бесобой Vol.2 #44\nВойна в Аду,\nчасть 2", color: colors.besoboy_vol_2, number: "44", size: sizes.single},
-    node_besoboy_vol_2_single_45: {name: "Бесобой Vol.2 #45\nВойна в Аду,\nчасть 3", color: colors.besoboy_vol_2, number: "45", size: sizes.single},
-    node_besoboy_vol_2_single_46: {name: "Бесобой Vol.2 #46\nМесть", color: colors.besoboy_vol_2, number: "46", size: sizes.single},
-    node_besoboy_vol_2_single_47: {name: "Бесобой Vol.2 #47\nДостоин,\nчасть 1", color: colors.besoboy_vol_2, number: "47", size: sizes.single},
-    node_besoboy_vol_2_single_48: {name: "Бесобой Vol.2 #48\nДостоин,\nчасть 2", color: colors.besoboy_vol_2, number: "48", size: sizes.single},
-    node_besoboy_vol_2_single_49: {name: "Бесобой Vol.2 #49\nТворец", color: colors.besoboy_vol_2, number: "49", size: sizes.single},
-    node_besoboy_vol_2_single_50: {name: "Бесобой Vol.2 #50\nДанила", color: colors.besoboy_vol_2, number: "50", size: sizes.single},
-
-    node_besoboy_vol_2_tome_8: {name: "Бесобой Vol.2 том 8:\nВа-банк", color: colors.besoboy_vol_2, number: "8", size: sizes.tome},
-    node_besoboy_vol_2_tome_9: {name: "Бесобой Vol.2 том 9:\nСмерть и Ангел", color: colors.besoboy_vol_2, number: "9", size: sizes.tome},
-    node_besoboy_vol_2_tome_10: {name: "Бесобой Vol.2 том 10:\nВойна в Аду", color: colors.besoboy_vol_2, number: "10", size: sizes.tome},
-    node_besoboy_vol_2_tome_11: {name: "Бесобой Vol.2 том 11:\nТворец", color: colors.besoboy_vol_2, number: "11", size: sizes.tome},
-
-    node_igor_grom_single_39: {name: "Игорь Гром #39\nВне закона,\nчасть 5", color: colors.igor_grom, number: "39", size: sizes.single},
-    node_igor_grom_single_40: {name: "Игорь Гром #40\nМёртвая вода,\nчасть 1", color: colors.igor_grom, number: "40", size: sizes.single},
-    node_igor_grom_single_41: {name: "Игорь Гром #41\nМёртвая вода,\nчасть 2", color: colors.igor_grom, number: "41", size: sizes.single},
-    node_igor_grom_single_42: {name: "Игорь Гром #42\nМёртвая вода,\nчасть 3", color: colors.igor_grom, number: "42", size: sizes.single},
-    node_igor_grom_single_43: {name: "Игорь Гром #43\nМёртвая вода,\nчасть 4", color: colors.igor_grom, number: "43", size: sizes.single},
-    node_igor_grom_single_44: {name: "Игорь Гром #44\nМёртвая вода,\nчасть 5", color: colors.igor_grom, number: "44", size: sizes.single},
-    node_igor_grom_single_45: {name: "Игорь Гром #45\nЖивая вода", color: colors.igor_grom, number: "45", size: sizes.single},
-    node_igor_grom_single_46: {name: "Игорь Гром #46\nЧужими глазами,\nчасть 1", color: colors.igor_grom, number: "46", size: sizes.single},
-    node_igor_grom_single_47: {name: "Игорь Гром #47\nЧужими глазами,\nчасть 2", color: colors.igor_grom, number: "47", size: sizes.single},
-    node_igor_grom_single_48: {name: "Игорь Гром #48\nЧужими глазами,\nчасть 3", color: colors.igor_grom, number: "48", size: sizes.single},
-    node_igor_grom_single_49: {name: "Игорь Гром #49\nЧужими глазами,\nчасть 4", color: colors.igor_grom, number: "49", size: sizes.single},
-    node_igor_grom_single_50: {name: "Игорь Гром #50\nЗавтра", color: colors.igor_grom, number: "50", size: sizes.single},
-
-    node_igor_grom_tome_7: {name: "Игорь Гром том 7:\nГори-гори ясно", color: colors.igor_grom, number: "7", size: sizes.tome},
-    node_igor_grom_tome_8: {name: "Игорь Гром том 8:\nВне закона", color: colors.igor_grom, number: "8", size: sizes.tome},
-    node_igor_grom_tome_9: {name: "Игорь Гром том 9:\nМёртвая вода", color: colors.igor_grom, number: "9", size: sizes.tome},
-    node_igor_grom_tome_10: {name: "Игорь Гром том 10:\nЧужими глазами", color: colors.igor_grom, number: "10", size: sizes.tome},
-
-    node_allies_single_40: {name: "Союзники #40\nЦепная реакция,\nчасть 3", color: colors.soyuzniki, number: "40", size: sizes.single},
-    node_allies_single_41: {name: "Союзники #41\nЦепная реакция,\nчасть 4", color: colors.soyuzniki, number: "41", size: sizes.single},
     node_allies_single_spetsvypusk_idilliya: {name: "Союзники.\nСпецвыпуск.\nИдиллия", color: colors.soyuzniki, size: sizes.single},
 
-    node_allies_tome_8: {name: "Союзники том 8:\nЦепная реакция", color: colors.soyuzniki, number: "8", size: sizes.tome},
-
-    node_igor_ugor_single_2_5: {name: "Игорь угорь 2.5:\nPress У to pay respect", color: colors.igor_ugor, number: "2.5", size: sizes.single},
     node_igor_ugor_single_3: {name: "Игорь угорь 3:\nМрачный перезапуск", color: colors.igor_ugor, number: "3", size: sizes.single},
 
-    node_jackets_and_revolvers_tome_4: {name: "Пиджаки и револьверы. Том 4:\nКровные узы", color: colors.copyright_comics.julia_zhuravleva, number: "4", size: sizes.tome},
-
-    node_zagovor_yedinorogov_tome_2: {name: "Заговор единорогов. Том 2.\nСвои", color: colors.copyright_comics.alex_hatchett, number: "2", size: sizes.tome},
-
-    node_tagar_tome_3_single_1: {name: "Тагар. Том 3,\nглава 1", color: colors.tagar, number: "1", size: sizes.single},
-    node_tagar_tome_3_single_2: {name: "Тагар. Том 3,\nглава 2", color: colors.tagar, number: "2", size: sizes.single},
-    node_tagar_tome_3_single_3: {name: "Тагар. Том 3,\nглава 3", color: colors.tagar, number: "3", size: sizes.single},
-    node_tagar_tome_3_single_4: {name: "Тагар. Том 3,\nглава 4", color: colors.tagar, number: "4", size: sizes.single},
-    node_tagar_tome_3_single_5: {name: "Тагар. Том 3,\nглава 5", color: colors.tagar, number: "5", size: sizes.single},
-    node_tagar_tome_3_single_6: {name: "Тагар. Том 3,\nглава 6", color: colors.tagar, number: "6", size: sizes.single},
-    node_tagar_tome_3_single_7: {name: "Тагар. Том 3,\nглава 7", color: colors.tagar, number: "7", size: sizes.single},
     node_tagar_tome_4_single_1: {name: "Тагар. Том 4,\nглава 1", color: colors.tagar, number: "1", size: sizes.single},
     node_tagar_tome_4_single_2: {name: "Тагар. Том 4,\nглава 2", color: colors.tagar, number: "2", size: sizes.single},
     node_tagar_tome_4_single_3: {name: "Тагар. Том 4,\nглава 3", color: colors.tagar, number: "3", size: sizes.single},
@@ -6958,62 +8573,25 @@ export const comics: Comics = {
     node_tagar_tome_4_single_5: {name: "Тагар. Том 4,\nглава 5", color: colors.tagar, number: "5", size: sizes.single},
     node_tagar_tome_4_single_6: {name: "Тагар. Том 4,\nглава 6", color: colors.tagar, number: "6", size: sizes.single},
 
-    node_tagar_tome_3: {name: "Тагар. Том 3", color: colors.tagar, number: "3", size: sizes.tome},
     node_tagar_tome_4: {name: "Тагар. Том 4", color: colors.tagar, number: "4", size: sizes.tome},
 
-    node_krutiks_tome_1: {name: "Крутиксы.\nКрутые комиксы.\nКнига 1", color: colors.krutiksy, number: "1", size: sizes.tome},
-    node_krutiks_tome_2: {name: "Крутиксы.\nКрутые комиксы.\nКнига 2", color: colors.krutiksy, number: "2", size: sizes.tome},
     node_krutiks_tome_3: {name: "Крутиксы.\nКрутые комиксы.\nКнига 3", color: colors.krutiksy, number: "3", size: sizes.tome},
 
-    node_vor_teney_single_3: {name: "Вор Теней #3\nТройка коллекторов", color: colors.vor_teney, number: "3", size: sizes.single},
-    node_vor_teney_single_4: {name: "Вор Теней #4\nЧетвёртый глаз", color: colors.vor_teney, number: "4", size: sizes.single},
-    node_vor_teney_single_5: {name: "Вор Теней #5\nСомнамбулический поиск неведомого Коврова", color: colors.vor_teney, number: "5", size: sizes.single},
-    node_vor_teney_single_6: {name: "Вор Теней #6\nДача Ложных Показаний", color: colors.vor_teney, number: "6", size: sizes.single},
-    node_vor_teney_single_7: {name: "Вор Теней #7\nНевидимая рука рынка", color: colors.vor_teney, number: "7", size: sizes.single},
-    node_vor_teney_single_8: {name: "Вор Теней #8\nКладбище времени", color: colors.vor_teney, number: "8", size: sizes.single},
-    node_vor_teney_single_9: {name: "Вор Теней #9\nПятая... лишняя!", color: colors.vor_teney, number: "9", size: sizes.single},
-    node_vor_teney_single_10: {name: "Вор Теней #10\nЧудовищная свадьба бывшей.\nСпецвыпуск", color: colors.vor_teney, number: "10", size: sizes.single},
-    node_vor_teney_single_11: {name: "Вор Теней #11\nЛетальный лифт", color: colors.vor_teney, number: "11", size: sizes.single},
-    node_vor_teney_single_12: {name: "Вор Теней #12\nОтгадки в остроге и катастрофическая контр-банд", color: colors.vor_teney, number: "12", size: sizes.single},
+    node_thief_of_shadows_single_10: {name: "Вор Теней #10\nЧудовищная свадьба бывшей.\nСпецвыпуск", color: colors.vor_teney, number: "10", size: sizes.single},
+    node_thief_of_shadows_single_11: {name: "Вор Теней #11\nЛетальный лифт", color: colors.vor_teney, number: "11", size: sizes.single},
+    node_thief_of_shadows_single_12: {name: "Вор Теней #12\nОтгадки в остроге и катастрофическая контр-банд", color: colors.vor_teney, number: "12", size: sizes.single},
 
-    node_vor_teney_tome_1: {name: "Вор Теней", color: colors.vor_teney, number: "1", size: sizes.tome},
-    node_vor_teney_tome_2: {name: "Вор Теней. Том 2", color: colors.vor_teney, number: "2", size: sizes.tome},
-    node_vor_teney_tome_3: {name: "Вор Теней. Том 3", color: colors.vor_teney, number: "3", size: sizes.tome},
+    node_thief_of_shadows_tome_2: {name: "Вор Теней. Том 2", color: colors.vor_teney, number: "2", size: sizes.tome},
+    node_thief_of_shadows_tome_3: {name: "Вор Теней. Том 3", color: colors.vor_teney, number: "3", size: sizes.tome},
 
-    node_sokol_single_3: {name: "Сокол #3\nВ клетке,\nчасть 1", color: colors.sokol, number: "3", size: sizes.single},
-    node_sokol_single_4: {name: "Сокол #4\nВ клетке,\nчасть 2", color: colors.sokol, number: "4", size: sizes.single},
-    node_sokol_single_5: {name: "Сокол #5\nСлепое пятно", color: colors.sokol, number: "5", size: sizes.single},
-    node_sokol_single_6: {name: "Сокол #6\nОшибка выжившего.\nЧасть 1", color: colors.sokol, number: "6", size: sizes.single},
-    node_sokol_single_7: {name: "Сокол #7\nОшибка выжившего.\nЧасть 2", color: colors.sokol, number: "7", size: sizes.single},
+    node_falcon_single_5: {name: "Сокол #5\nСлепое пятно", color: colors.sokol, number: "5", size: sizes.single},
+    node_falcon_single_6: {name: "Сокол #6\nОшибка выжившего.\nЧасть 1", color: colors.sokol, number: "6", size: sizes.single},
+    node_falcon_single_7: {name: "Сокол #7\nОшибка выжившего.\nЧасть 2", color: colors.sokol, number: "7", size: sizes.single},
 
-    node_sokol_tome_1: {name: "Сокол. Том 1", color: colors.sokol, number: "1", size: sizes.tome},
-    node_sokol_tome_2: {name: "Сокол. Том 2", color: colors.sokol, number: "2", size: sizes.tome},
+    node_falcon_tome_2: {name: "Сокол. Том 2", color: colors.sokol, number: "2", size: sizes.tome},
 
     node_impuls_tome_1: {name: "Импульс. Том 1.\nВзлёты и падения", color: colors.impuls, number: "1", size: sizes.tome},
 
-    node_exlibrium_second_life_single_6: {name: "Экслибриум.\nЖизнь вторая #06\nКупель Дракона,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "6", size: sizes.single},
-    node_exlibrium_second_life_single_7: {name: "Экслибриум.\nЖизнь вторая #07\nКупель Дракона,\nчасть 3", color: colors.ekslibrium_zhizn_vtoraya, number: "7", size: sizes.single},
-    node_exlibrium_second_life_single_8: {name: "Экслибриум.\nЖизнь вторая #08\nЗамкнутый", color: colors.ekslibrium_zhizn_vtoraya, number: "8", size: sizes.single},
-    node_exlibrium_second_life_single_9: {name: "Экслибриум.\nЖизнь вторая #09\nЩепки,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "9", size: sizes.single},
-    node_exlibrium_second_life_single_10: {name: "Экслибриум.\nЖизнь вторая #10\nЩепки,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "10", size: sizes.single},
-    node_exlibrium_second_life_single_11: {name: "Экслибриум.\nЖизнь вторая #11\nЩепки,\nчасть 3", color: colors.ekslibrium_zhizn_vtoraya, number: "11", size: sizes.single},
-    node_exlibrium_second_life_single_12: {name: "Экслибриум.\nЖизнь вторая #12\nЩепки,\nчасть 4", color: colors.ekslibrium_zhizn_vtoraya, number: "12", size: sizes.single},
-    node_exlibrium_second_life_single_13: {name: "Экслибриум.\nЖизнь вторая #13\nТочка сборки,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "13", size: sizes.single},
-    node_exlibrium_second_life_single_14: {name: "Экслибриум.\nЖизнь вторая #14\nТочка сборки,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "14", size: sizes.single},
-    node_exlibrium_second_life_single_15: {name: "Экслибриум.\nЖизнь вторая #15\nПраздник жизни,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "15", size: sizes.single},
-    node_exlibrium_second_life_single_16: {name: "Экслибриум.\nЖизнь вторая #16\nПраздник жизни,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "16", size: sizes.single},
-    node_exlibrium_second_life_single_17: {name: "Экслибриум.\nЖизнь вторая #17\nПраздник жизни,\nчасть 3", color: colors.ekslibrium_zhizn_vtoraya, number: "17", size: sizes.single},
-    node_exlibrium_second_life_single_18: {name: "Экслибриум.\nЖизнь вторая #18\nПраздник жизни,\nчасть 4", color: colors.ekslibrium_zhizn_vtoraya, number: "18", size: sizes.single},
-    node_exlibrium_second_life_single_19: {name: "Экслибриум.\nЖизнь вторая #19\nВенец творения,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "19", size: sizes.single},
-    node_exlibrium_second_life_single_20: {name: "Экслибриум.\nЖизнь вторая #20\nВенец творения,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "20", size: sizes.single},
-    node_exlibrium_second_life_single_21: {name: "Экслибриум.\nЖизнь вторая #21\nВенец творения,\nчасть 3", color: colors.ekslibrium_zhizn_vtoraya, number: "21", size: sizes.single},
-    node_exlibrium_second_life_single_22: {name: "Экслибриум.\nЖизнь вторая #22\nБабочки в горсти", color: colors.ekslibrium_zhizn_vtoraya, number: "22", size: sizes.single},
-    node_exlibrium_second_life_single_23: {name: "Экслибриум.\nЖизнь вторая #23\nПетля,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "23", size: sizes.single},
-    node_exlibrium_second_life_single_24: {name: "Экслибриум.\nЖизнь вторая #24\nПетля,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "24", size: sizes.single},
-    node_exlibrium_second_life_single_25: {name: "Экслибриум.\nЖизнь вторая #25\nЧёрные капли,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "25", size: sizes.single},
-    node_exlibrium_second_life_single_26: {name: "Экслибриум.\nЖизнь вторая #26\nЧёрные капли,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "26", size: sizes.single},
-    node_exlibrium_second_life_single_27: {name: "Экслибриум.\nЖизнь вторая #27\nЧёрные капли,\nчасть 3", color: colors.ekslibrium_zhizn_vtoraya, number: "27", size: sizes.single},
-    node_exlibrium_second_life_single_28: {name: "Экслибриум.\nЖизнь вторая #28\nЧёрные капли,\nчасть 4", color: colors.ekslibrium_zhizn_vtoraya, number: "28", size: sizes.single},
     node_exlibrium_second_life_single_29: {name: "Экслибриум.\nЖизнь вторая #29\nЧёрные капли,\nчасть 5", color: colors.ekslibrium_zhizn_vtoraya, number: "29", size: sizes.single},
     node_exlibrium_second_life_single_30: {name: "Экслибриум.\nЖизнь вторая #30\nНовоселье,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "30", size: sizes.single},
     node_exlibrium_second_life_single_31: {name: "Экслибриум.\nЖизнь вторая #31\nНовоселье,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "31", size: sizes.single},
@@ -7025,160 +8603,60 @@ export const comics: Comics = {
     node_exlibrium_second_life_single_37: {name: "Экслибриум.\nЖизнь вторая #37\nБудущее – светло,\nчасть 1", color: colors.ekslibrium_zhizn_vtoraya, number: "37", size: sizes.single},
     node_exlibrium_second_life_single_38: {name: "Экслибриум.\nЖизнь вторая #38\nБудущее – светло,\nчасть 2", color: colors.ekslibrium_zhizn_vtoraya, number: "38", size: sizes.single},
 
-    node_exlibrium_second_life_tome_2: {name: "Экслибриум.\nЖизнь вторая. Том 2.\nКупель дракона", color: colors.ekslibrium_zhizn_vtoraya, number: "2", size: sizes.tome},
-    node_exlibrium_second_life_tome_3: {name: "Экслибриум.\nЖизнь вторая. Том 3.\nЩепки", color: colors.ekslibrium_zhizn_vtoraya, number: "3", size: sizes.tome},
-    node_exlibrium_second_life_tome_4: {name: "Экслибриум.\nЖизнь вторая. Том 4.\nПраздник Жизни", color: colors.ekslibrium_zhizn_vtoraya, number: "4", size: sizes.tome},
-    node_exlibrium_second_life_tome_5: {name: "Экслибриум.\nЖизнь вторая. Том 5.\nВенец творения", color: colors.ekslibrium_zhizn_vtoraya, number: "5", size: sizes.tome},
-    node_exlibrium_second_life_tome_6: {name: "Экслибриум.\nЖизнь вторая. Том 6.\nЧёрные капли", color: colors.ekslibrium_zhizn_vtoraya, number: "6", size: sizes.tome},
     node_exlibrium_second_life_tome_7: {name: "Экслибриум.\nЖизнь вторая. Том 7.\nНовоселье", color: colors.ekslibrium_zhizn_vtoraya, number: "7", size: sizes.tome},
     node_exlibrium_second_life_tome_8: {name: "Экслибриум.\nЖизнь вторая. Том 8:\nПосле дождичка", color: colors.ekslibrium_zhizn_vtoraya, number: "8", size: sizes.tome},
 
-    node_chumnoy_doktor_single_1: {name: "Чумной Доктор", color: colors.chumnoy_doktor, number: "1", size: sizes.single},
-    node_chumnoy_doktor_single_2: {name: "Чумной Доктор №2", color: colors.chumnoy_doktor, number: "2", size: sizes.single},
-    node_chumnoy_doktor_single_3: {name: "Чумной Доктор №3", color: colors.chumnoy_doktor, number: "3", size: sizes.single},
-    node_chumnoy_doktor_single_4: {name: "Чумной Доктор №4", color: colors.chumnoy_doktor, number: "4", size: sizes.single},
-    node_chumnoy_doktor_single_spetsialnyy_zimniy_spetsvypusk: {name: "Специальный зимний\nспецвыпуск \"Чумной Доктор\"", color: colors.chumnoy_doktor, size: sizes.single},
-    node_chumnoy_doktor_single_5: {name: "Чумной Доктор №5", color: colors.chumnoy_doktor, number: "5", size: sizes.single},
-    node_chumnoy_doktor_single_6: {name: "Чумной Доктор №6", color: colors.chumnoy_doktor, number: "6", size: sizes.single},
-    node_chumnoy_doktor_single_7: {name: "Чумной Доктор №7", color: colors.chumnoy_doktor, number: "7", size: sizes.single},
-    node_chumnoy_doktor_single_8: {name: "Чумной Доктор №8", color: colors.chumnoy_doktor, number: "8", size: sizes.single},
-    node_chumnoy_doktor_single_9: {name: "Чумной Доктор №9", color: colors.chumnoy_doktor, number: "9", size: sizes.single},
-    node_chumnoy_doktor_single_10: {name: "Чумной Доктор №10", color: colors.chumnoy_doktor, number: "10", size: sizes.single},
-    node_mayor_igor_grom_x_chumnoy_doktor_single_11: {name: "Майор Игорь Гром x\nЧумной Доктор №11\nБрат твой по мраку", color: colors.mayor_igor_grom_x_chumnoy_doktor, number: "11", size: sizes.single},
-    node_mayor_igor_grom_x_chumnoy_doktor_single_12: {name: "Майор Игорь Гром x\nЧумной Доктор №12\nБрат твой по мраку,\nчасть 2", color: colors.mayor_igor_grom_x_chumnoy_doktor, number: "12", size: sizes.single},
-    node_mayor_igor_grom_x_chumnoy_doktor_single_13: {name: "Майор Игорь Гром x\nЧумной Доктор №13\nБрат твой по мраку,\nчасть 3", color: colors.mayor_igor_grom_x_chumnoy_doktor, number: "13", size: sizes.single},
-    node_mayor_igor_grom_x_chumnoy_doktor_single_14: {name: "Майор Игорь Гром x\nЧумной Доктор №14\nБрат твой по мраку,\nэпилог", color: colors.mayor_igor_grom_x_chumnoy_doktor, number: "14", size: sizes.single},
-    node_chumnoy_doktor_single_15: {name: "Чумной Доктор №15\nМахаон,\nчасть 1", color: colors.chumnoy_doktor, number: "15", size: sizes.single},
-    node_chumnoy_doktor_single_16: {name: "Чумной Доктор №16\nМахаон,\nчасть 2", color: colors.chumnoy_doktor, number: "16", size: sizes.single},
-    node_chumnoy_doktor_single_17: {name: "Чумной Доктор №17\nМахаон,\nчасть 3", color: colors.chumnoy_doktor, number: "17", size: sizes.single},
-    node_chumnoy_doktor_single_18: {name: "Чумной Доктор №18\nМахаон,\nчасть 4", color: colors.chumnoy_doktor, number: "18", size: sizes.single},
-    node_chumnoy_doktor_single_19: {name: "Чумной Доктор №19\nМахаон,\nчасть 5", color: colors.chumnoy_doktor, number: "19", size: sizes.single},
-    node_chumnoy_doktor_single_20: {name: "Чумной Доктор №20\nМахаон,\nчасть 6", color: colors.chumnoy_doktor, number: "20", size: sizes.single},
-    node_chumnoy_doktor_single_21: {name: "Чумной Доктор №21\nРагнар,\nчасть 1", color: colors.chumnoy_doktor, number: "21", size: sizes.single},
-    node_chumnoy_doktor_single_22: {name: "Чумной Доктор №22\nРагнар,\nчасть 2", color: colors.chumnoy_doktor, number: "22", size: sizes.single},
-    node_chumnoy_doktor_single_23: {name: "Чумной Доктор №23\nРагнар,\nчасть 3", color: colors.chumnoy_doktor, number: "23", size: sizes.single},
-    node_chumnoy_doktor_single_24: {name: "Чумной Доктор №24\nРагнар,\nчасть 4", color: colors.chumnoy_doktor, number: "24", size: sizes.single},
-    node_chumnoy_doktor_single_25: {name: "Чумной Доктор №25\nРагнар,\nчасть 5", color: colors.chumnoy_doktor, number: "25", size: sizes.single},
-    node_chumnoy_doktor_single_26: {name: "Чумной Доктор №26\nРагнар,\nчасть 6", color: colors.chumnoy_doktor, number: "26", size: sizes.single},
-    node_chumnoy_doktor_single_27: {name: "Чумной Доктор №27\nРагнар,\nчасть 7", color: colors.chumnoy_doktor, number: "27", size: sizes.single},
-    node_chumnoy_doktor_single_28: {name: "Чумной Доктор №28\nРагнар,\nчасть 8", color: colors.chumnoy_doktor, number: "28", size: sizes.single},
-    node_chumnoy_doktor_single_29: {name: "Чумной Доктор №29\nРагнар,\nэпилог", color: colors.chumnoy_doktor, number: "29", size: sizes.single},
+    node_plague_doctor_single_16: {name: "Чумной Доктор №16\nМахаон,\nчасть 2", color: colors.chumnoy_doktor, number: "16", size: sizes.single},
+    node_plague_doctor_single_17: {name: "Чумной Доктор №17\nМахаон,\nчасть 3", color: colors.chumnoy_doktor, number: "17", size: sizes.single},
+    node_plague_doctor_single_18: {name: "Чумной Доктор №18\nМахаон,\nчасть 4", color: colors.chumnoy_doktor, number: "18", size: sizes.single},
+    node_plague_doctor_single_19: {name: "Чумной Доктор №19\nМахаон,\nчасть 5", color: colors.chumnoy_doktor, number: "19", size: sizes.single},
+    node_plague_doctor_single_20: {name: "Чумной Доктор №20\nМахаон,\nчасть 6", color: colors.chumnoy_doktor, number: "20", size: sizes.single},
+    node_plague_doctor_single_21: {name: "Чумной Доктор №21\nРагнар,\nчасть 1", color: colors.chumnoy_doktor, number: "21", size: sizes.single},
+    node_plague_doctor_single_22: {name: "Чумной Доктор №22\nРагнар,\nчасть 2", color: colors.chumnoy_doktor, number: "22", size: sizes.single},
+    node_plague_doctor_single_23: {name: "Чумной Доктор №23\nРагнар,\nчасть 3", color: colors.chumnoy_doktor, number: "23", size: sizes.single},
+    node_plague_doctor_single_24: {name: "Чумной Доктор №24\nРагнар,\nчасть 4", color: colors.chumnoy_doktor, number: "24", size: sizes.single},
+    node_plague_doctor_single_25: {name: "Чумной Доктор №25\nРагнар,\nчасть 5", color: colors.chumnoy_doktor, number: "25", size: sizes.single},
+    node_plague_doctor_single_26: {name: "Чумной Доктор №26\nРагнар,\nчасть 6", color: colors.chumnoy_doktor, number: "26", size: sizes.single},
+    node_plague_doctor_single_27: {name: "Чумной Доктор №27\nРагнар,\nчасть 7", color: colors.chumnoy_doktor, number: "27", size: sizes.single},
+    node_plague_doctor_single_28: {name: "Чумной Доктор №28\nРагнар,\nчасть 8", color: colors.chumnoy_doktor, number: "28", size: sizes.single},
+    node_plague_doctor_single_29: {name: "Чумной Доктор №29\nРагнар,\nэпилог", color: colors.chumnoy_doktor, number: "29", size: sizes.single},
 
-    node_chumnoy_doktor_tome_1: {name: "Чумной Доктор. Том 1:\nКапкан", color: colors.chumnoy_doktor, number: "1", size: sizes.tome},
-    node_chumnoy_doktor_tome_2: {name: "Чумной Доктор. Том 2:\nЗолотой цветок", color: colors.chumnoy_doktor, number: "2", size: sizes.tome},
-    node_chumnoy_doktor_tome_3: {name: "Чумной Доктор. Том 3:\nНа руинах", color: colors.chumnoy_doktor, number: "3", size: sizes.tome},
-    node_mayor_igor_grom_x_chumnoy_doktor_tome_4: {name: "Майор Игорь Гром x\nЧумной Доктор. Книга 4.\nБрат твой по мраку", color: colors.mayor_igor_grom_x_chumnoy_doktor, number: "4", size: sizes.tome},
-    node_chumnoy_doktor_tome_5: {name: "Чумной Доктор. Том 5:\nМахаон", color: colors.chumnoy_doktor, number: "5", size: sizes.tome},
-    node_chumnoy_doktor_tome_6: {name: "Чумной Доктор. Том 6.\nРагнар.\nЧасть 1", color: colors.chumnoy_doktor, number: "6", size: sizes.tome},
-    node_chumnoy_doktor_tome_7: {name: "Чумной Доктор. Том 7.\nРагнар.\nЧасть 2", color: colors.chumnoy_doktor, number: "7", size: sizes.tome},
+    node_plague_doctor_tome_5: {name: "Чумной Доктор. Том 5:\nМахаон", color: colors.chumnoy_doktor, number: "5", size: sizes.tome},
+    node_plague_doctor_tome_6: {name: "Чумной Доктор. Том 6.\nРагнар.\nЧасть 1", color: colors.chumnoy_doktor, number: "6", size: sizes.tome},
+    node_plague_doctor_tome_7: {name: "Чумной Доктор. Том 7.\nРагнар.\nЧасть 2", color: colors.chumnoy_doktor, number: "7", size: sizes.tome},
 
-    node_redaktor_single: {name: "Редактор:\nСигнальный экземпляр", color: colors.redaktor, size: sizes.single},
+    node_community_single_storibuk: {name: "Громада.\nПлюшевый и опасный.\nСторибук", color: colors.gromada_storibuk, size: sizes.single},
 
-    node_karantinnaya_kniga_tome: {name: "Карантинная книга", color: colors.karantinnaya_kniga, size: sizes.tome},
+    node_world_single_11: {name: "МИР #11\nСерый лёд,\nчасть 2", color: colors.mir, number: "11", size: sizes.single},
+    node_world_single_12: {name: "МИР #12\nЗа гранью", color: colors.mir, number: "12", size: sizes.single},
+    node_world_single_13: {name: "МИР #13\nСыновья,\nчасть 1", color: colors.mir, number: "13", size: sizes.single},
+    node_world_single_14: {name: "МИР #14\nСыновья,\nчасть 2", color: colors.mir, number: "14", size: sizes.single},
+    node_world_single_15: {name: "МИР #15\nЧужие флаги,\nчасть 1", color: colors.mir, number: "15", size: sizes.single},
+    node_world_single_16: {name: "МИР #16\nЧужие флаги,\nчасть 2", color: colors.mir, number: "16", size: sizes.single},
+    node_world_single_17: {name: "МИР #17\nЧужие флаги,\nчасть 3", color: colors.mir, number: "17", size: sizes.single},
 
-    node_nechistaya_sila_single_1: {name: "Нечистая Сила #01\nЗаложные покойники", color: colors.nechistaya_sila, number: "1", size: sizes.single},
-    node_nechistaya_sila_single_2: {name: "Нечистая Сила #02\nДорогая подачка", color: colors.nechistaya_sila, number: "2", size: sizes.single},
-    node_nechistaya_sila_single_3: {name: "Нечистая Сила #03\nТвоё место в саду", color: colors.nechistaya_sila, number: "3", size: sizes.single},
-    node_nechistaya_sila_single_4: {name: "Нечистая Сила #04\nНе слишком ли много желаний для одного джинна?", color: colors.nechistaya_sila, number: "4", size: sizes.single},
+    node_world_tome_6: {name: "МИР. Том 6:\nСерый лёд", color: colors.mir, number: "6", size: sizes.tome},
+    node_world_tome_7: {name: "МИР. Том 7:\nСыновья", color: colors.mir, number: "7", size: sizes.tome},
+    node_world_tome_8: {name: "МИР. Том 8:\nЧужие флаги", color: colors.mir, number: "8", size: sizes.tome},
 
-    node_nechistaya_sila_tome: {name: "Нечистая Сила", color: colors.nechistaya_sila, size: sizes.tome},
+    node_major_igor_grom_single_9: {name: "Майор Игорь Гром #09\nУлыбка висельника,\nчасть 1", color: colors.mayor_igor_grom, number: "9", size: sizes.single},
+    node_major_igor_grom_single_10: {name: "Майор Игорь Гром #10\nУлыбка висельника,\nчасть 2", color: colors.mayor_igor_grom, number: "10", size: sizes.single},
+    node_major_igor_grom_single_11: {name: "Майор Игорь Гром #11\nУлыбка висельника,\nчасть 3", color: colors.mayor_igor_grom, number: "11", size: sizes.single},
+    node_major_igor_grom_single_12: {name: "Майор Игорь Гром #12\nУлыбка висельника,\nчасть 4", color: colors.mayor_igor_grom, number: "12", size: sizes.single},
+    node_major_igor_grom_single_13: {name: "Майор Игорь Гром #13\nГде-то под Питером,\nчасть 1", color: colors.mayor_igor_grom, number: "13", size: sizes.single},
+    node_major_igor_grom_single_14: {name: "Майор Игорь Гром #14\nГде-то под Питером,\nчасть 2", color: colors.mayor_igor_grom, number: "14", size: sizes.single},
+    node_major_igor_grom_single_15: {name: "Майор Игорь Гром #15\nГде-то под Питером,\nчасть 3", color: colors.mayor_igor_grom, number: "15", size: sizes.single},
+    node_major_igor_grom_single_16: {name: "Майор Игорь Гром #16\nГде-то под Питером,\nчасть 4", color: colors.mayor_igor_grom, number: "16", size: sizes.single},
+    node_major_igor_grom_single_spetsvypusk_dolg: {name: "Майор Игорь Гром.\nСпецвыпуск.\nДолг", color: colors.mayor_igor_grom, size: sizes.single},
+    node_major_igor_grom_single_17: {name: "Майор Игорь Гром #17\nОтпуск,\nчасть 1", color: colors.mayor_igor_grom, number: "17", size: sizes.single},
+    node_major_igor_grom_single_18: {name: "Майор Игорь Гром #18\nОтпуск,\nчасть 2", color: colors.mayor_igor_grom, number: "18", size: sizes.single},
+    node_major_igor_grom_single_19: {name: "Майор Игорь Гром #19\nОтпуск,\nчасть 3", color: colors.mayor_igor_grom, number: "19", size: sizes.single},
+    node_major_igor_grom_single_20: {name: "Майор Игорь Гром #20\nОтпуск,\nчасть 4", color: colors.mayor_igor_grom, number: "20", size: sizes.single},
+    node_major_igor_grom_single_21: {name: "Майор Игорь Гром #21\nПравда,\nчасть 1", color: colors.mayor_igor_grom, number: "21", size: sizes.single},
 
-    node_izbrannitsa_luny_single_1: {name: "Избранница Луны,\nглава 1", color: colors.izbrannitsa_luny, number: "1", size: sizes.single},
-    node_izbrannitsa_luny_single_2: {name: "Избранница Луны,\nглава 2", color: colors.izbrannitsa_luny, number: "2", size: sizes.single},
-    node_izbrannitsa_luny_single_3: {name: "Избранница Луны,\nглава 3", color: colors.izbrannitsa_luny, number: "3", size: sizes.single},
-    node_izbrannitsa_luny_single_4: {name: "Избранница Луны,\nглава 4", color: colors.izbrannitsa_luny, number: "4", size: sizes.single},
-    node_izbrannitsa_luny_single_5: {name: "Избранница Луны,\nглава 5", color: colors.izbrannitsa_luny, number: "5", size: sizes.single},
-    node_izbrannitsa_luny_single_6: {name: "Избранница Луны,\nглава 6", color: colors.izbrannitsa_luny, number: "6", size: sizes.single},
-
-    node_izbrannitsa_luny_tome: {name: "Избранница Луны", color: colors.izbrannitsa_luny, size: sizes.tome},
-
-    node_gromada_single_1: {name: "Громада", color: colors.gromada, number: "1", size: sizes.single},
-    node_gromada_single_2: {name: "Громада №2", color: colors.gromada, number: "2", size: sizes.single},
-    node_gromada_single_3: {name: "Громада №3", color: colors.gromada, number: "3", size: sizes.single},
-    node_gromada_single_4: {name: "Громада №4", color: colors.gromada, number: "4", size: sizes.single},
-    node_gromada_single_storibuk: {name: "Громада.\nПлюшевый и опасный.\nСторибук", color: colors.gromada_storibuk, size: sizes.single},
-
-    node_gromada_tome: {name: "Громада", color: colors.gromada, size: sizes.tome},
-
-    node_mir_single_1: {name: "МИР #01\nПервый", color: colors.mir, number: "1", size: sizes.single},
-    node_mir_single_2: {name: "МИР #02\nДве беды,\nчасть 1", color: colors.mir, number: "2", size: sizes.single},
-    node_mir_single_3: {name: "МИР #03\nДве беды,\nчасть 2", color: colors.mir, number: "3", size: sizes.single},
-    node_mir_single_4: {name: "МИР #04\nПрощай, оружие,\nчасть 1", color: colors.mir, number: "4", size: sizes.single},
-    node_mir_single_5: {name: "МИР #05\nПрощай, оружие,\nчасть 2", color: colors.mir, number: "5", size: sizes.single},
-    node_mir_single_vechnaya_pamyat: {name: "МИР:\nВечная Память", color: colors.mir, size: sizes.single},
-    node_mir_single_6: {name: "МИР #06\nТебя слышит враг,\nчасть 1", color: colors.mir, number: "6", size: sizes.single},
-    node_mir_single_7: {name: "МИР #07\nТебя слышит враг,\nчасть 2", color: colors.mir, number: "7", size: sizes.single},
-    node_mir_single_8: {name: "МИР #08\nВторое солнце,\nчасть 1", color: colors.mir, number: "8", size: sizes.single},
-    node_mir_single_9: {name: "МИР #09\nВторое солнце,\nчасть 2", color: colors.mir, number: "9", size: sizes.single},
-    node_mir_single_10: {name: "МИР #10\nСерый лёд,\nчасть 1", color: colors.mir, number: "10", size: sizes.single},
-    node_mir_single_11: {name: "МИР #11\nСерый лёд,\nчасть 2", color: colors.mir, number: "11", size: sizes.single},
-    node_mir_single_12: {name: "МИР #12\nЗа гранью", color: colors.mir, number: "12", size: sizes.single},
-    node_mir_single_13: {name: "МИР #13\nСыновья,\nчасть 1", color: colors.mir, number: "13", size: sizes.single},
-    node_mir_single_14: {name: "МИР #14\nСыновья,\nчасть 2", color: colors.mir, number: "14", size: sizes.single},
-    node_mir_single_15: {name: "МИР #15\nЧужие флаги,\nчасть 1", color: colors.mir, number: "15", size: sizes.single},
-    node_mir_single_16: {name: "МИР #16\nЧужие флаги,\nчасть 2", color: colors.mir, number: "16", size: sizes.single},
-    node_mir_single_17: {name: "МИР #17\nЧужие флаги,\nчасть 3", color: colors.mir, number: "17", size: sizes.single},
-
-    node_mir_tome_1: {name: "МИР. Том 1:\nПервый", color: colors.mir, number: "1", size: sizes.tome},
-    node_mir_tome_2: {name: "МИР. Том 2:\nДве беды", color: colors.mir, number: "2", size: sizes.tome},
-    node_mir_tome_3: {name: "МИР. Том 3:\nПрощай, оружие", color: colors.mir, number: "3", size: sizes.tome},
-    node_mir_tome_4: {name: "МИР. Книга 4.\nТебя слышит враг", color: colors.mir, number: "4", size: sizes.tome},
-    node_mir_tome_5: {name: "МИР. Том 5:\nВторое солнце", color: colors.mir, number: "5", size: sizes.tome},
-    node_mir_tome_6: {name: "МИР. Том 6:\nСерый лёд", color: colors.mir, number: "6", size: sizes.tome},
-    node_mir_tome_7: {name: "МИР. Том 7:\nСыновья", color: colors.mir, number: "7", size: sizes.tome},
-    node_mir_tome_8: {name: "МИР. Том 8:\nЧужие флаги", color: colors.mir, number: "8", size: sizes.tome},
-
-    node_mayor_grom_geroy_navsegda_single_1: {name: "Майор Гром:\nГерой Навсегда,\nчасть 1", color: colors.mayor_grom, number: "1", size: sizes.single},
-
-    node_mayor_grom_geroy_navsegda_tome: {name: "Майор Гром:\nГерой Навсегда", color: colors.mayor_grom, size: sizes.tome},
-
-    node_turbocarp_tome: {name: "ТурбоКарп", color: colors.turbocarp, size: sizes.tome},
-
-    node_mayor_igor_grom_single_1: {name: "Майор Игорь Гром #01\nФейк,\nчасть 1", color: colors.mayor_igor_grom, number: "1", size: sizes.single},
-    node_mayor_igor_grom_single_2: {name: "Майор Игорь Гром #02\nФейк,\nчасть 2", color: colors.mayor_igor_grom, number: "2", size: sizes.single},
-    node_mayor_igor_grom_single_3: {name: "Майор Игорь Гром #03\nФейк,\nчасть 3", color: colors.mayor_igor_grom, number: "3", size: sizes.single},
-    node_mayor_igor_grom_single_4: {name: "Майор Игорь Гром #04\nФейк,\nчасть 4", color: colors.mayor_igor_grom, number: "4", size: sizes.single},
-    node_mayor_igor_grom_single_5: {name: "Майор Игорь Гром #05\nИдеальный хищник,\nчасть 1", color: colors.mayor_igor_grom, number: "5", size: sizes.single},
-    node_mayor_igor_grom_single_6: {name: "Майор Игорь Гром #06\nИдеальный хищник,\nчасть 2", color: colors.mayor_igor_grom, number: "6", size: sizes.single},
-    node_mayor_igor_grom_single_7: {name: "Майор Игорь Гром #07\nИдеальный хищник,\nчасть 3", color: colors.mayor_igor_grom, number: "7", size: sizes.single},
-    node_mayor_igor_grom_single_8: {name: "Майор Игорь Гром #08\nИдеальный хищник,\nчасть 4", color: colors.mayor_igor_grom, number: "8", size: sizes.single},
-    node_mayor_igor_grom_single_9: {name: "Майор Игорь Гром #09\nУлыбка висельника,\nчасть 1", color: colors.mayor_igor_grom, number: "9", size: sizes.single},
-    node_mayor_igor_grom_single_10: {name: "Майор Игорь Гром #10\nУлыбка висельника,\nчасть 2", color: colors.mayor_igor_grom, number: "10", size: sizes.single},
-    node_mayor_igor_grom_single_11: {name: "Майор Игорь Гром #11\nУлыбка висельника,\nчасть 3", color: colors.mayor_igor_grom, number: "11", size: sizes.single},
-    node_mayor_igor_grom_single_12: {name: "Майор Игорь Гром #12\nУлыбка висельника,\nчасть 4", color: colors.mayor_igor_grom, number: "12", size: sizes.single},
-    node_mayor_igor_grom_single_13: {name: "Майор Игорь Гром #13\nГде-то под Питером,\nчасть 1", color: colors.mayor_igor_grom, number: "13", size: sizes.single},
-    node_mayor_igor_grom_single_14: {name: "Майор Игорь Гром #14\nГде-то под Питером,\nчасть 2", color: colors.mayor_igor_grom, number: "14", size: sizes.single},
-    node_mayor_igor_grom_single_15: {name: "Майор Игорь Гром #15\nГде-то под Питером,\nчасть 3", color: colors.mayor_igor_grom, number: "15", size: sizes.single},
-    node_mayor_igor_grom_single_16: {name: "Майор Игорь Гром #16\nГде-то под Питером,\nчасть 4", color: colors.mayor_igor_grom, number: "16", size: sizes.single},
-    node_mayor_igor_grom_single_spetsvypusk_dolg: {name: "Майор Игорь Гром.\nСпецвыпуск.\nДолг", color: colors.mayor_igor_grom, size: sizes.single},
-    node_mayor_igor_grom_single_17: {name: "Майор Игорь Гром #17\nОтпуск,\nчасть 1", color: colors.mayor_igor_grom, number: "17", size: sizes.single},
-    node_mayor_igor_grom_single_18: {name: "Майор Игорь Гром #18\nОтпуск,\nчасть 2", color: colors.mayor_igor_grom, number: "18", size: sizes.single},
-    node_mayor_igor_grom_single_19: {name: "Майор Игорь Гром #19\nОтпуск,\nчасть 3", color: colors.mayor_igor_grom, number: "19", size: sizes.single},
-    node_mayor_igor_grom_single_20: {name: "Майор Игорь Гром #20\nОтпуск,\nчасть 4", color: colors.mayor_igor_grom, number: "20", size: sizes.single},
-    node_mayor_igor_grom_single_21: {name: "Майор Игорь Гром #21\nПравда,\nчасть 1", color: colors.mayor_igor_grom, number: "21", size: sizes.single},
-
-    node_mayor_igor_grom_tome_1: {name: "Майор Игорь Гром. Том 1.\nФейк", color: colors.mayor_igor_grom, number: "1", size: sizes.tome},
-    node_mayor_igor_grom_tome_2: {name: "Майор Игорь Гром. Том 2.\nИдеальный хищник", color: colors.mayor_igor_grom, number: "2", size: sizes.tome},
-    node_mayor_igor_grom_tome_3: {name: "Майор Игорь Гром. Том 3.\nУлыбка Висельника", color: colors.mayor_igor_grom, number: "3", size: sizes.tome},
-    node_mayor_igor_grom_tome_4: {name: "Майор Игорь Гром. Том 4.\nГде-то под Питером", color: colors.mayor_igor_grom, number: "4", size: sizes.tome},
-    node_mayor_igor_grom_tome_5: {name: "Майор Игорь Гром. Том 5.\nОтпуск", color: colors.mayor_igor_grom, number: "5", size: sizes.tome},
-
-    node_bubble_khellouin_single: {name: "BUBBLE Хэллоуин", color: colors.bubble_khellouin, size: sizes.single},
-
-    node_krutiksy_znakomstvo_s_akademiyey_single: {name: "Крутиксы.\nЗнакомство с академией", color: colors.krutiksy, size: sizes.single},
-
-    node_spetsvypusk_volkov_peklo_single: {name: "Спецвыпуск \"Волков. Пекло\"", color: colors.spetsvypusk_volkov_peklo, size: sizes.single},
-
-    node_spetsvypusk_prokopenko_single: {name: "Спецвыпуск «Прокопенко. Гром на восходе»", color: colors.spetsvypusk_prokopenko, size: sizes.single},
-
-    node_soyuzmultkomiks_single: {name: "СоюзМультКомикс", color: colors.soyuzmultkomiks, size: sizes.single},
-
-    node_ledi_siyaniya_single_1: {name: "Леди Сияния,\nглава 1", color: colors.ledi_siyaniya, number: "1", size: sizes.single},
-    node_ledi_siyaniya_single_2: {name: "Леди Сияния,\nглава 2", color: colors.ledi_siyaniya, number: "2", size: sizes.single},
-    node_ledi_siyaniya_single_3: {name: "Леди Сияния,\nглава 3", color: colors.ledi_siyaniya, number: "3", size: sizes.single},
-    node_ledi_siyaniya_single_4: {name: "Леди Сияния,\nглава 4", color: colors.ledi_siyaniya, number: "4", size: sizes.single},
-
-    node_zolotoy_voin_tome: {name: "Золотой Воин", color: colors.zolotoy_voin, size: sizes.tome},
+    node_major_igor_grom_tome_3: {name: "Майор Игорь Гром. Том 3.\nУлыбка Висельника", color: colors.mayor_igor_grom, number: "3", size: sizes.tome},
+    node_major_igor_grom_tome_4: {name: "Майор Игорь Гром. Том 4.\nГде-то под Питером", color: colors.mayor_igor_grom, number: "4", size: sizes.tome},
+    node_major_igor_grom_tome_5: {name: "Майор Игорь Гром. Том 5.\nОтпуск", color: colors.mayor_igor_grom, number: "5", size: sizes.tome},
 
     node_spetsvypusk_faeton_single: {name: "Спецвыпуск \"Фаэтон\"", color: colors.spetsvypusk_faeton, size: sizes.single},
 

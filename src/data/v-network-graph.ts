@@ -1,5 +1,6 @@
 import {colorMixingHex} from "./color_functions";
 import {comics} from "./comics";
+import {getComicIdToNodeId, getNodeIdToComicId} from "./helper_functions";
 import {ranges} from "./ranges";
 import * as vNG from "v-network-graph";
 import Edge from "../interfaces/Edge";
@@ -15,24 +16,16 @@ function getArrayInArray(needle, haystack) {
     return check;
 }
 
-function getComicIdToNodeId(comic_id: string) {
-    return `node_${comic_id.replace("comic_", "")}`;
-}
-
 function getComicsIdToEdgeId(source_comic_id: string, target_comic_id: string) {
     return `edge_${source_comic_id.replace("comic_", "")}_${target_comic_id.replace("comic_", "")}`;
 }
 
 function getMaxOfArray(numArray: number[]) {
-    return Math.max.apply(null, numArray);
+    return Math.max.apply(null, numArray.filter(number => !isNaN(number)));
 }
 
 function getMinOfArray(numArray: number[]) {
-    return Math.min.apply(null, numArray);
-}
-
-function getNodeIdToComicId(node_id: string) {
-    return `comic_${node_id.replace("node_", "")}`;
+    return Math.min.apply(null, numArray.filter(number => !isNaN(number)));
 }
 
 function getTextWrapping(text: string, line_length: number) {
@@ -61,10 +54,31 @@ const edges: Record<string, Edge> = {};
 const layouts: vNG.Layouts = {nodes: {}};
 const positions_keys = Object.keys(positions);
 
+function offsetOfIncludingNodes(comic_id: string) {
+    const comic = comics[comic_id];
+    const layouts_nodes_id = Object.keys(layouts.nodes);
+    const including_nodes_id = comic.including_comics
+        ? comic.including_comics
+            .map((including_comic_id) => getComicIdToNodeId(including_comic_id))
+            .filter((including_node_id) => layouts_nodes_id.indexOf(including_node_id) !== -1)
+        : [];
+
+    if (including_nodes_id.length) {
+        including_nodes_id.forEach((including_node_id) => {
+            const contained_comics = comics[getNodeIdToComicId(including_node_id)].contained_comics;
+            const contained_nodes_x = contained_comics
+                .map((contained_comic_id) => getComicIdToNodeId(contained_comic_id))
+                .filter((contained_node_id) => layouts_nodes_id.indexOf(contained_node_id) !== -1)
+                .map((contained_node_id) => layouts.nodes[contained_node_id].x);
+
+            layouts.nodes[including_node_id].x = (getMinOfArray(contained_nodes_x) + getMaxOfArray(contained_nodes_x)) / 2;
+        });
+    }
+}
+
 function offsetOfNextNodes(comic_id: string) {
     const comic = comics[comic_id];
     const layouts_nodes_id = Object.keys(layouts.nodes);
-    const layouts_node = layouts.nodes[getComicIdToNodeId(comic_id)];
     const next_nodes_id = comic.next_comics
         ? comic.next_comics
             .map((next_comic_id) => getComicIdToNodeId(next_comic_id))
@@ -72,6 +86,8 @@ function offsetOfNextNodes(comic_id: string) {
         : [];
 
     if (next_nodes_id.length) {
+        const layouts_node = layouts.nodes[getComicIdToNodeId(comic_id)];
+
         next_nodes_id.forEach((next_node_id) => {
             if (layouts.nodes[next_node_id].x <= layouts_node.x) {
                 layouts.nodes[next_node_id].x = layouts_node.x + positions.difference.x;
@@ -156,7 +172,7 @@ Object.keys(comics).forEach((comic_id) => {
     let node_x, node_y;
 
     if (positions_keys.indexOf(comic_id) !== -1 && positions[comic_id].x_func) {
-        node_x = positions[comic_id].x_func(layouts.nodes);
+        node_x = positions[comic_id].x_func(layouts.nodes, comic_id);
     } else {
         if (comic.contained_comics) {
             const contained_nodes_x = comic.contained_comics
@@ -167,7 +183,8 @@ Object.keys(comics).forEach((comic_id) => {
             node_x = (getMinOfArray(contained_nodes_x) + getMaxOfArray(contained_nodes_x)) / 2;
         } else {
             const layouts_nodes_x = layouts_nodes_id
-                .map((layouts_node_id) => layouts.nodes[layouts_node_id].x);
+                .map((layouts_node_id) => layouts.nodes[layouts_node_id].x)
+                .sort((a, b) => a - b);
             const max_layouts_node_x = getMaxOfArray(layouts_nodes_x);
 
             if (comic.previous_comics) {
@@ -216,6 +233,8 @@ Object.keys(comics).forEach((comic_id) => {
     layouts.nodes[node_id] = {x: node_x, y: node_y};
 
     offsetOfNextNodes(comic_id);
+
+    offsetOfIncludingNodes(comic_id);
 });
 
 const paths: vNG.Paths = {};
