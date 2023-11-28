@@ -60,7 +60,7 @@ const layoutsText = computed(() => {
 <style scoped lang="scss">
 .bubble-universe-map {
   position: relative;
-  height: calc(100vh - 61px);
+  height: calc(100vh - var(--header-height) - var(--header-border-width) - 5px);
 }
 
 .layouts {
