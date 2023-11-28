@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-body, h2, p, ul {
+body, h1, h2, p, ul {
     margin: 0;
     margin-block: 0;
     margin-inline: 0;
@@ -45,10 +45,10 @@ button:focus, button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
-h1 {
+/*h1 {
     font-size: 3.2em;
     line-height: 1.1;
-}
+}*/
 
 ul {
     list-style-type: none;
@@ -171,6 +171,53 @@ ul {
     position: absolute;
     inset: 0;
 }
+
+.comic {
+    --comic-color: #000000;
+}
+
+.comic__title {}
+
+.comic__description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #000000;
+    border-radius: 0.5rem;
+}
+
+.comic__section {}
+
+.section-comic {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-comic__title {
+    font-size: 1rem;
+}
+
+.section-comic__link {
+    position: relative;
+}
+
+.section-comic__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 1px;
+    background-color: var(--comic-color, #000000);
+    transition: all ease .3s;
+}
+
+.section-comic__link:hover, .section-comic__link:focus-visible { color: #ffffff; }
+
+.section-comic__link:hover::after, .section-comic__link:focus-visible::after { height: 100%; }
 
 @media (prefers-color-scheme: light) {
     :root {

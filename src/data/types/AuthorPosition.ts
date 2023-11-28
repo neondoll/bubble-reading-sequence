@@ -1,0 +1,1 @@
+export type AuthorPosition = "artist" | "colorist" | "screenwriter";

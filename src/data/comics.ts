@@ -1,6 +1,6 @@
-import {Comics} from "../interfaces";
+import {Comics} from "./types/Comics";
 
-export const comics: Comics = {
+const comics: Comics = {
     comic_besoboy_1                                                         : {
         name            : "Бесобой #1 Имя ему Бесобой, часть 1",
         number          : "1",
@@ -5831,7 +5831,8 @@ export const comics: Comics = {
         including_comics: ["comic_exlibrium_tome_9"],
         previous_comics : ["comic_exlibrium_49"],
         next_comics     : ["comic_exlibrium_blank_sheet_single", "comic_exlibrium_second_life",
-                           "comic_exlibrium_red_line_single"],
+                           "comic_exlibrium_red_line_single",
+                           "comic_exlibrium_colors_of_our_feelings_coloring_dossier"],
         release_at      : {year: 2018, month: 12, day: 29}
     },
     comic_meteora_50                                                        : {
@@ -6148,7 +6149,7 @@ export const comics: Comics = {
         type            : "single",
         ranges          : ["range_exlibrium", "range_bubble_legends", "range_exlibrium_second_life"],
         including_comics: ["comic_exlibrium_blank_sheet_book"],
-        previous_comics : ["comic_exlibrium_50", "comic_exlibrium_second_life_38"],
+        previous_comics : ["comic_exlibrium_50", "comic_exlibrium_second_life_39"],
         release_at      : {year: 2019, month: 4, day: 21}
     },
     comic_exlibrium_blank_sheet_book                                        : {
@@ -6156,7 +6157,7 @@ export const comics: Comics = {
         type            : "book",
         ranges          : ["range_exlibrium", "range_bubble_legends", "range_exlibrium_second_life"],
         contained_comics: ["comic_exlibrium_blank_sheet_single"],
-        previous_comics : ["comic_exlibrium_tome_9"],
+        previous_comics : ["comic_exlibrium_tome_9", "comic_exlibrium_second_life_39"],
         release_at      : {year: 2019, month: 4, day: 21}
     },
     comic_besoboy_vol_2_tome_4                                              : {
@@ -6506,7 +6507,7 @@ export const comics: Comics = {
                            "comic_exlibrium_50"],
         previous_comics : ["comic_exlibrium_tome_8"],
         next_comics     : ["comic_exlibrium_blank_sheet_book", "comic_exlibrium_second_life_tome_1",
-                           "comic_exlibrium_red_line_book"],
+                           "comic_exlibrium_red_line_book", "comic_exlibrium_colors_of_our_feelings_coloring_dossier"],
         release_at      : {year: 2019, month: 10, day: 3}
     },
     comic_meteora_tome_9                                                    : {
@@ -7156,22 +7157,22 @@ export const comics: Comics = {
         next_comics     : ["comic_community_2"],
         release_at      : {year: 2020, month: 8, day: 3}
     },
-    comic_world_1                                                           : {
+    comic_mir_1                                                             : {
         name            : "МИР #01 Первый",
         number          : "1",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_1"],
-        next_comics     : ["comic_world_2"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_1"],
+        next_comics     : ["comic_mir_2"],
         release_at      : {year: 2020, month: 8, day: 7}
     },
-    comic_world_tome_1                                                      : {
+    comic_mir_tome_1                                                        : {
         name            : "МИР. Том 1: Первый",
         number          : "1",
         type            : "book",
-        ranges          : ["range_world"],
-        contained_comics: ["comic_world_1"],
-        next_comics     : ["comic_world_tome_2"],
+        ranges          : ["range_mir"],
+        contained_comics: ["comic_mir_1"],
+        next_comics     : ["comic_mir_tome_2"],
         release_at      : {year: 2020, month: 8, day: 7}
     },
     comic_chosen_one_of_the_moon_2                                          : {
@@ -7336,24 +7337,24 @@ export const comics: Comics = {
         ranges    : ["range_turbocarp"],
         release_at: {year: 2020, month: 10}
     },
-    comic_world_2                                                           : {
+    comic_mir_2                                                             : {
         name            : "МИР #02 Две беды, часть 1",
         number          : "2",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_2"],
-        previous_comics : ["comic_world_1"],
-        next_comics     : ["comic_world_3"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_2"],
+        previous_comics : ["comic_mir_1"],
+        next_comics     : ["comic_mir_3"],
         release_at      : {year: 2020, month: 10, day: 3}
     },
-    comic_world_tome_2                                                      : {
+    comic_mir_tome_2                                                        : {
         name            : "МИР. Том 2: Две беды",
         number          : "2",
         type            : "book",
-        ranges          : ["range_world"],
-        contained_comics: ["comic_world_2", "comic_world_3"],
-        previous_comics : ["comic_world_tome_1"],
-        next_comics     : ["comic_world_tome_3"],
+        ranges          : ["range_mir"],
+        contained_comics: ["comic_mir_2", "comic_mir_3"],
+        previous_comics : ["comic_mir_tome_1"],
+        next_comics     : ["comic_mir_tome_3"],
         release_at      : {year: 2020, month: 10, day: 3}
     },
     comic_plague_doctor_2                                                   : {
@@ -7406,14 +7407,14 @@ export const comics: Comics = {
         next_comics     : ["comic_exlibrium_second_life_12"],
         release_at      : {year: 2020, month: 10, day: 28}
     },
-    comic_world_3                                                           : {
+    comic_mir_3                                                             : {
         name            : "МИР #03 Две беды, часть 2",
         number          : "3",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_2"],
-        previous_comics : ["comic_world_2"],
-        next_comics     : ["comic_world_4"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_2"],
+        previous_comics : ["comic_mir_2"],
+        next_comics     : ["comic_mir_4"],
         release_at      : {year: 2020, month: 11, day: 3}
     },
     comic_chosen_one_of_the_moon_5                                          : {
@@ -7617,14 +7618,14 @@ export const comics: Comics = {
         next_comics     : ["comic_igor_grom_48"],
         release_at      : {year: 2020, month: 12, day: 25}
     },
-    comic_world_tome_3                                                      : {
+    comic_mir_tome_3                                                        : {
         name            : "МИР. Том 3: Прощай, оружие",
         number          : "3",
         type            : "book",
-        ranges          : ["range_world"],
-        contained_comics: ["comic_world_4", "comic_world_5"],
-        previous_comics : ["comic_world_tome_2"],
-        next_comics     : ["comic_world_tome_4"],
+        ranges          : ["range_mir"],
+        contained_comics: ["comic_mir_4", "comic_mir_5"],
+        previous_comics : ["comic_mir_tome_2"],
+        next_comics     : ["comic_mir_tome_4"],
         release_at      : {year: 2020, month: 12, day: 25}
     },
     comic_plague_doctor_4                                                   : {
@@ -7727,14 +7728,14 @@ export const comics: Comics = {
         next_comics     : ["comic_besoboy_vol_2_50"],
         release_at      : {year: 2021, month: 2, day: 8}
     },
-    comic_world_4                                                           : {
+    comic_mir_4                                                             : {
         name            : "МИР #04 Прощай, оружие, часть 1",
         number          : "4",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_3"],
-        previous_comics : ["comic_world_3"],
-        next_comics     : ["comic_world_5"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_3"],
+        previous_comics : ["comic_mir_3"],
+        next_comics     : ["comic_mir_5"],
         release_at      : {year: 2021, month: 2, day: 14}
     },
     comic_besoboy_vol_2_tome_9                                              : {
@@ -7789,14 +7790,14 @@ export const comics: Comics = {
         next_comics     : ["comic_exlibrium_second_life_tome_4"],
         release_at      : {year: 2021, month: 3, day: 5}
     },
-    comic_world_5                                                           : {
+    comic_mir_5                                                             : {
         name            : "МИР #05 Прощай, оружие, часть 2",
         number          : "5",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_3"],
-        previous_comics : ["comic_world_4"],
-        next_comics     : ["comic_world_6"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_3"],
+        previous_comics : ["comic_mir_4"],
+        next_comics     : ["comic_mir_6"],
         release_at      : {year: 2021, month: 3, day: 24}
     },
     comic_exlibrium_second_life_16                                          : {
@@ -7819,19 +7820,20 @@ export const comics: Comics = {
         next_comics     : ["comic_exlibrium_second_life_18"],
         release_at      : {year: 2021, month: 4, day: 28}
     },
-    comic_world_eternal_memory_single                                       : {
+    comic_mir_eternal_memory_single                                         : {
         name            : "МИР: Вечная Память",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_eternal_memory_book"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_eternal_memory_book"],
+        previous_comics : ["comic_mir_18"],
         release_at      : {year: 2021, month: 5, day: 9}
     },
-    comic_world_eternal_memory_book                                         : {
+    comic_mir_eternal_memory_book                                           : {
         name            : "МИР: Вечная Память",
         type            : "book",
-        ranges          : ["range_world"],
-        contained_comics: ["comic_world_eternal_memory_single"],
-        previous_comics : ["comic_world_tome_8"],
+        ranges          : ["range_mir"],
+        contained_comics: ["comic_mir_eternal_memory_single"],
+        previous_comics : ["comic_mir_18"],
         release_at      : {year: 2021, month: 5, day: 9}
     },
     comic_igor_grom_50                                                      : {
@@ -7854,14 +7856,14 @@ export const comics: Comics = {
         next_comics     : ["comic_besoboy_and_planeswalkers_single", "comic_quarantine_book_single"],
         release_at      : {year: 2021, month: 5, day: 13}
     },
-    comic_world_tome_4                                                      : {
+    comic_mir_tome_4                                                        : {
         name            : "МИР. Книга 4. Тебя слышит враг",
         number          : "4",
         type            : "book",
-        ranges          : ["range_world"],
-        contained_comics: ["comic_world_6", "comic_world_7"],
-        previous_comics : ["comic_world_tome_3"],
-        next_comics     : ["comic_world_tome_5"],
+        ranges          : ["range_mir"],
+        contained_comics: ["comic_mir_6", "comic_mir_7"],
+        previous_comics : ["comic_mir_tome_3"],
+        next_comics     : ["comic_mir_tome_5"],
         release_at      : {year: 2021, month: 5, day: 17}
     },
     comic_plague_doctor_6                                                   : {
@@ -7884,14 +7886,14 @@ export const comics: Comics = {
         next_comics     : ["comic_exlibrium_second_life_19"],
         release_at      : {year: 2021, month: 5, day: 28}
     },
-    comic_world_6                                                           : {
+    comic_mir_6                                                             : {
         name            : "МИР #06 Тебя слышит враг, часть 1",
         number          : "6",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_4"],
-        previous_comics : ["comic_world_5"],
-        next_comics     : ["comic_world_7"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_4"],
+        previous_comics : ["comic_mir_5"],
+        next_comics     : ["comic_mir_7"],
         release_at      : {year: 2021, month: 6, day: 4}
     },
     comic_igor_grom_tome_10                                                 : {
@@ -7947,14 +7949,14 @@ export const comics: Comics = {
         next_comics     : ["comic_exlibrium_second_life_tome_5"],
         release_at      : {year: 2021, month: 7, day: 8}
     },
-    comic_world_7                                                           : {
+    comic_mir_7                                                             : {
         name            : "МИР #07 Тебя слышит враг, часть 2",
         number          : "7",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_4"],
-        previous_comics : ["comic_world_6"],
-        next_comics     : ["comic_world_8"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_4"],
+        previous_comics : ["comic_mir_6"],
+        next_comics     : ["comic_mir_8"],
         release_at      : {year: 2021, month: 7, day: 9}
     },
     comic_exlibrium_second_life_20                                          : {
@@ -7982,7 +7984,7 @@ export const comics: Comics = {
         type            : "single",
         ranges          : ["range_exlibrium", "range_bubble_legends", "range_exlibrium_second_life"],
         including_comics: ["comic_exlibrium_red_line_book"],
-        previous_comics : ["comic_exlibrium_50", "comic_exlibrium_second_life_38"],
+        previous_comics : ["comic_exlibrium_50", "comic_exlibrium_second_life_39"],
         release_at      : {year: 2021, month: 7, day: 30}
     },
     comic_exlibrium_red_line_book                                           : {
@@ -7990,7 +7992,7 @@ export const comics: Comics = {
         type            : "book",
         ranges          : ["range_exlibrium", "range_bubble_legends", "range_exlibrium_second_life"],
         contained_comics: ["comic_exlibrium_red_line_single"],
-        previous_comics : ["comic_exlibrium_tome_9"],
+        previous_comics : ["comic_exlibrium_tome_9", "comic_exlibrium_second_life_39"],
         release_at      : {year: 2021, month: 7, day: 30}
     },
     comic_community_2                                                       : {
@@ -8239,7 +8241,7 @@ export const comics: Comics = {
         type            : "single",
         ranges          : ["range_plague_doctor"],
         including_comics: ["comic_special_volkov_inferno_book"],
-        previous_comics : ["comic_plague_doctor_29"],
+        previous_comics : ["comic_plague_doctor_30"],
         release_at      : {year: 2021, month: 10, day: 30}
     },
     comic_special_volkov_inferno_book                                       : {
@@ -8247,27 +8249,27 @@ export const comics: Comics = {
         type            : "book",
         ranges          : ["range_plague_doctor"],
         contained_comics: ["comic_special_volkov_inferno_single"],
-        previous_comics : ["comic_plague_doctor_tome_7"],
+        previous_comics : ["comic_plague_doctor_30"],
         release_at      : {year: 2021, month: 10, day: 30}
     },
-    comic_world_tome_5                                                      : {
+    comic_mir_tome_5                                                        : {
         name            : "МИР. Том 5: Второе солнце",
         number          : "5",
         type            : "book",
-        ranges          : ["range_world"],
-        contained_comics: ["comic_world_8", "comic_world_9"],
-        previous_comics : ["comic_world_tome_4"],
-        next_comics     : ["comic_world_tome_6"],
+        ranges          : ["range_mir"],
+        contained_comics: ["comic_mir_8", "comic_mir_9"],
+        previous_comics : ["comic_mir_tome_4"],
+        next_comics     : ["comic_mir_tome_6"],
         release_at      : {year: 2021, month: 10, day: 30}
     },
-    comic_world_8                                                           : {
+    comic_mir_8                                                             : {
         name            : "МИР #08 Второе солнце, часть 1",
         number          : "8",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_5"],
-        previous_comics : ["comic_world_7"],
-        next_comics     : ["comic_world_9"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_5"],
+        previous_comics : ["comic_mir_7"],
+        next_comics     : ["comic_mir_9"],
         release_at      : {year: 2021, month: 11, day: 3}
     },
     comic_falcon_4                                                          : {
@@ -8325,7 +8327,7 @@ export const comics: Comics = {
         type            : "single",
         ranges          : ["range_major_grom", "range_bubble_legends", "range_major_igor_grom"],
         including_comics: ["comic_special_prokopenko_grom_at_sunrise_book"],
-        previous_comics : ["comic_major_grom_50", "comic_major_igor_grom_21"],
+        previous_comics : ["comic_major_grom_50", "comic_major_igor_grom_22"],
         release_at      : {year: 2021, month: 12}
     },
     comic_special_prokopenko_grom_at_sunrise_book                           : {
@@ -8333,7 +8335,7 @@ export const comics: Comics = {
         type            : "book",
         ranges          : ["range_major_grom", "range_bubble_legends", "range_major_igor_grom"],
         contained_comics: ["comic_special_prokopenko_grom_at_sunrise_single"],
-        previous_comics : ["comic_major_grom_tome_8"],
+        previous_comics : ["comic_major_grom_tome_8", "comic_major_igor_grom_22"],
         release_at      : {year: 2021, month: 12}
     },
     comic_soyuzmultcomics                                                   : {
@@ -8342,14 +8344,14 @@ export const comics: Comics = {
         ranges    : ["range_childrens_comics"],
         release_at: {year: 2021, month: 12}
     },
-    comic_world_9                                                           : {
+    comic_mir_9                                                             : {
         name            : "МИР #09 Второе солнце, часть 2",
         number          : "9",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_5"],
-        previous_comics : ["comic_world_8"],
-        next_comics     : ["comic_world_10"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_5"],
+        previous_comics : ["comic_mir_8"],
+        next_comics     : ["comic_mir_10"],
         release_at      : {year: 2021, month: 12, day: 1}
     },
     comic_thief_of_shadows_6                                                : {
@@ -8562,14 +8564,14 @@ export const comics: Comics = {
         next_comics     : ["comic_major_igor_grom_tome_3", "comic_plague_doctor_tome_5"],
         release_at      : {year: 2022, month: 3, day: 31}
     },
-    comic_world_10                                                          : {
+    comic_mir_10                                                            : {
         name            : "МИР #10 Серый лёд, часть 1",
         number          : "10",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_6"],
-        previous_comics : ["comic_world_9"],
-        next_comics     : ["comic_world_11"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_6"],
+        previous_comics : ["comic_mir_9"],
+        next_comics     : ["comic_mir_11"],
         release_at      : {year: 2022, month: 4, day: 8}
     },
     comic_major_igor_grom_tome_2                                            : {
@@ -8652,14 +8654,14 @@ export const comics: Comics = {
         previous_comics : ["comic_krutiks_cool_comics_book_2"],
         release_at      : {year: 2022, month: 5}
     },
-    comic_world_11                                                          : {
+    comic_mir_11                                                            : {
         name            : "МИР #11 Серый лёд, часть 2",
         number          : "11",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_6"],
-        previous_comics : ["comic_world_10"],
-        next_comics     : ["comic_world_12"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_6"],
+        previous_comics : ["comic_mir_10"],
+        next_comics     : ["comic_mir_12"],
         release_at      : {year: 2022, month: 5, day: 6}
     },
     comic_major_igor_grom_10                                                : {
@@ -8692,39 +8694,40 @@ export const comics: Comics = {
         next_comics     : ["comic_exlibrium_second_life_31"],
         release_at      : {year: 2022, month: 5, day: 28}
     },
-    comic_world_12                                                          : {
+    comic_mir_12                                                            : {
         name            : "МИР #12 За гранью",
         number          : "12",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_6"],
-        previous_comics : ["comic_world_11"],
-        next_comics     : ["comic_world_13"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_6"],
+        previous_comics : ["comic_mir_11"],
+        next_comics     : ["comic_mir_13"],
         release_at      : {year: 2022, month: 6, day: 3}
     },
-    comic_world_tome_6                                                      : {
+    comic_mir_tome_6                                                        : {
         name            : "МИР. Том 6: Серый лёд",
         number          : "6",
         type            : "book",
-        ranges          : ["range_world"],
-        contained_comics: ["comic_world_10", "comic_world_11", "comic_world_12"],
-        previous_comics : ["comic_world_tome_5"],
-        next_comics     : ["comic_world_tome_7"],
+        ranges          : ["range_mir"],
+        contained_comics: ["comic_mir_10", "comic_mir_11", "comic_mir_12"],
+        previous_comics : ["comic_mir_tome_5"],
+        next_comics     : ["comic_mir_tome_7"],
         release_at      : {year: 2022, month: 6, day: 9}
     },
     comic_special_phaeton_single                                            : {
         name            : "Спецвыпуск \"Фаэтон\"",
         type            : "single",
-        ranges          : ["range_world"],
+        ranges          : ["range_mir"],
         including_comics: ["comic_special_phaeton_book"],
+        previous_comics : ["comic_mir_18"],
         release_at      : {year: 2022, month: 6, day: 17}
     },
     comic_special_phaeton_book                                              : {
         name            : "Спецвыпуск \"Фаэтон\"",
         type            : "book",
-        ranges          : ["range_world"],
+        ranges          : ["range_mir"],
         contained_comics: ["comic_special_phaeton_single"],
-        previous_comics : ["comic_world_tome_8"],
+        previous_comics : ["comic_mir_18"],
         release_at      : {year: 2022, month: 6, day: 17}
     },
     comic_major_igor_grom_11                                                : {
@@ -8757,14 +8760,14 @@ export const comics: Comics = {
         next_comics     : ["comic_plague_doctor_19"],
         release_at      : {year: 2022, month: 6, day: 29}
     },
-    comic_world_13                                                          : {
+    comic_mir_13                                                            : {
         name            : "МИР #13 Сыновья, часть 1",
         number          : "13",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_7"],
-        previous_comics : ["comic_world_12"],
-        next_comics     : ["comic_world_14"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_7"],
+        previous_comics : ["comic_mir_12"],
+        next_comics     : ["comic_mir_14"],
         release_at      : {year: 2022, month: 7, day: 3}
     },
     comic_licorice_1                                                        : {
@@ -8824,13 +8827,13 @@ export const comics: Comics = {
         next_comics     : ["comic_plague_doctor_20"],
         release_at      : {year: 2022, month: 7, day: 31}
     },
-    comic_world_14                                                          : {
+    comic_mir_14                                                            : {
         name            : "МИР #14 Сыновья, часть 2",
         number          : "14",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_7"],
-        previous_comics : ["comic_world_13"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_7"],
+        previous_comics : ["comic_mir_13"],
         next_comics     : ["comic_heroes_and_monsters_single"],
         release_at      : {year: 2022, month: 8, day: 3}
     },
@@ -8845,7 +8848,7 @@ export const comics: Comics = {
         number          : "10",
         type            : "single",
         ranges          : ["range_thief_of_shadows"],
-        including_comics: ["comic_thief_of_shadows_tome_2"],
+        including_comics: ["comic_thief_of_shadows_tome_3"],
         previous_comics : ["comic_thief_of_shadows_9"],
         next_comics     : ["comic_thief_of_shadows_11"],
         release_at      : {year: 2022, month: 8, day: 5}
@@ -9026,13 +9029,13 @@ export const comics: Comics = {
         ranges    : ["range_childrens_comics"],
         release_at: {year: 2022, month: 10}
     },
-    comic_world_tome_7                                                      : {
+    comic_mir_tome_7                                                        : {
         name            : "МИР. Том 7: Сыновья",
         number          : "7",
         type            : "book",
-        ranges          : ["range_world"],
-        contained_comics: ["comic_world_13", "comic_world_14"],
-        previous_comics : ["comic_world_tome_6"],
+        ranges          : ["range_mir"],
+        contained_comics: ["comic_mir_13", "comic_mir_14"],
+        previous_comics : ["comic_mir_tome_6"],
         next_comics     : ["comic_heroes_and_monsters_book"],
         release_at      : {year: 2022, month: 10, day: 1}
     },
@@ -9236,7 +9239,7 @@ export const comics: Comics = {
         name           : "Майор Игорь Гром. Спецвыпуск. Долг",
         type           : "single",
         ranges         : ["range_major_igor_grom"],
-        previous_comics: ["comic_major_igor_grom_21"],
+        previous_comics: ["comic_major_igor_grom_22"],
         release_at     : {year: 2022, month: 12, day: 6}
     },
     comic_grom_difficult_childhood_anubis_rising_single                     : {
@@ -9332,19 +9335,19 @@ export const comics: Comics = {
     comic_heroes_and_monsters_single                                        : {
         name            : "Герои и монстры",
         type            : "single",
-        ranges          : ["range_crossovers", "range_plague_doctor", "range_world", "range_major_igor_grom"],
+        ranges          : ["range_crossovers", "range_plague_doctor", "range_mir", "range_major_igor_grom"],
         including_comics: ["comic_heroes_and_monsters_book"],
-        previous_comics : ["comic_world_14", "comic_plague_doctor_20", "comic_major_igor_grom_16"],
-        next_comics     : ["comic_plague_doctor_21", "comic_major_igor_grom_17", "comic_world_15"],
+        previous_comics : ["comic_mir_14", "comic_plague_doctor_20", "comic_major_igor_grom_16"],
+        next_comics     : ["comic_plague_doctor_21", "comic_major_igor_grom_17", "comic_mir_15"],
         release_at      : {year: 2023, month: 1, day: 31}
     },
     comic_heroes_and_monsters_book                                          : {
         name            : "Герои и монстры",
         type            : "book",
-        ranges          : ["range_crossovers", "range_plague_doctor", "range_world", "range_major_igor_grom"],
+        ranges          : ["range_crossovers", "range_plague_doctor", "range_mir", "range_major_igor_grom"],
         contained_comics: ["comic_heroes_and_monsters_single"],
-        previous_comics : ["comic_world_tome_7", "comic_plague_doctor_tome_5", "comic_major_igor_grom_tome_4"],
-        next_comics     : ["comic_plague_doctor_tome_6", "comic_world_tome_8", "comic_major_igor_grom_tome_5"],
+        previous_comics : ["comic_mir_tome_7", "comic_plague_doctor_tome_5", "comic_major_igor_grom_tome_4"],
+        next_comics     : ["comic_plague_doctor_tome_6", "comic_mir_tome_8", "comic_major_igor_grom_tome_5"],
         release_at      : {year: 2023, month: 1, day: 31}
     },
     comic_bubble_triptych_1                                                 : {
@@ -9450,14 +9453,14 @@ export const comics: Comics = {
         previous_comics : ["comic_licorice_book_1"],
         release_at      : {year: 2023, month: 2, day: 25}
     },
-    comic_world_tome_8                                                      : {
+    comic_mir_tome_8                                                        : {
         name            : "МИР. Том 8: Чужие флаги",
         number          : "8",
         type            : "book",
-        ranges          : ["range_world"],
-        contained_comics: ["comic_world_15", "comic_world_16", "comic_world_17"],
+        ranges          : ["range_mir"],
+        contained_comics: ["comic_mir_15", "comic_mir_16", "comic_mir_17"],
         previous_comics : ["comic_heroes_and_monsters_book"],
-        next_comics     : ["comic_world_eternal_memory_book", "comic_special_phaeton_book"],
+        next_comics     : ["comic_mir_18"],
         release_at      : {year: 2022, month: 10, day: 1}
     },
     comic_plague_doctor_25                                                  : {
@@ -9470,14 +9473,14 @@ export const comics: Comics = {
         next_comics     : ["comic_plague_doctor_26"],
         release_at      : {year: 2023, month: 2, day: 28}
     },
-    comic_world_15                                                          : {
+    comic_mir_15                                                            : {
         name            : "МИР #15 Чужие флаги, часть 1",
         number          : "15",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_8"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_8"],
         previous_comics : ["comic_heroes_and_monsters_single"],
-        next_comics     : ["comic_world_16"],
+        next_comics     : ["comic_mir_16"],
         release_at      : {year: 2023, month: 3, day: 3}
     },
     comic_bubble_triptych_2                                                 : {
@@ -9550,14 +9553,14 @@ export const comics: Comics = {
         next_comics     : ["comic_plague_doctor_27"],
         release_at      : {year: 2023, month: 3, day: 31}
     },
-    comic_world_16                                                          : {
+    comic_mir_16                                                            : {
         name            : "МИР #16 Чужие флаги, часть 2",
         number          : "16",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_8"],
-        previous_comics : ["comic_world_15"],
-        next_comics     : ["comic_world_17"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_8"],
+        previous_comics : ["comic_mir_15"],
+        next_comics     : ["comic_mir_17"],
         release_at      : {year: 2023, month: 4, day: 5}
     },
     comic_bubble_gam_almanac_2                                              : {
@@ -9592,7 +9595,7 @@ export const comics: Comics = {
         type            : "single",
         ranges          : ["range_plague_doctor"],
         including_comics: ["comic_yablochny_saved_book"],
-        previous_comics : ["comic_plague_doctor_29"],
+        previous_comics : ["comic_plague_doctor_30"],
         release_at      : {year: 2023, month: 4, day: 13}
     },
     comic_yablochny_saved_book                                              : {
@@ -9600,7 +9603,7 @@ export const comics: Comics = {
         type            : "book",
         ranges          : ["range_plague_doctor"],
         contained_comics: ["comic_yablochny_saved_single"],
-        previous_comics : ["comic_plague_doctor_tome_7"],
+        previous_comics : ["comic_plague_doctor_30"],
         release_at      : {year: 2023, month: 4, day: 13}
     },
     comic_fiction_novel_razumovsky                                          : {
@@ -9625,7 +9628,7 @@ export const comics: Comics = {
         type            : "book",
         ranges          : ["range_thief_of_shadows"],
         contained_comics: ["comic_thief_of_shadows_6", "comic_thief_of_shadows_7", "comic_thief_of_shadows_8",
-                           "comic_thief_of_shadows_9", "comic_thief_of_shadows_10"],
+                           "comic_thief_of_shadows_9"],
         previous_comics : ["comic_thief_of_shadows_tome_1"],
         next_comics     : ["comic_thief_of_shadows_tome_3"],
         release_at      : {year: 2023}
@@ -9635,7 +9638,9 @@ export const comics: Comics = {
         number          : "3",
         type            : "book",
         ranges          : ["range_thief_of_shadows"],
-        contained_comics: ["comic_thief_of_shadows_11", "comic_thief_of_shadows_12"],
+        authors         : ["author_alexey_gorbut", "author_alexey_volkov", "author_kirill_kutuzov"],
+        contained_comics: ["comic_thief_of_shadows_10", "comic_thief_of_shadows_11", "comic_thief_of_shadows_12",
+                           "comic_thief_of_shadows_13"],
         previous_comics : ["comic_thief_of_shadows_tome_2"],
         release_at      : {year: 2023, month: 4, day: 25}
     },
@@ -9665,14 +9670,14 @@ export const comics: Comics = {
         next_comics     : ["comic_plague_doctor_28"],
         release_at      : {year: 2023, month: 4, day: 30}
     },
-    comic_world_17                                                          : {
+    comic_mir_17                                                            : {
         name            : "МИР #17 Чужие флаги, часть 3",
         number          : "17",
         type            : "single",
-        ranges          : ["range_world"],
-        including_comics: ["comic_world_tome_8"],
-        previous_comics : ["comic_world_16"],
-        next_comics     : ["comic_world_eternal_memory_single", "comic_special_phaeton_single"],
+        ranges          : ["range_mir"],
+        including_comics: ["comic_mir_tome_8"],
+        previous_comics : ["comic_mir_16"],
+        next_comics     : ["comic_mir_18"],
         release_at      : {year: 2023, month: 5, day: 3}
     },
     comic_fiction_novel_besoboy                                             : {
@@ -9723,6 +9728,7 @@ export const comics: Comics = {
         contained_comics: ["comic_major_igor_grom_17", "comic_major_igor_grom_18", "comic_major_igor_grom_19",
                            "comic_major_igor_grom_20"],
         previous_comics : ["comic_heroes_and_monsters_book"],
+        next_comics     : ["comic_major_igor_grom_21"],
         release_at      : {year: 2023, month: 5, day: 23}
     },
     comic_major_igor_grom_20                                                : {
@@ -9740,7 +9746,7 @@ export const comics: Comics = {
         number         : "37",
         type           : "single",
         ranges         : ["range_exlibrium_second_life"],
-        previous_comics: ["comic_exlibrium_second_life_36"],
+        previous_comics: ["comic_exlibrium_second_life_36", "comic_exlibrium_second_life_tome_8"],
         next_comics    : ["comic_exlibrium_second_life_38"],
         release_at     : {year: 2023, month: 5, day: 26}
     },
@@ -9759,6 +9765,7 @@ export const comics: Comics = {
         ranges          : ["range_thief_of_shadows"],
         including_comics: ["comic_thief_of_shadows_tome_3"],
         previous_comics : ["comic_thief_of_shadows_11"],
+        next_comics     : ["comic_thief_of_shadows_13"],
         release_at      : {year: 2023, month: 6, day: 2}
     },
     comic_exlibrium_second_life_tome_8                                      : {
@@ -9769,6 +9776,7 @@ export const comics: Comics = {
         contained_comics: ["comic_exlibrium_second_life_33", "comic_exlibrium_second_life_34",
                            "comic_exlibrium_second_life_35", "comic_exlibrium_second_life_36"],
         previous_comics : ["comic_exlibrium_second_life_tome_7"],
+        next_comics     : ["comic_exlibrium_second_life_37"],
         release_at      : {year: 2023, month: 6, day: 5}
     },
     comic_falcon_7                                                          : {
@@ -9781,10 +9789,11 @@ export const comics: Comics = {
         release_at      : {year: 2023, month: 6, day: 7}
     },
     comic_exlibrium_colors_of_our_feelings_coloring_dossier                 : {
-        name      : "Экслибриум: Цвета наших чувств. Раскраска-досье",
-        type      : "single",
-        ranges    : ["range_exlibrium", "range_exlibrium_second_life"],
-        release_at: {year: 2023, month: 6, day: 9}
+        name           : "Экслибриум: Цвета наших чувств. Раскраска-досье",
+        type           : "single",
+        ranges         : ["range_exlibrium", "range_exlibrium_second_life"],
+        previous_comics: ["comic_exlibrium_50", "comic_exlibrium_tome_9", "comic_exlibrium_second_life_39"],
+        release_at     : {year: 2023, month: 6, day: 9}
     },
     comic_plague_doctor_28                                                  : {
         name            : "Чумной Доктор №28 Рагнар, часть 8",
@@ -9809,8 +9818,8 @@ export const comics: Comics = {
         number         : "21",
         type           : "single",
         ranges         : ["range_major_igor_grom"],
-        previous_comics: ["comic_major_igor_grom_20"],
-        next_comics    : ["comic_special_prokopenko_grom_at_sunrise_single", "comic_major_igor_grom_special_duty"],
+        previous_comics: ["comic_major_igor_grom_tome_5", "comic_major_igor_grom_20"],
+        next_comics    : ["comic_major_igor_grom_22"],
         release_at     : {year: 2023, month: 6, day: 21}
     },
     comic_exlibrium_second_life_38                                          : {
@@ -9819,7 +9828,7 @@ export const comics: Comics = {
         type           : "single",
         ranges         : ["range_exlibrium_second_life"],
         previous_comics: ["comic_exlibrium_second_life_37"],
-        next_comics    : ["comic_exlibrium_blank_sheet_single", "comic_exlibrium_red_line_single"],
+        next_comics    : ["comic_exlibrium_second_life_39"],
         release_at     : {year: 2023, month: 6, day: 28}
     },
     comic_plague_doctor_29                                                  : {
@@ -9829,7 +9838,7 @@ export const comics: Comics = {
         ranges          : ["range_plague_doctor"],
         including_comics: ["comic_plague_doctor_tome_7"],
         previous_comics : ["comic_plague_doctor_28"],
-        next_comics     : ["comic_special_volkov_inferno_single", "comic_yablochny_saved_single"],
+        next_comics     : ["comic_plague_doctor_30"],
         release_at      : {year: 2023, month: 6, day: 30}
     },
     comic_gray_hound_tome_1_chapter_1                                       : {
@@ -9847,7 +9856,7 @@ export const comics: Comics = {
         contained_comics: ["comic_plague_doctor_25", "comic_plague_doctor_26", "comic_plague_doctor_27",
                            "comic_plague_doctor_28", "comic_plague_doctor_29"],
         previous_comics : ["comic_plague_doctor_tome_6"],
-        next_comics     : ["comic_special_volkov_inferno_book", "comic_yablochny_saved_book"],
+        next_comics     : ["comic_plague_doctor_30"],
         release_at      : {year: 2023, month: 2, day: 4}
     },
     comic_fiction_novel_the_nine_lives_of_agatha_the_first_life_dragons_font: {
@@ -9855,11 +9864,69 @@ export const comics: Comics = {
         type      : "hardcover_book",
         ranges    : ["range_exlibrium", "range_exlibrium_second_life"],
         release_at: {year: 2023, month: 7, day: 7} // предзаказ 2023-06-26
-    }
-    // Вор Теней №13                - 12 июл 2023
-    // Мир №18                      - 19 июл 2023
-    // Майор Игорь Гром №22         - 26 июл 2023
-    // Экслибриум. Жизнь вторая №39 - 28 июл 2023
-    // Чумной Доктор №30            - 31 июл 2023
+    },
+    comic_thief_of_shadows_13                                               : {
+        name            : "Вор Теней #13 Блистательная богиня и безжалостные близнецы",
+        number          : "13",
+        type            : "single",
+        ranges          : ["range_thief_of_shadows"],
+        authors         : ["author_alexey_gorbut", "author_alexey_volkov", "author_kirill_kutuzov"],
+        including_comics: ["comic_thief_of_shadows_tome_3"],
+        previous_comics : ["comic_thief_of_shadows_12"],
+        release_at      : {year: 2023, month: 7, day: 12}
+    },
+    comic_mir_18                                                            : {
+        name           : "МИР #18 Царь в голове, часть 1",
+        number         : "18",
+        type           : "single",
+        ranges         : ["range_mir"],
+        characters     : ["character_mir"],
+        authors        : ["author_adela_adienova", "author_alexey_volkov", "author_anna_antoshchenkova",
+                          "author_madibek_musabekov", "author_roman_kotkov", "author_taya_makarevich"],
+        previous_comics: ["comic_mir_17"],
+        next_comics    : ["comic_mir_eternal_memory_single", "comic_mir_eternal_memory_book",
+                          "comic_special_phaeton_single", "comic_special_phaeton_book"],
+        release_at     : {year: 2023, month: 7, day: 19}
+    },
+    comic_major_igor_grom_22                                                : {
+        name           : "Майор Игорь Гром #22 Правда, часть 2",
+        number         : "22",
+        type           : "single",
+        ranges         : ["range_major_igor_grom"],
+        characters     : ["character_igor_grom"],
+        authors        : ["author_anastasia_troitskaya", "author_evgeniy_bornyakov", "author_evgeny_eronin"],
+        previous_comics: ["comic_major_igor_grom_21"],
+        next_comics    : ["comic_special_prokopenko_grom_at_sunrise_single",
+                          "comic_special_prokopenko_grom_at_sunrise_book", "comic_major_igor_grom_special_duty"],
+        release_at     : {year: 2023, month: 7, day: 26}
+    },
+    comic_exlibrium_second_life_39                                          : {
+        name           : "Экслибриум. Жизнь вторая #39 Будущее – светло, часть 3",
+        number         : "39",
+        type           : "single",
+        ranges         : ["range_exlibrium_second_life"],
+        characters     : ["character_anton_varchuk", "character_apollo", "character_lena_pyatkina",
+                          "character_liliya_romanova", "character_matvey_koretsky"],
+        authors        : ["author_anastasia_afonina", "author_elena_doronina", "author_natalia_devova"],
+        previous_comics: ["comic_exlibrium_second_life_38"],
+        next_comics    : ["comic_exlibrium_blank_sheet_single", "comic_exlibrium_blank_sheet_book",
+                          "comic_exlibrium_red_line_single", "comic_exlibrium_red_line_book",
+                          "comic_exlibrium_colors_of_our_feelings_coloring_dossier"],
+        release_at     : {year: 2023, month: 7, day: 28}
+    },
+    comic_plague_doctor_30                                                  : {
+        name           : "Чумной Доктор №30 Чужой среди своих, часть 1",
+        number         : "30",
+        type           : "single",
+        ranges         : ["range_plague_doctor"],
+        characters     : ["character_valeria_makarova"],
+        authors        : ["author_anastasia_chebykina", "author_irina_ivanova", "author_natalia_vorontsova"],
+        previous_comics: ["comic_plague_doctor_29", "comic_plague_doctor_tome_7"],
+        next_comics    : ["comic_special_volkov_inferno_single", "comic_special_volkov_inferno_book",
+                          "comic_yablochny_saved_single", "comic_yablochny_saved_book"],
+        release_at     : {year: 2023, month: 7, day: 31}
+    },
     // Infinix: Город Героев        - -- --- ----
 };
+
+export default comics;

@@ -1,4 +1,5 @@
-<script setup>
+<script setup lang="ts">
+document.querySelector("title").text = "Главная";
 </script>
 
 <template>

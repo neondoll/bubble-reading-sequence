@@ -1,0 +1,1 @@
+export type ComicType = "single" | "book" | "hardcover_book";

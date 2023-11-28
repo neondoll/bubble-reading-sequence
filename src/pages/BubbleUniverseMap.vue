@@ -1,9 +1,7 @@
 <script setup lang="ts">
+import {Edge} from "../data/interfaces/Edge";
+import {Node} from "../data/interfaces/Node";
 import {VNetworkGraph} from "v-network-graph";
-import {computed, ref} from "vue";
-import Edge from "../interfaces/Edge";
-import Node from "../interfaces/Node";
-import NodeLabel from "../components/atoms/NodeLabel.vue";
 import data from "../data/v-network-graph";
 import * as vNG from "v-network-graph";
 import "v-network-graph/lib/style.css";
@@ -42,18 +40,14 @@ const configs = vNG.defineConfigs<Node, Edge, vNG.Path>({
   }
 });
 
-const layouts = ref(data.layouts);
-
-const layoutsText = computed(() => {
-  return JSON.stringify(layouts.value, null, 2)
-})
+document.querySelector("title").text = "Карта вселенной BUBBLE";
 </script>
 
 <template>
   <VNetworkGraph class="bubble-universe-map"
                  :nodes="data.nodes"
                  :edges="data.edges"
-                 v-model:layouts="layouts"
+                 :layouts="data.layouts"
                  :configs="configs"/>
 </template>
 
