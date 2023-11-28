@@ -137,7 +137,7 @@ watch(route, (newValue, oldValue) => {
       </article>
       <article class="comic__section section-comic">
         <h2 class="section-comic__title">Дата создания:</h2>
-        <time>{{ releaseAt.getDate() }} {{ getMonthRu(releaseAt.getMonth()) }} {{ releaseAt.getFullYear() }}</time>
+        <time class="section-comic__date">{{ releaseAt.getDate() }} {{ getMonthRu(releaseAt.getMonth()) }} {{ releaseAt.getFullYear() }}</time>
       </article>
     </div>
   </div>

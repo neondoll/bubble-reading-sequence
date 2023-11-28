@@ -172,11 +172,7 @@ ul {
     inset: 0;
 }
 
-.comic {
-    --comic-color: #000000;
-}
-
-.comic__title {}
+.comic { --comic-color: #000000; }
 
 .comic__description {
     display: flex;
@@ -188,20 +184,19 @@ ul {
     border-radius: 0.5rem;
 }
 
-.comic__section {}
-
 .section-comic {
     display: flex;
-    justify-content: space-between;
+    gap: 0.5rem;
 }
+
+.section-comic__title, .section-comic__list, .section-comic__date { flex-basis: 50%; }
 
 .section-comic__title {
     font-size: 1rem;
+    text-align: right;
 }
 
-.section-comic__link {
-    position: relative;
-}
+.section-comic__link { position: relative; }
 
 .section-comic__link::after {
     content: "";
