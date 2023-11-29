@@ -24,7 +24,14 @@
     </div>
   </header>
   <main>
-    <RouterView/>
+    <Suspense>
+      <template #default>
+        <RouterView/>
+      </template>
+      <template #fallback>
+        <span>Loading...</span>
+      </template>
+    </Suspense>
   </main>
 </template>
 

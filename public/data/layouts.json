@@ -1,0 +1,4060 @@
+{
+  "nodes": {
+    "node_besoboy_1": {
+      "x": 140,
+      "y": 110
+    },
+    "node_major_grom_1": {
+      "x": 140,
+      "y": 1870
+    },
+    "node_enoch_1": {
+      "x": 140,
+      "y": 660
+    },
+    "node_red_fury_1": {
+      "x": 140,
+      "y": 1320
+    },
+    "node_besoboy_2": {
+      "x": 280,
+      "y": 110
+    },
+    "node_major_grom_2": {
+      "x": 280,
+      "y": 1870
+    },
+    "node_enoch_2": {
+      "x": 280,
+      "y": 660
+    },
+    "node_red_fury_2": {
+      "x": 280,
+      "y": 1320
+    },
+    "node_besoboy_3": {
+      "x": 420,
+      "y": 110
+    },
+    "node_major_grom_3": {
+      "x": 420,
+      "y": 1870
+    },
+    "node_enoch_3": {
+      "x": 420,
+      "y": 660
+    },
+    "node_red_fury_3": {
+      "x": 420,
+      "y": 1320
+    },
+    "node_besoboy_4": {
+      "x": 560,
+      "y": 110
+    },
+    "node_major_grom_4": {
+      "x": 560,
+      "y": 1870
+    },
+    "node_enoch_4": {
+      "x": 560,
+      "y": 660
+    },
+    "node_red_fury_4": {
+      "x": 560,
+      "y": 1320
+    },
+    "node_besoboy_5": {
+      "x": 700,
+      "y": 110
+    },
+    "node_major_grom_5": {
+      "x": 700,
+      "y": 1870
+    },
+    "node_enoch_5": {
+      "x": 700,
+      "y": 660
+    },
+    "node_red_fury_5": {
+      "x": 700,
+      "y": 1320
+    },
+    "node_besoboy_6": {
+      "x": 840,
+      "y": 110
+    },
+    "node_major_grom_6": {
+      "x": 840,
+      "y": 1870
+    },
+    "node_enoch_6": {
+      "x": 840,
+      "y": 660
+    },
+    "node_red_fury_6": {
+      "x": 840,
+      "y": 1320
+    },
+    "node_besoboy_7": {
+      "x": 980,
+      "y": 110
+    },
+    "node_major_grom_7": {
+      "x": 980,
+      "y": 1870
+    },
+    "node_enoch_7": {
+      "x": 980,
+      "y": 660
+    },
+    "node_red_fury_7": {
+      "x": 980,
+      "y": 1320
+    },
+    "node_besoboy_8": {
+      "x": 1120,
+      "y": 110
+    },
+    "node_major_grom_8": {
+      "x": 1120,
+      "y": 1870
+    },
+    "node_enoch_8": {
+      "x": 1120,
+      "y": 660
+    },
+    "node_red_fury_8": {
+      "x": 1120,
+      "y": 1320
+    },
+    "node_besoboy_9": {
+      "x": 1260,
+      "y": 110
+    },
+    "node_major_grom_9": {
+      "x": 1260,
+      "y": 1870
+    },
+    "node_enoch_9": {
+      "x": 1260,
+      "y": 660
+    },
+    "node_red_fury_9": {
+      "x": 1260,
+      "y": 1320
+    },
+    "node_besoboy_10": {
+      "x": 1400,
+      "y": 110
+    },
+    "node_major_grom_10": {
+      "x": 1400,
+      "y": 1870
+    },
+    "node_enoch_10": {
+      "x": 1400,
+      "y": 660
+    },
+    "node_red_fury_10": {
+      "x": 1400,
+      "y": 1320
+    },
+    "node_besoboy_11": {
+      "x": 1540,
+      "y": 110
+    },
+    "node_major_grom_11": {
+      "x": 1540,
+      "y": 1870
+    },
+    "node_enoch_11": {
+      "x": 1540,
+      "y": 660
+    },
+    "node_red_fury_11": {
+      "x": 1540,
+      "y": 1320
+    },
+    "node_besoboy_12": {
+      "x": 1680,
+      "y": 110
+    },
+    "node_major_grom_12": {
+      "x": 1680,
+      "y": 1870
+    },
+    "node_enoch_12": {
+      "x": 1680,
+      "y": 660
+    },
+    "node_red_fury_12": {
+      "x": 1680,
+      "y": 1320
+    },
+    "node_besoboy_13": {
+      "x": 1820,
+      "y": 110
+    },
+    "node_major_grom_13": {
+      "x": 1820,
+      "y": 1870
+    },
+    "node_enoch_13": {
+      "x": 1820,
+      "y": 660
+    },
+    "node_red_fury_13": {
+      "x": 1820,
+      "y": 1320
+    },
+    "node_besoboy_14": {
+      "x": 1960,
+      "y": 110
+    },
+    "node_major_grom_14": {
+      "x": 1960,
+      "y": 1870
+    },
+    "node_enoch_14": {
+      "x": 1960,
+      "y": 660
+    },
+    "node_red_fury_14": {
+      "x": 1960,
+      "y": 1320
+    },
+    "node_besoboy_15": {
+      "x": 2100,
+      "y": 385
+    },
+    "node_major_grom_15": {
+      "x": 2100,
+      "y": 1870
+    },
+    "node_enoch_15": {
+      "x": 2240,
+      "y": 385
+    },
+    "node_red_fury_15": {
+      "x": 2100,
+      "y": 1320
+    },
+    "node_enoch_vs_besoboy_1": {
+      "x": 2380,
+      "y": 385
+    },
+    "node_besoboy_16": {
+      "x": 2520,
+      "y": 385
+    },
+    "node_major_grom_16": {
+      "x": 2240,
+      "y": 1870
+    },
+    "node_enoch_16": {
+      "x": 2660,
+      "y": 385
+    },
+    "node_red_fury_16": {
+      "x": 2660,
+      "y": 1320
+    },
+    "node_enoch_vs_besoboy_2": {
+      "x": 2800,
+      "y": 385
+    },
+    "node_besoboy_17": {
+      "x": 2940,
+      "y": 385
+    },
+    "node_major_grom_17": {
+      "x": 2380,
+      "y": 1870
+    },
+    "node_enoch_17": {
+      "x": 3080,
+      "y": 385
+    },
+    "node_red_fury_17": {
+      "x": 2940,
+      "y": 1320
+    },
+    "node_enoch_vs_besoboy_3": {
+      "x": 3220,
+      "y": 385
+    },
+    "node_besoboy_18": {
+      "x": 3360,
+      "y": 110
+    },
+    "node_major_grom_18": {
+      "x": 2520,
+      "y": 1870
+    },
+    "node_enoch_18": {
+      "x": 3360,
+      "y": 660
+    },
+    "node_red_fury_18": {
+      "x": 3080,
+      "y": 1320
+    },
+    "node_besoboy_19": {
+      "x": 3500,
+      "y": 110
+    },
+    "node_major_grom_19": {
+      "x": 3500,
+      "y": 1870
+    },
+    "node_enoch_19": {
+      "x": 3500,
+      "y": 660
+    },
+    "node_red_fury_19": {
+      "x": 3220,
+      "y": 1320
+    },
+    "node_besoboy_20": {
+      "x": 3640,
+      "y": 110
+    },
+    "node_major_grom_20": {
+      "x": 3640,
+      "y": 1870
+    },
+    "node_enoch_20": {
+      "x": 3640,
+      "y": 660
+    },
+    "node_red_fury_20": {
+      "x": 3640,
+      "y": 1320
+    },
+    "node_besoboy_21": {
+      "x": 3780,
+      "y": 110
+    },
+    "node_major_grom_21": {
+      "x": 3780,
+      "y": 1870
+    },
+    "node_enoch_21": {
+      "x": 3780,
+      "y": 660
+    },
+    "node_red_fury_21": {
+      "x": 3780,
+      "y": 1320
+    },
+    "node_besoboy_22": {
+      "x": 3920,
+      "y": 110
+    },
+    "node_major_grom_22": {
+      "x": 3920,
+      "y": 1870
+    },
+    "node_red_fury_16_1": {
+      "x": 2800,
+      "y": 1320
+    },
+    "node_enoch_22": {
+      "x": 3920,
+      "y": 660
+    },
+    "node_red_fury_22": {
+      "x": 3920,
+      "y": 1320
+    },
+    "node_besoboy_23": {
+      "x": 4060,
+      "y": 110
+    },
+    "node_major_grom_23": {
+      "x": 4060,
+      "y": 1870
+    },
+    "node_enoch_23": {
+      "x": 4060,
+      "y": 660
+    },
+    "node_red_fury_23": {
+      "x": 4060,
+      "y": 1320
+    },
+    "node_besoboy_24": {
+      "x": 4200,
+      "y": 110
+    },
+    "node_major_grom_24": {
+      "x": 4200,
+      "y": 1870
+    },
+    "node_enoch_24": {
+      "x": 4200,
+      "y": 660
+    },
+    "node_red_fury_24": {
+      "x": 4200,
+      "y": 1320
+    },
+    "node_besoboy_25": {
+      "x": 4340,
+      "y": 110
+    },
+    "node_besoboy_tome_1": {
+      "x": 560,
+      "y": 220
+    },
+    "node_major_grom_tome_1": {
+      "x": 490,
+      "y": 1980
+    },
+    "node_enoch_tome_1": {
+      "x": 560,
+      "y": 770
+    },
+    "node_red_fury_tome_1": {
+      "x": 560,
+      "y": 1430
+    },
+    "node_major_grom_25": {
+      "x": 4340,
+      "y": 1870
+    },
+    "node_enoch_25": {
+      "x": 4340,
+      "y": 660
+    },
+    "node_red_fury_25": {
+      "x": 4340,
+      "y": 1320
+    },
+    "node_exlibrium_1": {
+      "x": 4340,
+      "y": 2970
+    },
+    "node_meteora_1": {
+      "x": 4340,
+      "y": 3410
+    },
+    "node_besoboy_26": {
+      "x": 4480,
+      "y": 110
+    },
+    "node_major_grom_26": {
+      "x": 4480,
+      "y": 1870
+    },
+    "node_enoch_26": {
+      "x": 4480,
+      "y": 660
+    },
+    "node_red_fury_26": {
+      "x": 4480,
+      "y": 1320
+    },
+    "node_exlibrium_2": {
+      "x": 4480,
+      "y": 2970
+    },
+    "node_meteora_2": {
+      "x": 4480,
+      "y": 3410
+    },
+    "node_besoboy_27": {
+      "x": 4620,
+      "y": 110
+    },
+    "node_major_grom_27": {
+      "x": 4620,
+      "y": 1870
+    },
+    "node_enoch_27": {
+      "x": 4620,
+      "y": 660
+    },
+    "node_red_fury_27": {
+      "x": 4620,
+      "y": 1320
+    },
+    "node_exlibrium_3": {
+      "x": 4620,
+      "y": 2970
+    },
+    "node_besoboy_tome_2": {
+      "x": 1540,
+      "y": 220
+    },
+    "node_major_grom_tome_2": {
+      "x": 1190,
+      "y": 1980
+    },
+    "node_enoch_tome_2": {
+      "x": 1540,
+      "y": 770
+    },
+    "node_red_fury_tome_2": {
+      "x": 1610,
+      "y": 1430
+    },
+    "node_meteora_3": {
+      "x": 4620,
+      "y": 3410
+    },
+    "node_besoboy_28": {
+      "x": 4760,
+      "y": 110
+    },
+    "node_major_grom_28": {
+      "x": 4760,
+      "y": 1870
+    },
+    "node_enoch_28": {
+      "x": 4760,
+      "y": 660
+    },
+    "node_red_fury_28": {
+      "x": 4760,
+      "y": 1320
+    },
+    "node_exlibrium_4": {
+      "x": 4760,
+      "y": 2970
+    },
+    "node_meteora_4": {
+      "x": 4760,
+      "y": 3410
+    },
+    "node_besoboy_29": {
+      "x": 4900,
+      "y": 110
+    },
+    "node_major_grom_29": {
+      "x": 4900,
+      "y": 1870
+    },
+    "node_enoch_29": {
+      "x": 4900,
+      "y": 660
+    },
+    "node_red_fury_29": {
+      "x": 4900,
+      "y": 1320
+    },
+    "node_exlibrium_5": {
+      "x": 4900,
+      "y": 2970
+    },
+    "node_meteora_5": {
+      "x": 4900,
+      "y": 3410
+    },
+    "node_besoboy_30": {
+      "x": 5040,
+      "y": 110
+    },
+    "node_major_grom_30": {
+      "x": 5040,
+      "y": 1870
+    },
+    "node_enoch_30": {
+      "x": 5040,
+      "y": 660
+    },
+    "node_red_fury_30": {
+      "x": 5040,
+      "y": 1320
+    },
+    "node_exlibrium_6": {
+      "x": 5040,
+      "y": 2970
+    },
+    "node_major_grom_tome_3": {
+      "x": 2030,
+      "y": 1980
+    },
+    "node_enoch_vs_besoboy": {
+      "x": 2660,
+      "y": 495
+    },
+    "node_meteora_6": {
+      "x": 5040,
+      "y": 3410
+    },
+    "node_besoboy_31": {
+      "x": 5180,
+      "y": 110
+    },
+    "node_major_grom_31": {
+      "x": 5180,
+      "y": 1870
+    },
+    "node_enoch_31": {
+      "x": 5180,
+      "y": 660
+    },
+    "node_red_fury_31": {
+      "x": 5180,
+      "y": 1320
+    },
+    "node_exlibrium_7": {
+      "x": 5180,
+      "y": 2970
+    },
+    "node_meteora_7": {
+      "x": 5180,
+      "y": 3410
+    },
+    "node_besoboy_32": {
+      "x": 5320,
+      "y": 110
+    },
+    "node_chronicles_of_enoch_single": {
+      "x": 9520,
+      "y": 660
+    },
+    "node_chronicles_of_enoch_book": {
+      "x": 9520,
+      "y": 770
+    },
+    "node_major_grom_32": {
+      "x": 5320,
+      "y": 1870
+    },
+    "node_enoch_32": {
+      "x": 5320,
+      "y": 660
+    },
+    "node_red_fury_32": {
+      "x": 5320,
+      "y": 1320
+    },
+    "node_exlibrium_8": {
+      "x": 5320,
+      "y": 2970
+    },
+    "node_meteora_8": {
+      "x": 5320,
+      "y": 3410
+    },
+    "node_besoboy_33": {
+      "x": 5460,
+      "y": 110
+    },
+    "node_major_grom_33": {
+      "x": 5460,
+      "y": 1870
+    },
+    "node_enoch_33": {
+      "x": 5460,
+      "y": 660
+    },
+    "node_red_fury_33": {
+      "x": 5460,
+      "y": 1320
+    },
+    "node_exlibrium_9": {
+      "x": 5460,
+      "y": 2970
+    },
+    "node_meteora_9": {
+      "x": 5460,
+      "y": 3410
+    },
+    "node_besoboy_34": {
+      "x": 5600,
+      "y": 110
+    },
+    "node_major_grom_34": {
+      "x": 5600,
+      "y": 1870
+    },
+    "node_enoch_34": {
+      "x": 5600,
+      "y": 660
+    },
+    "node_red_fury_34": {
+      "x": 5600,
+      "y": 1320
+    },
+    "node_exlibrium_10": {
+      "x": 5600,
+      "y": 2970
+    },
+    "node_meteora_10": {
+      "x": 5600,
+      "y": 3410
+    },
+    "node_besoboy_tome_3": {
+      "x": 3640,
+      "y": 220
+    },
+    "node_enoch_tome_3": {
+      "x": 3570,
+      "y": 770
+    },
+    "node_red_fury_tome_3": {
+      "x": 2940,
+      "y": 1430
+    },
+    "node_besoboy_35": {
+      "x": 5740,
+      "y": 110
+    },
+    "node_major_grom_35": {
+      "x": 5740,
+      "y": 1870
+    },
+    "node_enoch_35": {
+      "x": 5740,
+      "y": 660
+    },
+    "node_red_fury_35": {
+      "x": 5740,
+      "y": 1320
+    },
+    "node_exlibrium_11": {
+      "x": 5740,
+      "y": 2970
+    },
+    "node_meteora_11": {
+      "x": 5740,
+      "y": 3410
+    },
+    "node_red_fury_tome_4": {
+      "x": 3920,
+      "y": 1430
+    },
+    "node_besoboy_36": {
+      "x": 5880,
+      "y": 110
+    },
+    "node_enoch_tome_4": {
+      "x": 4200,
+      "y": 770
+    },
+    "node_major_grom_36": {
+      "x": 5880,
+      "y": 1870
+    },
+    "node_enoch_36": {
+      "x": 5880,
+      "y": 660
+    },
+    "node_red_fury_36": {
+      "x": 5880,
+      "y": 1320
+    },
+    "node_exlibrium_12": {
+      "x": 5880,
+      "y": 2970
+    },
+    "node_meteora_12": {
+      "x": 5880,
+      "y": 3410
+    },
+    "node_besoboy_37": {
+      "x": 6020,
+      "y": 110
+    },
+    "node_major_grom_37": {
+      "x": 6020,
+      "y": 1870
+    },
+    "node_ziggy_space_hamster_1": {
+      "x": 6020,
+      "y": 3630
+    },
+    "node_besoboy_tome_4": {
+      "x": 4340,
+      "y": 220
+    },
+    "node_major_grom_tome_4": {
+      "x": 3850,
+      "y": 1980
+    },
+    "node_exlibrium_tome_1": {
+      "x": 4620,
+      "y": 3080
+    },
+    "node_meteora_tome_1": {
+      "x": 4690,
+      "y": 3520
+    },
+    "node_time_of_raven_backstory_single": {
+      "x": 6020,
+      "y": 990
+    },
+    "node_time_of_raven_backstory_book": {
+      "x": 6020,
+      "y": 1100
+    },
+    "node_time_of_raven_prologue": {
+      "x": 6160,
+      "y": 990
+    },
+    "node_enoch_37": {
+      "x": 6020,
+      "y": 660
+    },
+    "node_red_fury_37": {
+      "x": 6020,
+      "y": 1320
+    },
+    "node_exlibrium_13": {
+      "x": 6020,
+      "y": 2970
+    },
+    "node_meteora_13": {
+      "x": 6160,
+      "y": 3410
+    },
+    "node_time_of_raven_1": {
+      "x": 6300,
+      "y": 990
+    },
+    "node_besoboy_38": {
+      "x": 6300,
+      "y": 110
+    },
+    "node_major_grom_38": {
+      "x": 6440,
+      "y": 1595
+    },
+    "node_enoch_38": {
+      "x": 6440,
+      "y": 660
+    },
+    "node_red_fury_38": {
+      "x": 6580,
+      "y": 1595
+    },
+    "node_exlibrium_14": {
+      "x": 6160,
+      "y": 2970
+    },
+    "node_meteora_14": {
+      "x": 6300,
+      "y": 3410
+    },
+    "node_time_of_raven_2": {
+      "x": 6720,
+      "y": 990
+    },
+    "node_besoboy_39": {
+      "x": 6440,
+      "y": 110
+    },
+    "node_ziggy_space_hamster_2": {
+      "x": 6160,
+      "y": 3630
+    },
+    "node_major_grom_39": {
+      "x": 6860,
+      "y": 1595
+    },
+    "node_cat_and_mouse_tome_1": {
+      "x": 6860,
+      "y": 3850
+    },
+    "node_enoch_39": {
+      "x": 6860,
+      "y": 660
+    },
+    "node_red_fury_39": {
+      "x": 7000,
+      "y": 1595
+    },
+    "node_exlibrium_15": {
+      "x": 6300,
+      "y": 2970
+    },
+    "node_meteora_15": {
+      "x": 6440,
+      "y": 3410
+    },
+    "node_time_of_raven_3": {
+      "x": 7140,
+      "y": 990
+    },
+    "node_caesar_magnificent_1": {
+      "x": 7140,
+      "y": 3960
+    },
+    "node_caesar_magnificent_2": {
+      "x": 7280,
+      "y": 3960
+    },
+    "node_caesar_magnificent_3": {
+      "x": 7420,
+      "y": 3960
+    },
+    "node_caesar_magnificent_4": {
+      "x": 7560,
+      "y": 3960
+    },
+    "node_caesar_magnificent_5": {
+      "x": 7700,
+      "y": 3960
+    },
+    "node_besoboy_40": {
+      "x": 7280,
+      "y": 110
+    },
+    "node_enoch_40": {
+      "x": 7000,
+      "y": 660
+    },
+    "node_major_grom_40": {
+      "x": 7280,
+      "y": 1595
+    },
+    "node_red_fury_40": {
+      "x": 7420,
+      "y": 1595
+    },
+    "node_exlibrium_16": {
+      "x": 6440,
+      "y": 2970
+    },
+    "node_meteora_16": {
+      "x": 6580,
+      "y": 3410
+    },
+    "node_time_of_raven_4": {
+      "x": 7560,
+      "y": 990
+    },
+    "node_besoboy_41": {
+      "x": 7420,
+      "y": 110
+    },
+    "node_red_fury_41": {
+      "x": 7700,
+      "y": 1595
+    },
+    "node_enoch_41": {
+      "x": 7140,
+      "y": 660
+    },
+    "node_major_grom_41": {
+      "x": 7840,
+      "y": 1595
+    },
+    "node_exlibrium_17": {
+      "x": 6580,
+      "y": 2970
+    },
+    "node_meteora_17": {
+      "x": 6720,
+      "y": 3410
+    },
+    "node_time_of_raven_5": {
+      "x": 7980,
+      "y": 990
+    },
+    "node_ziggy_space_hamster_3": {
+      "x": 6300,
+      "y": 3630
+    },
+    "node_besoboy_tome_5": {
+      "x": 5110,
+      "y": 220
+    },
+    "node_major_grom_tome_5": {
+      "x": 4900,
+      "y": 1980
+    },
+    "node_exlibrium_tome_2": {
+      "x": 5320,
+      "y": 3080
+    },
+    "node_time_of_raven_epilogue_single": {
+      "x": 8120,
+      "y": 990
+    },
+    "node_time_of_raven_epilogue_book": {
+      "x": 8120,
+      "y": 1100
+    },
+    "node_red_fury_42": {
+      "x": 8260,
+      "y": 1320
+    },
+    "node_besoboy_42": {
+      "x": 8120,
+      "y": 110
+    },
+    "node_enoch_party_king": {
+      "x": 8260,
+      "y": 4180
+    },
+    "node_major_grom_42": {
+      "x": 8260,
+      "y": 1870
+    },
+    "node_enoch_42": {
+      "x": 7280,
+      "y": 660
+    },
+    "node_exlibrium_18": {
+      "x": 8260,
+      "y": 2970
+    },
+    "node_enoch_tome_5": {
+      "x": 4900,
+      "y": 770
+    },
+    "node_red_fury_tome_5": {
+      "x": 4760,
+      "y": 1430
+    },
+    "node_meteora_tome_2": {
+      "x": 5530,
+      "y": 3520
+    },
+    "node_meteora_18": {
+      "x": 8260,
+      "y": 3410
+    },
+    "node_besoboy_43": {
+      "x": 8260,
+      "y": 110
+    },
+    "node_major_grom_43": {
+      "x": 8400,
+      "y": 1870
+    },
+    "node_enoch_43": {
+      "x": 8400,
+      "y": 660
+    },
+    "node_red_fury_43": {
+      "x": 8400,
+      "y": 1320
+    },
+    "node_exlibrium_19": {
+      "x": 8400,
+      "y": 2970
+    },
+    "node_meteora_19": {
+      "x": 8400,
+      "y": 3410
+    },
+    "node_besoboy_44": {
+      "x": 8400,
+      "y": 110
+    },
+    "node_major_grom_44": {
+      "x": 8540,
+      "y": 1870
+    },
+    "node_enoch_44": {
+      "x": 8540,
+      "y": 660
+    },
+    "node_red_fury_44": {
+      "x": 8540,
+      "y": 1320
+    },
+    "node_exlibrium_20": {
+      "x": 8540,
+      "y": 2970
+    },
+    "node_meteora_20": {
+      "x": 8540,
+      "y": 3410
+    },
+    "node_besoboy_45": {
+      "x": 8540,
+      "y": 110
+    },
+    "node_major_grom_45": {
+      "x": 8680,
+      "y": 1870
+    },
+    "node_besoboy_tome_6": {
+      "x": 5810,
+      "y": 220
+    },
+    "node_major_grom_tome_6": {
+      "x": 5810,
+      "y": 1980
+    },
+    "node_enoch_45": {
+      "x": 8680,
+      "y": 660
+    },
+    "node_ziggy_space_hamster_4": {
+      "x": 6440,
+      "y": 3630
+    },
+    "node_ziggy_space_hamster_5": {
+      "x": 6580,
+      "y": 3630
+    },
+    "node_red_fury_tome_6": {
+      "x": 5670,
+      "y": 1430
+    },
+    "node_red_fury_45": {
+      "x": 8680,
+      "y": 1320
+    },
+    "node_exlibrium_21": {
+      "x": 8680,
+      "y": 2970
+    },
+    "node_meteora_21": {
+      "x": 8680,
+      "y": 3410
+    },
+    "node_besoboy_46": {
+      "x": 8680,
+      "y": 110
+    },
+    "node_major_grom_46": {
+      "x": 8820,
+      "y": 1870
+    },
+    "node_enoch_46": {
+      "x": 8820,
+      "y": 660
+    },
+    "node_red_fury_46": {
+      "x": 8820,
+      "y": 1320
+    },
+    "node_exlibrium_22": {
+      "x": 8820,
+      "y": 2970
+    },
+    "node_meteora_22": {
+      "x": 8820,
+      "y": 3410
+    },
+    "node_caesar_magnificent": {
+      "x": 7420,
+      "y": 4070
+    },
+    "node_besoboy_47": {
+      "x": 8820,
+      "y": 110
+    },
+    "node_major_grom_47": {
+      "x": 8960,
+      "y": 1870
+    },
+    "node_enoch_tome_6": {
+      "x": 5880,
+      "y": 770
+    },
+    "node_enoch_47": {
+      "x": 8960,
+      "y": 660
+    },
+    "node_red_fury_47": {
+      "x": 8960,
+      "y": 1320
+    },
+    "node_exlibrium_23": {
+      "x": 8960,
+      "y": 2970
+    },
+    "node_besoboy_tome_7": {
+      "x": 7210,
+      "y": 220
+    },
+    "node_major_grom_and_red_fury_tome_7": {
+      "x": 7140,
+      "y": 1705
+    },
+    "node_enoch_tome_7": {
+      "x": 7070,
+      "y": 770
+    },
+    "node_meteora_23": {
+      "x": 8960,
+      "y": 3410
+    },
+    "node_besoboy_48": {
+      "x": 8960,
+      "y": 110
+    },
+    "node_major_grom_48": {
+      "x": 9100,
+      "y": 1870
+    },
+    "node_exlibrium_tome_3": {
+      "x": 6160,
+      "y": 3080
+    },
+    "node_meteora_tome_3": {
+      "x": 6440,
+      "y": 3520
+    },
+    "node_time_of_raven": {
+      "x": 7070,
+      "y": 1100
+    },
+    "node_cat_and_mouse_tome_2": {
+      "x": 9100,
+      "y": 3850
+    },
+    "node_enoch_48": {
+      "x": 9100,
+      "y": 660
+    },
+    "node_red_fury_48": {
+      "x": 9100,
+      "y": 1320
+    },
+    "node_exlibrium_24": {
+      "x": 9100,
+      "y": 2970
+    },
+    "node_meteora_24": {
+      "x": 9100,
+      "y": 3410
+    },
+    "node_besoboy_49": {
+      "x": 9100,
+      "y": 110
+    },
+    "node_major_grom_49": {
+      "x": 9240,
+      "y": 1870
+    },
+    "node_enoch_49": {
+      "x": 9240,
+      "y": 660
+    },
+    "node_red_fury_49": {
+      "x": 9240,
+      "y": 1320
+    },
+    "node_exlibrium_25": {
+      "x": 9240,
+      "y": 2970
+    },
+    "node_meteora_25": {
+      "x": 9240,
+      "y": 3410
+    },
+    "node_besoboy_tome_8": {
+      "x": 8470,
+      "y": 220
+    },
+    "node_exlibrium_26": {
+      "x": 9380,
+      "y": 2970
+    },
+    "node_besoboy_50": {
+      "x": 9240,
+      "y": 110
+    },
+    "node_major_grom_50": {
+      "x": 9380,
+      "y": 1870
+    },
+    "node_enoch_50": {
+      "x": 9380,
+      "y": 660
+    },
+    "node_red_fury_50": {
+      "x": 9380,
+      "y": 1320
+    },
+    "node_meteora_26": {
+      "x": 9520,
+      "y": 3410
+    },
+    "node_red_fury_tome_8": {
+      "x": 8470,
+      "y": 1430
+    },
+    "node_ziggy_space_hamster": {
+      "x": 6300,
+      "y": 3740
+    },
+    "node_tipping_point": {
+      "x": 9520,
+      "y": 4290
+    },
+    "node_besoboy_vol_2_1": {
+      "x": 9520,
+      "y": 330
+    },
+    "node_igor_grom_1": {
+      "x": 9520,
+      "y": 2090
+    },
+    "node_planeswalkers_1": {
+      "x": 9520,
+      "y": 880
+    },
+    "node_allies_1": {
+      "x": 9520,
+      "y": 1540
+    },
+    "node_exlibrium_27": {
+      "x": 9520,
+      "y": 2970
+    },
+    "node_meteora_27": {
+      "x": 9660,
+      "y": 3410
+    },
+    "node_allies_2": {
+      "x": 9660,
+      "y": 1540
+    },
+    "node_besoboy_vol_2_2": {
+      "x": 9660,
+      "y": 330
+    },
+    "node_igor_grom_2": {
+      "x": 9660,
+      "y": 2090
+    },
+    "node_planeswalkers_2": {
+      "x": 9660,
+      "y": 880
+    },
+    "node_major_grom_chance_single": {
+      "x": 9660,
+      "y": 1870
+    },
+    "node_major_grom_chance_book": {
+      "x": 9660,
+      "y": 1980
+    },
+    "node_exlibrium_28": {
+      "x": 9660,
+      "y": 2970
+    },
+    "node_meteora_28": {
+      "x": 9800,
+      "y": 3410
+    },
+    "node_allies_3": {
+      "x": 9800,
+      "y": 1540
+    },
+    "node_besoboy_vol_2_3": {
+      "x": 9800,
+      "y": 330
+    },
+    "node_igor_grom_3": {
+      "x": 9800,
+      "y": 2090
+    },
+    "node_planeswalkers_3": {
+      "x": 9800,
+      "y": 880
+    },
+    "node_exlibrium_29": {
+      "x": 9800,
+      "y": 2970
+    },
+    "node_meteora_29": {
+      "x": 9940,
+      "y": 3410
+    },
+    "node_allies_4": {
+      "x": 9940,
+      "y": 1540
+    },
+    "node_igor_ugor_tome_1": {
+      "x": 9940,
+      "y": 4400
+    },
+    "node_besoboy_vol_2_4": {
+      "x": 9940,
+      "y": 330
+    },
+    "node_igor_grom_4": {
+      "x": 9940,
+      "y": 2090
+    },
+    "node_planeswalkers_4": {
+      "x": 9940,
+      "y": 880
+    },
+    "node_exlibrium_30": {
+      "x": 9940,
+      "y": 2970
+    },
+    "node_meteora_30": {
+      "x": 10080,
+      "y": 3410
+    },
+    "node_allies_5": {
+      "x": 10080,
+      "y": 1540
+    },
+    "node_besoboy_vol_2_5": {
+      "x": 10080,
+      "y": 330
+    },
+    "node_igor_grom_5": {
+      "x": 10080,
+      "y": 2090
+    },
+    "node_besoboy_tome_9": {
+      "x": 9030,
+      "y": 220
+    },
+    "node_planeswalkers_5": {
+      "x": 10080,
+      "y": 880
+    },
+    "node_exlibrium_31": {
+      "x": 10080,
+      "y": 2970
+    },
+    "node_meteora_31": {
+      "x": 10220,
+      "y": 3410
+    },
+    "node_allies_6": {
+      "x": 10220,
+      "y": 1540
+    },
+    "node_major_grom_tome_8": {
+      "x": 8820,
+      "y": 1980
+    },
+    "node_enoch_tome_8": {
+      "x": 8890,
+      "y": 770
+    },
+    "node_besoboy_vol_2_6": {
+      "x": 10220,
+      "y": 330
+    },
+    "node_igor_grom_6": {
+      "x": 10220,
+      "y": 2090
+    },
+    "node_red_fury_tome_9": {
+      "x": 9100,
+      "y": 1430
+    },
+    "node_planeswalkers_6": {
+      "x": 10220,
+      "y": 880
+    },
+    "node_exlibrium_32": {
+      "x": 10220,
+      "y": 2970
+    },
+    "node_meteora_32": {
+      "x": 10360,
+      "y": 3410
+    },
+    "node_allies_7": {
+      "x": 10360,
+      "y": 1540
+    },
+    "node_friends_comics_1": {
+      "x": 10360,
+      "y": 4510
+    },
+    "node_besoboy_vol_2_7": {
+      "x": 10360,
+      "y": 330
+    },
+    "node_friends_comics_2": {
+      "x": 10500,
+      "y": 4510
+    },
+    "node_friends_comics_3": {
+      "x": 10640,
+      "y": 4510
+    },
+    "node_igor_grom_7": {
+      "x": 10640,
+      "y": 2090
+    },
+    "node_friends_comics_4": {
+      "x": 10780,
+      "y": 4510
+    },
+    "node_friends_comics_5": {
+      "x": 10920,
+      "y": 4510
+    },
+    "node_planeswalkers_7": {
+      "x": 10920,
+      "y": 880
+    },
+    "node_friends_comics_6": {
+      "x": 11060,
+      "y": 4510
+    },
+    "node_friends_comics_7": {
+      "x": 11200,
+      "y": 4510
+    },
+    "node_exlibrium_33": {
+      "x": 10360,
+      "y": 2970
+    },
+    "node_friends_comics_8": {
+      "x": 11340,
+      "y": 4510
+    },
+    "node_friends_comics_9": {
+      "x": 11480,
+      "y": 4510
+    },
+    "node_meteora_33": {
+      "x": 10500,
+      "y": 3410
+    },
+    "node_friends_comics_10": {
+      "x": 11620,
+      "y": 4510
+    },
+    "node_exlibrium_tome_4": {
+      "x": 8610,
+      "y": 3080
+    },
+    "node_meteora_tome_4": {
+      "x": 8750,
+      "y": 3520
+    },
+    "node_friends_comics_11": {
+      "x": 11760,
+      "y": 4510
+    },
+    "node_allies_8": {
+      "x": 10500,
+      "y": 1540
+    },
+    "node_friends_comics_12": {
+      "x": 11900,
+      "y": 4510
+    },
+    "node_friends_comics_13": {
+      "x": 12040,
+      "y": 4510
+    },
+    "node_besoboy_vol_2_8": {
+      "x": 10500,
+      "y": 330
+    },
+    "node_friends_comics_14": {
+      "x": 12180,
+      "y": 4510
+    },
+    "node_friends_comics_15": {
+      "x": 12320,
+      "y": 4510
+    },
+    "node_igor_grom_8": {
+      "x": 10780,
+      "y": 2090
+    },
+    "node_friends_comics_16": {
+      "x": 12460,
+      "y": 4510
+    },
+    "node_friends_comics_17": {
+      "x": 12600,
+      "y": 4510
+    },
+    "node_planeswalkers_8": {
+      "x": 11060,
+      "y": 880
+    },
+    "node_friends_comics_18": {
+      "x": 12740,
+      "y": 4510
+    },
+    "node_exlibrium_34": {
+      "x": 10500,
+      "y": 2970
+    },
+    "node_friends_comics_19": {
+      "x": 12880,
+      "y": 4510
+    },
+    "node_friends_comics_20": {
+      "x": 13020,
+      "y": 4510
+    },
+    "node_meteora_34": {
+      "x": 10640,
+      "y": 3410
+    },
+    "node_friends_comics_21": {
+      "x": 13160,
+      "y": 4510
+    },
+    "node_friends_comics_22": {
+      "x": 13300,
+      "y": 4510
+    },
+    "node_friends_comics_23": {
+      "x": 13440,
+      "y": 4510
+    },
+    "node_allies_9": {
+      "x": 10640,
+      "y": 1540
+    },
+    "node_friends_comics_24": {
+      "x": 13580,
+      "y": 4510
+    },
+    "node_friends_comics_25": {
+      "x": 13720,
+      "y": 4510
+    },
+    "node_besoboy_vol_2_9": {
+      "x": 10640,
+      "y": 330
+    },
+    "node_friends_comics_26": {
+      "x": 13860,
+      "y": 4510
+    },
+    "node_friends_comics_27": {
+      "x": 14000,
+      "y": 4510
+    },
+    "node_igor_grom_9": {
+      "x": 10920,
+      "y": 2090
+    },
+    "node_planeswalkers_9": {
+      "x": 11200,
+      "y": 880
+    },
+    "node_exlibrium_35": {
+      "x": 14000,
+      "y": 2970
+    },
+    "node_meteora_35": {
+      "x": 10780,
+      "y": 3410
+    },
+    "node_black_dog_1": {
+      "x": 14000,
+      "y": 110
+    },
+    "node_besoboy_vol_2_book_1": {
+      "x": 9800,
+      "y": 550
+    },
+    "node_besoboy_vol_2_tome_1": {
+      "x": 9800,
+      "y": 440
+    },
+    "node_igor_grom_book_1": {
+      "x": 9870,
+      "y": 2310
+    },
+    "node_igor_grom_tome_1": {
+      "x": 9870,
+      "y": 2200
+    },
+    "node_allies_book_1": {
+      "x": 9730,
+      "y": 1760
+    },
+    "node_allies_tome_1": {
+      "x": 9730,
+      "y": 1650
+    },
+    "node_planeswalkers_book_1": {
+      "x": 9870,
+      "y": 1100
+    },
+    "node_planeswalkers_tome_1": {
+      "x": 9870,
+      "y": 990
+    },
+    "node_exlibrium_tome_5": {
+      "x": 9450,
+      "y": 3080
+    },
+    "node_meteora_tome_5": {
+      "x": 9800,
+      "y": 3520
+    },
+    "node_adventures_of_kochi_and_friends": {
+      "x": 14000,
+      "y": 3630
+    },
+    "node_jackets_and_revolvers_tome_1": {
+      "x": 14000,
+      "y": 4620
+    },
+    "node_unicorn_conspiracy_tome_1": {
+      "x": 14000,
+      "y": 4730
+    },
+    "node_tagar_tome_1_prologue": {
+      "x": 14000,
+      "y": 4840
+    },
+    "node_tagar_tome_1_chapter_1": {
+      "x": 14140,
+      "y": 4840
+    },
+    "node_tagar_tome_1_chapter_2": {
+      "x": 14280,
+      "y": 4840
+    },
+    "node_tagar_tome_1_chapter_3": {
+      "x": 14420,
+      "y": 4840
+    },
+    "node_tagar_tome_1_chapter_4": {
+      "x": 14560,
+      "y": 4840
+    },
+    "node_tagar_tome_1": {
+      "x": 14280,
+      "y": 4950
+    },
+    "node_friends_comics": {
+      "x": 12180,
+      "y": 4620
+    },
+    "node_cat_and_mouse_tome_3": {
+      "x": 14560,
+      "y": 3850
+    },
+    "node_allies_10": {
+      "x": 10780,
+      "y": 1540
+    },
+    "node_krutiks_1": {
+      "x": 14560,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_10": {
+      "x": 10780,
+      "y": 330
+    },
+    "node_igor_grom_10": {
+      "x": 11060,
+      "y": 2090
+    },
+    "node_planeswalkers_10": {
+      "x": 11340,
+      "y": 880
+    },
+    "node_exlibrium_36": {
+      "x": 14140,
+      "y": 2970
+    },
+    "node_meteora_36": {
+      "x": 14560,
+      "y": 3410
+    },
+    "node_black_dog_2": {
+      "x": 14140,
+      "y": 110
+    },
+    "node_allies_11": {
+      "x": 10920,
+      "y": 1540
+    },
+    "node_krutiks_2": {
+      "x": 14700,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_11": {
+      "x": 10920,
+      "y": 330
+    },
+    "node_igor_grom_11": {
+      "x": 11200,
+      "y": 2090
+    },
+    "node_planeswalkers_11": {
+      "x": 11480,
+      "y": 880
+    },
+    "node_exlibrium_37": {
+      "x": 14280,
+      "y": 2970
+    },
+    "node_meteora_37": {
+      "x": 14700,
+      "y": 3410
+    },
+    "node_black_dog_3": {
+      "x": 14280,
+      "y": 110
+    },
+    "node_allies_12": {
+      "x": 11060,
+      "y": 1540
+    },
+    "node_krutiks_3": {
+      "x": 14840,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_12": {
+      "x": 11060,
+      "y": 330
+    },
+    "node_igor_grom_12": {
+      "x": 11340,
+      "y": 2090
+    },
+    "node_planeswalkers_12": {
+      "x": 11620,
+      "y": 880
+    },
+    "node_exlibrium_38": {
+      "x": 14420,
+      "y": 2970
+    },
+    "node_black_dog_4": {
+      "x": 14420,
+      "y": 110
+    },
+    "node_besoboy_and_planeswalkers_single": {
+      "x": 22260,
+      "y": 605
+    },
+    "node_besoboy_and_planeswalkers_book": {
+      "x": 22260,
+      "y": 715
+    },
+    "node_meteora_38": {
+      "x": 14840,
+      "y": 3410
+    },
+    "node_allies_13": {
+      "x": 11200,
+      "y": 1540
+    },
+    "node_krutiks_1_2018": {
+      "x": 14980,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_13": {
+      "x": 11200,
+      "y": 330
+    },
+    "node_igor_grom_13": {
+      "x": 11480,
+      "y": 2090
+    },
+    "node_planeswalkers_13": {
+      "x": 11760,
+      "y": 880
+    },
+    "node_exlibrium_39": {
+      "x": 14560,
+      "y": 2970
+    },
+    "node_meteora_39": {
+      "x": 14980,
+      "y": 3410
+    },
+    "node_teo_1": {
+      "x": 17080,
+      "y": 3410
+    },
+    "node_allies_14": {
+      "x": 11340,
+      "y": 1540
+    },
+    "node_krutiks_2_2018": {
+      "x": 15120,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_14": {
+      "x": 11340,
+      "y": 330
+    },
+    "node_igor_grom_14": {
+      "x": 11620,
+      "y": 2090
+    },
+    "node_planeswalkers_14": {
+      "x": 11900,
+      "y": 880
+    },
+    "node_exlibrium_40": {
+      "x": 14700,
+      "y": 2970
+    },
+    "node_meteora_40": {
+      "x": 15120,
+      "y": 3410
+    },
+    "node_teo_2": {
+      "x": 17220,
+      "y": 3410
+    },
+    "node_witch_hunt_prologue": {
+      "x": 15120,
+      "y": 1210
+    },
+    "node_krutiks_3_2018": {
+      "x": 15260,
+      "y": 3630
+    },
+    "node_allies_15": {
+      "x": 15260,
+      "y": 1210
+    },
+    "node_besoboy_vol_2_15": {
+      "x": 15400,
+      "y": 1210
+    },
+    "node_igor_grom_15": {
+      "x": 15540,
+      "y": 1210
+    },
+    "node_planeswalkers_15": {
+      "x": 15680,
+      "y": 1210
+    },
+    "node_exlibrium_41": {
+      "x": 15680,
+      "y": 2970
+    },
+    "node_meteora_41": {
+      "x": 15260,
+      "y": 3410
+    },
+    "node_teo_3": {
+      "x": 17360,
+      "y": 3410
+    },
+    "node_witch_hunt_finale": {
+      "x": 15820,
+      "y": 1210
+    },
+    "node_exlibrium_tome_6": {
+      "x": 10220,
+      "y": 3080
+    },
+    "node_meteora_tome_6": {
+      "x": 10500,
+      "y": 3520
+    },
+    "node_black_dog": {
+      "x": 14210,
+      "y": 220
+    },
+    "node_allies_16": {
+      "x": 15820,
+      "y": 1540
+    },
+    "node_ziggy_and_shmyg_destroy_the_bubble_universe": {
+      "x": 15820,
+      "y": 5500
+    },
+    "node_krutiks_4_2018": {
+      "x": 15400,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_16": {
+      "x": 15820,
+      "y": 330
+    },
+    "node_igor_grom_16": {
+      "x": 15820,
+      "y": 2090
+    },
+    "node_planeswalkers_16": {
+      "x": 15820,
+      "y": 880
+    },
+    "node_exlibrium_42": {
+      "x": 15820,
+      "y": 2970
+    },
+    "node_meteora_42": {
+      "x": 15400,
+      "y": 3410
+    },
+    "node_teo_4": {
+      "x": 17500,
+      "y": 3410
+    },
+    "node_besoboy_vol_2_17": {
+      "x": 15960,
+      "y": 330
+    },
+    "node_allies_17": {
+      "x": 15960,
+      "y": 1540
+    },
+    "node_krutiks_5_2018": {
+      "x": 15540,
+      "y": 3630
+    },
+    "node_igor_grom_17": {
+      "x": 15960,
+      "y": 2090
+    },
+    "node_planeswalkers_17": {
+      "x": 15960,
+      "y": 880
+    },
+    "node_exlibrium_43": {
+      "x": 15960,
+      "y": 2970
+    },
+    "node_meteora_43": {
+      "x": 15540,
+      "y": 3410
+    },
+    "node_dubin_dima_1": {
+      "x": 15960,
+      "y": 1870
+    },
+    "node_allies_18": {
+      "x": 16100,
+      "y": 1540
+    },
+    "node_krutiks_6_2018": {
+      "x": 15680,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_18": {
+      "x": 16100,
+      "y": 330
+    },
+    "node_igor_grom_18": {
+      "x": 16100,
+      "y": 2090
+    },
+    "node_dubin_dima_2": {
+      "x": 16100,
+      "y": 1870
+    },
+    "node_teo": {
+      "x": 17290,
+      "y": 3520
+    },
+    "node_planeswalkers_18": {
+      "x": 16100,
+      "y": 880
+    },
+    "node_exlibrium_44": {
+      "x": 16100,
+      "y": 2970
+    },
+    "node_meteora_44": {
+      "x": 15680,
+      "y": 3410
+    },
+    "node_allies_19": {
+      "x": 16240,
+      "y": 1540
+    },
+    "node_krutiks_7_2018": {
+      "x": 15820,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_19": {
+      "x": 16240,
+      "y": 330
+    },
+    "node_igor_grom_19": {
+      "x": 16240,
+      "y": 2090
+    },
+    "node_planeswalkers_19": {
+      "x": 16240,
+      "y": 880
+    },
+    "node_exlibrium_45": {
+      "x": 16240,
+      "y": 2970
+    },
+    "node_meteora_45": {
+      "x": 16240,
+      "y": 3410
+    },
+    "node_dubin_dima_3": {
+      "x": 16240,
+      "y": 1870
+    },
+    "node_allies_20": {
+      "x": 16380,
+      "y": 1540
+    },
+    "node_krutiks_8_2018": {
+      "x": 16380,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_20": {
+      "x": 16380,
+      "y": 330
+    },
+    "node_igor_grom_20": {
+      "x": 16380,
+      "y": 2090
+    },
+    "node_planeswalkers_20": {
+      "x": 16380,
+      "y": 880
+    },
+    "node_wolf_helsing": {
+      "x": 16380,
+      "y": 5610
+    },
+    "node_besoboy_vol_2_book_2": {
+      "x": 10780,
+      "y": 550
+    },
+    "node_besoboy_vol_2_tome_2": {
+      "x": 10500,
+      "y": 440
+    },
+    "node_igor_grom_book_2": {
+      "x": 11130,
+      "y": 2310
+    },
+    "node_igor_grom_tome_2": {
+      "x": 10850,
+      "y": 2200
+    },
+    "node_allies_book_2": {
+      "x": 10710,
+      "y": 1760
+    },
+    "node_allies_tome_2": {
+      "x": 10360,
+      "y": 1650
+    },
+    "node_planeswalkers_book_2": {
+      "x": 11410,
+      "y": 1100
+    },
+    "node_planeswalkers_tome_2": {
+      "x": 11130,
+      "y": 990
+    },
+    "node_exlibrium_46": {
+      "x": 16380,
+      "y": 2970
+    },
+    "node_meteora_46": {
+      "x": 16380,
+      "y": 3410
+    },
+    "node_dubin_dima_4": {
+      "x": 16380,
+      "y": 1870
+    },
+    "node_allies_21": {
+      "x": 16520,
+      "y": 1540
+    },
+    "node_krutiks_9_2018": {
+      "x": 16520,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_21": {
+      "x": 16520,
+      "y": 330
+    },
+    "node_igor_grom_21": {
+      "x": 16520,
+      "y": 2090
+    },
+    "node_planeswalkers_21": {
+      "x": 16520,
+      "y": 880
+    },
+    "node_exlibrium_47": {
+      "x": 16520,
+      "y": 2970
+    },
+    "node_meteora_47": {
+      "x": 16520,
+      "y": 3410
+    },
+    "node_seven_sons_jaykarn": {
+      "x": 16660,
+      "y": 5720
+    },
+    "node_allies_22": {
+      "x": 16660,
+      "y": 1540
+    },
+    "node_krutiks_10_2018": {
+      "x": 16660,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_22": {
+      "x": 16660,
+      "y": 330
+    },
+    "node_igor_grom_22": {
+      "x": 16660,
+      "y": 2090
+    },
+    "node_crusade_prologue": {
+      "x": 16660,
+      "y": 880
+    },
+    "node_yarkh_step_forward_1": {
+      "x": 16660,
+      "y": 110
+    },
+    "node_exlibrium_tome_7": {
+      "x": 14350,
+      "y": 3080
+    },
+    "node_meteora_tome_7": {
+      "x": 14770,
+      "y": 3520
+    },
+    "node_dubin_dima": {
+      "x": 16170,
+      "y": 1980
+    },
+    "node_master_single": {
+      "x": 16660,
+      "y": 660
+    },
+    "node_master_book": {
+      "x": 16660,
+      "y": 770
+    },
+    "node_ziggy_and_shmyg_save_comiccon": {
+      "x": 16660,
+      "y": 5500
+    },
+    "node_besoboy_vol_2_tome_3": {
+      "x": 11130,
+      "y": 440
+    },
+    "node_igor_grom_tome_3": {
+      "x": 11410,
+      "y": 2200
+    },
+    "node_planeswalkers_tome_3": {
+      "x": 11690,
+      "y": 990
+    },
+    "node_allies_tome_3": {
+      "x": 11060,
+      "y": 1650
+    },
+    "node_witch_hunt": {
+      "x": 15470,
+      "y": 1320
+    },
+    "node_jackets_and_revolvers_tome_2": {
+      "x": 16660,
+      "y": 4620
+    },
+    "node_exlibrium_48": {
+      "x": 16660,
+      "y": 2970
+    },
+    "node_meteora_48": {
+      "x": 16660,
+      "y": 3410
+    },
+    "node_yarkh_step_forward_2": {
+      "x": 16800,
+      "y": 110
+    },
+    "node_allies_23": {
+      "x": 16800,
+      "y": 1540
+    },
+    "node_krutiks_11_2018": {
+      "x": 16800,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_23": {
+      "x": 16800,
+      "y": 330
+    },
+    "node_igor_grom_23": {
+      "x": 16800,
+      "y": 2090
+    },
+    "node_crusade_1": {
+      "x": 16800,
+      "y": 880
+    },
+    "node_crusade_wolf_1": {
+      "x": 16800,
+      "y": 1100
+    },
+    "node_exlibrium_49": {
+      "x": 16800,
+      "y": 2970
+    },
+    "node_meteora_49": {
+      "x": 16800,
+      "y": 3410
+    },
+    "node_yarkh_step_forward_3": {
+      "x": 16940,
+      "y": 110
+    },
+    "node_allies_24": {
+      "x": 16940,
+      "y": 1540
+    },
+    "node_krutiks_12_2018": {
+      "x": 16940,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_24": {
+      "x": 16940,
+      "y": 330
+    },
+    "node_igor_grom_24": {
+      "x": 16940,
+      "y": 2090
+    },
+    "node_crusade_wolf_2": {
+      "x": 16940,
+      "y": 1100
+    },
+    "node_crusade_2": {
+      "x": 16940,
+      "y": 880
+    },
+    "node_major_grom_promise": {
+      "x": 19180,
+      "y": 2090
+    },
+    "node_exlibrium_50": {
+      "x": 16940,
+      "y": 2970
+    },
+    "node_meteora_50": {
+      "x": 16940,
+      "y": 3410
+    },
+    "node_igor_ugor_tome_2": {
+      "x": 17500,
+      "y": 4400
+    },
+    "node_russian_folk_tales_in_comics": {
+      "x": 17500,
+      "y": 5610
+    },
+    "node_thief_of_shadows_1": {
+      "x": 17500,
+      "y": 5830
+    },
+    "node_thief_of_shadows_2": {
+      "x": 17640,
+      "y": 5830
+    },
+    "node_allies_25": {
+      "x": 17080,
+      "y": 1540
+    },
+    "node_krutiks_new_years_special": {
+      "x": 17080,
+      "y": 3630
+    },
+    "node_besoboy_vol_2_25": {
+      "x": 17080,
+      "y": 330
+    },
+    "node_igor_grom_25": {
+      "x": 17080,
+      "y": 2090
+    },
+    "node_crusade_3": {
+      "x": 17080,
+      "y": 880
+    },
+    "node_crusade_wolf_3": {
+      "x": 17080,
+      "y": 1100
+    },
+    "node_yarkh_step_forward_4": {
+      "x": 17080,
+      "y": 110
+    },
+    "node_allies_26": {
+      "x": 17220,
+      "y": 1540
+    },
+    "node_besoboy_vol_2_26": {
+      "x": 17220,
+      "y": 330
+    },
+    "node_igor_grom_26": {
+      "x": 17640,
+      "y": 2090
+    },
+    "node_crusade_wolf_4": {
+      "x": 17220,
+      "y": 1100
+    },
+    "node_yarkh_step_forward_5": {
+      "x": 17220,
+      "y": 110
+    },
+    "node_allies_27": {
+      "x": 17360,
+      "y": 1540
+    },
+    "node_crusade_4": {
+      "x": 17220,
+      "y": 880
+    },
+    "node_besoboy_vol_2_27": {
+      "x": 17360,
+      "y": 330
+    },
+    "node_igor_grom_27": {
+      "x": 17780,
+      "y": 2090
+    },
+    "node_crusade_wolf_5": {
+      "x": 17360,
+      "y": 1100
+    },
+    "node_yarkh_step_forward_6": {
+      "x": 17360,
+      "y": 110
+    },
+    "node_crusade_epilogue": {
+      "x": 17360,
+      "y": 880
+    },
+    "node_allies_28": {
+      "x": 17500,
+      "y": 1540
+    },
+    "node_besoboy_vol_2_28": {
+      "x": 17500,
+      "y": 330
+    },
+    "node_meteora_tome_8": {
+      "x": 15400,
+      "y": 3520
+    },
+    "node_planeswalkers_tome_4": {
+      "x": 16170,
+      "y": 990
+    },
+    "node_igor_grom_28": {
+      "x": 17920,
+      "y": 2090
+    },
+    "node_sister_kukki_1": {
+      "x": 17920,
+      "y": 6270
+    },
+    "node_falcon_1": {
+      "x": 17920,
+      "y": 6050
+    },
+    "node_plush_policeman_the_perfect_plan": {
+      "x": 17920,
+      "y": 6490
+    },
+    "node_black_hand_and_mysterious_package": {
+      "x": 17920,
+      "y": 6600
+    },
+    "node_exlibrium_blank_sheet_single": {
+      "x": 27160,
+      "y": 3080
+    },
+    "node_exlibrium_blank_sheet_book": {
+      "x": 27160,
+      "y": 3190
+    },
+    "node_besoboy_vol_2_tome_4": {
+      "x": 16030,
+      "y": 440
+    },
+    "node_besoboy_vol_2_tome_5": {
+      "x": 16590,
+      "y": 440
+    },
+    "node_allies_29": {
+      "x": 17920,
+      "y": 1540
+    },
+    "node_besoboy_vol_2_29": {
+      "x": 17920,
+      "y": 330
+    },
+    "node_allies_tome_4": {
+      "x": 16030,
+      "y": 1650
+    },
+    "node_igor_grom_29": {
+      "x": 18060,
+      "y": 2090
+    },
+    "node_anna_input": {
+      "x": 18060,
+      "y": 6490
+    },
+    "node_cell_split": {
+      "x": 18060,
+      "y": 6600
+    },
+    "node_pulse_heros_voice": {
+      "x": 18060,
+      "y": 6270
+    },
+    "node_exlibrium_tome_8": {
+      "x": 15960,
+      "y": 3080
+    },
+    "node_igor_grom_tome_4": {
+      "x": 16170,
+      "y": 2200
+    },
+    "node_tagar_tome_2_chapter_1": {
+      "x": 18060,
+      "y": 4840
+    },
+    "node_tagar_tome_2_chapter_2": {
+      "x": 18200,
+      "y": 4840
+    },
+    "node_tagar_tome_2_chapter_3": {
+      "x": 18340,
+      "y": 4840
+    },
+    "node_tagar_tome_2_chapter_4": {
+      "x": 18480,
+      "y": 4840
+    },
+    "node_tagar_tome_2_chapter_5": {
+      "x": 18620,
+      "y": 4840
+    },
+    "node_tagar_tome_2": {
+      "x": 18340,
+      "y": 4950
+    },
+    "node_allies_30": {
+      "x": 18060,
+      "y": 1540
+    },
+    "node_besoboy_vol_2_30": {
+      "x": 18060,
+      "y": 330
+    },
+    "node_igor_grom_30": {
+      "x": 18200,
+      "y": 2090
+    },
+    "node_allies_tome_5": {
+      "x": 16590,
+      "y": 1650
+    },
+    "node_allies_31": {
+      "x": 18200,
+      "y": 1540
+    },
+    "node_besoboy_vol_2_31": {
+      "x": 18200,
+      "y": 330
+    },
+    "node_igor_grom_31": {
+      "x": 18620,
+      "y": 2090
+    },
+    "node_dont_be_reckless_quatrefoil": {
+      "x": 18620,
+      "y": 6270
+    },
+    "node_besoboy_vol_2_32": {
+      "x": 18340,
+      "y": 330
+    },
+    "node_igor_grom_32": {
+      "x": 18760,
+      "y": 2090
+    },
+    "node_allies_32": {
+      "x": 18340,
+      "y": 1540
+    },
+    "node_allies_33": {
+      "x": 18480,
+      "y": 1540
+    },
+    "node_memento_mori_call_of_the_void": {
+      "x": 18760,
+      "y": 6270
+    },
+    "node_besoboy_vol_2_tome_6": {
+      "x": 17220,
+      "y": 440
+    },
+    "node_igor_grom_tome_5": {
+      "x": 16870,
+      "y": 2200
+    },
+    "node_exlibrium_second_life": {
+      "x": 18760,
+      "y": 3190
+    },
+    "node_crusade": {
+      "x": 17010,
+      "y": 990
+    },
+    "node_crusade_wolf": {
+      "x": 17080,
+      "y": 1210
+    },
+    "node_exlibrium_tome_9": {
+      "x": 16660,
+      "y": 3080
+    },
+    "node_meteora_tome_9": {
+      "x": 16590,
+      "y": 3520
+    },
+    "node_allies_tome_6": {
+      "x": 17220,
+      "y": 1650
+    },
+    "node_yarkh_step_forward": {
+      "x": 17010,
+      "y": 220
+    },
+    "node_balor_and_yana_dream_catcher_single": {
+      "x": 18760,
+      "y": 110
+    },
+    "node_balor_and_yana_dream_catcher_book": {
+      "x": 18760,
+      "y": 220
+    },
+    "node_besoboy_vol_2_33": {
+      "x": 18760,
+      "y": 330
+    },
+    "node_igor_grom_33": {
+      "x": 18900,
+      "y": 2090
+    },
+    "node_major_grom_1939_single": {
+      "x": 18900,
+      "y": 1870
+    },
+    "node_major_grom_1939_book": {
+      "x": 18900,
+      "y": 1980
+    },
+    "node_allies_34": {
+      "x": 18900,
+      "y": 1540
+    },
+    "node_besoboy_vol_2_34": {
+      "x": 18900,
+      "y": 330
+    },
+    "node_igor_grom_34": {
+      "x": 19040,
+      "y": 2090
+    },
+    "node_major_grom_like_in_war_1": {
+      "x": 19180,
+      "y": 1870
+    },
+    "node_allies_35": {
+      "x": 19040,
+      "y": 1540
+    },
+    "node_besoboy_vol_2_35": {
+      "x": 19040,
+      "y": 330
+    },
+    "node_igor_grom_35": {
+      "x": 19320,
+      "y": 2090
+    },
+    "node_exlibrium_second_life_1": {
+      "x": 18900,
+      "y": 3190
+    },
+    "node_allies_36": {
+      "x": 19180,
+      "y": 1540
+    },
+    "node_major_grom_like_in_war_2": {
+      "x": 19320,
+      "y": 1870
+    },
+    "node_major_grom_like_in_war_3": {
+      "x": 19460,
+      "y": 1870
+    },
+    "node_major_grom_like_in_war_4": {
+      "x": 19600,
+      "y": 1870
+    },
+    "node_besoboy_vol_2_36": {
+      "x": 19180,
+      "y": 330
+    },
+    "node_igor_grom_36": {
+      "x": 19460,
+      "y": 2090
+    },
+    "node_exlibrium_second_life_2": {
+      "x": 19040,
+      "y": 3190
+    },
+    "node_allies_37": {
+      "x": 19320,
+      "y": 1540
+    },
+    "node_igor_grom_37": {
+      "x": 19600,
+      "y": 2090
+    },
+    "node_besoboy_vol_2_37": {
+      "x": 19320,
+      "y": 330
+    },
+    "node_major_grom_like_in_war": {
+      "x": 19390,
+      "y": 1980
+    },
+    "node_exlibrium_second_life_3": {
+      "x": 19180,
+      "y": 3190
+    },
+    "node_allies_38": {
+      "x": 19460,
+      "y": 1540
+    },
+    "node_jackets_and_revolvers_tome_3": {
+      "x": 19600,
+      "y": 4620
+    },
+    "node_besoboy_vol_2_38": {
+      "x": 19460,
+      "y": 330
+    },
+    "node_allies_tome_7": {
+      "x": 18200,
+      "y": 1650
+    },
+    "node_igor_grom_tome_6": {
+      "x": 17920,
+      "y": 2200
+    },
+    "node_exlibrium_second_life_4": {
+      "x": 19320,
+      "y": 3190
+    },
+    "node_igor_grom_38": {
+      "x": 19740,
+      "y": 2090
+    },
+    "node_allies_39": {
+      "x": 19600,
+      "y": 1540
+    },
+    "node_enoch_party_king_no_more_parties": {
+      "x": 19740,
+      "y": 4180
+    },
+    "node_falcon_2": {
+      "x": 18060,
+      "y": 6050
+    },
+    "node_anna_space_of_options": {
+      "x": 19740,
+      "y": 6490
+    },
+    "node_pulse_premiere": {
+      "x": 18200,
+      "y": 6270
+    },
+    "node_besoboy_vol_2_tome_7": {
+      "x": 18130,
+      "y": 440
+    },
+    "node_besoboy_vol_2_39": {
+      "x": 19740,
+      "y": 330
+    },
+    "node_exlibrium_second_life_5": {
+      "x": 19740,
+      "y": 3190
+    },
+    "node_exlibrium_second_life_tome_1": {
+      "x": 19040,
+      "y": 3300
+    },
+    "node_igor_grom_39": {
+      "x": 19880,
+      "y": 2090
+    },
+    "node_allies_40": {
+      "x": 19740,
+      "y": 1540
+    },
+    "node_plague_doctor_1": {
+      "x": 19880,
+      "y": 2530
+    },
+    "node_igor_grom_40": {
+      "x": 20020,
+      "y": 2090
+    },
+    "node_besoboy_vol_2_40": {
+      "x": 19880,
+      "y": 330
+    },
+    "node_exlibrium_second_life_6": {
+      "x": 19880,
+      "y": 3190
+    },
+    "node_allies_41": {
+      "x": 19880,
+      "y": 1540
+    },
+    "node_editor": {
+      "x": 20020,
+      "y": 6270
+    },
+    "node_quarantine_book_single": {
+      "x": 22260,
+      "y": 330
+    },
+    "node_quarantine_book_book": {
+      "x": 22260,
+      "y": 440
+    },
+    "node_igor_grom_41": {
+      "x": 20160,
+      "y": 2090
+    },
+    "node_besoboy_vol_2_41": {
+      "x": 20020,
+      "y": 330
+    },
+    "node_exlibrium_second_life_7": {
+      "x": 20020,
+      "y": 3190
+    },
+    "node_devilry_1": {
+      "x": 20160,
+      "y": 6710
+    },
+    "node_chosen_one_of_the_moon_1": {
+      "x": 20160,
+      "y": 5060
+    },
+    "node_igor_grom_tome_7": {
+      "x": 18900,
+      "y": 2200
+    },
+    "node_igor_grom_42": {
+      "x": 20300,
+      "y": 2090
+    },
+    "node_besoboy_vol_2_42": {
+      "x": 20160,
+      "y": 330
+    },
+    "node_allies_tome_8": {
+      "x": 19390,
+      "y": 1650
+    },
+    "node_exlibrium_second_life_8": {
+      "x": 20160,
+      "y": 3190
+    },
+    "node_devilry_2": {
+      "x": 20300,
+      "y": 6710
+    },
+    "node_community_1": {
+      "x": 20300,
+      "y": 6930
+    },
+    "node_mir_1": {
+      "x": 20300,
+      "y": 2750
+    },
+    "node_mir_tome_1": {
+      "x": 20300,
+      "y": 2860
+    },
+    "node_chosen_one_of_the_moon_2": {
+      "x": 20300,
+      "y": 5060
+    },
+    "node_igor_grom_43": {
+      "x": 20440,
+      "y": 2090
+    },
+    "node_besoboy_vol_2_43": {
+      "x": 20440,
+      "y": 330
+    },
+    "node_exlibrium_second_life_9": {
+      "x": 20440,
+      "y": 3190
+    },
+    "node_devilry_3": {
+      "x": 20440,
+      "y": 6710
+    },
+    "node_exlibrium_second_life_tome_2": {
+      "x": 19950,
+      "y": 3300
+    },
+    "node_besoboy_vol_2_tome_8": {
+      "x": 19110,
+      "y": 440
+    },
+    "node_chosen_one_of_the_moon_3": {
+      "x": 20440,
+      "y": 5060
+    },
+    "node_igor_grom_tome_8": {
+      "x": 19600,
+      "y": 2200
+    },
+    "node_besoboy_vol_2_44": {
+      "x": 20580,
+      "y": 330
+    },
+    "node_exlibrium_second_life_10": {
+      "x": 20580,
+      "y": 3190
+    },
+    "node_igor_grom_44": {
+      "x": 20580,
+      "y": 2090
+    },
+    "node_major_grom_hero_forever_1": {
+      "x": 20580,
+      "y": 1870
+    },
+    "node_devilry_4": {
+      "x": 20580,
+      "y": 6710
+    },
+    "node_major_grom_hero_forever": {
+      "x": 20580,
+      "y": 1980
+    },
+    "node_devilry": {
+      "x": 20370,
+      "y": 6820
+    },
+    "node_turbocarp": {
+      "x": 20580,
+      "y": 7150
+    },
+    "node_mir_2": {
+      "x": 20580,
+      "y": 2750
+    },
+    "node_mir_tome_2": {
+      "x": 20650,
+      "y": 2860
+    },
+    "node_plague_doctor_2": {
+      "x": 20020,
+      "y": 2530
+    },
+    "node_chosen_one_of_the_moon_4": {
+      "x": 20580,
+      "y": 5060
+    },
+    "node_igor_grom_45": {
+      "x": 20720,
+      "y": 2090
+    },
+    "node_besoboy_vol_2_45": {
+      "x": 20720,
+      "y": 330
+    },
+    "node_exlibrium_second_life_11": {
+      "x": 20720,
+      "y": 3190
+    },
+    "node_mir_3": {
+      "x": 20720,
+      "y": 2750
+    },
+    "node_chosen_one_of_the_moon_5": {
+      "x": 20720,
+      "y": 5060
+    },
+    "node_besoboy_vol_2_46": {
+      "x": 20860,
+      "y": 330
+    },
+    "node_thief_of_shadows_3": {
+      "x": 17780,
+      "y": 5830
+    },
+    "node_thief_of_shadows_4": {
+      "x": 17920,
+      "y": 5830
+    },
+    "node_thief_of_shadows_5": {
+      "x": 18060,
+      "y": 5830
+    },
+    "node_igor_grom_46": {
+      "x": 20860,
+      "y": 2090
+    },
+    "node_exlibrium_second_life_12": {
+      "x": 20860,
+      "y": 3190
+    },
+    "node_plague_doctor_3": {
+      "x": 20160,
+      "y": 2530
+    },
+    "node_plague_doctor_tome_1": {
+      "x": 20090,
+      "y": 2640
+    },
+    "node_tagar_tome_3_chapter_1": {
+      "x": 20860,
+      "y": 4840
+    },
+    "node_tagar_tome_3_chapter_2": {
+      "x": 21000,
+      "y": 4840
+    },
+    "node_tagar_tome_3_chapter_3": {
+      "x": 21140,
+      "y": 4840
+    },
+    "node_tagar_tome_3_chapter_4": {
+      "x": 21280,
+      "y": 4840
+    },
+    "node_tagar_tome_3_chapter_5": {
+      "x": 21420,
+      "y": 4840
+    },
+    "node_tagar_tome_3_chapter_6": {
+      "x": 21560,
+      "y": 4840
+    },
+    "node_tagar_tome_3_chapter_7": {
+      "x": 21700,
+      "y": 4840
+    },
+    "node_tagar_tome_3": {
+      "x": 21280,
+      "y": 4950
+    },
+    "node_chosen_one_of_the_moon_6": {
+      "x": 20860,
+      "y": 5060
+    },
+    "node_chosen_one_of_the_moon": {
+      "x": 20510,
+      "y": 5170
+    },
+    "node_igor_grom_47": {
+      "x": 21000,
+      "y": 2090
+    },
+    "node_mir_tome_3": {
+      "x": 22050,
+      "y": 2860
+    },
+    "node_plague_doctor_4": {
+      "x": 20300,
+      "y": 2530
+    },
+    "node_exlibrium_second_life_13": {
+      "x": 21700,
+      "y": 3190
+    },
+    "node_besoboy_vol_2_47": {
+      "x": 21700,
+      "y": 330
+    },
+    "node_krutiks_cool_comics_book_1": {
+      "x": 14840,
+      "y": 3740
+    },
+    "node_besoboy_vol_2_48": {
+      "x": 21840,
+      "y": 330
+    },
+    "node_winter_special_plague_doctor": {
+      "x": 23100,
+      "y": 2530
+    },
+    "node_igor_grom_tome_9": {
+      "x": 20300,
+      "y": 2200
+    },
+    "node_exlibrium_second_life_14": {
+      "x": 21840,
+      "y": 3190
+    },
+    "node_igor_grom_48": {
+      "x": 21140,
+      "y": 2090
+    },
+    "node_besoboy_vol_2_49": {
+      "x": 21980,
+      "y": 330
+    },
+    "node_mir_4": {
+      "x": 21980,
+      "y": 2750
+    },
+    "node_besoboy_vol_2_tome_9": {
+      "x": 19950,
+      "y": 440
+    },
+    "node_igor_grom_49": {
+      "x": 21280,
+      "y": 2090
+    },
+    "node_exlibrium_second_life_15": {
+      "x": 21980,
+      "y": 3190
+    },
+    "node_plague_doctor_5": {
+      "x": 21980,
+      "y": 2530
+    },
+    "node_exlibrium_second_life_tome_3": {
+      "x": 20650,
+      "y": 3300
+    },
+    "node_mir_5": {
+      "x": 22120,
+      "y": 2750
+    },
+    "node_exlibrium_second_life_16": {
+      "x": 22120,
+      "y": 3190
+    },
+    "node_exlibrium_second_life_17": {
+      "x": 22260,
+      "y": 3190
+    },
+    "node_mir_eternal_memory_single": {
+      "x": 26880,
+      "y": 2750
+    },
+    "node_mir_eternal_memory_book": {
+      "x": 26880,
+      "y": 2860
+    },
+    "node_igor_grom_50": {
+      "x": 21420,
+      "y": 2090
+    },
+    "node_besoboy_vol_2_50": {
+      "x": 22120,
+      "y": 330
+    },
+    "node_mir_tome_4": {
+      "x": 22470,
+      "y": 2860
+    },
+    "node_plague_doctor_6": {
+      "x": 22120,
+      "y": 2530
+    },
+    "node_exlibrium_second_life_18": {
+      "x": 22400,
+      "y": 3190
+    },
+    "node_mir_6": {
+      "x": 22400,
+      "y": 2750
+    },
+    "node_igor_grom_tome_10": {
+      "x": 21070,
+      "y": 2200
+    },
+    "node_plague_doctor_7": {
+      "x": 22260,
+      "y": 2530
+    },
+    "node_exlibrium_second_life_19": {
+      "x": 22540,
+      "y": 3190
+    },
+    "node_major_igor_grom_1": {
+      "x": 22540,
+      "y": 2310
+    },
+    "node_exlibrium_second_life_tome_4": {
+      "x": 22050,
+      "y": 3300
+    },
+    "node_mir_7": {
+      "x": 22540,
+      "y": 2750
+    },
+    "node_exlibrium_second_life_20": {
+      "x": 22680,
+      "y": 3190
+    },
+    "node_plague_doctor_8": {
+      "x": 22400,
+      "y": 2530
+    },
+    "node_exlibrium_red_line_single": {
+      "x": 27300,
+      "y": 3080
+    },
+    "node_exlibrium_red_line_book": {
+      "x": 27300,
+      "y": 3190
+    },
+    "node_community_2": {
+      "x": 20440,
+      "y": 6930
+    },
+    "node_community": {
+      "x": 20510,
+      "y": 7040
+    },
+    "node_major_igor_grom_2": {
+      "x": 22680,
+      "y": 2310
+    },
+    "node_besoboy_vol_2_tome_10": {
+      "x": 20650,
+      "y": 440
+    },
+    "node_igor_ugor_2_5": {
+      "x": 22820,
+      "y": 4400
+    },
+    "node_exlibrium_second_life_21": {
+      "x": 22820,
+      "y": 3190
+    },
+    "node_plague_doctor_tome_2": {
+      "x": 22190,
+      "y": 2640
+    },
+    "node_plague_doctor_9": {
+      "x": 22820,
+      "y": 2530
+    },
+    "node_community_3": {
+      "x": 20580,
+      "y": 6930
+    },
+    "node_major_igor_grom_3": {
+      "x": 22820,
+      "y": 2310
+    },
+    "node_besoboy_vol_2_tome_11": {
+      "x": 21910,
+      "y": 440
+    },
+    "node_falcon_tome_1": {
+      "x": 18130,
+      "y": 6160
+    },
+    "node_jackets_and_revolvers_tome_4": {
+      "x": 22820,
+      "y": 4620
+    },
+    "node_exlibrium_second_life_22": {
+      "x": 22960,
+      "y": 3190
+    },
+    "node_plague_doctor_10": {
+      "x": 22960,
+      "y": 2530
+    },
+    "node_community_4": {
+      "x": 20720,
+      "y": 6930
+    },
+    "node_bubble_halloween": {
+      "x": 23100,
+      "y": 6710
+    },
+    "node_krutiks_introduction_to_the_academy": {
+      "x": 23100,
+      "y": 3630
+    },
+    "node_major_igor_grom_4": {
+      "x": 22960,
+      "y": 2310
+    },
+    "node_major_igor_grom_tome_1": {
+      "x": 22750,
+      "y": 2420
+    },
+    "node_exlibrium_second_life_tome_5": {
+      "x": 22750,
+      "y": 3300
+    },
+    "node_falcon_3": {
+      "x": 18200,
+      "y": 6050
+    },
+    "node_plague_doctor_tome_3": {
+      "x": 22960,
+      "y": 2640
+    },
+    "node_exlibrium_second_life_23": {
+      "x": 23100,
+      "y": 3190
+    },
+    "node_major_igor_grom_x_plague_doctor_11": {
+      "x": 23800,
+      "y": 2420
+    },
+    "node_special_volkov_inferno_single": {
+      "x": 27160,
+      "y": 2530
+    },
+    "node_special_volkov_inferno_book": {
+      "x": 27160,
+      "y": 2640
+    },
+    "node_mir_tome_5": {
+      "x": 23310,
+      "y": 2860
+    },
+    "node_mir_8": {
+      "x": 23240,
+      "y": 2750
+    },
+    "node_falcon_4": {
+      "x": 18340,
+      "y": 6050
+    },
+    "node_major_igor_grom_5": {
+      "x": 23240,
+      "y": 2310
+    },
+    "node_thief_of_shadows_tome_1": {
+      "x": 17780,
+      "y": 5940
+    },
+    "node_exlibrium_second_life_24": {
+      "x": 23240,
+      "y": 3190
+    },
+    "node_major_igor_grom_x_plague_doctor_12": {
+      "x": 23940,
+      "y": 2420
+    },
+    "node_special_prokopenko_grom_at_sunrise_single": {
+      "x": 27160,
+      "y": 2090
+    },
+    "node_special_prokopenko_grom_at_sunrise_book": {
+      "x": 27160,
+      "y": 2200
+    },
+    "node_soyuzmultcomics": {
+      "x": 23380,
+      "y": 3630
+    },
+    "node_mir_9": {
+      "x": 23380,
+      "y": 2750
+    },
+    "node_thief_of_shadows_6": {
+      "x": 23380,
+      "y": 5830
+    },
+    "node_lady_of_radiance_1": {
+      "x": 23380,
+      "y": 5060
+    },
+    "node_unicorn_conspiracy_tome_2": {
+      "x": 23380,
+      "y": 4730
+    },
+    "node_major_igor_grom_6": {
+      "x": 23380,
+      "y": 2310
+    },
+    "node_exlibrium_second_life_25": {
+      "x": 23380,
+      "y": 3190
+    },
+    "node_thief_of_shadows_7": {
+      "x": 23520,
+      "y": 5830
+    },
+    "node_lady_of_radiance_2": {
+      "x": 23520,
+      "y": 5060
+    },
+    "node_major_igor_grom_7": {
+      "x": 23520,
+      "y": 2310
+    },
+    "node_exlibrium_second_life_26": {
+      "x": 23520,
+      "y": 3190
+    },
+    "node_krutiks_cool_comics_book_2": {
+      "x": 15540,
+      "y": 3740
+    },
+    "node_thief_of_shadows_8": {
+      "x": 23660,
+      "y": 5830
+    },
+    "node_lady_of_radiance_3": {
+      "x": 23660,
+      "y": 5060
+    },
+    "node_major_igor_grom_x_plague_doctor_13": {
+      "x": 24080,
+      "y": 2420
+    },
+    "node_golden_warrior": {
+      "x": 23660,
+      "y": 7260
+    },
+    "node_exlibrium_second_life_27": {
+      "x": 23660,
+      "y": 3190
+    },
+    "node_major_igor_grom_x_plague_doctor_14": {
+      "x": 24220,
+      "y": 2420
+    },
+    "node_thief_of_shadows_9": {
+      "x": 23800,
+      "y": 5830
+    },
+    "node_lady_of_radiance_4": {
+      "x": 23800,
+      "y": 5060
+    },
+    "node_plague_doctor_15": {
+      "x": 24360,
+      "y": 2530
+    },
+    "node_exlibrium_second_life_28": {
+      "x": 23800,
+      "y": 3190
+    },
+    "node_major_igor_grom_8": {
+      "x": 23660,
+      "y": 2310
+    },
+    "node_major_igor_grom_x_plague_doctor_book_4": {
+      "x": 24010,
+      "y": 2530
+    },
+    "node_mir_10": {
+      "x": 24360,
+      "y": 2750
+    },
+    "node_major_igor_grom_tome_2": {
+      "x": 23450,
+      "y": 2420
+    },
+    "node_exlibrium_second_life_tome_6": {
+      "x": 23380,
+      "y": 3300
+    },
+    "node_major_igor_grom_9": {
+      "x": 24360,
+      "y": 2310
+    },
+    "node_plague_doctor_16": {
+      "x": 24500,
+      "y": 2530
+    },
+    "node_exlibrium_second_life_29": {
+      "x": 23940,
+      "y": 3190
+    },
+    "node_meteora_storybook_deception_maneuver_single": {
+      "x": 24500,
+      "y": 3410
+    },
+    "node_meteora_storybook_deception_maneuver_book": {
+      "x": 24500,
+      "y": 3520
+    },
+    "node_krutiks_cool_comics_book_3": {
+      "x": 16730,
+      "y": 3740
+    },
+    "node_mir_11": {
+      "x": 24500,
+      "y": 2750
+    },
+    "node_major_igor_grom_10": {
+      "x": 24500,
+      "y": 2310
+    },
+    "node_plague_doctor_17": {
+      "x": 24640,
+      "y": 2530
+    },
+    "node_exlibrium_second_life_30": {
+      "x": 24080,
+      "y": 3190
+    },
+    "node_mir_12": {
+      "x": 24640,
+      "y": 2750
+    },
+    "node_mir_tome_6": {
+      "x": 24500,
+      "y": 2860
+    },
+    "node_special_phaeton_single": {
+      "x": 27020,
+      "y": 2750
+    },
+    "node_special_phaeton_book": {
+      "x": 27020,
+      "y": 2860
+    },
+    "node_major_igor_grom_11": {
+      "x": 24640,
+      "y": 2310
+    },
+    "node_exlibrium_second_life_31": {
+      "x": 24220,
+      "y": 3190
+    },
+    "node_plague_doctor_18": {
+      "x": 24780,
+      "y": 2530
+    },
+    "node_mir_13": {
+      "x": 24780,
+      "y": 2750
+    },
+    "node_licorice_1": {
+      "x": 24780,
+      "y": 5060
+    },
+    "node_licorice_book_1": {
+      "x": 24920,
+      "y": 5170
+    },
+    "node_the_ink_prince_and_the_book_knight_1": {
+      "x": 24780,
+      "y": 5280
+    },
+    "node_major_igor_grom_12": {
+      "x": 24780,
+      "y": 2310
+    },
+    "node_exlibrium_second_life_32": {
+      "x": 24360,
+      "y": 3190
+    },
+    "node_plague_doctor_19": {
+      "x": 24920,
+      "y": 2530
+    },
+    "node_mir_14": {
+      "x": 24920,
+      "y": 2750
+    },
+    "node_brother_25_years": {
+      "x": 24920,
+      "y": 3850
+    },
+    "node_thief_of_shadows_10": {
+      "x": 24920,
+      "y": 5830
+    },
+    "node_licorice_2": {
+      "x": 24920,
+      "y": 5060
+    },
+    "node_igor_ugor_3": {
+      "x": 24920,
+      "y": 4400
+    },
+    "node_major_igor_grom_13": {
+      "x": 24920,
+      "y": 2310
+    },
+    "node_plague_doctor_20": {
+      "x": 25060,
+      "y": 2530
+    },
+    "node_licorice_3": {
+      "x": 25060,
+      "y": 5060
+    },
+    "node_exlibrium_second_life_tome_7": {
+      "x": 24080,
+      "y": 3300
+    },
+    "node_major_igor_grom_tome_3": {
+      "x": 24570,
+      "y": 2420
+    },
+    "node_hourly_time_against_1": {
+      "x": 25060,
+      "y": 110
+    },
+    "node_major_igor_grom_14": {
+      "x": 25060,
+      "y": 2310
+    },
+    "node_tagar_tome_4_chapter_1": {
+      "x": 25060,
+      "y": 4840
+    },
+    "node_tagar_tome_4_chapter_2": {
+      "x": 25200,
+      "y": 4840
+    },
+    "node_tagar_tome_4_chapter_3": {
+      "x": 25340,
+      "y": 4840
+    },
+    "node_tagar_tome_4_chapter_4": {
+      "x": 25480,
+      "y": 4840
+    },
+    "node_tagar_tome_4_chapter_5": {
+      "x": 25620,
+      "y": 4840
+    },
+    "node_tagar_tome_4_chapter_6": {
+      "x": 25760,
+      "y": 4840
+    },
+    "node_tagar_tome_4": {
+      "x": 25410,
+      "y": 4950
+    },
+    "node_plague_doctor_21": {
+      "x": 25760,
+      "y": 2530
+    },
+    "node_krutiks_galaxy_legends": {
+      "x": 25760,
+      "y": 3630
+    },
+    "node_mir_tome_7": {
+      "x": 24850,
+      "y": 2860
+    },
+    "node_plague_doctor_tome_5": {
+      "x": 24710,
+      "y": 2640
+    },
+    "node_community_plush_and_dangerous_storybook_single": {
+      "x": 25760,
+      "y": 6930
+    },
+    "node_community_plush_and_dangerous_storybook_book": {
+      "x": 25760,
+      "y": 7040
+    },
+    "node_the_ink_prince_and_the_book_knight_2": {
+      "x": 24920,
+      "y": 5280
+    },
+    "node_enoch_legacy_single": {
+      "x": 25760,
+      "y": 660
+    },
+    "node_enoch_legacy_book": {
+      "x": 25760,
+      "y": 770
+    },
+    "node_red_fury_1966_single": {
+      "x": 25760,
+      "y": 1320
+    },
+    "node_red_fury_1966_book": {
+      "x": 25760,
+      "y": 1430
+    },
+    "node_hourly_time_against_2": {
+      "x": 25200,
+      "y": 110
+    },
+    "node_caligari_datura_single": {
+      "x": 25760,
+      "y": 2090
+    },
+    "node_caligari_datura_book": {
+      "x": 25760,
+      "y": 2200
+    },
+    "node_rivers_no_fear_1": {
+      "x": 25900,
+      "y": 2090
+    },
+    "node_the_ink_prince_and_the_book_knight": {
+      "x": 24990,
+      "y": 5390
+    },
+    "node_major_igor_grom_15": {
+      "x": 25200,
+      "y": 2310
+    },
+    "node_plague_doctor_22": {
+      "x": 25900,
+      "y": 2530
+    },
+    "node_the_ink_prince_and_the_book_knight_3": {
+      "x": 25060,
+      "y": 5280
+    },
+    "node_hourly_time_against": {
+      "x": 25340,
+      "y": 220
+    },
+    "node_hourly_time_against_3": {
+      "x": 25340,
+      "y": 110
+    },
+    "node_major_igor_grom_16": {
+      "x": 25340,
+      "y": 2310
+    },
+    "node_plague_doctor_23": {
+      "x": 26040,
+      "y": 2530
+    },
+    "node_major_grom_riddle_of_the_sphinx": {
+      "x": 8400,
+      "y": 1980
+    },
+    "node_the_ink_prince_and_the_book_knight_4": {
+      "x": 25200,
+      "y": 5280
+    },
+    "node_major_igor_grom_special_duty": {
+      "x": 27160,
+      "y": 2310
+    },
+    "node_grom_difficult_childhood_anubis_rising_single": {
+      "x": 26040,
+      "y": 1870
+    },
+    "node_grom_difficult_childhood_anubis_rising_book": {
+      "x": 26040,
+      "y": 1980
+    },
+    "node_hourly_time_against_4": {
+      "x": 25480,
+      "y": 110
+    },
+    "node_plague_doctor_24": {
+      "x": 26180,
+      "y": 2530
+    },
+    "node_sister_kukki": {
+      "x": 17920,
+      "y": 6380
+    },
+    "node_licorice_4": {
+      "x": 26180,
+      "y": 5060
+    },
+    "node_hourly_time_against_5": {
+      "x": 25620,
+      "y": 110
+    },
+    "node_witch_1": {
+      "x": 26180,
+      "y": 7370
+    },
+    "node_exlibrium_second_life_33": {
+      "x": 26180,
+      "y": 3190
+    },
+    "node_falcon_tome_2": {
+      "x": 26600,
+      "y": 6160
+    },
+    "node_heroes_and_monsters_single": {
+      "x": 25480,
+      "y": 2530
+    },
+    "node_heroes_and_monsters_book": {
+      "x": 25480,
+      "y": 2640
+    },
+    "node_bubble_triptych_1": {
+      "x": 26180,
+      "y": 7590
+    },
+    "node_bubble_gam_almanac_1": {
+      "x": 26180,
+      "y": 7700
+    },
+    "node_major_igor_grom_tome_4": {
+      "x": 25130,
+      "y": 2420
+    },
+    "node_plague_doctor_tome_6": {
+      "x": 25970,
+      "y": 2640
+    },
+    "node_allies_special_idyll_single": {
+      "x": 26180,
+      "y": 1540
+    },
+    "node_allies_special_idyll_book": {
+      "x": 26180,
+      "y": 1650
+    },
+    "node_licorice_5": {
+      "x": 26320,
+      "y": 5060
+    },
+    "node_witch_2": {
+      "x": 26320,
+      "y": 7370
+    },
+    "node_exlibrium_second_life_34": {
+      "x": 26320,
+      "y": 3190
+    },
+    "node_major_igor_grom_17": {
+      "x": 26320,
+      "y": 2310
+    },
+    "node_licorice_book_2": {
+      "x": 26320,
+      "y": 5170
+    },
+    "node_mir_tome_8": {
+      "x": 26460,
+      "y": 2860
+    },
+    "node_plague_doctor_25": {
+      "x": 26320,
+      "y": 2530
+    },
+    "node_mir_15": {
+      "x": 26320,
+      "y": 2750
+    },
+    "node_bubble_triptych_2": {
+      "x": 26320,
+      "y": 7590
+    },
+    "node_licorice_6": {
+      "x": 26460,
+      "y": 5060
+    },
+    "node_major_igor_grom_18": {
+      "x": 26460,
+      "y": 2310
+    },
+    "node_bubble_school_tome_1": {
+      "x": 26460,
+      "y": 7810
+    },
+    "node_game_book_find_the_dragon": {
+      "x": 26460,
+      "y": 2530
+    },
+    "node_exlibrium_second_life_35": {
+      "x": 26460,
+      "y": 3190
+    },
+    "node_witch_3": {
+      "x": 26460,
+      "y": 7370
+    },
+    "node_plague_doctor_26": {
+      "x": 26460,
+      "y": 2530
+    },
+    "node_mir_16": {
+      "x": 26460,
+      "y": 2750
+    },
+    "node_bubble_gam_almanac_2": {
+      "x": 26460,
+      "y": 7700
+    },
+    "node_pulse_tome_1": {
+      "x": 18130,
+      "y": 6380
+    },
+    "node_falcon_5": {
+      "x": 26460,
+      "y": 6050
+    },
+    "node_yablochny_saved_single": {
+      "x": 27300,
+      "y": 2530
+    },
+    "node_yablochny_saved_book": {
+      "x": 27300,
+      "y": 2640
+    },
+    "node_fiction_novel_razumovsky": {
+      "x": 26600,
+      "y": 7920
+    },
+    "node_major_igor_grom_19": {
+      "x": 26600,
+      "y": 2310
+    },
+    "node_thief_of_shadows_tome_2": {
+      "x": 23590,
+      "y": 5940
+    },
+    "node_thief_of_shadows_tome_3": {
+      "x": 25130,
+      "y": 5940
+    },
+    "node_game_book_now_you_are_the_thief_of_shadows": {
+      "x": 26600,
+      "y": 5830
+    },
+    "node_exlibrium_second_life_36": {
+      "x": 26600,
+      "y": 3190
+    },
+    "node_plague_doctor_27": {
+      "x": 26600,
+      "y": 2530
+    },
+    "node_mir_17": {
+      "x": 26600,
+      "y": 2750
+    },
+    "node_fiction_novel_besoboy": {
+      "x": 26740,
+      "y": 7920
+    },
+    "node_thief_of_shadows_11": {
+      "x": 25060,
+      "y": 5830
+    },
+    "node_witch_tome_1": {
+      "x": 26320,
+      "y": 7480
+    },
+    "node_falcon_6": {
+      "x": 26600,
+      "y": 6050
+    },
+    "node_vera_wolf": {
+      "x": 26740,
+      "y": 6710
+    },
+    "node_major_igor_grom_tome_5": {
+      "x": 26530,
+      "y": 2420
+    },
+    "node_major_igor_grom_20": {
+      "x": 26740,
+      "y": 2310
+    },
+    "node_exlibrium_second_life_37": {
+      "x": 26740,
+      "y": 3190
+    },
+    "node_bubble_triptych_3": {
+      "x": 26740,
+      "y": 7590
+    },
+    "node_thief_of_shadows_12": {
+      "x": 25200,
+      "y": 5830
+    },
+    "node_exlibrium_second_life_tome_8": {
+      "x": 26390,
+      "y": 3300
+    },
+    "node_falcon_7": {
+      "x": 26740,
+      "y": 6050
+    },
+    "node_exlibrium_colors_of_our_feelings_coloring_dossier": {
+      "x": 27440,
+      "y": 3080
+    },
+    "node_plague_doctor_28": {
+      "x": 26740,
+      "y": 2530
+    },
+    "node_bubble_gam_almanac_3": {
+      "x": 26740,
+      "y": 7700
+    },
+    "node_major_igor_grom_21": {
+      "x": 26880,
+      "y": 2310
+    },
+    "node_exlibrium_second_life_38": {
+      "x": 26880,
+      "y": 3190
+    },
+    "node_plague_doctor_29": {
+      "x": 26880,
+      "y": 2530
+    },
+    "node_gray_hound_tome_1_chapter_1": {
+      "x": 26880,
+      "y": 5060
+    },
+    "node_plague_doctor_tome_7": {
+      "x": 26600,
+      "y": 2640
+    },
+    "node_fiction_novel_the_nine_lives_of_agatha_the_first_life_dragons_font": {
+      "x": 26880,
+      "y": 7920
+    },
+    "node_thief_of_shadows_13": {
+      "x": 25340,
+      "y": 5830
+    },
+    "node_mir_18": {
+      "x": 26740,
+      "y": 2750
+    },
+    "node_major_igor_grom_22": {
+      "x": 27020,
+      "y": 2310
+    },
+    "node_exlibrium_second_life_39": {
+      "x": 27020,
+      "y": 3190
+    },
+    "node_plague_doctor_30": {
+      "x": 27020,
+      "y": 2530
+    }
+  }
+}

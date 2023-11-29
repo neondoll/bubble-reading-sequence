@@ -2,9 +2,37 @@
 import {Edge} from "../data/interfaces/Edge";
 import {Node} from "../data/interfaces/Node";
 import {VNetworkGraph} from "v-network-graph";
-import data from "../data/v-network-graph";
 import * as vNG from "v-network-graph";
+import data from "../data/v-network-graph";
 import "v-network-graph/lib/style.css";
+
+let nodes: Record<string, Node> = {};
+let edges: Record<string, Edge>;
+let layouts: vNG.Layouts;
+let paths: vNG.Paths;
+
+if (window.location.host === "localhost:5173") {
+  nodes = data.nodes;
+  edges = data.edges;
+  layouts = data.layouts;
+  paths = data.paths;
+} else {
+  const fetchData = async (url) => {
+    const response = await fetch(url);
+
+    return await response.json();
+  };
+
+  nodes = await fetchData("/data/nodes.json");
+  edges = await fetchData("/data/edges.json");
+  layouts = await fetchData("/data/layouts.json");
+  paths = await fetchData("/data/paths.json");
+
+  console.log(nodes);
+  console.log(edges);
+  console.log(layouts);
+  console.log(paths);
+}
 
 const configs = vNG.defineConfigs<Node, Edge, vNG.Path>({
   view: {zoomEnabled: false, autoPanAndZoomOnLoad: false},
@@ -19,11 +47,11 @@ const configs = vNG.defineConfigs<Node, Edge, vNG.Path>({
   edge: {
     gap   : 40,
     normal: {
-      color    : edge => data.nodes[edge.source].color, // (edge.dashed ? "gray" : "black")
+      color    : edge => nodes[edge.source].color, // (edge.dashed ? "gray" : "black")
       dasharray: edge => (edge.dashed ? "4" : "0")
     },
     hover : {
-      color: edge => data.nodes[edge.source].color, // (edge.dashed ? "gray" : "black")
+      color: edge => nodes[edge.source].color, // (edge.dashed ? "gray" : "black")
     },
     marker: {
       source: {type: "none", width: 4, height: 4, margin: -1, offset: 0, units: "strokeWidth", color: null},
@@ -44,11 +72,7 @@ document.querySelector("title").text = "Карта вселенной BUBBLE";
 </script>
 
 <template>
-  <VNetworkGraph class="bubble-universe-map"
-                 :nodes="data.nodes"
-                 :edges="data.edges"
-                 :layouts="data.layouts"
-                 :configs="configs"/>
+  <VNetworkGraph class="bubble-universe-map" :nodes="nodes" :edges="edges" :layouts="layouts" :configs="configs"/>
 </template>
 
 <style scoped lang="scss">

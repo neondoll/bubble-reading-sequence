@@ -266,6 +266,9 @@ Object.keys(comics).forEach((comic_id) => {
     offsetOfIncludingNodes(comic_id);
 });
 
-//console.log(layouts.nodes);
+console.log(nodes);
+console.log(edges);
+console.log(layouts);
+console.log(paths);
 
 export default {nodes, edges, layouts, paths};
