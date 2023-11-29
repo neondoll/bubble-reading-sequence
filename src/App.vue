@@ -1,4 +1,11 @@
-<script setup>
+<script setup lang="ts">
+const menuNavbarList = [
+  {title: "Главная", to: {name: "home"}},
+  {title: "Серии", to: {name: "ranges"}},
+  {title: "Герои", to: {name: "characters"}},
+  {title: "Авторы", to: {name: "authors"}},
+  {title: "Карта вселенной BUBBLE", to: {name: "bubbleUniverseMap"}}
+];
 </script>
 
 <template>
@@ -9,29 +16,18 @@
         <nav class="navbar__menu menu-navbar">
           <!--<span class="menu-navbar__btn-close"></span>-->
           <ul class="menu-navbar__list">
-            <li class="menu-navbar__item">
-              <RouterLink class="menu-navbar__link" :to="{name:'home'}">Главная</RouterLink>
-            </li>
-            <li class="menu-navbar__item">
-              <RouterLink class="menu-navbar__link" :to="{name:'ranges'}">Серии</RouterLink>
-            </li>
-            <li class="menu-navbar__item">
-              <RouterLink class="menu-navbar__link" :to="{name:'bubbleUniverseMap'}">Карта вселенной BUBBLE</RouterLink>
-            </li>
+            <template v-for="menuNavbarItem in menuNavbarList">
+              <li class="menu-navbar__item">
+                <RouterLink class="menu-navbar__link" :to="menuNavbarItem.to">{{ menuNavbarItem.title }}</RouterLink>
+              </li>
+            </template>
           </ul>
         </nav>
       </div>
     </div>
   </header>
   <main>
-    <Suspense>
-      <template #default>
-        <RouterView/>
-      </template>
-      <template #fallback>
-        <span>Loading...</span>
-      </template>
-    </Suspense>
+    <RouterView/>
   </main>
 </template>
 

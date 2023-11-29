@@ -73,7 +73,7 @@ const ranges: Ranges = {
     range_exlibrium_second_life: {
         name      : "Экслибриум. Жизнь вторая",
         color     : "#33cc66",
-        release_at: {year: 2019, month: 12, day: 28}
+        release_at: {year: 2019, month: 4, day: 21}
     },
     range_thief_of_shadows     : {name: "Вор Теней", color: "#ffff33", release_at: {year: 2019}},
     range_plague_doctor        : {name: "Чумной Доктор", color: "#ff5e00", release_at: {year: 2020, month: 5, day: 4}},

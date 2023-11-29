@@ -1,7 +1,6 @@
 <script setup lang="ts">
+import {rangeIdToNull} from "../data/functions/range_functions";
 import ranges from "../data/ranges";
-
-const getRangeId = (rangeId) => rangeId.replace("range_", "");
 
 document.querySelector("title").text = "Серии";
 </script>
@@ -11,7 +10,7 @@ document.querySelector("title").text = "Серии";
     <ul class="ranges__list">
       <template v-for="(range, rangeId) in ranges">
         <li class="ranges__item item-ranges" :style="{ '--item-hover-bg': range.color }">
-          <RouterLink class="item-ranges__link" :to="{ name: 'range', params: { rangeId: getRangeId(rangeId) } }">
+          <RouterLink class="item-ranges__link" :to="{ name: 'range', params: { rangeId: rangeIdToNull(rangeId) } }">
             {{ range.name }}
           </RouterLink>
         </li>

@@ -158,6 +158,7 @@ export default {
     comic_falcon_tome_1                                                     : new_bubble_heroes_line_1_book,
     comic_falcon_tome_2                                                     : new_bubble_heroes_line_1_book,
     comic_fiction_novel_besoboy                                             : fiction_novel,
+    comic_fiction_novel_major_grom                                          : fiction_novel,
     comic_fiction_novel_razumovsky                                          : fiction_novel,
     comic_fiction_novel_the_nine_lives_of_agatha_the_first_life_dragons_font: fiction_novel,
     comic_gray_hound_tome_1_chapter_1                                       : bubble_manga_line_2,

@@ -142,13 +142,13 @@ ul {
     color: var(--banner-color, inherit);
 }
 
-.ranges__list, .comics__list {
+.authors__list, .characters__list, .comics__list, .ranges__list {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 16px;
 }
 
-.item-ranges, .item-comics {
+.item-authors, .item-characters, .item-comics, .item-ranges {
     --item-hover-bg: #000000;
     position: relative;
     padding: 0.5rem;
@@ -156,25 +156,23 @@ ul {
     border-radius: 0.5rem;
 }
 
-.item-ranges:hover, .item-comics:hover {
+.item-authors:hover, .item-characters:hover, .item-comics:hover, .item-ranges:hover {
     color: #ffffff;
     background-color: var(--item-hover-bg, #000000);
     border-color: var(--item-hover-bg, #000000);
 }
 
-.item-ranges__link, .item-comics__link {
-    color: inherit;
-}
+.item-authors__link, .item-characters__link, .item-comics__link, .item-ranges__link { color: inherit; }
 
-.item-ranges__link::before, .item-comics__link::before {
+.item-authors__link::before, .item-characters__link::before, .item-comics__link::before, .item-ranges__link::before {
     content: "";
     position: absolute;
     inset: 0;
 }
 
-.comic { --comic-color: #000000; }
+.author, .character, .comic { --ranges-color: #000000; }
 
-.comic__description {
+.author__description, .character__description, .comic__description {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -184,21 +182,57 @@ ul {
     border-radius: 0.5rem;
 }
 
-.section-comic {
-    display: flex;
+.character__description {
+    background-image: var(--character-image);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.characters-comic, .section-author, .section-character, .section-comic {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.5rem;
 }
 
-.section-comic__title, .section-comic__list, .section-comic__date { flex-basis: 50%; }
+.characters-comic__title, .section-author__title, .section-character__title, .section-comic__title { text-align: right; }
 
-.section-comic__title {
-    font-size: 1rem;
-    text-align: right;
+.characters-comic__list {
+    --item-width: 88px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--item-width, 88px));
+    gap: 22px;
+    margin-top: 12px;
 }
 
-.section-comic__link { position: relative; }
+.characters-comic__item { position: relative; }
 
-.section-comic__link::after {
+.characters-comic__item:hover > .characters-comic__image { border-color: var(--ranges-color, #000000); }
+
+.characters-comic__image {
+    box-sizing: border-box;
+    width: 100%;
+    object-position: top;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    transition: border-color .3s;
+}
+
+.characters-comic__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.section-author__title, .section-character__title { font-size: 1rem; }
+
+.section-author__link, .section-character__link, .section-comic__link {
+    position: relative;
+    display: inline-block;
+    width: max-content;
+}
+
+.section-author__link::after, .section-character__link::after, .section-comic__link::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -206,12 +240,16 @@ ul {
     z-index: -1;
     width: 100%;
     height: 1px;
-    background-color: var(--comic-color, #000000);
+    background-color: var(--ranges-color, #000000);
     transition: all ease .3s;
 }
 
+.section-author__link:hover, .section-author__link:focus-visible,
+.section-character__link:hover, .section-character__link:focus-visible,
 .section-comic__link:hover, .section-comic__link:focus-visible { color: #ffffff; }
 
+.section-author__link:hover::after, .section-author__link:focus-visible::after,
+.section-character__link:hover::after, .section-character__link:focus-visible::after,
 .section-comic__link:hover::after, .section-comic__link:focus-visible::after { height: 100%; }
 
 @media (prefers-color-scheme: light) {
@@ -220,69 +258,51 @@ ul {
         background-color: #ffffff;
     }
 
-    button {
-        background-color: #f9f9f9;
-    }
+    button { background-color: #f9f9f9; }
 
-    .menu-navbar__link:hover {
-        color: #747bff;
-    }
+    .menu-navbar__link:hover { color: #747bff; }
 }
 
 @media (min-width: 640px) {
-    .container {
-        max-width: 640px;
-    }
+    .container { max-width: 640px; }
 
-    .ranges__list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+    .authors__list, .ranges__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .characters__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
+    .container { max-width: 768px; }
 
-    .ranges__list {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+    .authors__list, .ranges__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+    .characters__list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 @media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;
-    }
+    .container { max-width: 1024px; }
 
-    .ranges__list {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
+    .authors__list, .ranges__list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
-    .comics__list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+    .characters__list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+
+    .comics__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
+    .container { max-width: 1280px; }
 
-    .ranges__list {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
+    .authors__list, .ranges__list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+
+    .characters__list { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 }
 
 @media (min-width: 1536px) {
-    .container {
-        max-width: 1536px;
-    }
+    .container { max-width: 1536px; }
 
-    .ranges__list {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
+    .authors__list, .ranges__list { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 
-    .comics__list {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+    .characters__list { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+
+    .comics__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
