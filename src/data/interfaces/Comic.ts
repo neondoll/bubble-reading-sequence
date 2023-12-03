@@ -5,6 +5,7 @@ export interface Comic {
     name: string;
     number?: string;
     type: ComicType;
+    cover_file_url?: string;
     ranges: string[];
     characters?: string[];
     authors?: string[];
@@ -13,4 +14,5 @@ export interface Comic {
     previous_comics?: string[];
     next_comics?: string[];
     release_at: Date;
+    show?: boolean
 }

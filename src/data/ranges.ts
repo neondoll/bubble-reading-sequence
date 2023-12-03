@@ -3,7 +3,7 @@ import {Ranges} from "./types/Ranges";
 const ranges: Ranges = {
     range_besoboy              : {name: "Бесобой", color: "#333399", release_at: {year: 2012, month: 10, day: 1}},
     range_major_grom           : {name: "Майор Гром", color: "#ff5e00", release_at: {year: 2012, month: 10, day: 8}},
-    range_enoch                : {name: "Инок", color: "#ffff33", release_at: {year: 2012, month: 10, day: 15}},
+    range_monk                 : {name: "Инок", color: "#ffff33", release_at: {year: 2012, month: 10, day: 15}},
     range_red_fury             : {
         name      : "Красная Фурия",
         color     : "#770202",
@@ -25,7 +25,7 @@ const ranges: Ranges = {
         release_at: {year: 2015, month: 12, day: 7}
     },
     range_alena_spiridonova    : {name: "Алёна Спиридонова", color: "#f7dd9f", release_at: {year: 2016}},
-    range_enoch_party_king     : {
+    range_monk_party_king      : {
         name      : "Инок. Король вечерИНОК",
         color     : "#ffff33",
         release_at: {year: 2016, month: 4, day: 1}

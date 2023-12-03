@@ -51,6 +51,11 @@ const authors: Authors = {
         position              : "artist",
         link_to_bubble_website: "https://bubble.ru/authors/80-konstantin-tarasov/about"
     },
+    author_lada_akishina          : {
+        full_name             : "Лада Акишина (Orphen Sirius)",
+        position              : "colorist",
+        link_to_bubble_website: "https://bubble.ru/authors/83-lada-akishina/about"
+    },
     author_madibek_musabekov      : {
         full_name             : "Мадибек Мусабеков",
         position              : "artist",

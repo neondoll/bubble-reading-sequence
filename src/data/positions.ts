@@ -12,8 +12,6 @@ const bubble_legends = {y: difference.y * 61};
 const bubble_school = {y: difference.y * 71};
 const bubble_triptych = {y: difference.y * 69};
 const childrens_comics = {y: difference.y * 33};
-const enoch = {y: difference.y * 6};
-const enoch_party_king = {y: difference.y * 38};
 const evgeny_fedotov = {y: difference.y * 35};
 const evgeny_yakovlev = {y: difference.y * 51};
 const exlibrium = {y: difference.y * 27};
@@ -27,11 +25,13 @@ const major_grom = {y: difference.y * 17};
 const major_igor_grom = {y: difference.y * 21};
 const meteora = {y: difference.y * 31};
 const mir = {y: difference.y * 25};
+const monk = {y: difference.y * 6};
+const monk_party_king = {y: difference.y * 38};
 const planeswalkers = {y: difference.y * 8};
 const plague_doctor = {y: difference.y * 23};
 const red_fury = {y: difference.y * 12};
 const thief_of_shadows = {y: difference.y * 53};
-const time_of_raven = {y: (besoboy.y + enoch.y + major_grom.y + red_fury.y) / 4};
+const time_of_raven = {y: (besoboy.y + monk.y + major_grom.y + red_fury.y) / 4};
 const tipping_point = {y: difference.y * 39};
 const turbocarp = {y: difference.y * 65};
 const witch = {y: difference.y * 67};
@@ -57,11 +57,11 @@ const community = {y: difference.y * 63};
 const community_book = {y: community.y + difference.y};
 const crusade_wolf = {y: planeswalkers.y + difference.y * 2};
 const crusade_wolf_book = {y: crusade_wolf.y + difference.y};
-const enoch_vs_besoboy = {y: (besoboy.y + enoch.y) / 2};
 const fiction_novel = {y: difference.y * 72};
 const igor_grom_hardcover_book = {y: igor_grom.y + difference.y * 2};
 const major_grom_and_red_fury = {y: (major_grom.y + red_fury.y) / 2};
 const meteora_book = {y: meteora.y + difference.y};
+const monk_vs_besoboy = {y: (besoboy.y + monk.y) / 2};
 const new_bubble_heroes_line_1 = {y: difference.y * 55};
 const new_bubble_heroes_line_1_book = {y: new_bubble_heroes_line_1.y + difference.y};
 const new_bubble_heroes_line_2 = {y: difference.y * 57};
@@ -101,9 +101,9 @@ export default {
     comic_anna_space_of_options                                             : new_bubble_heroes_line_3,
     comic_balor_and_yana_dream_catcher_book                                 : besoboy_book,
     comic_balor_and_yana_dream_catcher_single                               : besoboy,
-    comic_besoboy_15                                                        : enoch_vs_besoboy,
-    comic_besoboy_16                                                        : enoch_vs_besoboy,
-    comic_besoboy_17                                                        : enoch_vs_besoboy,
+    comic_besoboy_15                                                        : monk_vs_besoboy,
+    comic_besoboy_16                                                        : monk_vs_besoboy,
+    comic_besoboy_17                                                        : monk_vs_besoboy,
     comic_besoboy_and_planeswalkers_book                                    : besoboy_and_planeswalkers_book,
     comic_besoboy_and_planeswalkers_single                                  : besoboy_and_planeswalkers,
     comic_besoboy_vol_2_15                                                  : witch_hunt,
@@ -125,6 +125,7 @@ export default {
     comic_chosen_one_of_the_moon_4                                          : bubble_manga_line_2,
     comic_chosen_one_of_the_moon_5                                          : bubble_manga_line_2,
     comic_chosen_one_of_the_moon_6                                          : bubble_manga_line_2,
+    comic_chronicles_of_monk_storm_of_berlin                                : {y: monk.y + difference.y},
     comic_community                                                         : community_book,
     comic_community_1                                                       : community,
     comic_community_2                                                       : community,
@@ -145,9 +146,6 @@ export default {
     comic_devilry_4                                                         : bubble_legends,
     comic_dont_be_reckless_quatrefoil                                       : new_bubble_heroes_line_2,
     comic_editor                                                            : new_bubble_heroes_line_2,
-    comic_enoch_15                                                          : enoch_vs_besoboy,
-    comic_enoch_16                                                          : enoch_vs_besoboy,
-    comic_enoch_17                                                          : enoch_vs_besoboy,
     comic_falcon_1                                                          : new_bubble_heroes_line_1,
     comic_falcon_2                                                          : new_bubble_heroes_line_1,
     comic_falcon_3                                                          : new_bubble_heroes_line_1,
@@ -155,13 +153,13 @@ export default {
     comic_falcon_5                                                          : new_bubble_heroes_line_1,
     comic_falcon_6                                                          : new_bubble_heroes_line_1,
     comic_falcon_7                                                          : new_bubble_heroes_line_1,
-    comic_falcon_tome_1                                                     : new_bubble_heroes_line_1_book,
-    comic_falcon_tome_2                                                     : new_bubble_heroes_line_1_book,
+    comic_falcon_volume_1                                                   : new_bubble_heroes_line_1_book,
+    comic_falcon_volume_2                                                   : new_bubble_heroes_line_1_book,
     comic_fiction_novel_besoboy                                             : fiction_novel,
     comic_fiction_novel_major_grom                                          : fiction_novel,
     comic_fiction_novel_razumovsky                                          : fiction_novel,
     comic_fiction_novel_the_nine_lives_of_agatha_the_first_life_dragons_font: fiction_novel,
-    comic_gray_hound_tome_1_chapter_1                                       : bubble_manga_line_2,
+    comic_gray_hound_volume_1_chapter_1                                     : bubble_manga_line_2,
     comic_igor_grom_15                                                      : witch_hunt,
     comic_igor_grom_book_1                                                  : igor_grom_hardcover_book,
     comic_igor_grom_book_2                                                  : igor_grom_hardcover_book,
@@ -204,13 +202,17 @@ export default {
     comic_major_grom_41                                                     : major_grom_and_red_fury,
     comic_major_grom_promise                                                : igor_grom,
     comic_memento_mori_call_of_the_void                                     : new_bubble_heroes_line_2,
+    comic_monk_15                                                           : monk_vs_besoboy,
+    comic_monk_16                                                           : monk_vs_besoboy,
+    comic_monk_17                                                           : monk_vs_besoboy,
+    comic_monk_and_major_grom_storm_of_berlin                               : monk,
     comic_planeswalkers_15                                                  : witch_hunt,
     comic_planeswalkers_book_1                                              : planeswalkers_hardcover_book,
     comic_planeswalkers_book_2                                              : planeswalkers_hardcover_book,
     comic_plush_policeman_the_perfect_plan                                  : new_bubble_heroes_line_3,
     comic_pulse_heros_voice                                                 : new_bubble_heroes_line_2,
     comic_pulse_premiere                                                    : new_bubble_heroes_line_2,
-    comic_pulse_tome_1                                                      : new_bubble_heroes_line_2_book,
+    comic_pulse_volume_1                                                    : new_bubble_heroes_line_2_book,
     comic_red_fury_38                                                       : major_grom_and_red_fury,
     comic_red_fury_39                                                       : major_grom_and_red_fury,
     comic_red_fury_40                                                       : major_grom_and_red_fury,
@@ -218,33 +220,33 @@ export default {
     comic_sister_kukki                                                      : new_bubble_heroes_line_2_book,
     comic_sister_kukki_1                                                    : new_bubble_heroes_line_2,
     comic_soyuzmultcomics                                                   : childrens_comics,
-    comic_tagar_tome_1                                                      : bubble_manga_line_1_book,
-    comic_tagar_tome_1_prologue                                             : bubble_manga_line_1,
-    comic_tagar_tome_1_chapter_1                                            : bubble_manga_line_1,
-    comic_tagar_tome_1_chapter_2                                            : bubble_manga_line_1,
-    comic_tagar_tome_1_chapter_3                                            : bubble_manga_line_1,
-    comic_tagar_tome_1_chapter_4                                            : bubble_manga_line_1,
-    comic_tagar_tome_2                                                      : bubble_manga_line_1_book,
-    comic_tagar_tome_2_chapter_1                                            : bubble_manga_line_1,
-    comic_tagar_tome_2_chapter_2                                            : bubble_manga_line_1,
-    comic_tagar_tome_2_chapter_3                                            : bubble_manga_line_1,
-    comic_tagar_tome_2_chapter_4                                            : bubble_manga_line_1,
-    comic_tagar_tome_2_chapter_5                                            : bubble_manga_line_1,
-    comic_tagar_tome_3                                                      : bubble_manga_line_1_book,
-    comic_tagar_tome_3_chapter_1                                            : bubble_manga_line_1,
-    comic_tagar_tome_3_chapter_2                                            : bubble_manga_line_1,
-    comic_tagar_tome_3_chapter_3                                            : bubble_manga_line_1,
-    comic_tagar_tome_3_chapter_4                                            : bubble_manga_line_1,
-    comic_tagar_tome_3_chapter_5                                            : bubble_manga_line_1,
-    comic_tagar_tome_3_chapter_6                                            : bubble_manga_line_1,
-    comic_tagar_tome_3_chapter_7                                            : bubble_manga_line_1,
-    comic_tagar_tome_4                                                      : bubble_manga_line_1_book,
-    comic_tagar_tome_4_chapter_1                                            : bubble_manga_line_1,
-    comic_tagar_tome_4_chapter_2                                            : bubble_manga_line_1,
-    comic_tagar_tome_4_chapter_3                                            : bubble_manga_line_1,
-    comic_tagar_tome_4_chapter_4                                            : bubble_manga_line_1,
-    comic_tagar_tome_4_chapter_5                                            : bubble_manga_line_1,
-    comic_tagar_tome_4_chapter_6                                            : bubble_manga_line_1,
+    comic_tagar_volume_1                                                    : bubble_manga_line_1_book,
+    comic_tagar_volume_1_prologue                                           : bubble_manga_line_1,
+    comic_tagar_volume_1_chapter_1                                          : bubble_manga_line_1,
+    comic_tagar_volume_1_chapter_2                                          : bubble_manga_line_1,
+    comic_tagar_volume_1_chapter_3                                          : bubble_manga_line_1,
+    comic_tagar_volume_1_chapter_4                                          : bubble_manga_line_1,
+    comic_tagar_volume_2                                                    : bubble_manga_line_1_book,
+    comic_tagar_volume_2_chapter_1                                          : bubble_manga_line_1,
+    comic_tagar_volume_2_chapter_2                                          : bubble_manga_line_1,
+    comic_tagar_volume_2_chapter_3                                          : bubble_manga_line_1,
+    comic_tagar_volume_2_chapter_4                                          : bubble_manga_line_1,
+    comic_tagar_volume_2_chapter_5                                          : bubble_manga_line_1,
+    comic_tagar_volume_3                                                    : bubble_manga_line_1_book,
+    comic_tagar_volume_3_chapter_1                                          : bubble_manga_line_1,
+    comic_tagar_volume_3_chapter_2                                          : bubble_manga_line_1,
+    comic_tagar_volume_3_chapter_3                                          : bubble_manga_line_1,
+    comic_tagar_volume_3_chapter_4                                          : bubble_manga_line_1,
+    comic_tagar_volume_3_chapter_5                                          : bubble_manga_line_1,
+    comic_tagar_volume_3_chapter_6                                          : bubble_manga_line_1,
+    comic_tagar_volume_3_chapter_7                                          : bubble_manga_line_1,
+    comic_tagar_volume_4                                                    : bubble_manga_line_1_book,
+    comic_tagar_volume_4_chapter_1                                          : bubble_manga_line_1,
+    comic_tagar_volume_4_chapter_2                                          : bubble_manga_line_1,
+    comic_tagar_volume_4_chapter_3                                          : bubble_manga_line_1,
+    comic_tagar_volume_4_chapter_4                                          : bubble_manga_line_1,
+    comic_tagar_volume_4_chapter_5                                          : bubble_manga_line_1,
+    comic_tagar_volume_4_chapter_6                                          : bubble_manga_line_1,
     comic_teo                                                               : meteora_book,
     comic_teo_1                                                             : meteora,
     comic_teo_2                                                             : meteora,
@@ -255,8 +257,8 @@ export default {
     comic_the_ink_prince_and_the_book_knight_2                              : bubble_manga_line_3,
     comic_the_ink_prince_and_the_book_knight_3                              : bubble_manga_line_3,
     comic_the_ink_prince_and_the_book_knight_4                              : bubble_manga_line_3,
-    comic_unicorn_conspiracy_tome_1                                         : unicorn_conspiracy,
-    comic_unicorn_conspiracy_tome_2                                         : unicorn_conspiracy,
+    comic_unicorn_conspiracy_volume_1                                       : unicorn_conspiracy,
+    comic_unicorn_conspiracy_volume_2                                       : unicorn_conspiracy,
     comic_vera_wolf                                                         : bubble_legends,
     comic_yarkh_step_forward                                                : besoboy_book,
     comic_yarkh_step_forward_1                                              : besoboy,
@@ -278,8 +280,6 @@ export default {
     range_besoboy_vol_2                                                     : besoboy_vol_2,
     range_bubble_school                                                     : bubble_school,
     range_bubble_triptych                                                   : bubble_triptych,
-    range_enoch                                                             : enoch,
-    range_enoch_party_king                                                  : enoch_party_king,
     range_evgeny_fedotov                                                    : evgeny_fedotov,
     range_evgeny_yakovlev                                                   : evgeny_yakovlev,
     range_exlibrium                                                         : exlibrium,
@@ -292,6 +292,8 @@ export default {
     range_major_grom                                                        : major_grom,
     range_major_igor_grom                                                   : major_igor_grom,
     range_meteora                                                           : meteora,
+    range_monk                                                              : monk,
+    range_monk_party_king                                                   : monk_party_king,
     range_plague_doctor                                                     : plague_doctor,
     range_planeswalkers                                                     : planeswalkers,
     range_red_fury                                                          : red_fury,
