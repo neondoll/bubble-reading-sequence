@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import {Author} from "../data/interfaces/Author.js";
-import {Comics} from "../data/types/Comics.js";
+import {Author, Comics} from "../data/interfaces";
 import {authorColor, authorPosition} from "../data/functions/author_functions.js";
 import {comicIdToNull} from "../data/functions/comic_functions.js";
 import {rangeIdToNull} from "../data/functions/range_functions.js";

@@ -1,4 +1,4 @@
-import {Ranges} from "./types/Ranges";
+import {Ranges} from "./interfaces";
 
 const ranges: Ranges = {
     range_besoboy              : {name: "Бесобой", color: "#333399", release_at: {year: 2012, month: 10, day: 1}},

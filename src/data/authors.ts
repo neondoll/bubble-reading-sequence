@@ -1,6 +1,11 @@
-import {Authors} from "./types/Authors";
+import {Authors} from "./interfaces";
 
 const authors: Authors = {
+    author_alex_hatchett          : {
+        full_name             : "Алекс Хатчетт (Alex Xatchett)",
+        position              : "screenwriter",
+        link_to_bubble_website: "https://bubble.ru/authors/3-aleks-hatchett/about"
+    },
     author_alexey_volkov          : {
         full_name             : "Алексей Волков",
         position              : "screenwriter",
@@ -41,6 +46,11 @@ const authors: Authors = {
         position              : "screenwriter",
         link_to_bubble_website: "https://bubble.ru/authors/64-evgenii-fedotov/about"
     },
+    author_evgeny_yakovlev        : {
+        full_name             : "Евгений Яковлев",
+        position              : "artist",
+        link_to_bubble_website: "https://bubble.ru/authors/65-evgenii-yakovlev/about"
+    },
     author_kirill_kutuzov         : {
         full_name             : "Кирилл Кутузов",
         position              : "screenwriter",
@@ -61,10 +71,20 @@ const authors: Authors = {
         position              : "artist",
         link_to_bubble_website: "https://bubble.ru/authors/84-madibek-musabekov/about"
     },
+    author_maria_vasilyeva        : {
+        full_name             : "Мария Васильева (Grёmo)",
+        position              : "colorist",
+        link_to_bubble_website: "https://bubble.ru/authors/91-mariya-vasileva/about"
+    },
     author_natalia_devova         : {
         full_name             : "Наталия Девова (noi-albinoi)",
         position              : "screenwriter",
         link_to_bubble_website: "https://bubble.ru/authors/98-nataliya-devova/about"
+    },
+    author_natalya_zaidova        : {
+        full_name             : "Наталья Заидова (Kay)",
+        position              : "artist",
+        link_to_bubble_website: "https://bubble.ru/authors/99-natalya-zaidova/about"
     },
     author_roman_kotkov           : {
         full_name             : "Роман Котков",
@@ -81,6 +101,7 @@ const authors: Authors = {
     author_alena_karpova          : {full_name: "Алёна Карпова", position: "colorist"},
     author_anastasia_afonina      : {full_name: "Анастасия Афонина", position: "artist"},
     author_anastasia_glazunova    : {full_name: "Анастасия Глазунова", position: "colorist"},
+    author_anastasia_katerinich   : {full_name: "Анастасия Катеринич", position: "artist"},
     author_anastasia_chebykina    : {full_name: "Анастасия Чебыкина", position: "colorist"},
     author_anastasia_troitskaya   : {full_name: "Анастасия Троицкая", position: "colorist"},
     author_andrey_muravyov        : {full_name: "Андрей Муравьёв", position: "colorist"},
@@ -89,13 +110,19 @@ const authors: Authors = {
     author_anna_rud               : {full_name: "Анна Рудь", position: "artist"},
     author_anna_sidorova          : {full_name: "Анна Сидорова", position: "colorist"},
     author_anton_startsev         : {full_name: "Антон Старцев", position: "colorist"},
+    author_artyom_bizyaev         : {full_name: "Артём Бизяев", position: "artist"},
+    author_artyom_myasnikov       : {full_name: "Артём Мясников", position: "artist"},
+    author_vitaly_smirnov         : {full_name: "Виталий Смирнов", position: "artist"},
     author_evgeniy_bornyakov      : {full_name: "Евгений Борняков", position: "artist"},
     author_ekaterina_menabde      : {full_name: "Екатерина Менабде", position: "artist"},
     author_elena_doronina         : {full_name: "Елена Доронина", position: "colorist"},
+    author_ivan_yelyasov          : {full_name: "Иван Елясов", position: "artist"},
     author_ivan_skorokhodov       : {full_name: "Иван Скороходов", position: "screenwriter"},
+    author_igor_khudaev           : {full_name: "Игорь Худаев", position: "screenwriter"},
     author_irina_ivanova          : {full_name: "Ирина Иванова", position: "artist"},
     author_kirill_perepelitsyn    : {full_name: "Кирилл Перепелицын", position: "colorist"},
     author_margarita_kablukova    : {full_name: "Маргарита Каблукова", position: "colorist"},
+    author_maria_zalogina         : {full_name: "Мария Залогина", position: "colorist"},
     author_natalia_vorontsova     : {full_name: "Наталия Воронцова", position: "screenwriter"},
     author_natalya_martinovich    : {full_name: "Наталья Мартинович", position: "colorist"},
     author_natalya_nesterenko     : {full_name: "Наталья Нестеренко", position: "colorist"},

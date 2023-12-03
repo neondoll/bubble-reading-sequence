@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {Comics} from "../data/types/Comics";
+import {Comics} from "../data/interfaces";
 import {comicIdToNull} from "../data/functions/comic_functions";
 import {useRoute} from "vue-router";
 import comics from "../data/comics";

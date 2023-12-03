@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import {Edge} from "../data/interfaces/Edge";
-import {Node} from "../data/interfaces/Node";
+import {Edge, Node} from "../data/interfaces";
 import {VNetworkGraph} from "v-network-graph";
 import * as vNG from "v-network-graph";
 import data from "../data/v-network-graph";

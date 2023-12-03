@@ -1,5 +1,4 @@
-import {Edge} from "./interfaces/Edge";
-import {Node} from "./interfaces/Node";
+import {Edge, Node} from "./interfaces";
 import {colorMixingHex} from "./functions/color_functions";
 import {comicIdToNodeId, comicsIdToEdgeId, nodeIdToComicId} from "./functions/helper_functions";
 import {maxOfArray, minOfArray} from "./functions/array_functions"

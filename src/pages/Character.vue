@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import {Character} from "../data/interfaces/Character";
-import {Comics} from "../data/types/Comics";
+import {Character, Comics} from "../data/interfaces";
 import {characterColor} from "../data/functions/character_functions";
 import {comicIdToNull} from "../data/functions/comic_functions";
 import {rangeIdToNull} from "../data/functions/range_functions";

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {Comic} from "../data/interfaces/Comic";
+import {Comic} from "../data/interfaces";
 import {authorColor, authorIdToNull} from "../data/functions/author_functions";
 import {characterColor, characterIdToNull} from "../data/functions/character_functions";
 import {comicColor, comicIdToNull} from "../data/functions/comic_functions";
