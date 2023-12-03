@@ -26,7 +26,7 @@ const major_igor_grom = {y: difference.y * 21};
 const meteora = {y: difference.y * 31};
 const mir = {y: difference.y * 25};
 const monk = {y: difference.y * 6};
-const monk_party_king = {y: difference.y * 38};
+const monk_king_of_parties = {y: difference.y * 38};
 const planeswalkers = {y: difference.y * 8};
 const plague_doctor = {y: difference.y * 23};
 const red_fury = {y: difference.y * 12};
@@ -293,7 +293,7 @@ export default {
     range_major_igor_grom                                                   : major_igor_grom,
     range_meteora                                                           : meteora,
     range_monk                                                              : monk,
-    range_monk_party_king                                                   : monk_party_king,
+    range_monk_king_of_parties                                              : monk_king_of_parties,
     range_plague_doctor                                                     : plague_doctor,
     range_planeswalkers                                                     : planeswalkers,
     range_red_fury                                                          : red_fury,

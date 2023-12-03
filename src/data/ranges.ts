@@ -19,13 +19,14 @@ const ranges: Ranges = {
         release_at: {year: 2015, month: 10, day: 1}
     },
     range_time_of_raven        : {name: "Время Ворона", color: "#808080", release_at: {year: 2015, month: 10, day: 1}}, /* color: "#ffffff" */
+    range_authors_comics       : {name: "Авторские комиксы", release_at: {year: 2015, month: 12, day: 7}},
     range_evgeny_fedotov       : {
         name      : "Евгений Федотов",
         color     : "#00cc99",
         release_at: {year: 2015, month: 12, day: 7}
     },
     range_alena_spiridonova    : {name: "Алёна Спиридонова", color: "#f7dd9f", release_at: {year: 2016}},
-    range_monk_party_king      : {
+    range_monk_king_of_parties : {
         name      : "Инок. Король вечерИНОК",
         color     : "#ffff33",
         release_at: {year: 2016, month: 4, day: 1}

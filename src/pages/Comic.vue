@@ -31,7 +31,9 @@ watch(route, () => {
 <template>
   <div class="comic-page">
     <div class="comic-page__container container">
-      <article class="comic" :style="{ '--comic-image': `url(${comic.cover_file_url})` }">
+      <article class="comic"
+               :style="{ '--comic-image':              `url(${comic.cover_file_url})`,
+                         '--comic-image-aspect-ratio': comic.cover_file_url_aspect_ratio }">
         <div class="comic__content">
           <h1 class="comic__title">{{ comic.name }}</h1>
           <div class="comic__description">
@@ -54,11 +56,11 @@ watch(route, () => {
             <section v-if="comic.authors" class="comic__section section-comic">
               <h2 class="section-comic__title">Авторы</h2>
               <ul class="section-comic__list">
-                <template v-for="authorId in comic.authors">
-                  <li class="section-comic__item" :style="{ '--border-color': authorColor(authorId) }">
+                <template v-for="author in comic.authors">
+                  <li class="section-comic__item" :style="{ '--border-color': authorColor(author.author_id) }">
                     <RouterLink class="section-comic__link"
-                                :to="{ name: 'author', params: { authorId: authorIdToNull(authorId) } }">
-                      {{ authors[authorId].full_name }}
+                                :to="{ name: 'author', params: { authorId: authorIdToNull(author.author_id) } }">
+                      {{ authors[author.author_id].full_name }}
                     </RouterLink>
                   </li>
                 </template>

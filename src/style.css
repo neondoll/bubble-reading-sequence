@@ -234,12 +234,11 @@ ul {
 }
 
 .comics-page .comic {
-    --comic-width: 16.75rem; /* 268px */
-    --comic-height: 25.625rem; /* 410px */
+    --comic-image-aspect-ratio: calc(268 / 410);
     position: relative;
     z-index: 1;
-    width: var(--comic-width);
-    height: var(--comic-height);
+    width: 16.75rem; /* 268px */
+    height: calc(16.75rem / var(--comic-image-aspect-ratio, calc(268 / 410)));
     background-color: #ffffff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 9px 20px 0 rgba(0, 0, 0, 0.25);
     transition: box-shadow 300ms linear;
@@ -315,8 +314,7 @@ ul {
 }
 
 .comic-page .comic {
-    --comic-image-width: 23.6875rem; /* 379px */
-    --comic-image-height: 36.25rem; /* 580px */
+    --comic-image-aspect-ratio: calc(379 / 580);
     display: flex;
     gap: 1.5rem; /* 24px */
 }
@@ -324,8 +322,8 @@ ul {
 .comic-page .comic::before {
     content: "";
     display: inline-block;
-    width: var(--comic-image-width);
-    height: var(--comic-image-height);
+    width: 23.6875rem; /* 379px */
+    height: calc(23.6875rem / var(--comic-image-aspect-ratio, calc(379 / 580)));
     background-image: var(--comic-image);
     background-position: center;
     background-repeat: no-repeat;
@@ -364,7 +362,15 @@ ul {
 
 .comic-page .characters-comic__item, .comic-page .section-comic__item { --border-color: #000000; }
 
-.comic-page .characters-comic__item { position: relative; }
+.comic-page .characters-comic__item {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
 
 .comic-page .characters-comic__item:hover > .characters-comic__image { border-color: var(--border-color, #000000); }
 
@@ -425,25 +431,21 @@ ul {
 @media (min-width: 640px) {
     .container { max-width: 640px; }
 
-    .authors__list, .ranges__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
-    .characters__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .characters__list, .ranges__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (min-width: 768px) {
     .container { max-width: 768px; }
 
-    .authors__list, .ranges__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-
-    .characters__list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .characters__list, .ranges__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (min-width: 1024px) {
     .container { max-width: 1024px; }
 
-    .authors__list, .ranges__list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .authors__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
-    .characters__list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .characters__list, .ranges__list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
     .comics__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -451,17 +453,17 @@ ul {
 @media (min-width: 1280px) {
     .container { max-width: 1280px; }
 
-    .authors__list, .ranges__list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-
     .characters__list { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+
+    .ranges__list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 }
 
 @media (min-width: 1536px) {
     .container { max-width: 1536px; }
 
-    .authors__list, .ranges__list { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    .authors__list, .comics__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
-    .characters__list { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+    .characters__list { grid-template-columns: repeat(7, minmax(0, 1fr)); }
 
-    .comics__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .ranges__list { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 }

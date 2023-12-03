@@ -7,7 +7,7 @@ export interface Author {
     link_to_bubble_website?: string;
 }
 
-type AuthorPosition = "artist" | "colorist" | "screenwriter";
+export type AuthorPosition = "artist" | "colorist" | "screenwriter";
 
 export type Authors = Record<string, Author>;
 
@@ -25,6 +25,7 @@ export interface Comic {
     number?: string;
     type: ComicType;
     cover_file_url?: string;
+    cover_file_url_aspect_ratio?: number;
     ranges: string[];
     characters?: string[];
     authors?: ComicAuthor[];

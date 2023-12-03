@@ -18,11 +18,7 @@ const run = () => {
   authorId = `author_${route.params.authorId}`;
   author = authors[authorId];
   const authorComicIds: string[] = Object.keys(comics)
-      .filter((comicId: string)
-              :
-          boolean => comics[comicId].authors && comics[comicId].authors.indexOf(authorId) !== -1
-      )
-  ;
+      .filter((comicId: string): boolean => comics[comicId].authors && comics[comicId].authors.map(author => author.author_id).indexOf(authorId) !== -1);
   authorComics = {};
 
   authorComicIds.forEach((comicId) => {

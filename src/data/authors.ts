@@ -31,6 +31,11 @@ const authors: Authors = {
         position              : "screenwriter",
         link_to_bubble_website: "https://bubble.ru/authors/40-artyom-gabrelyanov/about"
     },
+    author_victoria_vinogradova   : {
+        full_name             : "Виктория Виноградова (ядрён карась (carassiusvigorous))",
+        position              : "colorist",
+        link_to_bubble_website: "https://bubble.ru/authors/45-viktoriya-vinogradova/about"
+    },
     author_vitaly_terletsky       : {
         full_name             : "Виталий Терлецкий",
         position              : "screenwriter",
@@ -99,6 +104,7 @@ const authors: Authors = {
     author_adela_adienova         : {full_name: "Аделя Адиенова", position: "colorist"},
     author_alexandra_shchastlivaya: {full_name: "Александра Счастливая", position: "colorist"},
     author_alena_karpova          : {full_name: "Алёна Карпова", position: "colorist"},
+    author_alena_spiridonova      : {full_name: "Алёна Спиридонова", position: "screenwriter"}, /* TODO: Не нашла пока её должность */
     author_anastasia_afonina      : {full_name: "Анастасия Афонина", position: "artist"},
     author_anastasia_glazunova    : {full_name: "Анастасия Глазунова", position: "colorist"},
     author_anastasia_katerinich   : {full_name: "Анастасия Катеринич", position: "artist"},
@@ -112,12 +118,14 @@ const authors: Authors = {
     author_anton_startsev         : {full_name: "Антон Старцев", position: "colorist"},
     author_artyom_bizyaev         : {full_name: "Артём Бизяев", position: "artist"},
     author_artyom_myasnikov       : {full_name: "Артём Мясников", position: "artist"},
+    author_victoria_tirtilova     : {full_name: "Виктория Тиртилова (Expie Ai)", position: "colorist"},
     author_vitaly_smirnov         : {full_name: "Виталий Смирнов", position: "artist"},
     author_evgeniy_bornyakov      : {full_name: "Евгений Борняков", position: "artist"},
     author_ekaterina_menabde      : {full_name: "Екатерина Менабде", position: "artist"},
     author_elena_doronina         : {full_name: "Елена Доронина", position: "colorist"},
     author_ivan_yelyasov          : {full_name: "Иван Елясов", position: "artist"},
     author_ivan_skorokhodov       : {full_name: "Иван Скороходов", position: "screenwriter"},
+    author_igor_loboda            : {full_name: "Игорь Лобода", position: "colorist"},
     author_igor_khudaev           : {full_name: "Игорь Худаев", position: "screenwriter"},
     author_irina_ivanova          : {full_name: "Ирина Иванова", position: "artist"},
     author_kirill_perepelitsyn    : {full_name: "Кирилл Перепелицын", position: "colorist"},
