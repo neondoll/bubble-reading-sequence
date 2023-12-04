@@ -127,6 +127,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/b7f17f52162283fd188e054c3cb0dcaa.png",
         link_to_bubble_website: "https://bubble.ru/characters/37-dzhina-stivens"
     },
+    character_johnny                  : {
+        full_name             : "Джонни",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/824f94b52be224b7cf19f318cf68e8c0__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/74c2e986210e04ca402098d667ba7c67.png",
+        link_to_bubble_website: "https://bubble.ru/characters/38-dzhonni"
+    },
     character_joshua_donato           : {
         full_name             : "Джошуа Донато",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/a863e3da74d5ead6066c30842944be38__168x168.png.webp",
@@ -162,6 +168,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/098b86a35f5c058625d9d89428e7a856__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/dccf48b27464a5f20e4fa2eaa04c07c7.png",
         link_to_bubble_website: "https://bubble.ru/characters/52-igor-grom-ded"
+    },
+    character_ilya_kosygin            : {
+        full_name             : "Илья Косыгин",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/82a5a295b32ff2efdae7e922ad4f5619__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/8f37b5097710723da4185f06e2a69a0d.png",
+        link_to_bubble_website: "https://bubble.ru/characters/152-ilya-kosygin"
     },
     character_yango                   : {
         full_name             : "Йанго",

@@ -113,6 +113,7 @@ const authors: Authors = {
     author_andrey_muravyov        : {full_name: "Андрей Муравьёв", position: "colorist"},
     author_andrey_rodin           : {full_name: "Андрей Родин", position: "artist"},
     author_anna_antoshchenkova    : {full_name: "Анна Антощенкова", position: "colorist"},
+    author_anna_mozaikina         : {full_name: "Анна Мозайкина", position: "colorist"},
     author_anna_rud               : {full_name: "Анна Рудь", position: "artist"},
     author_anna_sidorova          : {full_name: "Анна Сидорова", position: "colorist"},
     author_anton_startsev         : {full_name: "Антон Старцев", position: "colorist"},
