@@ -1,0 +1,41 @@
+const colors = {
+    author_alena_spiridonova   : "#f7dd9f",
+    author_alex_hatchett       : "#7f12ca",
+    author_anastasia_kim       : "#ff992a",
+    author_evgeny_fedotov      : "#00cc99",
+    author_evgeny_yakovlev     : "#00f0ff",
+    author_marina_privalova    : "#005bb1",
+    author_maxim_ananyin       : "#770202",
+    author_yulia_zhuravleva    : "#ffff33",
+    comic_igor_ugor_volume_1   : "#ff3366", // TODO: Добавить остальные комиксы
+    comic_point_of_no_return   : "#ccff99",
+    range_allies               : "#ca000b",
+    range_besoboy              : "#333399",
+    range_besoboy_vol_2        : "#0044bc",
+    range_bubble_legends       : "#7f12ca",
+    range_bubble_manga         : "#ccff99",
+    range_bubble_school        : "#89ff6c",
+    range_bubble_triptych      : "#ca000b",
+    range_childrens_comics     : "#ff3366",
+    range_exlibrium            : "#89ff6c",
+    range_exlibrium_second_life: "#33cc66",
+    range_friends_comics       : "#005bb1",
+    range_igor_grom            : "#ff992a",
+    range_major_grom           : "#ff5e00",
+    range_major_igor_grom      : "#ffff33",
+    range_meteora              : "#00f0ff",
+    range_mir                  : "#ca000b",
+    range_monk                 : "#ffff33",
+    range_monk_king_of_parties : "#ffff33",
+    range_new_bubble_heroes    : "#0044bc",
+    range_plague_doctor        : "#ff5e00",
+    range_planeswalkers        : "#f7dd9f",
+    range_red_fury             : "#770202",
+    range_thief_of_shadows     : "#ffff33",
+    range_time_of_raven        : "#808080", // "#ffffff"
+    range_turbocarp            : "#00f0ff",
+    range_witch                : "#ff5e00",
+    range_ziggy_and_shmyg      : "#cc00ff"
+};
+
+export default colors;
