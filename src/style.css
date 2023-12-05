@@ -315,7 +315,8 @@ ul {
 
 .comic-page .comic {
     --comic-image-aspect-ratio: calc(379 / 580);
-    display: flex;
+    display: grid;
+    grid-template-columns: 23.6875rem 1fr;
     gap: 1.5rem; /* 24px */
 }
 
@@ -331,7 +332,7 @@ ul {
 }
 
 .comic-page .comic__content {
-    flex: 1 1 0;
+    flex: 0 1 0;
 }
 
 .comic-page .comic__description {
@@ -343,6 +344,8 @@ ul {
     border: 1px solid #000000;
     border-radius: 0.5rem;
 }
+
+.comic-page .files-comic__image { width: 100%; }
 
 .comic-page .characters-comic, .comic-page .section-comic {
     display: grid;

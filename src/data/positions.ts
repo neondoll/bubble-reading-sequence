@@ -29,10 +29,10 @@ const monk = {y: difference.y * 6};
 const monk_king_of_parties = {y: difference.y * 38};
 const planeswalkers = {y: difference.y * 8};
 const plague_doctor = {y: difference.y * 23};
+const point_of_no_return = {y: difference.y * 39};
 const red_fury = {y: difference.y * 12};
 const thief_of_shadows = {y: difference.y * 53};
 const time_of_raven = {y: (besoboy.y + monk.y + major_grom.y + red_fury.y) / 4};
-const tipping_point = {y: difference.y * 39};
 const turbocarp = {y: difference.y * 65};
 const witch = {y: difference.y * 67};
 const yulia_zhuravleva = {y: difference.y * 42};
@@ -296,10 +296,10 @@ export default {
     range_monk_king_of_parties                                              : monk_king_of_parties,
     range_plague_doctor                                                     : plague_doctor,
     range_planeswalkers                                                     : planeswalkers,
+    range_point_of_no_return                                                : point_of_no_return,
     range_red_fury                                                          : red_fury,
     range_thief_of_shadows                                                  : thief_of_shadows,
     range_time_of_raven                                                     : time_of_raven,
-    range_tipping_point                                                     : tipping_point,
     range_turbocarp                                                         : turbocarp,
     range_witch                                                             : witch,
     range_mir                                                               : mir,

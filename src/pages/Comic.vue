@@ -37,6 +37,13 @@ watch(route, () => {
         <div class="comic__content">
           <h1 class="comic__title">{{ comic.name }}</h1>
           <div class="comic__description">
+            <section v-if="comic.content_files" class="comic__files files-comic">
+              <ul>
+                <li v-for="(file, fileIndex) in comic.content_files">
+                  <img class="files-comic__image" :src="file.url" :alt="`${comic.name} страница ${fileIndex}`">
+                </li>
+              </ul>
+            </section>
             <section v-if="comic.characters" class="comic__characters characters-comic">
               <h2 class="characters-comic__title">Персонажи</h2>
               <ul class="characters-comic__list">

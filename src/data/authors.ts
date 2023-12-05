@@ -16,6 +16,16 @@ const authors: Authors = {
         position              : "artist",
         link_to_bubble_website: "https://bubble.ru/authors/11-aleksei-gorbut/about"
     },
+    author_alexey_zamsky          : {
+        full_name             : "Алексей Замский",
+        position              : "screenwriter",
+        link_to_bubble_website: "https://bubble.ru/authors/14-aleksei-zamskii/about"
+    },
+    author_alina_erofeeva         : {
+        full_name             : "Алина Ерофеева (Meissdes)",
+        position              : "artist",
+        link_to_bubble_website: "https://bubble.ru/authors/18-alina-erofeeva/about"
+    },
     author_anastasia_kim          : {
         full_name             : "Анастасия Ким (Phobs)",
         position              : "artist",
@@ -76,6 +86,7 @@ const authors: Authors = {
         position              : "artist",
         link_to_bubble_website: "https://bubble.ru/authors/84-madibek-musabekov/about"
     },
+    author_marina_privalova       : {full_name: "Марина Привалова (Мия Кульц)", position: "artist", link_to_bubble_website: "https://bubble.ru/authors/88-marina-privalova/about"},
     author_maria_vasilyeva        : {
         full_name             : "Мария Васильева (Grёmo)",
         position              : "colorist",
@@ -138,7 +149,9 @@ const authors: Authors = {
     author_nina_vakueva           : {full_name: "Нина Вакуева", position: "artist"},
     author_tatiana_yakubets       : {full_name: "Татьяна Якубец", position: "colorist"},
     author_taya_makarevich        : {full_name: "Тая Макаревич", position: "artist"},
-    author_eduard_petrovich       : {full_name: "Эдуард Петрович", position: "artist"}
+    author_eduard_petrovich       : {full_name: "Эдуард Петрович", position: "artist"},
+    author_eric_bragalyan         : {full_name: "Эрик Брагалян", position: "artist"},
+    author_yulia_loganova         : {full_name: "Юлия Логанова", position: "colorist"}
 };
 
 export default authors;

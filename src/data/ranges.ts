@@ -31,7 +31,8 @@ const ranges: Ranges = {
         color     : "#ffff33",
         release_at: {year: 2016, month: 4, day: 1}
     },
-    range_tipping_point        : {
+    range_inadequate_galaxy    : {name: "Упоротая галактика", release_at: {year: 2016, month: 12, day: 24}},
+    range_point_of_no_return   : {
         name      : "Точка невозврата",
         color     : "#ccff99",
         release_at: {year: 2016, month: 12, day: 24}

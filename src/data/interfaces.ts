@@ -1,5 +1,4 @@
 import * as vNG from "v-network-graph";
-import Positions from "./positions";
 
 export interface Author {
     full_name: string;
@@ -26,6 +25,7 @@ export interface Comic {
     type: ComicType;
     cover_file_url?: string;
     cover_file_url_aspect_ratio?: number;
+    content_files?: Image[];
     ranges: string[];
     characters?: string[];
     authors?: ComicAuthor[];
@@ -69,6 +69,11 @@ interface DateYMD extends DateYM {
 export interface Edge extends vNG.Edge {
     color?: string;
     dashed?: boolean;
+}
+
+interface Image {
+    url: string;
+    aspect_ratio: number;
 }
 
 export interface Node extends vNG.Node {
