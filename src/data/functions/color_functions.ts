@@ -10,11 +10,11 @@ const modifyHex = (hex: string) => {
     return hex;
 };
 
-const colorMixingHex = (colors: string[]) => {
-    let rgb = [0, 0, 0];
+const colorMixingHex = (colors: string[]): string => {
+    let rgb: number[] = [0, 0, 0];
 
-    colors.forEach(color => {
-        let hex = color.replace("#", "");
+    colors.forEach((color: string): void => {
+        let hex: string = color.replace("#", "");
 
         if (hex.length !== 6) {
             hex = modifyHex(hex);

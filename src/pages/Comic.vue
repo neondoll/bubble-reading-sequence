@@ -77,7 +77,7 @@ watch(route, () => {
               <h2 class="section-comic__title">Содержится в</h2>
               <ul class="section-comic__list">
                 <template v-for="includingComicId in comic.including_comics">
-                  <li class="section-comic__item" :style="{ '--border-color': comicColor(comics[includingComicId]) }">
+                  <li class="section-comic__item" :style="{ '--border-color': comicColor(includingComicId) }">
                     <RouterLink class="section-comic__link"
                                 :to="{ name: 'comic', params: { rangeId: route.params.rangeId, comicId: comicIdToNull(includingComicId) } }">
                       {{ comics[includingComicId].name }}
@@ -90,7 +90,7 @@ watch(route, () => {
               <h2 class="section-comic__title">Содержащиеся</h2>
               <ul class="section-comic__list">
                 <template v-for="containedComicId in comic.contained_comics">
-                  <li class="section-comic__item" :style="{ '--border-color': comicColor(comics[containedComicId]) }">
+                  <li class="section-comic__item" :style="{ '--border-color': comicColor(containedComicId) }">
                     <RouterLink class="section-comic__link"
                                 :to="{ name: 'comic', params: { rangeId: route.params.rangeId, comicId: comicIdToNull(containedComicId) } }">
                       {{ comics[containedComicId].name }}
@@ -103,7 +103,7 @@ watch(route, () => {
               <h2 class="section-comic__title">Предыдущий</h2>
               <ul class="section-comic__list">
                 <template v-for="previousComicId in comic.previous_comics">
-                  <li class="section-comic__item" :style="{ '--border-color': comicColor(comics[previousComicId]) }">
+                  <li class="section-comic__item" :style="{ '--border-color': comicColor(previousComicId) }">
                     <RouterLink class="section-comic__link"
                                 :to="{ name: 'comic', params: { rangeId: route.params.rangeId, comicId: comicIdToNull(previousComicId) } }">
                       {{ comics[previousComicId].name }}
@@ -116,7 +116,7 @@ watch(route, () => {
               <h2 class="section-comic__title">Следующий</h2>
               <ul class="section-comic__list">
                 <template v-for="nextComicId in comic.next_comics">
-                  <li class="section-comic__item" :style="{ '--border-color': comicColor(comics[nextComicId]) }">
+                  <li class="section-comic__item" :style="{ '--border-color': comicColor(nextComicId) }">
                     <RouterLink class="section-comic__link"
                                 :to="{ name: 'comic', params: { rangeId: route.params.rangeId, comicId: comicIdToNull(nextComicId) } }">
                       {{ comics[nextComicId].name }}

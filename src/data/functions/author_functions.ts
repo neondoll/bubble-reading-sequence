@@ -2,16 +2,22 @@ import {AuthorPosition} from "../interfaces";
 import {colorMixingHex} from "./color_functions";
 import {comicColor} from "./comic_functions";
 import comics from "../comics";
+import colors from "../colors";
 
 const authorPositions = {artist: "Художник", colorist: "Колорист", screenwriter: "Сценарист"};
 
 const authorColor = (authorId: string): string => {
-    const colors: string[] = Object.keys(comics)
-        .filter((comicId: string): boolean => comics[comicId].authors && comics[comicId].authors.map((author) => author.author_id).indexOf(authorId) !== -1)
-        .map((comicId: string): string => comicColor(comics[comicId]));
-    const colorsLength: number = colors.length;
+    if (Object.keys(colors).indexOf(authorId) !== -1) {
+        return colors[authorId];
+    }
 
-    return colorsLength ? (colorsLength > 1 ? colorMixingHex(colors) : colors[0]) : undefined;
+    const comicColors: string[] = Object.keys(comics)
+        .filter((comicId: string): boolean => comics[comicId].authors && comics[comicId].authors.map((author) => author.author_id).indexOf(authorId) !== -1)
+        .map((comicId: string): string => comicColor(comicId))
+        .filter((comicColor: string): boolean => comicColor !== undefined);
+    const comicColorsLength: number = comicColors.length;
+
+    return comicColorsLength ? (comicColorsLength > 1 ? colorMixingHex(comicColors) : comicColors[0]) : undefined;
 };
 const authorIdToNull = (authorId: string): string => authorId.replace("author_", "");
 const authorPosition = (authorPosition: AuthorPosition): string => {

@@ -1,14 +1,30 @@
-import {Comic} from "../interfaces/Comic";
 import {colorMixingHex} from "./color_functions";
-import ranges from "../ranges";
+import colors from "../colors";
+import comics from "../comics";
+import {Comic} from "../interfaces";
 
-const comicColor = (comic: Comic): string => {
-    const colors: string[] = comic.ranges
-        .filter((rangeIds: string) => Boolean(ranges[rangeIds].color))
-        .map((rangeIds: string) => ranges[rangeIds].color);
-    const colorsLength: number = colors.length;
+const comicColor = (comicId: string): string => {
+    if (Object.keys(colors).indexOf(comicId) !== -1) {
+        return colors[comicId];
+    }
 
-    return colorsLength ? (colorsLength > 1 ? colorMixingHex(colors) : colors[0]) : undefined;
+    const comic: Comic = comics[comicId];
+    let authorColors: string[] = [];
+
+    if (comic.ranges.indexOf("range_authors_comics") !== -1 && comic.authors) {
+        authorColors = comic.authors
+            .filter((author) => Object.keys(colors).indexOf(author.author_id) !== -1)
+            .map((author) => colors[author.author_id]);
+    }
+
+    const rangeColors: string[] = comic.ranges
+        .filter((rangeId: string): boolean => Object.keys(colors).indexOf(rangeId) !== -1)
+        .map((rangeId: string): string => colors[rangeId]);
+    const anyColors: string[] = [].concat(authorColors, rangeColors);
+    const anyColorsLength: number = anyColors.length;
+    console.log(comicId, anyColors);
+
+    return anyColorsLength ? anyColorsLength > 1 ? colorMixingHex(anyColors) : anyColors[0] : undefined;
 };
 const comicIdToNull = (comicId: string): string => comicId.replace("comic_", "");
 

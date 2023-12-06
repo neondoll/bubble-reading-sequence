@@ -1,5 +1,5 @@
 import {Edge, Node} from "./interfaces";
-import {colorMixingHex} from "./functions/color_functions";
+import {comicColor} from "./functions/comic_functions";
 import {comicIdToNodeId, comicsIdToEdgeId, nodeIdToComicId} from "./functions/helper_functions";
 import {maxOfArray, minOfArray} from "./functions/array_functions"
 import {textWrapping} from "./functions/string_functions";
@@ -103,10 +103,6 @@ Object.keys(comics).forEach((comic_id) => {
 
     const comic = comics[comic_id];
     const node_id = comicIdToNodeId(comic_id);
-    const node_colors = comic.ranges
-        .filter((range_ids) => Boolean(ranges[range_ids].color))
-        .map((range_ids) => ranges[range_ids].color);
-    const node_colors_length = node_colors.length;
 
     // -----------------------------------------------------------------------------
     // nodes
@@ -114,7 +110,7 @@ Object.keys(comics).forEach((comic_id) => {
 
     nodes[node_id] = {
         name : comic.name.length > 19 ? textWrapping(comic.name, 19) : comic.name,
-        color: node_colors_length ? (node_colors_length > 1 ? colorMixingHex(node_colors) : node_colors[0]) : "#000000",
+        color: comicColor(comic_id) || "#000000",
         size : sizes[comic.type]
     };
 

@@ -86,7 +86,11 @@ const authors: Authors = {
         position              : "artist",
         link_to_bubble_website: "https://bubble.ru/authors/84-madibek-musabekov/about"
     },
-    author_marina_privalova       : {full_name: "Марина Привалова (Мия Кульц)", position: "artist", link_to_bubble_website: "https://bubble.ru/authors/88-marina-privalova/about"},
+    author_marina_privalova       : {
+        full_name             : "Марина Привалова (Мия Кульц)",
+        position              : "artist",
+        link_to_bubble_website: "https://bubble.ru/authors/88-marina-privalova/about"
+    },
     author_maria_vasilyeva        : {
         full_name             : "Мария Васильева (Grёmo)",
         position              : "colorist",

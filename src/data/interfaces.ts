@@ -83,7 +83,6 @@ export interface Node extends vNG.Node {
 
 interface Range {
     name: string;
-    color?: string;
     release_at: Date;
 }
 
