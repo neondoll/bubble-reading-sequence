@@ -23,8 +23,7 @@ export interface Comic {
     name: string;
     number?: string;
     type: ComicType;
-    cover_file_url?: string;
-    cover_file_url_aspect_ratio?: number;
+    cover_file?: Image;
     content_files?: Image[];
     ranges: string[];
     characters?: string[];
