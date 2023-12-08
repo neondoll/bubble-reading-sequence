@@ -35,7 +35,6 @@ const thief_of_shadows = {y: difference.y * 53};
 const time_of_raven = {y: (besoboy.y + monk.y + major_grom.y + red_fury.y) / 4};
 const turbocarp = {y: difference.y * 65};
 const witch = {y: difference.y * 67};
-const yulia_zhuravleva = {y: difference.y * 42};
 const ziggy_and_shmyg = {y: difference.y * 50};
 
 const allies_hardcover_book = {y: allies.y + difference.y * 2};
@@ -59,6 +58,7 @@ const crusade_wolf = {y: planeswalkers.y + difference.y * 2};
 const crusade_wolf_book = {y: crusade_wolf.y + difference.y};
 const fiction_novel = {y: difference.y * 72};
 const igor_grom_hardcover_book = {y: igor_grom.y + difference.y * 2};
+const jackets_and_revolvers = {y: difference.y * 42};
 const major_grom_and_red_fury = {y: (major_grom.y + red_fury.y) / 2};
 const meteora_book = {y: meteora.y + difference.y};
 const monk_vs_besoboy = {y: (besoboy.y + monk.y) / 2};
@@ -93,7 +93,7 @@ const xFunc2 = (layouts_nodes) => {
 };
 
 export default {
-    comic_adventures_of_kochi_and_friends                                   : childrens_comics,
+    comic_adventures_of_kochi_and_friends_funny_sketches                    : childrens_comics,
     comic_allies_15                                                         : witch_hunt,
     comic_allies_book_1                                                     : allies_hardcover_book,
     comic_allies_book_2                                                     : allies_hardcover_book,
@@ -109,6 +109,11 @@ export default {
     comic_besoboy_vol_2_15                                                  : witch_hunt,
     comic_besoboy_vol_2_book_1                                              : besoboy_vol_2_hardcover_book,
     comic_besoboy_vol_2_book_2                                              : besoboy_vol_2_hardcover_book,
+    comic_black_dog_its_time                                                : {y: besoboy.y + difference.y},
+    comic_black_dog_its_time_1                                              : besoboy,
+    comic_black_dog_its_time_2                                              : besoboy,
+    comic_black_dog_its_time_3                                              : besoboy,
+    comic_black_dog_its_time_4                                              : besoboy,
     comic_black_hand_and_mysterious_package                                 : new_bubble_heroes_line_4,
     comic_bubble_halloween                                                  : bubble_legends,
     comic_cat_and_mouse_volume_1                                            : evgeny_fedotov,
@@ -166,6 +171,10 @@ export default {
     comic_igor_grom_15                                                      : witch_hunt,
     comic_igor_grom_book_1                                                  : igor_grom_hardcover_book,
     comic_igor_grom_book_2                                                  : igor_grom_hardcover_book,
+    comic_jackets_and_revolvers_volume_1                                    : jackets_and_revolvers,
+    comic_jackets_and_revolvers_volume_2                                    : jackets_and_revolvers,
+    comic_jackets_and_revolvers_volume_3                                    : jackets_and_revolvers,
+    comic_jackets_and_revolvers_volume_4                                    : jackets_and_revolvers,
     comic_krutiks_1                                                         : childrens_comics,
     comic_krutiks_1_2018                                                    : childrens_comics,
     comic_krutiks_2                                                         : childrens_comics,
@@ -306,6 +315,5 @@ export default {
     range_turbocarp                                                         : turbocarp,
     range_witch                                                             : witch,
     range_mir                                                               : mir,
-    range_yulia_zhuravleva                                                  : yulia_zhuravleva,
     range_ziggy_and_shmyg                                                   : ziggy_and_shmyg
 };

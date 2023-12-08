@@ -1,7 +1,7 @@
+import {Comic} from "../interfaces";
 import {colorMixingHex} from "./color_functions";
 import colors from "../colors";
 import comics from "../comics";
-import {Comic} from "../interfaces";
 
 const comicColor = (comicId: string): string => {
     if (Object.keys(colors).indexOf(comicId) !== -1) {
@@ -22,7 +22,6 @@ const comicColor = (comicId: string): string => {
         .map((rangeId: string): string => colors[rangeId]);
     const anyColors: string[] = [].concat(authorColors, rangeColors);
     const anyColorsLength: number = anyColors.length;
-    console.log(comicId, anyColors);
 
     return anyColorsLength ? anyColorsLength > 1 ? colorMixingHex(anyColors) : anyColors[0] : undefined;
 };

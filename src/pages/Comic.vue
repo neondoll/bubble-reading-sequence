@@ -32,8 +32,8 @@ watch(route, () => {
   <div class="comic-page">
     <div class="comic-page__container container">
       <article class="comic"
-               :style="{ '--comic-image':              `url(${comic.cover_file_url})`,
-                         '--comic-image-aspect-ratio': comic.cover_file_url_aspect_ratio }">
+               :style="{ '--comic-image'             : comic.cover_file ? `url(${comic.cover_file.url})` : undefined,
+                         '--comic-image-aspect-ratio': comic.cover_file ? comic.cover_file.aspect_ratio : undefined }">
         <div class="comic__content">
           <h1 class="comic__title">{{ comic.name }}</h1>
           <div class="comic__description">

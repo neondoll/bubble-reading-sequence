@@ -137,6 +137,7 @@ const authors: Authors = {
     author_victoria_tirtilova     : {full_name: "Виктория Тиртилова (Expie Ai)", position: "colorist"},
     author_vitaly_smirnov         : {full_name: "Виталий Смирнов", position: "artist"},
     author_evgeniy_bornyakov      : {full_name: "Евгений Борняков", position: "artist"},
+    author_ekaterina_morozova     : {full_name: "Екатерина Морозова", position: "screenwriter"},
     author_ekaterina_menabde      : {full_name: "Екатерина Менабде", position: "artist"},
     author_elena_doronina         : {full_name: "Елена Доронина", position: "colorist"},
     author_ivan_yelyasov          : {full_name: "Иван Елясов", position: "artist"},
@@ -145,6 +146,7 @@ const authors: Authors = {
     author_igor_khudaev           : {full_name: "Игорь Худаев", position: "screenwriter"},
     author_irina_ivanova          : {full_name: "Ирина Иванова", position: "artist"},
     author_kirill_perepelitsyn    : {full_name: "Кирилл Перепелицын", position: "colorist"},
+    author_maxim_ananyin          : {full_name: "Максим Ананьин", position: "screenwriter"}, /* TODO: Не нашла пока его должность */
     author_margarita_kablukova    : {full_name: "Маргарита Каблукова", position: "colorist"},
     author_maria_zalogina         : {full_name: "Мария Залогина", position: "colorist"},
     author_natalia_vorontsova     : {full_name: "Наталия Воронцова", position: "screenwriter"},

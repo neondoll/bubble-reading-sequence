@@ -24,8 +24,8 @@ document.querySelector("title").text = range.name;
     <div class="comics-page__container container">
       <template v-for="(comic, comicId) in rangeComics">
         <article class="comic"
-                 :style="{ '--comic-image':              `url(${comic.cover_file_url})`,
-                           '--comic-image-aspect-ratio': comic.cover_file_url_aspect_ratio }">
+                 :style="{ '--comic-image'             : comic.cover_file ? `url(${comic.cover_file.url})` : undefined,
+                           '--comic-image-aspect-ratio': comic.cover_file ? comic.cover_file.aspect_ratio : undefined }">
           <div class="comic__content">
             <h2 class="comic__title">
               <RouterLink class="comic__link"

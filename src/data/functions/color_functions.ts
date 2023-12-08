@@ -1,4 +1,4 @@
-const modifyHex = (hex: string) => {
+const modifyHex = (hex: string): string => {
     if (hex.length === 4) {
         hex = hex.replace("#", "");
     }
