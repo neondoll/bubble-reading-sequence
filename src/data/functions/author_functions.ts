@@ -1,10 +1,9 @@
 import {AuthorPosition} from "../interfaces";
 import {colorMixingHex} from "./color_functions";
 import {comicColor} from "./comic_functions";
+import authorPositions from "../authorPositions";
 import comics from "../comics";
 import colors from "../colors";
-
-const authorPositions = {artist: "Художник", colorist: "Колорист", screenwriter: "Сценарист"};
 
 const authorColor = (authorId: string): string => {
     if (Object.keys(colors).indexOf(authorId) !== -1) {

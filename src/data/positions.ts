@@ -38,8 +38,8 @@ const witch = {y: difference.y * 67};
 const ziggy_and_shmyg = {y: difference.y * 50};
 
 const allies_hardcover_book = {y: allies.y + difference.y * 2};
-const besoboy_and_planeswalkers = {y: (besoboy_vol_2.y + planeswalkers.y) / 2};
-const besoboy_and_planeswalkers_book = {y: besoboy_and_planeswalkers.y + difference.y};
+const besoboy_and_planeswalkers_new_life = {y: (besoboy_vol_2.y + planeswalkers.y) / 2};
+const besoboy_and_planeswalkers_new_life_book = {y: besoboy_and_planeswalkers_new_life.y + difference.y};
 const besoboy_book = {y: besoboy.y + difference.y};
 const besoboy_vol_2_hardcover_book = {y: besoboy_vol_2.y + difference.y * 2};
 const bubble_legends_book = {y: bubble_legends.y + difference.y};
@@ -104,8 +104,8 @@ export default {
     comic_besoboy_15                                                        : monk_vs_besoboy,
     comic_besoboy_16                                                        : monk_vs_besoboy,
     comic_besoboy_17                                                        : monk_vs_besoboy,
-    comic_besoboy_and_planeswalkers_book                                    : besoboy_and_planeswalkers_book,
-    comic_besoboy_and_planeswalkers_single                                  : besoboy_and_planeswalkers,
+    comic_besoboy_and_planeswalkers_new_life_electronic                     : besoboy_and_planeswalkers_new_life,
+    comic_besoboy_and_planeswalkers_new_life_printed                        : besoboy_and_planeswalkers_new_life_book,
     comic_besoboy_vol_2_15                                                  : witch_hunt,
     comic_besoboy_vol_2_book_1                                              : besoboy_vol_2_hardcover_book,
     comic_besoboy_vol_2_book_2                                              : besoboy_vol_2_hardcover_book,
@@ -141,6 +141,7 @@ export default {
     comic_community_4                                                       : community,
     comic_community_plush_and_dangerous_storybook_book                      : community_book,
     comic_community_plush_and_dangerous_storybook_single                    : community,
+    comic_crusade_prologue                                                  : planeswalkers,
     comic_crusade_wolf                                                      : crusade_wolf_book,
     comic_crusade_wolf_1                                                    : crusade_wolf,
     comic_crusade_wolf_2                                                    : crusade_wolf,
@@ -152,6 +153,11 @@ export default {
     comic_devilry_2                                                         : bubble_legends,
     comic_devilry_3                                                         : bubble_legends,
     comic_devilry_4                                                         : bubble_legends,
+    comic_dubin_dima_provincial_holidays                                    : {y: major_grom.y + difference.y},
+    comic_dubin_dima_provincial_holidays_1                                  : major_grom,
+    comic_dubin_dima_provincial_holidays_2                                  : major_grom,
+    comic_dubin_dima_provincial_holidays_3                                  : major_grom,
+    comic_dubin_dima_provincial_holidays_4                                  : major_grom,
     comic_dont_be_reckless_quatrefoil                                       : new_bubble_heroes_line_2,
     comic_editor                                                            : new_bubble_heroes_line_2,
     comic_falcon_1                                                          : new_bubble_heroes_line_1,
@@ -213,6 +219,8 @@ export default {
     comic_major_grom_40                                                     : major_grom_and_red_fury,
     comic_major_grom_41                                                     : major_grom_and_red_fury,
     comic_major_grom_promise                                                : igor_grom,
+    comic_master_death_is_just_beginning_electronic                         : monk,
+    comic_master_death_is_just_beginning_printed                            : {y: monk.y + difference.y},
     comic_memento_mori_call_of_the_void                                     : new_bubble_heroes_line_2,
     comic_monk_15                                                           : monk_vs_besoboy,
     comic_monk_16                                                           : monk_vs_besoboy,
@@ -259,11 +267,11 @@ export default {
     comic_tagar_volume_4_chapter_4                                          : bubble_manga_line_1,
     comic_tagar_volume_4_chapter_5                                          : bubble_manga_line_1,
     comic_tagar_volume_4_chapter_6                                          : bubble_manga_line_1,
-    comic_teo                                                               : meteora_book,
-    comic_teo_1                                                             : meteora,
-    comic_teo_2                                                             : meteora,
-    comic_teo_3                                                             : meteora,
-    comic_teo_4                                                             : meteora,
+    comic_teo_crop_circles                                                  : meteora_book,
+    comic_teo_crop_circles_1                                                : meteora,
+    comic_teo_crop_circles_2                                                : meteora,
+    comic_teo_crop_circles_3                                                : meteora,
+    comic_teo_crop_circles_4                                                : meteora,
     comic_the_ink_prince_and_the_book_knight                                : bubble_manga_line_3_book,
     comic_the_ink_prince_and_the_book_knight_1                              : bubble_manga_line_3,
     comic_the_ink_prince_and_the_book_knight_2                              : bubble_manga_line_3,
@@ -272,6 +280,9 @@ export default {
     comic_unicorn_conspiracy_volume_1                                       : unicorn_conspiracy,
     comic_unicorn_conspiracy_volume_2                                       : unicorn_conspiracy,
     comic_vera_wolf                                                         : bubble_legends,
+    comic_witch_hunt                                                        : {y: witch_hunt.y + difference.y},
+    comic_witch_hunt_finale                                                 : witch_hunt,
+    comic_witch_hunt_prologue                                               : witch_hunt,
     comic_yarkh_step_forward                                                : besoboy_book,
     comic_yarkh_step_forward_1                                              : besoboy,
     comic_yarkh_step_forward_2                                              : besoboy,
@@ -279,6 +290,8 @@ export default {
     comic_yarkh_step_forward_4                                              : besoboy,
     comic_yarkh_step_forward_5                                              : besoboy,
     comic_yarkh_step_forward_6                                              : besoboy,
+    comic_ziggy_and_shmyg_destroy_bubble_universe                           : ziggy_and_shmyg,
+    comic_ziggy_and_shmyg_save_comiccon                                     : ziggy_and_shmyg,
     comic_ziggy_space_hamster                                               : childrens_comics_book,
     comic_ziggy_space_hamster_1                                             : childrens_comics,
     comic_ziggy_space_hamster_2                                             : childrens_comics,
@@ -314,6 +327,5 @@ export default {
     range_time_of_raven                                                     : time_of_raven,
     range_turbocarp                                                         : turbocarp,
     range_witch                                                             : witch,
-    range_mir                                                               : mir,
-    range_ziggy_and_shmyg                                                   : ziggy_and_shmyg
+    range_mir                                                               : mir
 };

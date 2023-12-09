@@ -5020,7 +5020,7 @@ const comics: Comics = {
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_major_grom_volume_8"],
         previous_comics : ["comic_major_grom_49"],
-        next_comics     : ["comic_igor_grom_1", "comic_major_grom_chance_electronic", "comic_dubin_dima_1", "comic_major_grom_1939_single", "comic_major_grom_like_in_war_1", "comic_major_grom_hero_forever_1", "comic_special_prokopenko_grom_at_sunrise_single", "comic_grom_difficult_childhood_anubis_rising_single"],
+        next_comics     : ["comic_igor_grom_1", "comic_major_grom_chance_electronic", "comic_dubin_dima_provincial_holidays_1", "comic_major_grom_1939_single", "comic_major_grom_like_in_war_1", "comic_major_grom_hero_forever_1", "comic_special_prokopenko_grom_at_sunrise_single", "comic_grom_difficult_childhood_anubis_rising_single"],
         release_at      : {year: 2016, month: 12, day: 24},
         show            : false
     },
@@ -5032,7 +5032,7 @@ const comics: Comics = {
         ranges          : ["range_monk"],
         including_comics: ["comic_monk_volume_8"],
         previous_comics : ["comic_monk_49"],
-        next_comics     : ["comic_monk_and_major_grom_storm_of_berlin", "comic_planeswalkers_1", "comic_master_single", "comic_monk_legacy_single"],
+        next_comics     : ["comic_monk_and_major_grom_storm_of_berlin", "comic_planeswalkers_1", "comic_master_death_is_just_beginning_electronic", "comic_monk_legacy_single"],
         release_at      : {year: 2016, month: 12, day: 24},
         show            : false
     },
@@ -5745,7 +5745,7 @@ const comics: Comics = {
                            {author_id: "author_eduard_petrovich", positions: ["artist"]}],
         contained_comics: ["comic_major_grom_42", "comic_major_grom_43", "comic_major_grom_44", "comic_major_grom_45", "comic_major_grom_46", "comic_major_grom_47", "comic_major_grom_48", "comic_major_grom_49", "comic_major_grom_50"],
         previous_comics : ["comic_time_of_raven_epilogue_book", "comic_major_grom_and_red_fury_volume_7"],
-        next_comics     : ["comic_major_grom_chance_printed", "comic_igor_grom_book_1", "comic_igor_grom_volume_1", "comic_dubin_dima", "comic_major_grom_1939_book", "comic_major_grom_like_in_war", "comic_major_grom_hero_forever", "comic_special_prokopenko_grom_at_sunrise_book", "comic_grom_difficult_childhood_anubis_rising_book"],
+        next_comics     : ["comic_major_grom_chance_printed", "comic_igor_grom_book_1", "comic_igor_grom_volume_1", "comic_dubin_dima_provincial_holidays", "comic_major_grom_1939_book", "comic_major_grom_like_in_war", "comic_major_grom_hero_forever", "comic_special_prokopenko_grom_at_sunrise_book", "comic_grom_difficult_childhood_anubis_rising_book"],
         release_at      : {year: 2017, month: 6, day: 1},
         show            : true
     },
@@ -5760,7 +5760,7 @@ const comics: Comics = {
         ranges          : ["range_monk"],
         contained_comics: ["comic_monk_43", "comic_monk_44", "comic_monk_45", "comic_monk_46", "comic_monk_47", "comic_monk_48", "comic_monk_49", "comic_monk_50"],
         previous_comics : ["comic_time_of_raven_epilogue_book", "comic_monk_volume_7"],
-        next_comics     : ["comic_chronicles_of_monk_storm_of_berlin", "comic_planeswalkers_book_1", "comic_planeswalkers_volume_1", "comic_master_book", "comic_monk_legacy_book"],
+        next_comics     : ["comic_chronicles_of_monk_storm_of_berlin", "comic_planeswalkers_book_1", "comic_planeswalkers_volume_1", "comic_master_death_is_just_beginning_printed", "comic_monk_legacy_book"],
         release_at      : {year: 2017, month: 6, day: 1},
         show            : true
     },
@@ -7031,7 +7031,7 @@ const comics: Comics = {
         number     : "1",
         type       : "book",
         cover_file : {
-            url         : "/src/assets/images/comics/jackets_and_revolvers/jackets-and-revolvers-volume-1-box-of-discord.jpg",
+            url         : "/src/assets/images/comics/authors_comics/jackets_and_revolvers/jackets-and-revolvers-volume-1-box-of-discord.jpg",
             aspect_ratio: 1004 / 1536
         },
         ranges     : ["range_authors_comics"],
@@ -7053,1393 +7053,2486 @@ const comics: Comics = {
         authors    : [{author_id: "author_alex_hatchett", positions: ["artist", "screenwriter"]}],
         next_comics: ["comic_unicorn_conspiracy_volume_2"],
         release_at : {year: 2017, month: 9, day: 28},
-        show       : true
+        show       : false
     },
     comic_tagar_volume_1_prologue                                           : {
         name            : "Тагар. Том 1, пролог",
         type            : "single",
-        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-1-prologue.jpg",
+            aspect_ratio: 1213 / 1717
+        },
+        ranges          : ["range_authors_comics", "range_bubble_manga"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_anna_sergeeva", positions: ["screenwriter"]}],
         including_comics: ["comic_tagar_volume_1"],
         next_comics     : ["comic_tagar_volume_1_chapter_1"],
-        release_at      : {year: 2017, month: 9, day: 28}
+        release_at      : {year: 2017, month: 9, day: 28},
+        show            : false
     },
     comic_tagar_volume_1_chapter_1                                          : {
         name            : "Тагар. Том 1, глава 1",
         number          : "1",
         type            : "single",
-        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-1-chapter-1.jpg",
+            aspect_ratio: 1213 / 1717
+        },
+        ranges          : ["range_authors_comics", "range_bubble_manga"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_anna_sergeeva", positions: ["screenwriter"]}],
         including_comics: ["comic_tagar_volume_1"],
         previous_comics : ["comic_tagar_volume_1_prologue"],
         next_comics     : ["comic_tagar_volume_1_chapter_2"],
-        release_at      : {year: 2017, month: 9, day: 28}
+        release_at      : {year: 2017, month: 9, day: 28},
+        show            : false
     },
     comic_tagar_volume_1_chapter_2                                          : {
         name            : "Тагар. Том 1, глава 2",
         number          : "2",
         type            : "single",
-        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-1-chapter-2.jpg",
+            aspect_ratio: 1213 / 1717
+        },
+        ranges          : ["range_authors_comics", "range_bubble_manga"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_anna_sergeeva", positions: ["screenwriter"]}],
         including_comics: ["comic_tagar_volume_1"],
         previous_comics : ["comic_tagar_volume_1_chapter_1"],
         next_comics     : ["comic_tagar_volume_1_chapter_3"],
-        release_at      : {year: 2017, month: 9, day: 28}
+        release_at      : {year: 2017, month: 9, day: 28},
+        show            : false
     },
     comic_tagar_volume_1_chapter_3                                          : {
         name            : "Тагар. Том 1, глава 3",
         number          : "3",
         type            : "single",
-        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-1-chapter-3.jpg",
+            aspect_ratio: 1213 / 1717
+        },
+        ranges          : ["range_authors_comics", "range_bubble_manga"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_anna_sergeeva", positions: ["screenwriter"]}],
         including_comics: ["comic_tagar_volume_1"],
         previous_comics : ["comic_tagar_volume_1_chapter_2"],
         next_comics     : ["comic_tagar_volume_1_chapter_4"],
-        release_at      : {year: 2017, month: 9, day: 28}
+        release_at      : {year: 2017, month: 9, day: 28},
+        show            : false
     },
     comic_tagar_volume_1_chapter_4                                          : {
         name            : "Тагар. Том 1, глава 4",
         number          : "4",
         type            : "single",
-        ranges          : ["range_bubble_manga", "range_marina_privalova"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-1-chapter-4.jpg",
+            aspect_ratio: 1213 / 1717
+        },
+        ranges          : ["range_authors_comics", "range_bubble_manga"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_anna_sergeeva", positions: ["screenwriter"]}],
         including_comics: ["comic_tagar_volume_1"],
         previous_comics : ["comic_tagar_volume_1_chapter_3"],
         next_comics     : ["comic_tagar_volume_2_chapter_1"],
-        release_at      : {year: 2017, month: 9, day: 28}
+        release_at      : {year: 2017, month: 9, day: 28},
+        show            : false
     },
     comic_tagar_volume_1                                                    : {
         name            : "Тагар. Том 1",
         number          : "1",
         type            : "book",
-        ranges          : ["range_bubble_manga", "range_marina_privalova"],
-        contained_comics: ["comic_tagar_volume_1_prologue", "comic_tagar_volume_1_chapter_1",
-                           "comic_tagar_volume_1_chapter_2", "comic_tagar_volume_1_chapter_3",
-                           "comic_tagar_volume_1_chapter_4"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-1.jpg",
+            aspect_ratio: 1050 / 1600
+        },
+        ranges          : ["range_authors_comics", "range_bubble_manga"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_anna_sergeeva", positions: ["screenwriter"]}],
+        contained_comics: ["comic_tagar_volume_1_prologue", "comic_tagar_volume_1_chapter_1", "comic_tagar_volume_1_chapter_2", "comic_tagar_volume_1_chapter_3", "comic_tagar_volume_1_chapter_4"],
         next_comics     : ["comic_tagar_volume_2"],
-        release_at      : {year: 2017, month: 9, day: 28}
+        release_at      : {year: 2017, month: 9, day: 28},
+        show            : true
     },
     comic_friends_comics                                                    : {
         name            : "ДружКомикс: В поисках первородного мема",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/friends_comics/friends-comics-in-search-of-original-meme.jpeg",
+            aspect_ratio: 600 / 869
+        },
         ranges          : ["range_friends_comics"],
-        contained_comics: ["comic_friends_comics_1", "comic_friends_comics_2", "comic_friends_comics_3",
-                           "comic_friends_comics_4", "comic_friends_comics_5", "comic_friends_comics_6",
-                           "comic_friends_comics_7", "comic_friends_comics_8", "comic_friends_comics_9",
-                           "comic_friends_comics_10", "comic_friends_comics_11", "comic_friends_comics_12",
-                           "comic_friends_comics_13", "comic_friends_comics_14", "comic_friends_comics_15",
-                           "comic_friends_comics_16", "comic_friends_comics_17", "comic_friends_comics_18",
-                           "comic_friends_comics_19", "comic_friends_comics_20", "comic_friends_comics_21",
-                           "comic_friends_comics_22", "comic_friends_comics_23", "comic_friends_comics_24",
-                           "comic_friends_comics_25", "comic_friends_comics_26", "comic_friends_comics_27"],
-        release_at      : {year: 2017, month: 9, day: 28}
+        authors         : [{author_id: "author_evgeny_fedotov", positions: ["artist", "screenwriter"]}],
+        contained_comics: ["comic_friends_comics_1", "comic_friends_comics_2", "comic_friends_comics_3", "comic_friends_comics_4", "comic_friends_comics_5", "comic_friends_comics_6", "comic_friends_comics_7", "comic_friends_comics_8", "comic_friends_comics_9", "comic_friends_comics_10", "comic_friends_comics_11", "comic_friends_comics_12", "comic_friends_comics_13", "comic_friends_comics_14", "comic_friends_comics_15", "comic_friends_comics_16", "comic_friends_comics_17", "comic_friends_comics_18", "comic_friends_comics_19", "comic_friends_comics_20", "comic_friends_comics_21", "comic_friends_comics_22", "comic_friends_comics_23", "comic_friends_comics_24", "comic_friends_comics_25", "comic_friends_comics_26", "comic_friends_comics_27"],
+        release_at      : {year: 2017, month: 9, day: 28},
+        show            : true
     },
     comic_cat_and_mouse_volume_3                                            : {
         name           : "Кошки-мышки том 3: Счастье в твоих руках",
         number         : "3",
         type           : "single",
+        cover_file     : {
+            url         : "/src/assets/images/comics/authors_comics/cat_and_mouse/cat-and-mouse-volume-3-happiness-is-in-your-hands.png",
+            aspect_ratio: 900 / 628
+        },
         ranges         : ["range_authors_comics"],
         authors        : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]}],
         previous_comics: ["comic_cat_and_mouse_volume_2"],
-        release_at     : {year: 2017, month: 9, day: 28}
+        release_at     : {year: 2017, month: 9, day: 28},
+        show           : true
     },
     comic_allies_10                                                         : {
         name            : "Союзники #10 Условный рефлекс, часть 3",
         number          : "10",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-10-conditioned-reflex-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_book_2", "comic_allies_volume_3"],
         previous_comics : ["comic_allies_9"],
         next_comics     : ["comic_allies_11"],
-        release_at      : {year: 2017, month: 10, day: 2}
+        release_at      : {year: 2017, month: 10, day: 2},
+        show            : false
     },
     comic_krutiks_1                                                         : {
         name            : "Крутиксы #1",
         number          : "1",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-1.jpg",
+            aspect_ratio: 1535 / 2338
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["artist"]},
+                           {author_id: "author_yulia_garibova", positions: ["artist", "screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_1"],
         next_comics     : ["comic_krutiks_2"],
-        release_at      : {year: 2017, month: 10, day: 3}
+        release_at      : {year: 2017, month: 10, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_10                                                  : {
         name            : "Бесобой Vol.2 #10 Падение, часть 3",
         number          : "10",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-10-fall-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_avaddon_merciless", "character_bafforth_rackshore", "character_satan", "character_tanachia_relentless", "character_shmyg", "character_yarkh_deadly"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_volume_2"],
         previous_comics : ["comic_besoboy_vol_2_9"],
         next_comics     : ["comic_besoboy_vol_2_11"],
-        release_at      : {year: 2017, month: 10, day: 5}
+        release_at      : {year: 2017, month: 10, day: 5},
+        show            : false
     },
     comic_igor_grom_10                                                      : {
         name            : "Игорь Гром #10 Голодные духи, часть 4",
         number          : "10",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-10-hungry-ghosts-part-4.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_volume_2"],
         previous_comics : ["comic_igor_grom_9"],
         next_comics     : ["comic_igor_grom_11"],
-        release_at      : {year: 2017, month: 10, day: 10}
+        release_at      : {year: 2017, month: 10, day: 10},
+        show            : false
     },
     comic_planeswalkers_10                                                  : {
         name            : "Мироходцы #10 Луна, часть 4",
         number          : "10",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-10-moon-part-4.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
+        characters      : ["character_moon", "character_gray_wolf"],
+        authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_rud", positions: ["artist"]}],
         including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_volume_2"],
         previous_comics : ["comic_planeswalkers_9"],
         next_comics     : ["comic_planeswalkers_11"],
-        release_at      : {year: 2017, month: 10, day: 15}
+        release_at      : {year: 2017, month: 10, day: 15},
+        show            : false
     },
     comic_exlibrium_36                                                      : {
         name            : "Экслибриум #36 Хозяйка дорог, часть 2",
         number          : "36",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-36-mistress-of-roads-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_7"],
         previous_comics : ["comic_exlibrium_35"],
         next_comics     : ["comic_exlibrium_37"],
-        release_at      : {year: 2017, month: 10, day: 20}
+        release_at      : {year: 2017, month: 10, day: 20},
+        show            : false
     },
     comic_meteora_36                                                        : {
         name            : "Метеора #36 Зверолов",
         number          : "36",
         type            : "single",
+        cover_file      : {url: "/src/assets/images/comics/meteora/meteora-36-trapper.jpg", aspect_ratio: 1339 / 2048},
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_7"],
         previous_comics : ["comic_meteora_35"],
         next_comics     : ["comic_meteora_37"],
-        release_at      : {year: 2017, month: 10, day: 25}
+        release_at      : {year: 2017, month: 10, day: 25},
+        show            : false
     },
     comic_black_dog_its_time_2                                              : {
         name            : "Чёрный Пёс: Своё время, часть 2",
         number          : "2",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/black_dog_its_time/black-dog-its-time-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
+        characters      : ["character_queen_of_rot", "character_black_dog"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_black_dog_its_time"],
         previous_comics : ["comic_black_dog_its_time_1"],
         next_comics     : ["comic_black_dog_its_time_3"],
-        release_at      : {year: 2017, month: 10, day: 28}
+        release_at      : {year: 2017, month: 10, day: 28},
+        show            : false
     },
     comic_allies_11                                                         : {
         name            : "Союзники #11 Условный рефлекс, часть 4",
         number          : "11",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-11-conditioned-reflex-part-4.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_book_2", "comic_allies_volume_3"],
         previous_comics : ["comic_allies_10"],
         next_comics     : ["comic_allies_12"],
-        release_at      : {year: 2017, month: 11, day: 1}
+        release_at      : {year: 2017, month: 11, day: 1},
+        show            : false
     },
     comic_krutiks_2                                                         : {
         name            : "Крутиксы #2",
         number          : "2",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-2.jpg",
+            aspect_ratio: 1535 / 2338
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_1"],
         previous_comics : ["comic_krutiks_1"],
         next_comics     : ["comic_krutiks_3"],
-        release_at      : {year: 2017, month: 11, day: 3}
+        release_at      : {year: 2017, month: 11, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_11                                                  : {
         name            : "Бесобой Vol.2 #11 Часовой, часть 1",
         number          : "11",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-11-sentinel-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_balor", "character_besoboy", "character_pavel_ocheredko", "character_semiaza", "character_shmyg", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
         including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_volume_3"],
         previous_comics : ["comic_besoboy_vol_2_10"],
         next_comics     : ["comic_besoboy_vol_2_12"],
-        release_at      : {year: 2017, month: 11, day: 5}
+        release_at      : {year: 2017, month: 11, day: 5},
+        show            : false
     },
     comic_igor_grom_11                                                      : {
         name            : "Игорь Гром #11 Умный человек, часть 1",
         number          : "11",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-11-smart-man-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_smart_man", "character_phlegethon"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_volume_3"],
         previous_comics : ["comic_igor_grom_10"],
         next_comics     : ["comic_igor_grom_12"],
-        release_at      : {year: 2017, month: 11, day: 10}
+        release_at      : {year: 2017, month: 11, day: 10},
+        show            : false
     },
     comic_planeswalkers_11                                                  : {
         name            : "Мироходцы #11 Притяжение полюсов, часть 1",
         number          : "11",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-11-polar-attraction-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
+        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_ksenia_radova", "character_master", "character_gray_wolf"],
+        authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
         including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_volume_3"],
         previous_comics : ["comic_planeswalkers_10"],
         next_comics     : ["comic_planeswalkers_12"],
-        release_at      : {year: 2017, month: 11, day: 15}
+        release_at      : {year: 2017, month: 11, day: 15},
+        show            : false
     },
     comic_exlibrium_37                                                      : {
         name            : "Экслибриум #37 Хозяйка дорог, часть 3",
         number          : "37",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-37-mistress-of-roads-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_7"],
         previous_comics : ["comic_exlibrium_36"],
         next_comics     : ["comic_exlibrium_38"],
-        release_at      : {year: 2017, month: 11, day: 20}
+        release_at      : {year: 2017, month: 11, day: 20},
+        show            : false
     },
     comic_meteora_37                                                        : {
         name            : "Метеора #37 Вольная птица, часть 1",
         number          : "37",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-37-free-bird-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_7"],
         previous_comics : ["comic_meteora_36"],
         next_comics     : ["comic_meteora_38"],
-        release_at      : {year: 2017, month: 11, day: 24}
+        release_at      : {year: 2017, month: 11, day: 24},
+        show            : false
     },
     comic_black_dog_its_time_3                                              : {
         name            : "Чёрный Пёс: Своё время, часть 3",
         number          : "3",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/black_dog_its_time/black-dog-its-time-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
+        characters      : ["character_queen_of_rot", "character_black_dog"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_black_dog_its_time"],
         previous_comics : ["comic_black_dog_its_time_2"],
         next_comics     : ["comic_black_dog_its_time_4"],
-        release_at      : {year: 2017, month: 11, day: 27}
+        release_at      : {year: 2017, month: 11, day: 27},
+        show            : false
     },
     comic_allies_12                                                         : {
         name            : "Союзники #12 Огненная земля, часть 1",
         number          : "12",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-12-tierra-del-fuego-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_morel", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_rud", positions: ["artist"]}],
         including_comics: ["comic_allies_book_2", "comic_allies_volume_3"],
         previous_comics : ["comic_allies_11"],
         next_comics     : ["comic_allies_13"],
-        release_at      : {year: 2017, month: 12, day: 1}
+        release_at      : {year: 2017, month: 12, day: 1},
+        show            : false
     },
     comic_krutiks_3                                                         : {
         name            : "Крутиксы #3",
         number          : "3",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-3.jpg",
+            aspect_ratio: 1535 / 2338
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_evgeny_yakovlev", positions: ["colorist", "screenwriter"]},
+                           {author_id: "author_marina_sukhareva", positions: ["artist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_1"],
         previous_comics : ["comic_krutiks_2"],
         next_comics     : ["comic_krutiks_1_2018"],
-        release_at      : {year: 2017, month: 12, day: 3}
+        release_at      : {year: 2017, month: 12, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_12                                                  : {
         name            : "Бесобой Vol.2 #12 Часовой, часть 2",
         number          : "12",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-12-sentinel-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_balor", "character_besoboy", "character_pavel_ocheredko", "character_semiaza", "character_shmyg", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
         including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_volume_3"],
         previous_comics : ["comic_besoboy_vol_2_11"],
         next_comics     : ["comic_besoboy_vol_2_13"],
-        release_at      : {year: 2017, month: 12, day: 5}
+        release_at      : {year: 2017, month: 12, day: 5},
+        show            : false
     },
     comic_igor_grom_12                                                      : {
         name            : "Игорь Гром #12 Умный человек, часть 2",
         number          : "12",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-12-smart-man-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_smart_man", "character_phlegethon"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_volume_3"],
         previous_comics : ["comic_igor_grom_11"],
         next_comics     : ["comic_igor_grom_13"],
-        release_at      : {year: 2017, month: 12, day: 11}
+        release_at      : {year: 2017, month: 12, day: 11},
+        show            : false
     },
     comic_planeswalkers_12                                                  : {
         name            : "Мироходцы #12 Притяжение полюсов, часть 2",
         number          : "12",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-12-polar-attraction-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
+        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_ksenia_radova", "character_master", "character_gray_wolf"],
+        authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
         including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_volume_3"],
         previous_comics : ["comic_planeswalkers_11"],
         next_comics     : ["comic_planeswalkers_13"],
-        release_at      : {year: 2017, month: 12, day: 15}
+        release_at      : {year: 2017, month: 12, day: 15},
+        show            : false
     },
     comic_exlibrium_38                                                      : {
         name            : "Экслибриум #38 Сказочке конец, часть 1",
         number          : "38",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-38-end-of-fairy-tale-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_7"],
         previous_comics : ["comic_exlibrium_37"],
         next_comics     : ["comic_exlibrium_39"],
-        release_at      : {year: 2017, month: 12, day: 20}
+        release_at      : {year: 2017, month: 12, day: 20},
+        show            : false
     },
     comic_black_dog_its_time_4                                              : {
         name            : "Чёрный Пёс: Своё время, часть 4",
         number          : "4",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/black_dog_its_time/black-dog-its-time-part-4.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
+        characters      : ["character_queen_of_rot", "character_black_dog"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_black_dog_its_time"],
         previous_comics : ["comic_black_dog_its_time_3"],
-        release_at      : {year: 2017, month: 12, day: 22}
+        release_at      : {year: 2017, month: 12, day: 22},
+        show            : false
     },
-    comic_besoboy_and_planeswalkers_single                                  : {
-        name            : "Бесобой и Мироходцы: Новая жизнь",
-        type            : "single",
-        ranges          : ["range_crossovers", "range_bubble_legends", "range_besoboy_vol_2"],
-        including_comics: ["comic_besoboy_and_planeswalkers_book"],
-        previous_comics : ["comic_planeswalkers_21", "comic_besoboy_vol_2_50"],
-        release_at      : {year: 2017, month: 12, day: 23}
-    },
-    comic_besoboy_and_planeswalkers_book                                    : {
+    comic_besoboy_and_planeswalkers_new_life_electronic                     : {
         name            : "Бесобой и Мироходцы: Новая жизнь",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy-and-planeswalkers-new-life.png",
+            aspect_ratio: 643 / 983
+        },
         ranges          : ["range_crossovers", "range_bubble_legends", "range_besoboy_vol_2"],
-        contained_comics: ["comic_besoboy_and_planeswalkers_single"],
+        characters      : ["character_andrey_radov", "character_balor", "character_besoboy", "character_vasilisa_wise", "character_koschey", "character_ksenia_radova", "character_pavel_ocheredko", "character_gray_wolf", "character_yana"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
+        including_comics: ["comic_besoboy_and_planeswalkers_new_life_printed"],
+        previous_comics : ["comic_planeswalkers_21", "comic_besoboy_vol_2_50"],
+        release_at      : {year: 2017, month: 12, day: 23},
+        show            : false
+    },
+    comic_besoboy_and_planeswalkers_new_life_printed                        : {
+        name            : "Бесобой и Мироходцы: Новая жизнь",
+        type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy-and-planeswalkers-new-life.png",
+            aspect_ratio: 643 / 983
+        },
+        ranges          : ["range_crossovers", "range_bubble_legends", "range_besoboy_vol_2"],
+        characters      : ["character_andrey_radov", "character_balor", "character_besoboy", "character_vasilisa_wise", "character_koschey", "character_ksenia_radova", "character_pavel_ocheredko", "character_gray_wolf", "character_yana"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
+        contained_comics: ["comic_besoboy_and_planeswalkers_new_life_electronic"],
         previous_comics : ["comic_planeswalkers_volume_4", "comic_besoboy_vol_2_volume_11"],
-        release_at      : {year: 2017, month: 12, day: 23}
+        release_at      : {year: 2017, month: 12, day: 23},
+        show            : true
     },
     comic_meteora_38                                                        : {
         name            : "Метеора #38 Вольная птица, часть 2",
         number          : "38",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-38-free-bird-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_7"],
         previous_comics : ["comic_meteora_37"],
         next_comics     : ["comic_meteora_39"],
-        release_at      : {year: 2017, month: 12, day: 25}
+        release_at      : {year: 2017, month: 12, day: 25},
+        show            : false
     },
     comic_allies_13                                                         : {
         name            : "Союзники #13 Огненная земля, часть 2",
         number          : "13",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-13-tierra-del-fuego-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_morel", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_rud", positions: ["artist"]}],
         including_comics: ["comic_allies_book_2", "comic_allies_volume_3"],
         previous_comics : ["comic_allies_12"],
         next_comics     : ["comic_allies_14"],
-        release_at      : {year: 2018, month: 1, day: 1}
+        release_at      : {year: 2018, month: 1, day: 1},
+        show            : false
     },
     comic_krutiks_1_2018                                                    : {
         name            : "Крутиксы #1 (2018)",
         number          : "1",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-1-2018.jpg",
+            aspect_ratio: 1535 / 2338
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_evgeny_yakovlev", positions: ["colorist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_yulia_garibova", positions: ["artist", "screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_1"],
         previous_comics : ["comic_krutiks_3"],
         next_comics     : ["comic_krutiks_2_2018"],
-        release_at      : {year: 2018, month: 1, day: 3}
+        release_at      : {year: 2018, month: 1, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_13                                                  : {
         name            : "Бесобой Vol.2 #13 Откровения",
         number          : "13",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-13-revelations.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_antichrist", "character_besoboy"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_volume_3"],
         previous_comics : ["comic_besoboy_vol_2_12"],
         next_comics     : ["comic_besoboy_vol_2_14"],
-        release_at      : {year: 2018, month: 1, day: 5}
+        release_at      : {year: 2018, month: 1, day: 5},
+        show            : false
     },
     comic_igor_grom_13                                                      : {
         name            : "Игорь Гром #13 Умный человек, часть 3",
         number          : "13",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-13-smart-man-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_smart_man", "character_phlegethon"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_volume_3"],
         previous_comics : ["comic_igor_grom_12"],
         next_comics     : ["comic_igor_grom_14"],
-        release_at      : {year: 2018, month: 1, day: 5}
+        release_at      : {year: 2018, month: 1, day: 5},
+        show            : false
     },
     comic_planeswalkers_13                                                  : {
         name            : "Мироходцы #13 Лицом к лицу, часть 1",
         number          : "13",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-13-face-to-face-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
+        characters      : ["character_andrey_radov", "character_diana_de_maridor", "character_ksenia_radova", "character_moon", "character_master", "character_mars", "character_gray_wolf"],
+        authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
         including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_volume_3"],
         previous_comics : ["comic_planeswalkers_12"],
         next_comics     : ["comic_planeswalkers_14"],
-        release_at      : {year: 2018, month: 1, day: 15}
+        release_at      : {year: 2018, month: 1, day: 15},
+        show            : false
     },
     comic_exlibrium_39                                                      : {
         name            : "Экслибриум #39 Сказочке конец, часть 2",
         number          : "39",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-39-end-of-fairy-tale-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_7"],
         previous_comics : ["comic_exlibrium_38"],
         next_comics     : ["comic_exlibrium_40"],
-        release_at      : {year: 2018, month: 1, day: 19}
+        release_at      : {year: 2018, month: 1, day: 19},
+        show            : false
     },
     comic_meteora_39                                                        : {
         name            : "Метеора #39 Вольная птица, часть 3",
         number          : "39",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-39-free-bird-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_7"],
         previous_comics : ["comic_meteora_38"],
         next_comics     : ["comic_meteora_40"],
-        release_at      : {year: 2018, month: 1, day: 25}
+        release_at      : {year: 2018, month: 1, day: 25},
+        show            : false
     },
-    comic_teo_1                                                             : {
+    comic_teo_crop_circles_1                                                : {
         name            : "Тео: Круги на полях, часть 1",
         number          : "1",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/teo_crop_circles/teo-crop-circles-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
-        including_comics: ["comic_teo"],
+        characters      : ["character_teo"],
+        authors         : [{author_id: "author_anna_bulatova", positions: ["screenwriter"]},
+                           {author_id: "author_roman_titov", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
+        including_comics: ["comic_teo_crop_circles"],
         previous_comics : ["comic_meteora_50"],
-        next_comics     : ["comic_teo_2"],
-        release_at      : {year: 2018, month: 1, day: 29}
+        next_comics     : ["comic_teo_crop_circles_2"],
+        release_at      : {year: 2018, month: 1, day: 29},
+        show            : false
     },
     comic_allies_14                                                         : {
         name            : "Союзники #14 Имаго",
         number          : "14",
         type            : "single",
+        cover_file      : {url: "/src/assets/images/comics/allies/allies-14-imago.jpg", aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
+        characters      : ["character_agnes_ignis", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_nika_chaikina"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_allies_book_2", "comic_allies_volume_3"],
         previous_comics : ["comic_allies_13"],
         next_comics     : ["comic_allies_15"],
-        release_at      : {year: 2018, month: 2, day: 1}
+        release_at      : {year: 2018, month: 2, day: 1},
+        show            : false
     },
     comic_krutiks_2_2018                                                    : {
         name            : "Крутиксы #2 (2018)",
         number          : "2",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-2-2018.jpg",
+            aspect_ratio: 1535 / 2339
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_1"],
         previous_comics : ["comic_krutiks_1_2018"],
         next_comics     : ["comic_krutiks_3_2018"],
-        release_at      : {year: 2018, month: 2, day: 3}
+        release_at      : {year: 2018, month: 2, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_14                                                  : {
         name            : "Бесобой Vol.2 #14 Инструмент Бога",
         number          : "14",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-14-instrument-of-god.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_balor", "character_satan", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_book_2", "comic_besoboy_vol_2_volume_3"],
         previous_comics : ["comic_besoboy_vol_2_13"],
         next_comics     : ["comic_besoboy_vol_2_15"],
-        release_at      : {year: 2018, month: 2, day: 5}
+        release_at      : {year: 2018, month: 2, day: 5},
+        show            : false
     },
     comic_igor_grom_14                                                      : {
         name            : "Игорь Гром #14 Умный человек, часть 4",
         number          : "14",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-14-smart-man-part-4.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_smart_man", "character_phlegethon"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_book_2", "comic_igor_grom_volume_3"],
         previous_comics : ["comic_igor_grom_13"],
         next_comics     : ["comic_igor_grom_15"],
-        release_at      : {year: 2018, month: 2, day: 9}
+        release_at      : {year: 2018, month: 2, day: 9},
+        show            : false
     },
     comic_planeswalkers_14                                                  : {
         name            : "Мироходцы #14 Лицом к лицу, часть 2",
         number          : "14",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-14-face-to-face-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
+        characters      : ["character_andrey_radov", "character_diana_de_maridor", "character_ksenia_radova", "character_master", "character_mars", "character_gray_wolf"],
+        authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
         including_comics: ["comic_planeswalkers_book_2", "comic_planeswalkers_volume_3"],
         previous_comics : ["comic_planeswalkers_13"],
         next_comics     : ["comic_planeswalkers_15"],
-        release_at      : {year: 2018, month: 2, day: 15}
+        release_at      : {year: 2018, month: 2, day: 15},
+        show            : false
     },
     comic_exlibrium_40                                                      : {
         name            : "Экслибриум #40 Сказочке конец, часть 3",
         number          : "40",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-40-end-of-fairy-tale-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_7"],
         previous_comics : ["comic_exlibrium_39"],
         next_comics     : ["comic_exlibrium_41"],
-        release_at      : {year: 2018, month: 2, day: 19}
+        release_at      : {year: 2018, month: 2, day: 19},
+        show            : false
     },
     comic_meteora_40                                                        : {
         name            : "Метеора #40 Вольная птица, часть 4",
         number          : "40",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-40-free-bird-part-4.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_8"],
         previous_comics : ["comic_meteora_39"],
         next_comics     : ["comic_meteora_41"],
-        release_at      : {year: 2018, month: 2, day: 26}
+        release_at      : {year: 2018, month: 2, day: 26},
+        show            : false
     },
-    comic_teo_2                                                             : {
+    comic_teo_crop_circles_2                                                : {
         name            : "Тео: Круги на полях, часть 2",
         number          : "2",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/teo_crop_circles/teo-crop-circles-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
-        including_comics: ["comic_teo"],
-        previous_comics : ["comic_teo_1"],
-        next_comics     : ["comic_teo_3"],
-        release_at      : {year: 2018, month: 2, day: 26}
+        characters      : ["character_teo"],
+        authors         : [{author_id: "author_anna_bulatova", positions: ["screenwriter"]},
+                           {author_id: "author_roman_titov", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
+        including_comics: ["comic_teo_crop_circles"],
+        previous_comics : ["comic_teo_crop_circles_1"],
+        next_comics     : ["comic_teo_crop_circles_3"],
+        release_at      : {year: 2018, month: 2, day: 26},
+        show            : false
     },
     comic_witch_hunt_prologue                                               : {
         name            : "Охота на ведьм: Пролог",
         type            : "single",
-        ranges          : ["range_crossovers", "range_besoboy_vol_2", "range_igor_grom", "range_allies",
-                           "range_planeswalkers"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/crossovers/witch_hunt/witch-hunt-prologue.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_crossovers"],
+        characters      : ["character_august_van_der_holt"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
         including_comics: ["comic_witch_hunt"],
         next_comics     : ["comic_allies_15"],
-        release_at      : {year: 2018, month: 3, day: 1}
+        release_at      : {year: 2018, month: 3, day: 1},
+        show            : false
     },
     comic_krutiks_3_2018                                                    : {
         name            : "Крутиксы #3 (2018)",
         number          : "3",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-3-2018.jpg",
+            aspect_ratio: 1535 / 2338
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_2"],
         previous_comics : ["comic_krutiks_2_2018"],
         next_comics     : ["comic_krutiks_4_2018"],
-        release_at      : {year: 2018, month: 3, day: 3}
+        release_at      : {year: 2018, month: 3, day: 3},
+        show            : false
     },
     comic_allies_15                                                         : {
         name            : "Союзники #15 Охота на ведьм",
         number          : "15",
         type            : "single",
+        cover_file      : {url: "/src/assets/images/comics/allies/allies-15-witch-hunt.jpg", aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers", "range_allies"],
+        characters      : ["character_august_van_der_holt", "character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_witch_hunt"],
         previous_comics : ["comic_allies_14", "comic_witch_hunt_prologue"],
         next_comics     : ["comic_besoboy_vol_2_15", "comic_allies_16"],
-        release_at      : {year: 2018, month: 3, day: 5}
+        release_at      : {year: 2018, month: 3, day: 5},
+        show            : false
     },
     comic_besoboy_vol_2_15                                                  : {
         name            : "Бесобой Vol.2 #15 Охота на ведьм",
         number          : "15",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-15-witch-hunt.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_crossovers", "range_besoboy_vol_2"],
+        characters      : ["character_balor", "character_besoboy", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_witch_hunt"],
         previous_comics : ["comic_besoboy_vol_2_14", "comic_allies_15"],
         next_comics     : ["comic_igor_grom_15", "comic_besoboy_vol_2_16"],
-        release_at      : {year: 2018, month: 3, day: 5}
+        release_at      : {year: 2018, month: 3, day: 5},
+        show            : false
     },
     comic_igor_grom_15                                                      : {
         name            : "Игорь Гром #15 Охота на ведьм",
         number          : "15",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-15-witch-hunt.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_crossovers", "range_igor_grom"],
+        characters      : ["character_ulya"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_oksana_turlyay", positions: ["artist"]}],
         including_comics: ["comic_witch_hunt"],
         previous_comics : ["comic_igor_grom_14", "comic_besoboy_vol_2_15"],
         next_comics     : ["comic_planeswalkers_15", "comic_igor_grom_16"],
-        release_at      : {year: 2018, month: 3, day: 9}
+        release_at      : {year: 2018, month: 3, day: 9},
+        show            : false
     },
     comic_planeswalkers_15                                                  : {
         name            : "Мироходцы #15 Охота на ведьм",
         number          : "15",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-15-witch-hunt.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_crossovers", "range_planeswalkers"],
+        characters      : ["character_august_van_der_holt", "character_andrey_radov", "character_bulat_gadzhiev", "character_diana_de_maridor", "character_master", "character_gray_wolf"],
+        authors         : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
         including_comics: ["comic_witch_hunt"],
         previous_comics : ["comic_planeswalkers_14", "comic_igor_grom_15"],
         next_comics     : ["comic_witch_hunt_finale", "comic_planeswalkers_16"],
-        release_at      : {year: 2018, month: 3, day: 15}
+        release_at      : {year: 2018, month: 3, day: 15},
+        show            : false
     },
     comic_exlibrium_41                                                      : {
         name            : "Экслибриум #41 Переворот, часть 1",
         number          : "41",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-41-revolution-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_8"],
         previous_comics : ["comic_exlibrium_40"],
         next_comics     : ["comic_exlibrium_42"],
-        release_at      : {year: 2018, month: 3, day: 20}
+        release_at      : {year: 2018, month: 3, day: 20},
+        show            : false
     },
     comic_meteora_41                                                        : {
         name            : "Метеора #41 Вольная птица, часть 5",
         number          : "41",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-41-free-bird-part-5.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_8"],
         previous_comics : ["comic_meteora_40"],
         next_comics     : ["comic_meteora_42"],
-        release_at      : {year: 2018, month: 3, day: 26}
+        release_at      : {year: 2018, month: 3, day: 26},
+        show            : false
     },
-    comic_teo_3                                                             : {
+    comic_teo_crop_circles_3                                                : {
         name            : "Тео: Круги на полях, часть 3",
         number          : "3",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/teo_crop_circles/teo-crop-circles-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
-        including_comics: ["comic_teo"],
-        previous_comics : ["comic_teo_2"],
-        next_comics     : ["comic_teo_4"],
-        release_at      : {year: 2018, month: 3, day: 28}
+        characters      : ["character_teo"],
+        authors         : [{author_id: "author_anna_bulatova", positions: ["screenwriter"]},
+                           {author_id: "author_roman_titov", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
+        including_comics: ["comic_teo_crop_circles"],
+        previous_comics : ["comic_teo_crop_circles_2"],
+        next_comics     : ["comic_teo_crop_circles_4"],
+        release_at      : {year: 2018, month: 3, day: 28},
+        show            : false
     },
     comic_witch_hunt_finale                                                 : {
         name            : "Охота на ведьм: Финал",
         type            : "single",
-        ranges          : ["range_crossovers", "range_besoboy_vol_2", "range_igor_grom", "range_allies",
-                           "range_planeswalkers"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/crossovers/witch_hunt/witch-hunt-finale.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_crossovers"],
         including_comics: ["comic_witch_hunt"],
         previous_comics : ["comic_planeswalkers_15"],
-        release_at      : {year: 2018, month: 4, day: 1}
+        release_at      : {year: 2018, month: 4, day: 1},
+        show            : false
     },
     comic_exlibrium_volume_6                                                : {
         name            : "Экслибриум том 6: Бумажный порез",
         number          : "6",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-volume-6-paper-cut.jpg",
+            aspect_ratio: 643 / 982
+        },
         ranges          : ["range_exlibrium"],
-        contained_comics: ["comic_exlibrium_30", "comic_exlibrium_31", "comic_exlibrium_32", "comic_exlibrium_33",
-                           "comic_exlibrium_34"],
+        contained_comics: ["comic_exlibrium_30", "comic_exlibrium_31", "comic_exlibrium_32", "comic_exlibrium_33", "comic_exlibrium_34"],
         previous_comics : ["comic_exlibrium_volume_5"],
         next_comics     : ["comic_exlibrium_volume_7"],
-        release_at      : {year: 2018, month: 1, day: 1}
+        release_at      : {year: 2018, month: 1, day: 1},
+        show            : true
     },
     comic_meteora_volume_6                                                  : {
         name            : "Метеора том 6: Проверка пульса",
         number          : "6",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-volume-6-pulse-check.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
-        contained_comics: ["comic_meteora_31", "comic_meteora_32", "comic_meteora_33", "comic_meteora_34",
-                           "comic_meteora_35"],
+        contained_comics: ["comic_meteora_31", "comic_meteora_32", "comic_meteora_33", "comic_meteora_34", "comic_meteora_35"],
         previous_comics : ["comic_meteora_volume_5"],
         next_comics     : ["comic_meteora_volume_7"],
-        release_at      : {year: 2018, month: 1, day: 1}
+        release_at      : {year: 2018, month: 1, day: 1},
+        show            : true
     },
     comic_black_dog_its_time                                                : {
         name            : "Чёрный Пёс: Своё время",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/black_dog_its_time/black-dog-its-time.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
+        characters      : ["character_queen_of_rot", "character_black_dog"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         contained_comics: ["comic_black_dog_its_time_1", "comic_black_dog_its_time_2", "comic_black_dog_its_time_3", "comic_black_dog_its_time_4"],
         previous_comics : ["comic_besoboy_volume_9"],
-        release_at      : {year: 2018, month: 1, day: 1}
+        release_at      : {year: 2018, month: 1, day: 1},
+        show            : true
     },
     comic_allies_16                                                         : {
         name            : "Союзники #16 Без ума, часть 1",
         number          : "16",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-16-crazy-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_4"],
         previous_comics : ["comic_allies_15"],
         next_comics     : ["comic_allies_17"],
-        release_at      : {year: 2018, month: 4, day: 1}
+        release_at      : {year: 2018, month: 4, day: 1},
+        show            : false
     },
-    comic_ziggy_and_shmyg_destroy_the_bubble_universe                       : {
+    comic_ziggy_and_shmyg_destroy_bubble_universe                           : {
         name       : "Зигги и Шмыг уничтожают вселенную BUBBLE",
         type       : "book",
-        ranges     : ["range_ziggy_and_shmyg"],
+        cover_file : {
+            url         : "/src/assets/images/comics/inadequate_galaxy/ziggy_and_shmyg/ziggy-and-shmyg-destroy-bubble-universe.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges     : ["range_inadequate_galaxy"],
+        characters : ["character_ziggy", "character_shmyg"],
+        authors    : [{author_id: "author_vitaly_terletsky", positions: ["screenwriter"]},
+                      {author_id: "author_evgeniy_bornyakov", positions: ["artist"]},
+                      {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         next_comics: ["comic_ziggy_and_shmyg_save_comiccon"],
-        release_at : {year: 2018, month: 4, day: 1}
+        release_at : {year: 2018, month: 4, day: 1},
+        show       : true
     },
     comic_krutiks_4_2018                                                    : {
         name            : "Крутиксы #4 (2018)",
         number          : "4",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-4-2018.jpg",
+            aspect_ratio: 1345 / 2048
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_evgeny_yakovlev", positions: ["colorist", "screenwriter"]},
+                           {author_id: "author_marina_sukhareva", positions: ["artist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_2"],
         previous_comics : ["comic_krutiks_3_2018"],
         next_comics     : ["comic_krutiks_5_2018"],
-        release_at      : {year: 2018, month: 4, day: 3}
+        release_at      : {year: 2018, month: 4, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_16                                                  : {
         name            : "Бесобой Vol.2 #16 Иуда",
         number          : "16",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-16-judas.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_antichrist", "character_bafforth_rackshore", "character_victor_zelenin"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_alexey_efremov", positions: ["artist"]},
+                           {author_id: "author_denis_barbe", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_4"],
         previous_comics : ["comic_besoboy_vol_2_15"],
         next_comics     : ["comic_besoboy_vol_2_17"],
-        release_at      : {year: 2018, month: 4, day: 5}
+        release_at      : {year: 2018, month: 4, day: 5},
+        show            : false
     },
     comic_igor_grom_16                                                      : {
         name            : "Игорь Гром #16 Вспоминай",
         number          : "16",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-16-remember.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_igor_grom", "character_ulya"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_4"],
         previous_comics : ["comic_igor_grom_15"],
         next_comics     : ["comic_igor_grom_17"],
-        release_at      : {year: 2018, month: 4, day: 9}
+        release_at      : {year: 2018, month: 4, day: 9},
+        show            : false
     },
     comic_planeswalkers_16                                                  : {
         name            : "Мироходцы #16 Чужая воля",
         number          : "16",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-16-alien-will.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
+        characters      : ["character_andrey_radov", "character_diana_de_maridor", "character_ksenia_radova", "character_gray_wolf"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
         including_comics: ["comic_planeswalkers_volume_4"],
         previous_comics : ["comic_planeswalkers_15"],
         next_comics     : ["comic_planeswalkers_17"],
-        release_at      : {year: 2018, month: 4, day: 16}
+        release_at      : {year: 2018, month: 4, day: 16},
+        show            : false
     },
     comic_exlibrium_42                                                      : {
         name            : "Экслибриум #42 Переворот, часть 2",
         number          : "42",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-42-revolution-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_8"],
         previous_comics : ["comic_exlibrium_41"],
         next_comics     : ["comic_exlibrium_43"],
-        release_at      : {year: 2018, month: 4, day: 20}
+        release_at      : {year: 2018, month: 4, day: 20},
+        show            : false
     },
     comic_meteora_42                                                        : {
         name            : "Метеора #42 Вольная птица, часть 6",
         number          : "42",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-42-free-bird-part-6.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_8"],
         previous_comics : ["comic_meteora_41"],
         next_comics     : ["comic_meteora_43"],
-        release_at      : {year: 2018, month: 4, day: 25}
+        release_at      : {year: 2018, month: 4, day: 25},
+        show            : false
     },
-    comic_teo_4                                                             : {
+    comic_teo_crop_circles_4                                                : {
         name            : "Тео: Круги на полях, часть 4",
         number          : "4",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/teo_crop_circles/teo-crop-circles-part-4.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
-        including_comics: ["comic_teo"],
-        previous_comics : ["comic_teo_3"],
-        release_at      : {year: 2018, month: 4, day: 28}
+        characters      : ["character_teo"],
+        authors         : [{author_id: "author_anna_bulatova", positions: ["screenwriter"]},
+                           {author_id: "author_roman_titov", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
+        including_comics: ["comic_teo_crop_circles"],
+        previous_comics : ["comic_teo_crop_circles_3"],
+        release_at      : {year: 2018, month: 4, day: 28},
+        show            : false
     },
     comic_besoboy_vol_2_17                                                  : {
         name            : "Бесобой Vol.2 #17 Красный фильтр, часть 1",
         number          : "17",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-17-red-filter-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_porfiry_petrovich", "character_felix_dzerzhinsky", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_4"],
         previous_comics : ["comic_besoboy_vol_2_16"],
         next_comics     : ["comic_besoboy_vol_2_18"],
-        release_at      : {year: 2018, month: 4, day: 30}
+        release_at      : {year: 2018, month: 4, day: 30},
+        show            : false
     },
     comic_allies_17                                                         : {
         name            : "Союзники #17 Без ума, часть 2",
         number          : "17",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-17-crazy-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_4"],
         previous_comics : ["comic_allies_16"],
         next_comics     : ["comic_allies_18"],
-        release_at      : {year: 2018, month: 4, day: 30}
+        release_at      : {year: 2018, month: 4, day: 30},
+        show            : false
     },
     comic_krutiks_5_2018                                                    : {
         name            : "Крутиксы #5 (2018)",
         number          : "5",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-5-2018.jpg",
+            aspect_ratio: 1535 / 2338
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_evgeny_yakovlev", positions: ["colorist"]},
+                           {author_id: "author_yulia_garibova", positions: ["artist", "screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_2"],
         previous_comics : ["comic_krutiks_4_2018"],
         next_comics     : ["comic_krutiks_6_2018"],
-        release_at      : {year: 2018, month: 5, day: 3}
+        release_at      : {year: 2018, month: 5, day: 3},
+        show            : false
     },
     comic_igor_grom_17                                                      : {
         name            : "Игорь Гром #17 Метод Локи, часть 1",
         number          : "17",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-17-loki-method-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_igor_grom", "character_ulya"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         including_comics: ["comic_igor_grom_volume_4"],
         previous_comics : ["comic_igor_grom_16"],
         next_comics     : ["comic_igor_grom_18"],
-        release_at      : {year: 2018, month: 5, day: 10}
+        release_at      : {year: 2018, month: 5, day: 10},
+        show            : false
     },
     comic_planeswalkers_17                                                  : {
         name            : "Мироходцы #17 Псы войны, часть 1",
         number          : "17",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-17-dogs-of-war-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
+        characters      : ["character_andrey_radov", "character_bulat_gadzhiev", "character_vasilisa_wise", "character_diana_de_maridor", "character_ksenia_radova", "character_moon", "character_gray_wolf"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
         including_comics: ["comic_planeswalkers_volume_4"],
         previous_comics : ["comic_planeswalkers_16"],
         next_comics     : ["comic_planeswalkers_18"],
-        release_at      : {year: 2018, month: 5, day: 15}
+        release_at      : {year: 2018, month: 5, day: 15},
+        show            : false
     },
     comic_exlibrium_43                                                      : {
         name            : "Экслибриум #43 Возвращение, часть 1",
         number          : "43",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-43-return-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_8"],
         previous_comics : ["comic_exlibrium_42"],
         next_comics     : ["comic_exlibrium_44"],
-        release_at      : {year: 2018, month: 5, day: 21}
+        release_at      : {year: 2018, month: 5, day: 21},
+        show            : false
     },
     comic_meteora_43                                                        : {
         name            : "Метеора #43 Король и плут, часть 1",
         number          : "43",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-43-king-and-rogue-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_8"],
         previous_comics : ["comic_meteora_42"],
         next_comics     : ["comic_meteora_44"],
-        release_at      : {year: 2018, month: 5, day: 25}
+        release_at      : {year: 2018, month: 5, day: 25},
+        show            : false
     },
-    comic_dubin_dima_1                                                      : {
+    comic_dubin_dima_provincial_holidays_1                                  : {
         name            : "Дубин Дима: Провинциальные каникулы, часть 1",
         number          : "1",
         type            : "single",
-        ranges          : ["range_major_grom", "range_bubble_legends"],
-        including_comics: ["comic_dubin_dima"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_dmitry_dubin"],
+        authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
+        including_comics: ["comic_dubin_dima_provincial_holidays"],
         previous_comics : ["comic_major_grom_50"],
-        next_comics     : ["comic_dubin_dima_2"],
-        release_at      : {year: 2018, month: 5, day: 28}
+        next_comics     : ["comic_dubin_dima_provincial_holidays_2"],
+        release_at      : {year: 2018, month: 5, day: 28},
+        show            : false
     },
     comic_allies_18                                                         : {
         name            : "Союзники #18 Без ума, часть 3",
         number          : "18",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-18-crazy-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_4"],
         previous_comics : ["comic_allies_17"],
         next_comics     : ["comic_allies_19"],
-        release_at      : {year: 2018, month: 6, day: 1}
+        release_at      : {year: 2018, month: 6, day: 1},
+        show            : false
     },
     comic_krutiks_6_2018                                                    : {
         name            : "Крутиксы #6 (2018)",
         number          : "6",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-6-2018.jpg",
+            aspect_ratio: 1345 / 2048
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_2"],
         previous_comics : ["comic_krutiks_5_2018"],
         next_comics     : ["comic_krutiks_7_2018"],
-        release_at      : {year: 2018, month: 6, day: 3}
+        release_at      : {year: 2018, month: 6, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_18                                                  : {
         name            : "Бесобой Vol.2 #18 Красный фильтр, часть 2",
         number          : "18",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-18-red-filter-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_porfiry_petrovich", "character_felix_dzerzhinsky", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_4"],
         previous_comics : ["comic_besoboy_vol_2_17"],
         next_comics     : ["comic_besoboy_vol_2_19"],
-        release_at      : {year: 2018, month: 6, day: 5}
+        release_at      : {year: 2018, month: 6, day: 5},
+        show            : false
     },
     comic_igor_grom_18                                                      : {
         name            : "Игорь Гром #18 Метод Локи, часть 2",
         number          : "18",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-18-loki-method-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_igor_grom", "character_ulya"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         including_comics: ["comic_igor_grom_volume_4"],
         previous_comics : ["comic_igor_grom_17"],
         next_comics     : ["comic_igor_grom_19"],
-        release_at      : {year: 2018, month: 6, day: 10}
+        release_at      : {year: 2018, month: 6, day: 10},
+        show            : false
     },
-    comic_dubin_dima_2                                                      : {
+    comic_dubin_dima_provincial_holidays_2                                  : {
         name            : "Дубин Дима: Провинциальные каникулы, часть 2",
         number          : "2",
         type            : "single",
-        ranges          : ["range_major_grom", "range_bubble_legends"],
-        including_comics: ["comic_dubin_dima"],
-        previous_comics : ["comic_dubin_dima_1"],
-        next_comics     : ["comic_dubin_dima_3"],
-        release_at      : {year: 2018, month: 6, day: 10}
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_dmitry_dubin"],
+        authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
+        including_comics: ["comic_dubin_dima_provincial_holidays"],
+        previous_comics : ["comic_dubin_dima_provincial_holidays_1"],
+        next_comics     : ["comic_dubin_dima_provincial_holidays_3"],
+        release_at      : {year: 2018, month: 6, day: 10},
+        show            : false
     },
-    comic_teo                                                               : {
+    comic_teo_crop_circles                                                  : {
         name            : "Тео: Круги на полях",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/teo_crop_circles/teo-crop-circles.png",
+            aspect_ratio: 643 / 983
+        },
         ranges          : ["range_bubble_legends"],
-        contained_comics: ["comic_teo_1", "comic_teo_2", "comic_teo_3", "comic_teo_4"],
+        characters      : ["character_teo"],
+        authors         : [{author_id: "author_anna_bulatova", positions: ["screenwriter"]},
+                           {author_id: "author_roman_titov", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
+        contained_comics: ["comic_teo_crop_circles_1", "comic_teo_crop_circles_2", "comic_teo_crop_circles_3", "comic_teo_crop_circles_4"],
         previous_comics : ["comic_meteora_volume_9"],
-        release_at      : {year: 2018, month: 1, day: 1}
+        release_at      : {year: 2018, month: 1, day: 1},
+        show            : true
     },
     comic_planeswalkers_18                                                  : {
         name            : "Мироходцы #18 Псы войны, часть 2",
         number          : "18",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-18-dogs-of-war-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
+        characters      : ["character_andrey_radov", "character_bulat_gadzhiev", "character_vasilisa_wise", "character_diana_de_maridor", "character_ksenia_radova", "character_moon", "character_gray_wolf"],
+        authors         : [{author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
         including_comics: ["comic_planeswalkers_volume_4"],
         previous_comics : ["comic_planeswalkers_17"],
         next_comics     : ["comic_planeswalkers_19"],
-        release_at      : {year: 2018, month: 6, day: 15}
+        release_at      : {year: 2018, month: 6, day: 15},
+        show            : false
     },
     comic_exlibrium_44                                                      : {
         name            : "Экслибриум #44 Возвращение, часть 2",
         number          : "44",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-44-return-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_8"],
         previous_comics : ["comic_exlibrium_43"],
         next_comics     : ["comic_exlibrium_45"],
-        release_at      : {year: 2018, month: 6, day: 20}
+        release_at      : {year: 2018, month: 6, day: 20},
+        show            : false
     },
     comic_meteora_44                                                        : {
         name            : "Метеора #44 Король и плут, часть 2",
         number          : "44",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-44-king-and-rogue-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_8"],
         previous_comics : ["comic_meteora_43"],
         next_comics     : ["comic_meteora_45"],
-        release_at      : {year: 2018, month: 6, day: 25}
+        release_at      : {year: 2018, month: 6, day: 25},
+        show            : false
     },
     comic_allies_19                                                         : {
         name            : "Союзники #19 Отчуждение",
         number          : "19",
         type            : "single",
+        cover_file      : {url: "/src/assets/images/comics/allies/allies-19-alienation.jpg", aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
+        characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_4"],
         previous_comics : ["comic_allies_18"],
         next_comics     : ["comic_allies_20"],
-        release_at      : {year: 2018, month: 7, day: 2}
+        release_at      : {year: 2018, month: 7, day: 2},
+        show            : false
     },
     comic_krutiks_7_2018                                                    : {
         name            : "Крутиксы #7 (2018)",
         number          : "7",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-7-2018.jpg",
+            aspect_ratio: 1535 / 2338
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_2"],
         previous_comics : ["comic_krutiks_6_2018"],
         next_comics     : ["comic_krutiks_8_2018"],
-        release_at      : {year: 2018, month: 7, day: 3}
+        release_at      : {year: 2018, month: 7, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_19                                                  : {
         name            : "Бесобой Vol.2 #19 В расчёте",
         number          : "19",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-19-counting-on.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_besoboy", "character_queen_of_rot", "character_black_dog"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_alexey_efremov", positions: ["artist"]},
+                           {author_id: "author_denis_barbe", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_4"],
         previous_comics : ["comic_besoboy_vol_2_18"],
         next_comics     : ["comic_besoboy_vol_2_20"],
-        release_at      : {year: 2018, month: 7, day: 5}
+        release_at      : {year: 2018, month: 7, day: 5},
+        show            : false
     },
     comic_igor_grom_19                                                      : {
         name            : "Игорь Гром #19 Метод Локи, часть 3",
         number          : "19",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-19-loki-method-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_igor_grom", "character_ulya"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         including_comics: ["comic_igor_grom_volume_4"],
         previous_comics : ["comic_igor_grom_18"],
         next_comics     : ["comic_igor_grom_20"],
-        release_at      : {year: 2018, month: 7, day: 10}
+        release_at      : {year: 2018, month: 7, day: 10},
+        show            : false
     },
     comic_planeswalkers_19                                                  : {
         name            : "Мироходцы #19 Битва за Эдем, часть 1",
         number          : "19",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-19-battle-for-eden-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
+        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_ksenia_radova", "character_gray_wolf"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
         including_comics: ["comic_planeswalkers_volume_4"],
         previous_comics : ["comic_planeswalkers_18"],
         next_comics     : ["comic_planeswalkers_20"],
-        release_at      : {year: 2018, month: 7, day: 16}
+        release_at      : {year: 2018, month: 7, day: 16},
+        show            : false
     },
     comic_exlibrium_45                                                      : {
         name            : "Экслибриум #45 Возвращение, часть 3",
         number          : "45",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-45-return-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_8"],
         previous_comics : ["comic_exlibrium_44"],
         next_comics     : ["comic_exlibrium_46"],
-        release_at      : {year: 2018, month: 7, day: 20}
+        release_at      : {year: 2018, month: 7, day: 20},
+        show            : false
     },
     comic_meteora_45                                                        : {
         name            : "Метеора #45 Стоп машина! часть 1",
         number          : "45",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-45-stop-machine-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_9"],
         previous_comics : ["comic_meteora_44"],
         next_comics     : ["comic_meteora_46"],
-        release_at      : {year: 2018, month: 7, day: 25}
+        release_at      : {year: 2018, month: 7, day: 25},
+        show            : false
     },
-    comic_dubin_dima_3                                                      : {
+    comic_dubin_dima_provincial_holidays_3                                  : {
         name            : "Дубин Дима: Провинциальные каникулы, часть 3",
         number          : "3",
         type            : "single",
-        ranges          : ["range_major_grom", "range_bubble_legends"],
-        including_comics: ["comic_dubin_dima"],
-        previous_comics : ["comic_dubin_dima_2"],
-        next_comics     : ["comic_dubin_dima_4"],
-        release_at      : {year: 2018, month: 7, day: 27}
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_dmitry_dubin"],
+        authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
+        including_comics: ["comic_dubin_dima_provincial_holidays"],
+        previous_comics : ["comic_dubin_dima_provincial_holidays_2"],
+        next_comics     : ["comic_dubin_dima_provincial_holidays_4"],
+        release_at      : {year: 2018, month: 7, day: 27},
+        show            : false
     },
     comic_allies_20                                                         : {
         name            : "Союзники #20 Изгои",
         number          : "20",
         type            : "single",
+        cover_file      : {url: "/src/assets/images/comics/allies/allies-20-outcasts.jpg", aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
+        characters      : ["character_bulat_gadzhiev", "character_nursultan", "character_leech", "character_sonya", "character_amber"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_allies_volume_5"],
         previous_comics : ["comic_allies_19"],
         next_comics     : ["comic_allies_21"],
-        release_at      : {year: 2018, month: 8, day: 1}
+        release_at      : {year: 2018, month: 8, day: 1},
+        show            : false
     },
     comic_krutiks_8_2018                                                    : {
         name            : "Крутиксы #8 (2018)",
         number          : "8",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-8-2018.jpg",
+            aspect_ratio: 1536 / 2339
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_3"],
         previous_comics : ["comic_krutiks_7_2018"],
         next_comics     : ["comic_krutiks_9_2018"],
-        release_at      : {year: 2018, month: 8, day: 3}
+        release_at      : {year: 2018, month: 8, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_20                                                  : {
         name            : "Бесобой Vol.2 #20 Воля мёртвых, часть 1",
         number          : "20",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-20-will-of-dead-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_besoboy", "character_queen_of_rot", "character_black_dog"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_5"],
         previous_comics : ["comic_besoboy_vol_2_19"],
         next_comics     : ["comic_besoboy_vol_2_21"],
-        release_at      : {year: 2018, month: 8, day: 6}
+        release_at      : {year: 2018, month: 8, day: 6},
+        show            : false
     },
     comic_igor_grom_20                                                      : {
         name            : "Игорь Гром #20 Метод Локи, часть 4",
         number          : "20",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-20-loki-method-part-4.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_igor_grom", "character_ulya"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         including_comics: ["comic_igor_grom_volume_4"],
         previous_comics : ["comic_igor_grom_19"],
         next_comics     : ["comic_igor_grom_21"],
-        release_at      : {year: 2018, month: 8, day: 10}
+        release_at      : {year: 2018, month: 8, day: 10},
+        show            : false
     },
     comic_planeswalkers_20                                                  : {
         name            : "Мироходцы #20 Битва за Эдем, часть 2",
         number          : "20",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-20-battle-for-eden-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
+        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_gray_wolf"],
+        authors         : [{author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
         including_comics: ["comic_planeswalkers_volume_4"],
         previous_comics : ["comic_planeswalkers_19"],
         next_comics     : ["comic_planeswalkers_21"],
-        release_at      : {year: 2018, month: 8, day: 11}
+        release_at      : {year: 2018, month: 8, day: 11},
+        show            : false
     },
     comic_wolf_helsing                                                      : {
         name      : "Вольф Хельсинг",
         type      : "single",
-        ranges    : ["range_evgeny_yakovlev"],
-        release_at: {year: 2018, month: 8, day: 11}
+        cover_file: {url: "/src/assets/images/comics/authors_comics/wolf-helsing.png", aspect_ratio: 718 / 1020},
+        ranges    : ["range_authors_comics"],
+        authors   : [{author_id: "author_evgeny_yakovlev", positions: ["artist"]}],
+        release_at: {year: 2018, month: 8, day: 11},
+        show      : true
     },
     comic_besoboy_vol_2_book_2                                              : {
         name            : "Бесобой Vol.2. Книга 2: Падение",
         number          : "2",
         type            : "hardcover_book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-book-2-fall.jpg",
+            aspect_ratio: 970 / 1460
+        },
         ranges          : ["range_besoboy_vol_2"],
-        contained_comics: ["comic_besoboy_vol_2_6", "comic_besoboy_vol_2_7", "comic_besoboy_vol_2_8",
-                           "comic_besoboy_vol_2_9", "comic_besoboy_vol_2_10", "comic_besoboy_vol_2_11",
-                           "comic_besoboy_vol_2_12", "comic_besoboy_vol_2_13", "comic_besoboy_vol_2_14"],
+        characters      : ["character_avaddon_merciless", "character_antichrist", "character_balor", "character_bafforth_rackshore", "character_besoboy", "character_pavel_ocheredko", "character_satan", "character_semiaza", "character_tanachia_relentless", "character_shmyg", "character_yana", "character_yarkh_deadly"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_elena_doronina", positions: ["colorist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
+        contained_comics: ["comic_besoboy_vol_2_6", "comic_besoboy_vol_2_7", "comic_besoboy_vol_2_8", "comic_besoboy_vol_2_9", "comic_besoboy_vol_2_10", "comic_besoboy_vol_2_11", "comic_besoboy_vol_2_12", "comic_besoboy_vol_2_13", "comic_besoboy_vol_2_14"],
         previous_comics : ["comic_besoboy_vol_2_book_1"],
         next_comics     : ["comic_witch_hunt"],
-        release_at      : {year: 2018, month: 8, day: 13}
+        release_at      : {year: 2018, month: 8, day: 13},
+        show            : true
     },
     comic_besoboy_vol_2_volume_2                                            : {
-        name            : "Бесобой Vol.2 том 2: Падение",
+        name            : "Бесобой Vol. 2. Том 2: Падение",
         number          : "2",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-volume-2-fall.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
-        contained_comics: ["comic_besoboy_vol_2_6", "comic_besoboy_vol_2_7", "comic_besoboy_vol_2_8",
-                           "comic_besoboy_vol_2_9", "comic_besoboy_vol_2_10"],
+        characters      : ["character_avaddon_merciless", "character_antichrist", "character_balor", "character_bafforth_rackshore", "character_besoboy", "character_pavel_ocheredko", "character_satan", "character_tanachia_relentless", "character_shmyg", "character_yana", "character_yarkh_deadly"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_elena_doronina", positions: ["colorist"]},
+                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
+        contained_comics: ["comic_besoboy_vol_2_6", "comic_besoboy_vol_2_7", "comic_besoboy_vol_2_8", "comic_besoboy_vol_2_9", "comic_besoboy_vol_2_10"],
         previous_comics : ["comic_besoboy_vol_2_volume_1"],
         next_comics     : ["comic_besoboy_vol_2_volume_3"],
-        release_at      : {year: 2018, month: 8, day: 13}
+        release_at      : {year: 2018, month: 8, day: 13},
+        show            : true
     },
     comic_igor_grom_book_2                                                  : {
         name            : "Игорь Гром. Книга 2: Голодные духи",
         number          : "2",
         type            : "hardcover_book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-book-2-hungry-ghosts.jpg",
+            aspect_ratio: 1000 / 1505
+        },
         ranges          : ["range_igor_grom"],
-        contained_comics: ["comic_igor_grom_7", "comic_igor_grom_8", "comic_igor_grom_9", "comic_igor_grom_10",
-                           "comic_igor_grom_11", "comic_igor_grom_12", "comic_igor_grom_13", "comic_igor_grom_14"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
+        contained_comics: ["comic_igor_grom_7", "comic_igor_grom_8", "comic_igor_grom_9", "comic_igor_grom_10", "comic_igor_grom_11", "comic_igor_grom_12", "comic_igor_grom_13", "comic_igor_grom_14"],
         previous_comics : ["comic_igor_grom_book_1"],
         next_comics     : ["comic_witch_hunt"],
-        release_at      : {year: 2018, month: 8, day: 13}
+        release_at      : {year: 2018, month: 8, day: 13},
+        show            : true
     },
     comic_igor_grom_volume_2                                                : {
-        name            : "Игорь Гром том 2: Голодные духи",
+        name            : "Игорь Гром. Том 2: Голодные духи",
         number          : "2",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-volume-2-hungry-ghosts.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         contained_comics: ["comic_igor_grom_7", "comic_igor_grom_8", "comic_igor_grom_9", "comic_igor_grom_10"],
         previous_comics : ["comic_igor_grom_volume_1"],
         next_comics     : ["comic_igor_grom_volume_3"],
-        release_at      : {year: 2018, month: 8, day: 13}
+        release_at      : {year: 2018, month: 8, day: 13},
+        show            : true
     },
     comic_allies_book_2                                                     : {
         name            : "Союзники. Книга 2: Условный рефлекс",
         number          : "2",
         type            : "hardcover_book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-book-2-conditioned-reflex.jpg",
+            aspect_ratio: 1111 / 1672
+        },
         ranges          : ["range_allies"],
-        contained_comics: ["comic_allies_5", "comic_allies_6", "comic_allies_7", "comic_allies_8", "comic_allies_9",
-                           "comic_allies_10", "comic_allies_11", "comic_allies_12", "comic_allies_13",
-                           "comic_allies_14"],
+        characters      : ["character_august_van_der_holt", "character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_rud", positions: ["artist"]},
+                           {author_id: "author_yulia_loganova", positions: ["colorist"]}],
+        contained_comics: ["comic_allies_5", "comic_allies_6", "comic_allies_7", "comic_allies_8", "comic_allies_9", "comic_allies_10", "comic_allies_11", "comic_allies_12", "comic_allies_13", "comic_allies_14"],
         previous_comics : ["comic_allies_book_1"],
         next_comics     : ["comic_witch_hunt"],
-        release_at      : {year: 2018, month: 8, day: 13}
+        release_at      : {year: 2018, month: 8, day: 13},
+        show            : true
     },
     comic_allies_volume_2                                                   : {
-        name            : "Союзники том 2: Условный рефлекс",
+        name            : "Союзники. Том 2: Условный рефлекс",
         number          : "2",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-volume-2-conditioned-reflex.jpg",
+            aspect_ratio: 1004 / 1535
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_august_van_der_holt", "character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_yulia_loganova", positions: ["colorist"]}],
         contained_comics: ["comic_allies_5", "comic_allies_6", "comic_allies_7", "comic_allies_8", "comic_allies_9"],
         previous_comics : ["comic_allies_volume_1"],
         next_comics     : ["comic_allies_volume_3"],
-        release_at      : {year: 2018, month: 8, day: 13}
+        release_at      : {year: 2018, month: 8, day: 13},
+        show            : true
     },
     comic_planeswalkers_book_2                                              : {
         name            : "Мироходцы. Книга 2: Притяжение полюсов",
         number          : "2",
         type            : "hardcover_book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-book-2-polar-attraction.jpg",
+            aspect_ratio: 1111 / 1672
+        },
         ranges          : ["range_planeswalkers"],
-        contained_comics: ["comic_planeswalkers_7", "comic_planeswalkers_8", "comic_planeswalkers_9",
-                           "comic_planeswalkers_10", "comic_planeswalkers_11", "comic_planeswalkers_12",
-                           "comic_planeswalkers_13", "comic_planeswalkers_14"],
+        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_ksenia_radova", "character_moon", "character_master", "character_mars", "character_gray_wolf"],
+        authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_rud", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
+        contained_comics: ["comic_planeswalkers_7", "comic_planeswalkers_8", "comic_planeswalkers_9", "comic_planeswalkers_10", "comic_planeswalkers_11", "comic_planeswalkers_12", "comic_planeswalkers_13", "comic_planeswalkers_14"],
         previous_comics : ["comic_planeswalkers_book_1"],
         next_comics     : ["comic_witch_hunt"],
-        release_at      : {year: 2018, month: 8, day: 13}
+        release_at      : {year: 2018, month: 8, day: 13},
+        show            : true
     },
     comic_planeswalkers_volume_2                                            : {
-        name            : "Мироходцы том 2: Луна",
+        name            : "Мироходцы. Том 2: Луна",
         number          : "2",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-volume-2-moon.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
-        contained_comics: ["comic_planeswalkers_7", "comic_planeswalkers_8", "comic_planeswalkers_9",
-                           "comic_planeswalkers_10"],
+        characters      : ["character_moon", "character_gray_wolf"],
+        authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_rud", positions: ["artist"]}],
+        contained_comics: ["comic_planeswalkers_7", "comic_planeswalkers_8", "comic_planeswalkers_9", "comic_planeswalkers_10"],
         previous_comics : ["comic_planeswalkers_volume_1"],
         next_comics     : ["comic_planeswalkers_volume_3"],
-        release_at      : {year: 2018, month: 8, day: 13}
+        release_at      : {year: 2018, month: 8, day: 13},
+        show            : true
     },
     comic_exlibrium_46                                                      : {
         name            : "Экслибриум #46 Светлая полоса, часть 1",
         number          : "46",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-46-light-stripe-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_9"],
         previous_comics : ["comic_exlibrium_45"],
         next_comics     : ["comic_exlibrium_47"],
-        release_at      : {year: 2018, month: 8, day: 20}
+        release_at      : {year: 2018, month: 8, day: 20},
+        show            : false
     },
     comic_meteora_46                                                        : {
         name            : "Метеора #46 Стоп машина! часть 2",
         number          : "46",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-46-stop-machine-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_9"],
         previous_comics : ["comic_meteora_45"],
         next_comics     : ["comic_meteora_47"],
-        release_at      : {year: 2018, month: 8, day: 24}
+        release_at      : {year: 2018, month: 8, day: 24},
+        show            : false
     },
-    comic_dubin_dima_4                                                      : {
+    comic_dubin_dima_provincial_holidays_4                                  : {
         name            : "Дубин Дима: Провинциальные каникулы, часть 4",
         number          : "4",
         type            : "single",
-        ranges          : ["range_major_grom", "range_bubble_legends"],
-        including_comics: ["comic_dubin_dima"],
-        previous_comics : ["comic_dubin_dima_3"],
-        release_at      : {year: 2018, month: 8, day: 28}
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-4.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_dmitry_dubin"],
+        authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
+        including_comics: ["comic_dubin_dima_provincial_holidays"],
+        previous_comics : ["comic_dubin_dima_provincial_holidays_3"],
+        release_at      : {year: 2018, month: 8, day: 28},
+        show            : false
     },
     comic_allies_21                                                         : {
         name            : "Союзники #21 Оборотная сторона, часть 1",
         number          : "21",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-21-verso-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_zebediah_trank", "character_kirk_oreilly", "character_murdoch_mcallister", "character_miko_van_der_holt"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_allies_volume_5"],
         previous_comics : ["comic_allies_20"],
         next_comics     : ["comic_allies_22"],
-        release_at      : {year: 2018, month: 8, day: 31}
+        release_at      : {year: 2018, month: 8, day: 31},
+        show            : false
     },
     comic_krutiks_9_2018                                                    : {
         name            : "Крутиксы #9 (2018)",
         number          : "9",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-9-2018.jpg",
+            aspect_ratio: 1535 / 2339
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_3"],
         previous_comics : ["comic_krutiks_8_2018"],
         next_comics     : ["comic_krutiks_10_2018"],
-        release_at      : {year: 2018, month: 9, day: 3}
+        release_at      : {year: 2018, month: 9, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_21                                                  : {
         name            : "Бесобой Vol.2 #21 Воля мёртвых, часть 2",
         number          : "21",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-21-will-of-dead-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_besoboy", "character_queen_of_rot", "character_black_dog"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_5"],
         previous_comics : ["comic_besoboy_vol_2_20"],
         next_comics     : ["comic_besoboy_vol_2_22"],
-        release_at      : {year: 2018, month: 9, day: 5}
+        release_at      : {year: 2018, month: 9, day: 5},
+        show            : false
     },
     comic_igor_grom_21                                                      : {
         name            : "Игорь Гром #21 На пепелище",
         number          : "21",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-21-on-ashes.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_mark_simonov", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
         including_comics: ["comic_igor_grom_volume_4"],
         previous_comics : ["comic_igor_grom_20"],
         next_comics     : ["comic_igor_grom_22"],
-        release_at      : {year: 2018, month: 9, day: 10}
+        release_at      : {year: 2018, month: 9, day: 10},
+        show            : false
     },
     comic_planeswalkers_21                                                  : {
         name            : "Мироходцы #21 Просто сон",
         number          : "21",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-21-just-dream.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
+        characters      : ["character_andrey_radov", "character_ksenia_radova"],
+        authors         : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_yulia_zhuravleva", positions: ["artist"]},
+                           {author_id: "author_anna_mozaikina", positions: ["colorist"]}],
         including_comics: ["comic_planeswalkers_volume_4"],
         previous_comics : ["comic_planeswalkers_20"],
-        next_comics     : ["comic_besoboy_and_planeswalkers_single", "comic_crusade_prologue", "comic_crusade_wolf_1"],
-        release_at      : {year: 2018, month: 9, day: 14}
+        next_comics     : ["comic_besoboy_and_planeswalkers_new_life_electronic", "comic_crusade_prologue", "comic_crusade_wolf_1"],
+        release_at      : {year: 2018, month: 9, day: 14},
+        show            : false
     },
     comic_exlibrium_47                                                      : {
         name            : "Экслибриум #47 Светлая полоса, часть 2",
         number          : "47",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-47-light-streak-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_9"],
         previous_comics : ["comic_exlibrium_46"],
         next_comics     : ["comic_exlibrium_48"],
-        release_at      : {year: 2018, month: 9, day: 20}
+        release_at      : {year: 2018, month: 9, day: 20},
+        show            : false
     },
     comic_meteora_47                                                        : {
         name            : "Метеора #47 Стоп машина! часть 3",
         number          : "47",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-47-stop-machine-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_9"],
         previous_comics : ["comic_meteora_46"],
         next_comics     : ["comic_meteora_48"],
-        release_at      : {year: 2018, month: 9, day: 24}
+        release_at      : {year: 2018, month: 9, day: 24},
+        show            : false
     },
     comic_seven_sons_jaykarn                                                : {
         name      : "Семь сыновей. Джайкарн. Глава первая",
         type      : "book",
-        ranges    : ["range_anastasia_kim"],
-        release_at: {year: 2018, month: 10}
+        cover_file: {
+            url         : "/src/assets/images/comics/authors_comics/seven-sons-jaykarn-chapter-first.jpeg",
+            aspect_ratio: 635 / 900
+        },
+        ranges    : ["range_authors_comics"],
+        authors   : [{author_id: "author_anastasia_kim", positions: ["artist"]}],
+        release_at: {year: 2018, month: 10},
+        show      : true
     },
     comic_allies_22                                                         : {
         name            : "Союзники #22 Оборотная сторона, часть 2",
         number          : "22",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-22-verso-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_zebediah_trank", "character_kirk_oreilly", "character_murdoch_mcallister", "character_miko_van_der_holt"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_allies_volume_5"],
         previous_comics : ["comic_allies_21"],
         next_comics     : ["comic_allies_23"],
-        release_at      : {year: 2018, month: 10, day: 1}
+        release_at      : {year: 2018, month: 10, day: 1},
+        show            : false
     },
     comic_krutiks_10_2018                                                   : {
         name            : "Крутиксы #10 (2018)",
         number          : "10",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-10-2018.jpg",
+            aspect_ratio: 1535 / 2339
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_3"],
         previous_comics : ["comic_krutiks_9_2018"],
         next_comics     : ["comic_krutiks_11_2018"],
-        release_at      : {year: 2018, month: 10, day: 3}
+        release_at      : {year: 2018, month: 10, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_22                                                  : {
         name            : "Бесобой Vol.2 #22 Воля мёртвых, часть 3",
         number          : "22",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-22-will-of-dead-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_besoboy", "character_queen_of_rot", "character_black_dog"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_5"],
         previous_comics : ["comic_besoboy_vol_2_21"],
         next_comics     : ["comic_besoboy_vol_2_23"],
-        release_at      : {year: 2018, month: 10, day: 4}
+        release_at      : {year: 2018, month: 10, day: 4},
+        show            : false
     },
     comic_igor_grom_22                                                      : {
         name            : "Игорь Гром #22 Повторяй за мной, часть 1",
         number          : "22",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-22-repeat-after-me-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_5"],
         previous_comics : ["comic_igor_grom_21"],
         next_comics     : ["comic_igor_grom_23"],
-        release_at      : {year: 2018, month: 10, day: 4}
+        release_at      : {year: 2018, month: 10, day: 4},
+        show            : false
     },
     comic_crusade_prologue                                                  : {
         name            : "Крестовый поход: Пролог",
         type            : "single",
-        ranges          : ["range_crossovers", "range_planeswalkers"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/crossovers/crusade/crusade-prologue.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_crossovers"],
+        characters      : ["character_andrey_radov", "character_master"],
         including_comics: ["comic_crusade"],
         previous_comics : ["comic_planeswalkers_21"],
         next_comics     : ["comic_crusade_1"],
-        release_at      : {year: 2018, month: 10, day: 4}
+        release_at      : {year: 2018, month: 10, day: 4},
+        show            : false
     },
     comic_yarkh_step_forward_1                                              : {
         name            : "Ярх. Шаг вперёд, часть 1",
         number          : "1",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
+        characters      : ["character_satan", "character_tanachia_relentless", "character_yarkh_deadly"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_yarkh_step_forward"],
         previous_comics : ["comic_besoboy_50"],
         next_comics     : ["comic_yarkh_step_forward_2"],
-        release_at      : {year: 2018, month: 10, day: 4}
+        release_at      : {year: 2018, month: 10, day: 4},
+        show            : false
     },
     comic_exlibrium_volume_7                                                : {
         name            : "Экслибриум том 7: Сказочке конец",
         number          : "7",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-volume-7-end-of-fairy-tale.jpg",
+            aspect_ratio: 1004 / 1535
+        },
         ranges          : ["range_exlibrium"],
-        contained_comics: ["comic_exlibrium_35", "comic_exlibrium_36", "comic_exlibrium_37", "comic_exlibrium_38",
-                           "comic_exlibrium_39", "comic_exlibrium_40"],
+        contained_comics: ["comic_exlibrium_35", "comic_exlibrium_36", "comic_exlibrium_37", "comic_exlibrium_38", "comic_exlibrium_39", "comic_exlibrium_40"],
         previous_comics : ["comic_exlibrium_volume_6"],
         next_comics     : ["comic_exlibrium_volume_8"],
-        release_at      : {year: 2018, month: 10, day: 4}
+        release_at      : {year: 2018, month: 10, day: 4},
+        show            : true
     },
     comic_meteora_volume_7                                                  : {
         name            : "Метеора том 7: Вольная птица",
         number          : "7",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-volume-7-free-bird.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         contained_comics: ["comic_meteora_36", "comic_meteora_37", "comic_meteora_38", "comic_meteora_39"],
         previous_comics : ["comic_meteora_volume_6"],
         next_comics     : ["comic_meteora_volume_8"],
-        release_at      : {year: 2018, month: 10, day: 4}
+        release_at      : {year: 2018, month: 10, day: 4},
+        show            : true
     },
-    comic_dubin_dima                                                        : {
+    comic_dubin_dima_provincial_holidays                                    : {
         name            : "Дубин Дима: Провинциальные каникулы",
         type            : "book",
-        ranges          : ["range_major_grom", "range_bubble_legends"],
-        contained_comics: ["comic_dubin_dima_1", "comic_dubin_dima_2", "comic_dubin_dima_3", "comic_dubin_dima_4"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_dmitry_dubin"],
+        authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
+        contained_comics: ["comic_dubin_dima_provincial_holidays_1", "comic_dubin_dima_provincial_holidays_2", "comic_dubin_dima_provincial_holidays_3", "comic_dubin_dima_provincial_holidays_4"],
         previous_comics : ["comic_major_grom_volume_8"],
-        release_at      : {year: 2018, month: 10, day: 4}
+        release_at      : {year: 2018, month: 10, day: 4},
+        show            : true
     },
-    comic_master_single                                                     : {
-        name            : "Магистр. Смерть – это только начало",
-        type            : "single",
-        ranges          : ["range_monk", "range_bubble_legends"],
-        including_comics: ["comic_master_book"],
-        previous_comics : ["comic_monk_50"],
-        release_at      : {year: 2018, month: 10, day: 4}
-    },
-    comic_master_book                                                       : {
+    comic_master_death_is_just_beginning_electronic                         : {
         name            : "Магистр. Смерть – это только начало",
         type            : "book",
-        ranges          : ["range_monk", "range_bubble_legends"],
-        contained_comics: ["comic_master_single"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/master-death-is-just-beginning.png",
+            aspect_ratio: 582 / 900
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_antichrist", "character_master"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
+        including_comics: ["comic_master_death_is_just_beginning_printed"],
+        previous_comics : ["comic_monk_50"],
+        release_at      : {year: 2018, month: 10, day: 4},
+        show            : false
+    },
+    comic_master_death_is_just_beginning_printed                            : {
+        name            : "Магистр. Смерть – это только начало",
+        type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/master-death-is-just-beginning.png",
+            aspect_ratio: 582 / 900
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_antichrist", "character_master"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
+        contained_comics: ["comic_master_death_is_just_beginning_electronic"],
         previous_comics : ["comic_monk_volume_8"],
-        release_at      : {year: 2018, month: 10, day: 4}
+        release_at      : {year: 2018, month: 10, day: 4},
+        show            : true
     },
     comic_ziggy_and_shmyg_save_comiccon                                     : {
         name           : "Зигги и Шмыг спасают ComicCon",
         type           : "book",
-        ranges         : ["range_ziggy_and_shmyg"],
-        previous_comics: ["comic_ziggy_and_shmyg_destroy_the_bubble_universe"],
-        release_at     : {year: 2018, month: 10, day: 4}
+        cover_file     : {
+            url         : "/src/assets/images/comics/inadequate_galaxy/ziggy_and_shmyg/ziggy-and-shmyg-save-comiccon.jpg",
+            aspect_ratio: 2416 / 3721
+        },
+        ranges         : ["range_inadequate_galaxy"],
+        characters     : ["character_ziggy", "character_shmyg"],
+        authors        : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                          {author_id: "author_evgeniy_bornyakov", positions: ["artist"]},
+                          {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
+        previous_comics: ["comic_ziggy_and_shmyg_destroy_bubble_universe"],
+        release_at     : {year: 2018, month: 10, day: 4},
+        show           : true
     },
     comic_besoboy_vol_2_volume_3                                            : {
-        name            : "Бесобой Vol.2 том 3: Откровения",
+        name            : "Бесобой Vol.2. Том 3: Откровения",
         number          : "3",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-volume-3-revelations.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
-        contained_comics: ["comic_besoboy_vol_2_11", "comic_besoboy_vol_2_12", "comic_besoboy_vol_2_13",
-                           "comic_besoboy_vol_2_14"],
+        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_pavel_ocheredko", "character_satan", "character_semiaza", "character_shmyg", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
+        contained_comics: ["comic_besoboy_vol_2_11", "comic_besoboy_vol_2_12", "comic_besoboy_vol_2_13", "comic_besoboy_vol_2_14"],
         previous_comics : ["comic_besoboy_vol_2_volume_2"],
         next_comics     : ["comic_witch_hunt"],
-        release_at      : {year: 2018, month: 10, day: 15}
+        release_at      : {year: 2018, month: 10, day: 15},
+        show            : true
     },
     comic_igor_grom_volume_3                                                : {
-        name            : "Игорь Гром том 3: Умный человек",
+        name            : "Игорь Гром. Том 3: Умный человек",
         number          : "3",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-volume-3-smart-man.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         contained_comics: ["comic_igor_grom_11", "comic_igor_grom_12", "comic_igor_grom_13", "comic_igor_grom_14"],
         previous_comics : ["comic_igor_grom_volume_2"],
         next_comics     : ["comic_witch_hunt"],
-        release_at      : {year: 2018, month: 8, day: 13}
+        release_at      : {year: 2018, month: 8, day: 13},
+        show            : true
     },
     comic_planeswalkers_volume_3                                            : {
-        name            : "Мироходцы том 3: Лицом к лицу",
+        name            : "Мироходцы. Том 3: Лицом к лицу",
         number          : "3",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-volume-3-face-to-face.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_planeswalkers"],
-        contained_comics: ["comic_planeswalkers_11", "comic_planeswalkers_12", "comic_planeswalkers_13",
-                           "comic_planeswalkers_14"],
+        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_ksenia_radova", "character_master", "character_mars", "character_gray_wolf"],
+        authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
+        contained_comics: ["comic_planeswalkers_11", "comic_planeswalkers_12", "comic_planeswalkers_13", "comic_planeswalkers_14"],
         previous_comics : ["comic_planeswalkers_volume_2"],
         next_comics     : ["comic_witch_hunt"],
-        release_at      : {year: 2018, month: 10, day: 15}
+        release_at      : {year: 2018, month: 10, day: 15},
+        show            : true
     },
     comic_allies_volume_3                                                   : {
-        name            : "Союзники том 3: Имаго",
+        name            : "Союзники. Том 3: Имаго",
         number          : "3",
         type            : "book",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-volume-3-imago.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
-        contained_comics: ["comic_allies_10", "comic_allies_11", "comic_allies_12", "comic_allies_13",
-                           "comic_allies_14"],
+        characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_rud", positions: ["artist"]}],
+        contained_comics: ["comic_allies_10", "comic_allies_11", "comic_allies_12", "comic_allies_13", "comic_allies_14"],
         previous_comics : ["comic_allies_volume_2"],
         next_comics     : ["comic_witch_hunt"],
-        release_at      : {year: 2018, month: 10, day: 15}
+        release_at      : {year: 2018, month: 10, day: 15},
+        show            : true
     },
     comic_witch_hunt                                                        : {
         name            : "Охота на ведьм",
         type            : "book",
-        ranges          : ["range_crossovers", "range_besoboy_vol_2", "range_igor_grom", "range_allies",
-                           "range_planeswalkers"],
-        contained_comics: ["comic_witch_hunt_prologue", "comic_allies_15", "comic_besoboy_vol_2_15",
-                           "comic_igor_grom_15", "comic_planeswalkers_15", "comic_witch_hunt_finale"],
-        previous_comics : ["comic_besoboy_vol_2_book_2", "comic_igor_grom_book_2", "comic_allies_book_2",
-                           "comic_planeswalkers_book_2", "comic_besoboy_vol_2_volume_3", "comic_igor_grom_volume_3",
-                           "comic_planeswalkers_volume_3", "comic_allies_volume_3"],
-        next_comics     : ["comic_planeswalkers_volume_4", "comic_besoboy_vol_2_volume_4", "comic_allies_volume_4",
-                           "comic_igor_grom_volume_4"],
-        release_at      : {year: 2018, month: 10, day: 15}
+        cover_file      : {
+            url         : "/src/assets/images/comics/crossovers/witch_hunt/witch-hunt.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_crossovers"],
+        characters      : ["character_august_van_der_holt", "character_andrey_radov", "character_besoboy", "character_igor_grom", "character_master", "character_nika_chaikina"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oksana_turlyay", positions: ["artist"]},
+                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
+        contained_comics: ["comic_witch_hunt_prologue", "comic_allies_15", "comic_besoboy_vol_2_15", "comic_igor_grom_15", "comic_planeswalkers_15", "comic_witch_hunt_finale"],
+        previous_comics : ["comic_besoboy_vol_2_book_2", "comic_igor_grom_book_2", "comic_allies_book_2", "comic_planeswalkers_book_2", "comic_besoboy_vol_2_volume_3", "comic_igor_grom_volume_3", "comic_planeswalkers_volume_3", "comic_allies_volume_3"],
+        next_comics     : ["comic_planeswalkers_volume_4", "comic_besoboy_vol_2_volume_4", "comic_allies_volume_4", "comic_igor_grom_volume_4"],
+        release_at      : {year: 2018, month: 10, day: 15},
+        show            : true
     },
     comic_jackets_and_revolvers_volume_2                                    : {
         name           : "Пиджаки и Револьверы. Том 2: Праздник в красных тонах",
         number         : "2",
         type           : "book",
-        ranges         : ["range_yulia_zhuravleva"],
+        cover_file     : {
+            url         : "/src/assets/images/comics/authors_comics/jackets_and_revolvers/jackets-and-revolvers-volume-2-holiday-in-red-colors.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges         : ["range_authors_comics"],
+        authors        : [{author_id: "author_yulia_zhuravleva", positions: ["artist", "colorist", "screenwriter"]},
+                          {author_id: "author_ekaterina_morozova", positions: ["screenwriter"]}],
         previous_comics: ["comic_jackets_and_revolvers_volume_1"],
         next_comics    : ["comic_jackets_and_revolvers_volume_3"],
-        release_at     : {year: 2018, month: 10, day: 17}
+        release_at     : {year: 2018, month: 10, day: 17},
+        show           : true
     },
     comic_exlibrium_48                                                      : {
         name            : "Экслибриум #48 Светлая полоса, часть 3",
@@ -8649,7 +9742,7 @@ const comics: Comics = {
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_9"],
         previous_comics : ["comic_meteora_49"],
-        next_comics     : ["comic_teo_1", "comic_meteora_storybook_deception_maneuver_single"],
+        next_comics     : ["comic_teo_crop_circles_1", "comic_meteora_storybook_deception_maneuver_single"],
         release_at      : {year: 2018, month: 12, day: 30}
     },
     comic_igor_ugor_volume_2                                                : {
@@ -8909,7 +10002,7 @@ const comics: Comics = {
         contained_comics: ["comic_planeswalkers_16", "comic_planeswalkers_17", "comic_planeswalkers_18",
                            "comic_planeswalkers_19", "comic_planeswalkers_20", "comic_planeswalkers_21"],
         previous_comics : ["comic_witch_hunt"],
-        next_comics     : ["comic_besoboy_and_planeswalkers_book", "comic_crusade", "comic_crusade_wolf"],
+        next_comics     : ["comic_besoboy_and_planeswalkers_new_life_printed", "comic_crusade", "comic_crusade_wolf"],
         release_at      : {year: 2018, month: 10, day: 15}
     },
     comic_igor_grom_28                                                      : {
@@ -9325,7 +10418,7 @@ const comics: Comics = {
         contained_comics: ["comic_meteora_45", "comic_meteora_46", "comic_meteora_47", "comic_meteora_48",
                            "comic_meteora_49", "comic_meteora_50"],
         previous_comics : ["comic_meteora_volume_8"],
-        next_comics     : ["comic_teo", "comic_meteora_storybook_deception_maneuver_book"],
+        next_comics     : ["comic_teo_crop_circles", "comic_meteora_storybook_deception_maneuver_book"],
         release_at      : {year: 2019, month: 10, day: 3}
     },
     comic_allies_volume_6                                                   : {
@@ -10674,7 +11767,7 @@ const comics: Comics = {
         ranges          : ["range_besoboy_vol_2"],
         including_comics: ["comic_besoboy_vol_2_volume_11"],
         previous_comics : ["comic_besoboy_vol_2_49"],
-        next_comics     : ["comic_besoboy_and_planeswalkers_single", "comic_quarantine_book_single"],
+        next_comics     : ["comic_besoboy_and_planeswalkers_new_life_electronic", "comic_quarantine_book_single"],
         release_at      : {year: 2021, month: 5, day: 13}
     },
     comic_mir_volume_4                                                      : {
@@ -10923,7 +12016,7 @@ const comics: Comics = {
         contained_comics: ["comic_besoboy_vol_2_47", "comic_besoboy_vol_2_48", "comic_besoboy_vol_2_49",
                            "comic_besoboy_vol_2_50"],
         previous_comics : ["comic_besoboy_vol_2_volume_10"],
-        next_comics     : ["comic_besoboy_and_planeswalkers_book", "comic_quarantine_book_book"],
+        next_comics     : ["comic_besoboy_and_planeswalkers_new_life_printed", "comic_quarantine_book_book"],
         release_at      : {year: 2021, month: 9, day: 15}
     },
     comic_falcon_volume_1                                                   : {

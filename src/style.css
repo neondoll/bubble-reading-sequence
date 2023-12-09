@@ -172,6 +172,11 @@ ul {
 
 .author, .character { --ranges-color: #000000; }
 
+.author__diagram {
+    width: 100%;
+    height: 500px;
+}
+
 .author__description, .character__description {
     display: flex;
     flex-direction: column;

@@ -2,7 +2,7 @@ import * as vNG from "v-network-graph";
 
 export interface Author {
     full_name: string;
-    position: AuthorPosition;
+    positions?: AuthorPosition[];
     link_to_bubble_website?: string;
 }
 

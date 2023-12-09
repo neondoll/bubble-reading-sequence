@@ -22,7 +22,6 @@ const ranges: Ranges = {
     range_igor_ugor            : {name: "Игорь Угорь", release_at: {year: 2017, month: 4, day: 1}},
     range_friends_comics       : {name: "Дружкомикс", release_at: {year: 2017, month: 7, day: 3}},
     range_bubble_manga         : {name: "BUBBLE Манга", release_at: {year: 2017, month: 9, day: 28}},
-    range_yulia_zhuravleva     : {name: "Юлия Журавлёва", release_at: {year: 2017, month: 9, day: 28}},
     range_marina_privalova     : {name: "Марина Привалова", release_at: {year: 2017, month: 9, day: 28}},
     range_alex_hatchett        : {name: "Алекс Хатчетт", release_at: {year: 2017, month: 9, day: 28}},
     range_maxim_ananyin        : {name: "Максим Ананьин", release_at: {year: 2017, month: 9, day: 28}},
