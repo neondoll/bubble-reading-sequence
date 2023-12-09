@@ -141,6 +141,7 @@ export default {
     comic_community_4                                                       : community,
     comic_community_plush_and_dangerous_storybook_book                      : community_book,
     comic_community_plush_and_dangerous_storybook_single                    : community,
+    comic_crusade_1                                                         : planeswalkers,
     comic_crusade_prologue                                                  : planeswalkers,
     comic_crusade_wolf                                                      : crusade_wolf_book,
     comic_crusade_wolf_1                                                    : crusade_wolf,

@@ -247,6 +247,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/f4e11667e3aef0ac305943537e9e4f02.png",
         link_to_bubble_website: "https://bubble.ru/characters/55-iango"
     },
+    character_kigal                      : {
+        full_name             : "Кигаль",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/0063b945453279fe652fa2747e2797c0__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/096b69b46b94a39772f427d4feb48093.png",
+        link_to_bubble_website: "https://bubble.ru/characters/156-kigal"
+    },
     character_kirk_oreilly               : {
         full_name             : "Кирк О'Райли",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/ee001af071f207762b8e349e3f914e50__168x168.png.webp",

@@ -9538,131 +9538,236 @@ const comics: Comics = {
         name            : "Экслибриум #48 Светлая полоса, часть 3",
         number          : "48",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-48-light-stripe-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_9"],
         previous_comics : ["comic_exlibrium_47"],
         next_comics     : ["comic_exlibrium_49"],
-        release_at      : {year: 2018, month: 10, day: 19}
+        release_at      : {year: 2018, month: 10, day: 19},
+        show            : false
     },
     comic_meteora_48                                                        : {
         name            : "Метеора #48 Стоп машина! часть 4",
         number          : "48",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-48-stop-machine-part-4.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_9"],
         previous_comics : ["comic_meteora_47"],
         next_comics     : ["comic_meteora_49"],
-        release_at      : {year: 2018, month: 10, day: 25}
+        release_at      : {year: 2018, month: 10, day: 25},
+        show            : false
     },
     comic_yarkh_step_forward_2                                              : {
         name            : "Ярх. Шаг вперёд, часть 2",
         number          : "2",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
+        characters      : ["character_yarkh_deadly"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_yarkh_step_forward"],
         previous_comics : ["comic_yarkh_step_forward_1"],
         next_comics     : ["comic_yarkh_step_forward_3"],
-        release_at      : {year: 2018, month: 10, day: 29}
+        release_at      : {year: 2018, month: 10, day: 29},
+        show            : false
     },
     comic_allies_23                                                         : {
         name            : "Союзники #23 Оборотная сторона, часть 3",
         number          : "23",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-23-verso-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_zebediah_trank", "character_kirk_oreilly", "character_murdoch_mcallister", "character_miko_van_der_holt"],
+        authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_allies_volume_5"],
         previous_comics : ["comic_allies_22"],
         next_comics     : ["comic_allies_24"],
-        release_at      : {year: 2018, month: 11, day: 1}
+        release_at      : {year: 2018, month: 11, day: 1},
+        show            : false
     },
     comic_krutiks_11_2018                                                   : {
         name            : "Крутиксы #11 (2018)",
         number          : "11",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-11-2018.jpg",
+            aspect_ratio: 1535 / 2339
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_yakovlev", positions: ["artist"]},
+                           {author_id: "author_tatiana_goryacheva", positions: ["artist"]},
+                           {author_id: "author_yulia_garibova", positions: ["colorist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_3"],
         previous_comics : ["comic_krutiks_10_2018"],
         next_comics     : ["comic_krutiks_12_2018"],
-        release_at      : {year: 2018, month: 11, day: 3}
+        release_at      : {year: 2018, month: 11, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_23                                                  : {
         name            : "Бесобой Vol.2 #23 Власть",
         number          : "23",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-23-power.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_besoboy", "character_queen_of_rot", "character_black_dog", "character_shmyg"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_5"],
         previous_comics : ["comic_besoboy_vol_2_22"],
         next_comics     : ["comic_besoboy_vol_2_24"],
-        release_at      : {year: 2018, month: 11, day: 5}
+        release_at      : {year: 2018, month: 11, day: 5},
+        show            : false
     },
     comic_igor_grom_23                                                      : {
         name            : "Игорь Гром #23 Повторяй за мной, часть 2",
         number          : "23",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/igor_grom/igor-grom-23-repeat-after-me-part-2.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_5"],
         previous_comics : ["comic_igor_grom_22"],
         next_comics     : ["comic_igor_grom_24"],
-        release_at      : {year: 2018, month: 11, day: 9}
+        release_at      : {year: 2018, month: 11, day: 9},
+        show            : false
     },
     comic_crusade_1                                                         : {
         name            : "Крестовый поход #1",
         number          : "1",
         type            : "single",
-        ranges          : ["range_crossovers", "range_planeswalkers"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/crossovers/crusade/crusade-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_crossovers"],
+        characters      : ["character_andrey_radov", "character_master"],
+        authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
         including_comics: ["comic_crusade"],
         previous_comics : ["comic_crusade_prologue"],
         next_comics     : ["comic_crusade_2"],
-        release_at      : {year: 2018, month: 11, day: 15}
+        release_at      : {year: 2018, month: 11, day: 15},
+        show            : false
     },
     comic_crusade_wolf_1                                                    : {
         name            : "Крестовый поход: Волк. Часть 1",
         number          : "1",
         type            : "single",
-        ranges          : ["range_crossovers", "range_planeswalkers"],
+        cover_file      : {
+            url         : "/src/assets/images/comics/crossovers/crusade_wolf/crusade-wolf-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_crossovers"],
+        characters      : ["character_gray_wolf"],
+        authors         : [{author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_gleb_melnikov", positions: ["artist"]},
+                           {author_id: "author_roman_titov", positions: ["colorist"]}],
         including_comics: ["comic_crusade_wolf"],
         previous_comics : ["comic_planeswalkers_21"],
         next_comics     : ["comic_crusade_wolf_2"],
-        release_at      : {year: 2018, month: 11, day: 15}
+        release_at      : {year: 2018, month: 11, day: 15},
+        show            : false
     },
     comic_exlibrium_49                                                      : {
         name            : "Экслибриум #49 Светлая полоса, часть 4",
         number          : "49",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/exlibrium/exlibrium-49-light-streak-part-4.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_9"],
         previous_comics : ["comic_exlibrium_48"],
         next_comics     : ["comic_exlibrium_50"],
-        release_at      : {year: 2018, month: 11, day: 19}
+        release_at      : {year: 2018, month: 11, day: 19},
+        show            : false
     },
     comic_meteora_49                                                        : {
         name            : "Метеора #49 Стоп машина! часть 5",
         number          : "49",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/meteora/meteora-49-stop-machine-part-5.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_9"],
         previous_comics : ["comic_meteora_48"],
         next_comics     : ["comic_meteora_50"],
-        release_at      : {year: 2018, month: 11, day: 26}
+        release_at      : {year: 2018, month: 11, day: 26},
+        show            : true
     },
     comic_yarkh_step_forward_3                                              : {
         name            : "Ярх. Шаг вперёд, часть 3",
         number          : "3",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-3.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
+        characters      : ["character_kigal", "character_tanachia_relentless", "character_yarkh_deadly"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_yarkh_step_forward"],
         previous_comics : ["comic_yarkh_step_forward_2"],
         next_comics     : ["comic_yarkh_step_forward_4"],
-        release_at      : {year: 2018, month: 11, day: 28}
+        release_at      : {year: 2018, month: 11, day: 28},
+        show            : false
     },
     comic_allies_24                                                         : {
         name            : "Союзники #24 Работа над ошибками, часть 1",
         number          : "24",
         type            : "single",
+        cover_file      : {
+            url         : "/src/assets/images/comics/allies/allies-24-working-on-mistakes-part-1.jpg",
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_joshua_donato", "character_ilaias", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_nika_chaikina", "character_sadap_rahmani"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_6"],
         previous_comics : ["comic_allies_23"],
         next_comics     : ["comic_allies_25"],
-        release_at      : {year: 2018, month: 11, day: 30}
+        release_at      : {year: 2018, month: 11, day: 30},
+        show            : true
     },
     comic_krutiks_12_2018                                                   : {
         name            : "Крутиксы #12 (2018)",

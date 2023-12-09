@@ -16,7 +16,9 @@ const colors = {
     author_marina_privalova                      : "#005bb1",
     author_maxim_ananyin                         : "#770202",
     author_yulia_zhuravleva                      : "#ffff33",
+    comic_crusade_1                              : range_planeswalkers,
     comic_crusade_prologue                       : range_planeswalkers,
+    comic_crusade_wolf_1                         : range_planeswalkers,
     comic_igor_ugor_volume_1                     : range_igor_ugor, // TODO: Добавить остальные комиксы
     comic_point_of_no_return                     : "#ccff99",
     comic_witch_hunt,
