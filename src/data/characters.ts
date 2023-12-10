@@ -13,17 +13,35 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/b47ae9a1034206fa722a0ab98c1e37a6.png",
         link_to_bubble_website: "https://bubble.ru/characters/2-avgust-van-der-holt"
     },
+    character_agatha                     : {
+        full_name             : "Агата",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/04c1252345d161df9f9bc7a39047fa09__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/2135a46745ef676982794cd932052a66.png",
+        link_to_bubble_website: "https://bubble.ru/characters/3-agata"
+    },
     character_agnes_ignis                : {
         full_name             : "Агнесс Игнис",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/e8868e6a0d80422286131b14c6f82fef__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/ceba39eef369f46cc41779eb66c0e36c.png",
         link_to_bubble_website: "https://bubble.ru/characters/4-agness-ignis"
     },
+    character_alexander_alinovsky        : {
+        full_name             : "Александр Алиновский",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/df9bdd7895e73a46fd482fcf28116492__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/0132f8ada60cb5cf84d72c642241b0aa.png",
+        link_to_bubble_website: "https://bubble.ru/characters/5-aleksandr-alinovskii"
+    },
     character_alena_kuznetsova           : {
         full_name             : "Алёна Кузнецова",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/08babc63d1a69baa2bf0cbf302ecd812__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/7b5fd7a1b27a11ee8887ecdfcff51212.png",
         link_to_bubble_website: "https://bubble.ru/characters/116-alyona-kuznetsova"
+    },
+    character_amelia                     : {
+        full_name             : "Амелия",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/fa382667f59b6ae76418f5c594d63d55__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/01f6b2461ca3bbf6d448d6b60d9c3089.png",
+        link_to_bubble_website: "https://bubble.ru/characters/145-ameliya"
     },
     character_angelina_evgenievna        : {
         full_name             : "Ангелина Евгеньевна",
@@ -61,6 +79,8 @@ const characters: Characters = {
     },
     character_apollo                     : {
         full_name             : "Аполлон",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/3b4c50216c58a45bc368edba2eda908c__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/c910abe43164beb39432aefa43fbc43e.png",
         link_to_bubble_website: "https://bubble.ru/characters/158-apollon"
     },
     character_arthur_huxley              : {
@@ -92,6 +112,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/6118e1494de5ae0c0ce8cc2b8f5a081e__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/250220f257000dc83de7c7e568963c75.png",
         link_to_bubble_website: "https://bubble.ru/characters/118-besoboi"
+    },
+    character_borj                       : {
+        full_name             : "Бордж",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/65e547504c663886c78a653e0e8adca8__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/875b4011e9bc19a381557b124b57b461.png",
+        link_to_bubble_website: "https://bubble.ru/characters/127-bordzh"
     },
     character_bulat_gadzhiev             : {
         full_name             : "Булат Гаджиев",
@@ -229,6 +255,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/5cb2733b9a30facc0330337c51919d29.png",
         link_to_bubble_website: "https://bubble.ru/characters/50-ziggi"
     },
+    character_zina                       : {
+        full_name             : "Зина",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/f9334f738b655de9e9ab24c2fd2a5183__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/cb206e12b486a1fe9aca38f716a4f971.png",
+        link_to_bubble_website: "https://bubble.ru/characters/144-zina"
+    },
     character_zoya_safyanova             : {
         full_name             : "Зоя Сафьянова",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/1669e64d302ee4dfccc91b2344f41e66__168x168.png.webp",
@@ -315,6 +347,8 @@ const characters: Characters = {
     },
     character_lena_pyatkina              : {
         full_name             : "Лена Пяткина",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/4017f195b9a96ccff632a7d8f0e695c1__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/a311891182414e3affd940a72f1c93ce.png",
         link_to_bubble_website: "https://bubble.ru/characters/157-lena-pyatkina"
     },
     character_liliya_abramenko           : {

@@ -3,7 +3,7 @@ import {ArcElement, Chart as ChartJS, Legend, Tooltip} from "chart.js";
 import {Author, Comic, Comics} from "../data/interfaces";
 import {Doughnut} from "vue-chartjs";
 import {authorColor, authorPosition} from "../data/functions/author_functions.js";
-import {comicIdToNull} from "../data/functions/comic_functions.js";
+import {comicColor, comicIdToNull} from "../data/functions/comic_functions.js";
 import {rangeIdToNull} from "../data/functions/range_functions.js";
 import {useRoute} from "vue-router";
 import {watch} from "vue";
@@ -62,36 +62,43 @@ watch(route, () => {
 </script>
 
 <template>
-  <div class="author container"
-       :style="{ '--ranges-color': authorColor(authorId), 'padding-top': '1rem', 'padding-bottom': '1rem' }">
-    <h1 class="author__title">{{ author.full_name }}</h1>
-    <div class="author__diagram">
-      <Doughnut :data="chartData" :options="chartOptions"/>
-    </div>
-    <div class="author__description">
-      <article v-if="author.positions" class="author__section section-author">
-        <h2 class="section-author__title">Должность:</h2>
-        <p class="section-author__text">{{ authorPosition(author.positions[0]) }}</p>
-      </article>
-      <article v-if="author.link_to_bubble_website" class="author__section section-author">
-        <h2 class="section-author__title">Ссылка на сайт BUBBLE:</h2>
-        <a class="section-author__link" :href="author.link_to_bubble_website" target="_blank">
-          {{ author.link_to_bubble_website }}
-        </a>
-      </article>
-      <article v-if="Object.keys(authorComics).length" class="author__section section-author">
-        <h2 class="section-author__title">Комиксы:</h2>
-        <ul class="section-author__list">
-          <template v-for="(authorComic, authorComicId) in authorComics">
-            <li class="section-author__item">
-              <RouterLink class="section-author__link"
-                          :to="{ name: 'comic', params: { rangeId: rangeIdToNull(authorComic.ranges[0]), comicId: comicIdToNull(authorComicId) } }">
-                {{ authorComic.name }}
-              </RouterLink>
-            </li>
-          </template>
-        </ul>
-      </article>
+  <div class="author-page">
+    <div class="author-page__container container">
+      <div class="author">
+        <div class="author__diagram">
+          <Doughnut :data="chartData" :options="chartOptions"/>
+        </div>
+        <div class="author__content">
+          <h1 class="author__title">{{ author.full_name }}</h1>
+          <div class="author__description">
+            <article v-if="author.positions" class="author__section section-author">
+              <h2 class="section-author__title">Должность:</h2>
+              <p class="section-author__text">{{ authorPosition(author.positions[0]) }}</p>
+            </article>
+            <article v-if="author.link_to_bubble_website" class="author__section section-author">
+              <h2 class="section-author__title">Ссылка на сайт BUBBLE:</h2>
+              <div class="section-author__item" :style="{ '--border-color': authorColor(authorId) }">
+                <a class="section-author__link" :href="author.link_to_bubble_website" target="_blank">
+                  {{ author.link_to_bubble_website }}
+                </a>
+              </div>
+            </article>
+            <article v-if="Object.keys(authorComics).length" class="author__section section-author">
+              <h2 class="section-author__title">Комиксы:</h2>
+              <ul class="section-author__list">
+                <template v-for="(authorComic, authorComicId) in authorComics">
+                  <li class="section-author__item" :style="{ '--border-color': comicColor(authorComicId) }">
+                    <RouterLink class="section-author__link"
+                                :to="{ name: 'comic', params: { rangeId: rangeIdToNull(authorComic.ranges[0]), comicId: comicIdToNull(authorComicId) } }">
+                      {{ authorComic.name }}
+                    </RouterLink>
+                  </li>
+                </template>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
