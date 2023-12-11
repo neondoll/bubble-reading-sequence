@@ -198,6 +198,7 @@ const authors: Authors = {
     author_natalya_martinovich    : {full_name: "Наталья Мартинович", positions: ["colorist"]},
     author_natalya_nesterenko     : {full_name: "Наталья Нестеренко", positions: ["colorist"]},
     author_nina_vakueva           : {full_name: "Нина Вакуева", positions: ["artist"]},
+    author_oleg_chudakov          : {full_name: "Олег Чудаков", positions: ["artist"]},
     author_oksana_turlyay         : {full_name: "Оксана Турляй", positions: ["artist"]},
     author_polina_shaposhnikova   : {full_name: "Полина Шапошникова", positions: ["artist"]},
     author_roman_titov            : {full_name: "Роман Титов", positions: ["colorist"]},

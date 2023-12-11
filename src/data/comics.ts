@@ -114,8 +114,24 @@ const comic_exlibrium_blank_sheet: Comic = {
 const comic_balor_and_yana_dream_catcher: Comic = {
     name      : "Балор и Яна. Ловец снов",
     type      : "book",
+    cover_file: {url: `${comicImagePath}/bubble_legends/balor-and-yana-dream-catcher.jpg`, aspect_ratio: 1004 / 1536},
     ranges    : ["range_bubble_legends"],
+    characters: ["character_balor", "character_yana"],
+    authors   : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                 {author_id: "author_andrey_rodin", positions: ["artist"]},
+                 {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
     release_at: {year: 2019, month: 10, day: 3}
+};
+const comic_major_grom_1939: Comic = {
+    name      : "Майор Гром: 1939",
+    type      : "book",
+    cover_file: {url: `${comicImagePath}/major_grom/major-grom-1939.jpg`, aspect_ratio: 1339 / 2047},
+    ranges    : ["range_major_grom"],
+    characters: ["character_dmitry_dubin", "character_igor_grom", "character_plague_doctor", "character_yulia_pchyolkina"],
+    authors   : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                 {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                 {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
+    release_at: {year: 2019, month: 10, day: 21}
 };
 
 const comics: Comics = {
@@ -4751,7 +4767,7 @@ const comics: Comics = {
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_major_grom_volume_8"],
         previous_comics : ["comic_major_grom_49"],
-        next_comics     : ["comic_igor_grom_1", "comic_major_grom_chance_electronic", "comic_dubin_dima_provincial_holidays_1", "comic_major_grom_1939_single", "comic_major_grom_like_in_war_1", "comic_major_grom_hero_forever_1", "comic_special_prokopenko_grom_at_sunrise_single", "comic_grom_difficult_childhood_anubis_rising_single"],
+        next_comics     : ["comic_igor_grom_1", "comic_major_grom_chance_electronic", "comic_dubin_dima_provincial_holidays_1", "comic_major_grom_1939_electronic", "comic_major_grom_like_in_war_1", "comic_major_grom_hero_forever_1", "comic_special_prokopenko_grom_at_sunrise_single", "comic_grom_difficult_childhood_anubis_rising_single"],
         release_at      : {year: 2016, month: 12, day: 24},
         show            : false
     },
@@ -5423,7 +5439,7 @@ const comics: Comics = {
                            {author_id: "author_eduard_petrovich", positions: ["artist"]}],
         contained_comics: ["comic_major_grom_42", "comic_major_grom_43", "comic_major_grom_44", "comic_major_grom_45", "comic_major_grom_46", "comic_major_grom_47", "comic_major_grom_48", "comic_major_grom_49", "comic_major_grom_50"],
         previous_comics : ["comic_time_of_raven_epilogue_printed", "comic_major_grom_and_red_fury_volume_7"],
-        next_comics     : ["comic_major_grom_chance_printed", "comic_igor_grom_book_1", "comic_igor_grom_volume_1", "comic_dubin_dima_provincial_holidays", "comic_major_grom_1939_book", "comic_major_grom_like_in_war", "comic_major_grom_hero_forever", "comic_special_prokopenko_grom_at_sunrise_book", "comic_grom_difficult_childhood_anubis_rising_book"],
+        next_comics     : ["comic_major_grom_chance_printed", "comic_igor_grom_book_1", "comic_igor_grom_volume_1", "comic_dubin_dima_provincial_holidays", "comic_major_grom_1939_printed", "comic_major_grom_like_in_war", "comic_major_grom_hero_forever", "comic_special_prokopenko_grom_at_sunrise_book", "comic_grom_difficult_childhood_anubis_rising_book"],
         release_at      : {year: 2017, month: 6, day: 1},
         show            : true
     },
@@ -10630,302 +10646,542 @@ const comics: Comics = {
     comic_balor_and_yana_dream_catcher_electronic                           : {
         ...comic_balor_and_yana_dream_catcher,
         including_comics: ["comic_balor_and_yana_dream_catcher_printed"],
-        previous_comics : ["comic_besoboy_50"]
+        previous_comics : ["comic_besoboy_50"],
+        show            : false
     },
     comic_balor_and_yana_dream_catcher_printed                              : {
         ...comic_balor_and_yana_dream_catcher,
         contained_comics: ["comic_balor_and_yana_dream_catcher_electronic"],
-        previous_comics : ["comic_besoboy_volume_9"]
+        previous_comics : ["comic_besoboy_volume_9"],
+        show            : true
     },
     comic_besoboy_vol_2_33                                                  : {
         name            : "Бесобой Vol.2 #33 Ва-банк, часть 1",
         number          : "33",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-33-all-in-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_antichrist", "character_besoboy"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_8"],
         previous_comics : ["comic_besoboy_vol_2_32"],
         next_comics     : ["comic_besoboy_vol_2_34"],
-        release_at      : {year: 2019, month: 10, day: 5}
+        release_at      : {year: 2019, month: 10, day: 5},
+        show            : false
     },
     comic_igor_grom_33                                                      : {
         name            : "Игорь Гром #33 Гори-гори ясно, часть 3",
         number          : "33",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-33-burn-burn-clear-part-3.jpg`,
+            aspect_ratio: 1327 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_7"],
         previous_comics : ["comic_igor_grom_32"],
         next_comics     : ["comic_igor_grom_34"],
-        release_at      : {year: 2019, month: 10, day: 5}
+        release_at      : {year: 2019, month: 10, day: 5},
+        show            : false
     },
-    comic_major_grom_1939_single                                            : {
-        name            : "Майор Гром: 1939",
-        type            : "single",
-        ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_plague_doctor", "character_yulia_pchyolkina"],
-        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
-                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
-                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
-        including_comics: ["comic_major_grom_1939_book"],
+    comic_major_grom_1939_electronic                                        : {
+        ...comic_major_grom_1939,
+        including_comics: ["comic_major_grom_1939_printed"],
         previous_comics : ["comic_major_grom_50"],
-        release_at      : {year: 2019, month: 10, day: 21}
+        show            : false
     },
-    comic_major_grom_1939_book                                              : {
-        name            : "Майор Гром: 1939",
-        type            : "book",
-        ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_plague_doctor", "character_yulia_pchyolkina"],
-        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
-                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
-                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
-        contained_comics: ["comic_major_grom_1939_single"],
+    comic_major_grom_1939_printed                                           : {
+        ...comic_major_grom_1939,
+        contained_comics: ["comic_major_grom_1939_electronic"],
         previous_comics : ["comic_major_grom_volume_8"],
-        release_at      : {year: 2019, month: 10, day: 21}
+        show            : true
     },
     comic_allies_34                                                         : {
         name            : "Союзники #34 На круги своя, часть 1",
         number          : "34",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/allies/allies-34-back-to-square-one-part-1.jpg`,
+            aspect_ratio: 500 / 762
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
+        authors         : [{author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_allies_volume_8"],
         previous_comics : ["comic_allies_33"],
         next_comics     : ["comic_allies_35"],
-        release_at      : {year: 2019, month: 10, day: 28}
+        release_at      : {year: 2019, month: 10, day: 28},
+        show            : false
     },
     comic_besoboy_vol_2_34                                                  : {
         name            : "Бесобой Vol.2 #34 Ва-банк, часть 2",
         number          : "34",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-34-all-in-part-2.jpg`,
+            aspect_ratio: 643 / 983
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_8"],
         previous_comics : ["comic_besoboy_vol_2_33"],
         next_comics     : ["comic_besoboy_vol_2_35"],
-        release_at      : {year: 2019, month: 11, day: 8}
+        release_at      : {year: 2019, month: 11, day: 8},
+        show            : false
     },
     comic_igor_grom_34                                                      : {
         name            : "Игорь Гром #34 Гори-гори ясно, часть 4",
         number          : "34",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-34-burn-burn-clear-part-4.jpg`,
+            aspect_ratio: 589 / 898
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_7"],
         previous_comics : ["comic_igor_grom_33"],
         next_comics     : ["comic_major_grom_promise"],
-        release_at      : {year: 2019, month: 11, day: 15}
+        release_at      : {year: 2019, month: 11, day: 15},
+        show            : false
     },
     comic_major_grom_like_in_war_1                                          : {
         name            : "Майор Гром: Как на войне, часть 1",
         number          : "1",
         type            : "single",
-        ranges          : ["range_major_grom", "range_bubble_legends"],
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/major_grom_like_in_war/major-grom-like-in-war-part-1.jpg`,
+            aspect_ratio: 643 / 983
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_grom_like_in_war"],
         previous_comics : ["comic_major_grom_50"],
         next_comics     : ["comic_major_grom_like_in_war_2"],
-        release_at      : {year: 2019, month: 12}
+        release_at      : {year: 2019, month: 12},
+        show            : false
     },
     comic_allies_35                                                         : {
         name            : "Союзники #35 На круги своя, часть 2",
         number          : "35",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/allies/allies-35-back-to-square-one-part-2.jpg`,
+            aspect_ratio: 500 / 762
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_allies_volume_8"],
         previous_comics : ["comic_allies_34"],
         next_comics     : ["comic_allies_36"],
-        release_at      : {year: 2019, month: 12, day: 2}
+        release_at      : {year: 2019, month: 12, day: 2},
+        show            : false
     },
     comic_besoboy_vol_2_35                                                  : {
         name            : "Бесобой Vol.2 #35 Ва-банк, часть 3",
         number          : "35",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-35-all-in-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_victor_zelenin", "character_janish", "character_lilith", "character_pavel_ocheredko", "character_satan", "character_siergo", "character_shmyg", "character_yurik", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_8"],
         previous_comics : ["comic_besoboy_vol_2_34"],
         next_comics     : ["comic_besoboy_vol_2_36"],
-        release_at      : {year: 2019, month: 12, day: 9}
+        release_at      : {year: 2019, month: 12, day: 9},
+        show            : false
     },
     comic_igor_grom_35                                                      : {
         name            : "Игорь Гром #35 Вне закона, часть 1",
         number          : "35",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-35-outlaw-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_8"],
         previous_comics : ["comic_major_grom_promise"],
         next_comics     : ["comic_igor_grom_36"],
-        release_at      : {year: 2019, month: 12, day: 16}
+        release_at      : {year: 2019, month: 12, day: 16},
+        show            : false
     },
     comic_exlibrium_second_life_1                                           : {
         name            : "Экслибриум. Жизнь вторая #01 Безвозвратно, часть 1",
         number          : "1",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-01-irrevocably-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_agatha", "character_amelia", "character_angelina_evgenievna", "character_zina", "character_liliya_romanova"],
+        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_1"],
         previous_comics : ["comic_exlibrium_second_life"],
         next_comics     : ["comic_exlibrium_second_life_2"],
-        release_at      : {year: 2019, month: 12, day: 28}
+        release_at      : {year: 2019, month: 12, day: 28},
+        show            : false
     },
     comic_allies_36                                                         : {
         name            : "Союзники #36 На круги своя, часть 3",
         number          : "36",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/allies/allies-36-back-to-square-one-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina", "character_nursultan", "character_leech", "character_sonya", "character_amber"],
+        authors         : [{author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_allies_volume_8"],
         previous_comics : ["comic_allies_35"],
         next_comics     : ["comic_allies_37"],
-        release_at      : {year: 2019, month: 12, day: 30}
+        release_at      : {year: 2019, month: 12, day: 30},
+        show            : false
     },
     comic_major_grom_like_in_war_2                                          : {
         name            : "Майор Гром: Как на войне, часть 2",
         number          : "2",
         type            : "single",
-        ranges          : ["range_major_grom", "range_bubble_legends"],
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/major_grom_like_in_war/major-grom-like-in-war-part-2.jpg`,
+            aspect_ratio: 1327 / 2022
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_grom_like_in_war"],
         previous_comics : ["comic_major_grom_like_in_war_1"],
         next_comics     : ["comic_major_grom_like_in_war_3"],
-        release_at      : {year: 2020}
+        release_at      : {year: 2020},
+        show            : false
     },
     comic_major_grom_like_in_war_3                                          : {
         name            : "Майор Гром: Как на войне, часть 3",
         number          : "3",
         type            : "single",
-        ranges          : ["range_major_grom", "range_bubble_legends"],
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/major_grom_like_in_war/major-grom-like-in-war-part-3.jpg`,
+            aspect_ratio: 642 / 983
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_grom_like_in_war"],
         previous_comics : ["comic_major_grom_like_in_war_2"],
         next_comics     : ["comic_major_grom_like_in_war_4"],
-        release_at      : {year: 2020}
+        release_at      : {year: 2020},
+        show            : false
     },
     comic_major_grom_like_in_war_4                                          : {
         name            : "Майор Гром: Как на войне, часть 4",
         number          : "4",
         type            : "single",
-        ranges          : ["range_major_grom", "range_bubble_legends"],
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/major_grom_like_in_war/major-grom-like-in-war-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_grom_like_in_war"],
         previous_comics : ["comic_major_grom_like_in_war_3"],
-        release_at      : {year: 2020}
+        release_at      : {year: 2020},
+        show            : false
     },
     comic_besoboy_vol_2_36                                                  : {
         name            : "Бесобой Vol.2 #36 Ва-банк, часть 4",
         number          : "36",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-36-all-in-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_verokh", "character_victor_zelenin", "character_janish", "character_pavel_ocheredko", "character_rackshore", "character_shmyg", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_8"],
         previous_comics : ["comic_besoboy_vol_2_35"],
         next_comics     : ["comic_besoboy_vol_2_37"],
-        release_at      : {year: 2020, month: 1, day: 16}
+        release_at      : {year: 2020, month: 1, day: 16},
+        show            : false
     },
     comic_igor_grom_36                                                      : {
         name            : "Игорь Гром #36 Вне закона, часть 2",
         number          : "36",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-36-outside-law-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_8"],
         previous_comics : ["comic_igor_grom_35"],
         next_comics     : ["comic_igor_grom_37"],
-        release_at      : {year: 2020, month: 1, day: 20}
+        release_at      : {year: 2020, month: 1, day: 20},
+        show            : false
     },
     comic_exlibrium_second_life_2                                           : {
         name            : "Экслибриум. Жизнь вторая #02 Безвозвратно, часть 2",
         number          : "2",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-02-irrevocably-part-2.jpg`,
+            aspect_ratio: 642 / 983
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_angelina_evgenievna", "character_nightingale"],
+        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_1"],
         previous_comics : ["comic_exlibrium_second_life_1"],
         next_comics     : ["comic_exlibrium_second_life_3"],
-        release_at      : {year: 2020, month: 1, day: 28}
+        release_at      : {year: 2020, month: 1, day: 28},
+        show            : false
     },
     comic_allies_37                                                         : {
         name            : "Союзники #37 На круги своя, часть 4",
         number          : "37",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/allies/allies-37-back-to-square-one-part-4.jpg`,
+            aspect_ratio: 1050 / 1600
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
+        authors         : [{author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_8"],
         previous_comics : ["comic_allies_36"],
         next_comics     : ["comic_allies_38"],
-        release_at      : {year: 2020, month: 2, day: 1}
+        release_at      : {year: 2020, month: 2, day: 1},
+        show            : false
     },
     comic_igor_grom_37                                                      : {
         name            : "Игорь Гром #37 Вне закона, часть 3",
         number          : "37",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-37-outside-law-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_ilya_kosygin"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_andrey_muravyov", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_8"],
         previous_comics : ["comic_igor_grom_36"],
         next_comics     : ["comic_igor_grom_38"],
-        release_at      : {year: 2020, month: 2, day: 7}
+        release_at      : {year: 2020, month: 2, day: 7},
+        show            : false
     },
     comic_besoboy_vol_2_37                                                  : {
         name            : "Бесобой Vol.2 #37 Ва-банк, часть 5",
         number          : "37",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-37-all-in-part-5.jpg`,
+            aspect_ratio: 642 / 983
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_balor", "character_besoboy", "character_lilith", "character_pavel_ocheredko", "character_satan", "character_siergo", "character_yurik", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_8"],
         previous_comics : ["comic_besoboy_vol_2_36"],
         next_comics     : ["comic_besoboy_vol_2_38"],
-        release_at      : {year: 2020, month: 2, day: 14}
+        release_at      : {year: 2020, month: 2, day: 14},
+        show            : false
     },
     comic_major_grom_like_in_war                                            : {
         name            : "Майор Гром: Как на войне",
         type            : "book",
-        ranges          : ["range_major_grom", "range_bubble_legends"],
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/major_grom_like_in_war/major-grom-like-in-war.jpeg`,
+            aspect_ratio: 605 / 926
+        },
+        ranges          : ["range_bubble_legends"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         contained_comics: ["comic_major_grom_like_in_war_1", "comic_major_grom_like_in_war_2", "comic_major_grom_like_in_war_3", "comic_major_grom_like_in_war_4"],
         previous_comics : ["comic_major_grom_volume_8"],
-        release_at      : {year: 2020, month: 2, day: 23}
+        release_at      : {year: 2020, month: 2, day: 23},
+        show            : true
     },
     comic_exlibrium_second_life_3                                           : {
         name            : "Экслибриум. Жизнь вторая #03 Безвозвратно, часть 3",
         number          : "3",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-03-irrevocably-part-3.jpg`,
+            aspect_ratio: 642 / 983
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_agatha", "character_alexander_alinovsky", "character_evgenia_luneva", "character_liliya_romanova", "character_matvey_koretsky", "character_tatyana_aleksandrovna", "character_yadviga_tvirinova", "character_yanvar_tvirinov"],
+        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_1"],
         previous_comics : ["comic_exlibrium_second_life_2"],
         next_comics     : ["comic_exlibrium_second_life_4"],
-        release_at      : {year: 2020, month: 2, day: 28}
+        release_at      : {year: 2020, month: 2, day: 28},
+        show            : false
     },
     comic_allies_38                                                         : {
         name            : "Союзники #38 Цепная реакция, часть 1",
         number          : "38",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/allies/allies-38-chain-reaction-part-1.png`,
+            aspect_ratio: 637 / 975
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_jessie_rodriguez", "character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_8"],
         previous_comics : ["comic_allies_37"],
         next_comics     : ["comic_allies_39"],
-        release_at      : {year: 2020, month: 3, day: 1}
+        release_at      : {year: 2020, month: 3, day: 1},
+        show            : false
     },
     comic_jackets_and_revolvers_volume_3                                    : {
         name           : "Пиджаки и Револьверы. Том 3: Украденная магия",
         number         : "3",
         type           : "book",
-        ranges         : ["range_yulia_zhuravleva"],
+        cover_file     : {
+            url         : `${comicImagePath}/authors_comics/jackets_and_revolvers/jackets-and-revolvers-volume-3-stolen-magic.jpg`,
+            aspect_ratio: 643 / 983
+        },
+        ranges         : ["range_authors_comics"],
+        authors        : [{author_id: "author_yulia_zhuravleva", positions: ["artist", "colorist", "screenwriter"]},
+                          {author_id: "author_ekaterina_morozova", positions: ["screenwriter"]}],
         previous_comics: ["comic_jackets_and_revolvers_volume_2"],
         next_comics    : ["comic_jackets_and_revolvers_volume_4"],
-        release_at     : {year: 2020, month: 3, day: 3}
+        release_at     : {year: 2020, month: 3, day: 3},
+        show           : true
     },
     comic_besoboy_vol_2_38                                                  : {
         name            : "Бесобой Vol.2 #38 Ва-банк, часть 6",
         number          : "38",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-38-all-in-part-6.jpg`,
+            aspect_ratio: 642 / 983
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_balor", "character_borj", "character_queen_of_rot", "character_pavel_ocheredko", "character_satan", "character_siergo", "character_black_dog", "character_yana", "character_yarkh_deadly"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_8"],
         previous_comics : ["comic_besoboy_vol_2_37"],
         next_comics     : ["comic_besoboy_vol_2_39"],
-        release_at      : {year: 2020, month: 3, day: 16}
+        release_at      : {year: 2020, month: 3, day: 16},
+        show            : false
     },
     comic_allies_volume_7                                                   : {
-        name            : "Союзники том 7: Падение Голиафа",
+        name            : "Союзники. Том 7: Падение Голиафа",
         number          : "7",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/allies/allies-volume-7-fall-of-goliath.jpg`,
+            aspect_ratio: 1004 / 1535
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_august_van_der_holt", "character_arthur_huxley", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         contained_comics: ["comic_allies_29", "comic_allies_30", "comic_allies_31", "comic_allies_32", "comic_allies_33"],
         previous_comics : ["comic_allies_volume_6"],
         next_comics     : ["comic_allies_volume_8"],
-        release_at      : {year: 2020, month: 3, day: 20}
+        release_at      : {year: 2020, month: 3, day: 20},
+        show            : true
     },
     comic_igor_grom_volume_6                                                : {
-        name            : "Игорь Гром том 6: Игра в солдатики",
+        name            : "Игорь Гром. Том 6: Игра в солдатики",
         number          : "6",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-volume-6-game-of-soldiers.jpg`,
+            aspect_ratio: 1004 / 1535
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_valentin_caligari_gashparov", "character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_anastasia_ozerova", positions: ["colorist"]},
+                           {author_id: "author_gleb_melnikov", positions: ["artist"]},
+                           {author_id: "author_roman_titov", positions: ["colorist"]}],
         contained_comics: ["comic_igor_grom_26", "comic_igor_grom_27", "comic_igor_grom_28", "comic_igor_grom_29", "comic_igor_grom_30"],
         previous_comics : ["comic_igor_grom_volume_5"],
         next_comics     : ["comic_igor_grom_volume_7"],
-        release_at      : {year: 2020, month: 3, day: 22}
+        release_at      : {year: 2020, month: 3, day: 22},
+        show            : true
     },
     comic_exlibrium_second_life_4                                           : {
         name            : "Экслибриум. Жизнь вторая #04 Безвозвратно, часть 4",
