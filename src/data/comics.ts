@@ -81,6 +81,42 @@ const comic_besoboy_and_planeswalkers_new_life: Comic = {
                  {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
     release_at: {year: 2017, month: 12, day: 23}
 };
+const comic_master_death_is_just_beginning: Comic = {
+    name      : "Магистр. Смерть – это только начало",
+    type      : "book",
+    cover_file: {url: `${comicImagePath}/bubble_legends/master-death-is-just-beginning.png`, aspect_ratio: 582 / 900},
+    ranges    : ["range_bubble_legends"],
+    characters: ["character_antichrist", "character_master"],
+    authors   : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                 {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                 {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                 {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                 {author_id: "author_eric_bragalyan", positions: ["artist"]}],
+    release_at: {year: 2018, month: 10, day: 4}
+};
+const comic_exlibrium_blank_sheet: Comic = {
+    name      : "Экслибриум. Чистый лист",
+    type      : "book",
+    cover_file: {url: `${comicImagePath}/exlibrium/exlibrium-blank-sheet.jpg`, aspect_ratio: 1004 / 1536},
+    ranges    : ["range_exlibrium"],
+    characters: ["character_damien_egorov", "character_zoya_safyanova", "character_margarita_volnova", "character_yadviga_tvirinova", "character_yanvar_tvirinov"],
+    authors   : [{author_id: "author_konstantin_tarasov", positions: ["artist", "screenwriter"]},
+                 {author_id: "author_marina_privalova", positions: ["artist"]},
+                 {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                 {author_id: "author_adela_adienova", positions: ["colorist"]},
+                 {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                 {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
+                 {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                 {author_id: "author_oksana_turlyay", positions: ["artist"]},
+                 {author_id: "author_taya_makarevich", positions: ["artist"]}],
+    release_at: {year: 2019, month: 4, day: 21}
+};
+const comic_balor_and_yana_dream_catcher: Comic = {
+    name      : "Балор и Яна. Ловец снов",
+    type      : "book",
+    ranges    : ["range_bubble_legends"],
+    release_at: {year: 2019, month: 10, day: 3}
+};
 
 const comics: Comics = {
     comic_besoboy_1                                                         : {
@@ -5295,7 +5331,7 @@ const comics: Comics = {
         ranges          : ["range_besoboy"],
         contained_comics: ["comic_besoboy_47", "comic_besoboy_48", "comic_besoboy_49", "comic_besoboy_50"],
         previous_comics : ["comic_besoboy_volume_8"],
-        next_comics     : ["comic_besoboy_vol_2_book_1", "comic_besoboy_vol_2_volume_1", "comic_black_dog_its_time", "comic_yarkh_step_forward", "comic_balor_and_yana_dream_catcher_book", "comic_hourly_time_against"],
+        next_comics     : ["comic_besoboy_vol_2_book_1", "comic_besoboy_vol_2_volume_1", "comic_black_dog_its_time", "comic_yarkh_step_forward", "comic_balor_and_yana_dream_catcher_printed", "comic_hourly_time_against"],
         release_at      : {year: 2017, month: 5, day: 12},
         show            : true
     },
@@ -7207,7 +7243,7 @@ const comics: Comics = {
         number          : "13",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-13-smart-man-part-3.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-13-smart-man-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -7226,7 +7262,7 @@ const comics: Comics = {
         number          : "13",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-13-face-to-face-part-1.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-13-face-to-face-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
@@ -7245,7 +7281,7 @@ const comics: Comics = {
         number          : "39",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-39-end-of-fairy-tale-part-2.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-39-end-of-fairy-tale-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -7259,10 +7295,7 @@ const comics: Comics = {
         name            : "Метеора #39 Вольная птица, часть 3",
         number          : "39",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-39-free-bird-part-3.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/meteora/meteora-39-free-bird-part-3.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_7"],
         previous_comics : ["comic_meteora_38"],
@@ -7275,7 +7308,7 @@ const comics: Comics = {
         number          : "1",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/teo_crop_circles/teo-crop-circles-part-1.jpg",
+            url         : `${comicImagePath}/bubble_legends/teo_crop_circles/teo-crop-circles-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -7293,7 +7326,7 @@ const comics: Comics = {
         name            : "Союзники #14 Имаго",
         number          : "14",
         type            : "single",
-        cover_file      : {url: "/src/assets/images/comics/allies/allies-14-imago.jpg", aspect_ratio: 1339 / 2048},
+        cover_file      : {url: `${comicImagePath}/allies/allies-14-imago.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_agnes_ignis", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_nika_chaikina"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
@@ -7310,7 +7343,7 @@ const comics: Comics = {
         number          : "2",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-2-2018.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-2-2018.jpg`,
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
@@ -7328,7 +7361,7 @@ const comics: Comics = {
         number          : "14",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-14-instrument-of-god.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-14-instrument-of-god.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -7347,7 +7380,7 @@ const comics: Comics = {
         number          : "14",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-14-smart-man-part-4.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-14-smart-man-part-4.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -7366,7 +7399,7 @@ const comics: Comics = {
         number          : "14",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-14-face-to-face-part-2.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-14-face-to-face-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
@@ -7386,7 +7419,7 @@ const comics: Comics = {
         number          : "40",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-40-end-of-fairy-tale-part-3.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-40-end-of-fairy-tale-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -7400,10 +7433,7 @@ const comics: Comics = {
         name            : "Метеора #40 Вольная птица, часть 4",
         number          : "40",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-40-free-bird-part-4.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/meteora/meteora-40-free-bird-part-4.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_8"],
         previous_comics : ["comic_meteora_39"],
@@ -7416,7 +7446,7 @@ const comics: Comics = {
         number          : "2",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/teo_crop_circles/teo-crop-circles-part-2.jpg",
+            url         : `${comicImagePath}/bubble_legends/teo_crop_circles/teo-crop-circles-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -7434,7 +7464,7 @@ const comics: Comics = {
         name            : "Охота на ведьм: Пролог",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/witch_hunt/witch-hunt-prologue.jpg",
+            url         : `${comicImagePath}/crossovers/witch_hunt/witch-hunt-prologue.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers"],
@@ -7453,7 +7483,7 @@ const comics: Comics = {
         number          : "3",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-3-2018.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-3-2018.jpg`,
             aspect_ratio: 1535 / 2338
         },
         ranges          : ["range_childrens_comics"],
@@ -7470,7 +7500,7 @@ const comics: Comics = {
         name            : "Союзники #15 Охота на ведьм",
         number          : "15",
         type            : "single",
-        cover_file      : {url: "/src/assets/images/comics/allies/allies-15-witch-hunt.jpg", aspect_ratio: 1339 / 2048},
+        cover_file      : {url: `${comicImagePath}/allies/allies-15-witch-hunt.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers", "range_allies"],
         characters      : ["character_august_van_der_holt", "character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina", "character_sadap_rahmani"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
@@ -7487,7 +7517,7 @@ const comics: Comics = {
         number          : "15",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-15-witch-hunt.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-15-witch-hunt.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers", "range_besoboy_vol_2"],
@@ -7505,10 +7535,7 @@ const comics: Comics = {
         name            : "Игорь Гром #15 Охота на ведьм",
         number          : "15",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-15-witch-hunt.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/igor_grom/igor-grom-15-witch-hunt.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers", "range_igor_grom"],
         characters      : ["character_ulya"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
@@ -7525,7 +7552,7 @@ const comics: Comics = {
         number          : "15",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-15-witch-hunt.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-15-witch-hunt.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers", "range_planeswalkers"],
@@ -7544,7 +7571,7 @@ const comics: Comics = {
         number          : "41",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-41-revolution-part-1.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-41-revolution-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -7558,10 +7585,7 @@ const comics: Comics = {
         name            : "Метеора #41 Вольная птица, часть 5",
         number          : "41",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-41-free-bird-part-5.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/meteora/meteora-41-free-bird-part-5.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_8"],
         previous_comics : ["comic_meteora_40"],
@@ -7574,7 +7598,7 @@ const comics: Comics = {
         number          : "3",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/teo_crop_circles/teo-crop-circles-part-3.jpg",
+            url         : `${comicImagePath}/bubble_legends/teo_crop_circles/teo-crop-circles-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -7592,7 +7616,7 @@ const comics: Comics = {
         name            : "Охота на ведьм: Финал",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/witch_hunt/witch-hunt-finale.jpg",
+            url         : `${comicImagePath}/crossovers/witch_hunt/witch-hunt-finale.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers"],
@@ -7606,7 +7630,7 @@ const comics: Comics = {
         number          : "6",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-volume-6-paper-cut.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-volume-6-paper-cut.jpg`,
             aspect_ratio: 643 / 982
         },
         ranges          : ["range_exlibrium"],
@@ -7621,7 +7645,7 @@ const comics: Comics = {
         number          : "6",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-volume-6-pulse-check.jpg",
+            url         : `${comicImagePath}/meteora/meteora-volume-6-pulse-check.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_meteora"],
@@ -7635,7 +7659,7 @@ const comics: Comics = {
         name            : "Чёрный Пёс: Своё время",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/black_dog_its_time/black-dog-its-time.jpg",
+            url         : `${comicImagePath}/bubble_legends/black_dog_its_time/black-dog-its-time.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -7652,10 +7676,7 @@ const comics: Comics = {
         name            : "Союзники #16 Без ума, часть 1",
         number          : "16",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-16-crazy-part-1.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/allies/allies-16-crazy-part-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
@@ -7671,7 +7692,7 @@ const comics: Comics = {
         name       : "Зигги и Шмыг уничтожают вселенную BUBBLE",
         type       : "book",
         cover_file : {
-            url         : "/src/assets/images/comics/inadequate_galaxy/ziggy_and_shmyg/ziggy-and-shmyg-destroy-bubble-universe.jpg",
+            url         : `${comicImagePath}/inadequate_galaxy/ziggy_and_shmyg/ziggy-and-shmyg-destroy-bubble-universe.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges     : ["range_inadequate_galaxy"],
@@ -7688,7 +7709,7 @@ const comics: Comics = {
         number          : "4",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-4-2018.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-4-2018.jpg`,
             aspect_ratio: 1345 / 2048
         },
         ranges          : ["range_childrens_comics"],
@@ -7706,7 +7727,7 @@ const comics: Comics = {
         number          : "16",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-16-judas.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-16-judas.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -7725,10 +7746,7 @@ const comics: Comics = {
         name            : "Игорь Гром #16 Вспоминай",
         number          : "16",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-16-remember.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/igor_grom/igor-grom-16-remember.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_igor_grom"],
         characters      : ["character_igor_grom", "character_ulya"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
@@ -7745,7 +7763,7 @@ const comics: Comics = {
         number          : "16",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-16-alien-will.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-16-alien-will.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
@@ -7765,7 +7783,7 @@ const comics: Comics = {
         number          : "42",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-42-revolution-part-2.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-42-revolution-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -7779,10 +7797,7 @@ const comics: Comics = {
         name            : "Метеора #42 Вольная птица, часть 6",
         number          : "42",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-42-free-bird-part-6.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/meteora/meteora-42-free-bird-part-6.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_meteora"],
         including_comics: ["comic_meteora_volume_8"],
         previous_comics : ["comic_meteora_41"],
@@ -7795,7 +7810,7 @@ const comics: Comics = {
         number          : "4",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/teo_crop_circles/teo-crop-circles-part-4.jpg",
+            url         : `${comicImagePath}/bubble_legends/teo_crop_circles/teo-crop-circles-part-4.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -7813,7 +7828,7 @@ const comics: Comics = {
         number          : "17",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-17-red-filter-part-1.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-17-red-filter-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -7831,10 +7846,7 @@ const comics: Comics = {
         name            : "Союзники #17 Без ума, часть 2",
         number          : "17",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-17-crazy-part-2.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/allies/allies-17-crazy-part-2.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
@@ -7851,7 +7863,7 @@ const comics: Comics = {
         number          : "5",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-5-2018.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-5-2018.jpg`,
             aspect_ratio: 1535 / 2338
         },
         ranges          : ["range_childrens_comics"],
@@ -7869,7 +7881,7 @@ const comics: Comics = {
         number          : "17",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-17-loki-method-part-1.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-17-loki-method-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -7888,7 +7900,7 @@ const comics: Comics = {
         number          : "17",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-17-dogs-of-war-part-1.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-17-dogs-of-war-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
@@ -7908,7 +7920,7 @@ const comics: Comics = {
         number          : "43",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-43-return-part-1.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-43-return-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -7923,7 +7935,7 @@ const comics: Comics = {
         number          : "43",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-43-king-and-rogue-part-1.jpg",
+            url         : `${comicImagePath}/meteora/meteora-43-king-and-rogue-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_meteora"],
@@ -7938,7 +7950,7 @@ const comics: Comics = {
         number          : "1",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-1.jpg",
+            url         : `${comicImagePath}/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -7954,10 +7966,7 @@ const comics: Comics = {
         name            : "Союзники #18 Без ума, часть 3",
         number          : "18",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-18-crazy-part-3.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/allies/allies-18-crazy-part-3.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
@@ -7974,7 +7983,7 @@ const comics: Comics = {
         number          : "6",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-6-2018.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-6-2018.jpg`,
             aspect_ratio: 1345 / 2048
         },
         ranges          : ["range_childrens_comics"],
@@ -7991,7 +8000,7 @@ const comics: Comics = {
         number          : "18",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-18-red-filter-part-2.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-18-red-filter-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -8010,7 +8019,7 @@ const comics: Comics = {
         number          : "18",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-18-loki-method-part-2.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-18-loki-method-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -8029,7 +8038,7 @@ const comics: Comics = {
         number          : "2",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-2.jpg",
+            url         : `${comicImagePath}/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -8045,7 +8054,7 @@ const comics: Comics = {
         name            : "Тео: Круги на полях",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/teo_crop_circles/teo-crop-circles.png",
+            url         : `${comicImagePath}/bubble_legends/teo_crop_circles/teo-crop-circles.png`,
             aspect_ratio: 643 / 983
         },
         ranges          : ["range_bubble_legends"],
@@ -8063,7 +8072,7 @@ const comics: Comics = {
         number          : "18",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-18-dogs-of-war-part-2.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-18-dogs-of-war-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
@@ -8082,7 +8091,7 @@ const comics: Comics = {
         number          : "44",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-44-return-part-2.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-44-return-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -8097,7 +8106,7 @@ const comics: Comics = {
         number          : "44",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-44-king-and-rogue-part-2.jpg",
+            url         : `${comicImagePath}/meteora/meteora-44-king-and-rogue-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_meteora"],
@@ -8111,7 +8120,7 @@ const comics: Comics = {
         name            : "Союзники #19 Отчуждение",
         number          : "19",
         type            : "single",
-        cover_file      : {url: "/src/assets/images/comics/allies/allies-19-alienation.jpg", aspect_ratio: 1339 / 2048},
+        cover_file      : {url: `${comicImagePath}/allies/allies-19-alienation.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
@@ -8128,7 +8137,7 @@ const comics: Comics = {
         number          : "7",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-7-2018.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-7-2018.jpg`,
             aspect_ratio: 1535 / 2338
         },
         ranges          : ["range_childrens_comics"],
@@ -8145,7 +8154,7 @@ const comics: Comics = {
         number          : "19",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-19-counting-on.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-19-counting-on.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -8165,7 +8174,7 @@ const comics: Comics = {
         number          : "19",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-19-loki-method-part-3.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-19-loki-method-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -8184,7 +8193,7 @@ const comics: Comics = {
         number          : "19",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-19-battle-for-eden-part-1.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-19-battle-for-eden-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
@@ -8204,7 +8213,7 @@ const comics: Comics = {
         number          : "45",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-45-return-part-3.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-45-return-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -8219,7 +8228,7 @@ const comics: Comics = {
         number          : "45",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-45-stop-machine-part-1.jpg",
+            url         : `${comicImagePath}/meteora/meteora-45-stop-machine-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_meteora"],
@@ -8234,7 +8243,7 @@ const comics: Comics = {
         number          : "3",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-3.jpg",
+            url         : `${comicImagePath}/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -8250,7 +8259,7 @@ const comics: Comics = {
         name            : "Союзники #20 Изгои",
         number          : "20",
         type            : "single",
-        cover_file      : {url: "/src/assets/images/comics/allies/allies-20-outcasts.jpg", aspect_ratio: 1339 / 2048},
+        cover_file      : {url: `${comicImagePath}/allies/allies-20-outcasts.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_bulat_gadzhiev", "character_nursultan", "character_leech", "character_sonya", "character_amber"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
@@ -8267,7 +8276,7 @@ const comics: Comics = {
         number          : "8",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-8-2018.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-8-2018.jpg`,
             aspect_ratio: 1536 / 2339
         },
         ranges          : ["range_childrens_comics"],
@@ -8285,7 +8294,7 @@ const comics: Comics = {
         number          : "20",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-20-will-of-dead-part-1.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-20-will-of-dead-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -8304,7 +8313,7 @@ const comics: Comics = {
         number          : "20",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-20-loki-method-part-4.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-20-loki-method-part-4.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -8323,7 +8332,7 @@ const comics: Comics = {
         number          : "20",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-20-battle-for-eden-part-2.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-20-battle-for-eden-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
@@ -8339,7 +8348,7 @@ const comics: Comics = {
     comic_wolf_helsing                                                      : {
         name      : "Вольф Хельсинг",
         type      : "single",
-        cover_file: {url: "/src/assets/images/comics/authors_comics/wolf-helsing.png", aspect_ratio: 718 / 1020},
+        cover_file: {url: `${comicImagePath}/authors_comics/wolf-helsing.png`, aspect_ratio: 718 / 1020},
         ranges    : ["range_authors_comics"],
         authors   : [{author_id: "author_evgeny_yakovlev", positions: ["artist"]}],
         release_at: {year: 2018, month: 8, day: 11},
@@ -8350,7 +8359,7 @@ const comics: Comics = {
         number          : "2",
         type            : "hardcover_book",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-book-2-fall.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-book-2-fall.jpg`,
             aspect_ratio: 970 / 1460
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -8372,7 +8381,7 @@ const comics: Comics = {
         number          : "2",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-volume-2-fall.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-volume-2-fall.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -8393,7 +8402,7 @@ const comics: Comics = {
         number          : "2",
         type            : "hardcover_book",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-book-2-hungry-ghosts.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-book-2-hungry-ghosts.jpg`,
             aspect_ratio: 1000 / 1505
         },
         ranges          : ["range_igor_grom"],
@@ -8414,7 +8423,7 @@ const comics: Comics = {
         number          : "2",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-volume-2-hungry-ghosts.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-volume-2-hungry-ghosts.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -8433,7 +8442,7 @@ const comics: Comics = {
         number          : "2",
         type            : "hardcover_book",
         cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-book-2-conditioned-reflex.jpg",
+            url         : `${comicImagePath}/allies/allies-book-2-conditioned-reflex.jpg`,
             aspect_ratio: 1111 / 1672
         },
         ranges          : ["range_allies"],
@@ -8457,7 +8466,7 @@ const comics: Comics = {
         number          : "2",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-volume-2-conditioned-reflex.jpg",
+            url         : `${comicImagePath}/allies/allies-volume-2-conditioned-reflex.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_allies"],
@@ -8478,7 +8487,7 @@ const comics: Comics = {
         number          : "2",
         type            : "hardcover_book",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-book-2-polar-attraction.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-book-2-polar-attraction.jpg`,
             aspect_ratio: 1111 / 1672
         },
         ranges          : ["range_planeswalkers"],
@@ -8500,7 +8509,7 @@ const comics: Comics = {
         number          : "2",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-volume-2-moon.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-volume-2-moon.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
@@ -8520,7 +8529,7 @@ const comics: Comics = {
         number          : "46",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-46-light-stripe-part-1.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-46-light-stripe-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -8535,7 +8544,7 @@ const comics: Comics = {
         number          : "46",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-46-stop-machine-part-2.jpg",
+            url         : `${comicImagePath}/meteora/meteora-46-stop-machine-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_meteora"],
@@ -8550,7 +8559,7 @@ const comics: Comics = {
         number          : "4",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-4.jpg",
+            url         : `${comicImagePath}/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays-part-4.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -8565,10 +8574,7 @@ const comics: Comics = {
         name            : "Союзники #21 Оборотная сторона, часть 1",
         number          : "21",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-21-verso-part-1.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/allies/allies-21-verso-part-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_zebediah_trank", "character_kirk_oreilly", "character_murdoch_mcallister", "character_miko_van_der_holt"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
@@ -8585,7 +8591,7 @@ const comics: Comics = {
         number          : "9",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-9-2018.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-9-2018.jpg`,
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
@@ -8603,7 +8609,7 @@ const comics: Comics = {
         number          : "21",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-21-will-of-dead-part-2.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-21-will-of-dead-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -8621,10 +8627,7 @@ const comics: Comics = {
         name            : "Игорь Гром #21 На пепелище",
         number          : "21",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-21-on-ashes.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/igor_grom/igor-grom-21-on-ashes.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_igor_grom"],
         characters      : ["character_dmitry_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
@@ -8641,7 +8644,7 @@ const comics: Comics = {
         number          : "21",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-21-just-dream.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-21-just-dream.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
@@ -8660,7 +8663,7 @@ const comics: Comics = {
         number          : "47",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-47-light-streak-part-2.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-47-light-streak-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -8675,7 +8678,7 @@ const comics: Comics = {
         number          : "47",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-47-stop-machine-part-3.jpg",
+            url         : `${comicImagePath}/meteora/meteora-47-stop-machine-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_meteora"],
@@ -8689,7 +8692,7 @@ const comics: Comics = {
         name      : "Семь сыновей. Джайкарн. Глава первая",
         type      : "book",
         cover_file: {
-            url         : "/src/assets/images/comics/authors_comics/seven-sons-jaykarn-chapter-first.jpeg",
+            url         : `${comicImagePath}/authors_comics/seven-sons-jaykarn-chapter-first.jpeg`,
             aspect_ratio: 635 / 900
         },
         ranges    : ["range_authors_comics"],
@@ -8701,10 +8704,7 @@ const comics: Comics = {
         name            : "Союзники #22 Оборотная сторона, часть 2",
         number          : "22",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-22-verso-part-2.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/allies/allies-22-verso-part-2.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_zebediah_trank", "character_kirk_oreilly", "character_murdoch_mcallister", "character_miko_van_der_holt"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
@@ -8722,7 +8722,7 @@ const comics: Comics = {
         number          : "10",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-10-2018.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-10-2018.jpg`,
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
@@ -8740,7 +8740,7 @@ const comics: Comics = {
         number          : "22",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-22-will-of-dead-part-3.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-22-will-of-dead-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -8759,7 +8759,7 @@ const comics: Comics = {
         number          : "22",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-22-repeat-after-me-part-1.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-22-repeat-after-me-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -8776,10 +8776,7 @@ const comics: Comics = {
     comic_crusade_prologue                                                  : {
         name            : "Крестовый поход: Пролог",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade/crusade-prologue.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-prologue.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
         characters      : ["character_andrey_radov", "character_master"],
         including_comics: ["comic_crusade"],
@@ -8793,7 +8790,7 @@ const comics: Comics = {
         number          : "1",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-1.jpg",
+            url         : `${comicImagePath}/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -8811,7 +8808,7 @@ const comics: Comics = {
         number          : "7",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-volume-7-end-of-fairy-tale.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-volume-7-end-of-fairy-tale.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_exlibrium"],
@@ -8825,10 +8822,7 @@ const comics: Comics = {
         name            : "Метеора том 7: Вольная птица",
         number          : "7",
         type            : "book",
-        cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-volume-7-free-bird.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/meteora/meteora-volume-7-free-bird.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_meteora"],
         contained_comics: ["comic_meteora_36", "comic_meteora_37", "comic_meteora_38", "comic_meteora_39"],
         previous_comics : ["comic_meteora_volume_6"],
@@ -8840,7 +8834,7 @@ const comics: Comics = {
         name            : "Дубин Дима: Провинциальные каникулы",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays.jpg",
+            url         : `${comicImagePath}/bubble_legends/dubin_dima_provincial_holidays/dubin-dima-provincial-holidays.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -8852,48 +8846,22 @@ const comics: Comics = {
         show            : true
     },
     comic_master_death_is_just_beginning_electronic                         : {
-        name            : "Магистр. Смерть – это только начало",
-        type            : "book",
-        cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/master-death-is-just-beginning.png",
-            aspect_ratio: 582 / 900
-        },
-        ranges          : ["range_bubble_legends"],
-        characters      : ["character_antichrist", "character_master"],
-        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
-                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
-                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
-                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
-                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
+        ...comic_master_death_is_just_beginning,
         including_comics: ["comic_master_death_is_just_beginning_printed"],
         previous_comics : ["comic_monk_50"],
-        release_at      : {year: 2018, month: 10, day: 4},
         show            : false
     },
     comic_master_death_is_just_beginning_printed                            : {
-        name            : "Магистр. Смерть – это только начало",
-        type            : "book",
-        cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/master-death-is-just-beginning.png",
-            aspect_ratio: 582 / 900
-        },
-        ranges          : ["range_bubble_legends"],
-        characters      : ["character_antichrist", "character_master"],
-        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
-                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
-                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
-                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
-                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
+        ...comic_master_death_is_just_beginning,
         contained_comics: ["comic_master_death_is_just_beginning_electronic"],
         previous_comics : ["comic_monk_volume_8"],
-        release_at      : {year: 2018, month: 10, day: 4},
         show            : true
     },
     comic_ziggy_and_shmyg_save_comiccon                                     : {
         name           : "Зигги и Шмыг спасают ComicCon",
         type           : "book",
         cover_file     : {
-            url         : "/src/assets/images/comics/inadequate_galaxy/ziggy_and_shmyg/ziggy-and-shmyg-save-comiccon.jpg",
+            url         : `${comicImagePath}/inadequate_galaxy/ziggy_and_shmyg/ziggy-and-shmyg-save-comiccon.jpg`,
             aspect_ratio: 2416 / 3721
         },
         ranges         : ["range_inadequate_galaxy"],
@@ -8910,7 +8878,7 @@ const comics: Comics = {
         number          : "3",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-volume-3-revelations.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-volume-3-revelations.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -8931,7 +8899,7 @@ const comics: Comics = {
         number          : "3",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-volume-3-smart-man.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-volume-3-smart-man.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -8950,7 +8918,7 @@ const comics: Comics = {
         number          : "3",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-volume-3-face-to-face.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-volume-3-face-to-face.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
@@ -8969,10 +8937,7 @@ const comics: Comics = {
         name            : "Союзники. Том 3: Имаго",
         number          : "3",
         type            : "book",
-        cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-volume-3-imago.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/allies/allies-volume-3-imago.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
@@ -8991,10 +8956,7 @@ const comics: Comics = {
     comic_witch_hunt                                                        : {
         name            : "Охота на ведьм",
         type            : "book",
-        cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/witch_hunt/witch-hunt.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/crossovers/witch_hunt/witch-hunt.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
         characters      : ["character_august_van_der_holt", "character_andrey_radov", "character_besoboy", "character_igor_grom", "character_master", "character_nika_chaikina"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
@@ -9024,7 +8986,7 @@ const comics: Comics = {
         number         : "2",
         type           : "book",
         cover_file     : {
-            url         : "/src/assets/images/comics/authors_comics/jackets_and_revolvers/jackets-and-revolvers-volume-2-holiday-in-red-colors.jpg",
+            url         : `${comicImagePath}/authors_comics/jackets_and_revolvers/jackets-and-revolvers-volume-2-holiday-in-red-colors.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges         : ["range_authors_comics"],
@@ -9040,7 +9002,7 @@ const comics: Comics = {
         number          : "48",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-48-light-stripe-part-3.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-48-light-stripe-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -9055,7 +9017,7 @@ const comics: Comics = {
         number          : "48",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-48-stop-machine-part-4.jpg",
+            url         : `${comicImagePath}/meteora/meteora-48-stop-machine-part-4.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_meteora"],
@@ -9070,7 +9032,7 @@ const comics: Comics = {
         number          : "2",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-2.jpg",
+            url         : `${comicImagePath}/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -9087,10 +9049,7 @@ const comics: Comics = {
         name            : "Союзники #23 Оборотная сторона, часть 3",
         number          : "23",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-23-verso-part-3.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/allies/allies-23-verso-part-3.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_zebediah_trank", "character_kirk_oreilly", "character_murdoch_mcallister", "character_miko_van_der_holt"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
@@ -9107,7 +9066,7 @@ const comics: Comics = {
         number          : "11",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-11-2018.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-11-2018.jpg`,
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
@@ -9127,7 +9086,7 @@ const comics: Comics = {
         number          : "23",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-23-power.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-23-power.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -9146,7 +9105,7 @@ const comics: Comics = {
         number          : "23",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-23-repeat-after-me-part-2.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-23-repeat-after-me-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -9164,10 +9123,7 @@ const comics: Comics = {
         name            : "Крестовый поход #1",
         number          : "1",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade/crusade-1.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
         characters      : ["character_andrey_radov", "character_master"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
@@ -9187,7 +9143,7 @@ const comics: Comics = {
         number          : "1",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade_wolf/crusade-wolf-part-1.jpg",
+            url         : `${comicImagePath}/crossovers/crusade_wolf/crusade-wolf-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers"],
@@ -9208,7 +9164,7 @@ const comics: Comics = {
         number          : "49",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-49-light-streak-part-4.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-49-light-streak-part-4.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -9223,7 +9179,7 @@ const comics: Comics = {
         number          : "49",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-49-stop-machine-part-5.jpg",
+            url         : `${comicImagePath}/meteora/meteora-49-stop-machine-part-5.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_meteora"],
@@ -9238,7 +9194,7 @@ const comics: Comics = {
         number          : "3",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-3.jpg",
+            url         : `${comicImagePath}/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -9256,7 +9212,7 @@ const comics: Comics = {
         number          : "24",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-24-working-on-mistakes-part-1.jpg",
+            url         : `${comicImagePath}/allies/allies-24-working-on-mistakes-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
@@ -9275,7 +9231,7 @@ const comics: Comics = {
         number          : "12",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-12-2018.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-12-2018.jpg`,
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
@@ -9293,7 +9249,7 @@ const comics: Comics = {
         number          : "24",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-24-cleanup-part-1.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-24-cleanup-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -9312,7 +9268,7 @@ const comics: Comics = {
         number          : "24",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-24-repeat-after-me-part-3.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-24-repeat-after-me-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -9331,7 +9287,7 @@ const comics: Comics = {
         number          : "2",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade_wolf/crusade-wolf-part-2.jpg",
+            url         : `${comicImagePath}/crossovers/crusade_wolf/crusade-wolf-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers"],
@@ -9351,10 +9307,7 @@ const comics: Comics = {
         name            : "Крестовый поход #2",
         number          : "2",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade/crusade-2.jpg",
-            aspect_ratio: 1327 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-2.jpg`, aspect_ratio: 1327 / 2048},
         ranges          : ["range_crossovers"],
         characters      : ["character_andrey_radov", "character_besoboy", "character_master"],
         authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
@@ -9370,7 +9323,7 @@ const comics: Comics = {
     comic_major_grom_promise                                                : {
         name            : "Майор Гром. Обещание",
         type            : "single",
-        cover_file      : {url: "/src/assets/images/comics/major_grom/major-grom-promise.png", aspect_ratio: 643 / 983},
+        cover_file      : {url: `${comicImagePath}/major_grom/major-grom-promise.png`, aspect_ratio: 643 / 983},
         ranges          : ["range_major_grom", "range_bubble_legends"],
         characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_yulia_pchyolkina"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
@@ -9389,7 +9342,7 @@ const comics: Comics = {
         number          : "50",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-50-light-strip-part-5.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-50-light-strip-part-5.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium"],
@@ -9404,7 +9357,7 @@ const comics: Comics = {
         number          : "50",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-50-stop-machine-part-6.jpg",
+            url         : `${comicImagePath}/meteora/meteora-50-stop-machine-part-6.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_meteora"],
@@ -9419,7 +9372,7 @@ const comics: Comics = {
         number         : "2",
         type           : "book",
         cover_file     : {
-            url         : "/src/assets/images/comics/inadequate_galaxy/igor_ugor/igor-ugor-volume-2-caviar.jpg",
+            url         : `${comicImagePath}/inadequate_galaxy/igor_ugor/igor-ugor-volume-2-caviar.jpg`,
             aspect_ratio: 874 / 1240
         },
         ranges         : ["range_inadequate_galaxy"],
@@ -9435,7 +9388,7 @@ const comics: Comics = {
         name      : "Русские народные сказки в комиксах",
         type      : "book",
         cover_file: {
-            url         : "/src/assets/images/comics/childrens_comics/russian-folk-tales-in-comics.jpg",
+            url         : `${comicImagePath}/childrens_comics/russian-folk-tales-in-comics.jpg`,
             aspect_ratio: 1122 / 1595
         },
         ranges    : ["range_childrens_comics", "range_authors_comics"],
@@ -9448,7 +9401,7 @@ const comics: Comics = {
         number          : "1",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/thief_of_shadows/thief-of-shadows-1-hour-of-wolf.jpg",
+            url         : `${comicImagePath}/thief_of_shadows/thief-of-shadows-1-hour-of-wolf.jpg`,
             aspect_ratio: 1050 / 1600
         },
         ranges          : ["range_thief_of_shadows"],
@@ -9465,7 +9418,7 @@ const comics: Comics = {
         number          : "2",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/thief_of_shadows/thief-of-shadows-2-thief-of-shadows-vs-futurist-bandits.jpg",
+            url         : `${comicImagePath}/thief_of_shadows/thief-of-shadows-2-thief-of-shadows-vs-futurist-bandits.jpg`,
             aspect_ratio: 1050 / 1600
         },
         ranges          : ["range_thief_of_shadows"],
@@ -9483,7 +9436,7 @@ const comics: Comics = {
         number          : "25",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-25-working-on-mistakes-part-2.jpg",
+            url         : `${comicImagePath}/allies/allies-25-working-on-mistakes-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
@@ -9501,7 +9454,7 @@ const comics: Comics = {
         name            : "Крутиксы: Новогодний спецвыпуск",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/childrens_comics/krutiks/krutiks-new-year-special.jpg",
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-new-year-special.jpg`,
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
@@ -9518,7 +9471,7 @@ const comics: Comics = {
         number          : "25",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-25-cleanup-part-2.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-25-cleanup-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -9537,7 +9490,7 @@ const comics: Comics = {
         number          : "25",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-25-repeat-after-me-part-4.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-25-repeat-after-me-part-4.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -9555,10 +9508,7 @@ const comics: Comics = {
         name            : "Крестовый поход #3",
         number          : "3",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade/crusade-3.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-3.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
         characters      : ["character_andrey_radov", "character_besoboy", "character_master"],
         authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
@@ -9576,7 +9526,7 @@ const comics: Comics = {
         number          : "3",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade_wolf/crusade-wolf-part-3.jpg",
+            url         : `${comicImagePath}/crossovers/crusade_wolf/crusade-wolf-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers", "range_planeswalkers"],
@@ -9595,7 +9545,7 @@ const comics: Comics = {
         number          : "4",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-4.jpg",
+            url         : `${comicImagePath}/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-4.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -9613,7 +9563,7 @@ const comics: Comics = {
         number          : "26",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-26-working-on-mistakes-part-3.jpg",
+            url         : `${comicImagePath}/allies/allies-26-working-on-mistakes-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
@@ -9632,7 +9582,7 @@ const comics: Comics = {
         number          : "26",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-26-cleanup-part-3.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-26-cleanup-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -9651,7 +9601,7 @@ const comics: Comics = {
         number          : "26",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-26-game-of-soldiers-part-1.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-26-game-of-soldiers-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -9670,7 +9620,7 @@ const comics: Comics = {
         number          : "4",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade_wolf/crusade-wolf-part-4.jpg",
+            url         : `${comicImagePath}/crossovers/crusade_wolf/crusade-wolf-part-4.jpg`,
             aspect_ratio: 643 / 983
         },
         ranges          : ["range_crossovers"],
@@ -9689,7 +9639,7 @@ const comics: Comics = {
         number          : "5",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-5.jpg",
+            url         : `${comicImagePath}/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-5.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -9707,7 +9657,7 @@ const comics: Comics = {
         number          : "27",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-27-working-on-mistakes-part-4.jpg",
+            url         : `${comicImagePath}/allies/allies-27-working-on-mistakes-part-4.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
@@ -9728,10 +9678,7 @@ const comics: Comics = {
         name            : "Крестовый поход #4",
         number          : "4",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade/crusade-4.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-4.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
         characters      : ["character_andrey_radov", "character_besoboy", "character_vasilisa_wise", "character_master"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
@@ -9752,7 +9699,7 @@ const comics: Comics = {
         number          : "27",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-27-in-ruins-part-1.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-27-in-ruins-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -9770,7 +9717,7 @@ const comics: Comics = {
         number          : "27",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-27-game-of-soldiers-part-2.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-27-game-of-soldiers-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -9789,7 +9736,7 @@ const comics: Comics = {
         number          : "5",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade_wolf/crusade-wolf-part-5.jpg",
+            url         : `${comicImagePath}/crossovers/crusade_wolf/crusade-wolf-part-5.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers"],
@@ -9808,7 +9755,7 @@ const comics: Comics = {
         number          : "6",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-6.jpg",
+            url         : `${comicImagePath}/bubble_legends/yarkh_step_forward/yarkh-step-forward-part-6.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -9823,10 +9770,7 @@ const comics: Comics = {
     comic_crusade_epilogue                                                  : {
         name            : "Крестовый поход: Эпилог",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade/crusade-epilogue.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-epilogue.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
         characters      : ["character_andrey_radov", "character_besoboy", "character_master"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
@@ -9841,10 +9785,7 @@ const comics: Comics = {
         name            : "Союзники #28 Джали, истребительница упырей",
         number          : "28",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-28-jali-ghoul-slayer.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/allies/allies-28-jali-ghoul-slayer.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_agnes_ignis", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
@@ -9860,7 +9801,7 @@ const comics: Comics = {
         number          : "28",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-28-in-ruins-part-2.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-28-in-ruins-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -9879,7 +9820,7 @@ const comics: Comics = {
         number          : "8",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-volume-8-king-and-rogue.jpg",
+            url         : `${comicImagePath}/meteora/meteora-volume-8-king-and-rogue.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_meteora"],
@@ -9894,7 +9835,7 @@ const comics: Comics = {
         number          : "4",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/planeswalkers/planeswalkers-volume-4-battle-for-eden.jpg",
+            url         : `${comicImagePath}/planeswalkers/planeswalkers-volume-4-battle-for-eden.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_planeswalkers"],
@@ -9917,7 +9858,7 @@ const comics: Comics = {
         number          : "28",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-28-game-of-soldiers-part-3.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-28-game-of-soldiers-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -9936,7 +9877,7 @@ const comics: Comics = {
         number          : "1",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/sister_kukki/sister-kukki-part-1.jpg",
+            url         : `${comicImagePath}/bubble_legends/sister_kukki/sister-kukki-part-1.jpg`,
             aspect_ratio: 1342 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -9952,7 +9893,7 @@ const comics: Comics = {
         number          : "1",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/falcon/falcon-1-general-interest.jpg",
+            url         : `${comicImagePath}/bubble_legends/falcon/falcon-1-general-interest.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
@@ -9969,7 +9910,7 @@ const comics: Comics = {
         name      : "Плюшевый полицейский. Идеальный план",
         type      : "single",
         cover_file: {
-            url         : "/src/assets/images/comics/bubble_legends/plush-policeman-perfect-plan.jpg",
+            url         : `${comicImagePath}/bubble_legends/plush-policeman-perfect-plan.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges    : ["range_bubble_legends"],
@@ -9983,7 +9924,7 @@ const comics: Comics = {
         name      : "Чёрная рука и загадочная посылка",
         type      : "single",
         cover_file: {
-            url         : "/src/assets/images/comics/bubble_legends/black-hand-and-mysterious-package.jpg",
+            url         : `${comicImagePath}/bubble_legends/black-hand-and-mysterious-package.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges    : ["range_bubble_legends", "range_new_bubble_heroes"],
@@ -9994,49 +9935,15 @@ const comics: Comics = {
         show      : true
     },
     comic_exlibrium_blank_sheet_electronic                                  : {
-        name            : "Экслибриум. Чистый лист",
-        type            : "book",
-        cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-blank-sheet.jpg",
-            aspect_ratio: 1004 / 1536
-        },
-        ranges          : ["range_exlibrium"],
-        characters      : ["character_damien_egorov", "character_zoya_safyanova", "character_margarita_volnova", "character_yadviga_tvirinova", "character_yanvar_tvirinov"],
-        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist", "screenwriter"]},
-                           {author_id: "author_marina_privalova", positions: ["artist"]},
-                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
-                           {author_id: "author_adela_adienova", positions: ["colorist"]},
-                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
-                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
-                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
-                           {author_id: "author_oksana_turlyay", positions: ["artist"]},
-                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
+        ...comic_exlibrium_blank_sheet,
         including_comics: ["comic_exlibrium_blank_sheet_printed"],
         previous_comics : ["comic_exlibrium_50", "comic_exlibrium_second_life_39"],
-        release_at      : {year: 2019, month: 4, day: 21},
         show            : false
     },
     comic_exlibrium_blank_sheet_printed                                     : {
-        name            : "Экслибриум. Чистый лист",
-        type            : "book",
-        cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-blank-sheet.jpg",
-            aspect_ratio: 1004 / 1536
-        },
-        ranges          : ["range_exlibrium"],
-        characters      : ["character_damien_egorov", "character_zoya_safyanova", "character_margarita_volnova", "character_yadviga_tvirinova", "character_yanvar_tvirinov"],
-        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist", "screenwriter"]},
-                           {author_id: "author_marina_privalova", positions: ["artist"]},
-                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
-                           {author_id: "author_adela_adienova", positions: ["colorist"]},
-                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
-                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
-                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
-                           {author_id: "author_oksana_turlyay", positions: ["artist"]},
-                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
+        ...comic_exlibrium_blank_sheet,
         contained_comics: ["comic_exlibrium_blank_sheet_electronic"],
         previous_comics : ["comic_exlibrium_volume_9", "comic_exlibrium_second_life_39"],
-        release_at      : {year: 2019, month: 4, day: 21},
         show            : true
     },
     comic_besoboy_vol_2_volume_4                                            : {
@@ -10044,7 +9951,7 @@ const comics: Comics = {
         number          : "4",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-volume-4-counting-on.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-volume-4-counting-on.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -10065,7 +9972,7 @@ const comics: Comics = {
         number          : "5",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-volume-5-will-of-dead.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-volume-5-will-of-dead.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -10083,10 +9990,7 @@ const comics: Comics = {
         name            : "Союзники #29 Падение Голиафа",
         number          : "29",
         type            : "single",
-        cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-29-fall-of-goliath.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/allies/allies-29-fall-of-goliath.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
         characters      : ["character_august_van_der_holt", "character_agnes_ignis", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_victoria_vinogradova", positions: ["colorist"]},
@@ -10103,7 +10007,7 @@ const comics: Comics = {
         number          : "29",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-29-heart-to-heart.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-29-heart-to-heart.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -10120,10 +10024,7 @@ const comics: Comics = {
         name            : "Союзники. Том 4: Без ума",
         number          : "4",
         type            : "book",
-        cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-volume-4-crazy.jpg",
-            aspect_ratio: 1004 / 1535
-        },
+        cover_file      : {url: `${comicImagePath}/allies/allies-volume-4-crazy.jpg`, aspect_ratio: 1004 / 1535},
         ranges          : ["range_allies"],
         characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
@@ -10140,7 +10041,7 @@ const comics: Comics = {
         number          : "29",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-29-game-of-soldiers-part-4.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-29-game-of-soldiers-part-4.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -10157,7 +10058,7 @@ const comics: Comics = {
     comic_anna_input                                                        : {
         name       : "АННА. Input",
         type       : "single",
-        cover_file : {url: "/src/assets/images/comics/bubble_legends/anna/anna-input.jpg", aspect_ratio: 1339 / 2048},
+        cover_file : {url: `${comicImagePath}/bubble_legends/anna/anna-input.jpg`, aspect_ratio: 1339 / 2048},
         ranges     : ["range_bubble_legends"],
         authors    : [{author_id: "author_lada_akishina", positions: ["colorist"]},
                       {author_id: "author_ekaterina_ovchinnikova", positions: ["artist"]},
@@ -10169,7 +10070,7 @@ const comics: Comics = {
     comic_cage_split                                                        : {
         name      : "Клетка. Раскол",
         type      : "single",
-        cover_file: {url: "/src/assets/images/comics/bubble_legends/cage-split.jpg", aspect_ratio: 1339 / 2048},
+        cover_file: {url: `${comicImagePath}/bubble_legends/cage-split.jpg`, aspect_ratio: 1339 / 2048},
         ranges    : ["range_bubble_legends"],
         authors   : [{author_id: "author_alexander_malyshev", positions: ["artist"]},
                      {author_id: "author_evgeniy_aisberg", positions: ["screenwriter"]},
@@ -10181,7 +10082,7 @@ const comics: Comics = {
         name            : "Импульс. Голос героя",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_legends/impulse/impulse-heros-voice.jpg",
+            url         : `${comicImagePath}/bubble_legends/impulse/impulse-heros-voice.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
@@ -10198,7 +10099,7 @@ const comics: Comics = {
         number          : "8",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-volume-8-revolution.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-volume-8-revolution.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_exlibrium"],
@@ -10213,7 +10114,7 @@ const comics: Comics = {
         number          : "4",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-volume-4-loki-method.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-volume-4-loki-method.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_igor_grom"],
@@ -10232,7 +10133,7 @@ const comics: Comics = {
         number          : "1",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-2-chapter-1.jpg",
+            url         : `${comicImagePath}/bubble_manga/tagar/tagar-volume-2-chapter-1.jpg`,
             aspect_ratio: 1213 / 1717
         },
         ranges          : ["range_authors_comics", "range_bubble_manga"],
@@ -10249,7 +10150,7 @@ const comics: Comics = {
         number          : "2",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-2-chapter-2.jpg",
+            url         : `${comicImagePath}/bubble_manga/tagar/tagar-volume-2-chapter-2.jpg`,
             aspect_ratio: 1213 / 1717
         },
         ranges          : ["range_authors_comics", "range_bubble_manga"],
@@ -10266,7 +10167,7 @@ const comics: Comics = {
         number          : "3",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-2-chapter-3.jpg",
+            url         : `${comicImagePath}/bubble_manga/tagar/tagar-volume-2-chapter-3.jpg`,
             aspect_ratio: 1213 / 1717
         },
         ranges          : ["range_authors_comics", "range_bubble_manga"],
@@ -10283,7 +10184,7 @@ const comics: Comics = {
         number          : "4",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-2-chapter-4.jpg",
+            url         : `${comicImagePath}/bubble_manga/tagar/tagar-volume-2-chapter-4.jpg`,
             aspect_ratio: 1213 / 1717
         },
         ranges          : ["range_authors_comics", "range_bubble_manga"],
@@ -10300,7 +10201,7 @@ const comics: Comics = {
         number          : "5",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-2-chapter-5.jpg",
+            url         : `${comicImagePath}/bubble_manga/tagar/tagar-volume-2-chapter-5.jpg`,
             aspect_ratio: 1213 / 1717
         },
         ranges          : ["range_authors_comics", "range_bubble_manga"],
@@ -10316,10 +10217,7 @@ const comics: Comics = {
         name            : "Тагар. Том 2",
         number          : "2",
         type            : "book",
-        cover_file      : {
-            url         : "/src/assets/images/comics/bubble_manga/tagar/tagar-volume-2.jpg",
-            aspect_ratio: 1344 / 2048
-        },
+        cover_file      : {url: `${comicImagePath}/bubble_manga/tagar/tagar-volume-2.jpg`, aspect_ratio: 1344 / 2048},
         ranges          : ["range_authors_comics", "range_bubble_manga"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_anna_sergeeva", positions: ["screenwriter"]}],
@@ -10334,7 +10232,7 @@ const comics: Comics = {
         number          : "30",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-30-reaper-of-storm-part-1.jpg",
+            url         : `${comicImagePath}/allies/allies-30-reaper-of-storm-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
@@ -10353,7 +10251,7 @@ const comics: Comics = {
         number          : "30",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-30-riot-part-1.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-30-riot-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -10372,7 +10270,7 @@ const comics: Comics = {
         number          : "30",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-30-guys-from-our-yard.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-30-guys-from-our-yard.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -10390,10 +10288,7 @@ const comics: Comics = {
         name            : "Союзники. Том 5: Оборотная сторона",
         number          : "5",
         type            : "book",
-        cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-volume-5-back-side.jpg",
-            aspect_ratio: 1004 / 1535
-        },
+        cover_file      : {url: `${comicImagePath}/allies/allies-volume-5-back-side.jpg`, aspect_ratio: 1004 / 1535},
         ranges          : ["range_allies"],
         characters      : ["character_arthur_huxley", "character_bulat_gadzhiev", "character_jessie_rodriguez", "character_joshua_donato", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
@@ -10411,7 +10306,7 @@ const comics: Comics = {
         number          : "31",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-31-reaper-of-storm-part-2.jpg",
+            url         : `${comicImagePath}/allies/allies-31-reaper-of-storm-part-2.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_allies"],
@@ -10430,7 +10325,7 @@ const comics: Comics = {
         number          : "31",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-31-riot-part-2.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-31-riot-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -10449,7 +10344,7 @@ const comics: Comics = {
         number          : "31",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-31-burn-burn-clear-part-1.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-31-burn-burn-clear-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -10467,7 +10362,7 @@ const comics: Comics = {
         name      : "Не буди лихо. Четырехлистник",
         type      : "single",
         cover_file: {
-            url         : "/src/assets/images/comics/bubble_legends/dont-be-reckless-quatrefoil.jpg",
+            url         : `${comicImagePath}/bubble_legends/dont-be-reckless-quatrefoil.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges    : ["range_bubble_legends"],
@@ -10482,7 +10377,7 @@ const comics: Comics = {
         number          : "32",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-32-riot-part-3.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-32-riot-part-3.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -10501,7 +10396,7 @@ const comics: Comics = {
         number          : "32",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-32-burn-burn-clear-part-2.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-32-burn-burn-clear-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
@@ -10519,7 +10414,7 @@ const comics: Comics = {
         number          : "32",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-32-price-of-forgiveness-part-1.jpg",
+            url         : `${comicImagePath}/allies/allies-32-price-of-forgiveness-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
@@ -10538,7 +10433,7 @@ const comics: Comics = {
         number          : "33",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-33-price-of-forgiveness-part-2.jpg",
+            url         : `${comicImagePath}/allies/allies-33-price-of-forgiveness-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
@@ -10555,10 +10450,7 @@ const comics: Comics = {
     comic_memento_mori_call_of_void                                         : {
         name      : "Memento Mori. Зов пустоты",
         type      : "single",
-        cover_file: {
-            url         : "/src/assets/images/comics/bubble_legends/memento-mori-call-of-void.jpg",
-            aspect_ratio: 1339 / 2048
-        },
+        cover_file: {url: `${comicImagePath}/bubble_legends/memento-mori-call-of-void.jpg`, aspect_ratio: 1339 / 2048},
         ranges    : ["range_bubble_legends"],
         authors   : [{author_id: "author_andrey_tevlyukov", positions: ["screenwriter"]},
                      {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
@@ -10571,7 +10463,7 @@ const comics: Comics = {
         number          : "6",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/besoboy_vol_2/besoboy-vol-2-volume-6-cleanup.jpg",
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-volume-6-cleanup.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_besoboy_vol_2"],
@@ -10593,7 +10485,7 @@ const comics: Comics = {
         number          : "5",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/igor_grom/igor-grom-volume-5-repeat-after-me.jpg",
+            url         : `${comicImagePath}/igor_grom/igor-grom-volume-5-repeat-after-me.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_igor_grom"],
@@ -10612,7 +10504,7 @@ const comics: Comics = {
         number          : "0",
         type            : "single",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium_second_life/exlibrium-second-life.jpg",
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life.jpg`,
             aspect_ratio: 706 / 1080
         },
         ranges          : ["range_exlibrium_second_life"],
@@ -10629,7 +10521,7 @@ const comics: Comics = {
     comic_crusade                                                           : {
         name            : "Крестовый поход",
         type            : "book",
-        cover_file      : {url: "/src/assets/images/comics/crossovers/crusade/crusade.jpg", aspect_ratio: 1000 / 1531},
+        cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade.jpg`, aspect_ratio: 1000 / 1531},
         ranges          : ["range_crossovers"],
         characters      : ["character_august_van_der_holt", "character_andrey_radov", "character_balor", "character_besoboy", "character_bulat_gadzhiev", "character_vasilisa_wise", "character_jessie_rodriguez", "character_joshua_donato", "character_diana_de_maridor", "character_zebediah_trank", "character_koschey", "character_ksenia_radova", "character_lotta_lemke", "character_master", "character_nika_chaikina", "character_pavel_ocheredko", "character_gray_wolf", "character_black_dog", "character_shmyg", "character_yana"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
@@ -10648,7 +10540,7 @@ const comics: Comics = {
         name            : "Крестовый поход: Волк",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/crossovers/crusade_wolf/crusade-wolf.jpg",
+            url         : `${comicImagePath}/crossovers/crusade_wolf/crusade-wolf.jpg`,
             aspect_ratio: 1003 / 1536
         },
         ranges          : ["range_crossovers"],
@@ -10670,7 +10562,7 @@ const comics: Comics = {
         number          : "9",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/exlibrium/exlibrium-volume-9-light-streak.jpg",
+            url         : `${comicImagePath}/exlibrium/exlibrium-volume-9-light-streak.jpg`,
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_exlibrium"],
@@ -10685,7 +10577,7 @@ const comics: Comics = {
         number          : "9",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/meteora/meteora-volume-9-stop-machine.jpg",
+            url         : `${comicImagePath}/meteora/meteora-volume-9-stop-machine.jpg`,
             aspect_ratio: 706 / 1080
         },
         ranges          : ["range_meteora"],
@@ -10700,7 +10592,7 @@ const comics: Comics = {
         number          : "6",
         type            : "book",
         cover_file      : {
-            url         : "/src/assets/images/comics/allies/allies-volume-6-working-on-mistakes.jpg",
+            url         : `${comicImagePath}/allies/allies-volume-6-working-on-mistakes.jpg`,
             aspect_ratio: 643 / 982
         },
         ranges          : ["range_allies"],
@@ -10736,20 +10628,14 @@ const comics: Comics = {
         show            : true
     },
     comic_balor_and_yana_dream_catcher_electronic                           : {
-        name            : "Балор и Яна. Ловец снов",
-        type            : "book",
-        ranges          : ["range_bubble_legends"],
-        including_comics: ["comic_balor_and_yana_dream_catcher_book"],
-        previous_comics : ["comic_besoboy_50"],
-        release_at      : {year: 2019, month: 10, day: 3}
+        ...comic_balor_and_yana_dream_catcher,
+        including_comics: ["comic_balor_and_yana_dream_catcher_printed"],
+        previous_comics : ["comic_besoboy_50"]
     },
-    comic_balor_and_yana_dream_catcher_book                                 : {
-        name            : "Балор и Яна. Ловец снов",
-        type            : "book",
-        ranges          : ["range_bubble_legends"],
+    comic_balor_and_yana_dream_catcher_printed                              : {
+        ...comic_balor_and_yana_dream_catcher,
         contained_comics: ["comic_balor_and_yana_dream_catcher_electronic"],
-        previous_comics : ["comic_besoboy_volume_9"],
-        release_at      : {year: 2019, month: 10, day: 3}
+        previous_comics : ["comic_besoboy_volume_9"]
     },
     comic_besoboy_vol_2_33                                                  : {
         name            : "Бесобой Vol.2 #33 Ва-банк, часть 1",
@@ -14121,7 +14007,7 @@ const comics: Comics = {
         next_comics    : ["comic_special_volkov_inferno_single", "comic_special_volkov_inferno_book", "comic_yablochny_saved_single", "comic_yablochny_saved_book"],
         release_at     : {year: 2023, month: 7, day: 31}
     },
-    // Infinix: Город Героев        - -- --- ----
+    // Infinix: Город Героев - -- --- ----
     // Тагар. Том 5. №3 - 5 дек 2023
     // Реки №4. Страха нет. Часть 4 - 12 дек 2023
     // Майор Игорь Гром №27 - 22 дек 2023
