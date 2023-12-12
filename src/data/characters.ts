@@ -309,6 +309,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/characters/image/8f37b5097710723da4185f06e2a69a0d.png",
         link_to_bubble_website: "https://bubble.ru/characters/152-ilya-kosygin"
     },
+    character_inga_shelkowitz            : {
+        full_name             : "Инга Шелковиц",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/0291391836d94b8214c2b6c3b263b487__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/2af6d3225fbf0e0837336b3761fd811f.png",
+        link_to_bubble_website: "https://bubble.ru/characters/54-inga-shelkovits"
+    },
     character_irina_charlotte            : {
         full_name             : "Ирина \"Шарлотта\"",
         link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/6fb4a8a75b3e47883173b50f423f6573__168x168.jpg.webp",
@@ -327,6 +333,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/characters/image/096b69b46b94a39772f427d4feb48093.png",
         link_to_bubble_website: "https://bubble.ru/characters/156-kigal"
     },
+    character_kira                       : {
+        full_name             : "Кира",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/f6493b826db9e4a39f0db5f881900d74__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/49d918c4d87da979a690af567cab7bfe.png",
+        link_to_bubble_website: "https://bubble.ru/characters/58-kira"
+    },
     character_kirk_oreilly               : {
         full_name             : "Кирк О'Райли",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/ee001af071f207762b8e349e3f914e50__168x168.png.webp",
@@ -338,6 +350,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/536bfba002d07ef83b779c538f812f0b__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/7235bcd8f0e3c97f4feb711af44751cc.png",
         link_to_bubble_website: "https://bubble.ru/characters/60-koroleva-gnili"
+    },
+    character_kostya_kozlov              : {
+        full_name             : "Костя Козлов",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/ce317f374a90d0f4cf253018a7027ea3__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/3471c00762a4b897428c0ff8ca1c7cd3.png",
+        link_to_bubble_website: "https://bubble.ru/characters/165-kostya-kozlov"
     },
     character_cocytus                    : {
         full_name             : "Коцит",
@@ -363,11 +381,23 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/73067ad82ed2640923bb42f55b87ccb8.png",
         link_to_bubble_website: "https://bubble.ru/characters/62-kuth"
     },
+    character_lavrenty_pavlovich         : {
+        full_name             : "Лаврентий Павлович",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/5831e68b0963789bb8ae4a29215ef8b5__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/0df2eb2dc04badcfd45abbedfcacf2d8.png",
+        link_to_bubble_website: "https://bubble.ru/characters/63-lavrentii-pavlovich"
+    },
     character_lena_pyatkina              : {
         full_name             : "Лена Пяткина",
         link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/4017f195b9a96ccff632a7d8f0e695c1__168x168.jpg.webp",
         link_to_bubble_image  : "https://static.bubble.ru/characters/image/a311891182414e3affd940a72f1c93ce.png",
         link_to_bubble_website: "https://bubble.ru/characters/157-lena-pyatkina"
+    },
+    character_lisa                       : {
+        full_name             : "Лиза",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/469dbacb0354643f72e592d294f07bbd__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/98dce6a09a49f8dd7a997a85d8b2053f.png",
+        link_to_bubble_website: "https://bubble.ru/characters/141-liza"
     },
     character_lilith                     : {
         full_name             : "Лилит",
@@ -392,6 +422,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/64ef8fd0b3042c8f721d50b7e66f4e00__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/8b12f6640090ff68ae8c821e090298ed.png",
         link_to_bubble_website: "https://bubble.ru/characters/65-lotta-lemke"
+    },
+    character_shaggy                     : {
+        full_name             : "Лохматый",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/df03c1d75a55a9c2131c4e76742963d8__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/501b6354ee7d448a751543b68ecb94d2.png",
+        link_to_bubble_website: "https://bubble.ru/characters/167-lohmatyj"
     },
     character_moon                       : {
         full_name             : "Луна",
@@ -498,6 +534,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/f6139f13f89894799445280c011b1c69__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/6a75bb02564d6545259e8acf56987797.png",
         link_to_bubble_website: "https://bubble.ru/characters/129-printsessy"
+    },
+    character_rada                       : {
+        full_name             : "Рада",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/6d29b0ff74ebce2a615f2b3806f33582__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/9f6e6192ff706816c4506c2bc0ef5b65.png",
+        link_to_bubble_website: "https://bubble.ru/characters/166-rada"
     },
     character_rackshore                  : {
         full_name             : "Ракшор",
@@ -673,11 +715,23 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/characters/image/ba1013a859cda3ee8a1cc3e5017e7c39.png",
         link_to_bubble_website: "https://bubble.ru/characters/134-yurik"
     },
+    character_jaakko                     : {
+        full_name             : "Яакко",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/0d7acd76a1c51e2d2f6ec51729e42f82__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/cc70071e6828ee871bfded111fa841b4.png",
+        link_to_bubble_website: "https://bubble.ru/characters/168-yaakko"
+    },
     character_yadviga_tvirinova          : {
         full_name             : "Ядвига Твиринова",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/45ae373d00db1af1afe3e7f3b9ba3adb__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/2a2ec31ee6ec941ec98899ad8c7c4fbd.png",
         link_to_bubble_website: "https://bubble.ru/characters/108-yadviga-tvirinova"
+    },
+    character_yakov                      : {
+        full_name             : "Яков",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/951c7a613e85e8858c4ebcda5c511191__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/888febe1beb9d2c24ce5a7eb3974b749.png",
+        link_to_bubble_website: "https://bubble.ru/characters/109-yakov"
     },
     character_yana                       : {
         full_name             : "Яна",

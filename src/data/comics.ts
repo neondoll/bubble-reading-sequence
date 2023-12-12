@@ -133,6 +133,26 @@ const comic_major_grom_1939: Comic = {
                  {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
     release_at: {year: 2019, month: 10, day: 21}
 };
+const comic_quarantine_book: Comic = {
+    name      : "Карантинная книга",
+    type      : "book",
+    cover_file: {url: `${comicImagePath}/besoboy_vol_2/quarantine-book.jpg`, aspect_ratio: 1444 / 2048},
+    ranges    : ["range_besoboy_vol_2"],
+    characters: ["character_balor", "character_borj", "character_satan", "character_tanachia_relentless", "character_black_dog", "character_yana"],
+    authors   : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]}],
+    release_at: {year: 2020, month: 6, day: 1}
+};
+const comic_allies_special_idyll: Comic = {
+    name      : "Союзники. Спецвыпуск. Идиллия",
+    type      : "single",
+    cover_file: {url: `${comicImagePath}/allies/allies-special-idyll.jpg`, aspect_ratio: 1339 / 2048},
+    ranges    : ["range_allies"],
+    characters: ["character_arthur_huxley", "character_jessie_rodriguez"],
+    authors   : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                 {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                 {author_id: "author_irina_ivanova", positions: ["artist", "colorist"]}],
+    release_at: {year: 2023, month: 2, day: 6}
+};
 
 const comics: Comics = {
     comic_besoboy_1                                                         : {
@@ -11320,307 +11340,550 @@ const comics: Comics = {
         name            : "Бесобой Vol.2 #39 Убить человека",
         number          : "39",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-39-kill-man.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_besoboy", "character_borj", "character_lilith", "character_semiaza", "character_tanachia_relentless", "character_black_dog", "character_yarkh_deadly"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_9"],
         previous_comics : ["comic_besoboy_vol_2_38"],
         next_comics     : ["comic_besoboy_vol_2_40"],
-        release_at      : {year: 2020, month: 4, day: 16}
+        release_at      : {year: 2020, month: 4, day: 16},
+        show            : false
     },
     comic_exlibrium_second_life_5                                           : {
         name            : "Экслибриум. Жизнь вторая #05 Купель Дракона, часть 1",
         number          : "5",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-05-dragon-font-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_apollo", "character_kira", "character_lena_pyatkina"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_2"],
         previous_comics : ["comic_exlibrium_second_life_4"],
         next_comics     : ["comic_exlibrium_second_life_6"],
-        release_at      : {year: 2020, month: 4, day: 28}
+        release_at      : {year: 2020, month: 4, day: 28},
+        show            : false
     },
     comic_exlibrium_second_life_volume_1                                    : {
-        name            : "Экслибриум. Жизнь вторая. Том 1. Безвозвратно",
+        name            : "Экслибриум. Жизнь вторая. Том 1: Безвозвратно",
         number          : "1",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-volume-1-irretrievably.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_agatha", "character_alexander_alinovsky", "character_angelina_evgenievna", "character_inga_shelkowitz", "character_liliya_romanova", "character_matvey_koretsky", "character_tatyana_aleksandrovna"],
+        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         contained_comics: ["comic_exlibrium_second_life", "comic_exlibrium_second_life_1", "comic_exlibrium_second_life_2", "comic_exlibrium_second_life_3", "comic_exlibrium_second_life_4"],
         previous_comics : ["comic_exlibrium_volume_9"],
         next_comics     : ["comic_exlibrium_second_life_volume_2"],
-        release_at      : {year: 2020, month: 4, day: 30}
+        release_at      : {year: 2020, month: 4, day: 30},
+        show            : true
     },
     comic_igor_grom_39                                                      : {
         name            : "Игорь Гром #39 Вне закона, часть 5",
         number          : "39",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-39-outside-law-part-5.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_ilya_kosygin"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_8"],
         previous_comics : ["comic_igor_grom_38"],
         next_comics     : ["comic_igor_grom_40"],
-        release_at      : {year: 2020, month: 4}
+        release_at      : {year: 2020, month: 4},
+        show            : false
     },
     comic_allies_40                                                         : {
         name            : "Союзники #40 Цепная реакция, часть 3",
         number          : "40",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/allies/allies-40-chain-reaction-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_jessie_rodriguez", "character_joshua_donato", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina", "character_amber"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_8"],
         previous_comics : ["comic_allies_39"],
         next_comics     : ["comic_allies_41"],
-        release_at      : {year: 2020, month: 5, day: 1}
+        release_at      : {year: 2020, month: 5, day: 1},
+        show            : false
     },
     comic_plague_doctor_1                                                   : {
         name            : "Чумной Доктор",
         number          : "1",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/plague_doctor/plague-doctor.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_plague_doctor"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]}],
         including_comics: ["comic_plague_doctor_volume_1"],
         next_comics     : ["comic_plague_doctor_2"],
-        release_at      : {year: 2020, month: 5, day: 4}
+        release_at      : {year: 2020, month: 5, day: 4},
+        show            : false
     },
     comic_igor_grom_40                                                      : {
         name            : "Игорь Гром #40 Мёртвая вода, часть 1",
         number          : "40",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-40-dead-water-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_phlegethon"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_9"],
         previous_comics : ["comic_igor_grom_39"],
         next_comics     : ["comic_igor_grom_41"],
-        release_at      : {year: 2020, month: 5, day: 12}
+        release_at      : {year: 2020, month: 5, day: 12},
+        show            : false
     },
     comic_besoboy_vol_2_40                                                  : {
         name            : "Бесобой Vol.2 #40 Смерть и ангел, часть 1",
         number          : "40",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-40-death-and-angel-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_balor", "character_lilith", "character_satan", "character_semiaza", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_9"],
         previous_comics : ["comic_besoboy_vol_2_39"],
         next_comics     : ["comic_besoboy_vol_2_41"],
-        release_at      : {year: 2020, month: 5, day: 18}
+        release_at      : {year: 2020, month: 5, day: 18},
+        show            : false
     },
     comic_exlibrium_second_life_6                                           : {
         name            : "Экслибриум. Жизнь вторая #06 Купель Дракона, часть 2",
         number          : "6",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-06-dragon-font-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_apollo", "character_kira", "character_lena_pyatkina"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_2"],
         previous_comics : ["comic_exlibrium_second_life_5"],
         next_comics     : ["comic_exlibrium_second_life_7"],
-        release_at      : {year: 2020, month: 5, day: 28}
+        release_at      : {year: 2020, month: 5, day: 28},
+        show            : false
     },
     comic_allies_41                                                         : {
         name            : "Союзники #41 Цепная реакция, часть 4",
         number          : "41",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/allies/allies-41-chain-reaction-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_amber"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_8"],
         previous_comics : ["comic_allies_40"],
         next_comics     : ["comic_allies_special_idyll_single"],
-        release_at      : {year: 2020, month: 6, day: 1}
+        release_at      : {year: 2020, month: 6, day: 1},
+        show            : false
     },
-    comic_editor                                                            : {
+    comic_editor_signal_instance                                            : {
         name      : "Редактор: Сигнальный экземпляр",
         type      : "single",
-        ranges    : ["range_bubble_legends", "range_new_bubble_heroes"],
-        release_at: {year: 2020, month: 6, day: 1}
+        cover_file: {url: `${comicImagePath}/bubble_legends/editor-signal-instance.jpg`, aspect_ratio: 1339 / 2048},
+        ranges    : ["range_bubble_legends"],
+        authors   : [{author_id: "author_andrey_rodin", positions: ["artist"]},
+                     {author_id: "author_igor_kislitsyn", positions: ["screenwriter"]},
+                     {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
+        release_at: {year: 2020, month: 6, day: 1},
+        show      : true
     },
-    comic_quarantine_book_single                                            : {
-        name            : "Карантинная книга",
-        type            : "single",
-        ranges          : ["range_besoboy_vol_2"],
-        including_comics: ["comic_quarantine_book_book"],
+    comic_quarantine_book_electronic                                        : {
+        ...comic_quarantine_book,
+        including_comics: ["comic_quarantine_book_printed"],
         previous_comics : ["comic_besoboy_vol_2_50"],
-        release_at      : {year: 2020, month: 6, day: 1}
+        show            : false
     },
-    comic_quarantine_book_book                                              : {
-        name            : "Карантинная книга",
-        type            : "book",
-        ranges          : ["range_besoboy_vol_2"],
-        contained_comics: ["comic_quarantine_book_single"],
+    comic_quarantine_book_printed                                           : {
+        ...comic_quarantine_book,
+        contained_comics: ["comic_quarantine_book_electronic"],
         previous_comics : ["comic_besoboy_vol_2_volume_11"],
-        release_at      : {year: 2020, month: 6, day: 1}
+        show            : true
     },
     comic_igor_grom_41                                                      : {
         name            : "Игорь Гром #41 Мёртвая вода, часть 2",
         number          : "41",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-41-dead-water-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_phlegethon"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_9"],
         previous_comics : ["comic_igor_grom_40"],
         next_comics     : ["comic_igor_grom_42"],
-        release_at      : {year: 2020, month: 6, day: 10}
+        release_at      : {year: 2020, month: 6, day: 10},
+        show            : false
     },
     comic_besoboy_vol_2_41                                                  : {
         name            : "Бесобой Vol.2 #41 Смерть и ангел, часть 2",
         number          : "41",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-41-death-and-angel-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_balor", "character_queen_of_rot", "character_lilith", "character_satan", "character_semiaza", "character_black_dog", "character_yana"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_9"],
         previous_comics : ["comic_besoboy_vol_2_40"],
         next_comics     : ["comic_besoboy_vol_2_42"],
-        release_at      : {year: 2020, month: 6, day: 17}
+        release_at      : {year: 2020, month: 6, day: 17},
+        show            : false
     },
     comic_exlibrium_second_life_7                                           : {
         name            : "Экслибриум. Жизнь вторая #07 Купель Дракона, часть 3",
         number          : "7",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-07-dragon-font-part-3.jpg`,
+            aspect_ratio: 1046 / 1600
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_apollo", "character_kira", "character_lena_pyatkina"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_adela_adienova", positions: ["colorist"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_2"],
         previous_comics : ["comic_exlibrium_second_life_6"],
         next_comics     : ["comic_exlibrium_second_life_8"],
-        release_at      : {year: 2020, month: 6, day: 28}
+        release_at      : {year: 2020, month: 6, day: 28},
+        show            : false
     },
     comic_devilry_1                                                         : {
         name            : "Нечистая Сила #01 Заложные покойники",
         number          : "1",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/devilry/devilry-01-hostage-dead.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
+        characters      : ["character_kostya_kozlov", "character_shaggy", "character_rada", "character_jaakko"],
+        authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_devilry"],
         next_comics     : ["comic_devilry_2"],
-        release_at      : {year: 2020, month: 7, day: 1}
+        release_at      : {year: 2020, month: 7, day: 1},
+        show            : false
     },
-    comic_chosen_one_of_the_moon_1                                          : {
+    comic_chosen_of_moon_1                                                  : {
         name            : "Избранница Луны, глава 1",
         number          : "1",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_manga/chosen_of_moon/chosen-of-moon-chapter-1.jpg`,
+            aspect_ratio: 1447 / 2048
+        },
         ranges          : ["range_bubble_manga"],
-        including_comics: ["comic_chosen_one_of_the_moon"],
-        next_comics     : ["comic_chosen_one_of_the_moon_2"],
-        release_at      : {year: 2020, month: 7, day: 1}
+        authors         : [{author_id: "author_gilbert_brissen", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_rerekina", positions: ["artist"]}],
+        including_comics: ["comic_chosen_of_moon"],
+        next_comics     : ["comic_chosen_of_moon_2"],
+        release_at      : {year: 2020, month: 7, day: 1},
+        show            : false
     },
     comic_igor_grom_volume_7                                                : {
-        name            : "Игорь Гром том 7: Гори-гори ясно",
+        name            : "Игорь Гром. Том 7: Гори-гори ясно",
         number          : "7",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-volume-7-burn-clear.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         contained_comics: ["comic_igor_grom_31", "comic_igor_grom_32", "comic_igor_grom_33", "comic_igor_grom_34", "comic_major_grom_promise"],
         previous_comics : ["comic_igor_grom_volume_6"],
         next_comics     : ["comic_igor_grom_volume_8"],
-        release_at      : {year: 2020, month: 7, day: 12}
+        release_at      : {year: 2020, month: 7, day: 12},
+        show            : true
     },
     comic_igor_grom_42                                                      : {
         name            : "Игорь Гром #42 Мёртвая вода, часть 3",
         number          : "42",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-42-dead-water-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_styx", "character_phlegethon"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_9"],
         previous_comics : ["comic_igor_grom_41"],
         next_comics     : ["comic_igor_grom_43"],
-        release_at      : {year: 2020, month: 7, day: 15}
+        release_at      : {year: 2020, month: 7, day: 15},
+        show            : false
     },
     comic_besoboy_vol_2_42                                                  : {
         name            : "Бесобой Vol.2 #42 Их легионы",
         number          : "42",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-42-their-legions.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_antichrist", "character_besoboy", "character_lilith", "character_satan", "character_tanachia_relentless", "character_shmyg", "character_yarkh_deadly"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_9"],
         previous_comics : ["comic_besoboy_vol_2_41"],
         next_comics     : ["comic_besoboy_vol_2_43"],
-        release_at      : {year: 2020, month: 7, day: 20}
+        release_at      : {year: 2020, month: 7, day: 20},
+        show            : false
     },
     comic_allies_volume_8                                                   : {
-        name            : "Союзники том 8: Цепная реакция",
+        name            : "Союзники. Том 8: Цепная реакция",
         number          : "8",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/allies/allies-volume-8-chain-reaction.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         contained_comics: ["comic_allies_34", "comic_allies_35", "comic_allies_36", "comic_allies_37", "comic_allies_38", "comic_allies_39", "comic_allies_40", "comic_allies_41"],
         previous_comics : ["comic_allies_volume_7"],
         next_comics     : ["comic_allies_special_idyll_book"],
-        release_at      : {year: 2020, month: 7, day: 24}
+        release_at      : {year: 2020, month: 7, day: 24},
+        show            : true
     },
     comic_exlibrium_second_life_8                                           : {
         name            : "Экслибриум. Жизнь вторая #08 Замкнутый",
         number          : "8",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-08-closed.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_lavrenty_pavlovich", "character_tatyana_aleksandrovna", "character_yadviga_tvirinova", "character_yakov", "character_yanvar_tvirinov"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_2"],
         previous_comics : ["comic_exlibrium_second_life_7"],
         next_comics     : ["comic_exlibrium_second_life_9"],
-        release_at      : {year: 2020, month: 7, day: 28}
+        release_at      : {year: 2020, month: 7, day: 28},
+        show            : false
     },
     comic_devilry_2                                                         : {
         name            : "Нечистая Сила #02 Дорогая подачка",
         number          : "2",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/devilry/devilry-02-expensive-handout.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
+        characters      : ["character_kostya_kozlov", "character_shaggy", "character_rada", "character_jaakko"],
+        authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_devilry"],
         previous_comics : ["comic_devilry_1"],
         next_comics     : ["comic_devilry_3"],
-        release_at      : {year: 2020, month: 8}
+        release_at      : {year: 2020, month: 8},
+        show            : false
     },
     comic_community_1                                                       : {
         name            : "Громада",
         number          : "1",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/community/community-1.jpg`, aspect_ratio: 1046 / 1600},
         ranges          : ["range_bubble_legends", "range_childrens_comics"],
+        authors         : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_alisa_vedernikova", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["artist"]}],
         including_comics: ["comic_community"],
         next_comics     : ["comic_community_2"],
-        release_at      : {year: 2020, month: 8, day: 3}
+        release_at      : {year: 2020, month: 8, day: 3},
+        show            : false
     },
     comic_mir_1                                                             : {
         name            : "МИР #01 Первый",
         number          : "1",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/mir/mir-01-first.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_mir"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_mir_volume_1"],
         next_comics     : ["comic_mir_2"],
-        release_at      : {year: 2020, month: 8, day: 7}
+        release_at      : {year: 2020, month: 8, day: 7},
+        show            : false
     },
     comic_mir_volume_1                                                      : {
         name            : "МИР. Том 1: Первый",
         number          : "1",
         type            : "book",
+        cover_file      : {url: `${comicImagePath}/mir/mir-volume-1-first.jpg`, aspect_ratio: 1338 / 2047},
         ranges          : ["range_mir"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         contained_comics: ["comic_mir_1"],
         next_comics     : ["comic_mir_volume_2"],
-        release_at      : {year: 2020, month: 8, day: 7}
+        release_at      : {year: 2020, month: 8, day: 7},
+        show            : true
     },
-    comic_chosen_one_of_the_moon_2                                          : {
+    comic_chosen_of_moon_2                                                  : {
         name            : "Избранница Луны, глава 2",
         number          : "2",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_manga/chosen_of_moon/chosen-of-moon-chapter-2.jpg`,
+            aspect_ratio: 1214 / 1718
+        },
         ranges          : ["range_bubble_manga"],
-        including_comics: ["comic_chosen_one_of_the_moon"],
-        previous_comics : ["comic_chosen_one_of_the_moon_1"],
-        next_comics     : ["comic_chosen_one_of_the_moon_3"],
-        release_at      : {year: 2020, month: 8, day: 12}
+        authors         : [{author_id: "author_gilbert_brissen", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_rerekina", positions: ["artist"]}],
+        including_comics: ["comic_chosen_of_moon"],
+        previous_comics : ["comic_chosen_of_moon_1"],
+        next_comics     : ["comic_chosen_of_moon_3"],
+        release_at      : {year: 2020, month: 8, day: 12},
+        show            : false
     },
     comic_igor_grom_43                                                      : {
         name            : "Игорь Гром #43 Мёртвая вода, часть 4",
         number          : "43",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-43-dead-water-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_phlegethon"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_9"],
         previous_comics : ["comic_igor_grom_42"],
         next_comics     : ["comic_igor_grom_44"],
-        release_at      : {year: 2020, month: 8, day: 19}
+        release_at      : {year: 2020, month: 8, day: 19},
+        show            : false
     },
     comic_besoboy_vol_2_43                                                  : {
         name            : "Бесобой Vol.2 #43 Война в Аду, часть 1",
         number          : "43",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-43-war-in-hell-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_avaddon_merciless", "character_besoboy", "character_victor_zelenin", "character_lilith", "character_rackshore", "character_tanachia_relentless", "character_yarkh_deadly"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_10"],
         previous_comics : ["comic_besoboy_vol_2_42"],
         next_comics     : ["comic_besoboy_vol_2_44"],
-        release_at      : {year: 2020, month: 8, day: 24}
+        release_at      : {year: 2020, month: 8, day: 24},
+        show            : false
     },
     comic_exlibrium_second_life_9                                           : {
         name            : "Экслибриум. Жизнь вторая #09 Щепки, часть 1",
         number          : "9",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-09-slivers-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_lisa", "character_matvey_koretsky"],
+        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_3"],
         previous_comics : ["comic_exlibrium_second_life_8"],
         next_comics     : ["comic_exlibrium_second_life_10"],
-        release_at      : {year: 2020, month: 8, day: 28}
+        release_at      : {year: 2020, month: 8, day: 28},
+        show            : false
     },
     comic_devilry_3                                                         : {
         name            : "Нечистая Сила #03 Твоё место в саду",
         number          : "3",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/devilry/devilry-03-your-place-in-garden.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_bubble_legends"],
+        characters      : ["character_kostya_kozlov", "character_shaggy", "character_rada", "character_jaakko"],
+        authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_devilry"],
         previous_comics : ["comic_devilry_2"],
         next_comics     : ["comic_devilry_4"],
-        release_at      : {year: 2020, month: 9}
+        release_at      : {year: 2020, month: 9},
+        show            : true
     },
     comic_exlibrium_second_life_volume_2                                    : {
         name            : "Экслибриум. Жизнь вторая. Том 2. Купель дракона",
@@ -11642,14 +11905,14 @@ const comics: Comics = {
         next_comics     : ["comic_besoboy_vol_2_volume_9"],
         release_at      : {year: 2020, month: 9, day: 7}
     },
-    comic_chosen_one_of_the_moon_3                                          : {
+    comic_chosen_of_moon_3                                                  : {
         name            : "Избранница Луны, глава 3",
         number          : "3",
         type            : "single",
         ranges          : ["range_bubble_manga"],
-        including_comics: ["comic_chosen_one_of_the_moon"],
-        previous_comics : ["comic_chosen_one_of_the_moon_2"],
-        next_comics     : ["comic_chosen_one_of_the_moon_4"],
+        including_comics: ["comic_chosen_of_moon"],
+        previous_comics : ["comic_chosen_of_moon_2"],
+        next_comics     : ["comic_chosen_of_moon_4"],
         release_at      : {year: 2020, month: 9, day: 10}
     },
     comic_igor_grom_volume_8                                                : {
@@ -11761,14 +12024,14 @@ const comics: Comics = {
         next_comics     : ["comic_plague_doctor_3"],
         release_at      : {year: 2020, month: 10, day: 4}
     },
-    comic_chosen_one_of_the_moon_4                                          : {
+    comic_chosen_of_moon_4                                                  : {
         name            : "Избранница Луны, глава 4",
         number          : "4",
         type            : "single",
         ranges          : ["range_bubble_manga"],
-        including_comics: ["comic_chosen_one_of_the_moon"],
-        previous_comics : ["comic_chosen_one_of_the_moon_3"],
-        next_comics     : ["comic_chosen_one_of_the_moon_5"],
+        including_comics: ["comic_chosen_of_moon"],
+        previous_comics : ["comic_chosen_of_moon_3"],
+        next_comics     : ["comic_chosen_of_moon_5"],
         release_at      : {year: 2020, month: 10, day: 9}
     },
     comic_igor_grom_45                                                      : {
@@ -11811,14 +12074,14 @@ const comics: Comics = {
         next_comics     : ["comic_mir_4"],
         release_at      : {year: 2020, month: 11, day: 3}
     },
-    comic_chosen_one_of_the_moon_5                                          : {
+    comic_chosen_of_moon_5                                                  : {
         name            : "Избранница Луны, глава 5",
         number          : "5",
         type            : "single",
         ranges          : ["range_bubble_manga"],
-        including_comics: ["comic_chosen_one_of_the_moon"],
-        previous_comics : ["comic_chosen_one_of_the_moon_4"],
-        next_comics     : ["comic_chosen_one_of_the_moon_6"],
+        including_comics: ["comic_chosen_of_moon"],
+        previous_comics : ["comic_chosen_of_moon_4"],
+        next_comics     : ["comic_chosen_of_moon_6"],
         release_at      : {year: 2020, month: 11, day: 11}
     },
     comic_besoboy_vol_2_46                                                  : {
@@ -11980,20 +12243,20 @@ const comics: Comics = {
         next_comics     : ["comic_tagar_volume_4"],
         release_at      : {year: 2020, month: 12, day: 9}
     },
-    comic_chosen_one_of_the_moon_6                                          : {
+    comic_chosen_of_moon_6                                                  : {
         name            : "Избранница Луны, глава 6",
         number          : "6",
         type            : "single",
         ranges          : ["range_bubble_manga"],
-        including_comics: ["comic_chosen_one_of_the_moon"],
-        previous_comics : ["comic_chosen_one_of_the_moon_5"],
+        including_comics: ["comic_chosen_of_moon"],
+        previous_comics : ["comic_chosen_of_moon_5"],
         release_at      : {year: 2020, month: 12, day: 18}
     },
-    comic_chosen_one_of_the_moon                                            : {
+    comic_chosen_of_moon                                                    : {
         name            : "Избранница Луны",
         type            : "book",
         ranges          : ["range_bubble_manga"],
-        contained_comics: ["comic_chosen_one_of_the_moon_1", "comic_chosen_one_of_the_moon_2", "comic_chosen_one_of_the_moon_3", "comic_chosen_one_of_the_moon_4", "comic_chosen_one_of_the_moon_5", "comic_chosen_one_of_the_moon_6"],
+        contained_comics: ["comic_chosen_of_moon_1", "comic_chosen_of_moon_2", "comic_chosen_of_moon_3", "comic_chosen_of_moon_4", "comic_chosen_of_moon_5", "comic_chosen_of_moon_6"],
         release_at      : {year: 2020, month: 12, day: 23}
     },
     comic_igor_grom_47                                                      : {
@@ -12237,7 +12500,7 @@ const comics: Comics = {
         ranges          : ["range_besoboy_vol_2"],
         including_comics: ["comic_besoboy_vol_2_volume_11"],
         previous_comics : ["comic_besoboy_vol_2_49"],
-        next_comics     : ["comic_besoboy_and_planeswalkers_new_life_electronic", "comic_quarantine_book_single"],
+        next_comics     : ["comic_besoboy_and_planeswalkers_new_life_electronic", "comic_quarantine_book_electronic"],
         release_at      : {year: 2021, month: 5, day: 13}
     },
     comic_mir_volume_4                                                      : {
@@ -12480,7 +12743,7 @@ const comics: Comics = {
         ranges          : ["range_besoboy_vol_2"],
         contained_comics: ["comic_besoboy_vol_2_47", "comic_besoboy_vol_2_48", "comic_besoboy_vol_2_49", "comic_besoboy_vol_2_50"],
         previous_comics : ["comic_besoboy_vol_2_volume_10"],
-        next_comics     : ["comic_besoboy_and_planeswalkers_new_life_printed", "comic_quarantine_book_book"],
+        next_comics     : ["comic_besoboy_and_planeswalkers_new_life_printed", "comic_quarantine_book_printed"],
         release_at      : {year: 2021, month: 9, day: 15}
     },
     comic_falcon_volume_1                                                   : {
@@ -13775,20 +14038,16 @@ const comics: Comics = {
         release_at      : {year: 2023, month: 2, day: 4}
     },
     comic_allies_special_idyll_single                                       : {
-        name            : "Союзники. Спецвыпуск. Идиллия",
-        type            : "single",
-        ranges          : ["range_allies"],
+        ...comic_allies_special_idyll,
         including_comics: ["comic_allies_special_idyll_book"],
         previous_comics : ["comic_allies_41"],
-        release_at      : {year: 2023, month: 2, day: 6}
+        show            : false
     },
     comic_allies_special_idyll_book                                         : {
-        name            : "Союзники. Спецвыпуск. Идиллия",
-        type            : "book",
-        ranges          : ["range_allies"],
+        ...comic_allies_special_idyll,
         contained_comics: ["comic_allies_special_idyll_single"],
         previous_comics : ["comic_allies_volume_8"],
-        release_at      : {year: 2023, month: 2, day: 6}
+        show            : true
     },
     comic_licorice_5                                                        : {
         name            : "Ликорис, глава 5",
