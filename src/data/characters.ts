@@ -31,6 +31,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/0132f8ada60cb5cf84d72c642241b0aa.png",
         link_to_bubble_website: "https://bubble.ru/characters/5-aleksandr-alinovskii"
     },
+    character_alexander_bednenko         : {
+        full_name             : "Александр Бедненко",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/4c09e3b4c8edb845c4313155374a1268__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/02c59febe4bf1d783049295a4a63a831.png",
+        link_to_bubble_website: "https://bubble.ru/characters/133-aleksandr-bednenko"
+    },
     character_alena_kuznetsova           : {
         full_name             : "Алёна Кузнецова",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/08babc63d1a69baa2bf0cbf302ecd812__168x168.png.webp",
@@ -522,6 +528,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/eb1c93f33b0a6e36696f4849c98375dd__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/73d3a0ad7cba6abf8dc2d19d3896067f.png",
         link_to_bubble_website: "https://bubble.ru/characters/84-svartzhel"
+    },
+    character_selena                     : {
+        full_name             : "Селена",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/d1102e9ddceb481ee414a00f42415b58__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/a7d88d597f0562b069c16cb869411590.png",
+        link_to_bubble_website: "https://bubble.ru/characters/132-selena"
     },
     character_semiaza                    : {
         full_name             : "Семиаза",

@@ -11187,31 +11187,58 @@ const comics: Comics = {
         name            : "Экслибриум. Жизнь вторая #04 Безвозвратно, часть 4",
         number          : "4",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-04-irrevocably-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_apollo", "character_lena_pyatkina"],
+        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_1"],
         previous_comics : ["comic_exlibrium_second_life_3"],
         next_comics     : ["comic_exlibrium_second_life_5"],
-        release_at      : {year: 2020, month: 3, day: 28}
+        release_at      : {year: 2020, month: 3, day: 28},
+        show            : false
     },
     comic_igor_grom_38                                                      : {
         name            : "Игорь Гром #38 Вне закона, часть 4",
         number          : "38",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/igor_grom/igor-grom-38-outside-law-part-4.jpg`,
+            aspect_ratio: 1050 / 1600
+        },
         ranges          : ["range_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_ilya_kosygin"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_igor_grom_volume_8"],
         previous_comics : ["comic_igor_grom_37"],
         next_comics     : ["comic_igor_grom_39"],
-        release_at      : {year: 2020, month: 3}
+        release_at      : {year: 2020, month: 3},
+        show            : false
     },
     comic_allies_39                                                         : {
         name            : "Союзники #39 Цепная реакция, часть 2",
         number          : "39",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/allies/allies-39-chain-reaction-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_allies"],
+        characters      : ["character_joshua_donato", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_8"],
         previous_comics : ["comic_allies_38"],
         next_comics     : ["comic_allies_40"],
-        release_at      : {year: 2020, month: 4, day: 1}
+        release_at      : {year: 2020, month: 4, day: 1},
+        show            : false
     },
     comic_monk_king_of_parties_no_more_parties                              : {
         name           : "Инок: Король вечеринок. Никаких больше вечерИНОК",
@@ -11231,36 +11258,63 @@ const comics: Comics = {
         name            : "Сокол #2 Чужие правила",
         number          : "2",
         type            : "single",
-        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/falcon/falcon-2-alien-rules.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_bubble_legends"],
         including_comics: ["comic_falcon_volume_1"],
         previous_comics : ["comic_falcon_1"],
         next_comics     : ["comic_falcon_3"],
-        release_at      : {year: 2020, month: 4, day: 12}
+        release_at      : {year: 2020, month: 4, day: 12},
+        show            : false
     },
     comic_anna_space_of_options                                             : {
         name           : "АННА. Пространство вариантов",
         type           : "single",
-        ranges         : ["range_bubble_legends", "range_new_bubble_heroes"],
+        cover_file     : {
+            url         : `${comicImagePath}/bubble_legends/anna/anna-space-of-options.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges         : ["range_bubble_legends"],
+        authors        : [{author_id: "author_lada_akishina", positions: ["colorist"]},
+                          {author_id: "author_ekaterina_ovchinnikova", positions: ["artist"]},
+                          {author_id: "author_maxim_karganov", positions: ["screenwriter"]}],
         previous_comics: ["comic_anna_input"],
-        release_at     : {year: 2020, month: 4, day: 12}
+        release_at     : {year: 2020, month: 4, day: 12},
+        show           : true
     },
     comic_impulse_premiere                                                  : {
         name            : "Импульс. Премьера",
         type            : "single",
-        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/impulse/impulse-premiere.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_bubble_legends"],
+        authors         : [{author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_denis_nechiporenko", positions: ["screenwriter"]},
+                           {author_id: "author_ivan_dovbnya", positions: ["artist"]}],
         including_comics: ["comic_impulse_volume_1"],
         previous_comics : ["comic_impulse_heros_voice"],
-        release_at      : {year: 2020, month: 4, day: 12}
+        release_at      : {year: 2020, month: 4, day: 12},
+        show            : false
     },
     comic_besoboy_vol_2_volume_7                                            : {
-        name            : "Бесобой Vol.2 том 7: Бунт",
+        name            : "Бесобой Vol.2. Том 7: Бунт",
         number          : "7",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-volume-7-riot.jpg`,
+            aspect_ratio: 1004 / 1535
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_alexander_bednenko", "character_antichrist", "character_besoboy", "character_victor_zelenin", "character_lilith", "character_rackshore", "character_selena", "character_semiaza", "character_tanachia_relentless", "character_yurik", "character_yarkh_deadly"],
         contained_comics: ["comic_besoboy_vol_2_29", "comic_besoboy_vol_2_30", "comic_besoboy_vol_2_31", "comic_besoboy_vol_2_32"],
         previous_comics : ["comic_besoboy_vol_2_volume_6"],
         next_comics     : ["comic_besoboy_vol_2_volume_8"],
-        release_at      : {year: 2020, month: 4, day: 15}
+        release_at      : {year: 2020, month: 4, day: 15},
+        show            : true
     },
     comic_besoboy_vol_2_39                                                  : {
         name            : "Бесобой Vol.2 #39 Убить человека",
