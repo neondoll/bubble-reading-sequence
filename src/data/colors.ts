@@ -51,6 +51,7 @@ const colors = {
     comic_point_of_no_return                     : "#ccff99",
     comic_sister_kukki                           : comic_new_bubble_heroes,
     comic_sister_kukki_1                         : comic_new_bubble_heroes,
+    comic_turbocarp                              : "#00f0ff",
     comic_witch_hunt,
     comic_witch_hunt_finale                      : comic_witch_hunt,
     comic_witch_hunt_prologue                    : comic_witch_hunt,
@@ -79,7 +80,6 @@ const colors = {
     range_red_fury                               : "#770202",
     range_thief_of_shadows                       : "#ffff33",
     range_time_of_raven                          : "#808080", // "#ffffff"
-    range_turbocarp                              : "#00f0ff",
     range_witch                                  : "#ff5e00"
 };
 

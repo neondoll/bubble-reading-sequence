@@ -172,6 +172,7 @@ const authors: Authors = {
     author_denis_nechiporenko     : {full_name: "Денис Нечипоренко", positions: ["screenwriter"]},
     author_evgeniy_aisberg        : {full_name: "Евгений Айсберг", positions: ["screenwriter"]},
     author_evgeniy_bornyakov      : {full_name: "Евгений Борняков", positions: ["artist"]},
+    author_evgeniy_kiyamov        : {full_name: "Евгений Киямов", positions: ["artist"]},
     author_evgeniy_pivnev         : {full_name: "Евгений Пивнев", positions: ["artist"]},
     author_evgeniy_frantsev       : {full_name: "Евгений Францев", positions: ["artist"]},
     author_ekaterina_morozova     : {full_name: "Екатерина Морозова", positions: ["screenwriter"]},

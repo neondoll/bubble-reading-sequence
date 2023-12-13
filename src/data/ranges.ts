@@ -24,7 +24,6 @@ const ranges: Ranges = {
     range_thief_of_shadows     : {name: "Вор Теней", release_at: {year: 2019}},
     range_plague_doctor        : {name: "Чумной Доктор", release_at: {year: 2020, month: 5, day: 4}},
     range_mir                  : {name: "МИР", release_at: {year: 2020, month: 8, day: 7}},
-    range_turbocarp            : {name: "Турбокарп", release_at: {year: 2020, month: 10}},
     range_major_igor_grom      : {name: "Майор Игорь Гром", release_at: {year: 2021, month: 7, day: 2}},
     range_witch                : {name: "Ведьма", release_at: {year: 2023, month: 1, day: 20}},
     range_bubble_triptych      : {name: "BUBBLE Триптих", release_at: {year: 2023, month: 2, day: 1}},

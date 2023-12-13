@@ -296,6 +296,7 @@ export default {
     comic_the_ink_prince_and_the_book_knight_2                              : range_bubble_manga_line_3,
     comic_the_ink_prince_and_the_book_knight_3                              : range_bubble_manga_line_3,
     comic_the_ink_prince_and_the_book_knight_4                              : range_bubble_manga_line_3,
+    comic_turbocarp                                                         : range_turbocarp,
     comic_unicorn_conspiracy_volume_1                                       : comic_unicorn_conspiracy,
     comic_unicorn_conspiracy_volume_2                                       : comic_unicorn_conspiracy,
     comic_vera_wolf                                                         : range_bubble_legends,
@@ -339,6 +340,5 @@ export default {
     range_red_fury,
     range_thief_of_shadows,
     range_time_of_raven,
-    range_turbocarp,
     range_witch
 };
