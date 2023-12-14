@@ -42,6 +42,10 @@ const colors = {
     comic_editor_signal_instance                 : comic_new_bubble_heroes,
     comic_falcon_1                               : comic_new_bubble_heroes,
     comic_falcon_2                               : comic_new_bubble_heroes,
+    comic_falcon_3                               : comic_new_bubble_heroes,
+    comic_falcon_4                               : comic_new_bubble_heroes,
+    comic_falcon_volume_1                        : comic_new_bubble_heroes,
+    comic_igor_ugor_2_5                          : range_igor_ugor,
     comic_igor_ugor_volume_1                     : range_igor_ugor, // TODO: Добавить остальные комиксы
     comic_igor_ugor_volume_2                     : range_igor_ugor,
     comic_impulse_heros_voice                    : comic_new_bubble_heroes,

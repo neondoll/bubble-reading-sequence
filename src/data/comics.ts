@@ -172,6 +172,27 @@ const comic_exlibrium_red_line: Comic = {
                  {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
     release_at: {year: 2021, month: 7, day: 30}
 };
+const comic_special_volkov_inferno: Comic = {
+    name      : "Спецвыпуск \"Волков. Пекло\"",
+    type      : "single",
+    cover_file: {url: `${comicImagePath}/plague_doctor/special-volkov-inferno.jpg`, aspect_ratio: 1339 / 2048},
+    ranges    : ["range_plague_doctor"],
+    characters: ["character_jessie_rodriguez", "character_oleg_volkov"],
+    authors   : [{author_id: "author_ekaterina_grishchenko", positions: ["artist"]},
+                 {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]}],
+    release_at: {year: 2021, month: 10, day: 30}
+};
+const comic_special_prokopenko_grom_at_sunrise: Comic = {
+    name      : "Спецвыпуск «Прокопенко. Гром на восходе»",
+    type      : "single",
+    cover_file: {url: `${comicImagePath}/special-prokopenko-grom-at-sunrise.jpg`, aspect_ratio: 1339 / 2048},
+    ranges    : ["range_major_grom", "range_bubble_legends", "range_major_igor_grom"],
+    characters: ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+    authors   : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                 {author_id: "author_evgeniy_bornyakov", positions: ["artist"]},
+                 {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
+    release_at: {year: 2021, month: 12}
+};
 const comic_allies_special_idyll: Comic = {
     name      : "Союзники. Спецвыпуск. Идиллия",
     type      : "single",
@@ -4817,7 +4838,7 @@ const comics: Comics = {
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         including_comics: ["comic_major_grom_volume_8"],
         previous_comics : ["comic_major_grom_49"],
-        next_comics     : ["comic_igor_grom_1", "comic_major_grom_chance_electronic", "comic_dubin_dima_provincial_holidays_1", "comic_major_grom_1939_electronic", "comic_major_grom_like_in_war_1", "comic_major_grom_hero_forever_1", "comic_special_prokopenko_grom_at_sunrise_single", "comic_grom_difficult_childhood_anubis_rising_single"],
+        next_comics     : ["comic_igor_grom_1", "comic_major_grom_chance_electronic", "comic_dubin_dima_provincial_holidays_1", "comic_major_grom_1939_electronic", "comic_major_grom_like_in_war_1", "comic_major_grom_hero_forever_1", "comic_special_prokopenko_grom_at_sunrise_electronic", "comic_grom_difficult_childhood_anubis_rising_single"],
         release_at      : {year: 2016, month: 12, day: 24},
         show            : false
     },
@@ -5489,7 +5510,7 @@ const comics: Comics = {
                            {author_id: "author_eduard_petrovich", positions: ["artist"]}],
         contained_comics: ["comic_major_grom_42", "comic_major_grom_43", "comic_major_grom_44", "comic_major_grom_45", "comic_major_grom_46", "comic_major_grom_47", "comic_major_grom_48", "comic_major_grom_49", "comic_major_grom_50"],
         previous_comics : ["comic_time_of_raven_epilogue_printed", "comic_major_grom_and_red_fury_volume_7"],
-        next_comics     : ["comic_major_grom_chance_printed", "comic_igor_grom_book_1", "comic_igor_grom_volume_1", "comic_dubin_dima_provincial_holidays", "comic_major_grom_1939_printed", "comic_major_grom_like_in_war", "comic_major_grom_hero_forever", "comic_special_prokopenko_grom_at_sunrise_book", "comic_grom_difficult_childhood_anubis_rising_book"],
+        next_comics     : ["comic_major_grom_chance_printed", "comic_igor_grom_book_1", "comic_igor_grom_volume_1", "comic_dubin_dima_provincial_holidays", "comic_major_grom_1939_printed", "comic_major_grom_like_in_war", "comic_major_grom_hero_forever", "comic_special_prokopenko_grom_at_sunrise_printed", "comic_grom_difficult_childhood_anubis_rising_book"],
         release_at      : {year: 2017, month: 6, day: 1},
         show            : true
     },
@@ -6691,14 +6712,14 @@ const comics: Comics = {
         number     : "1",
         type       : "book",
         cover_file : {
-            url         : `${comicImagePath}/unicorn_conspiracy/unicorn-conspiracy-volume-1-legacy.jpg`,
+            url         : `${comicImagePath}/authors_comics/unicorn_conspiracy/unicorn-conspiracy-volume-1-legacy.jpg`,
             aspect_ratio: 911 / 1280
         },
         ranges     : ["range_authors_comics"],
         authors    : [{author_id: "author_alex_hatchett", positions: ["artist", "screenwriter"]}],
         next_comics: ["comic_unicorn_conspiracy_volume_2"],
         release_at : {year: 2017, month: 9, day: 28},
-        show       : false
+        show       : true
     },
     comic_tagar_volume_1_prologue                                           : {
         name            : "Тагар. Том 1, пролог",
@@ -13275,13 +13296,13 @@ const comics: Comics = {
         release_at      : {year: 2021, month: 7, day: 30},
         show            : false
     },
-    comic_exlibrium_red_line_electronic                                         : {
+    comic_exlibrium_red_line_electronic                                     : {
         ...comic_exlibrium_red_line,
         including_comics: ["comic_exlibrium_red_line_printed"],
         previous_comics : ["comic_exlibrium_50", "comic_exlibrium_second_life_39"],
         show            : false
     },
-    comic_exlibrium_red_line_printed                                           : {
+    comic_exlibrium_red_line_printed                                        : {
         ...comic_exlibrium_red_line,
         contained_comics: ["comic_exlibrium_red_line_electronic"],
         previous_comics : ["comic_exlibrium_volume_9", "comic_exlibrium_second_life_39"],
@@ -13322,583 +13343,1079 @@ const comics: Comics = {
         name            : "Майор Игорь Гром #02 Фейк, часть 2",
         number          : "2",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/major_igor_grom/major-igor-grom-02-fake-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_igor_grom_volume_1"],
         previous_comics : ["comic_major_igor_grom_1"],
         next_comics     : ["comic_major_igor_grom_3"],
-        release_at      : {year: 2021, month: 8, day: 4}
+        release_at      : {year: 2021, month: 8, day: 4},
+        show            : false
     },
     comic_besoboy_vol_2_volume_10                                           : {
-        name            : "Бесобой Vol.2 том 10: Война в Аду",
+        name            : "Бесобой Vol.2. Том 10: Война в Аду",
         number          : "10",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-volume-10-war-in-hell.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_avaddon_merciless", "character_antichrist", "character_besoboy", "character_satan"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         contained_comics: ["comic_besoboy_vol_2_43", "comic_besoboy_vol_2_44", "comic_besoboy_vol_2_45", "comic_besoboy_vol_2_46"],
         previous_comics : ["comic_besoboy_vol_2_volume_9"],
         next_comics     : ["comic_besoboy_vol_2_volume_11"],
-        release_at      : {year: 2021, month: 8, day: 6}
+        release_at      : {year: 2021, month: 8, day: 6},
+        show            : true
     },
     comic_igor_ugor_2_5                                                     : {
         name           : "Игорь угорь 2.5: Press У to pay respect",
         number         : "2.5",
         type           : "single",
-        ranges         : ["range_igor_ugor"],
+        cover_file     : {
+            url         : `${comicImagePath}/inadequate_galaxy/igor_ugor/igor-ugor-2-5-press-u-to-pay-respect.jpg`,
+            aspect_ratio: 1000 / 1419
+        },
+        ranges         : ["range_inadequate_galaxy"],
+        authors        : [{author_id: "author_anastasia_kim", positions: ["artist"]},
+                          {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                          {author_id: "author_denis_popov", positions: []}, // TODO: выяснить кто он
+                          {author_id: "author_yulia_garibova", positions: ["artist"]}],
         previous_comics: ["comic_igor_ugor_volume_2"],
         next_comics    : ["comic_igor_ugor_3"],
-        release_at     : {year: 2021, month: 8, day: 21}
+        release_at     : {year: 2021, month: 8, day: 21},
+        show           : true
     },
     comic_exlibrium_second_life_21                                          : {
         name            : "Экслибриум. Жизнь вторая #21 Венец творения, часть 3",
         number          : "21",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-21-crown-of-creation-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_agatha", "character_amelia", "character_angelina_evgenievna", "character_zina"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_5"],
         previous_comics : ["comic_exlibrium_second_life_20"],
         next_comics     : ["comic_exlibrium_second_life_22"],
-        release_at      : {year: 2021, month: 8, day: 28}
+        release_at      : {year: 2021, month: 8, day: 28},
+        show            : false
     },
     comic_plague_doctor_volume_2                                            : {
         name            : "Чумной Доктор. Том 2: Золотой цветок",
         number          : "2",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/plague_doctor/plague-doctor-volume-2-golden-flower.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_plague_doctor"],
+        characters      : ["character_altan_dagbaev", "character_vadim_dragon", "character_valeria_makarova", "character_oleg_volkov", "character_sergey_razumovsky"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_anastasia_kim", positions: ["screenwriter"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]}],
         contained_comics: ["comic_plague_doctor_5", "comic_plague_doctor_6", "comic_plague_doctor_7", "comic_plague_doctor_8"],
         previous_comics : ["comic_plague_doctor_volume_1"],
         next_comics     : ["comic_plague_doctor_volume_3"],
-        release_at      : {year: 2021, month: 8, day: 28}
+        release_at      : {year: 2021, month: 8, day: 28},
+        show            : true
     },
     comic_plague_doctor_9                                                   : {
         name            : "Чумной Доктор №9",
         number          : "9",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/plague_doctor/plague-doctor-9.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_plague_doctor"],
+        characters      : ["character_altan_dagbaev", "character_vadim_dragon", "character_valeria_makarova", "character_oleg_volkov", "character_sergey_razumovsky"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]}],
         including_comics: ["comic_plague_doctor_volume_3"],
         previous_comics : ["comic_plague_doctor_8"],
         next_comics     : ["comic_plague_doctor_10"],
-        release_at      : {year: 2021, month: 8, day: 31}
+        release_at      : {year: 2021, month: 8, day: 31},
+        show            : false
     },
     comic_community_3                                                       : {
         name            : "Громада №3",
         number          : "3",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/community/community-3.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_bubble_legends", "range_childrens_comics"],
+        authors         : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_alisa_vedernikova", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["artist"]}],
         including_comics: ["comic_community"],
         previous_comics : ["comic_community_2"],
         next_comics     : ["comic_community_4"],
-        release_at      : {year: 2021, month: 9}
+        release_at      : {year: 2021, month: 9},
+        show            : false
     },
     comic_major_igor_grom_3                                                 : {
         name            : "Майор Игорь Гром #03 Фейк, часть 3",
         number          : "3",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/major_igor_grom/major-igor-grom-03-fake-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_igor_grom_volume_1"],
         previous_comics : ["comic_major_igor_grom_2"],
         next_comics     : ["comic_major_igor_grom_4"],
-        release_at      : {year: 2021, month: 9, day: 3}
+        release_at      : {year: 2021, month: 9, day: 3},
+        show            : false
     },
     comic_besoboy_vol_2_volume_11                                           : {
-        name            : "Бесобой Vol.2 том 11: Творец",
+        name            : "Бесобой Vol.2. Том 11: Творец",
         number          : "11",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/besoboy_vol_2/besoboy-vol-2-volume-11-creator.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy_vol_2"],
+        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_victor_zelenin", "character_satan", "character_shmyg", "character_yana", "character_yarkh_deadly"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
         contained_comics: ["comic_besoboy_vol_2_47", "comic_besoboy_vol_2_48", "comic_besoboy_vol_2_49", "comic_besoboy_vol_2_50"],
         previous_comics : ["comic_besoboy_vol_2_volume_10"],
         next_comics     : ["comic_besoboy_and_planeswalkers_new_life_printed", "comic_quarantine_book_printed"],
-        release_at      : {year: 2021, month: 9, day: 15}
+        release_at      : {year: 2021, month: 9, day: 15},
+        show            : true
     },
     comic_falcon_volume_1                                                   : {
         name            : "Сокол. Том 1",
         number          : "1",
         type            : "book",
-        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/falcon/falcon-volume-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_bubble_legends"],
+        authors         : [{author_id: "author_valeria_frantseva", positions: ["screenwriter"]},
+                           {author_id: "author_evgeniy_frantsev", positions: ["artist"]},
+                           {author_id: "author_inga_kanareeva", positions: ["screenwriter"]}],
         contained_comics: ["comic_falcon_1", "comic_falcon_2", "comic_falcon_3", "comic_falcon_4"],
         next_comics     : ["comic_falcon_volume_2"],
-        release_at      : {year: 2021, month: 9, day: 22}
+        release_at      : {year: 2021, month: 9, day: 22},
+        show            : true
     },
     comic_jackets_and_revolvers_volume_4                                    : {
         name           : "Пиджаки и револьверы. Том 4: Кровные узы",
         number         : "4",
         type           : "book",
-        ranges         : ["range_yulia_zhuravleva"],
+        cover_file     : {
+            url         : `${comicImagePath}/authors_comics/jackets_and_revolvers/jackets-and-revolvers-volume-4-blood-ties.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges         : ["range_authors_comics"],
+        authors        : [{author_id: "author_yulia_zhuravleva", positions: ["artist", "colorist", "screenwriter"]},
+                          {author_id: "author_ekaterina_morozova", positions: ["screenwriter"]}],
         previous_comics: ["comic_jackets_and_revolvers_volume_3"],
-        release_at     : {year: 2021, month: 9, day: 24}
+        release_at     : {year: 2021, month: 9, day: 24},
+        show           : true
     },
     comic_exlibrium_second_life_22                                          : {
         name            : "Экслибриум. Жизнь вторая #22 Бабочки в горсти",
         number          : "22",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-22-butterflies-in-handful.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_alexander_alinovsky", "character_evgenia_luneva", "character_inga_shelkowitz", "character_liliya_romanova"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anna_shadrina", positions: ["artist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_5"],
         previous_comics : ["comic_exlibrium_second_life_21"],
         next_comics     : ["comic_exlibrium_second_life_23"],
-        release_at      : {year: 2021, month: 9, day: 28}
+        release_at      : {year: 2021, month: 9, day: 28},
+        show            : false
     },
     comic_plague_doctor_10                                                  : {
         name            : "Чумной Доктор №10",
         number          : "10",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/plague_doctor/plague-doctor-10.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_plague_doctor"],
+        characters      : ["character_altan_dagbaev", "character_vadim_dragon", "character_valeria_makarova", "character_oleg_volkov", "character_sergey_razumovsky"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_anastasia_kim", positions: ["screenwriter"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["artist", "colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_adela_adienova", positions: ["colorist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]},
+                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
         including_comics: ["comic_plague_doctor_volume_3"],
         previous_comics : ["comic_plague_doctor_9"],
         next_comics     : ["comic_winter_special_plague_doctor"],
-        release_at      : {year: 2021, month: 9, day: 29}
+        release_at      : {year: 2021, month: 9, day: 29},
+        show            : false
     },
     comic_community_4                                                       : {
         name            : "Громада №4",
         number          : "4",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/community/community-4.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_bubble_legends", "range_childrens_comics"],
+        authors         : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["artist"]}],
         including_comics: ["comic_community"],
         previous_comics : ["comic_community_3"],
         next_comics     : ["comic_community_plush_and_dangerous_storybook_single"],
-        release_at      : {year: 2021, month: 10}
+        release_at      : {year: 2021, month: 10},
+        show            : false
     },
     comic_bubble_halloween                                                  : {
         name      : "BUBBLE Хэллоуин",
         type      : "single",
+        cover_file: {url: `${comicImagePath}/bubble_legends/bubble-halloween.jpg`, aspect_ratio: 1339 / 2048},
         ranges    : ["range_bubble_legends"],
-        release_at: {year: 2021, month: 10}
+        characters: ["character_besoboy", "character_valeria_makarova", "character_ziggy", "character_igor_grom", "character_liliya_romanova", "character_shmyg"],
+        release_at: {year: 2021, month: 10},
+        show      : true
     },
-    comic_krutiks_introduction_to_the_academy                               : {
+    comic_krutiks_introduction_to_academy                                   : {
         name      : "Крутиксы. Знакомство с академией",
         type      : "single",
+        cover_file: {
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-introduction-to-academy.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges    : ["range_childrens_comics"],
-        release_at: {year: 2021, month: 10}
+        authors   : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
+                     {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                     {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                     {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                     {author_id: "author_yulia_garibova", positions: ["artist"]}],
+        release_at: {year: 2021, month: 10},
+        show      : true
     },
     comic_major_igor_grom_4                                                 : {
         name            : "Майор Игорь Гром #04 Фейк, часть 4",
         number          : "4",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/major_igor_grom/major-igor-grom-04-fake-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_igor_grom_volume_1"],
         previous_comics : ["comic_major_igor_grom_3"],
         next_comics     : ["comic_major_igor_grom_5"],
-        release_at      : {year: 2021, month: 10, day: 6}
+        release_at      : {year: 2021, month: 10, day: 6},
+        show            : false
     },
     comic_major_igor_grom_volume_1                                          : {
-        name            : "Майор Игорь Гром. Том 1. Фейк",
+        name            : "Майор Игорь Гром. Том 1: Фейк",
         number          : "1",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/major_igor_grom/major-igor-grom-volume-1-fake.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         contained_comics: ["comic_major_igor_grom_1", "comic_major_igor_grom_2", "comic_major_igor_grom_3", "comic_major_igor_grom_4"],
         previous_comics : ["comic_igor_grom_volume_10"],
         next_comics     : ["comic_major_igor_grom_volume_2"],
-        release_at      : {year: 2021, month: 10, day: 7}
+        release_at      : {year: 2021, month: 10, day: 7},
+        show            : true
     },
     comic_exlibrium_second_life_volume_5                                    : {
-        name            : "Экслибриум. Жизнь вторая. Том 5. Венец творения",
+        name            : "Экслибриум. Жизнь вторая. Том 5: Венец творения",
         number          : "5",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-volume-5-crown-of-creation.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_agatha", "character_amelia", "character_zina"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anna_shadrina", positions: ["artist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                           {author_id: "author_tamara_petrosyan", positions: ["artist"]}],
         contained_comics: ["comic_exlibrium_second_life_19", "comic_exlibrium_second_life_20", "comic_exlibrium_second_life_21", "comic_exlibrium_second_life_22"],
         previous_comics : ["comic_exlibrium_second_life_volume_4"],
         next_comics     : ["comic_exlibrium_second_life_volume_6"],
-        release_at      : {year: 2021, month: 10, day: 19}
+        release_at      : {year: 2021, month: 10, day: 19},
+        show            : true
     },
     comic_falcon_3                                                          : {
         name            : "Сокол #3 В клетке, часть 1",
         number          : "3",
         type            : "single",
-        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/falcon/falcon-3-caged-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_bubble_legends"],
+        authors         : [{author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_valeria_frantseva", positions: ["screenwriter"]},
+                           {author_id: "author_evgeniy_frantsev", positions: ["artist"]},
+                           {author_id: "author_inga_kanareeva", positions: ["screenwriter"]}],
         including_comics: ["comic_falcon_volume_1"],
         previous_comics : ["comic_falcon_2"],
         next_comics     : ["comic_falcon_4"],
-        release_at      : {year: 2021, month: 10, day: 20}
+        release_at      : {year: 2021, month: 10, day: 20},
+        show            : false
     },
     comic_plague_doctor_volume_3                                            : {
         name            : "Чумной Доктор. Том 3: На руинах",
         number          : "3",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/plague_doctor/plague-doctor-volume-3-in-ruins.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_plague_doctor"],
+        characters      : ["character_oleg_volkov", "character_sergey_razumovsky"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_anastasia_kim", positions: ["screenwriter"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["artist", "colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_adela_adienova", positions: ["colorist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]},
+                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
         contained_comics: ["comic_plague_doctor_9", "comic_plague_doctor_10", "comic_winter_special_plague_doctor"],
         previous_comics : ["comic_plague_doctor_volume_2"],
-        next_comics     : ["comic_major_igor_grom_x_plague_doctor_book_4"],
-        release_at      : {year: 2021, month: 10, day: 25}
+        next_comics     : ["comic_major_igor_grom_x_plague_doctor_volume_4"],
+        release_at      : {year: 2021, month: 10, day: 25},
+        show            : true
     },
     comic_exlibrium_second_life_23                                          : {
         name            : "Экслибриум. Жизнь вторая #23 Петля, часть 1",
         number          : "23",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-23-loop-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_varvara_leska", "character_tamara_leska"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_afonina", positions: ["artist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_6"],
         previous_comics : ["comic_exlibrium_second_life_22"],
         next_comics     : ["comic_exlibrium_second_life_24"],
-        release_at      : {year: 2021, month: 10, day: 28}
+        release_at      : {year: 2021, month: 10, day: 28},
+        show            : false
     },
     comic_major_igor_grom_x_plague_doctor_11                                : {
         name            : "Майор Игорь Гром x Чумной Доктор №11 Брат твой по мраку",
         number          : "11",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/crossovers/major_igor_grom_x_plague_doctor/major-igor-grom-x-plague-doctor-11-your-brother-in-darkness.jpg`,
+            aspect_ratio: 1339 / 2047
+        },
         ranges          : ["range_crossovers", "range_plague_doctor", "range_major_igor_grom"],
-        including_comics: ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        characters      : ["character_igor_grom", "character_sergey_razumovsky"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
+        including_comics: ["comic_major_igor_grom_x_plague_doctor_volume_4"],
         previous_comics : ["comic_winter_special_plague_doctor", "comic_major_igor_grom_8"],
         next_comics     : ["comic_major_igor_grom_x_plague_doctor_12"],
-        release_at      : {year: 2021, month: 10, day: 30}
+        release_at      : {year: 2021, month: 10, day: 30},
+        show            : false
     },
-    comic_special_volkov_inferno_single                                     : {
-        name            : "Спецвыпуск \"Волков. Пекло\"",
-        type            : "single",
-        ranges          : ["range_plague_doctor"],
-        including_comics: ["comic_special_volkov_inferno_book"],
+    comic_special_volkov_inferno_electronic                                 : {
+        ...comic_special_volkov_inferno,
+        including_comics: ["comic_special_volkov_inferno_printed"],
         previous_comics : ["comic_plague_doctor_30"],
-        release_at      : {year: 2021, month: 10, day: 30}
+        show            : false
     },
-    comic_special_volkov_inferno_book                                       : {
-        name            : "Спецвыпуск \"Волков. Пекло\"",
-        type            : "book",
-        ranges          : ["range_plague_doctor"],
-        contained_comics: ["comic_special_volkov_inferno_single"],
+    comic_special_volkov_inferno_printed                                    : {
+        ...comic_special_volkov_inferno,
+        contained_comics: ["comic_special_volkov_inferno_electronic"],
         previous_comics : ["comic_plague_doctor_30"],
-        release_at      : {year: 2021, month: 10, day: 30}
+        show            : true
     },
     comic_mir_volume_5                                                      : {
         name            : "МИР. Том 5: Второе солнце",
         number          : "5",
         type            : "book",
+        cover_file      : {url: `${comicImagePath}/mir/mir-volume-5-second-sun.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_mir"],
+        characters      : ["character_alexandra_makedonskaya", "character_mir"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_adela_adienova", positions: ["colorist"]},
+                           {author_id: "author_alisa_vedernikova", positions: ["colorist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
         contained_comics: ["comic_mir_8", "comic_mir_9"],
         previous_comics : ["comic_mir_volume_4"],
         next_comics     : ["comic_mir_volume_6"],
-        release_at      : {year: 2021, month: 10, day: 30}
+        release_at      : {year: 2021, month: 10, day: 30},
+        show            : true
     },
     comic_mir_8                                                             : {
         name            : "МИР #08 Второе солнце, часть 1",
         number          : "8",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/mir/mir-08-second-sun-part-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_mir"],
+        characters      : ["character_alexandra_makedonskaya", "character_mir"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                           {author_id: "author_adela_adienova", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
         including_comics: ["comic_mir_volume_5"],
         previous_comics : ["comic_mir_7"],
         next_comics     : ["comic_mir_9"],
-        release_at      : {year: 2021, month: 11, day: 3}
+        release_at      : {year: 2021, month: 11, day: 3},
+        show            : false
     },
     comic_falcon_4                                                          : {
         name            : "Сокол #4 В клетке, часть 2",
         number          : "4",
         type            : "single",
-        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        cover_file      : {
+            url         : `${comicImagePath}/bubble_legends/falcon/falcon-4-caged-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_bubble_legends"],
+        authors         : [{author_id: "author_valeria_frantseva", positions: ["screenwriter"]},
+                           {author_id: "author_evgeniy_frantsev", positions: ["artist"]},
+                           {author_id: "author_inga_kanareeva", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_falcon_volume_1"],
         previous_comics : ["comic_falcon_3"],
         next_comics     : ["comic_falcon_5"],
-        release_at      : {year: 2021, month: 11, day: 10}
+        release_at      : {year: 2021, month: 11, day: 10},
+        show            : false
     },
     comic_major_igor_grom_5                                                 : {
         name            : "Майор Игорь Гром #05 Идеальный хищник, часть 1",
         number          : "5",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/major_igor_grom/major-igor-grom-05-ideal-predator-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_igor_grom_volume_2"],
         previous_comics : ["comic_major_igor_grom_4"],
         next_comics     : ["comic_major_igor_grom_6"],
-        release_at      : {year: 2021, month: 11, day: 19}
+        release_at      : {year: 2021, month: 11, day: 19},
+        show            : false
     },
     comic_thief_of_shadows_volume_1                                         : {
         name            : "Вор Теней",
         number          : "1",
         type            : "book",
+        cover_file      : {url: `${comicImagePath}/thief_of_shadows/thief-of-shadows.jpg`, aspect_ratio: 1489 / 2048},
         ranges          : ["range_thief_of_shadows"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                           {author_id: "author_kirill_kutuzov", positions: ["screenwriter"]}],
         contained_comics: ["comic_thief_of_shadows_1", "comic_thief_of_shadows_2", "comic_thief_of_shadows_3", "comic_thief_of_shadows_4", "comic_thief_of_shadows_5"],
         next_comics     : ["comic_thief_of_shadows_volume_2"],
-        release_at      : {year: 2021, month: 11, day: 26}
+        release_at      : {year: 2021, month: 11, day: 26},
+        show            : true
     },
     comic_exlibrium_second_life_24                                          : {
         name            : "Экслибриум. Жизнь вторая #24 Петля, часть 2",
         number          : "24",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-24-loop-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_varvara_leska", "character_tamara_leska"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_afonina", positions: ["artist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_6"],
         previous_comics : ["comic_exlibrium_second_life_23"],
         next_comics     : ["comic_exlibrium_second_life_25"],
-        release_at      : {year: 2021, month: 11, day: 28}
+        release_at      : {year: 2021, month: 11, day: 28},
+        show            : false
     },
     comic_major_igor_grom_x_plague_doctor_12                                : {
         name            : "Майор Игорь Гром x Чумной Доктор №12 Брат твой по мраку, часть 2",
         number          : "12",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/crossovers/major_igor_grom_x_plague_doctor/major-igor-grom-x-plague-doctor-12-your-brother-in-darkness-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_crossovers", "range_plague_doctor", "range_major_igor_grom"],
-        including_comics: ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]}],
+        including_comics: ["comic_major_igor_grom_x_plague_doctor_volume_4"],
         previous_comics : ["comic_major_igor_grom_x_plague_doctor_11"],
         next_comics     : ["comic_major_igor_grom_x_plague_doctor_13"],
-        release_at      : {year: 2021, month: 11, day: 30}
+        release_at      : {year: 2021, month: 11, day: 30},
+        show            : false
     },
-    comic_special_prokopenko_grom_at_sunrise_single                         : {
-        name            : "Спецвыпуск «Прокопенко. Гром на восходе»",
-        type            : "single",
-        ranges          : ["range_major_grom", "range_bubble_legends", "range_major_igor_grom"],
-        including_comics: ["comic_special_prokopenko_grom_at_sunrise_book"],
+    comic_special_prokopenko_grom_at_sunrise_electronic                     : {
+        ...comic_special_prokopenko_grom_at_sunrise,
+        including_comics: ["comic_special_prokopenko_grom_at_sunrise_printed"],
         previous_comics : ["comic_major_grom_50", "comic_major_igor_grom_22"],
-        release_at      : {year: 2021, month: 12}
+        show            : false
     },
-    comic_special_prokopenko_grom_at_sunrise_book                           : {
-        name            : "Спецвыпуск «Прокопенко. Гром на восходе»",
-        type            : "book",
-        ranges          : ["range_major_grom", "range_bubble_legends", "range_major_igor_grom"],
-        contained_comics: ["comic_special_prokopenko_grom_at_sunrise_single"],
+    comic_special_prokopenko_grom_at_sunrise_printed                        : {
+        ...comic_special_prokopenko_grom_at_sunrise,
+        contained_comics: ["comic_special_prokopenko_grom_at_sunrise_electronic"],
         previous_comics : ["comic_major_grom_volume_8", "comic_major_igor_grom_22"],
-        release_at      : {year: 2021, month: 12}
+        show            : true
     },
     comic_soyuzmultcomics                                                   : {
         name      : "СоюзМультКомикс",
         type      : "book",
+        cover_file: {url: `${comicImagePath}/childrens_comics/soyuzmultcomics.jpeg`, aspect_ratio: 428 / 654},
         ranges    : ["range_childrens_comics"],
-        release_at: {year: 2021, month: 12}
+        release_at: {year: 2021, month: 12},
+        show      : true
     },
     comic_mir_9                                                             : {
         name            : "МИР #09 Второе солнце, часть 2",
         number          : "9",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/mir/mir-09-second-sun-part-2.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_mir"],
+        characters      : ["character_alexandra_makedonskaya", "character_mir"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_adela_adienova", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
         including_comics: ["comic_mir_volume_5"],
         previous_comics : ["comic_mir_8"],
         next_comics     : ["comic_mir_10"],
-        release_at      : {year: 2021, month: 12, day: 1}
+        release_at      : {year: 2021, month: 12, day: 1},
+        show            : false
     },
     comic_thief_of_shadows_6                                                : {
         name            : "Вор Теней #6 Дача Ложных Показаний",
         number          : "6",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/thief_of_shadows/thief-of-shadows-6-perjury.jpg`,
+            aspect_ratio: 1489 / 2048
+        },
         ranges          : ["range_thief_of_shadows"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                           {author_id: "author_kirill_kutuzov", positions: ["screenwriter"]}],
         including_comics: ["comic_thief_of_shadows_volume_2"],
         previous_comics : ["comic_thief_of_shadows_5"],
         next_comics     : ["comic_thief_of_shadows_7"],
-        release_at      : {year: 2021, month: 12, day: 8}
+        release_at      : {year: 2021, month: 12, day: 8},
+        show            : false
     },
     comic_lady_of_radiance_1                                                : {
         name       : "Леди Сияния, глава 1",
         number     : "1",
         type       : "single",
+        cover_file : {
+            url         : `${comicImagePath}/bubble_manga/lady_of_radiance/lady-of-radiance-chapter-1.jpg`,
+            aspect_ratio: 1447 / 2048
+        },
         ranges     : ["range_bubble_manga"],
+        authors    : [{author_id: "author_gilbert_brissen", positions: ["screenwriter"]},
+                      {author_id: "author_natalya_rerekina", positions: ["artist"]}],
         next_comics: ["comic_lady_of_radiance_2"],
-        release_at : {year: 2021, month: 12, day: 15}
+        release_at : {year: 2021, month: 12, day: 15},
+        show       : true
     },
     comic_unicorn_conspiracy_volume_2                                       : {
         name           : "Заговор единорогов. Том 2. Свои",
         number         : "2",
         type           : "book",
-        ranges         : ["range_alex_hatchett"],
+        cover_file     : {
+            url         : `${comicImagePath}/authors_comics/unicorn_conspiracy/unicorn-conspiracy-volume-2-ours.jpg`,
+            aspect_ratio: 1457 / 2048
+        },
+        ranges         : ["range_authors_comics", "range_alex_hatchett"],
+        authors        : [{author_id: "author_alex_hatchett", positions: ["artist", "screenwriter"]}],
         previous_comics: ["comic_unicorn_conspiracy_volume_1"],
-        release_at     : {year: 2021, month: 12, day: 18}
+        release_at     : {year: 2021, month: 12, day: 18},
+        show           : true
     },
     comic_fiction_novel_major_grom                                          : {
         name      : "Художественный роман \"Майор Гром\"",
         type      : "hardcover_book",
+        cover_file: {url: `${comicImagePath}/major_grom/fiction-novel-major-grom.jpg`, aspect_ratio: 1202 / 1831},
         ranges    : ["range_major_grom"],
         characters: ["character_dmitry_dubin", "character_igor_grom", "character_yulia_pchyolkina"],
         authors   : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                      {author_id: "author_andrey_vasin", positions: ["artist"]}],
-        release_at: {year: 2021, month: 12, day: 18}
+        release_at: {year: 2021, month: 12, day: 18},
+        show      : true
     },
     comic_major_igor_grom_6                                                 : {
         name            : "Майор Игорь Гром #06 Идеальный хищник, часть 2",
         number          : "6",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/major_igor_grom/major-igor-grom-06-ideal-predator-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_igor_grom_volume_2"],
         previous_comics : ["comic_major_igor_grom_5"],
         next_comics     : ["comic_major_igor_grom_7"],
-        release_at      : {year: 2021, month: 12, day: 23}
+        release_at      : {year: 2021, month: 12, day: 23},
+        show            : false
     },
     comic_exlibrium_second_life_25                                          : {
         name            : "Экслибриум. Жизнь вторая #25 Чёрные капли, часть 1",
         number          : "25",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-25-black-drops-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_alexander_alinovsky", "character_inga_shelkowitz", "character_kira", "character_lavrenty_pavlovich", "character_liliya_romanova", "character_matvey_koretsky"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_6"],
         previous_comics : ["comic_exlibrium_second_life_24"],
         next_comics     : ["comic_exlibrium_second_life_26"],
-        release_at      : {year: 2021, month: 12, day: 28}
+        release_at      : {year: 2021, month: 12, day: 28},
+        show            : false
     },
     comic_thief_of_shadows_7                                                : {
         name            : "Вор Теней #7 Невидимая рука рынка",
         number          : "7",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/thief_of_shadows/thief-of-shadows-7-invisible-hand-of-market.jpg`,
+            aspect_ratio: 1489 / 2048
+        },
         ranges          : ["range_thief_of_shadows"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                           {author_id: "author_kirill_kutuzov", positions: ["screenwriter"]}],
         including_comics: ["comic_thief_of_shadows_volume_2"],
         previous_comics : ["comic_thief_of_shadows_6"],
         next_comics     : ["comic_thief_of_shadows_8"],
-        release_at      : {year: 2022, month: 1, day: 7}
+        release_at      : {year: 2022, month: 1, day: 7},
+        show            : false
     },
     comic_lady_of_radiance_2                                                : {
         name           : "Леди Сияния, глава 2",
         number         : "2",
         type           : "single",
+        cover_file     : {
+            url         : `${comicImagePath}/bubble_manga/lady_of_radiance/lady-of-radiance-chapter-2.jpg`,
+            aspect_ratio: 1447 / 2048
+        },
         ranges         : ["range_bubble_manga"],
+        authors        : [{author_id: "author_gilbert_brissen", positions: ["screenwriter"]},
+                          {author_id: "author_natalya_rerekina", positions: ["artist"]}],
         previous_comics: ["comic_lady_of_radiance_1"],
         next_comics    : ["comic_lady_of_radiance_3"],
-        release_at     : {year: 2022, month: 1, day: 14}
+        release_at     : {year: 2022, month: 1, day: 14},
+        show           : true
     },
     comic_major_igor_grom_7                                                 : {
         name            : "Майор Игорь Гром #07 Идеальный хищник, часть 3",
         number          : "7",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/major_igor_grom/major-igor-grom-07-ideal-predator-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_igor_grom_volume_2"],
         previous_comics : ["comic_major_igor_grom_6"],
         next_comics     : ["comic_major_igor_grom_8"],
-        release_at      : {year: 2022, month: 1, day: 28}
+        release_at      : {year: 2022, month: 1, day: 28},
+        show            : false
     },
     comic_exlibrium_second_life_26                                          : {
         name            : "Экслибриум. Жизнь вторая #26 Чёрные капли, часть 2",
         number          : "26",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-26-black-drops-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_alexander_alinovsky", "character_nightingale"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_6"],
         previous_comics : ["comic_exlibrium_second_life_25"],
         next_comics     : ["comic_exlibrium_second_life_27"],
-        release_at      : {year: 2022, month: 1, day: 28}
+        release_at      : {year: 2022, month: 1, day: 28},
+        show            : false
     },
     comic_krutiks_cool_comics_book_2                                        : {
         name            : "Крутиксы. Крутые комиксы. Книга 2",
         number          : "2",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/childrens_comics/krutiks/krutiks-cool-comics-book-2.jpg`,
+            aspect_ratio: 1536 / 2339
+        },
         ranges          : ["range_childrens_comics"],
+        characters      : ["character_balor", "character_ziggy", "character_yango"],
+        authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_evgeny_yakovlev", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_marina_sukhareva", positions: ["artist"]},
+                           {author_id: "author_yulia_garibova", positions: ["artist", "screenwriter"]}],
         contained_comics: ["comic_krutiks_3_2018", "comic_krutiks_4_2018", "comic_krutiks_5_2018", "comic_krutiks_6_2018", "comic_krutiks_7_2018"],
         previous_comics : ["comic_krutiks_cool_comics_book_1"],
         next_comics     : ["comic_krutiks_cool_comics_book_3"],
-        release_at      : {year: 2022, month: 2}
+        release_at      : {year: 2022, month: 2},
+        show            : true
     },
     comic_thief_of_shadows_8                                                : {
         name            : "Вор Теней #8 Кладбище времени",
         number          : "8",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/thief_of_shadows/thief-of-shadows-8-graveyard-of-time.jpg`,
+            aspect_ratio: 1489 / 2048
+        },
         ranges          : ["range_thief_of_shadows"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                           {author_id: "author_kirill_kutuzov", positions: ["screenwriter"]}],
         including_comics: ["comic_thief_of_shadows_volume_2"],
         previous_comics : ["comic_thief_of_shadows_7"],
         next_comics     : ["comic_thief_of_shadows_9"],
-        release_at      : {year: 2022, month: 2, day: 4}
+        release_at      : {year: 2022, month: 2, day: 4},
+        show            : false
     },
     comic_lady_of_radiance_3                                                : {
         name           : "Леди Сияния, глава 3",
         number         : "3",
         type           : "single",
+        cover_file     : {
+            url         : `${comicImagePath}/bubble_manga/lady_of_radiance/lady-of-radiance-chapter-3.jpg`,
+            aspect_ratio: 1447 / 2048
+        },
         ranges         : ["range_bubble_manga"],
+        authors        : [{author_id: "author_gilbert_brissen", positions: ["screenwriter"]},
+                          {author_id: "author_natalya_rerekina", positions: ["artist"]}],
         previous_comics: ["comic_lady_of_radiance_2"],
         next_comics    : ["comic_lady_of_radiance_4"],
-        release_at     : {year: 2022, month: 2, day: 11}
+        release_at     : {year: 2022, month: 2, day: 11},
+        show           : true
     },
     comic_major_igor_grom_x_plague_doctor_13                                : {
         name            : "Майор Игорь Гром x Чумной Доктор №13 Брат твой по мраку, часть 3",
         number          : "13",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/crossovers/major_igor_grom_x_plague_doctor/major-igor-grom-x-plague-doctor-13-your-brother-in-darkness-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_crossovers", "range_plague_doctor", "range_major_igor_grom"],
-        including_comics: ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        characters      : ["character_igor_grom", "character_oleg_volkov", "character_sergey_razumovsky"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
+        including_comics: ["comic_major_igor_grom_x_plague_doctor_volume_4"],
         previous_comics : ["comic_major_igor_grom_x_plague_doctor_12"],
         next_comics     : ["comic_major_igor_grom_x_plague_doctor_14"],
-        release_at      : {year: 2022, month: 2, day: 18}
+        release_at      : {year: 2022, month: 2, day: 18},
+        show            : false
     },
     comic_golden_warrior                                                    : {
         name      : "Золотой Воин",
         type      : "book",
-        ranges    : ["range_madibek_musabekov"],
-        release_at: {year: 2022, month: 2, day: 18}
+        cover_file: {url: `${comicImagePath}/authors_comics/golden-warrior.jpg`, aspect_ratio: 1339 / 2048},
+        ranges    : ["range_authors_comics"],
+        authors   : [{author_id: "author_madibek_musabekov", positions: ["artist"]}],
+        release_at: {year: 2022, month: 2, day: 18},
+        show      : true
     },
     comic_exlibrium_second_life_27                                          : {
         name            : "Экслибриум. Жизнь вторая #27 Чёрные капли, часть 3",
         number          : "27",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-27-black-drops-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_amelia", "character_inga_shelkowitz", "character_matvey_koretsky"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_6"],
         previous_comics : ["comic_exlibrium_second_life_26"],
         next_comics     : ["comic_exlibrium_second_life_28"],
-        release_at      : {year: 2022, month: 2, day: 28}
+        release_at      : {year: 2022, month: 2, day: 28},
+        show            : false
     },
     comic_major_igor_grom_x_plague_doctor_14                                : {
         name            : "Майор Игорь Гром x Чумной Доктор №14 Брат твой по мраку, эпилог",
         number          : "14",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/crossovers/major_igor_grom_x_plague_doctor/major-igor-grom-x-plague-doctor-14-your-brother-in-darkness-epilogue.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_crossovers", "range_plague_doctor", "range_major_igor_grom"],
-        including_comics: ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "colorist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
+                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
+        including_comics: ["comic_major_igor_grom_x_plague_doctor_volume_4"],
         previous_comics : ["comic_major_igor_grom_x_plague_doctor_13"],
         next_comics     : ["comic_plague_doctor_15", "comic_major_igor_grom_9"],
-        release_at      : {year: 2022, month: 3, day: 2}
+        release_at      : {year: 2022, month: 3, day: 2},
+        show            : false
     },
     comic_thief_of_shadows_9                                                : {
         name            : "Вор Теней #9 Пятая... лишняя!",
         number          : "9",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/thief_of_shadows/thief-of-shadows-9-fifth-extra.jpg`,
+            aspect_ratio: 1489 / 2048
+        },
         ranges          : ["range_thief_of_shadows"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                           {author_id: "author_kirill_kutuzov", positions: ["screenwriter"]}],
         including_comics: ["comic_thief_of_shadows_volume_2"],
         previous_comics : ["comic_thief_of_shadows_8"],
         next_comics     : ["comic_thief_of_shadows_10"],
-        release_at      : {year: 2022, month: 3, day: 4}
+        release_at      : {year: 2022, month: 3, day: 4},
+        show            : false
     },
     comic_lady_of_radiance_4                                                : {
         name           : "Леди Сияния, глава 4",
         number         : "4",
         type           : "single",
+        cover_file     : {
+            url         : `${comicImagePath}/bubble_manga/lady_of_radiance/lady-of-radiance-chapter-4.jpg`,
+            aspect_ratio: 1447 / 2048
+        },
         ranges         : ["range_bubble_manga"],
+        authors        : [{author_id: "author_marina_privalova", positions: ["artist"]},
+                          {author_id: "author_gilbert_brissen", positions: ["screenwriter"]},
+                          {author_id: "author_natalya_rerekina", positions: ["artist"]}],
         previous_comics: ["comic_lady_of_radiance_3"],
-        release_at     : {year: 2022, month: 3, day: 11}
+        release_at     : {year: 2022, month: 3, day: 11},
+        show           : true
     },
     comic_plague_doctor_15                                                  : {
         name            : "Чумной Доктор №15 Махаон, часть 1",
         number          : "15",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/plague_doctor/plague-doctor-15-swallowtail-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_plague_doctor"],
+        characters      : ["character_valeria_makarova"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["screenwriter"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["artist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]}],
         including_comics: ["comic_plague_doctor_volume_5"],
         previous_comics : ["comic_major_igor_grom_x_plague_doctor_14"],
         next_comics     : ["comic_plague_doctor_16"],
-        release_at      : {year: 2022, month: 3, day: 18}
+        release_at      : {year: 2022, month: 3, day: 18},
+        show            : false
     },
     comic_exlibrium_second_life_28                                          : {
         name            : "Экслибриум. Жизнь вторая #28 Чёрные капли, часть 4",
         number          : "28",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-28-black-drops-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_kira"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_7"],
         previous_comics : ["comic_exlibrium_second_life_27"],
         next_comics     : ["comic_exlibrium_second_life_29"],
-        release_at      : {year: 2022, month: 3, day: 28}
+        release_at      : {year: 2022, month: 3, day: 28},
+        show            : false
     },
     comic_major_igor_grom_8                                                 : {
         name            : "Майор Игорь Гром #08 Идеальный хищник, часть 4",
         number          : "8",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/major_igor_grom/major-igor-grom-08-ideal-predator-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_igor_grom", "character_irina_charlotte", "character_liliya_abramenko"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_igor_grom_volume_2"],
         previous_comics : ["comic_major_igor_grom_7"],
         next_comics     : ["comic_major_igor_grom_x_plague_doctor_11"],
-        release_at      : {year: 2022, month: 3, day: 31}
+        release_at      : {year: 2022, month: 3, day: 31},
+        show            : false
     },
-    comic_major_igor_grom_x_plague_doctor_book_4                            : {
-        name            : "Майор Игорь Гром x Чумной Доктор. Книга 4. Брат твой по мраку",
+    comic_major_igor_grom_x_plague_doctor_volume_4                          : {
+        name            : "Майор Игорь Гром. Чумной Доктор. Том 4. Брат твой по мраку",
         number          : "4",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/crossovers/major_igor_grom_x_plague_doctor/major-igor-grom-x-plague-doctor-volume-4-your-brother-in-darkness.jpg`,
+            aspect_ratio: 1000 / 1529
+        },
         ranges          : ["range_crossovers", "range_plague_doctor", "range_major_igor_grom"],
+        characters      : ["character_igor_grom", "character_sergey_razumovsky"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "colorist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]},
+                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         contained_comics: ["comic_major_igor_grom_x_plague_doctor_11", "comic_major_igor_grom_x_plague_doctor_12", "comic_major_igor_grom_x_plague_doctor_13", "comic_major_igor_grom_x_plague_doctor_14"],
         previous_comics : ["comic_plague_doctor_volume_3", "comic_major_igor_grom_volume_2"],
         next_comics     : ["comic_major_igor_grom_volume_3", "comic_plague_doctor_volume_5"],
-        release_at      : {year: 2022, month: 3, day: 31}
+        release_at      : {year: 2022, month: 3, day: 31},
+        show            : true
     },
     comic_mir_10                                                            : {
         name            : "МИР #10 Серый лёд, часть 1",
         number          : "10",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/mir/mir-10-gray-ice-part-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_mir"],
+        characters      : ["character_alexandra_makedonskaya", "character_mir"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_yakovlev", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_adela_adienova", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
         including_comics: ["comic_mir_volume_6"],
         previous_comics : ["comic_mir_9"],
         next_comics     : ["comic_mir_11"],
-        release_at      : {year: 2022, month: 4, day: 8}
+        release_at      : {year: 2022, month: 4, day: 8},
+        show            : false
     },
     comic_major_igor_grom_volume_2                                          : {
-        name            : "Майор Игорь Гром. Том 2. Идеальный хищник",
+        name            : "Майор Игорь Гром. Том 2: Идеальный хищник",
         number          : "2",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/major_igor_grom/major-igor-grom-volume-2-ideal-predator.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
         contained_comics: ["comic_major_igor_grom_5", "comic_major_igor_grom_6", "comic_major_igor_grom_7", "comic_major_igor_grom_8"],
         previous_comics : ["comic_major_igor_grom_volume_1"],
-        next_comics     : ["comic_major_igor_grom_x_plague_doctor_book_4"],
-        release_at      : {year: 2022, month: 4, day: 8}
+        next_comics     : ["comic_major_igor_grom_x_plague_doctor_volume_4"],
+        release_at      : {year: 2022, month: 4, day: 8},
+        show            : true
     },
     comic_exlibrium_second_life_volume_6                                    : {
-        name            : "Экслибриум. Жизнь вторая. Том 6. Чёрные капли",
+        name            : "Экслибриум. Жизнь вторая. Том 6: Чёрные капли",
         number          : "6",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-volume-6-black-drops.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_alexander_alinovsky","character_varvara_leska","character_inga_shelkowitz","character_lavrenty_pavlovich","character_liliya_romanova","character_matvey_koretsky","character_nightingale","character_tamara_leska"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_afonina", positions: ["artist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         contained_comics: ["comic_exlibrium_second_life_23", "comic_exlibrium_second_life_24", "comic_exlibrium_second_life_25", "comic_exlibrium_second_life_26", "comic_exlibrium_second_life_27"],
         previous_comics : ["comic_exlibrium_second_life_volume_5"],
         next_comics     : ["comic_exlibrium_second_life_volume_7"],
-        release_at      : {year: 2022, month: 4, day: 8}
+        release_at      : {year: 2022, month: 4, day: 8},
+        show            : true
     },
     comic_major_igor_grom_9                                                 : {
         name            : "Майор Игорь Гром #09 Улыбка висельника, часть 1",
@@ -14220,9 +14737,8 @@ const comics: Comics = {
         number          : "3",
         type            : "book",
         ranges          : ["range_major_igor_grom"],
-        contained_comics: ["comic_major_igor_grom_9", "comic_major_igor_grom_10", "comic_major_igor_grom_11",
-                           "comic_major_igor_grom_12"],
-        previous_comics : ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        contained_comics: ["comic_major_igor_grom_9", "comic_major_igor_grom_10", "comic_major_igor_grom_11", "comic_major_igor_grom_12"],
+        previous_comics : ["comic_major_igor_grom_x_plague_doctor_volume_4"],
         next_comics     : ["comic_major_igor_grom_volume_4"],
         release_at      : {year: 2022, month: 9, day: 14}
     },
@@ -14347,7 +14863,7 @@ const comics: Comics = {
         type            : "book",
         ranges          : ["range_plague_doctor"],
         contained_comics: ["comic_plague_doctor_15", "comic_plague_doctor_16", "comic_plague_doctor_17", "comic_plague_doctor_18", "comic_plague_doctor_19", "comic_plague_doctor_20"],
-        previous_comics : ["comic_major_igor_grom_x_plague_doctor_book_4"],
+        previous_comics : ["comic_major_igor_grom_x_plague_doctor_volume_4"],
         next_comics     : ["comic_heroes_and_monsters_book"],
         release_at      : {year: 2022, month: 10, day: 1}
     },
@@ -15208,7 +15724,7 @@ const comics: Comics = {
                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
                           {author_id: "author_evgeniy_bornyakov", positions: ["artist"]}],
         previous_comics: ["comic_major_igor_grom_21"],
-        next_comics    : ["comic_special_prokopenko_grom_at_sunrise_single", "comic_special_prokopenko_grom_at_sunrise_book", "comic_major_igor_grom_special_duty"],
+        next_comics    : ["comic_special_prokopenko_grom_at_sunrise_electronic", "comic_special_prokopenko_grom_at_sunrise_printed", "comic_major_igor_grom_special_duty"],
         release_at     : {year: 2023, month: 7, day: 26}
     },
     comic_exlibrium_second_life_39                                          : {
@@ -15234,7 +15750,7 @@ const comics: Comics = {
                           {author_id: "author_irina_ivanova", positions: ["artist"]},
                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]}],
         previous_comics: ["comic_plague_doctor_29", "comic_plague_doctor_volume_7"],
-        next_comics    : ["comic_special_volkov_inferno_single", "comic_special_volkov_inferno_book", "comic_yablochny_saved_single", "comic_yablochny_saved_book"],
+        next_comics    : ["comic_special_volkov_inferno_electronic", "comic_special_volkov_inferno_printed", "comic_yablochny_saved_single", "comic_yablochny_saved_book"],
         release_at     : {year: 2023, month: 7, day: 31}
     },
     // Infinix: Город Героев - -- --- ----

@@ -169,6 +169,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/characters/image/557d99a7bc726e2e20c058ccfa0a12d5.png",
         link_to_bubble_website: "https://bubble.ru/characters/159-valeriya-makarova"
     },
+    character_varvara_leska              : {
+        full_name             : "Варвара Леска",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/c9fe96fb448bc36c9cb72a10fb84f235__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/4ee2df1ccdd5ed89b583caeba0825362.png",
+        link_to_bubble_website: "https://bubble.ru/characters/18-varvara-leska"
+    },
     character_vasilisa_wise              : {
         full_name             : "Василиса Премудрая",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/b228c5404c66b26c6f7101309f5dcb62__168x168.png.webp",
@@ -678,6 +684,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/20d43eceb5c98b637d20aa7ed30a6c73__168x168.jpg.webp",
         link_to_bubble_image  : "https://static.bubble.ru/characters/image/7ffe53a77ff583888f6bffeb514a11df.png",
         link_to_bubble_website: "https://bubble.ru/characters/163-stiks"
+    },
+    character_tamara_leska               : {
+        full_name             : "Тамара Леска",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/c35bb98fe8aa2998f0c5ef192e43cd91__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/0855d0cac4468fa9afc5bab25fd57733.png",
+        link_to_bubble_website: "https://bubble.ru/characters/91-tamara-leska"
     },
     character_tanachia_relentless        : {
         full_name             : "Танахия Неумолимая",
