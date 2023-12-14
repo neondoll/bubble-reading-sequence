@@ -157,6 +157,21 @@ const comic_mir_eternal_memory: Comic = {
                  {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
     release_at: {year: 2021, month: 5, day: 9}
 };
+const comic_exlibrium_red_line: Comic = {
+    name      : "Экслибриум. Красная строка",
+    type      : "book",
+    cover_file: {url: `${comicImagePath}/exlibrium/exlibrium-red-line.jpg`, aspect_ratio: 1339 / 2048},
+    ranges    : ["range_exlibrium", "range_exlibrium_second_life"],
+    characters: ["character_anton_varchuk", "character_grigory_loktev", "character_evgenia_luneva", "character_matvey_koretsky", "character_snezhana_lebed"],
+    authors   : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                 {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                 {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                 {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                 {author_id: "author_yulia_zhuravleva", positions: ["artist"]},
+                 {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                 {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
+    release_at: {year: 2021, month: 7, day: 30}
+};
 const comic_allies_special_idyll: Comic = {
     name      : "Союзники. Спецвыпуск. Идиллия",
     type      : "single",
@@ -9399,7 +9414,7 @@ const comics: Comics = {
         ranges          : ["range_exlibrium"],
         including_comics: ["comic_exlibrium_volume_9"],
         previous_comics : ["comic_exlibrium_49"],
-        next_comics     : ["comic_exlibrium_blank_sheet_electronic", "comic_exlibrium_second_life", "comic_exlibrium_red_line_single", "comic_exlibrium_colors_of_our_feelings_coloring_dossier"],
+        next_comics     : ["comic_exlibrium_blank_sheet_electronic", "comic_exlibrium_second_life", "comic_exlibrium_red_line_electronic", "comic_exlibrium_colors_of_our_feelings_coloring_dossier"],
         release_at      : {year: 2018, month: 12, day: 29},
         show            : false
     },
@@ -10619,7 +10634,7 @@ const comics: Comics = {
         ranges          : ["range_exlibrium"],
         contained_comics: ["comic_exlibrium_46", "comic_exlibrium_47", "comic_exlibrium_48", "comic_exlibrium_49", "comic_exlibrium_50"],
         previous_comics : ["comic_exlibrium_volume_8"],
-        next_comics     : ["comic_exlibrium_blank_sheet_printed", "comic_exlibrium_second_life_volume_1", "comic_exlibrium_red_line_book", "comic_exlibrium_colors_of_our_feelings_coloring_dossier"],
+        next_comics     : ["comic_exlibrium_blank_sheet_printed", "comic_exlibrium_second_life_volume_1", "comic_exlibrium_red_line_printed", "comic_exlibrium_colors_of_our_feelings_coloring_dossier"],
         release_at      : {year: 2019, month: 10, day: 3},
         show            : true
     },
@@ -13129,105 +13144,179 @@ const comics: Comics = {
         name            : "Чумной Доктор №7",
         number          : "7",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/plague_doctor/plague-doctor-7.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_plague_doctor"],
+        characters      : ["character_vadim_dragon", "character_valeria_makarova", "character_oleg_volkov", "character_sergey_razumovsky"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]}],
         including_comics: ["comic_plague_doctor_volume_2"],
         previous_comics : ["comic_plague_doctor_6"],
         next_comics     : ["comic_plague_doctor_8"],
-        release_at      : {year: 2021, month: 6, day: 27}
+        release_at      : {year: 2021, month: 6, day: 27},
+        show            : false
     },
     comic_exlibrium_second_life_19                                          : {
         name            : "Экслибриум. Жизнь вторая #19 Венец творения, часть 1",
         number          : "19",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-19-crown-of-creation-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_agatha"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_5"],
         previous_comics : ["comic_exlibrium_second_life_18"],
         next_comics     : ["comic_exlibrium_second_life_20"],
-        release_at      : {year: 2021, month: 6, day: 28}
+        release_at      : {year: 2021, month: 6, day: 28},
+        show            : false
     },
     comic_major_igor_grom_1                                                 : {
         name            : "Майор Игорь Гром #01 Фейк, часть 1",
         number          : "1",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/major_igor_grom/major-igor-grom-01-fake-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_fedor_prokopenko"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]},
+                           {author_id: "author_oleg_chudakov", positions: ["artist"]}],
         including_comics: ["comic_major_igor_grom_volume_1"],
         previous_comics : ["comic_igor_grom_50"],
         next_comics     : ["comic_major_igor_grom_2"],
-        release_at      : {year: 2021, month: 7, day: 2}
+        release_at      : {year: 2021, month: 7, day: 2},
+        show            : false
     },
     comic_exlibrium_second_life_volume_4                                    : {
-        name            : "Экслибриум. Жизнь вторая. Том 4. Праздник Жизни",
+        name            : "Экслибриум. Жизнь вторая. Том 4: Праздник Жизни",
         number          : "4",
         type            : "book",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-volume-4-celebration-of-life.jpg`,
+            aspect_ratio: 1004 / 1535
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_alexander_alinovsky", "character_angelina_evgenievna", "character_anton_varchuk", "character_apollo", "character_vladimir", "character_damien_egorov", "character_evgenia_luneva", "character_inga_shelkowitz", "character_lavrenty_pavlovich", "character_lena_pyatkina", "character_liliya_romanova", "character_matvey_koretsky", "character_snezhana_lebed", "character_tatyana_aleksandrovna"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         contained_comics: ["comic_exlibrium_second_life_13", "comic_exlibrium_second_life_14", "comic_exlibrium_second_life_15", "comic_exlibrium_second_life_16", "comic_exlibrium_second_life_17", "comic_exlibrium_second_life_18"],
         previous_comics : ["comic_exlibrium_second_life_volume_3"],
         next_comics     : ["comic_exlibrium_second_life_volume_5"],
-        release_at      : {year: 2021, month: 7, day: 8}
+        release_at      : {year: 2021, month: 7, day: 8},
+        show            : true
     },
     comic_mir_7                                                             : {
         name            : "МИР #07 Тебя слышит враг, часть 2",
         number          : "7",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/mir/mir-07-enemy-can-hear-you-part-2.jpg`,
+            aspect_ratio: 1338 / 2047
+        },
         ranges          : ["range_mir"],
+        characters      : ["character_alexandra_makedonskaya", "character_mir"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
         including_comics: ["comic_mir_volume_4"],
         previous_comics : ["comic_mir_6"],
         next_comics     : ["comic_mir_8"],
-        release_at      : {year: 2021, month: 7, day: 9}
+        release_at      : {year: 2021, month: 7, day: 9},
+        show            : false
     },
     comic_exlibrium_second_life_20                                          : {
         name            : "Экслибриум. Жизнь вторая #20 Венец творения, часть 2",
         number          : "20",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/exlibrium_second_life/exlibrium-second-life-20-crown-of-creation-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_agatha"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_5"],
         previous_comics : ["comic_exlibrium_second_life_19"],
         next_comics     : ["comic_exlibrium_second_life_21"],
-        release_at      : {year: 2021, month: 7, day: 28}
+        release_at      : {year: 2021, month: 7, day: 28},
+        show            : false
     },
     comic_plague_doctor_8                                                   : {
         name            : "Чумной Доктор №8",
         number          : "8",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/plague_doctor/plague-doctor-8.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_plague_doctor"],
+        characters      : ["character_altan_dagbaev", "character_vadim_dragon", "character_valeria_makarova", "character_sergey_razumovsky"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]}],
         including_comics: ["comic_plague_doctor_volume_2"],
         previous_comics : ["comic_plague_doctor_7"],
         next_comics     : ["comic_plague_doctor_9"],
-        release_at      : {year: 2021, month: 7, day: 30}
+        release_at      : {year: 2021, month: 7, day: 30},
+        show            : false
     },
-    comic_exlibrium_red_line_single                                         : {
-        name            : "Экслибриум. Красная строка",
-        type            : "single",
-        ranges          : ["range_exlibrium", "range_bubble_legends", "range_exlibrium_second_life"],
-        including_comics: ["comic_exlibrium_red_line_book"],
+    comic_exlibrium_red_line_electronic                                         : {
+        ...comic_exlibrium_red_line,
+        including_comics: ["comic_exlibrium_red_line_printed"],
         previous_comics : ["comic_exlibrium_50", "comic_exlibrium_second_life_39"],
-        release_at      : {year: 2021, month: 7, day: 30}
+        show            : false
     },
-    comic_exlibrium_red_line_book                                           : {
-        name            : "Экслибриум. Красная строка",
-        type            : "book",
-        ranges          : ["range_exlibrium", "range_bubble_legends", "range_exlibrium_second_life"],
-        contained_comics: ["comic_exlibrium_red_line_single"],
+    comic_exlibrium_red_line_printed                                           : {
+        ...comic_exlibrium_red_line,
+        contained_comics: ["comic_exlibrium_red_line_electronic"],
         previous_comics : ["comic_exlibrium_volume_9", "comic_exlibrium_second_life_39"],
-        release_at      : {year: 2021, month: 7, day: 30}
+        show            : true
     },
     comic_community_2                                                       : {
         name            : "Громада №2",
         number          : "2",
         type            : "single",
+        cover_file      : {url: `${comicImagePath}/community/community-2.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_bubble_legends", "range_childrens_comics"],
+        authors         : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_alisa_vedernikova", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["artist"]}],
         including_comics: ["comic_community"],
         previous_comics : ["comic_community_1"],
         next_comics     : ["comic_community_3"],
-        release_at      : {year: 2021, month: 8}
+        release_at      : {year: 2021, month: 8},
+        show            : false
     },
     comic_community                                                         : {
         name            : "Громада",
         type            : "book",
+        cover_file      : {url: `${comicImagePath}/community/community.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_bubble_legends", "range_childrens_comics"],
+        authors         : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_alisa_vedernikova", positions: ["colorist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["artist"]},
+                           {author_id: "author_sergei_klyuchnikov", positions: ["artist"]}],
         contained_comics: ["comic_community_1", "comic_community_2", "comic_community_3", "comic_community_4"],
         next_comics     : ["comic_community_plush_and_dangerous_storybook_book"],
-        release_at      : {year: 2021, month: 8}
+        release_at      : {year: 2021, month: 8},
+        show            : true
     },
     comic_major_igor_grom_2                                                 : {
         name            : "Майор Игорь Гром #02 Фейк, часть 2",
@@ -15132,7 +15221,7 @@ const comics: Comics = {
                           {author_id: "author_anastasia_afonina", positions: ["artist"]},
                           {author_id: "author_elena_doronina", positions: ["colorist"]}],
         previous_comics: ["comic_exlibrium_second_life_38"],
-        next_comics    : ["comic_exlibrium_blank_sheet_electronic", "comic_exlibrium_blank_sheet_printed", "comic_exlibrium_red_line_single", "comic_exlibrium_red_line_book", "comic_exlibrium_colors_of_our_feelings_coloring_dossier"],
+        next_comics    : ["comic_exlibrium_blank_sheet_electronic", "comic_exlibrium_blank_sheet_printed", "comic_exlibrium_red_line_electronic", "comic_exlibrium_red_line_printed", "comic_exlibrium_colors_of_our_feelings_coloring_dossier"],
         release_at     : {year: 2023, month: 7, day: 28}
     },
     comic_plague_doctor_30                                                  : {

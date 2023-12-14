@@ -55,6 +55,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/7b5fd7a1b27a11ee8887ecdfcff51212.png",
         link_to_bubble_website: "https://bubble.ru/characters/116-alyona-kuznetsova"
     },
+    character_altan_dagbaev              : {
+        full_name             : "Алтан Дагбаев",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/8f6dc2b98bf255a925cbf649abd13196__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/abb041825ad50f0f3d94f02b3843205b.png",
+        link_to_bubble_website: "https://bubble.ru/characters/175-altan-dagbaev"
+    },
     character_amelia                     : {
         full_name             : "Амелия",
         link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/fa382667f59b6ae76418f5c594d63d55__168x168.jpg.webp",
@@ -93,6 +99,8 @@ const characters: Characters = {
     },
     character_anton_varchuk              : {
         full_name             : "Антон Варчук",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/932767789a4e614b49021452f38dafc7__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/34299b6e3f8ab27d98a64374a47dd7d5.png",
         link_to_bubble_website: "https://bubble.ru/characters/11-anton-varchuk"
     },
     character_apollo                     : {
@@ -142,6 +150,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/3504929d99c9de6a519142e04fff388f__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/cc2aa7585b3a817691950018c4d60080.png",
         link_to_bubble_website: "https://bubble.ru/characters/17-bulat-gadzhiev"
+    },
+    character_vadim_dragon               : {
+        full_name             : "Вадим \"Дракон\"",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/4939e7ee68530a2cb92f5bbc248f1bde__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/a422c4cd1623f47b7c8daaf4cb152670.png",
+        link_to_bubble_website: "https://bubble.ru/characters/174-vadim-drakon"
     },
     character_valentin_caligari_gashparov: {
         full_name             : "Валентин \"Калигари\" Гашпаров",
@@ -208,6 +222,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/bbc003a48e404080c763ec3c5a4625f0__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/962a7fbeaf1761edf8094bcdd0f80739.png",
         link_to_bubble_website: "https://bubble.ru/characters/31-gleb-zheglov"
+    },
+    character_grigory_loktev             : {
+        full_name             : "Григорий Локтев",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/cf5eb81bcd21d8411d474965c3fad934__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/04d7b77a580a9c66ce4921fd4d5e9df1.png",
+        link_to_bubble_website: "https://bubble.ru/characters/33-grigorii-loktev"
     },
     character_delta                      : {
         full_name             : "Дельта",
@@ -634,6 +654,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/3f2bc291b480e497aec9f495d2eb8ce8__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/c8bea4cb1045be597a81d7cc065b6b8a.png",
         link_to_bubble_website: "https://bubble.ru/characters/87-siergo"
+    },
+    character_snezhana_lebed             : {
+        full_name             : "Снежана Лебедь",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/4943ea73a0087372a13705212bad602d__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/85cd79779e0a7f755e9aa6e162e69d3a.png",
+        link_to_bubble_website: "https://bubble.ru/characters/89-snezhana-lebed"
     },
     character_nightingale                : {
         full_name             : "Соловей",

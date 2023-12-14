@@ -207,6 +207,7 @@ const authors: Authors = {
     author_oksana_turlyay         : {full_name: "Оксана Турляй", positions: ["artist"]},
     author_polina_shaposhnikova   : {full_name: "Полина Шапошникова", positions: ["artist"]},
     author_roman_titov            : {full_name: "Роман Титов", positions: ["colorist"]},
+    author_sergei_klyuchnikov     : {full_name: "Сергей Ключников", positions: ["artist"]},
     author_tatiana_goryacheva     : {full_name: "Татьяна Горячева", positions: ["artist"]},
     author_tatiana_kuzmina        : {full_name: "Татьяна Кузьмина", positions: ["artist"]},
     author_tatiana_yakubets       : {full_name: "Татьяна Якубец", positions: ["colorist"]},
