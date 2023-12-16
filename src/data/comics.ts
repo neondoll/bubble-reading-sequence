@@ -7,7 +7,7 @@ const comic_time_of_raven_backstory: Comic = {
     type      : "book",
     cover_file: {url: `${comicImagePath}/time_of_raven/time-of-raven-backstory.jpg`, aspect_ratio: 1339 / 2048},
     ranges    : ["range_crossovers", "range_time_of_raven"],
-    characters: ["character_andrey_radov", "character_besoboy", "character_bulat_gadzhiev", "character_gina_stevens", "character_dimitrios", "character_igor_grom", "character_kutkh", "character_master", "character_nika_chaikina", "character_svartgel", "character_plague_doctor"],
+    characters: ["character_bulat_gadzhiev", "character_dzhina_stivens", "character_dimitrios", "character_kuth", "character_magistr", "character_svartzhel", "character_chumnoi_doktor", "character_andrey_radov", "character_besoboy", "character_igor_grom", "character_nika_chaikina"],
     authors   : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                  {author_id: "author_anastasia_kim", positions: ["artist"]},
                  {author_id: "author_andrey_vasin", positions: ["artist"]},
@@ -35,7 +35,7 @@ const comic_time_of_raven_epilogue: Comic = {
     type      : "book",
     cover_file: {url: `${comicImagePath}/time_of_raven/time-of-raven-epilogue.jpg`, aspect_ratio: 1339 / 2048},
     ranges    : ["range_crossovers", "range_time_of_raven"],
-    characters: ["character_august_van_der_holt", "character_alena_kuznetsova", "character_angelina_evgenievna", "character_andrey_radov", "character_antichrist", "character_besoboy", "character_bulat_gadzhiev", "character_jessie_rodriguez", "character_dmitry_dubin", "character_igor_grom", "character_koschey", "character_master", "character_murdoch_mcallister", "character_nika_chaikina", "character_semiaza", "character_tatyana_aleksandrovna", "character_felix_dzerzhinsky", "character_plague_doctor", "character_shebu_eternal", "character_yarkh_deadly"],
+    characters: ["character_avgust_van_der_holt", "character_angelina_evgenevna", "character_antihrist", "character_bulat_gadzhiev", "character_dzhessi_rodrigez", "character_dmitrii_dubin", "character_koschei", "character_magistr", "character_myordok_makalister", "character_semiaza", "character_tatyana_aleksandrovna", "character_feliks_dzerzhinskii", "character_chumnoi_doktor", "character_shebu_predvechnyi", "character_alena_kuznetsova", "character_andrey_radov", "character_besoboy", "character_igor_grom", "character_nika_chaikina", "character_yarkh_deadly"],
     authors   : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                  {author_id: "author_anastasia_kim", positions: ["artist"]},
                  {author_id: "author_andrey_vasin", positions: ["artist"]},
@@ -74,7 +74,7 @@ const comic_besoboy_and_planeswalkers_new_life: Comic = {
     type      : "book",
     cover_file: {url: `${comicImagePath}/besoboy-and-planeswalkers-new-life.png`, aspect_ratio: 643 / 983},
     ranges    : ["range_crossovers", "range_bubble_legends", "range_besoboy_vol_2"],
-    characters: ["character_andrey_radov", "character_balor", "character_besoboy", "character_vasilisa_wise", "character_koschey", "character_ksenia_radova", "character_pavel_ocheredko", "character_gray_wolf", "character_yana"],
+    characters: ["character_balor", "character_vasilisa_premudraya", "character_koschei", "character_pavel_ocheredko", "character_seryi_volk", "character_andrey_radov", "character_besoboy", "character_ksenia_radova", "character_yana"],
     authors   : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                  {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                  {author_id: "author_natalya_zaidova", positions: ["artist"]},
@@ -86,7 +86,7 @@ const comic_master_death_is_just_beginning: Comic = {
     type      : "book",
     cover_file: {url: `${comicImagePath}/bubble_legends/master-death-is-just-beginning.png`, aspect_ratio: 582 / 900},
     ranges    : ["range_bubble_legends"],
-    characters: ["character_antichrist", "character_master"],
+    characters: ["character_antihrist", "character_magistr"],
     authors   : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                  {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                  {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -99,7 +99,7 @@ const comic_exlibrium_blank_sheet: Comic = {
     type      : "book",
     cover_file: {url: `${comicImagePath}/exlibrium/exlibrium-blank-sheet.jpg`, aspect_ratio: 1004 / 1536},
     ranges    : ["range_exlibrium"],
-    characters: ["character_damien_egorov", "character_zoya_safyanova", "character_margarita_volnova", "character_yadviga_tvirinova", "character_yanvar_tvirinov"],
+    characters: ["character_demien_egorov", "character_zoya_safyanova", "character_margarita_volnova", "character_yadviga_tvirinova", "character_yanvar_tvirinov"],
     authors   : [{author_id: "author_konstantin_tarasov", positions: ["artist", "screenwriter"]},
                  {author_id: "author_marina_privalova", positions: ["artist"]},
                  {author_id: "author_natalia_devova", positions: ["screenwriter"]},
@@ -127,7 +127,7 @@ const comic_major_grom_1939: Comic = {
     type      : "book",
     cover_file: {url: `${comicImagePath}/major_grom/major-grom-1939.jpg`, aspect_ratio: 1339 / 2047},
     ranges    : ["range_major_grom"],
-    characters: ["character_dmitry_dubin", "character_igor_grom", "character_plague_doctor", "character_yulia_pchyolkina"],
+    characters: ["character_dmitrii_dubin", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
     authors   : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                  {author_id: "author_alexey_gorbut", positions: ["artist"]},
                  {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -138,7 +138,7 @@ const comic_quarantine_book: Comic = {
     type      : "book",
     cover_file: {url: `${comicImagePath}/besoboy_vol_2/quarantine-book.jpg`, aspect_ratio: 1444 / 2048},
     ranges    : ["range_besoboy_vol_2"],
-    characters: ["character_balor", "character_borj", "character_satan", "character_tanachia_relentless", "character_black_dog", "character_yana"],
+    characters: ["character_balor", "character_satana", "character_tanahiya_neumolimaya", "character_chyornyi_pyos", "character_borj", "character_yana"],
     authors   : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]}],
     release_at: {year: 2020, month: 6, day: 1}
 };
@@ -147,7 +147,7 @@ const comic_mir_eternal_memory: Comic = {
     type      : "single",
     cover_file: {url: `${comicImagePath}/mir/mir-eternal-memory.jpg`, aspect_ratio: 1339 / 2048},
     ranges    : ["range_mir"],
-    characters: ["character_alexandra_makedonskaya", "character_andrey_radov_grandfather", "character_mir"],
+    characters: ["character_andrei_radov_ded", "character_alexandra_makedonskaya", "character_mir"],
     authors   : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                  {author_id: "author_alexey_gorbut", positions: ["artist"]},
                  {author_id: "author_andrey_vasin", positions: ["artist"]},
@@ -162,7 +162,7 @@ const comic_exlibrium_red_line: Comic = {
     type      : "book",
     cover_file: {url: `${comicImagePath}/exlibrium/exlibrium-red-line.jpg`, aspect_ratio: 1339 / 2048},
     ranges    : ["range_exlibrium", "range_exlibrium_second_life"],
-    characters: ["character_anton_varchuk", "character_grigory_loktev", "character_evgenia_luneva", "character_matvey_koretsky", "character_snezhana_lebed"],
+    characters: ["character_anton_varchuk", "character_grigorii_loktev", "character_evgeniya_lunyova", "character_matvei_koretskii", "character_snezhana_lebed"],
     authors   : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                  {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                  {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
@@ -177,7 +177,7 @@ const comic_special_volkov_inferno: Comic = {
     type      : "single",
     cover_file: {url: `${comicImagePath}/plague_doctor/special-volkov-inferno.jpg`, aspect_ratio: 1339 / 2048},
     ranges    : ["range_plague_doctor"],
-    characters: ["character_jessie_rodriguez", "character_oleg_volkov"],
+    characters: ["character_dzhessi_rodrigez", "character_oleg_volkov"],
     authors   : [{author_id: "author_ekaterina_grishchenko", positions: ["artist"]},
                  {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]}],
     release_at: {year: 2021, month: 10, day: 30}
@@ -187,7 +187,7 @@ const comic_special_prokopenko_grom_at_sunrise: Comic = {
     type      : "single",
     cover_file: {url: `${comicImagePath}/special-prokopenko-grom-at-sunrise.jpg`, aspect_ratio: 1339 / 2048},
     ranges    : ["range_major_grom", "range_bubble_legends", "range_major_igor_grom"],
-    characters: ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+    characters: ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
     authors   : [{author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
                  {author_id: "author_evgeniy_bornyakov", positions: ["artist"]},
                  {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -198,7 +198,7 @@ const comic_allies_special_idyll: Comic = {
     type      : "single",
     cover_file: {url: `${comicImagePath}/allies/allies-special-idyll.jpg`, aspect_ratio: 1339 / 2048},
     ranges    : ["range_allies"],
-    characters: ["character_arthur_huxley", "character_jessie_rodriguez"],
+    characters: ["character_artur_haksli", "character_dzhessi_rodrigez"],
     authors   : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
                  {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
                  {author_id: "author_irina_ivanova", positions: ["artist", "colorist"]}],
@@ -229,7 +229,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_alexandra_shchastlivaya", positions: ["colorist"]}],
@@ -287,7 +287,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_alexandra_shchastlivaya", positions: ["colorist"]}],
@@ -348,7 +348,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_alexandra_shchastlivaya", positions: ["colorist"]}],
@@ -409,7 +409,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_alexandra_shchastlivaya", positions: ["colorist"]}],
@@ -470,7 +470,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_alexandra_shchastlivaya", positions: ["colorist"]}],
@@ -531,7 +531,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_alexandra_shchastlivaya", positions: ["colorist"]}],
@@ -592,7 +592,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_alexandra_shchastlivaya", positions: ["colorist"]}],
@@ -653,7 +653,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_alexandra_shchastlivaya", positions: ["colorist"]}],
@@ -714,7 +714,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_alexandra_shchastlivaya", positions: ["colorist"]}],
@@ -775,7 +775,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
@@ -837,7 +837,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_alexandra_shchastlivaya", positions: ["colorist"]}],
@@ -898,7 +898,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_yulia_zhuravleva", positions: ["artist", "colorist"]},
@@ -960,7 +960,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
@@ -1021,7 +1021,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_igor_grom", "character_kirk_oreilly", "character_murdoch_mcallister", "character_yulia_pchyolkina"],
+        characters      : ["character_kirk_oraili", "character_myordok_makalister", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
@@ -1082,7 +1082,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
@@ -1155,7 +1155,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_igor_grom", "character_kirk_oreilly", "character_murdoch_mcallister", "character_yulia_pchyolkina"],
+        characters      : ["character_kirk_oraili", "character_myordok_makalister", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
@@ -1231,7 +1231,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
@@ -1307,7 +1307,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
@@ -1368,7 +1368,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_yulia_zhuravleva", positions: ["artist"]},
                            {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
@@ -1429,7 +1429,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_anna_arkhipova", "character_victor_isaev", "character_dmitry_dubin", "character_igor_grom", "character_olga_isaeva", "character_yulia_pchyolkina"],
+        characters      : ["character_anna_arhipova", "character_viktor_isaev", "character_dmitrii_dubin", "character_olga_isaeva", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_yulia_zhuravleva", positions: ["artist"]},
                            {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
@@ -1490,7 +1490,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_yulia_zhuravleva", positions: ["artist"]},
                            {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
@@ -1551,7 +1551,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_yulia_zhuravleva", positions: ["artist"]},
                            {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
@@ -1624,7 +1624,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_ekaterina_menabde", positions: ["artist"]},
                            {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
@@ -1679,7 +1679,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_ekaterina_menabde", positions: ["artist"]},
                            {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
@@ -1748,7 +1748,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_sergey_razumovsky", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
@@ -1791,7 +1791,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-25-game-part-1.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_oleg_volkov", "character_sergey_razumovsky", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_oleg_volkov", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
@@ -1874,7 +1874,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-26-game-part-2.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_oleg_volkov", "character_sergey_razumovsky", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
@@ -1959,7 +1959,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-27-game-part-3.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_oleg_volkov", "character_sergey_razumovsky", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -2035,7 +2035,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_sergey_razumovsky", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
@@ -2110,7 +2110,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-28-game-part-4.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_oleg_volkov", "character_sergey_razumovsky", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -2198,7 +2198,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-29-game-part-5.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_oleg_volkov", "character_sergey_razumovsky", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -2283,7 +2283,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-30-game-part-6.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_oleg_volkov", "character_sergey_razumovsky", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -2344,7 +2344,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_sergey_razumovsky", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_yulia_zhuravleva", positions: ["artist"]},
@@ -2404,7 +2404,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-31-game-part-7.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_oleg_volkov", "character_sergey_razumovsky", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -2488,7 +2488,7 @@ const comics: Comics = {
             aspect_ratio: 454 / 695
         },
         ranges          : ["range_crossovers", "range_bubble_legends"],
-        characters      : ["character_andrey_radov_grandfather", "character_igor_grom_grandfather"],
+        characters      : ["character_andrei_radov_ded", "character_igor_grom_ded"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]},
@@ -2506,7 +2506,7 @@ const comics: Comics = {
             aspect_ratio: 643 / 983
         },
         ranges          : ["range_crossovers", "range_bubble_legends"],
-        characters      : ["character_andrey_radov_grandfather", "character_igor_grom_grandfather"],
+        characters      : ["character_andrei_radov_ded", "character_igor_grom_ded"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]},
@@ -2522,7 +2522,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-32-game-part-8.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_oleg_volkov", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -2601,7 +2601,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-33-game-part-9.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_oleg_volkov", "character_sergey_razumovsky", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_oleg_volkov", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -2686,7 +2686,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_rud", positions: ["artist"]},
                            {author_id: "author_kirill_perepelitsyn", positions: ["colorist"]}],
@@ -2810,7 +2810,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_rud", positions: ["artist"]},
                            {author_id: "author_kirill_perepelitsyn", positions: ["colorist"]}],
@@ -2922,7 +2922,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_rud", positions: ["artist"]},
                            {author_id: "author_kirill_perepelitsyn", positions: ["colorist"]}],
@@ -3007,7 +3007,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_rud", positions: ["artist"]},
                            {author_id: "author_kirill_perepelitsyn", positions: ["colorist"]}],
@@ -3026,7 +3026,7 @@ const comics: Comics = {
             aspect_ratio: 1050 / 1600
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_ziggy_space_hamster"],
         next_comics     : ["comic_ziggy_space_hamster_2"],
@@ -3054,7 +3054,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_anna_arkhipova", "character_victor_isaev", "character_dmitry_dubin", "character_igor_grom", "character_olga_isaeva", "character_princesses", "character_fedor_prokopenko", "character_yulia_pchyolkina"],
+        characters      : ["character_anna_arhipova", "character_viktor_isaev", "character_dmitrii_dubin", "character_olga_isaeva", "character_fyodor_prokopenko", "character_uliya_pchyolkina", "character_igor_grom", "character_princesses"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
@@ -3115,7 +3115,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/time_of_raven/time-of-raven-prologue.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_crossovers", "range_time_of_raven"],
-        characters      : ["character_august_van_der_holt", "character_jessie_rodriguez", "character_master", "character_murdoch_mcallister", "character_svartgel"],
+        characters      : ["character_avgust_van_der_holt", "character_dzhessi_rodrigez", "character_magistr", "character_myordok_makalister", "character_svartzhel"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]},
@@ -3183,7 +3183,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/time_of_raven/time-of-raven-1.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_crossovers", "range_time_of_raven"],
-        characters      : ["character_igor_grom", "character_kutkh", "character_master", "character_plague_doctor"],
+        characters      : ["character_kuth", "character_magistr", "character_chumnoi_doktor", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]},
@@ -3218,7 +3218,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-38-obsession.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]},
                            {author_id: "author_nina_vakueva", positions: ["artist"]}],
@@ -3246,7 +3246,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/red_fury/red-fury-38-epiphany.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_red_fury"],
-        characters      : ["character_arthur_huxley", "character_gamma", "character_delta", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina"],
+        characters      : ["character_artur_haksli", "character_gamma", "character_delta", "character_dzhoshua_donato", "character_lotta_lemke", "character_nika_chaikina"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_rud", positions: ["artist"]},
                            {author_id: "author_kirill_perepelitsyn", positions: ["colorist"]}],
@@ -3292,7 +3292,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/time_of_raven/time-of-raven-2.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_crossovers", "range_time_of_raven"],
-        characters      : ["character_august_van_der_holt", "character_andrey_radov", "character_arthur_huxley", "character_besoboy", "character_jessie_rodriguez", "character_joshua_donato", "character_dimitrios", "character_igor_grom", "character_kutkh", "character_lotta_lemke", "character_master", "character_murdoch_mcallister", "character_nika_chaikina", "character_svartgel", "character_black_dog", "character_shmyg"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_dimitrios", "character_kuth", "character_lotta_lemke", "character_magistr", "character_myordok_makalister", "character_svartzhel", "character_chyornyi_pyos", "character_shmyg", "character_andrey_radov", "character_besoboy", "character_igor_grom", "character_nika_chaikina"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]},
@@ -3330,7 +3330,7 @@ const comics: Comics = {
             aspect_ratio: 1050 / 1600
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_ziggy_space_hamster"],
         previous_comics : ["comic_ziggy_space_hamster_1"],
@@ -3347,7 +3347,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_august_van_der_holt", "character_dmitry_dubin", "character_igor_grom", "character_kirk_oreilly", "character_murdoch_mcallister"],
+        characters      : ["character_avgust_van_der_holt", "character_dmitrii_dubin", "character_kirk_oraili", "character_myordok_makalister", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]},
                            {author_id: "author_nina_vakueva", positions: ["artist"]}],
@@ -3389,7 +3389,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/red_fury/red-fury-39-reflection.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_red_fury"],
-        characters      : ["character_arthur_huxley", "character_gina_stevens", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_richard_rippe", "character_helga_lemke"],
+        characters      : ["character_artur_haksli", "character_dzhina_stivens", "character_dzhoshua_donato", "character_lotta_lemke", "character_rihard_rippe", "character_helga_lemke", "character_nika_chaikina"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_rud", positions: ["artist"]},
                            {author_id: "author_kirill_perepelitsyn", positions: ["colorist"]}],
@@ -3435,7 +3435,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/time_of_raven/time-of-raven-3.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_crossovers", "range_time_of_raven"],
-        characters      : ["character_august_van_der_holt", "character_andrey_radov", "character_arthur_huxley", "character_besoboy", "character_jessie_rodriguez", "character_joshua_donato", "character_igor_grom", "character_kutkh", "character_lotta_lemke", "character_master", "character_murdoch_mcallister", "character_nika_chaikina", "character_svartgel", "character_black_dog", "character_shmyg"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_kuth", "character_lotta_lemke", "character_magistr", "character_myordok_makalister", "character_svartzhel", "character_chyornyi_pyos", "character_shmyg", "character_andrey_radov", "character_besoboy", "character_igor_grom", "character_nika_chaikina"],
         authors         : [{author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
@@ -3562,7 +3562,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom", "range_crossovers"],
-        characters      : ["character_arthur_huxley", "character_joshua_donato", "character_dmitry_dubin", "character_igor_grom", "character_lotta_lemke", "character_nika_chaikina", "character_fedor_prokopenko"],
+        characters      : ["character_artur_haksli", "character_dzhoshua_donato", "character_dmitrii_dubin", "character_lotta_lemke", "character_fyodor_prokopenko", "character_igor_grom", "character_nika_chaikina"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]},
                            {author_id: "author_nina_vakueva", positions: ["artist"]}],
@@ -3581,7 +3581,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_red_fury", "range_crossovers"],
-        characters      : ["character_joshua_donato", "character_igor_grom", "character_lotta_lemke", "character_murdoch_mcallister", "character_nika_chaikina"],
+        characters      : ["character_dzhoshua_donato", "character_lotta_lemke", "character_myordok_makalister", "character_igor_grom", "character_nika_chaikina"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]},
                            {author_id: "author_nina_vakueva", positions: ["artist"]}],
@@ -3627,7 +3627,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/time_of_raven/time-of-raven-4.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_crossovers", "range_time_of_raven"],
-        characters      : ["character_august_van_der_holt", "character_andrey_radov", "character_arthur_huxley", "character_besoboy", "character_delta", "character_jessie_rodriguez", "character_joshua_donato", "character_kutkh", "character_igor_grom", "character_lotta_lemke", "character_master", "character_nika_chaikina", "character_svartgel"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_delta", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_kuth", "character_lotta_lemke", "character_magistr", "character_svartzhel", "character_andrey_radov", "character_besoboy", "character_igor_grom", "character_nika_chaikina"],
         authors         : [{author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
@@ -3660,7 +3660,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/red_fury/red-fury-41-collapse.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_red_fury"],
-        characters      : ["character_arthur_huxley", "character_gamma", "character_delta", "character_jessie_rodriguez", "character_richard_rippe", "character_helga_lemke"],
+        characters      : ["character_artur_haksli", "character_gamma", "character_delta", "character_dzhessi_rodrigez", "character_rihard_rippe", "character_helga_lemke"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_rud", positions: ["artist"]},
                            {author_id: "author_kirill_perepelitsyn", positions: ["colorist"]}],
@@ -3688,7 +3688,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-41-perfect-day.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_margarita_kablukova", positions: ["colorist"]},
                            {author_id: "author_nina_vakueva", positions: ["artist"]}],
@@ -3731,7 +3731,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/time_of_raven/time-of-raven-5.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_crossovers", "range_time_of_raven"],
-        characters      : ["character_avaddon_merciless", "character_august_van_der_holt", "character_andrey_radov", "character_besoboy", "character_joshua_donato", "character_igor_grom", "character_kutkh", "character_lotta_lemke", "character_master", "character_murdoch_mcallister", "character_nika_chaikina", "character_satan", "character_svartgel", "character_shmyg", "character_yarkh_deadly"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_avgust_van_der_holt", "character_dzhoshua_donato", "character_kuth", "character_lotta_lemke", "character_magistr", "character_myordok_makalister", "character_satana", "character_svartzhel", "character_shmyg", "character_andrey_radov", "character_besoboy", "character_igor_grom", "character_nika_chaikina", "character_yarkh_deadly"],
         authors         : [{author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
@@ -3754,7 +3754,7 @@ const comics: Comics = {
             aspect_ratio: 1050 / 1600
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_ziggy_space_hamster"],
         previous_comics : ["comic_ziggy_space_hamster_2"],
@@ -3780,7 +3780,7 @@ const comics: Comics = {
         type            : "book",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-volume-5-game.jpg`, aspect_ratio: 1004 / 1535},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_oleg_volkov", "character_fedor_prokopenko", "character_plague_doctor", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_oleg_volkov", "character_fyodor_prokopenko", "character_chumnoi_doktor", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_margarita_kablukova", positions: ["colorist"]},
@@ -3856,7 +3856,7 @@ const comics: Comics = {
         type       : "single",
         cover_file : {url: `${comicImagePath}/monk_king_of_parties/monk-king-of-parties.png`, aspect_ratio: 559 / 794},
         ranges     : ["range_monk_king_of_parties"],
-        characters : ["character_andrey_radov", "character_vasilisa_wise", "character_lord", "character_ksenia_radova", "character_master", "character_gray_wolf"],
+        characters : ["character_vasilisa_premudraya", "character_vladyka", "character_magistr", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors    : [{author_id: "author_vitaly_terletsky", positions: ["artist", "screenwriter"]}],
         next_comics: ["comic_monk_king_of_parties_no_more_parties"],
         release_at : {year: 2016, month: 4, day: 1},
@@ -3871,7 +3871,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_veniamin_rubinstein", "character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_veniamin_rubinshtein", "character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]},
                            {author_id: "author_eduard_petrovich", positions: ["artist"]}],
@@ -3977,7 +3977,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_veniamin_rubinstein", "character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_veniamin_rubinshtein", "character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]},
                            {author_id: "author_eduard_petrovich", positions: ["artist"]}],
@@ -4065,7 +4065,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_veniamin_rubinstein", "character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_veniamin_rubinshtein", "character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]},
                            {author_id: "author_eduard_petrovich", positions: ["artist"]}],
@@ -4153,7 +4153,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_veniamin_rubinstein", "character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_veniamin_rubinshtein", "character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_nina_vakueva", positions: ["colorist"]}],
@@ -4184,7 +4184,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_andrey_rodin", positions: ["artist"]},
                            {author_id: "author_anna_rud", positions: ["artist"]},
@@ -4220,7 +4220,7 @@ const comics: Comics = {
             aspect_ratio: 1050 / 1600
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_ziggy_space_hamster"],
         previous_comics : ["comic_ziggy_space_hamster_3"],
@@ -4237,7 +4237,7 @@ const comics: Comics = {
             aspect_ratio: 1050 / 1600
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_ziggy_space_hamster"],
         previous_comics : ["comic_ziggy_space_hamster_4"],
@@ -4319,7 +4319,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_veniamin_rubinstein", "character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_veniamin_rubinshtein", "character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_nina_vakueva", positions: ["colorist"]}],
@@ -4417,7 +4417,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_veniamin_rubinstein", "character_dmitry_dubin", "character_igor_grom", "character_ilya_kosygin", "character_fedor_prokopenko"],
+        characters      : ["character_veniamin_rubinshtein", "character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom", "character_ilya_kosygin"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_nina_vakueva", positions: ["colorist"]}],
@@ -4502,7 +4502,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_major_grom", "range_red_fury", "range_crossovers"],
-        characters      : ["character_arthur_huxley", "character_gamma", "character_delta", "character_joshua_donato", "character_dmitry_dubin", "character_igor_grom", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_nika_chaikina", "character_richard_rippe", "character_helga_lemke"],
+        characters      : ["character_artur_haksli", "character_gamma", "character_delta", "character_dzhoshua_donato", "character_dmitrii_dubin", "character_kirk_oraili", "character_lotta_lemke", "character_myordok_makalister", "character_rihard_rippe", "character_helga_lemke", "character_igor_grom", "character_nika_chaikina"],
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_rud", positions: ["artist"]},
                            {author_id: "author_kirill_perepelitsyn", positions: ["colorist"]},
@@ -4560,7 +4560,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_veniamin_rubinstein", "character_dmitry_dubin", "character_igor_grom", "character_ilya_kosygin", "character_fedor_prokopenko"],
+        characters      : ["character_veniamin_rubinshtein", "character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom", "character_ilya_kosygin"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -4605,7 +4605,7 @@ const comics: Comics = {
         type            : "book",
         cover_file      : {url: `${comicImagePath}/time_of_raven/time-of-raven.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers", "range_time_of_raven"],
-        characters      : ["character_avaddon_merciless", "character_august_van_der_holt", "character_andrey_radov", "character_arthur_huxley", "character_besoboy", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_igor_grom", "character_kutkh", "character_lotta_lemke", "character_master", "character_murdoch_mcallister", "character_nika_chaikina", "character_satan", "character_svartgel", "character_semiaza", "character_sergey_razumovsky", "character_black_dog", "character_plague_doctor", "character_shmyg", "character_yulia_pchyolkina", "character_yarkh_deadly"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_kuth", "character_lotta_lemke", "character_magistr", "character_myordok_makalister", "character_satana", "character_svartzhel", "character_semiaza", "character_chyornyi_pyos", "character_chumnoi_doktor", "character_shmyg", "character_uliya_pchyolkina", "character_andrey_radov", "character_besoboy", "character_igor_grom", "character_nika_chaikina", "character_sergey_razumovsky", "character_yarkh_deadly"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
@@ -4714,7 +4714,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_veniamin_rubinstein", "character_dmitry_dubin", "character_igor_grom", "character_ilya_kosygin", "character_fedor_prokopenko"],
+        characters      : ["character_veniamin_rubinshtein", "character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom", "character_ilya_kosygin"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -4832,7 +4832,7 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_veniamin_rubinstein", "character_igor_grom", "character_ilya_kosygin", "character_fedor_prokopenko", "character_yulia_pchyolkina"],
+        characters      : ["character_veniamin_rubinshtein", "character_fyodor_prokopenko", "character_uliya_pchyolkina", "character_igor_grom", "character_ilya_kosygin"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -4904,7 +4904,7 @@ const comics: Comics = {
             aspect_ratio: 737 / 1123
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
         contained_comics: ["comic_ziggy_space_hamster_1", "comic_ziggy_space_hamster_2", "comic_ziggy_space_hamster_3", "comic_ziggy_space_hamster_4", "comic_ziggy_space_hamster_5"],
@@ -4929,7 +4929,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_janish", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_janish", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -4948,7 +4948,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_igor_grom", "character_cocytus", "character_styx"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -4967,7 +4967,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_ksenia_radova", "character_mars", "character_gray_wolf"],
+        characters      : ["character_mars", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
@@ -4984,7 +4984,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-1-before-dawn-part-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -5027,7 +5027,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-2-before-dawn-part-2.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -5046,7 +5046,7 @@ const comics: Comics = {
             aspect_ratio: 1327 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_janish", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_janish", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -5065,7 +5065,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_igor_grom", "character_cocytus", "character_styx"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -5084,7 +5084,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_ksenia_radova", "character_mars", "character_gray_wolf"],
+        characters      : ["character_mars", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
@@ -5140,7 +5140,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-3-before-dawn-part-3.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -5159,7 +5159,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_janish", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_janish", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -5178,7 +5178,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_igor_grom", "character_cocytus", "character_styx"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -5197,7 +5197,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_ksenia_radova", "character_moon", "character_mars", "character_gray_wolf"],
+        characters      : ["character_mars", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova", "character_moon"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
@@ -5241,7 +5241,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-4-before-dawn-part-4.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -5277,7 +5277,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_janish", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_janish", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -5296,7 +5296,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_ivan_yelyasov", positions: ["artist"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -5315,7 +5315,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_diana_de_maridor", "character_ksenia_radova", "character_gray_wolf"],
+        characters      : ["character_diana_de_maridor", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -5362,7 +5362,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_yulia_loganova", positions: ["colorist"]}],
@@ -5381,7 +5381,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_janish", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_janish", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -5400,7 +5400,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_ivan_yelyasov", positions: ["artist"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -5431,7 +5431,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_diana_de_maridor", "character_ksenia_radova", "character_gray_wolf"],
+        characters      : ["character_diana_de_maridor", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -5481,7 +5481,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -5500,7 +5500,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_veniamin_rubinstein", "character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_veniamin_rubinshtein", "character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -5538,7 +5538,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_pavel_ocheredko", "character_black_dog_its_time", "character_shmyg", "character_yana"],
+        characters      : ["character_antihrist", "character_balor", "character_pavel_ocheredko", "character_chyornyi_pyos", "character_shmyg", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_elena_doronina", positions: ["colorist"]},
                            {author_id: "author_eric_bragalyan", positions: ["artist"]}],
@@ -5557,7 +5557,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_ivan_yelyasov", positions: ["artist"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -5591,7 +5591,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_diana_de_maridor", "character_ksenia_radova", "character_gray_wolf"],
+        characters      : ["character_diana_de_maridor", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -5638,7 +5638,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -5674,7 +5674,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_pavel_ocheredko", "character_black_dog", "character_shmyg", "character_yana"],
+        characters      : ["character_antihrist", "character_balor", "character_pavel_ocheredko", "character_chyornyi_pyos", "character_shmyg", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_elena_doronina", positions: ["colorist"]},
                            {author_id: "author_eric_bragalyan", positions: ["artist"]}],
@@ -5734,7 +5734,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_valentin_caligari_gashparov", "character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_valentin_caligari_gashparov", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -5789,7 +5789,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_moon", "character_gray_wolf"],
+        characters      : ["character_seryi_volk", "character_moon"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
@@ -5979,7 +5979,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -6035,7 +6035,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_avaddon_merciless", "character_bafforth_rackshore", "character_satan", "character_tanachia_relentless", "character_shmyg", "character_yarkh_deadly"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_baffort_rakshor", "character_satana", "character_tanahiya_neumolimaya", "character_shmyg", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -6090,7 +6090,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_valentin_caligari_gashparov", "character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_valentin_caligari_gashparov", "character_igor_grom", "character_irina_charlotte"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -6145,7 +6145,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_moon", "character_gray_wolf"],
+        characters      : ["character_seryi_volk", "character_moon"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
                            {author_id: "author_anna_rud", positions: ["artist"]}],
@@ -6306,7 +6306,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -6361,7 +6361,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_avaddon_merciless", "character_bafforth_rackshore", "character_satan", "character_tanachia_relentless", "character_shmyg", "character_yarkh_deadly"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_baffort_rakshor", "character_satana", "character_tanahiya_neumolimaya", "character_shmyg", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -6416,7 +6416,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_valentin_caligari_gashparov", "character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_valentin_caligari_gashparov", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -6435,7 +6435,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_moon", "character_gray_wolf"],
+        characters      : ["character_seryi_volk", "character_moon"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
                            {author_id: "author_anna_rud", positions: ["artist"]}],
@@ -6484,7 +6484,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_queen_of_rot", "character_black_dog"],
+        characters      : ["character_koroleva_gnili", "character_chyornyi_pyos"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -6503,7 +6503,7 @@ const comics: Comics = {
             aspect_ratio: 598 / 900
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -6522,7 +6522,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -6541,7 +6541,7 @@ const comics: Comics = {
             aspect_ratio: 598 / 900
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_igor_grom", "character_cocytus", "character_styx"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]},
@@ -6562,7 +6562,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_igor_grom", "character_cocytus", "character_styx"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]},
@@ -6580,7 +6580,7 @@ const comics: Comics = {
         type            : "hardcover_book",
         cover_file      : {url: `${comicImagePath}/allies/allies-book-1-before-dawn.png`, aspect_ratio: 598 / 900},
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -6596,7 +6596,7 @@ const comics: Comics = {
         type            : "book",
         cover_file      : {url: `${comicImagePath}/allies/allies-volume-1-before-dawn.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -6615,7 +6615,7 @@ const comics: Comics = {
             aspect_ratio: 598 / 900
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_diana_de_maridor", "character_ksenia_radova", "character_mars", "character_gray_wolf"],
+        characters      : ["character_diana_de_maridor", "character_mars", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -6637,7 +6637,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_diana_de_maridor", "character_ksenia_radova", "character_mars", "character_gray_wolf"],
+        characters      : ["character_diana_de_maridor", "character_mars", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -6853,7 +6853,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -6869,7 +6869,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/childrens_comics/krutiks/krutiks-1.jpg`, aspect_ratio: 1535 / 2338},
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
                            {author_id: "author_natalya_nesterenko", positions: ["artist"]},
@@ -6888,7 +6888,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_avaddon_merciless", "character_bafforth_rackshore", "character_satan", "character_tanachia_relentless", "character_shmyg", "character_yarkh_deadly"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_baffort_rakshor", "character_satana", "character_tanahiya_neumolimaya", "character_shmyg", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -6907,7 +6907,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -6926,7 +6926,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_moon", "character_gray_wolf"],
+        characters      : ["character_seryi_volk", "character_moon"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
                            {author_id: "author_anna_rud", positions: ["artist"]}],
@@ -6972,7 +6972,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_queen_of_rot", "character_black_dog"],
+        characters      : ["character_koroleva_gnili", "character_chyornyi_pyos"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -6991,7 +6991,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -7007,7 +7007,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/childrens_comics/krutiks/krutiks-2.jpg`, aspect_ratio: 1535 / 2338},
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_1"],
@@ -7025,7 +7025,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_pavel_ocheredko", "character_semiaza", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_semiaza", "character_shmyg", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]},
                            {author_id: "author_eric_bragalyan", positions: ["artist"]}],
@@ -7044,7 +7044,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_smart_man", "character_phlegethon"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_acheron", "character_igor_grom", "character_cocytus", "character_styx", "character_smart_man", "character_phlegethon"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -7063,7 +7063,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_ksenia_radova", "character_master", "character_gray_wolf"],
+        characters      : ["character_vasilisa_premudraya", "character_diana_de_maridor", "character_koschei", "character_magistr", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]}],
@@ -7109,7 +7109,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_queen_of_rot", "character_black_dog"],
+        characters      : ["character_koroleva_gnili", "character_chyornyi_pyos"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -7128,7 +7128,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_morel", "character_sadap_rahmani"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_sadap_rahmani", "character_morel"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
@@ -7145,7 +7145,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/childrens_comics/krutiks/krutiks-3.jpg`, aspect_ratio: 1535 / 2338},
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["colorist", "screenwriter"]},
                            {author_id: "author_marina_sukhareva", positions: ["artist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_1"],
@@ -7163,7 +7163,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_pavel_ocheredko", "character_semiaza", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_semiaza", "character_shmyg", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]},
                            {author_id: "author_eric_bragalyan", positions: ["artist"]}],
@@ -7182,7 +7182,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_smart_man", "character_phlegethon"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_acheron", "character_igor_grom", "character_cocytus", "character_styx", "character_smart_man", "character_phlegethon"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -7201,7 +7201,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_ksenia_radova", "character_master", "character_gray_wolf"],
+        characters      : ["character_vasilisa_premudraya", "character_diana_de_maridor", "character_koschei", "character_magistr", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]}],
@@ -7235,7 +7235,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_queen_of_rot", "character_black_dog"],
+        characters      : ["character_koroleva_gnili", "character_chyornyi_pyos"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -7277,7 +7277,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_morel", "character_sadap_rahmani"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_sadap_rahmani", "character_morel"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
                            {author_id: "author_anna_rud", positions: ["artist"]}],
@@ -7296,7 +7296,7 @@ const comics: Comics = {
             aspect_ratio: 1535 / 2338
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["colorist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]},
                            {author_id: "author_yulia_garibova", positions: ["artist", "screenwriter"]}],
@@ -7315,7 +7315,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_besoboy"],
+        characters      : ["character_antihrist", "character_besoboy"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -7334,7 +7334,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_smart_man", "character_phlegethon"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_acheron", "character_igor_grom", "character_cocytus", "character_styx", "character_smart_man", "character_phlegethon"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -7353,7 +7353,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_diana_de_maridor", "character_ksenia_radova", "character_moon", "character_master", "character_mars", "character_gray_wolf"],
+        characters      : ["character_diana_de_maridor", "character_magistr", "character_mars", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova", "character_moon"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]}],
@@ -7415,7 +7415,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-14-imago.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_agnes_ignis", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_nika_chaikina"],
+        characters      : ["character_agness_ignis", "character_dzhoshua_donato", "character_ilaias", "character_lotta_lemke", "character_nika_chaikina"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -7434,7 +7434,7 @@ const comics: Comics = {
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_1"],
@@ -7452,7 +7452,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_satan", "character_yana"],
+        characters      : ["character_balor", "character_satana", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -7471,7 +7471,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_smart_man", "character_phlegethon"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_acheron", "character_igor_grom", "character_cocytus", "character_styx", "character_smart_man", "character_phlegethon"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -7490,7 +7490,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_diana_de_maridor", "character_ksenia_radova", "character_master", "character_mars", "character_gray_wolf"],
+        characters      : ["character_diana_de_maridor", "character_magistr", "character_mars", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -7555,7 +7555,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers"],
-        characters      : ["character_august_van_der_holt"],
+        characters      : ["character_avgust_van_der_holt"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
@@ -7574,7 +7574,7 @@ const comics: Comics = {
             aspect_ratio: 1535 / 2338
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_2"],
@@ -7589,7 +7589,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-15-witch-hunt.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers", "range_allies"],
-        characters      : ["character_august_van_der_holt", "character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_agness_ignis", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_ilaias", "character_lotta_lemke", "character_sadap_rahmani", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -7608,7 +7608,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers", "range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -7643,7 +7643,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers", "range_planeswalkers"],
-        characters      : ["character_august_van_der_holt", "character_andrey_radov", "character_bulat_gadzhiev", "character_diana_de_maridor", "character_master", "character_gray_wolf"],
+        characters      : ["character_avgust_van_der_holt", "character_bulat_gadzhiev", "character_diana_de_maridor", "character_magistr", "character_seryi_volk", "character_andrey_radov"],
         authors         : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]},
                            {author_id: "author_eric_bragalyan", positions: ["artist"]}],
@@ -7750,7 +7750,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_queen_of_rot", "character_black_dog"],
+        characters      : ["character_koroleva_gnili", "character_chyornyi_pyos"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -7765,7 +7765,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-16-crazy-part-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_sadap_rahmani", "character_mikhail_alvaris", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -7783,7 +7783,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges     : ["range_inadequate_galaxy"],
-        characters : ["character_ziggy", "character_shmyg"],
+        characters : ["character_ziggi", "character_shmyg"],
         authors    : [{author_id: "author_vitaly_terletsky", positions: ["screenwriter"]},
                       {author_id: "author_evgeniy_bornyakov", positions: ["artist"]},
                       {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -7800,7 +7800,7 @@ const comics: Comics = {
             aspect_ratio: 1345 / 2048
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["colorist", "screenwriter"]},
                            {author_id: "author_marina_sukhareva", positions: ["artist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_2"],
@@ -7818,7 +7818,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_bafforth_rackshore", "character_victor_zelenin"],
+        characters      : ["character_antihrist", "character_baffort_rakshor", "character_viktor_zelenin"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]},
                            {author_id: "author_alexey_efremov", positions: ["artist"]},
@@ -7835,7 +7835,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/igor_grom/igor-grom-16-remember.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_igor_grom"],
-        characters      : ["character_igor_grom", "character_ulya"],
+        characters      : ["character_ulya", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -7854,7 +7854,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_diana_de_maridor", "character_ksenia_radova", "character_gray_wolf"],
+        characters      : ["character_diana_de_maridor", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -7919,7 +7919,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_pavel_ocheredko", "character_porfiry_petrovich", "character_felix_dzerzhinsky", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_porfirii_petrovich", "character_feliks_dzerzhinskii", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
@@ -7935,7 +7935,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-17-crazy-part-2.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_sadap_rahmani", "character_mikhail_alvaris", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -7954,7 +7954,7 @@ const comics: Comics = {
             aspect_ratio: 1535 / 2338
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["colorist"]},
                            {author_id: "author_yulia_garibova", positions: ["artist", "screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_2"],
@@ -7972,7 +7972,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_igor_grom", "character_ulya"],
+        characters      : ["character_ulya", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -7991,7 +7991,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_bulat_gadzhiev", "character_vasilisa_wise", "character_diana_de_maridor", "character_ksenia_radova", "character_moon", "character_gray_wolf"],
+        characters      : ["character_bulat_gadzhiev", "character_vasilisa_premudraya", "character_diana_de_maridor", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova", "character_moon"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
@@ -8041,7 +8041,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_dmitry_dubin"],
+        characters      : ["character_dmitrii_dubin"],
         authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_dubin_dima_provincial_holidays"],
         previous_comics : ["comic_major_grom_50"],
@@ -8055,7 +8055,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-18-crazy-part-3.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_sadap_rahmani", "character_mikhail_alvaris", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -8074,7 +8074,7 @@ const comics: Comics = {
             aspect_ratio: 1345 / 2048
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_2"],
         previous_comics : ["comic_krutiks_5_2018"],
@@ -8091,7 +8091,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_pavel_ocheredko", "character_porfiry_petrovich", "character_felix_dzerzhinsky", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_porfirii_petrovich", "character_feliks_dzerzhinskii", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
@@ -8110,7 +8110,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_igor_grom", "character_ulya"],
+        characters      : ["character_ulya", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -8129,7 +8129,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_dmitry_dubin"],
+        characters      : ["character_dmitrii_dubin"],
         authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_dubin_dima_provincial_holidays"],
         previous_comics : ["comic_dubin_dima_provincial_holidays_1"],
@@ -8163,7 +8163,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_bulat_gadzhiev", "character_vasilisa_wise", "character_diana_de_maridor", "character_ksenia_radova", "character_moon", "character_gray_wolf"],
+        characters      : ["character_bulat_gadzhiev", "character_vasilisa_premudraya", "character_diana_de_maridor", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova", "character_moon"],
         authors         : [{author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]}],
@@ -8209,7 +8209,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-19-alienation.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_agness_ignis", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_ilaias", "character_lotta_lemke", "character_sadap_rahmani", "character_mikhail_alvaris", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -8228,7 +8228,7 @@ const comics: Comics = {
             aspect_ratio: 1535 / 2338
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_krutiks_cool_comics_book_2"],
         previous_comics : ["comic_krutiks_6_2018"],
@@ -8245,7 +8245,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_besoboy", "character_queen_of_rot", "character_black_dog"],
+        characters      : ["character_koroleva_gnili", "character_chyornyi_pyos", "character_besoboy"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]},
                            {author_id: "author_alexey_efremov", positions: ["artist"]},
@@ -8265,7 +8265,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_igor_grom", "character_ulya"],
+        characters      : ["character_ulya", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -8284,7 +8284,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_ksenia_radova", "character_gray_wolf"],
+        characters      : ["character_vasilisa_premudraya", "character_diana_de_maridor", "character_koschei", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -8334,7 +8334,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_dmitry_dubin"],
+        characters      : ["character_dmitrii_dubin"],
         authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_dubin_dima_provincial_holidays"],
         previous_comics : ["comic_dubin_dima_provincial_holidays_2"],
@@ -8367,7 +8367,7 @@ const comics: Comics = {
             aspect_ratio: 1536 / 2339
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_3"],
@@ -8385,7 +8385,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_besoboy", "character_queen_of_rot", "character_black_dog"],
+        characters      : ["character_koroleva_gnili", "character_chyornyi_pyos", "character_besoboy"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
@@ -8404,7 +8404,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_igor_grom", "character_ulya"],
+        characters      : ["character_ulya", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -8423,7 +8423,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_gray_wolf"],
+        characters      : ["character_vasilisa_premudraya", "character_diana_de_maridor", "character_koschei", "character_seryi_volk", "character_andrey_radov"],
         authors         : [{author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
         including_comics: ["comic_planeswalkers_volume_4"],
@@ -8450,7 +8450,7 @@ const comics: Comics = {
             aspect_ratio: 970 / 1460
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_avaddon_merciless", "character_antichrist", "character_balor", "character_bafforth_rackshore", "character_besoboy", "character_pavel_ocheredko", "character_satan", "character_semiaza", "character_tanachia_relentless", "character_shmyg", "character_yana", "character_yarkh_deadly"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_antihrist", "character_balor", "character_baffort_rakshor", "character_pavel_ocheredko", "character_satana", "character_semiaza", "character_tanahiya_neumolimaya", "character_shmyg", "character_besoboy", "character_yana", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]},
@@ -8472,7 +8472,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_avaddon_merciless", "character_antichrist", "character_balor", "character_bafforth_rackshore", "character_besoboy", "character_pavel_ocheredko", "character_satan", "character_tanachia_relentless", "character_shmyg", "character_yana", "character_yarkh_deadly"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_antihrist", "character_balor", "character_baffort_rakshor", "character_pavel_ocheredko", "character_satana", "character_tanahiya_neumolimaya", "character_shmyg", "character_besoboy", "character_yana", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]},
@@ -8493,7 +8493,7 @@ const comics: Comics = {
             aspect_ratio: 1000 / 1505
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
@@ -8514,7 +8514,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -8533,7 +8533,7 @@ const comics: Comics = {
             aspect_ratio: 1111 / 1672
         },
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_agness_ignis", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_ilaias", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
@@ -8557,7 +8557,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_avgust_van_der_holt", "character_agness_ignis", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_ilaias", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_marina_privalova", positions: ["artist"]},
@@ -8578,7 +8578,7 @@ const comics: Comics = {
             aspect_ratio: 1111 / 1672
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_ksenia_radova", "character_moon", "character_master", "character_mars", "character_gray_wolf"],
+        characters      : ["character_vasilisa_premudraya", "character_diana_de_maridor", "character_koschei", "character_magistr", "character_mars", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova", "character_moon"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -8600,7 +8600,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_moon", "character_gray_wolf"],
+        characters      : ["character_seryi_volk", "character_moon"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
@@ -8650,7 +8650,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_dmitry_dubin"],
+        characters      : ["character_dmitrii_dubin"],
         authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
         including_comics: ["comic_dubin_dima_provincial_holidays"],
         previous_comics : ["comic_dubin_dima_provincial_holidays_3"],
@@ -8663,7 +8663,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-21-verso-part-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_zebediah_trank", "character_kirk_oreilly", "character_murdoch_mcallister", "character_miko_van_der_holt"],
+        characters      : ["character_zebedaiya_trenk", "character_kirk_oraili", "character_myordok_makalister", "character_miko_van_der_holt"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -8682,7 +8682,7 @@ const comics: Comics = {
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_3"],
@@ -8700,7 +8700,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_besoboy", "character_queen_of_rot", "character_black_dog"],
+        characters      : ["character_koroleva_gnili", "character_chyornyi_pyos", "character_besoboy"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
@@ -8716,7 +8716,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/igor_grom/igor-grom-21-on-ashes.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_mark_simonov", positions: ["colorist"]},
                            {author_id: "author_taya_makarevich", positions: ["artist"]}],
@@ -8793,7 +8793,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-22-verso-part-2.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_zebediah_trank", "character_kirk_oreilly", "character_murdoch_mcallister", "character_miko_van_der_holt"],
+        characters      : ["character_zebedaiya_trenk", "character_kirk_oraili", "character_myordok_makalister", "character_miko_van_der_holt"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -8813,7 +8813,7 @@ const comics: Comics = {
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_3"],
@@ -8831,7 +8831,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_besoboy", "character_queen_of_rot", "character_black_dog"],
+        characters      : ["character_koroleva_gnili", "character_chyornyi_pyos", "character_besoboy"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
@@ -8850,7 +8850,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]}],
@@ -8865,7 +8865,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-prologue.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
-        characters      : ["character_andrey_radov", "character_master"],
+        characters      : ["character_magistr", "character_andrey_radov"],
         including_comics: ["comic_crusade"],
         previous_comics : ["comic_planeswalkers_21"],
         next_comics     : ["comic_crusade_1"],
@@ -8881,7 +8881,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_satan", "character_tanachia_relentless", "character_yarkh_deadly"],
+        characters      : ["character_satana", "character_tanahiya_neumolimaya", "character_yarkh_deadly"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_yarkh_step_forward"],
@@ -8925,7 +8925,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_dmitry_dubin"],
+        characters      : ["character_dmitrii_dubin"],
         authors         : [{author_id: "author_artyom_bizyaev", positions: ["artist", "colorist", "screenwriter"]}],
         contained_comics: ["comic_dubin_dima_provincial_holidays_1", "comic_dubin_dima_provincial_holidays_2", "comic_dubin_dima_provincial_holidays_3", "comic_dubin_dima_provincial_holidays_4"],
         previous_comics : ["comic_major_grom_volume_8"],
@@ -8952,7 +8952,7 @@ const comics: Comics = {
             aspect_ratio: 2416 / 3721
         },
         ranges         : ["range_inadequate_galaxy"],
-        characters     : ["character_ziggy", "character_shmyg"],
+        characters     : ["character_ziggi", "character_shmyg"],
         authors        : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                           {author_id: "author_evgeniy_bornyakov", positions: ["artist"]},
                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -8969,7 +8969,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_pavel_ocheredko", "character_satan", "character_semiaza", "character_shmyg", "character_yana"],
+        characters      : ["character_antihrist", "character_balor", "character_pavel_ocheredko", "character_satana", "character_semiaza", "character_shmyg", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]},
@@ -8990,7 +8990,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -9009,7 +9009,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_ksenia_radova", "character_master", "character_mars", "character_gray_wolf"],
+        characters      : ["character_vasilisa_premudraya", "character_diana_de_maridor", "character_koschei", "character_magistr", "character_mars", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -9026,7 +9026,7 @@ const comics: Comics = {
         type            : "book",
         cover_file      : {url: `${comicImagePath}/allies/allies-volume-3-imago.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_agness_ignis", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_ilaias", "character_lotta_lemke", "character_sadap_rahmani", "character_nika_chaikina"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
@@ -9045,7 +9045,7 @@ const comics: Comics = {
         type            : "book",
         cover_file      : {url: `${comicImagePath}/crossovers/witch_hunt/witch-hunt.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
-        characters      : ["character_august_van_der_holt", "character_andrey_radov", "character_besoboy", "character_igor_grom", "character_master", "character_nika_chaikina"],
+        characters      : ["character_avgust_van_der_holt", "character_magistr", "character_andrey_radov", "character_besoboy", "character_igor_grom", "character_nika_chaikina"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_alina_erofeeva", positions: ["artist"]},
@@ -9138,7 +9138,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-23-verso-part-3.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_zebediah_trank", "character_kirk_oreilly", "character_murdoch_mcallister", "character_miko_van_der_holt"],
+        characters      : ["character_zebedaiya_trenk", "character_kirk_oraili", "character_myordok_makalister", "character_miko_van_der_holt"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -9157,7 +9157,7 @@ const comics: Comics = {
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_yakovlev", positions: ["artist"]},
                            {author_id: "author_tatiana_goryacheva", positions: ["artist"]},
@@ -9177,7 +9177,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_besoboy", "character_queen_of_rot", "character_black_dog", "character_shmyg"],
+        characters      : ["character_koroleva_gnili", "character_chyornyi_pyos", "character_shmyg", "character_besoboy"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
@@ -9196,7 +9196,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]}],
@@ -9212,7 +9212,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
-        characters      : ["character_andrey_radov", "character_master"],
+        characters      : ["character_magistr", "character_andrey_radov"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
@@ -9234,7 +9234,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers"],
-        characters      : ["character_gray_wolf"],
+        characters      : ["character_seryi_volk"],
         authors         : [{author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]},
@@ -9285,7 +9285,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_kigal", "character_tanachia_relentless", "character_yarkh_deadly"],
+        characters      : ["character_tanahiya_neumolimaya", "character_kigal", "character_yarkh_deadly"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_yarkh_step_forward"],
@@ -9303,7 +9303,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_joshua_donato", "character_ilaias", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_agness_ignis", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_ilaias", "character_kirk_oraili", "character_lotta_lemke", "character_myordok_makalister", "character_sadap_rahmani", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -9322,7 +9322,7 @@ const comics: Comics = {
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_3"],
@@ -9340,7 +9340,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_queen_of_rot", "character_master", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_koroleva_gnili", "character_magistr", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_alexey_efremov", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -9359,7 +9359,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]}],
@@ -9378,7 +9378,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers"],
-        characters      : ["character_gray_wolf"],
+        characters      : ["character_seryi_volk"],
         authors         : [{author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
@@ -9396,7 +9396,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-2.jpg`, aspect_ratio: 1327 / 2048},
         ranges          : ["range_crossovers"],
-        characters      : ["character_andrey_radov", "character_besoboy", "character_master"],
+        characters      : ["character_magistr", "character_andrey_radov", "character_besoboy"],
         authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]},
@@ -9412,7 +9412,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-promise.png`, aspect_ratio: 643 / 983},
         ranges          : ["range_major_grom", "range_bubble_legends"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_uliya_pchyolkina", "character_igor_grom"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_marina_privalova", positions: ["artist"]},
@@ -9527,7 +9527,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_joshua_donato", "character_ilaias", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_agness_ignis", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_ilaias", "character_kirk_oraili", "character_lotta_lemke", "character_myordok_makalister", "character_sadap_rahmani", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -9545,7 +9545,7 @@ const comics: Comics = {
             aspect_ratio: 1535 / 2339
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_yakovlev", positions: ["artist", "colorist"]}],
         including_comics: ["comic_krutiks_cool_comics_book_3"],
@@ -9562,7 +9562,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_gleb_zheglov", "character_pavel_ocheredko", "character_black_dog"],
+        characters      : ["character_gleb_zheglov", "character_pavel_ocheredko", "character_chyornyi_pyos"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_alexey_efremov", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -9581,7 +9581,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]}],
@@ -9597,7 +9597,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-3.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
-        characters      : ["character_andrey_radov", "character_besoboy", "character_master"],
+        characters      : ["character_magistr", "character_andrey_radov", "character_besoboy"],
         authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]},
@@ -9617,7 +9617,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers", "range_planeswalkers"],
-        characters      : ["character_gray_wolf"],
+        characters      : ["character_seryi_volk"],
         authors         : [{author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -9636,7 +9636,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_kigal", "character_tanachia_relentless", "character_yarkh_deadly"],
+        characters      : ["character_tanahiya_neumolimaya", "character_kigal", "character_yarkh_deadly"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_yarkh_step_forward"],
@@ -9654,7 +9654,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_joshua_donato", "character_ilaias", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_agness_ignis", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_ilaias", "character_kirk_oraili", "character_lotta_lemke", "character_myordok_makalister", "character_sadap_rahmani", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -9673,7 +9673,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_evgeny_tamantsev", "character_pavel_ocheredko", "character_shmyg"],
+        characters      : ["character_balor", "character_evgenii_tamantsev", "character_pavel_ocheredko", "character_shmyg", "character_besoboy"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_alexey_efremov", positions: ["artist"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -9692,7 +9692,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_valentin_caligari_gashparov", "character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_valentin_caligari_gashparov", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_gleb_melnikov", positions: ["artist"]},
                            {author_id: "author_roman_titov", positions: ["colorist"]}],
@@ -9711,7 +9711,7 @@ const comics: Comics = {
             aspect_ratio: 643 / 983
         },
         ranges          : ["range_crossovers"],
-        characters      : ["character_gray_wolf"],
+        characters      : ["character_seryi_volk"],
         authors         : [{author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]}],
@@ -9730,7 +9730,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_kigal", "character_tanachia_relentless", "character_yarkh_deadly"],
+        characters      : ["character_tanahiya_neumolimaya", "character_kigal", "character_yarkh_deadly"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_yarkh_step_forward"],
@@ -9748,7 +9748,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_joshua_donato", "character_ilaias", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_agness_ignis", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_ilaias", "character_kirk_oraili", "character_lotta_lemke", "character_myordok_makalister", "character_sadap_rahmani", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
@@ -9767,7 +9767,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-4.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
-        characters      : ["character_andrey_radov", "character_besoboy", "character_vasilisa_wise", "character_master"],
+        characters      : ["character_vasilisa_premudraya", "character_magistr", "character_andrey_radov", "character_besoboy"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
@@ -9808,7 +9808,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_valentin_caligari_gashparov", "character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_valentin_caligari_gashparov", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_gleb_melnikov", positions: ["artist"]},
                            {author_id: "author_roman_titov", positions: ["colorist"]}],
@@ -9827,7 +9827,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers"],
-        characters      : ["character_gray_wolf"],
+        characters      : ["character_seryi_volk"],
         authors         : [{author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]},
@@ -9846,7 +9846,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_kigal", "character_tanachia_relentless", "character_yarkh_deadly"],
+        characters      : ["character_tanahiya_neumolimaya", "character_kigal", "character_yarkh_deadly"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
         including_comics: ["comic_yarkh_step_forward"],
@@ -9859,7 +9859,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade-epilogue.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_crossovers"],
-        characters      : ["character_andrey_radov", "character_besoboy", "character_master"],
+        characters      : ["character_magistr", "character_andrey_radov", "character_besoboy"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]}],
@@ -9874,7 +9874,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-28-jali-ghoul-slayer.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_agnes_ignis", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_nika_chaikina"],
+        characters      : ["character_agness_ignis", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_ilaias", "character_kirk_oraili", "character_lotta_lemke", "character_myordok_makalister", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_6"],
@@ -9892,7 +9892,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_queen_of_rot", "character_pavel_ocheredko", "character_black_dog", "character_shmyg", "character_yana"],
+        characters      : ["character_balor", "character_koroleva_gnili", "character_pavel_ocheredko", "character_chyornyi_pyos", "character_shmyg", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
@@ -9926,7 +9926,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_planeswalkers"],
-        characters      : ["character_andrey_radov", "character_bulat_gadzhiev", "character_vasilisa_wise", "character_diana_de_maridor", "character_koschey", "character_ksenia_radova", "character_gray_wolf"],
+        characters      : ["character_bulat_gadzhiev", "character_vasilisa_premudraya", "character_diana_de_maridor", "character_koschei", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors         : [{author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
                            {author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
@@ -9949,7 +9949,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_valentin_caligari_gashparov", "character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_valentin_caligari_gashparov", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_gleb_melnikov", positions: ["artist"]},
                            {author_id: "author_roman_titov", positions: ["colorist"]}],
@@ -10042,7 +10042,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_bafforth_rackshore", "character_besoboy", "character_victor_zelenin", "character_queen_of_rot", "character_pavel_ocheredko", "character_porfiry_petrovich", "character_felix_dzerzhinsky", "character_black_dog", "character_yana"],
+        characters      : ["character_balor", "character_baffort_rakshor", "character_viktor_zelenin", "character_koroleva_gnili", "character_pavel_ocheredko", "character_porfirii_petrovich", "character_feliks_dzerzhinskii", "character_chyornyi_pyos", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]},
@@ -10063,7 +10063,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_besoboy", "character_queen_of_rot", "character_satan", "character_black_dog", "character_shmyg"],
+        characters      : ["character_koroleva_gnili", "character_satana", "character_chyornyi_pyos", "character_shmyg", "character_besoboy"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
@@ -10079,7 +10079,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/allies/allies-29-fall-of-goliath.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_agnes_ignis", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_nika_chaikina"],
+        characters      : ["character_avgust_van_der_holt", "character_agness_ignis", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_ilaias", "character_kirk_oraili", "character_lotta_lemke", "character_myordok_makalister", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -10098,7 +10098,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_besoboy"],
+        characters      : ["character_antihrist", "character_besoboy"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]}],
         including_comics: ["comic_besoboy_vol_2_volume_7"],
@@ -10113,7 +10113,7 @@ const comics: Comics = {
         type            : "book",
         cover_file      : {url: `${comicImagePath}/allies/allies-volume-4-crazy.jpg`, aspect_ratio: 1004 / 1535},
         ranges          : ["range_allies"],
-        characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_johnny", "character_joshua_donato", "character_ilaias", "character_lotta_lemke", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_agness_ignis", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato", "character_ilaias", "character_lotta_lemke", "character_sadap_rahmani", "character_mikhail_alvaris", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -10132,7 +10132,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_valentin_caligari_gashparov", "character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_valentin_caligari_gashparov", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_gleb_melnikov", positions: ["artist"]},
                            {author_id: "author_roman_titov", positions: ["colorist"]}],
@@ -10205,7 +10205,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_igor_grom", "character_ulya"],
+        characters      : ["character_ulya", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -10323,7 +10323,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_zebediah_trank", "character_miko_van_der_holt", "character_nika_chaikina"],
+        characters      : ["character_avgust_van_der_holt", "character_zebedaiya_trenk", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -10342,7 +10342,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_bafforth_rackshore", "character_victor_zelenin"],
+        characters      : ["character_antihrist", "character_baffort_rakshor", "character_viktor_zelenin"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -10377,7 +10377,7 @@ const comics: Comics = {
         type            : "book",
         cover_file      : {url: `${comicImagePath}/allies/allies-volume-5-back-side.jpg`, aspect_ratio: 1004 / 1535},
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_bulat_gadzhiev", "character_jessie_rodriguez", "character_joshua_donato", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_nika_chaikina"],
+        characters      : ["character_artur_haksli", "character_bulat_gadzhiev", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_kirk_oraili", "character_lotta_lemke", "character_myordok_makalister", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -10397,7 +10397,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_miko_van_der_holt", "character_nika_chaikina"],
+        characters      : ["character_avgust_van_der_holt", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -10416,7 +10416,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_bafforth_rackshore", "character_victor_zelenin", "character_tanachia_relentless"],
+        characters      : ["character_baffort_rakshor", "character_viktor_zelenin", "character_tanahiya_neumolimaya"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -10435,7 +10435,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -10468,7 +10468,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_victor_zelenin", "character_tanachia_relentless", "character_yarkh_deadly"],
+        characters      : ["character_viktor_zelenin", "character_tanahiya_neumolimaya", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -10505,7 +10505,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_joshua_donato", "character_zebediah_trank", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
+        characters      : ["character_avgust_van_der_holt", "character_dzhoshua_donato", "character_zebedaiya_trenk", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -10524,7 +10524,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_joshua_donato", "character_zebediah_trank", "character_lotta_lemke", "character_miko_van_der_holt", "character_morel", "character_nika_chaikina"],
+        characters      : ["character_avgust_van_der_holt", "character_dzhoshua_donato", "character_zebedaiya_trenk", "character_lotta_lemke", "character_miko_van_der_holt", "character_morel", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -10554,7 +10554,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_master", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        characters      : ["character_antihrist", "character_balor", "character_magistr", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
@@ -10576,7 +10576,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]}],
@@ -10595,7 +10595,7 @@ const comics: Comics = {
             aspect_ratio: 706 / 1080
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_alexander_alinovsky", "character_amelia", "character_apollo", "character_zina", "character_lena_pyatkina", "character_liliya_romanova"],
+        characters      : ["character_agata", "character_aleksandr_alinovskii", "character_amelia", "character_apollo", "character_zina", "character_lena_pyatkina", "character_liliya_romanova"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -10610,7 +10610,7 @@ const comics: Comics = {
         type            : "book",
         cover_file      : {url: `${comicImagePath}/crossovers/crusade/crusade.jpg`, aspect_ratio: 1000 / 1531},
         ranges          : ["range_crossovers"],
-        characters      : ["character_august_van_der_holt", "character_andrey_radov", "character_balor", "character_besoboy", "character_bulat_gadzhiev", "character_vasilisa_wise", "character_jessie_rodriguez", "character_joshua_donato", "character_diana_de_maridor", "character_zebediah_trank", "character_koschey", "character_ksenia_radova", "character_lotta_lemke", "character_master", "character_nika_chaikina", "character_pavel_ocheredko", "character_gray_wolf", "character_black_dog", "character_shmyg", "character_yana"],
+        characters      : ["character_avgust_van_der_holt", "character_balor", "character_bulat_gadzhiev", "character_vasilisa_premudraya", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_diana_de_maridor", "character_zebedaiya_trenk", "character_koschei", "character_lotta_lemke", "character_magistr", "character_pavel_ocheredko", "character_seryi_volk", "character_chyornyi_pyos", "character_shmyg", "character_andrey_radov", "character_besoboy", "character_ksenia_radova", "character_nika_chaikina", "character_yana"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
@@ -10631,7 +10631,7 @@ const comics: Comics = {
             aspect_ratio: 1003 / 1536
         },
         ranges          : ["range_crossovers"],
-        characters      : ["character_vasilisa_wise", "character_moon", "character_master", "character_gray_wolf"],
+        characters      : ["character_vasilisa_premudraya", "character_magistr", "character_seryi_volk", "character_moon"],
         authors         : [{author_id: "author_alexander_kirillov", positions: ["screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
@@ -10683,7 +10683,7 @@ const comics: Comics = {
             aspect_ratio: 643 / 982
         },
         ranges          : ["range_allies"],
-        characters      : ["character_agnes_ignis", "character_arthur_huxley", "character_jessie_rodriguez", "character_joshua_donato", "character_ilaias", "character_kirk_oreilly", "character_lotta_lemke", "character_murdoch_mcallister", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina", "character_sadap_rahmani"],
+        characters      : ["character_agness_ignis", "character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_ilaias", "character_kirk_oraili", "character_lotta_lemke", "character_myordok_makalister", "character_sadap_rahmani", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
@@ -10706,7 +10706,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1536
         },
         ranges          : ["range_bubble_legends"],
-        characters      : ["character_borj", "character_kigal", "character_tanachia_relentless", "character_yarkh_deadly"],
+        characters      : ["character_tanahiya_neumolimaya", "character_borj", "character_kigal", "character_yarkh_deadly"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
         contained_comics: ["comic_yarkh_step_forward_1", "comic_yarkh_step_forward_2", "comic_yarkh_step_forward_3", "comic_yarkh_step_forward_4", "comic_yarkh_step_forward_5", "comic_yarkh_step_forward_6"],
@@ -10735,7 +10735,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_besoboy"],
+        characters      : ["character_antihrist", "character_besoboy"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -10754,7 +10754,7 @@ const comics: Comics = {
             aspect_ratio: 1327 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom", "character_irina_charlotte"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -10785,7 +10785,7 @@ const comics: Comics = {
             aspect_ratio: 500 / 762
         },
         ranges          : ["range_allies"],
-        characters      : ["character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
+        characters      : ["character_dzhoshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -10804,7 +10804,7 @@ const comics: Comics = {
             aspect_ratio: 643 / 983
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_pavel_ocheredko", "character_shmyg", "character_yana"],
+        characters      : ["character_antihrist", "character_balor", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -10823,7 +10823,7 @@ const comics: Comics = {
             aspect_ratio: 589 / 898
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_marina_privalova", positions: ["artist"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -10861,7 +10861,7 @@ const comics: Comics = {
             aspect_ratio: 500 / 762
         },
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
@@ -10882,7 +10882,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_victor_zelenin", "character_janish", "character_lilith", "character_pavel_ocheredko", "character_satan", "character_siergo", "character_shmyg", "character_yurik", "character_yana"],
+        characters      : ["character_antihrist", "character_balor", "character_viktor_zelenin", "character_pavel_ocheredko", "character_satana", "character_shmyg", "character_siergo", "character_besoboy", "character_janish", "character_lilith", "character_yurik", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -10901,7 +10901,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -10920,7 +10920,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_amelia", "character_angelina_evgenievna", "character_zina", "character_liliya_romanova"],
+        characters      : ["character_agata", "character_angelina_evgenevna", "character_amelia", "character_zina", "character_liliya_romanova"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -10939,7 +10939,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina", "character_nursultan", "character_leech", "character_sonya", "character_amber"],
+        characters      : ["character_dzhoshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina", "character_nursultan", "character_leech", "character_sonya", "character_amber"],
         authors         : [{author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
@@ -11015,7 +11015,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_verokh", "character_victor_zelenin", "character_janish", "character_pavel_ocheredko", "character_rackshore", "character_shmyg", "character_yana"],
+        characters      : ["character_antihrist", "character_balor", "character_viktor_zelenin", "character_pavel_ocheredko", "character_shmyg", "character_besoboy", "character_verokh", "character_janish", "character_rackshore", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -11034,7 +11034,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -11053,7 +11053,7 @@ const comics: Comics = {
             aspect_ratio: 642 / 983
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_angelina_evgenievna", "character_nightingale"],
+        characters      : ["character_angelina_evgenevna", "character_solovei"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -11072,7 +11072,7 @@ const comics: Comics = {
             aspect_ratio: 1050 / 1600
         },
         ranges          : ["range_allies"],
-        characters      : ["character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
+        characters      : ["character_dzhoshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_madibek_musabekov", positions: ["artist"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -11091,7 +11091,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_ilya_kosygin"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom", "character_ilya_kosygin"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
@@ -11112,7 +11112,7 @@ const comics: Comics = {
             aspect_ratio: 642 / 983
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_besoboy", "character_lilith", "character_pavel_ocheredko", "character_satan", "character_siergo", "character_yurik", "character_yana"],
+        characters      : ["character_balor", "character_pavel_ocheredko", "character_satana", "character_siergo", "character_besoboy", "character_lilith", "character_yurik", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -11149,7 +11149,7 @@ const comics: Comics = {
             aspect_ratio: 642 / 983
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_alexander_alinovsky", "character_evgenia_luneva", "character_liliya_romanova", "character_matvey_koretsky", "character_tatyana_aleksandrovna", "character_yadviga_tvirinova", "character_yanvar_tvirinov"],
+        characters      : ["character_agata", "character_aleksandr_alinovskii", "character_evgeniya_lunyova", "character_matvei_koretskii", "character_tatyana_aleksandrovna", "character_liliya_romanova", "character_yadviga_tvirinova", "character_yanvar_tvirinov"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -11168,7 +11168,7 @@ const comics: Comics = {
             aspect_ratio: 637 / 975
         },
         ranges          : ["range_allies"],
-        characters      : ["character_jessie_rodriguez", "character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina"],
+        characters      : ["character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -11203,7 +11203,7 @@ const comics: Comics = {
             aspect_ratio: 642 / 983
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_borj", "character_queen_of_rot", "character_pavel_ocheredko", "character_satan", "character_siergo", "character_black_dog", "character_yana", "character_yarkh_deadly"],
+        characters      : ["character_balor", "character_koroleva_gnili", "character_pavel_ocheredko", "character_satana", "character_chyornyi_pyos", "character_siergo", "character_borj", "character_yana", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -11222,7 +11222,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_allies"],
-        characters      : ["character_august_van_der_holt", "character_arthur_huxley", "character_johnny", "character_joshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke", "character_miko_van_der_holt", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
@@ -11242,7 +11242,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_valentin_caligari_gashparov", "character_dmitry_dubin", "character_igor_grom", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_valentin_caligari_gashparov", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_anastasia_ozerova", positions: ["colorist"]},
@@ -11282,7 +11282,7 @@ const comics: Comics = {
             aspect_ratio: 1050 / 1600
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_ilya_kosygin"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom", "character_ilya_kosygin"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -11301,7 +11301,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_joshua_donato", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina"],
+        characters      : ["character_dzhoshua_donato", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -11319,7 +11319,7 @@ const comics: Comics = {
             aspect_ratio: 1000 / 1418
         },
         ranges         : ["range_monk_king_of_parties"],
-        characters     : ["character_andrey_radov", "character_vasilisa_wise", "character_lord", "character_ksenia_radova", "character_master", "character_gray_wolf"],
+        characters     : ["character_vasilisa_premudraya", "character_vladyka", "character_magistr", "character_seryi_volk", "character_andrey_radov", "character_ksenia_radova"],
         authors        : [{author_id: "author_vitaly_terletsky", positions: ["artist", "screenwriter"]}],
         previous_comics: ["comic_monk_king_of_parties"],
         release_at     : {year: 2020, month: 4, day: 1},
@@ -11380,7 +11380,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_alexander_bednenko", "character_antichrist", "character_besoboy", "character_victor_zelenin", "character_lilith", "character_rackshore", "character_selena", "character_semiaza", "character_tanachia_relentless", "character_yurik", "character_yarkh_deadly"],
+        characters      : ["character_antihrist", "character_viktor_zelenin", "character_semiaza", "character_tanahiya_neumolimaya", "character_alexander_bednenko", "character_besoboy", "character_lilith", "character_rackshore", "character_selena", "character_yurik", "character_yarkh_deadly"],
         contained_comics: ["comic_besoboy_vol_2_29", "comic_besoboy_vol_2_30", "comic_besoboy_vol_2_31", "comic_besoboy_vol_2_32"],
         previous_comics : ["comic_besoboy_vol_2_volume_6"],
         next_comics     : ["comic_besoboy_vol_2_volume_8"],
@@ -11396,7 +11396,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_besoboy", "character_borj", "character_lilith", "character_semiaza", "character_tanachia_relentless", "character_black_dog", "character_yarkh_deadly"],
+        characters      : ["character_semiaza", "character_tanahiya_neumolimaya", "character_chyornyi_pyos", "character_besoboy", "character_borj", "character_lilith", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -11415,7 +11415,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_apollo", "character_kira", "character_lena_pyatkina"],
+        characters      : ["character_kira", "character_apollo", "character_lena_pyatkina"],
         authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_andrey_rodin", positions: ["artist"]},
                            {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
@@ -11434,7 +11434,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_alexander_alinovsky", "character_angelina_evgenievna", "character_inga_shelkowitz", "character_liliya_romanova", "character_matvey_koretsky", "character_tatyana_aleksandrovna"],
+        characters      : ["character_agata", "character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_inga_shelkovits", "character_matvei_koretskii", "character_tatyana_aleksandrovna", "character_liliya_romanova"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -11453,7 +11453,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_ilya_kosygin"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom", "character_ilya_kosygin"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -11472,7 +11472,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_jessie_rodriguez", "character_joshua_donato", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina", "character_amber"],
+        characters      : ["character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina", "character_amber"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -11506,7 +11506,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_phlegethon"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_acheron", "character_igor_grom", "character_irina_charlotte", "character_cocytus", "character_styx", "character_phlegethon"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -11525,7 +11525,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_lilith", "character_satan", "character_semiaza", "character_yana"],
+        characters      : ["character_balor", "character_satana", "character_semiaza", "character_lilith", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -11544,7 +11544,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_apollo", "character_kira", "character_lena_pyatkina"],
+        characters      : ["character_kira", "character_apollo", "character_lena_pyatkina"],
         authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_andrey_rodin", positions: ["artist"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -11563,7 +11563,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_joshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_amber"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_lotta_lemke", "character_nika_chaikina", "character_amber"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -11605,7 +11605,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_phlegethon"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_acheron", "character_igor_grom", "character_irina_charlotte", "character_cocytus", "character_styx", "character_phlegethon"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -11624,7 +11624,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_queen_of_rot", "character_lilith", "character_satan", "character_semiaza", "character_black_dog", "character_yana"],
+        characters      : ["character_balor", "character_koroleva_gnili", "character_satana", "character_semiaza", "character_chyornyi_pyos", "character_lilith", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]}],
@@ -11643,7 +11643,7 @@ const comics: Comics = {
             aspect_ratio: 1046 / 1600
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_apollo", "character_kira", "character_lena_pyatkina"],
+        characters      : ["character_kira", "character_apollo", "character_lena_pyatkina"],
         authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_adela_adienova", positions: ["colorist"]},
                            {author_id: "author_andrey_rodin", positions: ["artist"]}],
@@ -11713,7 +11713,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_cocytus", "character_styx", "character_phlegethon"],
+        characters      : ["character_dmitrii_dubin", "character_acheron", "character_igor_grom", "character_cocytus", "character_styx", "character_phlegethon"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -11732,7 +11732,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_besoboy", "character_lilith", "character_satan", "character_tanachia_relentless", "character_shmyg", "character_yarkh_deadly"],
+        characters      : ["character_antihrist", "character_satana", "character_tanahiya_neumolimaya", "character_shmyg", "character_besoboy", "character_lilith", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -11751,7 +11751,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_allies"],
-        characters      : ["character_arthur_huxley", "character_jessie_rodriguez", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina"],
+        characters      : ["character_artur_haksli", "character_dzhessi_rodrigez", "character_miko_van_der_holt", "character_mikhail_alvaris", "character_nika_chaikina"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_madibek_musabekov", positions: ["artist"]},
@@ -11772,7 +11772,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_lavrenty_pavlovich", "character_tatyana_aleksandrovna", "character_yadviga_tvirinova", "character_yakov", "character_yanvar_tvirinov"],
+        characters      : ["character_lavrentii_pavlovich", "character_tatyana_aleksandrovna", "character_yadviga_tvirinova", "character_yakov", "character_yanvar_tvirinov"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -11871,7 +11871,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_acheron", "character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_phlegethon"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_acheron", "character_igor_grom", "character_irina_charlotte", "character_cocytus", "character_styx", "character_phlegethon"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]}],
@@ -11890,7 +11890,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_avaddon_merciless", "character_besoboy", "character_victor_zelenin", "character_lilith", "character_rackshore", "character_tanachia_relentless", "character_yarkh_deadly"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_viktor_zelenin", "character_tanahiya_neumolimaya", "character_besoboy", "character_lilith", "character_rackshore", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -11909,7 +11909,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_lisa", "character_matvey_koretsky"],
+        characters      : ["character_matvei_koretskii", "character_lisa"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -11945,7 +11945,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_apollo", "character_kira", "character_lena_pyatkina"],
+        characters      : ["character_kira", "character_apollo", "character_lena_pyatkina"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_adela_adienova", positions: ["colorist"]},
@@ -11966,7 +11966,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_borj", "character_verokh", "character_victor_zelenin", "character_janish", "character_queen_of_rot", "character_lilith", "character_pavel_ocheredko", "character_satan", "character_siergo", "character_shmyg", "character_yurik", "character_yana"],
+        characters      : ["character_antihrist", "character_balor", "character_viktor_zelenin", "character_koroleva_gnili", "character_pavel_ocheredko", "character_satana", "character_shmyg", "character_siergo", "character_besoboy", "character_borj", "character_verokh", "character_janish", "character_lilith", "character_yurik", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -12002,7 +12002,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_ilya_kosygin"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom", "character_ilya_kosygin"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
@@ -12023,7 +12023,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_balor", "character_rackshore", "character_satan", "character_siergo", "character_tanachia_relentless", "character_shmyg", "character_yana", "character_yarkh_deadly"],
+        characters      : ["character_balor", "character_satana", "character_tanahiya_neumolimaya", "character_shmyg", "character_siergo", "character_rackshore", "character_yana", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -12080,7 +12080,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2046
         },
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_smart_man", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom", "character_smart_man"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_alexey_gorbut", positions: ["artist"]},
                            {author_id: "author_alina_erofeeva", positions: ["artist"]},
@@ -12114,7 +12114,7 @@ const comics: Comics = {
         type            : "book",
         cover_file      : {url: `${comicImagePath}/major_grom/major-grom-hero-forever.jpeg`, aspect_ratio: 1004 / 1535},
         ranges          : ["range_major_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_smart_man", "character_yulia_pchyolkina"],
+        characters      : ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom", "character_smart_man"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_alexey_gorbut", positions: ["artist"]},
                            {author_id: "author_alina_erofeeva", positions: ["artist"]},
@@ -12221,7 +12221,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/igor_grom/igor-grom-45-living-water.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_igor_grom"],
-        characters      : ["character_acheron", "character_dmitry_dubin", "character_cocytus", "character_liliya_abramenko", "character_styx", "character_smart_man", "character_phlegethon"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_acheron", "character_cocytus", "character_styx", "character_smart_man", "character_phlegethon"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -12240,7 +12240,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_avaddon_merciless", "character_antichrist", "character_balor", "character_besoboy", "character_victor_zelenin", "character_lilith", "character_satan", "character_yana"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_antihrist", "character_balor", "character_viktor_zelenin", "character_satana", "character_besoboy", "character_lilith", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -12259,7 +12259,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_lisa", "character_nikita_zharov"],
+        characters      : ["character_agata", "character_lisa", "character_nikita_zharov"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -12312,7 +12312,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_azazel", "character_antichrist", "character_semiaza"],
+        characters      : ["character_antihrist", "character_semiaza", "character_azazel"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]}],
@@ -12385,7 +12385,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_liliya_abramenko"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_igor_grom", "character_irina_charlotte"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
@@ -12405,7 +12405,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_vladimir", "character_lisa", "character_matvey_koretsky", "character_tatyana_aleksandrovna", "character_yakov"],
+        characters      : ["character_vladimir", "character_matvei_koretskii", "character_tatyana_aleksandrovna", "character_lisa", "character_yakov"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -12440,7 +12440,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_plague_doctor"],
-        characters      : ["character_valeria_makarova", "character_kirill_makarov", "character_oleg_volkov", "character_sergey_razumovsky"],
+        characters      : ["character_oleg_volkov", "character_valeria_makarova", "character_kirill_makarov", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["screenwriter"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
@@ -12623,7 +12623,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_liliya_abramenko"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_igor_grom", "character_irina_charlotte"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
@@ -12678,7 +12678,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_angelina_evgenievna", "character_vladimir", "character_nightingale", "character_tatyana_aleksandrovna"],
+        characters      : ["character_angelina_evgenevna", "character_vladimir", "character_solovei", "character_tatyana_aleksandrovna"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -12697,7 +12697,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_victor_zelenin", "character_satan", "character_yana"],
+        characters      : ["character_antihrist", "character_balor", "character_viktor_zelenin", "character_satana", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -12716,7 +12716,7 @@ const comics: Comics = {
             aspect_ratio: 1342 / 2048
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_ziggy", "character_yango"],
+        characters      : ["character_ziggi", "character_iango"],
         authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["artist"]},
                            {author_id: "author_evgeny_yakovlev", positions: ["artist", "screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -12737,7 +12737,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_besoboy", "character_victor_zelenin", "character_satan", "character_shmyg", "character_yarkh_deadly"],
+        characters      : ["character_antihrist", "character_viktor_zelenin", "character_satana", "character_shmyg", "character_besoboy", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -12794,7 +12794,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_angelina_evgenievna", "character_vladimir", "character_nightingale", "character_tatyana_aleksandrovna"],
+        characters      : ["character_angelina_evgenevna", "character_vladimir", "character_solovei", "character_tatyana_aleksandrovna"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
@@ -12833,7 +12833,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist"],
+        characters      : ["character_antihrist"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -12868,7 +12868,7 @@ const comics: Comics = {
             aspect_ratio: 1050 / 1600
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_queen_of_rot", "character_satan", "character_semiaza", "character_black_dog", "character_yana"],
+        characters      : ["character_antihrist", "character_balor", "character_koroleva_gnili", "character_satana", "character_semiaza", "character_chyornyi_pyos", "character_besoboy", "character_yana"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
@@ -12911,7 +12911,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_alexander_alinovsky", "character_inga_shelkowitz", "character_lena_pyatkina", "character_liliya_romanova", "character_matvey_koretsky"],
+        characters      : ["character_agata", "character_aleksandr_alinovskii", "character_inga_shelkovits", "character_matvei_koretskii", "character_lena_pyatkina", "character_liliya_romanova"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -12948,7 +12948,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_lisa", "character_matvey_koretsky", "character_nikita_zharov"],
+        characters      : ["character_agata", "character_matvei_koretskii", "character_lisa", "character_nikita_zharov"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -12984,7 +12984,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_alexander_alinovsky", "character_apollo", "character_inga_shelkowitz", "character_lena_pyatkina", "character_liliya_romanova", "character_matvey_koretsky"],
+        characters      : ["character_agata", "character_aleksandr_alinovskii", "character_inga_shelkovits", "character_matvei_koretskii", "character_apollo", "character_lena_pyatkina", "character_liliya_romanova"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -13003,7 +13003,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_alexander_alinovsky", "character_apollo", "character_inga_shelkowitz", "character_kira", "character_lena_pyatkina", "character_liliya_romanova", "character_matvey_koretsky"],
+        characters      : ["character_agata", "character_aleksandr_alinovskii", "character_inga_shelkovits", "character_kira", "character_matvei_koretskii", "character_apollo", "character_lena_pyatkina", "character_liliya_romanova"],
         including_comics: ["comic_exlibrium_second_life_volume_4"],
         previous_comics : ["comic_exlibrium_second_life_16"],
         next_comics     : ["comic_exlibrium_second_life_18"],
@@ -13028,7 +13028,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/igor_grom/igor-grom-50-tomorrow.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_igor_grom"],
-        characters      : ["character_valentin_caligari_gashparov", "character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_liliya_abramenko", "character_ulya"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_valentin_caligari_gashparov", "character_igor_grom", "character_irina_charlotte"],
         authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["artist", "colorist"]},
                            {author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
@@ -13090,7 +13090,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/plague_doctor/plague-doctor-6.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_plague_doctor"],
-        characters      : ["character_valeria_makarova", "character_oleg_volkov", "character_sergey_razumovsky"],
+        characters      : ["character_oleg_volkov", "character_valeria_makarova", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]},
@@ -13110,7 +13110,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_alexander_alinovsky", "character_apollo", "character_inga_shelkowitz", "character_kira", "character_lena_pyatkina", "character_liliya_romanova", "character_matvey_koretsky"],
+        characters      : ["character_agata", "character_aleksandr_alinovskii", "character_inga_shelkovits", "character_kira", "character_matvei_koretskii", "character_apollo", "character_lena_pyatkina", "character_liliya_romanova"],
         authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -13149,7 +13149,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_igor_grom"],
-        characters      : ["character_valentin_caligari_gashparov", "character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_liliya_abramenko", "character_ulya", "character_smart_man"],
+        characters      : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya", "character_valentin_caligari_gashparov", "character_igor_grom", "character_irina_charlotte", "character_smart_man"],
         authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
                            {author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
@@ -13167,7 +13167,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/plague_doctor/plague-doctor-7.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_plague_doctor"],
-        characters      : ["character_vadim_dragon", "character_valeria_makarova", "character_oleg_volkov", "character_sergey_razumovsky"],
+        characters      : ["character_oleg_volkov", "character_vadim_dragon", "character_valeria_makarova", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]},
@@ -13187,7 +13187,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha"],
+        characters      : ["character_agata"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -13206,7 +13206,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_major_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte", "character_fedor_prokopenko"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom", "character_irina_charlotte"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
                            {author_id: "author_natalya_nesterenko", positions: ["colorist"]},
@@ -13226,7 +13226,7 @@ const comics: Comics = {
             aspect_ratio: 1004 / 1535
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_alexander_alinovsky", "character_angelina_evgenievna", "character_anton_varchuk", "character_apollo", "character_vladimir", "character_damien_egorov", "character_evgenia_luneva", "character_inga_shelkowitz", "character_lavrenty_pavlovich", "character_lena_pyatkina", "character_liliya_romanova", "character_matvey_koretsky", "character_snezhana_lebed", "character_tatyana_aleksandrovna"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_anton_varchuk", "character_vladimir", "character_demien_egorov", "character_evgeniya_lunyova", "character_inga_shelkovits", "character_lavrentii_pavlovich", "character_matvei_koretskii", "character_snezhana_lebed", "character_tatyana_aleksandrovna", "character_apollo", "character_lena_pyatkina", "character_liliya_romanova"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
                            {author_id: "author_konstantin_tarasov", positions: ["artist"]},
@@ -13269,7 +13269,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha"],
+        characters      : ["character_agata"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -13368,7 +13368,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_avaddon_merciless", "character_antichrist", "character_besoboy", "character_satan"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_antihrist", "character_satana", "character_besoboy"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
@@ -13407,7 +13407,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_amelia", "character_angelina_evgenievna", "character_zina"],
+        characters      : ["character_agata", "character_angelina_evgenevna", "character_amelia", "character_zina"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -13426,7 +13426,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_plague_doctor"],
-        characters      : ["character_altan_dagbaev", "character_vadim_dragon", "character_valeria_makarova", "character_oleg_volkov", "character_sergey_razumovsky"],
+        characters      : ["character_oleg_volkov", "character_altan_dagbaev", "character_vadim_dragon", "character_valeria_makarova", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_anastasia_kim", positions: ["screenwriter"]},
                            {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
@@ -13445,7 +13445,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/plague_doctor/plague-doctor-9.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_plague_doctor"],
-        characters      : ["character_altan_dagbaev", "character_vadim_dragon", "character_valeria_makarova", "character_oleg_volkov", "character_sergey_razumovsky"],
+        characters      : ["character_oleg_volkov", "character_altan_dagbaev", "character_vadim_dragon", "character_valeria_makarova", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]},
@@ -13480,7 +13480,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_major_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
@@ -13500,7 +13500,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_besoboy_vol_2"],
-        characters      : ["character_antichrist", "character_balor", "character_besoboy", "character_victor_zelenin", "character_satan", "character_shmyg", "character_yana", "character_yarkh_deadly"],
+        characters      : ["character_antihrist", "character_balor", "character_viktor_zelenin", "character_satana", "character_shmyg", "character_besoboy", "character_yana", "character_yarkh_deadly"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]}],
@@ -13551,7 +13551,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_alexander_alinovsky", "character_evgenia_luneva", "character_inga_shelkowitz", "character_liliya_romanova"],
+        characters      : ["character_aleksandr_alinovskii", "character_evgeniya_lunyova", "character_inga_shelkovits", "character_liliya_romanova"],
         authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_anna_shadrina", positions: ["artist"]},
                            {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
@@ -13567,7 +13567,7 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${comicImagePath}/plague_doctor/plague-doctor-10.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_plague_doctor"],
-        characters      : ["character_altan_dagbaev", "character_vadim_dragon", "character_valeria_makarova", "character_oleg_volkov", "character_sergey_razumovsky"],
+        characters      : ["character_oleg_volkov", "character_altan_dagbaev", "character_vadim_dragon", "character_valeria_makarova", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
                            {author_id: "author_anastasia_kim", positions: ["screenwriter"]},
                            {author_id: "author_victoria_vinogradova", positions: ["artist", "colorist"]},
@@ -13602,7 +13602,7 @@ const comics: Comics = {
         type      : "single",
         cover_file: {url: `${comicImagePath}/bubble_legends/bubble-halloween.jpg`, aspect_ratio: 1339 / 2048},
         ranges    : ["range_bubble_legends"],
-        characters: ["character_besoboy", "character_valeria_makarova", "character_ziggy", "character_igor_grom", "character_liliya_romanova", "character_shmyg"],
+        characters: ["character_ziggi", "character_shmyg", "character_besoboy", "character_valeria_makarova", "character_igor_grom", "character_liliya_romanova"],
         release_at: {year: 2021, month: 10},
         show      : true
     },
@@ -13651,7 +13651,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_major_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_fedor_prokopenko"],
+        characters      : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
@@ -13672,7 +13672,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_agatha", "character_amelia", "character_zina"],
+        characters      : ["character_agata", "character_amelia", "character_zina"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_anna_shadrina", positions: ["artist"]},
@@ -13845,7 +13845,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_major_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom", "character_irina_charlotte"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom", "character_irina_charlotte"],
         authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                            {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
@@ -13995,7 +13995,7 @@ const comics: Comics = {
         type      : "hardcover_book",
         cover_file: {url: `${comicImagePath}/major_grom/fiction-novel-major-grom.jpg`, aspect_ratio: 1202 / 1831},
         ranges    : ["range_major_grom"],
-        characters: ["character_dmitry_dubin", "character_igor_grom", "character_yulia_pchyolkina"],
+        characters: ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom"],
         authors   : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
                      {author_id: "author_andrey_vasin", positions: ["artist"]}],
         release_at: {year: 2021, month: 12, day: 18},
@@ -14030,7 +14030,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_alexander_alinovsky", "character_inga_shelkowitz", "character_kira", "character_lavrenty_pavlovich", "character_liliya_romanova", "character_matvey_koretsky"],
+        characters      : ["character_aleksandr_alinovskii", "character_inga_shelkovits", "character_kira", "character_lavrentii_pavlovich", "character_matvei_koretskii", "character_liliya_romanova"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -14083,7 +14083,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_major_igor_grom"],
-        characters      : ["character_dmitry_dubin", "character_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
         authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
                            {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
@@ -14103,7 +14103,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_alexander_alinovsky", "character_nightingale"],
+        characters      : ["character_aleksandr_alinovskii", "character_solovei"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -14122,7 +14122,7 @@ const comics: Comics = {
             aspect_ratio: 1536 / 2339
         },
         ranges          : ["range_childrens_comics"],
-        characters      : ["character_balor", "character_ziggy", "character_yango"],
+        characters      : ["character_balor", "character_ziggi", "character_iango"],
         authors         : [{author_id: "author_alexandra_bizyaeva", positions: ["artist", "screenwriter"]},
                            {author_id: "author_evgeny_yakovlev", positions: ["artist", "screenwriter"]},
                            {author_id: "author_marina_sukhareva", positions: ["artist"]},
@@ -14176,7 +14176,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_crossovers", "range_plague_doctor", "range_major_igor_grom"],
-        characters      : ["character_igor_grom", "character_oleg_volkov", "character_sergey_razumovsky"],
+        characters      : ["character_oleg_volkov", "character_igor_grom", "character_sergey_razumovsky"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
                            {author_id: "author_lada_akishina", positions: ["colorist"]},
                            {author_id: "author_margarita_kablukova", positions: ["colorist"]},
@@ -14205,7 +14205,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_amelia", "character_inga_shelkowitz", "character_matvey_koretsky"],
+        characters      : ["character_inga_shelkovits", "character_matvei_koretskii", "character_amelia"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
@@ -14319,7 +14319,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_major_igor_grom"],
-        characters      : ["character_igor_grom", "character_irina_charlotte", "character_liliya_abramenko"],
+        characters      : ["character_igor_grom", "character_liliya_abramenko", "character_irina_charlotte"],
         authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
                            {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                            {author_id: "author_natalya_zaidova", positions: ["artist"]},
@@ -14405,7 +14405,7 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2048
         },
         ranges          : ["range_exlibrium_second_life"],
-        characters      : ["character_alexander_alinovsky","character_varvara_leska","character_inga_shelkowitz","character_lavrenty_pavlovich","character_liliya_romanova","character_matvey_koretsky","character_nightingale","character_tamara_leska"],
+        characters      : ["character_aleksandr_alinovskii", "character_varvara_leska", "character_inga_shelkovits", "character_lavrentii_pavlovich", "character_matvei_koretskii", "character_solovei", "character_tamara_leska", "character_liliya_romanova"],
         authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]},
                            {author_id: "author_anastasia_afonina", positions: ["artist"]},
@@ -14421,11 +14421,25 @@ const comics: Comics = {
         name            : "Майор Игорь Гром #09 Улыбка висельника, часть 1",
         number          : "9",
         type            : "single",
+        cover_file      : {
+            url         : `${comicImagePath}/major_igor_grom/major-igor-grom-09-smile-of-hanged-man-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : [],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "colorist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
+                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_major_igor_grom_volume_3"],
         previous_comics : ["comic_major_igor_grom_x_plague_doctor_14"],
         next_comics     : ["comic_major_igor_grom_10"],
-        release_at      : {year: 2022, month: 4, day: 22}
+        release_at      : {year: 2022, month: 4, day: 22},
+        show            : true
     },
     comic_plague_doctor_16                                                  : {
         name            : "Чумной Доктор №16 Махаон, часть 2",
@@ -15066,7 +15080,7 @@ const comics: Comics = {
         name            : "Гром: Трудное детство. Восход Анубиса",
         type            : "single",
         ranges          : ["range_major_grom"],
-        characters      : ["character_fedor_prokopenko", "character_igor_grom"],
+        characters      : ["character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
@@ -15078,7 +15092,7 @@ const comics: Comics = {
         name            : "Гром: Трудное детство. Восход Анубиса",
         type            : "book",
         ranges          : ["range_major_grom"],
-        characters      : ["character_fedor_prokopenko", "character_igor_grom"],
+        characters      : ["character_fyodor_prokopenko", "character_igor_grom"],
         authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
                            {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
@@ -15732,7 +15746,7 @@ const comics: Comics = {
         number         : "39",
         type           : "single",
         ranges         : ["range_exlibrium_second_life"],
-        characters     : ["character_anton_varchuk", "character_apollo", "character_lena_pyatkina", "character_liliya_romanova", "character_matvey_koretsky"],
+        characters     : ["character_anton_varchuk", "character_matvei_koretskii", "character_apollo", "character_lena_pyatkina", "character_liliya_romanova"],
         authors        : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
                           {author_id: "author_anastasia_afonina", positions: ["artist"]},
                           {author_id: "author_elena_doronina", positions: ["colorist"]}],
