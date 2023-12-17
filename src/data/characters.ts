@@ -583,6 +583,18 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/f1fa16dd4b74eb63ab967f8303f46bc3.png",
         link_to_bubble_website: "https://bubble.ru/characters/124-luna"
     },
+    character_igor_ugor                  : {
+        full_name             : "Игорь Угорь",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/eabbafb28f8ac5b35fa9a6bd20355ac3__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/180af47ad6d58f2388fced2e44290fd1.png",
+        link_to_bubble_website: "https://bubble.ru/characters/125-igor-ugor"
+    },
+    character_zmei_sergei                : {
+        full_name             : "Змей Сергей",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/9576667e8cdec324186c26da0612c688__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/7e906c1608716b051cf8af835ed6db9f.png",
+        link_to_bubble_website: "https://bubble.ru/characters/126-zmei-sergei"
+    },
     character_bordzh                     : {
         full_name             : "Бордж",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/65e547504c663886c78a653e0e8adca8__168x168.png.webp",

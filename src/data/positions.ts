@@ -189,6 +189,7 @@ export default {
     comic_igor_ugor_2_5                                                     : range_igor_ugor,
     comic_igor_ugor_volume_1                                                : range_igor_ugor,
     comic_igor_ugor_volume_2                                                : range_igor_ugor,
+    comic_igor_ugor_volume_3                                                : range_igor_ugor,
     comic_jackets_and_revolvers_volume_1                                    : comic_jackets_and_revolvers,
     comic_jackets_and_revolvers_volume_2                                    : comic_jackets_and_revolvers,
     comic_jackets_and_revolvers_volume_3                                    : comic_jackets_and_revolvers,
