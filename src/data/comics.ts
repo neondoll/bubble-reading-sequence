@@ -49,6 +49,7 @@ const teoCropCirclesImagePath: string = `${comicImagePath}/teo_crop_circles`;
 const thiefOfShadowsImagePath: string = `${comicImagePath}/thief_of_shadows`;
 const timeOfRavenImagePath: string = `${comicImagePath}/time_of_raven`;
 const unicornConspiracyImagePath: string = `${comicImagePath}/unicorn_conspiracy`;
+const witchImagePath: string = `${comicImagePath}/witch`;
 const witchHuntImagePath: string = `${comicImagePath}/witch_hunt`;
 const yarkhStepForwardImagePath: string = `${comicImagePath}/yarkh_step_forward`;
 const ziggyAndShmygImagePath: string = `${comicImagePath}/ziggy_and_shmyg`;
@@ -321,6 +322,29 @@ const comic_caligari_datura: Comic = {
                  {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
                  {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]}],
     release_at: {year: 2022, month: 10, day: 24}
+};
+const comic_grom_difficult_childhood_rising_of_anubis: Comic = {
+    name      : "Гром: Трудное детство. Восход Анубиса",
+    type      : "book",
+    cover_file: {url: `${comicImagePath}/grom-difficult-childhood-rising-of-anubis.jpg`, aspect_ratio: 1004 / 1535},
+    ranges    : ["range_major_grom"],
+    characters: ["character_fyodor_prokopenko", "character_igor_grom"],
+    authors   : [{author_id: "author_andrey_vasin", positions: ["artist"]},
+                 {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                 {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
+    release_at: {year: 2022, month: 12, day: 16}
+};
+const comic_heroes_and_monsters: Comic = {
+    name      : "Герои и монстры",
+    type      : "single",
+    cover_file: {url: `${comicImagePath}/heroes-and-monsters.jpg`, aspect_ratio: 1004 / 1536},
+    ranges    : ["range_crossovers", "range_plague_doctor", "range_mir", "range_major_igor_grom"],
+    characters: ["character_valeriya_makarova", "character_mir"],
+    authors   : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                 {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                 {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                 {author_id: "author_evgeniy_bornyakov", positions: ["artist"]}],
+    release_at: {year: 2023, month: 1, day: 31}
 };
 const comic_allies_special_idyll: Comic = {
     name      : "Союзники. Спецвыпуск. Идиллия",
@@ -3877,7 +3901,7 @@ const comics: Comics = {
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]},
                            {author_id: "author_eduard_petrovich", positions: ["artist"]}],
-        including_comics: ["comic_major_grom_volume_8", "comic_major_grom_riddle_of_the_sphinx"],
+        including_comics: ["comic_major_grom_volume_8", "comic_major_grom_riddle_of_sphinx"],
         previous_comics : ["comic_major_grom_41", "comic_time_of_raven_epilogue_electronic"],
         next_comics     : ["comic_major_grom_43"],
         release_at      : {year: 2016, month: 4, day: 4},
@@ -3986,7 +4010,7 @@ const comics: Comics = {
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]},
                            {author_id: "author_eduard_petrovich", positions: ["artist"]}],
-        including_comics: ["comic_major_grom_volume_8", "comic_major_grom_riddle_of_the_sphinx"],
+        including_comics: ["comic_major_grom_volume_8", "comic_major_grom_riddle_of_sphinx"],
         previous_comics : ["comic_major_grom_42"],
         next_comics     : ["comic_major_grom_44"],
         release_at      : {year: 2016, month: 5, day: 6},
@@ -4066,7 +4090,7 @@ const comics: Comics = {
         authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
                            {author_id: "author_anna_sidorova", positions: ["colorist"]},
                            {author_id: "author_eduard_petrovich", positions: ["artist"]}],
-        including_comics: ["comic_major_grom_volume_8", "comic_major_grom_riddle_of_the_sphinx"],
+        including_comics: ["comic_major_grom_volume_8", "comic_major_grom_riddle_of_sphinx"],
         previous_comics : ["comic_major_grom_43"],
         next_comics     : ["comic_major_grom_45"],
         release_at      : {year: 2016, month: 6, day: 6},
@@ -4802,7 +4826,7 @@ const comics: Comics = {
                            "comic_dubin_dima_provincial_holidays_1", "comic_major_grom_1939_electronic",
                            "comic_major_grom_like_in_war_1", "comic_major_grom_hero_forever_1",
                            "comic_special_prokopenko_grom_at_sunrise_electronic",
-                           "comic_grom_difficult_childhood_anubis_rising_single"],
+                           "comic_grom_difficult_childhood_rising_of_anubis_electronic"],
         release_at      : {year: 2016, month: 12, day: 24},
         show            : false
     },
@@ -5457,7 +5481,7 @@ const comics: Comics = {
                            "comic_dubin_dima_provincial_holidays", "comic_major_grom_1939_printed",
                            "comic_major_grom_like_in_war", "comic_major_grom_hero_forever",
                            "comic_special_prokopenko_grom_at_sunrise_printed",
-                           "comic_grom_difficult_childhood_anubis_rising_book"],
+                           "comic_grom_difficult_childhood_rising_of_anubis_printed"],
         release_at      : {year: 2017, month: 6, day: 1},
         show            : true
     },
@@ -11338,7 +11362,7 @@ const comics: Comics = {
                            {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_allies_volume_8"],
         previous_comics : ["comic_allies_40"],
-        next_comics     : ["comic_allies_special_idyll_single"],
+        next_comics     : ["comic_allies_special_idyll_electronic"],
         release_at      : {year: 2020, month: 6, day: 1},
         show            : false
     },
@@ -11518,7 +11542,7 @@ const comics: Comics = {
         contained_comics: ["comic_allies_34", "comic_allies_35", "comic_allies_36", "comic_allies_37",
                            "comic_allies_38", "comic_allies_39", "comic_allies_40", "comic_allies_41"],
         previous_comics : ["comic_allies_volume_7"],
-        next_comics     : ["comic_allies_special_idyll_book"],
+        next_comics     : ["comic_allies_special_idyll_printed"],
         release_at      : {year: 2020, month: 7, day: 24},
         show            : true
     },
@@ -14549,7 +14573,7 @@ const comics: Comics = {
                            {author_id: "author_taya_makarevich", positions: ["artist"]}],
         including_comics: ["comic_mir_volume_7"],
         previous_comics : ["comic_mir_13"],
-        next_comics     : ["comic_heroes_and_monsters_single"],
+        next_comics     : ["comic_heroes_and_monsters_electronic"],
         release_at      : {year: 2022, month: 8, day: 3},
         show            : false
     },
@@ -14673,7 +14697,7 @@ const comics: Comics = {
                            {author_id: "author_taya_makarevich", positions: ["artist"]}],
         including_comics: ["comic_plague_doctor_volume_5"],
         previous_comics : ["comic_plague_doctor_19"],
-        next_comics     : ["comic_heroes_and_monsters_single"],
+        next_comics     : ["comic_heroes_and_monsters_electronic"],
         release_at      : {year: 2022, month: 8, day: 31},
         show            : false
     },
@@ -14888,7 +14912,7 @@ const comics: Comics = {
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
                            {author_id: "author_ekaterina_grishchenko", positions: ["artist"]}],
         including_comics: ["comic_plague_doctor_volume_6"],
-        previous_comics : ["comic_heroes_and_monsters_single"],
+        previous_comics : ["comic_heroes_and_monsters_electronic"],
         next_comics     : ["comic_plague_doctor_22"],
         release_at      : {year: 2022, month: 9, day: 30},
         show            : false
@@ -14921,7 +14945,7 @@ const comics: Comics = {
                            {author_id: "author_taya_makarevich", positions: ["artist"]}],
         contained_comics: ["comic_mir_13", "comic_mir_14"],
         previous_comics : ["comic_mir_volume_6"],
-        next_comics     : ["comic_heroes_and_monsters_book"],
+        next_comics     : ["comic_heroes_and_monsters_printed"],
         release_at      : {year: 2022, month: 10, day: 1},
         show            : true
     },
@@ -14945,7 +14969,7 @@ const comics: Comics = {
         contained_comics: ["comic_plague_doctor_15", "comic_plague_doctor_16", "comic_plague_doctor_17",
                            "comic_plague_doctor_18", "comic_plague_doctor_19", "comic_plague_doctor_20"],
         previous_comics : ["comic_major_igor_grom_x_plague_doctor_volume_4"],
-        next_comics     : ["comic_heroes_and_monsters_book"],
+        next_comics     : ["comic_heroes_and_monsters_printed"],
         release_at      : {year: 2022, month: 10, day: 1},
         show            : true
     },
@@ -15053,83 +15077,154 @@ const comics: Comics = {
     comic_ink_prince_and_book_knight                                        : {
         name            : "Чернильный принц и Книжный рыцарь",
         type            : "book",
+        cover_file      : {
+            url         : `${inkPrinceAndBookKnightImagePath}/ink-prince-and-book-knight.jpg`,
+            aspect_ratio: 1447 / 2048
+        },
         ranges          : ["range_bubble_manga"],
+        authors         : [{author_id: "author_kamerim", positions: ["artist", "screenwriter"]}],
         contained_comics: ["comic_ink_prince_and_book_knight_1", "comic_ink_prince_and_book_knight_2",
                            "comic_ink_prince_and_book_knight_3", "comic_ink_prince_and_book_knight_4"],
-        release_at      : {year: 2022, month: 10, day: 24}
+        release_at      : {year: 2022, month: 10, day: 24},
+        show            : true
     },
     comic_major_igor_grom_15                                                : {
         name            : "Майор Игорь Гром #15 Где-то под Питером, часть 3",
         number          : "15",
         type            : "single",
+        cover_file      : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-15-somewhere-near-peter-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_dmitry_feoktistov", positions: ["artist"]},
+                           {author_id: "author_elizaveta_polyaeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_major_igor_grom_volume_4"],
         previous_comics : ["comic_major_igor_grom_14"],
         next_comics     : ["comic_major_igor_grom_16"],
-        release_at      : {year: 2022, month: 10, day: 28}
+        release_at      : {year: 2022, month: 10, day: 28},
+        show            : false
     },
     comic_plague_doctor_22                                                  : {
         name            : "Чумной Доктор №22 Рагнар, часть 2",
         number          : "22",
         type            : "single",
+        cover_file      : {
+            url         : `${plagueDoctorImagePath}/plague-doctor-22-ragnar-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_plague_doctor"],
+        characters      : ["character_valeriya_makarova"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_ekaterina_grishchenko", positions: ["artist"]}],
         including_comics: ["comic_plague_doctor_volume_6"],
         previous_comics : ["comic_plague_doctor_21"],
         next_comics     : ["comic_plague_doctor_23"],
-        release_at      : {year: 2022, month: 10, day: 31}
+        release_at      : {year: 2022, month: 10, day: 31},
+        show            : false
     },
     comic_ink_prince_and_book_knight_3                                      : {
         name            : "Чернильный принц и Книжный рыцарь, глава 3",
         number          : "3",
         type            : "single",
+        cover_file      : {
+            url         : `${inkPrinceAndBookKnightImagePath}/ink-prince-and-book-knight-chapter-3.jpg`,
+            aspect_ratio: 1447 / 2048
+        },
         ranges          : ["range_bubble_manga"],
+        authors         : [{author_id: "author_kamerim", positions: ["artist", "screenwriter"]}],
         including_comics: ["comic_ink_prince_and_book_knight"],
         previous_comics : ["comic_ink_prince_and_book_knight_2"],
         next_comics     : ["comic_ink_prince_and_book_knight_4"],
-        release_at      : {year: 2022, month: 11, day: 2}
+        release_at      : {year: 2022, month: 11, day: 2},
+        show            : false
     },
     comic_hourly_time_against                                               : {
         name            : "Часовой. Время против",
         type            : "book",
-        ranges          : ["range_besoboy", "range_bubble_legends"],
+        cover_file      : {url: `${hourlyTimeAgainstImagePath}/hourly-time-against.jpg`, aspect_ratio: 1339 / 2048},
+        ranges          : ["range_bubble_legends"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_afonina", positions: ["artist"]},
+                           {author_id: "author_rene_bartang", positions: ["colorist"]}],
         contained_comics: ["comic_hourly_time_against_1", "comic_hourly_time_against_2", "comic_hourly_time_against_3",
                            "comic_hourly_time_against_4", "comic_hourly_time_against_5"],
         previous_comics : ["comic_besoboy_volume_9"],
-        release_at      : {year: 2022, month: 11, day: 11}
+        release_at      : {year: 2022, month: 11, day: 11},
+        show            : true
     },
     comic_hourly_time_against_3                                             : {
         name            : "Часовой. Время против, часть 3",
         number          : "3",
         type            : "single",
+        cover_file      : {
+            url         : `${hourlyTimeAgainstImagePath}/hourly-time-against-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy", "range_bubble_legends"],
+        characters      : ["character_antihrist", "character_siergo", "character_azazel"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_afonina", positions: ["artist"]},
+                           {author_id: "author_rene_bartang", positions: ["colorist"]}],
         including_comics: ["comic_hourly_time_against"],
         previous_comics : ["comic_hourly_time_against_2"],
         next_comics     : ["comic_hourly_time_against_4"],
-        release_at      : {year: 2022, month: 11, day: 19}
+        release_at      : {year: 2022, month: 11, day: 19},
+        show            : false
     },
     comic_major_igor_grom_16                                                : {
         name            : "Майор Игорь Гром #16 Где-то под Питером, часть 4",
         number          : "16",
         type            : "single",
+        cover_file      : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-16-somewhere-near-peter-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                           {author_id: "author_dmitry_feoktistov", positions: ["artist"]},
+                           {author_id: "author_elizaveta_polyaeva", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_major_igor_grom_volume_4"],
         previous_comics : ["comic_major_igor_grom_15"],
-        next_comics     : ["comic_heroes_and_monsters_single"],
-        release_at      : {year: 2022, month: 11, day: 25}
+        next_comics     : ["comic_heroes_and_monsters_electronic"],
+        release_at      : {year: 2022, month: 11, day: 25},
+        show            : false
     },
     comic_plague_doctor_23                                                  : {
         name            : "Чумной Доктор №23 Рагнар, часть 3",
         number          : "23",
         type            : "single",
+        cover_file      : {
+            url         : `${plagueDoctorImagePath}/plague-doctor-23-ragnar-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_plague_doctor"],
+        characters      : ["character_oleg_volkov", "character_sergei_razumovskii"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_ekaterina_grishchenko", positions: ["artist"]},
+                           {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]}],
         including_comics: ["comic_plague_doctor_volume_6"],
         previous_comics : ["comic_plague_doctor_22"],
         next_comics     : ["comic_plague_doctor_24"],
-        release_at      : {year: 2022, month: 11, day: 30}
+        release_at      : {year: 2022, month: 11, day: 30},
+        show            : false
     },
-    comic_major_grom_riddle_of_the_sphinx                                   : {
+    comic_major_grom_riddle_of_sphinx                                       : {
         name            : "Майор Гром. Загадка сфинкса",
         type            : "book",
+        cover_file      : {url: `${majorGromImagePath}/major-grom-riddle-of-sphinx.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_major_grom"],
         characters      : ["character_igor_grom"],
         authors         : [{author_id: "author_vitaly_terletsky", positions: ["screenwriter"]},
@@ -15137,187 +15232,273 @@ const comics: Comics = {
                            {author_id: "author_anna_sidorova", positions: ["colorist"]},
                            {author_id: "author_eduard_petrovich", positions: ["artist"]}],
         contained_comics: ["comic_major_grom_42", "comic_major_grom_43", "comic_major_grom_44"],
-        release_at      : {year: 2022, month: 12, day: 2}
+        release_at      : {year: 2022, month: 12, day: 2},
+        show            : true
     },
     comic_ink_prince_and_book_knight_4                                      : {
         name            : "Чернильный принц и Книжный рыцарь, глава 4",
         number          : "4",
         type            : "single",
+        cover_file      : {
+            url         : `${inkPrinceAndBookKnightImagePath}/ink-prince-and-book-knight-chapter-4.jpg`,
+            aspect_ratio: 1447 / 2048
+        },
         ranges          : ["range_bubble_manga"],
+        authors         : [{author_id: "author_kamerim", positions: ["artist", "screenwriter"]}],
         including_comics: ["comic_ink_prince_and_book_knight"],
         previous_comics : ["comic_ink_prince_and_book_knight_3"],
-        release_at      : {year: 2022, month: 12, day: 2}
+        release_at      : {year: 2022, month: 12, day: 2},
+        show            : false
     },
     comic_major_igor_grom_special_duty                                      : {
         name           : "Майор Игорь Гром. Спецвыпуск. Долг",
         type           : "single",
+        cover_file     : {url: `${majorIgorGromImagePath}/major-igor-grom-special-duty.jpg`, aspect_ratio: 1339 / 2048},
         ranges         : ["range_major_igor_grom"],
+        characters     : ["character_igor_grom"],
+        authors        : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                          {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                          {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                          {author_id: "author_evgeniy_bornyakov", positions: ["artist"]}],
         previous_comics: ["comic_major_igor_grom_22"],
-        release_at     : {year: 2022, month: 12, day: 6}
+        release_at     : {year: 2022, month: 12, day: 6},
+        show           : true
     },
-    comic_grom_difficult_childhood_anubis_rising_single                     : {
-        name            : "Гром: Трудное детство. Восход Анубиса",
-        type            : "single",
-        ranges          : ["range_major_grom"],
-        characters      : ["character_fyodor_prokopenko", "character_igor_grom"],
-        authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
-                           {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
-                           {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
-        including_comics: ["comic_grom_difficult_childhood_anubis_rising_book"],
+    comic_grom_difficult_childhood_rising_of_anubis_electronic              : {
+        ...comic_grom_difficult_childhood_rising_of_anubis,
+        including_comics: ["comic_grom_difficult_childhood_rising_of_anubis_printed"],
         previous_comics : ["comic_major_grom_50"],
-        release_at      : {year: 2022, month: 12, day: 16}
+        show            : false
     },
-    comic_grom_difficult_childhood_anubis_rising_book                       : {
-        name            : "Гром: Трудное детство. Восход Анубиса",
-        type            : "book",
-        ranges          : ["range_major_grom"],
-        characters      : ["character_fyodor_prokopenko", "character_igor_grom"],
-        authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
-                           {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
-                           {author_id: "author_andrey_muravyov", positions: ["colorist"]}],
-        contained_comics: ["comic_grom_difficult_childhood_anubis_rising_single"],
+    comic_grom_difficult_childhood_rising_of_anubis_printed                 : {
+        ...comic_grom_difficult_childhood_rising_of_anubis,
+        contained_comics: ["comic_grom_difficult_childhood_rising_of_anubis_electronic"],
         previous_comics : ["comic_major_grom_volume_8"],
-        release_at      : {year: 2022, month: 12, day: 16}
+        show            : true
     },
     comic_hourly_time_against_4                                             : {
         name            : "Часовой. Время против, часть 4",
         number          : "4",
         type            : "single",
+        cover_file      : {
+            url         : `${hourlyTimeAgainstImagePath}/hourly-time-against-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy", "range_bubble_legends"],
+        characters      : ["character_antihrist", "character_azazel", "character_verokh"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_afonina", positions: ["artist"]},
+                           {author_id: "author_rene_bartang", positions: ["colorist"]}],
         including_comics: ["comic_hourly_time_against"],
         previous_comics : ["comic_hourly_time_against_3"],
         next_comics     : ["comic_hourly_time_against_5"],
-        release_at      : {year: 2022, month: 12, day: 19}
+        release_at      : {year: 2022, month: 12, day: 19},
+        show            : false
     },
     comic_plague_doctor_24                                                  : {
         name            : "Чумной Доктор №24 Рагнар, часть 4",
         number          : "24",
         type            : "single",
+        cover_file      : {
+            url         : `${plagueDoctorImagePath}/plague-doctor-24-ragnar-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_plague_doctor"],
+        characters      : ["character_oleg_volkov", "character_sergei_razumovskii"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["screenwriter"]},
+                           {author_id: "author_ekaterina_grishchenko", positions: ["artist", "colorist"]}],
         including_comics: ["comic_plague_doctor_volume_6"],
         previous_comics : ["comic_plague_doctor_23"],
         next_comics     : ["comic_plague_doctor_25"],
-        release_at      : {year: 2022, month: 12, day: 30}
+        release_at      : {year: 2022, month: 12, day: 30},
+        show            : false
     },
     comic_sister_kukki                                                      : {
         name            : "Сестра. Кукки",
         type            : "book",
-        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        cover_file      : {url: `${sisterKukkiImagePath}/sister-kukki.jpg`, aspect_ratio: 1339 / 2048},
+        ranges          : ["range_bubble_legends"],
+        authors         : [{author_id: "author_alexandra_zvyagina", positions: ["screenwriter"]},
+                           {author_id: "author_victoria_bykova", positions: ["artist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                           {author_id: "author_natalya_nesterenko", positions: ["colorist"]}],
         contained_comics: ["comic_sister_kukki_1"],
-        release_at      : {year: 2023}
+        release_at      : {year: 2023},
+        show            : true
     },
     comic_licorice_4                                                        : {
         name            : "Ликорис, глава 4",
         number          : "4",
         type            : "single",
+        cover_file      : {url: `${licoriceImagePath}/licorice-chapter-4.jpg`, aspect_ratio: 1447 / 2048},
         ranges          : ["range_bubble_manga"],
+        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_licorice_book_2"],
         previous_comics : ["comic_licorice_3"],
         next_comics     : ["comic_licorice_5"],
-        release_at      : {year: 2023, month: 1, day: 6}
+        release_at      : {year: 2023, month: 1, day: 6},
+        show            : false
     },
     comic_hourly_time_against_5                                             : {
         name            : "Часовой. Время против, часть 5",
         number          : "5",
         type            : "single",
+        cover_file      : {
+            url         : `${hourlyTimeAgainstImagePath}/hourly-time-against-part-5.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_besoboy", "range_bubble_legends"],
+        characters      : ["character_antihrist", "character_azazel"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_afonina", positions: ["artist"]},
+                           {author_id: "author_rene_bartang", positions: ["colorist"]}],
         including_comics: ["comic_hourly_time_against"],
         previous_comics : ["comic_hourly_time_against_4"],
-        release_at      : {year: 2023, month: 1, day: 19}
+        release_at      : {year: 2023, month: 1, day: 19},
+        show            : false
     },
     comic_witch_1                                                           : {
         name            : "Ведьма №1 По проводам, часть 1",
         number          : "1",
         type            : "single",
+        cover_file      : {url: `${witchImagePath}/witch-1-along-wires-part-1.jpg`, aspect_ratio: 1336 / 2048},
         ranges          : ["range_witch"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
+                           {author_id: "author_kirill_makagonov", positions: ["artist"]}],
         including_comics: ["comic_witch_volume_1"],
         next_comics     : ["comic_witch_2"],
-        release_at      : {year: 2023, month: 1, day: 20}
+        release_at      : {year: 2023, month: 1, day: 20},
+        show            : false
     },
     comic_exlibrium_second_life_33                                          : {
         name            : "Экслибриум. Жизнь вторая #33 После дождичка, часть 1",
         number          : "33",
         type            : "single",
+        cover_file      : {
+            url         : `${exlibriumSecondLifeImagePath}/exlibrium-second-life-33-after-rain-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_inga_shelkovits", "character_matvei_koretskii", "character_liliya_romanova"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_8"],
         previous_comics : ["comic_exlibrium_second_life_32"],
         next_comics     : ["comic_exlibrium_second_life_34"],
-        release_at      : {year: 2023, month: 1, day: 27}
+        release_at      : {year: 2023, month: 1, day: 27},
+        show            : false
     },
     comic_falcon_volume_2                                                   : {
         name            : "Сокол. Том 2",
         number          : "2",
         type            : "book",
-        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        cover_file      : {url: `${falconImagePath}/falcon-volume-2.jpg`, aspect_ratio: 1339 / 2048},
+        ranges          : ["range_bubble_legends"],
+        authors         : [{author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_valeria_frantseva", positions: ["screenwriter"]},
+                           {author_id: "author_daria_kislyuk", positions: ["colorist"]},
+                           {author_id: "author_evgeniy_frantsev", positions: ["artist"]},
+                           {author_id: "author_inga_kanareeva", positions: ["screenwriter"]}],
         contained_comics: ["comic_falcon_5", "comic_falcon_6", "comic_falcon_7"],
         previous_comics : ["comic_falcon_volume_1"],
-        release_at      : {year: 2023, month: 1, day: 28}
+        release_at      : {year: 2023, month: 1, day: 28},
+        show            : true
     },
-    comic_heroes_and_monsters_single                                        : {
-        name            : "Герои и монстры",
-        type            : "single",
-        ranges          : ["range_crossovers", "range_plague_doctor", "range_mir", "range_major_igor_grom"],
-        including_comics: ["comic_heroes_and_monsters_book"],
+    comic_heroes_and_monsters_electronic                                    : {
+        ...comic_heroes_and_monsters,
+        including_comics: ["comic_heroes_and_monsters_printed"],
         previous_comics : ["comic_mir_14", "comic_plague_doctor_20", "comic_major_igor_grom_16"],
         next_comics     : ["comic_plague_doctor_21", "comic_major_igor_grom_17", "comic_mir_15"],
-        release_at      : {year: 2023, month: 1, day: 31}
+        show            : false
     },
-    comic_heroes_and_monsters_book                                          : {
-        name            : "Герои и монстры",
-        type            : "book",
-        ranges          : ["range_crossovers", "range_plague_doctor", "range_mir", "range_major_igor_grom"],
-        contained_comics: ["comic_heroes_and_monsters_single"],
+    comic_heroes_and_monsters_printed                                       : {
+        ...comic_heroes_and_monsters,
+        contained_comics: ["comic_heroes_and_monsters_electronic"],
         previous_comics : ["comic_mir_volume_7", "comic_plague_doctor_volume_5", "comic_major_igor_grom_volume_4"],
         next_comics     : ["comic_plague_doctor_volume_6", "comic_mir_volume_8", "comic_major_igor_grom_volume_5"],
-        release_at      : {year: 2023, month: 1, day: 31}
+        show            : true
     },
     comic_bubble_triptych_1                                                 : {
         name       : "BUBBLE Триптих, часть 1",
         number     : "1",
         type       : "single",
+        cover_file : {url: `${bubbleTriptychImagePath}/bubble-triptych-part-1.jpg`, aspect_ratio: 1328 / 2023},
         ranges     : ["range_bubble_triptych"],
+        authors    : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                      {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                      {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         next_comics: ["comic_bubble_triptych_2"],
-        release_at : {year: 2023, month: 2, day: 1}
+        release_at : {year: 2023, month: 2, day: 1},
+        show       : true
     },
     comic_bubble_gam_almanac_1                                              : {
-        name       : "BUBBLE ГАМ. Альманах #1",
+        name       : "BUBBLE ГАМ. Альманах №1",
         number     : "1",
         type       : "single",
+        cover_file : {url: `${gamImagePath}/bubble-gam-almanac-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges     : ["range_gam"],
+        authors    : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                      {author_id: "author_alexey_gorbut", positions: ["artist"]},
+                      {author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                      {author_id: "author_andrey_vasin", positions: ["artist"]},
+                      {author_id: "author_vitaly_terletsky", positions: ["screenwriter"]},
+                      {author_id: "author_kirill_kutuzov", positions: ["screenwriter"]}],
         next_comics: ["comic_bubble_gam_almanac_2"],
-        release_at : {year: 2023, month: 2, day: 2}
+        release_at : {year: 2023, month: 2, day: 2},
+        show       : true
     },
     comic_major_igor_grom_volume_4                                          : {
         name            : "Майор Игорь Гром. Том 4. Где-то под Питером",
         number          : "4",
         type            : "book",
+        cover_file      : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-volume-4-somewhere-near-peter.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_kirill_kutuzov", positions: ["screenwriter"]},
+                           {author_id: "author_dmitry_feoktistov", positions: ["artist"]},
+                           {author_id: "author_elizaveta_polyaeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         contained_comics: ["comic_major_igor_grom_13", "comic_major_igor_grom_14", "comic_major_igor_grom_15",
                            "comic_major_igor_grom_16"],
         previous_comics : ["comic_major_igor_grom_volume_3"],
-        next_comics     : ["comic_heroes_and_monsters_book"],
-        release_at      : {year: 2023, month: 2, day: 4}
+        next_comics     : ["comic_heroes_and_monsters_printed"],
+        release_at      : {year: 2023, month: 2, day: 4},
+        show            : true
     },
     comic_plague_doctor_volume_6                                            : {
         name            : "Чумной Доктор. Том 6. Рагнар. Часть 1",
         number          : "6",
         type            : "book",
+        cover_file      : {
+            url         : `${plagueDoctorImagePath}/plague-doctor-volume-6-ragnar-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_plague_doctor"],
         contained_comics: ["comic_plague_doctor_21", "comic_plague_doctor_22", "comic_plague_doctor_23",
                            "comic_plague_doctor_24"],
-        previous_comics : ["comic_heroes_and_monsters_book"],
+        previous_comics : ["comic_heroes_and_monsters_printed"],
         next_comics     : ["comic_plague_doctor_volume_7"],
-        release_at      : {year: 2023, month: 2, day: 4}
+        release_at      : {year: 2023, month: 2, day: 4},
+        show            : true
     },
-    comic_allies_special_idyll_single                                       : {
+    comic_allies_special_idyll_electronic                                   : {
         ...comic_allies_special_idyll,
-        including_comics: ["comic_allies_special_idyll_book"],
+        including_comics: ["comic_allies_special_idyll_printed"],
         previous_comics : ["comic_allies_41"],
         show            : false
     },
-    comic_allies_special_idyll_book                                         : {
+    comic_allies_special_idyll_printed                                      : {
         ...comic_allies_special_idyll,
-        contained_comics: ["comic_allies_special_idyll_single"],
+        contained_comics: ["comic_allies_special_idyll_electronic"],
         previous_comics : ["comic_allies_volume_8"],
         show            : true
     },
@@ -15325,60 +15506,104 @@ const comics: Comics = {
         name            : "Ликорис, глава 5",
         number          : "5",
         type            : "single",
+        cover_file      : {url: `${licoriceImagePath}/licorice-chapter-5.jpg`, aspect_ratio: 1447 / 2048},
         ranges          : ["range_bubble_manga"],
+        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_licorice_book_2"],
         previous_comics : ["comic_licorice_4"],
         next_comics     : ["comic_licorice_6"],
-        release_at      : {year: 2023, month: 2, day: 8}
+        release_at      : {year: 2023, month: 2, day: 8},
+        show            : false
     },
     comic_witch_2                                                           : {
         name            : "Ведьма №2 По проводам, часть 2",
         number          : "2",
         type            : "single",
+        cover_file      : {url: `${witchImagePath}/witch-2-through-wires-part-2.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_witch"],
+        characters      : ["character_ulya"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_kirill_makagonov", positions: ["artist"]},
+                           {author_id: "author_rene_bartang", positions: ["colorist"]}],
         including_comics: ["comic_witch_volume_1"],
         previous_comics : ["comic_witch_1"],
         next_comics     : ["comic_witch_3"],
-        release_at      : {year: 2023, month: 2, day: 10}
+        release_at      : {year: 2023, month: 2, day: 10},
+        show            : false
     },
     comic_exlibrium_second_life_34                                          : {
         name            : "Экслибриум. Жизнь вторая #34 После дождичка, часть 2",
         number          : "34",
         type            : "single",
+        cover_file      : {
+            url         : `${exlibriumSecondLifeImagePath}/exlibrium-second-life-34-after-rain-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_inga_shelkovits", "character_solovei", "character_liliya_romanova"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_8"],
         previous_comics : ["comic_exlibrium_second_life_33"],
         next_comics     : ["comic_exlibrium_second_life_35"],
-        release_at      : {year: 2023, month: 2, day: 17}
+        release_at      : {year: 2023, month: 2, day: 17},
+        show            : false
     },
     comic_major_igor_grom_17                                                : {
         name            : "Майор Игорь Гром #17 Отпуск, часть 1",
         number          : "17",
         type            : "single",
+        cover_file      : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-17-vacation-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_igor_grom", "character_irina_sharlotta"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_egor_gerasimov", positions: ["artist"]}],
         including_comics: ["comic_major_igor_grom_volume_5"],
-        previous_comics : ["comic_heroes_and_monsters_single"],
+        previous_comics : ["comic_heroes_and_monsters_electronic"],
         next_comics     : ["comic_major_igor_grom_18"],
-        release_at      : {year: 2023, month: 2, day: 22}
+        release_at      : {year: 2023, month: 2, day: 22},
+        show            : false
     },
     comic_licorice_book_2                                                   : {
         name            : "Ликорис. Книга 2",
         number          : "2",
         type            : "book",
+        cover_file      : {url: `${licoriceImagePath}/licorice-book-2.jpg`, aspect_ratio: 1213 / 1717},
         ranges          : ["range_bubble_manga"],
+        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         contained_comics: ["comic_licorice_4", "comic_licorice_5", "comic_licorice_6"],
         previous_comics : ["comic_licorice_book_1"],
-        release_at      : {year: 2023, month: 2, day: 25}
+        release_at      : {year: 2023, month: 2, day: 25},
+        show            : true
     },
     comic_mir_volume_8                                                      : {
         name            : "МИР. Том 8: Чужие флаги",
         number          : "8",
         type            : "book",
+        cover_file      : {url: `${mirImagePath}/mir-volume-8-alien-flags.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_mir"],
+        characters      : ["character_mir", "character_aleksandra_makedonskaya"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_adela_adienova", positions: ["colorist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                           {author_id: "author_valentin_potkin", positions: ["artist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
         contained_comics: ["comic_mir_15", "comic_mir_16", "comic_mir_17"],
-        previous_comics : ["comic_heroes_and_monsters_book"],
+        previous_comics : ["comic_heroes_and_monsters_printed"],
         next_comics     : ["comic_mir_18"],
-        release_at      : {year: 2022, month: 10, day: 1}
+        release_at      : {year: 2022, month: 10, day: 1},
+        show            : true
     },
     comic_plague_doctor_25                                                  : {
         name            : "Чумной Доктор №25 Рагнар, часть 5",
@@ -15396,7 +15621,7 @@ const comics: Comics = {
         type            : "single",
         ranges          : ["range_mir"],
         including_comics: ["comic_mir_volume_8"],
-        previous_comics : ["comic_heroes_and_monsters_single"],
+        previous_comics : ["comic_heroes_and_monsters_electronic"],
         next_comics     : ["comic_mir_16"],
         release_at      : {year: 2023, month: 3, day: 3}
     },
@@ -15648,7 +15873,7 @@ const comics: Comics = {
         ranges          : ["range_major_igor_grom"],
         contained_comics: ["comic_major_igor_grom_17", "comic_major_igor_grom_18", "comic_major_igor_grom_19",
                            "comic_major_igor_grom_20"],
-        previous_comics : ["comic_heroes_and_monsters_book"],
+        previous_comics : ["comic_heroes_and_monsters_printed"],
         next_comics     : ["comic_major_igor_grom_21"],
         release_at      : {year: 2023, month: 5, day: 23}
     },

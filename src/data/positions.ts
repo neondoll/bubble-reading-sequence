@@ -183,6 +183,7 @@ export default {
     comic_fiction_novel_razumovsky                                          : comic_fiction_novel,
     comic_fiction_novel_the_nine_lives_of_agatha_the_first_life_dragons_font: comic_fiction_novel,
     comic_gray_hound_volume_1_chapter_1                                     : range_bubble_manga_line_2,
+    comic_hourly_time_against                                               : range_besoboy_book,
     comic_igor_grom_15                                                      : comic_witch_hunt,
     comic_igor_grom_book_1                                                  : range_igor_grom_hardcover_book,
     comic_igor_grom_book_2                                                  : range_igor_grom_hardcover_book,

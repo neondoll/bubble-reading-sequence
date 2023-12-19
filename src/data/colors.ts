@@ -45,6 +45,7 @@ const colors = {
     comic_falcon_3                               : comic_new_bubble_heroes,
     comic_falcon_4                               : comic_new_bubble_heroes,
     comic_falcon_volume_1                        : comic_new_bubble_heroes,
+    comic_falcon_volume_2                        : comic_new_bubble_heroes,
     comic_igor_ugor_2_5                          : range_igor_ugor,
     comic_igor_ugor_volume_1                     : range_igor_ugor,
     comic_igor_ugor_volume_2                     : range_igor_ugor,

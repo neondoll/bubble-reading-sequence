@@ -187,6 +187,7 @@ const authors: Authors = {
     author_evgeniy_kiyamov        : {full_name: "Евгений Киямов", positions: ["artist"]},
     author_evgeniy_pivnev         : {full_name: "Евгений Пивнев", positions: ["artist"]},
     author_evgeniy_frantsev       : {full_name: "Евгений Францев", positions: ["artist"]},
+    author_egor_gerasimov         : {full_name: "Егор Герасимов", positions: ["artist"]},
     author_ekaterina_grishchenko  : {full_name: "Екатерина Грищенко", positions: ["artist"]},
     author_ekaterina_desyatnikova : {full_name: "Екатерина Десятникова", positions: ["screenwriter"]},
     author_ekaterina_morozova     : {full_name: "Екатерина Морозова", positions: ["screenwriter"]},
