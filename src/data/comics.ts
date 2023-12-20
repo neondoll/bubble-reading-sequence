@@ -6,6 +6,7 @@ const annaImagePath: string = `${comicImagePath}/anna`;
 const besoboyImagePath: string = `${comicImagePath}/besoboy`;
 const besoboyVol2ImagePath: string = `${comicImagePath}/besoboy_vol_2`;
 const blackDogItsTimeImagePath: string = `${comicImagePath}/black_dog_its_time`;
+const bubbleSchoolImagePath: string = `${comicImagePath}/bubble_school`;
 const bubbleTriptychImagePath: string = `${comicImagePath}/bubble_triptych`;
 const caesarMagnificentImagePath: string = `${comicImagePath}/caesar_magnificent`;
 const catAndMouseImagePath: string = `${comicImagePath}/cat_and_mouse`;
@@ -59,7 +60,7 @@ const comic_time_of_raven_backstory: Comic = {
     name      : "Время Ворона: Предыстория",
     type      : "book",
     cover_file: {url: `${timeOfRavenImagePath}/time-of-raven-backstory.jpg`, aspect_ratio: 1339 / 2048},
-    ranges    : ["range_crossovers", "range_time_of_raven"],
+    ranges    : ["range_crossovers"],
     characters: ["character_bulat_gadzhiev", "character_dzhina_stivens", "character_dimitrios", "character_kuth",
                  "character_magistr", "character_svartzhel", "character_chumnoi_doktor", "character_nika_chaikina",
                  "character_igor_grom", "character_besoboi", "character_andrei_radov"],
@@ -89,7 +90,7 @@ const comic_time_of_raven_epilogue: Comic = {
     name      : "Время Ворона: Эпилог",
     type      : "book",
     cover_file: {url: `${timeOfRavenImagePath}/time-of-raven-epilogue.jpg`, aspect_ratio: 1339 / 2048},
-    ranges    : ["range_crossovers", "range_time_of_raven"],
+    ranges    : ["range_crossovers"],
     characters: ["character_avgust_van_der_holt", "character_angelina_evgenevna", "character_antihrist",
                  "character_bulat_gadzhiev", "character_dzhessi_rodrigez", "character_dmitrii_dubin",
                  "character_koschei", "character_magistr", "character_myordok_makalister", "character_semiaza",
@@ -3129,7 +3130,7 @@ const comics: Comics = {
         name            : "Время Ворона: Пролог",
         type            : "single",
         cover_file      : {url: `${timeOfRavenImagePath}/time-of-raven-prologue.jpg`, aspect_ratio: 379 / 580},
-        ranges          : ["range_crossovers", "range_time_of_raven"],
+        ranges          : ["range_crossovers"],
         characters      : ["character_avgust_van_der_holt", "character_dzhessi_rodrigez", "character_magistr",
                            "character_myordok_makalister", "character_svartzhel"],
         authors         : [{author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
@@ -3198,7 +3199,7 @@ const comics: Comics = {
         number          : "1",
         type            : "single",
         cover_file      : {url: `${timeOfRavenImagePath}/time-of-raven-1.jpg`, aspect_ratio: 379 / 580},
-        ranges          : ["range_crossovers", "range_time_of_raven"],
+        ranges          : ["range_crossovers"],
         characters      : ["character_kuth", "character_magistr", "character_chumnoi_doktor", "character_igor_grom"],
         authors         : [{author_id: "author_anastasia_kim", positions: ["artist"]},
                            {author_id: "author_evgeny_fedotov", positions: ["screenwriter"]},
@@ -3302,7 +3303,7 @@ const comics: Comics = {
         number          : "2",
         type            : "single",
         cover_file      : {url: `${timeOfRavenImagePath}/time-of-raven-2.jpg`, aspect_ratio: 379 / 580},
-        ranges          : ["range_crossovers", "range_time_of_raven"],
+        ranges          : ["range_crossovers"],
         characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez",
                            "character_dzhoshua_donato", "character_dimitrios", "character_kuth",
                            "character_lotta_lemke", "character_magistr", "character_myordok_makalister",
@@ -3444,7 +3445,7 @@ const comics: Comics = {
         number          : "3",
         type            : "single",
         cover_file      : {url: `${timeOfRavenImagePath}/time-of-raven-3.jpg`, aspect_ratio: 379 / 580},
-        ranges          : ["range_crossovers", "range_time_of_raven"],
+        ranges          : ["range_crossovers"],
         characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez",
                            "character_dzhoshua_donato", "character_kuth", "character_lotta_lemke", "character_magistr",
                            "character_myordok_makalister", "character_svartzhel", "character_chyornyi_pyos",
@@ -3640,7 +3641,7 @@ const comics: Comics = {
         number          : "4",
         type            : "single",
         cover_file      : {url: `${timeOfRavenImagePath}/time-of-raven-4.jpg`, aspect_ratio: 379 / 580},
-        ranges          : ["range_crossovers", "range_time_of_raven"],
+        ranges          : ["range_crossovers"],
         characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_delta",
                            "character_dzhessi_rodrigez", "character_dzhoshua_donato", "character_kuth",
                            "character_lotta_lemke", "character_magistr", "character_svartzhel",
@@ -3750,7 +3751,7 @@ const comics: Comics = {
         number          : "5",
         type            : "single",
         cover_file      : {url: `${timeOfRavenImagePath}/time-of-raven-5.jpg`, aspect_ratio: 379 / 580},
-        ranges          : ["range_crossovers", "range_time_of_raven"],
+        ranges          : ["range_crossovers"],
         characters      : ["character_avaddon_bezzhalostnyi", "character_avgust_van_der_holt",
                            "character_dzhoshua_donato", "character_kuth", "character_lotta_lemke", "character_magistr",
                            "character_myordok_makalister", "character_satana", "character_svartzhel", "character_shmyg",
@@ -4591,7 +4592,7 @@ const comics: Comics = {
         name            : "Время Ворона",
         type            : "book",
         cover_file      : {url: `${timeOfRavenImagePath}/time-of-raven.jpg`, aspect_ratio: 1339 / 2048},
-        ranges          : ["range_crossovers", "range_time_of_raven"],
+        ranges          : ["range_crossovers"],
         characters      : ["character_avaddon_bezzhalostnyi", "character_avgust_van_der_holt", "character_artur_haksli",
                            "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato",
                            "character_kuth", "character_lotta_lemke", "character_magistr",
@@ -15609,128 +15610,226 @@ const comics: Comics = {
         name            : "Чумной Доктор №25 Рагнар, часть 5",
         number          : "25",
         type            : "single",
+        cover_file      : {
+            url         : `${plagueDoctorImagePath}/plague-doctor-25-ragnar-part-5.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_plague_doctor"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_ekaterina_grishchenko", positions: ["artist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_plague_doctor_volume_7"],
         previous_comics : ["comic_plague_doctor_24"],
         next_comics     : ["comic_plague_doctor_26"],
-        release_at      : {year: 2023, month: 2, day: 28}
+        release_at      : {year: 2023, month: 2, day: 28},
+        show            : false
     },
     comic_mir_15                                                            : {
         name            : "МИР #15 Чужие флаги, часть 1",
         number          : "15",
         type            : "single",
+        cover_file      : {url: `${mirImagePath}/mir-15-alien-flags-part-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_mir"],
+        characters      : ["character_mir", "character_aleksandra_makedonskaya"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_adela_adienova", positions: ["colorist"]},
+                           {author_id: "author_valentin_potkin", positions: ["artist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
         including_comics: ["comic_mir_volume_8"],
         previous_comics : ["comic_heroes_and_monsters_electronic"],
         next_comics     : ["comic_mir_16"],
-        release_at      : {year: 2023, month: 3, day: 3}
+        release_at      : {year: 2023, month: 3, day: 3},
+        show            : false
     },
     comic_bubble_triptych_2                                                 : {
         name           : "BUBBLE Триптих, часть 2",
         number         : "2",
         type           : "single",
+        cover_file     : {url: `${bubbleTriptychImagePath}/bubble-triptych-part-2.jpg`, aspect_ratio: 1339 / 2048},
+        authors        : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                          {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                          {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         ranges         : ["range_bubble_triptych"],
         previous_comics: ["comic_bubble_triptych_1"],
         next_comics    : ["comic_bubble_triptych_3"],
-        release_at     : {year: 2023, month: 3, day: 9}
+        release_at     : {year: 2023, month: 3, day: 9},
+        show           : true
     },
     comic_licorice_6                                                        : {
         name            : "Ликорис, глава 6",
         number          : "6",
         type            : "single",
+        cover_file      : {url: `${licoriceImagePath}/licorice-chapter-6.jpg`, aspect_ratio: 1447 / 2048},
         ranges          : ["range_bubble_manga"],
+        authors         : [{author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_licorice_book_2"],
         previous_comics : ["comic_licorice_5"],
-        release_at      : {year: 2023, month: 3, day: 10}
+        release_at      : {year: 2023, month: 3, day: 10},
+        show            : false
     },
     comic_major_igor_grom_18                                                : {
         name            : "Майор Игорь Гром #18 Отпуск, часть 2",
         number          : "18",
         type            : "single",
+        cover_file      : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-18-vacation-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_major_igor_grom"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_egor_gerasimov", positions: ["artist"]}],
         including_comics: ["comic_major_igor_grom_volume_5"],
         previous_comics : ["comic_major_igor_grom_17"],
         next_comics     : ["comic_major_igor_grom_19"],
-        release_at      : {year: 2023, month: 3, day: 17}
+        release_at      : {year: 2023, month: 3, day: 17},
+        show            : false
     },
     comic_bubble_school_volume_1                                            : {
         name      : "Школа BUBBLE. Том 1. Урок жизни",
         number    : "1",
         type      : "book",
+        cover_file: {url: `${bubbleSchoolImagePath}/bubble-school-volume-1-life-lesson.jpg`, aspect_ratio: 1339 / 2048},
         ranges    : ["range_childrens_comics", "range_bubble_school"],
-        release_at: {year: 2023, month: 3, day: 17}
+        authors   : [{author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                     {author_id: "author_elizaveta_valikova", positions: ["artist"]},
+                     {author_id: "author_ksenia_shpaletskaya", positions: ["screenwriter"]}],
+        release_at: {year: 2023, month: 3, day: 17},
+        show      : true
     },
-    comic_game_book_find_the_dragon                                         : {
+    comic_game_book_find_dragon                                             : {
         name      : "Книга-игра \"Найди Дракона\"",
         type      : "single",
+        cover_file: {url: `${comicImagePath}/game-book-find-dragon.jpg`, aspect_ratio: 1345 / 2048},
         ranges    : ["range_plague_doctor"],
-        release_at: {year: 2023, month: 3, day: 20}
+        characters: ["character_vadim_drakon"],
+        authors   : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                     {author_id: "author_irina_ivanova", positions: ["artist"]}],
+        release_at: {year: 2023, month: 3, day: 20},
+        show      : true
     },
     comic_exlibrium_second_life_35                                          : {
         name            : "Экслибриум. Жизнь вторая #35 После дождичка, часть 3",
         number          : "35",
         type            : "single",
+        cover_file      : {
+            url         : `${exlibriumSecondLifeImagePath}/exlibrium-second-life-35-after-rain-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_exlibrium_second_life"],
+        characters      : ["character_agata", "character_inga_shelkovits", "character_liliya_romanova"],
+        authors         : [{author_id: "author_jamilya_zulpikarova", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_second_life_volume_8"],
         previous_comics : ["comic_exlibrium_second_life_34"],
         next_comics     : ["comic_exlibrium_second_life_36"],
-        release_at      : {year: 2023, month: 3, day: 24}
+        release_at      : {year: 2023, month: 3, day: 24},
+        show            : false
     },
     comic_witch_3                                                           : {
         name            : "Ведьма №3 По проводам, часть 3",
         number          : "3",
         type            : "single",
+        cover_file      : {url: `${witchImagePath}/witch-3-along-wires-part-3.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_witch"],
+        authors         : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                           {author_id: "author_kirill_makagonov", positions: ["artist"]},
+                           {author_id: "author_rene_bartang", positions: ["colorist"]}],
         including_comics: ["comic_witch_volume_1"],
         previous_comics : ["comic_witch_2"],
-        release_at      : {year: 2023, month: 3, day: 28}
+        release_at      : {year: 2023, month: 3, day: 28},
+        show            : false
     },
     comic_plague_doctor_26                                                  : {
         name            : "Чумной Доктор №26 Рагнар, часть 6",
         number          : "26",
         type            : "single",
+        cover_file      : {
+            url         : `${plagueDoctorImagePath}/plague-doctor-26-ragnar-part-6.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges          : ["range_plague_doctor"],
+        characters      : ["character_oleg_volkov", "character_sergei_razumovskii", "character_valeriya_makarova"],
+        authors         : [{author_id: "author_anastasia_kim", positions: ["artist", "screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_ekaterina_grishchenko", positions: ["artist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]}],
         including_comics: ["comic_plague_doctor_volume_7"],
         previous_comics : ["comic_plague_doctor_25"],
         next_comics     : ["comic_plague_doctor_27"],
-        release_at      : {year: 2023, month: 3, day: 31}
+        release_at      : {year: 2023, month: 3, day: 31},
+        show            : false
     },
     comic_mir_16                                                            : {
         name            : "МИР #16 Чужие флаги, часть 2",
         number          : "16",
         type            : "single",
+        cover_file      : {url: `${mirImagePath}/mir-16-alien-flags-part-2.jpg`, aspect_ratio: 1339 / 2048},
         ranges          : ["range_mir"],
+        characters      : ["character_mir", "character_aleksandra_makedonskaya"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_adela_adienova", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
         including_comics: ["comic_mir_volume_8"],
         previous_comics : ["comic_mir_15"],
         next_comics     : ["comic_mir_17"],
-        release_at      : {year: 2023, month: 4, day: 5}
+        release_at      : {year: 2023, month: 4, day: 5},
+        show            : false
     },
     comic_bubble_gam_almanac_2                                              : {
-        name           : "BUBBLE ГАМ. Альманах #2",
+        name           : "BUBBLE ГАМ. Альманах №2",
         number         : "2",
         type           : "single",
+        cover_file     : {url: `${gamImagePath}/bubble-gam-almanac-2.jpg`, aspect_ratio: 1339 / 2048},
         ranges         : ["range_gam"],
+        authors        : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]}],
         previous_comics: ["comic_bubble_gam_almanac_1"],
         next_comics    : ["comic_bubble_gam_almanac_3"],
-        release_at     : {year: 2023, month: 4, day: 10}
+        release_at     : {year: 2023, month: 4, day: 10},
+        show           : true
     },
     comic_impulse_volume_1                                                  : {
         name            : "Импульс. Том 1. Взлёты и падения",
         number          : "1",
         type            : "book",
-        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        cover_file      : {url: `${impulseImagePath}/impulse-volume-1-ups-and-downs.jpg`, aspect_ratio: 1339 / 2048},
+        ranges          : ["range_bubble_legends"],
+        authors         : [{author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_daria_kislyuk", positions: ["colorist"]},
+                           {author_id: "author_denis_nechiporenko", positions: ["screenwriter"]},
+                           {author_id: "author_ivan_dovbnya", positions: ["artist"]},
+                           {author_id: "author_yulia_kazanina", positions: ["artist"]}],
         contained_comics: ["comic_impulse_heros_voice", "comic_impulse_premiere"],
-        release_at      : {year: 2023, month: 4, day: 10}
+        release_at      : {year: 2023, month: 4, day: 10},
+        show            : true
     },
     comic_falcon_5                                                          : {
         name            : "Сокол #5 Слепое пятно",
         number          : "5",
         type            : "single",
-        ranges          : ["range_bubble_legends", "range_new_bubble_heroes"],
+        cover_file      : {url: `${falconImagePath}/falcon-5-blindspot.jpg`, aspect_ratio: 1339 / 2048},
+        ranges          : ["range_bubble_legends"],
+        authors         : [{author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_valeria_frantseva", positions: ["screenwriter"]},
+                           {author_id: "author_daria_kislyuk", positions: ["colorist"]},
+                           {author_id: "author_evgeniy_frantsev", positions: ["artist"]},
+                           {author_id: "author_inga_kanareeva", positions: ["screenwriter"]}],
         including_comics: ["comic_falcon_volume_2"],
         previous_comics : ["comic_falcon_4"],
         next_comics     : ["comic_falcon_6"],
-        release_at      : {year: 2023, month: 4, day: 12}
+        release_at      : {year: 2023, month: 4, day: 12},
+        show            : true
     },
     comic_yablochny_saved_single                                            : {
         name            : "Яблочный спас",

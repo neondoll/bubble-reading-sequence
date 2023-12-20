@@ -209,6 +209,7 @@ const authors: Authors = {
     author_karina_mashkova        : {full_name: "Карина Машкова", positions: ["artist"]},
     author_kirill_makagonov       : {full_name: "Кирилл Макагонов", positions: ["artist"]},
     author_kirill_perepelitsyn    : {full_name: "Кирилл Перепелицын", positions: ["colorist"]},
+    author_ksenia_shpaletskaya    : {full_name: "Ксения Шпалецкая", positions: ["screenwriter"]},
     author_maxim_ananyin          : {full_name: "Максим Ананьин", positions: ["screenwriter"]}, /* TODO: Не нашла пока его должность */
     author_maxim_ivankov          : {full_name: "Максим Иванков", positions: ["screenwriter"]},
     author_maxim_karganov         : {full_name: "Максим Карганов", positions: ["screenwriter"]},

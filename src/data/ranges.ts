@@ -10,7 +10,7 @@ const ranges: Ranges = {
     range_meteora              : {name: "Метеора", release_at: {year: 2014, month: 10, day: 25}},
     range_bubble_legends       : {name: "Легенды BUBBLE", release_at: {year: 2015, month: 5, day: 1}},
     range_childrens_comics     : {name: "Детские комиксы", release_at: {year: 2015, month: 10, day: 1}},
-    range_time_of_raven        : {name: "Время Ворона", release_at: {year: 2015, month: 10, day: 1}}, /* color: "#ffffff" */
+    //range_time_of_raven        : {name: "Время Ворона", release_at: {year: 2015, month: 10, day: 1}}, /* color: "#ffffff" */
     range_authors_comics       : {name: "Авторские комиксы", release_at: {year: 2015, month: 12, day: 7}},
     range_monk_king_of_parties : {name: "Инок. Король вечерИНОК", release_at: {year: 2016, month: 4, day: 1}},
     range_inadequate_galaxy    : {name: "Упоротая галактика", release_at: {year: 2016, month: 12, day: 24}},
