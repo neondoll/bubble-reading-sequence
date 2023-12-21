@@ -213,6 +213,7 @@ const authors: Authors = {
     author_maxim_ananyin          : {full_name: "Максим Ананьин", positions: ["screenwriter"]}, /* TODO: Не нашла пока его должность */
     author_maxim_ivankov          : {full_name: "Максим Иванков", positions: ["screenwriter"]},
     author_maxim_karganov         : {full_name: "Максим Карганов", positions: ["screenwriter"]},
+    author_maxim_sashenkov        : {full_name: "Максим Сашенков", positions: ["artist"]},
     author_margarita_kablukova    : {full_name: "Маргарита Каблукова", positions: ["colorist"]},
     author_marina_vaseva          : {full_name: "Марина Васёва", positions: ["colorist"]},
     author_marina_sukhareva       : {full_name: "Марина Сухарева", positions: ["artist"]},
@@ -227,6 +228,7 @@ const authors: Authors = {
     author_natalya_rerekina       : {full_name: "Наталья Ререкина", positions: ["artist"]},
     author_nina_vakueva           : {full_name: "Нина Вакуева", positions: ["artist"]},
     author_oleg_chudakov          : {full_name: "Олег Чудаков", positions: ["artist"]},
+    author_olga_kuran             : {full_name: "Ольга Куран", positions: ["screenwriter"]},
     author_oksana_turlyay         : {full_name: "Оксана Турляй", positions: ["artist"]},
     author_polina_shaposhnikova   : {full_name: "Полина Шапошникова", positions: ["artist"]},
     author_rene_bartang           : {full_name: "Рене Бартанг", positions: ["colorist"]},
