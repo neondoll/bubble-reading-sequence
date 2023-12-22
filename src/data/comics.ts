@@ -325,6 +325,16 @@ const comic_caligari_datura: Comic = {
                  {author_id: "author_natalia_vorontsova", positions: ["screenwriter"]}],
     release_at: {year: 2022, month: 10, day: 24}
 };
+const comic_major_grom_childrens_games_coloring: Comic = {
+    name      : "Майор Гром. Детские игры. Раскраска",
+    type      : "single",
+    cover_file: {url: `${majorGromImagePath}/major-grom-childrens-games-coloring.jpg`, aspect_ratio: 1341 / 2048},
+    ranges    : ["range_major_grom"],
+    characters: ["character_fyodor_prokopenko", "character_igor_grom"],
+    authors   : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                 {author_id: "author_valentin_potkin", positions: ["artist"]}],
+    release_at: {year: 2022, month: 12, day: 1}
+};
 const comic_grom_difficult_childhood_rising_of_anubis: Comic = {
     name      : "Гром: Трудное детство. Восход Анубиса",
     type      : "book",
@@ -4837,6 +4847,7 @@ const comics: Comics = {
                            "comic_dubin_dima_provincial_holidays_1", "comic_major_grom_1939_electronic",
                            "comic_major_grom_like_in_war_1", "comic_major_grom_hero_forever_1",
                            "comic_special_prokopenko_grom_at_sunrise_electronic",
+                           "comic_major_grom_childrens_games_coloring_electronic",
                            "comic_grom_difficult_childhood_rising_of_anubis_electronic"],
         release_at      : {year: 2016, month: 12, day: 24},
         show            : false
@@ -5492,6 +5503,7 @@ const comics: Comics = {
                            "comic_dubin_dima_provincial_holidays", "comic_major_grom_1939_printed",
                            "comic_major_grom_like_in_war", "comic_major_grom_hero_forever",
                            "comic_special_prokopenko_grom_at_sunrise_printed",
+                           "comic_major_grom_childrens_games_coloring_printed",
                            "comic_grom_difficult_childhood_rising_of_anubis_printed"],
         release_at      : {year: 2017, month: 6, day: 1},
         show            : true
@@ -15082,6 +15094,7 @@ const comics: Comics = {
                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
                           {author_id: "author_natalya_zaidova", positions: ["artist"]}],
         previous_comics: ["comic_igor_grom_50"],
+        next_comics    : ["comic_rivers_there_is_no_fear_2"],
         release_at     : {year: 2022, month: 10, day: 24},
         show           : true
     },
@@ -15231,6 +15244,18 @@ const comics: Comics = {
         next_comics     : ["comic_plague_doctor_24"],
         release_at      : {year: 2022, month: 11, day: 30},
         show            : false
+    },
+    comic_major_grom_childrens_games_coloring_electronic            : {
+        ...comic_major_grom_childrens_games_coloring,
+        including_comics: ["comic_major_grom_childrens_games_coloring_printed"],
+        previous_comics : ["comic_major_grom_50"],
+        show            : false
+    },
+    comic_major_grom_childrens_games_coloring_printed               : {
+        ...comic_major_grom_childrens_games_coloring,
+        contained_comics: ["comic_major_grom_childrens_games_coloring_electronic"],
+        previous_comics : ["comic_major_grom_volume_8"],
+        show            : true
     },
     comic_major_grom_riddle_of_sphinx                               : {
         name            : "Майор Гром. Загадка сфинкса",
@@ -15596,26 +15621,6 @@ const comics: Comics = {
         release_at      : {year: 2023, month: 2, day: 25},
         show            : true
     },
-    comic_mir_volume_8                                              : {
-        name            : "МИР. Том 8: Чужие флаги",
-        number          : "8",
-        type            : "book",
-        cover_file      : {url: `${mirImagePath}/mir-volume-8-alien-flags.jpg`, aspect_ratio: 1339 / 2048},
-        ranges          : ["range_mir"],
-        characters      : ["character_mir", "character_aleksandra_makedonskaya"],
-        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
-                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
-                           {author_id: "author_adela_adienova", positions: ["colorist"]},
-                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
-                           {author_id: "author_valentin_potkin", positions: ["artist"]},
-                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
-                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
-        contained_comics: ["comic_mir_15", "comic_mir_16", "comic_mir_17"],
-        previous_comics : ["comic_heroes_and_monsters_printed"],
-        next_comics     : ["comic_mir_18"],
-        release_at      : {year: 2022, month: 10, day: 1},
-        show            : true
-    },
     comic_plague_doctor_25                                          : {
         name            : "Чумной Доктор №25 Рагнар, часть 5",
         number          : "25",
@@ -15654,6 +15659,26 @@ const comics: Comics = {
         next_comics     : ["comic_mir_16"],
         release_at      : {year: 2023, month: 3, day: 3},
         show            : false
+    },
+    comic_mir_volume_8                                              : {
+        name            : "МИР. Том 8: Чужие флаги",
+        number          : "8",
+        type            : "book",
+        cover_file      : {url: `${mirImagePath}/mir-volume-8-alien-flags.jpg`, aspect_ratio: 1339 / 2048},
+        ranges          : ["range_mir"],
+        characters      : ["character_mir", "character_aleksandra_makedonskaya"],
+        authors         : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_adela_adienova", positions: ["colorist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                           {author_id: "author_valentin_potkin", positions: ["artist"]},
+                           {author_id: "author_natalya_martinovich", positions: ["colorist"]},
+                           {author_id: "author_taya_makarevich", positions: ["artist"]}],
+        contained_comics: ["comic_mir_15", "comic_mir_16", "comic_mir_17"],
+        previous_comics : ["comic_heroes_and_monsters_printed"],
+        next_comics     : ["comic_mir_18"],
+        release_at      : {year: 2023, month: 3, day: 6},
+        show            : true
     },
     comic_bubble_triptych_2                                         : {
         name           : "BUBBLE Триптих, часть 2",
@@ -16315,7 +16340,7 @@ const comics: Comics = {
                            "comic_plague_doctor_28", "comic_plague_doctor_29"],
         previous_comics : ["comic_plague_doctor_volume_6"],
         next_comics     : ["comic_plague_doctor_30"],
-        release_at      : {year: 2023, month: 2, day: 4},
+        release_at      : {year: 2023, month: 7, day: 4},
         show            : true
     },
     comic_fiction_novel_nine_lives_of_agatha_first_life_dragons_font: {
@@ -16352,6 +16377,7 @@ const comics: Comics = {
         name           : "МИР #18 Царь в голове, часть 1",
         number         : "18",
         type           : "single",
+        cover_file     : {url: `${mirImagePath}/mir-18-king-is-in-head-part-1.jpg`, aspect_ratio: 1339 / 2048},
         ranges         : ["range_mir"],
         characters     : ["character_mir"],
         authors        : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
@@ -16363,12 +16389,17 @@ const comics: Comics = {
         previous_comics: ["comic_mir_17"],
         next_comics    : ["comic_mir_eternal_memory_electronic", "comic_mir_eternal_memory_printed",
                           "comic_special_phaeton_electronic", "comic_special_phaeton_printed"],
-        release_at     : {year: 2023, month: 7, day: 19}
+        release_at     : {year: 2023, month: 7, day: 19},
+        show           : true
     },
     comic_major_igor_grom_22                                        : {
         name           : "Майор Игорь Гром #22 Правда, часть 2",
         number         : "22",
         type           : "single",
+        cover_file     : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-22-truth-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges         : ["range_major_igor_grom"],
         characters     : ["character_igor_grom"],
         authors        : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
@@ -16377,12 +16408,17 @@ const comics: Comics = {
         previous_comics: ["comic_major_igor_grom_21"],
         next_comics    : ["comic_special_prokopenko_grom_at_sunrise_electronic",
                           "comic_special_prokopenko_grom_at_sunrise_printed", "comic_major_igor_grom_special_duty"],
-        release_at     : {year: 2023, month: 7, day: 26}
+        release_at     : {year: 2023, month: 7, day: 26},
+        show           : true
     },
     comic_exlibrium_second_life_39                                  : {
         name           : "Экслибриум. Жизнь вторая #39 Будущее – светло, часть 3",
         number         : "39",
         type           : "single",
+        cover_file     : {
+            url         : `${exlibriumSecondLifeImagePath}/exlibrium-second-life-39-future-is-bright-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges         : ["range_exlibrium_second_life"],
         characters     : ["character_anton_varchuk", "character_matvei_koretskii", "character_liliya_romanova",
                           "character_lena_pyatkina", "character_apollon"],
@@ -16393,12 +16429,17 @@ const comics: Comics = {
         next_comics    : ["comic_exlibrium_blank_sheet_electronic", "comic_exlibrium_blank_sheet_printed",
                           "comic_exlibrium_red_line_electronic", "comic_exlibrium_red_line_printed",
                           "comic_exlibrium_colors_of_our_feelings_coloring_dossier"],
-        release_at     : {year: 2023, month: 7, day: 28}
+        release_at     : {year: 2023, month: 7, day: 28},
+        show           : true
     },
     comic_plague_doctor_30                                          : {
         name           : "Чумной Доктор №30 Чужой среди своих, часть 1",
         number         : "30",
         type           : "single",
+        cover_file     : {
+            url         : `${plagueDoctorImagePath}/plague-doctor-30-stranger-among-our-own-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
         ranges         : ["range_plague_doctor"],
         characters     : ["character_valeriya_makarova"],
         authors        : [{author_id: "author_anastasia_chebykina", positions: ["colorist"]},
@@ -16407,11 +16448,69 @@ const comics: Comics = {
         previous_comics: ["comic_plague_doctor_29", "comic_plague_doctor_volume_7"],
         next_comics    : ["comic_special_volkov_inferno_electronic", "comic_special_volkov_inferno_printed",
                           "comic_apple_saved_electronic", "comic_apple_saved_printed"],
-        release_at     : {year: 2023, month: 7, day: 31}
+        release_at     : {year: 2023, month: 7, day: 31},
+        show           : true
+    },
+    comic_rivers_there_is_no_fear_2                                 : {
+        name           : "Реки. Страха нет, часть 2",
+        number         : "2",
+        type           : "single",
+        cover_file     : {
+            url         : `${riversThereIsNoFearImagePath}/rivers-there-is-no-fear-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges         : ["range_igor_grom"],
+        authors        : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                          {author_id: "author_andrey_vasin", positions: ["artist"]},
+                          {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                          {author_id: "author_natalya_zaidova", positions: ["artist"]}],
+        previous_comics: ["comic_rivers_there_is_no_fear_1"],
+        next_comics    : ["comic_rivers_there_is_no_fear_3"],
+        release_at     : {year: 2023, month: 10, day: 18},
+        show           : true
+    },
+    comic_rivers_there_is_no_fear_3                                 : {
+        name           : "Реки. Страха нет, часть 3",
+        number         : "3",
+        type           : "single",
+        cover_file     : {
+            url         : `${riversThereIsNoFearImagePath}/rivers-there-is-no-fear-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges         : ["range_igor_grom"],
+        authors        : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                          {author_id: "author_andrey_vasin", positions: ["artist"]},
+                          {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                          {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                          {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
+                          {author_id: "author_nadezhda_shevchenko", positions: ["colorist"]}],
+        previous_comics: ["comic_rivers_there_is_no_fear_2"],
+        next_comics    : ["comic_rivers_there_is_no_fear_4"],
+        release_at     : {year: 2023, month: 11, day: 18},
+        show           : true
     },
     // Infinix: Город Героев - -- --- ----
     // Тагар. Том 5. №3 - 5 дек 2023
-    // Реки №4. Страха нет. Часть 4 - 12 дек 2023
+    comic_rivers_there_is_no_fear_4: {
+        name           : "Реки. Страха нет, часть 4",
+        number         : "4",
+        type           : "single",
+        cover_file     : {
+            url         : `${riversThereIsNoFearImagePath}/rivers-there-is-no-fear-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges         : ["range_igor_grom"],
+        authors        : [{author_id: "author_alexey_zamsky", positions: ["screenwriter"]},
+                          {author_id: "author_andrey_vasin", positions: ["artist"]},
+                          {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                          {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                          {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]},
+                          {author_id: "author_oleg_chudakov", positions: ["artist"]},
+                          {author_id: "author_yulia_yastrebova", positions: ["colorist"]}],
+        previous_comics: ["comic_rivers_there_is_no_fear_3"],
+        release_at     : {year: 2023, month: 12, day: 12},
+        show           : true
+    },
     // Майор Игорь Гром №27 - 22 дек 2023
     // Экслибриум. Спецвыпуск - 26 дек 2023
     // Чумной доктор №34 - 29 дек 2023

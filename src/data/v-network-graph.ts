@@ -89,6 +89,8 @@ function offsetOfNodesThatCoincideInXAndY(comic_id: string) {
             );
     });
 
+    console.log(comic_id, matched_nodes);
+
     if (matched_nodes.length > 0) {
         layouts.nodes[node_id].x += positions.difference.x;
 

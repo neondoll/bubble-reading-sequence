@@ -222,6 +222,7 @@ const authors: Authors = {
     author_maria_sukhikh          : {full_name: "Мария Сухих"},
     author_mark_simonov           : {full_name: "Марк Симонов", positions: ["colorist"]},
     author_nadezhda_konovalova    : {full_name: "Надежда Коновалова", positions: ["screenwriter"]},
+    author_nadezhda_shevchenko    : {full_name: "Надежда Шевченко", positions: ["colorist"]},
     author_natalia_vorontsova     : {full_name: "Наталия Воронцова", positions: ["screenwriter"]},
     author_natalya_martinovich    : {full_name: "Наталья Мартинович", positions: ["colorist"]},
     author_natalya_nesterenko     : {full_name: "Наталья Нестеренко", positions: ["colorist"]},
@@ -245,6 +246,7 @@ const authors: Authors = {
     author_yulia_kazanina         : {full_name: "Юлия Казанина (Варасаби)", positions: ["artist"]},
     author_yulia_loganova         : {full_name: "Юлия Логанова", positions: ["colorist"]},
     author_yulia_smirnova         : {full_name: "Юлия Смирнова (Tororo)", positions: ["colorist"]},
+    author_yulia_yastrebova       : {full_name: "Юлия Ястребова", positions: ["colorist"]},
     author_yuri_nekrasov          : {full_name: "Юрий Некрасов", positions: ["screenwriter"]}
 };
 
