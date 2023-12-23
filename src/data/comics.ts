@@ -1913,6 +1913,12 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_solovei",
+                           "character_liliya_romanova"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]},
+                           {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_1"],
         next_comics     : ["comic_exlibrium_2"],
         release_at      : {year: 2014, month: 10, day: 20},
@@ -1997,6 +2003,11 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_solovei",
+                           "character_liliya_romanova"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_1"],
         previous_comics : ["comic_exlibrium_1"],
         next_comics     : ["comic_exlibrium_3"],
@@ -2083,6 +2094,11 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_solovei",
+                           "character_liliya_romanova"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_1"],
         previous_comics : ["comic_exlibrium_2"],
         next_comics     : ["comic_exlibrium_4"],
@@ -2236,6 +2252,12 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_solovei",
+                           "character_liliya_romanova"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_1"],
         previous_comics : ["comic_exlibrium_3"],
         next_comics     : ["comic_exlibrium_5"],
@@ -2319,6 +2341,14 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_anton_varchuk",
+                           "character_grigorii_loktev", "character_demien_egorov", "character_evgeniya_lunyova",
+                           "character_zoya_safyanova", "character_inga_shelkovits", "character_margarita_volnova",
+                           "character_snezhana_lebed", "character_solovei", "character_tamara_leska",
+                           "character_yadviga_tvirinova", "character_yanvar_tvirinov", "character_liliya_romanova"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_1"],
         previous_comics : ["comic_exlibrium_4"],
         next_comics     : ["comic_exlibrium_6"],
@@ -2396,6 +2426,11 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${exlibriumImagePath}/exlibrium-6-bone-house-part-1.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_solovei",
+                           "character_liliya_romanova"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sinitsyna", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_2"],
         previous_comics : ["comic_exlibrium_5"],
         next_comics     : ["comic_exlibrium_7"],
@@ -2510,6 +2545,13 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${exlibriumImagePath}/exlibrium-7-bone-house-part-2.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_solovei",
+                           "character_liliya_romanova"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_alina_litvinenko", positions: ["colorist"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_2"],
         previous_comics : ["comic_exlibrium_6"],
         next_comics     : ["comic_exlibrium_8"],
@@ -2617,6 +2659,13 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${exlibriumImagePath}/exlibrium-8-bone-house-part-3.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_solovei",
+                           "character_liliya_romanova"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]},
+                           {author_id: "author_yulia_shevtsova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_2"],
         previous_comics : ["comic_exlibrium_7"],
         next_comics     : ["comic_exlibrium_9"],
@@ -2695,6 +2744,11 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${exlibriumImagePath}/exlibrium-9-library-people-part-1.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_solovei",
+                           "character_liliya_romanova"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_2"],
         previous_comics : ["comic_exlibrium_8"],
         next_comics     : ["comic_exlibrium_10"],
@@ -2774,6 +2828,14 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_anton_varchuk",
+                           "character_grigorii_loktev", "character_demien_egorov", "character_zoya_safyanova",
+                           "character_inga_shelkovits", "character_margarita_volnova", "character_snezhana_lebed",
+                           "character_solovei", "character_tamara_leska", "character_yadviga_tvirinova",
+                           "character_yanvar_tvirinov", "character_liliya_romanova", "character_zinovij"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_2"],
         previous_comics : ["comic_exlibrium_9"],
         next_comics     : ["comic_exlibrium_11"],
@@ -2894,6 +2956,11 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna",
+                           "character_inga_shelkovits", "character_solovei", "character_liliya_romanova"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_3"],
         previous_comics : ["comic_exlibrium_10"],
         next_comics     : ["comic_exlibrium_12"],
@@ -3001,6 +3068,11 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna",
+                           "character_inga_shelkovits", "character_solovei", "character_liliya_romanova"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_yulia_shevtsova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_3"],
         previous_comics : ["comic_exlibrium_11"],
         next_comics     : ["comic_exlibrium_13"],
@@ -3196,6 +3268,11 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna",
+                           "character_inga_shelkovits", "character_solovei", "character_liliya_romanova"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_yulia_shevtsova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_3"],
         previous_comics : ["comic_exlibrium_12"],
         next_comics     : ["comic_exlibrium_14"],
@@ -3300,6 +3377,11 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna",
+                           "character_inga_shelkovits", "character_solovei", "character_liliya_romanova"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_3"],
         previous_comics : ["comic_exlibrium_13"],
         next_comics     : ["comic_exlibrium_15"],
@@ -3442,6 +3524,16 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_anton_varchuk",
+                           "character_bulat_gadzhiev", "character_grigorii_loktev", "character_demien_egorov",
+                           "character_evgeniya_lunyova", "character_zoya_safyanova", "character_inga_shelkovits",
+                           "character_margarita_volnova", "character_snezhana_lebed", "character_solovei",
+                           "character_tamara_leska", "character_yadviga_tvirinova", "character_yanvar_tvirinov",
+                           "character_liliya_romanova"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_3"],
         previous_comics : ["comic_exlibrium_14"],
         next_comics     : ["comic_exlibrium_16"],
@@ -3638,6 +3730,13 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_bulat_gadzhiev",
+                           "character_inga_shelkovits", "character_margarita_volnova", "character_snezhana_lebed",
+                           "character_solovei", "character_feliks_dzerzhinskii", "character_yadviga_tvirinova",
+                           "character_liliya_romanova"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_3"],
         previous_comics : ["comic_exlibrium_15"],
         next_comics     : ["comic_exlibrium_17"],
@@ -3748,6 +3847,14 @@ const comics: Comics = {
             aspect_ratio: 379 / 580
         },
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_anton_varchuk",
+                           "character_zoya_safyanova", "character_inga_shelkovits", "character_margarita_volnova",
+                           "character_matvei_koretskii", "character_snezhana_lebed", "character_solovei",
+                           "character_liliya_romanova"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_andrey_rodin", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_margarita_kablukova", positions: ["colorist"]}],
         including_comics: ["comic_exlibrium_volume_3"],
         previous_comics : ["comic_exlibrium_16"],
         next_comics     : ["comic_time_of_raven_epilogue_electronic", "comic_exlibrium_18"],
@@ -3946,6 +4053,16 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${exlibriumImagePath}/exlibrium-18-not-sugar.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_anton_varchuk",
+                           "character_grigorii_loktev", "character_demien_egorov", "character_evgeniya_lunyova",
+                           "character_zoya_safyanova", "character_inga_shelkovits", "character_margarita_volnova",
+                           "character_matvei_koretskii", "character_snezhana_lebed", "character_solovei",
+                           "character_tamara_leska", "character_yadviga_tvirinova", "character_yanvar_tvirinov",
+                           "character_liliya_romanova", "character_praskovya", "character_zinovij"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_exlibrium_volume_4"],
         previous_comics : ["comic_exlibrium_17", "comic_time_of_raven_epilogue_electronic"],
         next_comics     : ["comic_exlibrium_19"],
@@ -4067,6 +4184,13 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${exlibriumImagePath}/exlibrium-19-court.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_exlibrium"],
+        characters      : ["character_aleksandr_alinovskii", "character_angelina_evgenevna", "character_varvara_leska",
+                           "character_inga_shelkovits", "character_lavrentii_pavlovich", "character_solovei",
+                           "character_tatyana_aleksandrovna", "character_yakov", "character_liliya_romanova"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_victoria_vinogradova", positions: ["colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalia_devova", positions: ["screenwriter"]}],
         including_comics: ["comic_exlibrium_volume_4"],
         previous_comics : ["comic_exlibrium_18"],
         next_comics     : ["comic_exlibrium_20"],
@@ -13695,13 +13819,13 @@ const comics: Comics = {
     comic_special_prokopenko_grom_at_sunrise_electronic             : {
         ...comic_special_prokopenko_grom_at_sunrise,
         including_comics: ["comic_special_prokopenko_grom_at_sunrise_printed"],
-        previous_comics : ["comic_major_grom_50", "comic_major_igor_grom_22"],
+        previous_comics : ["comic_major_grom_50", "comic_major_igor_grom_27"],
         show            : false
     },
     comic_special_prokopenko_grom_at_sunrise_printed                : {
         ...comic_special_prokopenko_grom_at_sunrise,
         contained_comics: ["comic_special_prokopenko_grom_at_sunrise_electronic"],
-        previous_comics : ["comic_major_grom_volume_8", "comic_major_igor_grom_22"],
+        previous_comics : ["comic_major_grom_volume_8", "comic_major_igor_grom_27"],
         show            : true
     },
     comic_soyuzmultcomics                                           : {
@@ -15296,7 +15420,7 @@ const comics: Comics = {
                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
                           {author_id: "author_evgeniy_bornyakov", positions: ["artist"]}],
-        previous_comics: ["comic_major_igor_grom_22"],
+        previous_comics: ["comic_major_igor_grom_27"],
         release_at     : {year: 2022, month: 12, day: 6},
         show           : true
     },
@@ -16093,7 +16217,7 @@ const comics: Comics = {
         contained_comics: ["comic_major_igor_grom_17", "comic_major_igor_grom_18", "comic_major_igor_grom_19",
                            "comic_major_igor_grom_20"],
         previous_comics : ["comic_heroes_and_monsters_printed"],
-        next_comics     : ["comic_major_igor_grom_21"],
+        next_comics     : ["comic_major_igor_grom_volume_6"],
         release_at      : {year: 2023, month: 5, day: 23},
         show            : true
     },
@@ -16257,21 +16381,22 @@ const comics: Comics = {
         show           : true
     },
     comic_major_igor_grom_21                                        : {
-        name           : "Майор Игорь Гром #21 Правда, часть 1",
-        number         : "21",
-        type           : "single",
-        cover_file     : {
+        name            : "Майор Игорь Гром #21 Правда, часть 1",
+        number          : "21",
+        type            : "single",
+        cover_file      : {
             url         : `${majorIgorGromImagePath}/major-igor-grom-21-truth-part-1.jpg`,
             aspect_ratio: 1339 / 2048
         },
-        ranges         : ["range_major_igor_grom"],
-        authors        : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
-                          {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
-                          {author_id: "author_evgeniy_bornyakov", positions: ["artist"]}],
-        previous_comics: ["comic_major_igor_grom_volume_5", "comic_major_igor_grom_20"],
-        next_comics    : ["comic_major_igor_grom_22"],
-        release_at     : {year: 2023, month: 6, day: 21},
-        show           : true
+        ranges          : ["range_major_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_evgeniy_bornyakov", positions: ["artist"]}],
+        including_comics: ["comic_major_igor_grom_volume_6"],
+        previous_comics : ["comic_major_igor_grom_20"],
+        next_comics     : ["comic_major_igor_grom_22"],
+        release_at      : {year: 2023, month: 6, day: 21},
+        show            : false
     },
     comic_exlibrium_second_life_38                                  : {
         name           : "Экслибриум. Жизнь вторая #38 Будущее – светло, часть 2",
@@ -16393,23 +16518,23 @@ const comics: Comics = {
         show           : true
     },
     comic_major_igor_grom_22                                        : {
-        name           : "Майор Игорь Гром #22 Правда, часть 2",
-        number         : "22",
-        type           : "single",
-        cover_file     : {
+        name            : "Майор Игорь Гром #22 Правда, часть 2",
+        number          : "22",
+        type            : "single",
+        cover_file      : {
             url         : `${majorIgorGromImagePath}/major-igor-grom-22-truth-part-2.jpg`,
             aspect_ratio: 1339 / 2048
         },
-        ranges         : ["range_major_igor_grom"],
-        characters     : ["character_igor_grom"],
-        authors        : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
-                          {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
-                          {author_id: "author_evgeniy_bornyakov", positions: ["artist"]}],
-        previous_comics: ["comic_major_igor_grom_21"],
-        next_comics    : ["comic_special_prokopenko_grom_at_sunrise_electronic",
-                          "comic_special_prokopenko_grom_at_sunrise_printed", "comic_major_igor_grom_special_duty"],
-        release_at     : {year: 2023, month: 7, day: 26},
-        show           : true
+        ranges          : ["range_major_igor_grom"],
+        characters      : ["character_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_evgeniy_bornyakov", positions: ["artist"]}],
+        including_comics: ["comic_major_igor_grom_volume_6"],
+        previous_comics : ["comic_major_igor_grom_21"],
+        next_comics     : ["comic_major_igor_grom_23"],
+        release_at      : {year: 2023, month: 7, day: 26},
+        show            : false
     },
     comic_exlibrium_second_life_39                                  : {
         name           : "Экслибриум. Жизнь вторая #39 Будущее – светло, часть 3",
@@ -16451,6 +16576,44 @@ const comics: Comics = {
         release_at     : {year: 2023, month: 7, day: 31},
         show           : true
     },
+    comic_major_igor_grom_23                                        : {
+        name            : "Майор Игорь Гром #23 Правда, часть 3",
+        number          : "23",
+        type            : "single",
+        cover_file      : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-23-truth-part-3.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_major_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_evgeniy_bornyakov", positions: ["artist"]}],
+        including_comics: ["comic_major_igor_grom_volume_6"],
+        previous_comics : ["comic_major_igor_grom_22"],
+        next_comics     : ["comic_major_igor_grom_24"],
+        release_at      : {year: 2023, month: 8, day: 23},
+        show            : false
+    },
+    comic_major_igor_grom_24                                        : {
+        name            : "Майор Игорь Гром #24 Правда, часть 4",
+        number          : "24",
+        type            : "single",
+        cover_file      : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-24-truth-part-4.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_major_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_evgeniy_bornyakov", positions: ["artist"]}],
+        including_comics: ["comic_major_igor_grom_volume_6"],
+        previous_comics : ["comic_major_igor_grom_23"],
+        next_comics     : ["comic_major_igor_grom_25"],
+        release_at      : {year: 2023, month: 9, day: 20},
+        show            : false
+    },
     comic_rivers_there_is_no_fear_2                                 : {
         name           : "Реки. Страха нет, часть 2",
         number         : "2",
@@ -16469,7 +16632,54 @@ const comics: Comics = {
         release_at     : {year: 2023, month: 10, day: 18},
         show           : true
     },
-    comic_rivers_there_is_no_fear_3                                 : {
+    comic_major_igor_grom_25                                        : {
+        name            : "Майор Игорь Гром #25 Добрый вечер, Айса Тагировна",
+        number          : "25",
+        type            : "single",
+        cover_file      : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-25-good-evening-aisa-tagirovna.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_major_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                           {author_id: "author_evgeniy_bornyakov", positions: ["artist"]},
+                           {author_id: "author_egor_gerasimov", positions: ["artist"]}],
+        including_comics: ["comic_major_igor_grom_volume_6"],
+        previous_comics : ["comic_major_igor_grom_24"],
+        next_comics     : ["comic_major_igor_grom_26"],
+        release_at      : {year: 2023, month: 10, day: 25},
+        show            : false
+    },
+    // Серая Гончая. Том 1. №5 - 3 ноя 2023
+    // Тагар. Том 5. №2 - 10 ноя 2023
+    comic_major_igor_grom_volume_6: {
+        name            : "Майор Игорь Гром. Том 6. Правда",
+        number          : "6",
+        type            : "book",
+        cover_file      : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-volume-6-truth.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges          : ["range_major_igor_grom"],
+        characters      : ["character_dmitrii_dubin", "character_igor_grom"],
+        authors         : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                           {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                           {author_id: "author_evgeniy_bornyakov", positions: ["artist"]},
+                           {author_id: "author_egor_gerasimov", positions: ["artist"]}],
+        contained_comics: ["comic_major_igor_grom_21", "comic_major_igor_grom_22", "comic_major_igor_grom_23",
+                           "comic_major_igor_grom_24", "comic_major_igor_grom_25"],
+        previous_comics : ["comic_major_igor_grom_volume_5"],
+        next_comics     : ["comic_major_igor_grom_26"],
+        release_at      : {year: 2023, month: 11, day: 10},
+        show            : true
+    },
+    // ЭКСЛИБРИУМ. ЖИЗНЬ ВТОРАЯ. ТОМ 9. БУДУЩЕЕ — СВЕТЛО - 10 ноя 2023
+    comic_rivers_there_is_no_fear_3: {
         name           : "Реки. Страха нет, часть 3",
         number         : "3",
         type           : "single",
@@ -16486,12 +16696,30 @@ const comics: Comics = {
                           {author_id: "author_nadezhda_shevchenko", positions: ["colorist"]}],
         previous_comics: ["comic_rivers_there_is_no_fear_2"],
         next_comics    : ["comic_rivers_there_is_no_fear_4"],
-        release_at     : {year: 2023, month: 11, day: 18},
+        release_at     : {year: 2023, month: 11, day: 17},
         show           : true
     },
-    // Infinix: Город Героев - -- --- ----
+    comic_major_igor_grom_26       : {
+        name           : "Майор Игорь Гром #26 Насмерть, часть 1",
+        number         : "26",
+        type           : "single",
+        cover_file     : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-26-to-death-part-1.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges         : ["range_major_igor_grom"],
+        characters     : ["character_igor_grom", "character_irina_sharlotta"],
+        authors        : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                          {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                          {author_id: "author_egor_gerasimov", positions: ["artist"]}],
+        previous_comics: ["comic_major_igor_grom_25", "comic_major_igor_grom_volume_6"],
+        next_comics    : ["comic_major_igor_grom_27"],
+        release_at     : {year: 2023, month: 11, day: 24},
+        show           : true
+    },
+    // Чумной Доктор №33 - 30 ноя 2023
     // Тагар. Том 5. №3 - 5 дек 2023
-    comic_rivers_there_is_no_fear_4: {
+    comic_rivers_there_is_no_fear_4    : {
         name           : "Реки. Страха нет, часть 4",
         number         : "4",
         type           : "single",
@@ -16511,9 +16739,49 @@ const comics: Comics = {
         release_at     : {year: 2023, month: 12, day: 12},
         show           : true
     },
-    // Майор Игорь Гром №27 - 22 дек 2023
+    comic_major_igor_grom_villainy_rule: {
+        name           : "Майор Игорь Гром. Закон подлости",
+        type           : "book",
+        cover_file     : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-villainy-rule.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges         : ["range_major_igor_grom"],
+        authors        : [{author_id: "author_alexey_volkov", positions: ["screenwriter"]},
+                          {author_id: "author_anastasia_kim", positions: ["screenwriter"]},
+                          {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                          {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                          {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                          {author_id: "author_anna_antoshchenkova", positions: ["colorist"]},
+                          {author_id: "author_evgeniy_bornyakov", positions: ["artist"]},
+                          {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
+        previous_comics: ["comic_major_igor_grom_27"],
+        release_at     : {year: 2023, month: 12, day: 20},
+        show           : true
+    },
+    comic_major_igor_grom_27           : {
+        name           : "Майор Игорь Гром #27 Насмерть, часть 2",
+        number         : "27",
+        type           : "single",
+        cover_file     : {
+            url         : `${majorIgorGromImagePath}/major-igor-grom-27-to-death-part-2.jpg`,
+            aspect_ratio: 1339 / 2048
+        },
+        ranges         : ["range_major_igor_grom"],
+        characters     : ["character_igor_grom", "character_irina_sharlotta"],
+        authors        : [{author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                          {author_id: "author_anastasia_troitskaya", positions: ["colorist"]},
+                          {author_id: "author_egor_gerasimov", positions: ["artist"]}],
+        previous_comics: ["comic_major_igor_grom_26"],
+        next_comics    : ["comic_special_prokopenko_grom_at_sunrise_electronic",
+                          "comic_special_prokopenko_grom_at_sunrise_printed", "comic_major_igor_grom_special_duty",
+                          "comic_major_igor_grom_villainy_rule"],
+        release_at     : {year: 2023, month: 12, day: 22},
+        show           : true
+    },
     // Экслибриум. Спецвыпуск - 26 дек 2023
     // Чумной доктор №34 - 29 дек 2023
+    // Infinix: Город Героев - -- --- ----
 };
 
 export default comics;

@@ -145,7 +145,8 @@ const authors: Authors = {
     author_alexandra_zvyagina     : {full_name: "Александра Звягина", positions: ["screenwriter"]},
     author_alexandra_shchastlivaya: {full_name: "Александра Счастливая", positions: ["colorist"]},
     author_alena_karpova          : {full_name: "Алёна Карпова", positions: ["colorist"]},
-    author_alena_spiridonova      : {full_name: "Алёна Спиридонова", positions: ["screenwriter"]}, /* TODO: Не нашла пока её должность */
+    author_alena_spiridonova      : {full_name: "Алёна Спиридонова", positions: ["screenwriter"]},
+    author_alina_litvinenko       : {full_name: "Алина Литвиненко", positions: ["colorist"]},
     author_alisa_vedernikova      : {full_name: "Алиса Ведерникова", positions: ["colorist"]},
     author_anastasia_afonina      : {full_name: "Анастасия Афонина", positions: ["artist"]},
     author_anastasia_glazunova    : {full_name: "Анастасия Глазунова", positions: ["colorist"]},
@@ -161,6 +162,7 @@ const authors: Authors = {
     author_anna_rud               : {full_name: "Анна Рудь", positions: ["artist"]},
     author_anna_sergeeva          : {full_name: "Анна Сергеева", positions: ["screenwriter"]},
     author_anna_sidorova          : {full_name: "Анна Сидорова", positions: ["colorist"]},
+    author_anna_sinitsyna         : {full_name: "Анна Синицына", positions: ["colorist"]},
     author_anna_shadrina          : {full_name: "Анна Шадрина", positions: ["artist"]},
     author_anton_savinov          : {full_name: "Антон Савинов", positions: ["artist"]},
     author_anton_startsev         : {full_name: "Антон Старцев", positions: ["colorist"]},
@@ -210,7 +212,7 @@ const authors: Authors = {
     author_kirill_makagonov       : {full_name: "Кирилл Макагонов", positions: ["artist"]},
     author_kirill_perepelitsyn    : {full_name: "Кирилл Перепелицын", positions: ["colorist"]},
     author_ksenia_shpaletskaya    : {full_name: "Ксения Шпалецкая", positions: ["screenwriter"]},
-    author_maxim_ananyin          : {full_name: "Максим Ананьин", positions: ["screenwriter"]}, /* TODO: Не нашла пока его должность */
+    author_maxim_ananyin          : {full_name: "Максим Ананьин", positions: ["screenwriter"]},
     author_maxim_ivankov          : {full_name: "Максим Иванков", positions: ["screenwriter"]},
     author_maxim_karganov         : {full_name: "Максим Карганов", positions: ["screenwriter"]},
     author_maxim_sashenkov        : {full_name: "Максим Сашенков", positions: ["artist"]},
@@ -246,6 +248,7 @@ const authors: Authors = {
     author_yulia_kazanina         : {full_name: "Юлия Казанина (Варасаби)", positions: ["artist"]},
     author_yulia_loganova         : {full_name: "Юлия Логанова", positions: ["colorist"]},
     author_yulia_smirnova         : {full_name: "Юлия Смирнова (Tororo)", positions: ["colorist"]},
+    author_yulia_shevtsova        : {full_name: "Юлия Шевцова", positions: ["colorist"]},
     author_yulia_yastrebova       : {full_name: "Юлия Ястребова", positions: ["colorist"]},
     author_yuri_nekrasov          : {full_name: "Юрий Некрасов", positions: ["screenwriter"]}
 };
