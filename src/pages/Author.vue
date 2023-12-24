@@ -73,7 +73,9 @@ watch(route, () => {
           <div class="author__description">
             <article v-if="author.positions" class="author__section section-author">
               <h2 class="section-author__title">Должность:</h2>
-              <p class="section-author__text">{{ authorPosition(author.positions[0]) }}</p>
+              <p class="section-author__text">
+                {{ author.positions.map((position) => authorPosition(position)).join(", ") }}
+              </p>
             </article>
             <article v-if="author.link_to_bubble_website" class="author__section section-author">
               <h2 class="section-author__title">Ссылка на сайт BUBBLE:</h2>

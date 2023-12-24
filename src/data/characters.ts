@@ -133,6 +133,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/f71c823f9505626eec0ba4ad68118ac8.png",
         link_to_bubble_website: "https://bubble.ru/characters/26-gamma"
     },
+    character_gzorr                      : {
+        full_name             : "Гзорр",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/7a608a7129439738c31f1c6b040d6bc5__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/43a2b3352f286db3956010c56790ea5d.png",
+        link_to_bubble_website: "https://bubble.ru/characters/29-gzorr"
+    },
     character_gleb_zheglov               : {
         full_name             : "Глеб Жеглов",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/bbc003a48e404080c763ec3c5a4625f0__168x168.png.webp",
@@ -193,6 +199,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/8717acde9eba71f2b692b3f17b5dd445.png",
         link_to_bubble_website: "https://bubble.ru/characters/42-dmitrii-dubin"
     },
+    character_durgal_ashgaur             : {
+        full_name             : "Дургал аш'Гаур",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/8a02eed203c24fc4901446dc9f30b53d__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/8d7675ff41b52c5eaf5012788d84518e.png",
+        link_to_bubble_website: "https://bubble.ru/characters/43-durgal-ashgaur"
+    },
     character_demien_egorov              : {
         full_name             : "Дэмиен Егоров",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/e2f5ffeb8a5129e7485ccf9be7f7f45c__168x168.png.webp",
@@ -210,6 +222,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/da6cde14c6e0e0ee732c2a713623c057__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/f502a2da170ed231f1f7bcbd148daa40.png",
         link_to_bubble_website: "https://bubble.ru/characters/46-evgeniya-lunyova"
+    },
+    character_zab_neru                   : {
+        full_name             : "Заб Неру",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/10d15f65cfc095971cd78ba2b375788b__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/7e3a0831639649285c7289c50b4af37c.png",
+        link_to_bubble_website: "https://bubble.ru/characters/48-zab-neru"
     },
     character_zebedaiya_trenk            : {
         full_name             : "Зебедайя Трэнк",
@@ -403,6 +421,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/c8bea4cb1045be597a81d7cc065b6b8a.png",
         link_to_bubble_website: "https://bubble.ru/characters/87-siergo"
     },
+    character_skrimbikus                 : {
+        full_name             : "Скримбикус",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/c1d413f97a4d6cbeb93800ce2c1d5f7e__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/aee64e53b3726deef8efb6443ea26c77.png",
+        link_to_bubble_website: "https://bubble.ru/characters/88-skrimbikus"
+    },
     character_snezhana_lebed             : {
         full_name             : "Снежана Лебедь",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/4943ea73a0087372a13705212bad602d__168x168.png.webp",
@@ -420,6 +444,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/c35bb98fe8aa2998f0c5ef192e43cd91__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/0855d0cac4468fa9afc5bab25fd57733.png",
         link_to_bubble_website: "https://bubble.ru/characters/91-tamara-leska"
+    },
+    character_tamiri_urtsys              : {
+        full_name             : "Тамири ур'Цыс",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/fcb3eda04443a493234a81232f155b7c__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/5f2e9d20e1ff53d8dceb77cb8bb542b2.png",
+        link_to_bubble_website: "https://bubble.ru/characters/92-tamiri-urtsys"
     },
     character_tanahiya_neumolimaya       : {
         full_name             : "Танахия Неумолимая",
@@ -456,6 +486,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/1efad9a6aa3592484ebcc457a9e10bbe__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/7990c6a1ffeb170e2fe7e3af4f8bc20f.png",
         link_to_bubble_website: "https://bubble.ru/characters/100-feliks-dzerzhinskii"
+    },
+    character_feniks                     : {
+        full_name             : "Феникс",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/f6cfe79c4639eb8d2836ee42d7e8cbf8__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/8a25463f93b466e2cf6658430e62c31b.png",
+        link_to_bubble_website: "https://bubble.ru/characters/101-feniks"
     },
     character_helga_lemke                : {
         full_name             : "Хельга Лемке",

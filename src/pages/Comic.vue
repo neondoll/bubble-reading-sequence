@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {Comic} from "../data/interfaces";
-import {authorColor, authorIdToNull} from "../data/functions/author_functions";
+import {authorColor, authorIdToNull, authorPosition} from "../data/functions/author_functions";
 import {characterColor, characterIdToNull} from "../data/functions/character_functions";
 import {comicColor, comicIdToNull} from "../data/functions/comic_functions";
 import {monthAbbrRu} from "../data/functions/date_functions";
@@ -9,7 +9,6 @@ import {watch} from "vue";
 import authors from "../data/authors";
 import characters from "../data/characters";
 import comics from "../data/comics";
-import authorPositions from "../data/authorPositions";
 
 const route = useRoute();
 
@@ -70,7 +69,7 @@ watch(route, () => {
                                 :to="{ name: 'author', params: { authorId: authorIdToNull(author.author_id) } }">
                       {{ authors[author.author_id].full_name }}
                       <template v-if="author.positions">
-                        ({{ author.positions.map((position) => authorPositions[position]).join(", ") }})
+                        ({{ author.positions.map((position) => authorPosition(position)).join(", ") }})
                       </template>
                     </RouterLink>
                   </li>
