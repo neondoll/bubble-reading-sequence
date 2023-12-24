@@ -177,6 +177,7 @@ const authors: Authors = {
     author_victoria_bykova        : {full_name: "Виктория Быкова (Lennigen)", positions: ["artist"]},
     author_victoria_tirtilova     : {full_name: "Виктория Тиртилова (Expie Ai)", positions: ["colorist"]},
     author_vitaly_smirnov         : {full_name: "Виталий Смирнов", positions: ["artist"]},
+    author_vyacheslav_doronin     : {full_name: "Вячеслав Доронин", positions: ["colorist"]},
     author_gilbert_brissen        : {full_name: "Гилберт Бриссен", positions: ["screenwriter"]},
     author_gleb_melnikov          : {full_name: "Глеб Мельников", positions: ["artist"]},
     author_danil_panchenko        : {full_name: "Данил Панченко", positions: ["artist"]},

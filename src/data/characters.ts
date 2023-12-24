@@ -61,6 +61,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/34299b6e3f8ab27d98a64374a47dd7d5.png",
         link_to_bubble_website: "https://bubble.ru/characters/11-anton-varchuk"
     },
+    character_arkadash                   : {
+        full_name             : "Аркадаш",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/91e100227e371a39887a871e6fc49145__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/2bb1f444578f33663b200ecfabf8d853.png",
+        link_to_bubble_website: "https://bubble.ru/characters/12-arkadash"
+    },
     character_artur_haksli               : {
         full_name             : "Артур Хаксли",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/e827702009affeca3d81b9c27224ecea__168x168.png.webp",
@@ -132,6 +138,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/084f1a63aa621e4852333a2ba348c110__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/f71c823f9505626eec0ba4ad68118ac8.png",
         link_to_bubble_website: "https://bubble.ru/characters/26-gamma"
+    },
+    character_genrikus_institor          : {
+        full_name             : "Генрикус Инститор",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/88b38132de2d366d1d11657827902e38__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/add9ec991b25c810c33578cf7db41041.png",
+        link_to_bubble_website: "https://bubble.ru/characters/28-genrikus-institor"
     },
     character_gzorr                      : {
         full_name             : "Гзорр",
@@ -324,6 +336,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/5acfc6347f8ca9db61b7ed74d9e83a31__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/659f674d88cd13eabafc850ec0945d3b.png",
         link_to_bubble_website: "https://bubble.ru/characters/66-magistr"
+    },
+    character_magrid_bezumnyi            : {
+        full_name             : "Магрид Безумный",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/f083618012f92a775b8430f8592be62b__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/f5c2072f16451b856573e88630ab0c8c.png",
+        link_to_bubble_website: "https://bubble.ru/characters/67-magrid-bezumnyi"
     },
     character_margarita_volnova          : {
         full_name             : "Маргарита Вольнова",
