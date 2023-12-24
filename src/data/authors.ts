@@ -152,6 +152,7 @@ const authors: Authors = {
     author_anastasia_glazunova    : {full_name: "Анастасия Глазунова", positions: ["colorist"]},
     author_anastasia_katerinich   : {full_name: "Анастасия Катеринич", positions: ["artist"]},
     author_anastasia_ozerova      : {full_name: "Анастасия Озерова", positions: ["colorist"]},
+    author_anastasia_syomysheva   : {full_name: "Анастасия Сёмышева", positions: ["colorist"]},
     author_anastasia_chebykina    : {full_name: "Анастасия Чебыкина", positions: ["colorist"]},
     author_anastasia_troitskaya   : {full_name: "Анастасия Троицкая", positions: ["colorist"]},
     author_andrey_muravyov        : {full_name: "Андрей Муравьёв", positions: ["colorist"]},

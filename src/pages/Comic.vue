@@ -9,6 +9,7 @@ import {watch} from "vue";
 import authors from "../data/authors";
 import characters from "../data/characters";
 import comics from "../data/comics";
+import authorPositions from "../data/authorPositions";
 
 const route = useRoute();
 
@@ -68,6 +69,9 @@ watch(route, () => {
                     <RouterLink class="section-comic__link"
                                 :to="{ name: 'author', params: { authorId: authorIdToNull(author.author_id) } }">
                       {{ authors[author.author_id].full_name }}
+                      <template v-if="author.positions">
+                        ({{ author.positions.map((position) => authorPositions[position]).join(", ") }})
+                      </template>
                     </RouterLink>
                   </li>
                 </template>

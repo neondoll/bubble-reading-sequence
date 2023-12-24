@@ -673,6 +673,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/characters/image/4dbdb6b9046f6bdf31edcc708f2fccfb.png",
         link_to_bubble_website: "https://bubble.ru/characters/142-nikita-zharov"
     },
+    character_vladislav_savelin          : {
+        full_name             : "Владислав Савелин",
+        link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/d9a9257d80a2e710b648225189e618af__168x168.jpg.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/characters/image/276830d22302cd210105337099af9e05.png",
+        link_to_bubble_website: "https://bubble.ru/characters/143-vladislav-savelin"
+    },
     character_zina                       : {
         full_name             : "Зина",
         link_to_bubble_avatar : "https://static.bubble.ru/characters/avatar/f9334f738b655de9e9ab24c2fd2a5183__168x168.jpg.webp",
