@@ -5077,7 +5077,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_volume_7                                            : {
-        name            : "Бесобой том 7: Жертвы обстоятельств",
+        name            : "Бесобой. Том 7: Жертвы обстоятельств",
         number          : "7",
         type            : "book",
         cover_file      : {
@@ -5085,11 +5085,13 @@ const comics: Comics = {
             aspect_ratio: 1339 / 2046
         },
         ranges          : ["range_besoboy"],
-        characters      : ["character_balor", "character_viktor_zelenin", "character_chyornyi_pyos", "character_shmyg",
-                           "character_yana", "character_besoboi"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_antihrist", "character_balor",
+                           "character_siergo", "character_chyornyi_pyos", "character_shmyg", "character_yana",
+                           "character_yarh_smertonosnyi", "character_besoboi"],
         authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
-                           {author_id: "author_andrey_vasin", positions: ["artist"]},
-                           {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_anna_mozaikina", positions: ["artist"]}],
         contained_comics: ["comic_besoboy_38", "comic_besoboy_39", "comic_besoboy_40", "comic_besoboy_41",
                            "comic_besoboy_42"],
         previous_comics : ["comic_besoboy_volume_6"],
@@ -5435,11 +5437,20 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_volume_8                                            : {
-        name            : "Бесобой том 8: Гончие Ада",
+        name            : "Бесобой. Том 8: Гончие Ада",
         number          : "8",
         type            : "book",
         cover_file      : {url: `${besoboyImagePath}/besoboy-volume-8-hounds-of-hell.jpg`, aspect_ratio: 1004 / 1535},
         ranges          : ["range_besoboy"],
+        characters      : ["character_antihrist", "character_balor", "character_viktor_zelenin",
+                           "character_koroleva_gnili", "character_tanahiya_neumolimaya", "character_chyornyi_pyos",
+                           "character_shmyg", "character_yana", "character_yarh_smertonosnyi", "character_besoboi"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_kim", positions: ["artist"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_anna_mozaikina", positions: ["colorist"]},
+                           {author_id: "author_maria_zalogina", positions: ["colorist"]}],
         contained_comics: ["comic_besoboy_43", "comic_besoboy_44", "comic_besoboy_45", "comic_besoboy_46"],
         previous_comics : ["comic_besoboy_volume_7", "comic_time_of_raven"],
         next_comics     : ["comic_besoboy_volume_9"],
@@ -5586,7 +5597,7 @@ const comics: Comics = {
         show      : true
     },
     comic_besoboy_vol_2_1                                             : {
-        name            : "Бесобой Vol.2 #1 Исход, часть 1",
+        name            : "Бесобой Vol. 2 #1 Исход, часть 1",
         number          : "1",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-1-exodus-part-1.jpg`, aspect_ratio: 1339 / 2048},
@@ -5718,7 +5729,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_2                                             : {
-        name            : "Бесобой Vol.2 #2 Исход, часть 2",
+        name            : "Бесобой Vol. 2 #2 Исход, часть 2",
         number          : "2",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-2-exodus-part-2.jpg`, aspect_ratio: 1327 / 2048},
@@ -5841,7 +5852,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_3                                             : {
-        name            : "Бесобой Vol.2 #3 Исход, часть 3",
+        name            : "Бесобой Vol. 2 #3 Исход, часть 3",
         number          : "3",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-3-exodus-part-3.jpg`, aspect_ratio: 1339 / 2048},
@@ -5966,7 +5977,7 @@ const comics: Comics = {
         show       : true
     },
     comic_besoboy_vol_2_4                                             : {
-        name            : "Бесобой Vol.2 #4 Исход, часть 4",
+        name            : "Бесобой Vol. 2 #4 Исход, часть 4",
         number          : "4",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-4-exodus-part-4.jpg`, aspect_ratio: 1339 / 2048},
@@ -6072,7 +6083,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_5                                             : {
-        name            : "Бесобой Vol.2 #5 Исход, часть 5",
+        name            : "Бесобой Vol. 2 #5 Исход, часть 5",
         number          : "5",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-5-exodus-part-5.jpg`, aspect_ratio: 1339 / 2048},
@@ -6105,11 +6116,21 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_volume_9                                            : {
-        name            : "Бесобой том 9: Чъреба",
+        name            : "Бесобой. Том 9: Чъреба",
         number          : "9",
         type            : "book",
         cover_file      : {url: `${besoboyImagePath}/besoboy-volume-9-chreba.jpg`, aspect_ratio: 1004 / 1535},
         ranges          : ["range_besoboy"],
+        characters      : ["character_antihrist", "character_balor", "character_viktor_zelenin", "character_satana",
+                           "character_shmyg", "character_yana", "character_yarh_smertonosnyi", "character_besoboi"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_lada_akishina", positions: ["colorist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_anna_mozaikina", positions: ["colorist"]},
+                           {author_id: "author_maria_zalogina", positions: ["colorist"]},
+                           {author_id: "author_roman_titov", positions: ["colorist"]},
+                           {author_id: "author_eric_bragalyan", positions: ["artist"]}],
         contained_comics: ["comic_besoboy_47", "comic_besoboy_48", "comic_besoboy_49", "comic_besoboy_50"],
         previous_comics : ["comic_besoboy_volume_8"],
         next_comics     : ["comic_besoboy_vol_2_book_1", "comic_besoboy_vol_2_volume_1", "comic_black_dog_its_time",
@@ -6235,7 +6256,7 @@ const comics: Comics = {
         show            : true
     },
     comic_besoboy_vol_2_6                                             : {
-        name            : "Бесобой Vol.2 #6 Мастер войны, часть 1",
+        name            : "Бесобой Vol. 2 #6 Мастер войны, часть 1",
         number          : "6",
         type            : "single",
         cover_file      : {
@@ -6375,7 +6396,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_7                                             : {
-        name            : "Бесобой Vol.2 #7 Мастер войны, часть 2",
+        name            : "Бесобой Vol. 2 #7 Мастер войны, часть 2",
         number          : "7",
         type            : "single",
         cover_file      : {
@@ -6760,7 +6781,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_8                                             : {
-        name            : "Бесобой Vol.2 #8 Падение, часть 1",
+        name            : "Бесобой Vol. 2 #8 Падение, часть 1",
         number          : "8",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-8-fall-part-1.jpg`, aspect_ratio: 1339 / 2048},
@@ -7086,7 +7107,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_9                                             : {
-        name            : "Бесобой Vol.2 #9 Падение, часть 2",
+        name            : "Бесобой Vol. 2 #9 Падение, часть 2",
         number          : "9",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-9-fall-part-2.jpg`, aspect_ratio: 1339 / 2048},
@@ -7224,7 +7245,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_book_1                                        : {
-        name            : "Бесобой Vol.2. Книга 1: Исход",
+        name            : "Бесобой Vol. 2. Книга 1: Исход",
         number          : "1",
         type            : "hardcover_book",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-book-1-exodus.png`, aspect_ratio: 598 / 900},
@@ -7242,7 +7263,7 @@ const comics: Comics = {
         show            : true
     },
     comic_besoboy_vol_2_volume_1                                      : {
-        name            : "Бесобой Vol.2. Том 1: Исход",
+        name            : "Бесобой Vol. 2. Том 1: Исход",
         number          : "1",
         type            : "book",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-volume-1-exodus.jpg`, aspect_ratio: 1339 / 2048},
@@ -7630,7 +7651,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_10                                            : {
-        name            : "Бесобой Vol.2 #10 Падение, часть 3",
+        name            : "Бесобой Vol. 2 #10 Падение, часть 3",
         number          : "10",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-10-fall-part-3.jpg`, aspect_ratio: 1339 / 2048},
@@ -7774,7 +7795,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_11                                            : {
-        name            : "Бесобой Vol.2 #11 Часовой, часть 1",
+        name            : "Бесобой Vol. 2 #11 Часовой, часть 1",
         number          : "11",
         type            : "single",
         cover_file      : {
@@ -7918,7 +7939,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_12                                            : {
-        name            : "Бесобой Vol.2 #12 Часовой, часть 2",
+        name            : "Бесобой Vol. 2 #12 Часовой, часть 2",
         number          : "12",
         type            : "single",
         cover_file      : {
@@ -8072,7 +8093,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_13                                            : {
-        name            : "Бесобой Vol.2 #13 Откровения",
+        name            : "Бесобой Vol. 2 #13 Откровения",
         number          : "13",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-13-revelations.jpg`, aspect_ratio: 1339 / 2048},
@@ -8206,7 +8227,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_14                                            : {
-        name            : "Бесобой Vol.2 #14 Инструмент Бога",
+        name            : "Бесобой Vol. 2 #14 Инструмент Бога",
         number          : "14",
         type            : "single",
         cover_file      : {
@@ -8365,7 +8386,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_15                                            : {
-        name            : "Бесобой Vol.2 #15 Охота на ведьм",
+        name            : "Бесобой Vol. 2 #15 Охота на ведьм",
         number          : "15",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-15-witch-hunt.jpg`, aspect_ratio: 1339 / 2048},
@@ -8577,7 +8598,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_16                                            : {
-        name            : "Бесобой Vol.2 #16 Иуда",
+        name            : "Бесобой Vol. 2 #16 Иуда",
         number          : "16",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-16-judas.jpg`, aspect_ratio: 1339 / 2048},
@@ -8676,7 +8697,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_17                                            : {
-        name            : "Бесобой Vol.2 #17 Красный фильтр, часть 1",
+        name            : "Бесобой Vol. 2 #17 Красный фильтр, часть 1",
         number          : "17",
         type            : "single",
         cover_file      : {
@@ -8848,7 +8869,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_18                                            : {
-        name            : "Бесобой Vol.2 #18 Красный фильтр, часть 2",
+        name            : "Бесобой Vol. 2 #18 Красный фильтр, часть 2",
         number          : "18",
         type            : "single",
         cover_file      : {
@@ -9003,7 +9024,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_19                                            : {
-        name            : "Бесобой Vol.2 #19 В расчёте",
+        name            : "Бесобой Vol. 2 #19 В расчёте",
         number          : "19",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-19-counting-on.jpg`, aspect_ratio: 1339 / 2048},
@@ -9140,7 +9161,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_20                                            : {
-        name            : "Бесобой Vol.2 #20 Воля мёртвых, часть 1",
+        name            : "Бесобой Vol. 2 #20 Воля мёртвых, часть 1",
         number          : "20",
         type            : "single",
         cover_file      : {
@@ -9203,7 +9224,7 @@ const comics: Comics = {
         show      : true
     },
     comic_besoboy_vol_2_book_2                                        : {
-        name            : "Бесобой Vol.2. Книга 2: Падение",
+        name            : "Бесобой Vol. 2. Книга 2: Падение",
         number          : "2",
         type            : "hardcover_book",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-book-2-fall.jpg`, aspect_ratio: 970 / 1460},
@@ -9227,7 +9248,7 @@ const comics: Comics = {
         show            : true
     },
     comic_besoboy_vol_2_volume_2                                      : {
-        name            : "Бесобой Vol.2. Том 2: Падение",
+        name            : "Бесобой Vol. 2. Том 2: Падение",
         number          : "2",
         type            : "book",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-volume-2-fall.jpg`, aspect_ratio: 1339 / 2048},
@@ -9463,7 +9484,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_21                                            : {
-        name            : "Бесобой Vol.2 #21 Воля мёртвых, часть 2",
+        name            : "Бесобой Vol. 2 #21 Воля мёртвых, часть 2",
         number          : "21",
         type            : "single",
         cover_file      : {
@@ -9595,7 +9616,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_22                                            : {
-        name            : "Бесобой Vol.2 #22 Воля мёртвых, часть 3",
+        name            : "Бесобой Vol. 2 #22 Воля мёртвых, часть 3",
         number          : "22",
         type            : "single",
         cover_file      : {
@@ -9753,7 +9774,7 @@ const comics: Comics = {
         show           : true
     },
     comic_besoboy_vol_2_volume_3                                      : {
-        name            : "Бесобой Vol.2. Том 3: Откровения",
+        name            : "Бесобой Vol. 2. Том 3: Откровения",
         number          : "3",
         type            : "book",
         cover_file      : {
@@ -9976,7 +9997,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_23                                            : {
-        name            : "Бесобой Vol.2 #23 Власть",
+        name            : "Бесобой Vol. 2 #23 Власть",
         number          : "23",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-23-power.jpg`, aspect_ratio: 1339 / 2048},
@@ -10153,7 +10174,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_24                                            : {
-        name            : "Бесобой Vol.2 #24 Зачистка, часть 1",
+        name            : "Бесобой Vol. 2 #24 Зачистка, часть 1",
         number          : "24",
         type            : "single",
         cover_file      : {
@@ -10380,7 +10401,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_25                                            : {
-        name            : "Бесобой Vol.2 #25 Зачистка, часть 2",
+        name            : "Бесобой Vol. 2 #25 Зачистка, часть 2",
         number          : "25",
         type            : "single",
         cover_file      : {
@@ -10491,7 +10512,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_26                                            : {
-        name            : "Бесобой Vol.2 #26 Зачистка, часть 3",
+        name            : "Бесобой Vol. 2 #26 Зачистка, часть 3",
         number          : "26",
         type            : "single",
         cover_file      : {
@@ -10611,7 +10632,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_27                                            : {
-        name            : "Бесобой Vol.2 #27 На руинах, часть 1",
+        name            : "Бесобой Vol. 2 #27 На руинах, часть 1",
         number          : "27",
         type            : "single",
         cover_file      : {
@@ -10714,7 +10735,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_28                                            : {
-        name            : "Бесобой Vol.2 #28 На руинах, часть 2",
+        name            : "Бесобой Vol. 2 #28 На руинах, часть 2",
         number          : "28",
         type            : "single",
         cover_file      : {
@@ -10862,7 +10883,7 @@ const comics: Comics = {
         show            : true
     },
     comic_besoboy_vol_2_volume_4                                      : {
-        name            : "Бесобой Vol.2. Том 4: В расчёте",
+        name            : "Бесобой Vol. 2. Том 4: В расчёте",
         number          : "4",
         type            : "book",
         cover_file      : {
@@ -10887,7 +10908,7 @@ const comics: Comics = {
         show            : true
     },
     comic_besoboy_vol_2_volume_5                                      : {
-        name            : "Бесобой Vol.2. Том 5: Воля Мёртвых",
+        name            : "Бесобой Vol. 2. Том 5: Воля Мёртвых",
         number          : "5",
         type            : "book",
         cover_file      : {
@@ -10927,7 +10948,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_29                                            : {
-        name            : "Бесобой Vol.2 #29 По душам",
+        name            : "Бесобой Vol. 2 #29 По душам",
         number          : "29",
         type            : "single",
         cover_file      : {
@@ -11162,7 +11183,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_30                                            : {
-        name            : "Бесобой Vol.2 #30 Бунт, часть 1",
+        name            : "Бесобой Vol. 2 #30 Бунт, часть 1",
         number          : "30",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-30-riot-part-1.jpg`, aspect_ratio: 1339 / 2048},
@@ -11229,7 +11250,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_31                                            : {
-        name            : "Бесобой Vol.2 #31 Бунт, часть 2",
+        name            : "Бесобой Vol. 2 #31 Бунт, часть 2",
         number          : "31",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-31-riot-part-2.jpg`, aspect_ratio: 1339 / 2048},
@@ -11275,7 +11296,7 @@ const comics: Comics = {
         show      : true
     },
     comic_besoboy_vol_2_32                                            : {
-        name            : "Бесобой Vol.2 #32 Бунт, часть 3",
+        name            : "Бесобой Vol. 2 #32 Бунт, часть 3",
         number          : "32",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-32-riot-part-3.jpg`, aspect_ratio: 1339 / 2048},
@@ -11361,7 +11382,7 @@ const comics: Comics = {
         show      : true
     },
     comic_besoboy_vol_2_volume_6                                      : {
-        name            : "Бесобой Vol.2. Том 6: Зачистка",
+        name            : "Бесобой Vol. 2. Том 6: Зачистка",
         number          : "6",
         type            : "book",
         cover_file      : {
@@ -11558,7 +11579,7 @@ const comics: Comics = {
         show            : true
     },
     comic_besoboy_vol_2_33                                            : {
-        name            : "Бесобой Vol.2 #33 Ва-банк, часть 1",
+        name            : "Бесобой Vol. 2 #33 Ва-банк, часть 1",
         number          : "33",
         type            : "single",
         cover_file      : {
@@ -11625,7 +11646,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_34                                            : {
-        name            : "Бесобой Vol.2 #34 Ва-банк, часть 2",
+        name            : "Бесобой Vol. 2 #34 Ва-банк, часть 2",
         number          : "34",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-34-all-in-part-2.jpg`, aspect_ratio: 643 / 983},
@@ -11699,7 +11720,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_35                                            : {
-        name            : "Бесобой Vol.2 #35 Ва-банк, часть 3",
+        name            : "Бесобой Vol. 2 #35 Ва-банк, часть 3",
         number          : "35",
         type            : "single",
         cover_file      : {
@@ -11835,7 +11856,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_36                                            : {
-        name            : "Бесобой Vol.2 #36 Ва-банк, часть 4",
+        name            : "Бесобой Vol. 2 #36 Ва-банк, часть 4",
         number          : "36",
         type            : "single",
         cover_file      : {
@@ -11929,7 +11950,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_37                                            : {
-        name            : "Бесобой Vol.2 #37 Ва-банк, часть 5",
+        name            : "Бесобой Vol. 2 #37 Ва-банк, часть 5",
         number          : "37",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-37-all-in-part-5.jpg`, aspect_ratio: 642 / 983},
@@ -12016,7 +12037,7 @@ const comics: Comics = {
         show           : true
     },
     comic_besoboy_vol_2_38                                            : {
-        name            : "Бесобой Vol.2 #38 Ва-банк, часть 6",
+        name            : "Бесобой Vol. 2 #38 Ва-банк, часть 6",
         number          : "38",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-38-all-in-part-6.jpg`, aspect_ratio: 642 / 983},
@@ -12181,7 +12202,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_volume_7                                      : {
-        name            : "Бесобой Vol.2. Том 7: Бунт",
+        name            : "Бесобой Vol. 2. Том 7: Бунт",
         number          : "7",
         type            : "book",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-volume-7-riot.jpg`, aspect_ratio: 1004 / 1535},
@@ -12190,6 +12211,11 @@ const comics: Comics = {
                            "character_tanahiya_neumolimaya", "character_yarh_smertonosnyi", "character_besoboi",
                            "character_lilit", "character_selena", "character_aleksandr_bednenko", "character_yurik",
                            "character_rakshor"],
+        authors         : [{author_id: "author_alex_hatchett", positions: ["screenwriter"]},
+                           {author_id: "author_madibek_musabekov", positions: ["artist"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_karina_akhmetvalieva", positions: ["colorist"]}],
         contained_comics: ["comic_besoboy_vol_2_29", "comic_besoboy_vol_2_30", "comic_besoboy_vol_2_31",
                            "comic_besoboy_vol_2_32"],
         previous_comics : ["comic_besoboy_vol_2_volume_6"],
@@ -12198,7 +12224,7 @@ const comics: Comics = {
         show            : true
     },
     comic_besoboy_vol_2_39                                            : {
-        name            : "Бесобой Vol.2 #39 Убить человека",
+        name            : "Бесобой Vol. 2 #39 Убить человека",
         number          : "39",
         type            : "single",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-39-kill-man.jpg`, aspect_ratio: 1339 / 2048},
@@ -12323,7 +12349,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_40                                            : {
-        name            : "Бесобой Vol.2 #40 Смерть и ангел, часть 1",
+        name            : "Бесобой Vol. 2 #40 Смерть и ангел, часть 1",
         number          : "40",
         type            : "single",
         cover_file      : {
@@ -12420,7 +12446,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_41                                            : {
-        name            : "Бесобой Vol.2 #41 Смерть и ангел, часть 2",
+        name            : "Бесобой Vol. 2 #41 Смерть и ангел, часть 2",
         number          : "41",
         type            : "single",
         cover_file      : {
@@ -12519,7 +12545,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_42                                            : {
-        name            : "Бесобой Vol.2 #42 Их легионы",
+        name            : "Бесобой Vol. 2 #42 Их легионы",
         number          : "42",
         type            : "single",
         cover_file      : {
@@ -12671,7 +12697,7 @@ const comics: Comics = {
         show            : false
     },
     comic_besoboy_vol_2_43                                            : {
-        name            : "Бесобой Vol.2 #43 Война в Аду, часть 1",
+        name            : "Бесобой Vol. 2 #43 Война в Аду, часть 1",
         number          : "43",
         type            : "single",
         cover_file      : {
@@ -12747,7 +12773,7 @@ const comics: Comics = {
         show            : true
     },
     comic_besoboy_vol_2_volume_8                                      : {
-        name            : "Бесобой Vol.2. Том 8: Ва-банк",
+        name            : "Бесобой Vol. 2. Том 8: Ва-банк",
         number          : "8",
         type            : "book",
         cover_file      : {url: `${besoboyVol2ImagePath}/besoboy-vol-2-volume-8-all-in.jpg`, aspect_ratio: 1339 / 2048},
