@@ -187,6 +187,7 @@ const authors: Authors = {
     author_denis_zolotov          : {full_name: "Денис Золотов", positions: ["screenwriter"]},
     author_denis_nechiporenko     : {full_name: "Денис Нечипоренко", positions: ["screenwriter"]},
     author_denis_popov            : {full_name: "Денис Попов"},
+    author_dmitry_tikhonov        : {full_name: "Дмитрий Тихонов", positions: ["screenwriter"]},
     author_dmitry_feoktistov      : {full_name: "Дмитрий Феоктистов", positions: ["artist"]},
     author_evgeniy_aisberg        : {full_name: "Евгений Айсберг", positions: ["screenwriter"]},
     author_evgeniy_bornyakov      : {full_name: "Евгений Борняков", positions: ["artist"]},
