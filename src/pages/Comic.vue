@@ -60,12 +60,12 @@ watch(route, () => {
                 </template>
               </ul>
             </section>
-            <section v-if="comic.authors" class="comic__section section-comic">
-              <h2 class="section-comic__title">Авторы</h2>
-              <ul class="section-comic__list">
+            <section v-if="comic.authors" class="comic__authors authors-comic">
+              <h2 class="authors-comic__title">Авторы</h2>
+              <ul class="authors-comic__list">
                 <template v-for="author in comic.authors">
-                  <li class="section-comic__item" :style="{ '--border-color': authorColor(author.author_id) }">
-                    <RouterLink class="section-comic__link"
+                  <li class="authors-comic__item" :style="{ '--border-color': authorColor(author.author_id) }">
+                    <RouterLink class="authors-comic__link"
                                 :to="{ name: 'author', params: { authorId: authorIdToNull(author.author_id) } }">
                       {{ authors[author.author_id].full_name }}
                       <template v-if="author.positions">

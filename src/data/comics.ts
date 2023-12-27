@@ -402,6 +402,20 @@ const comic_exlibrium_colors_of_our_feelings_coloring_dossier: Comic = {
                  {author_id: "author_margarita_kablukova", positions: ["artist"]}],
     release_at: {year: 2023, month: 6, day: 9}
 };
+const comic_exlibrium_second_life_special_happiness_is_somewhere: Comic = {
+    name      : "Экслибриум. Жизнь вторая. Спецвыпуск. Счастье где-то",
+    type      : "single",
+    cover_file: {
+        url         : `${exlibriumSecondLifeImagePath}/exlibrium-second-life-special-happiness-is-somewhere.jpg`,
+        aspect_ratio: 1339 / 2048
+    },
+    ranges    : ["range_exlibrium_second_life"],
+    characters: ["character_liliya_romanova"],
+    authors   : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                 {author_id: "author_anastasia_afonina", positions: ["artist"]},
+                 {author_id: "author_anastasia_syomysheva", positions: ["colorist"]}],
+    release_at: {year: 2023, month: 12, day: 26}
+};
 
 const comics: Comics = {
     comic_besoboy_1                                                   : {
@@ -451,11 +465,15 @@ const comics: Comics = {
         show            : false
     },
     comic_red_fury_1                                                  : {
-        name            : "Красная Фурия #1 В поисках Грааля, часть 1",
+        name            : "Красная Фурия #1 В поисках\nГрааля, часть 1",
         number          : "1",
         type            : "single",
         cover_file      : {url: `${redFuryImagePath}/red-fury-1-quest-for-grail-part-1.jpg`, aspect_ratio: 379 / 580},
         ranges          : ["range_red_fury"],
+        characters      : ["character_delta", "character_dzhonni", "character_nika_chaikina"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_katerinich", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_red_fury_volume_1"],
         next_comics     : ["comic_red_fury_2"],
         release_at      : {year: 2012, month: 10, day: 22},
@@ -17551,7 +17569,8 @@ const comics: Comics = {
         including_comics: ["comic_exlibrium_second_life_volume_9"],
         previous_comics : ["comic_exlibrium_second_life_40"],
         next_comics     : ["comic_exlibrium_blank_sheet_electronic", "comic_exlibrium_red_line_electronic",
-                           "comic_exlibrium_colors_of_our_feelings_coloring_dossier_electronic"],
+                           "comic_exlibrium_colors_of_our_feelings_coloring_dossier_electronic",
+                           "comic_exlibrium_second_life_special_happiness_is_somewhere_electronic"],
         release_at      : {year: 2023, month: 9, day: 27},
         show            : false
     },
@@ -17642,7 +17661,8 @@ const comics: Comics = {
                            "comic_exlibrium_second_life_41"],
         previous_comics : ["comic_exlibrium_second_life_volume_8"],
         next_comics     : ["comic_exlibrium_blank_sheet_printed", "comic_exlibrium_red_line_printed",
-                           "comic_exlibrium_colors_of_our_feelings_coloring_dossier_printed"],
+                           "comic_exlibrium_colors_of_our_feelings_coloring_dossier_printed",
+                           "comic_exlibrium_second_life_special_happiness_is_somewhere_printed"],
         release_at      : {year: 2023, month: 11, day: 10},
         show            : true
     }, // TODO: Надо уточнить содержащиеся комиксы
@@ -17686,7 +17706,7 @@ const comics: Comics = {
     },
     // Чумной Доктор №33 - 30 ноя 2023
     // Тагар. Том 5. №3 - 5 дек 2023
-    comic_rivers_there_is_no_fear_4    : {
+    comic_rivers_there_is_no_fear_4                                      : {
         name           : "Реки. Страха нет, часть 4",
         number         : "4",
         type           : "single",
@@ -17706,7 +17726,7 @@ const comics: Comics = {
         release_at     : {year: 2023, month: 12, day: 12},
         show           : true
     },
-    comic_major_igor_grom_villainy_rule: {
+    comic_major_igor_grom_villainy_rule                                  : {
         name           : "Майор Игорь Гром. Закон подлости",
         type           : "book",
         cover_file     : {
@@ -17726,7 +17746,7 @@ const comics: Comics = {
         release_at     : {year: 2023, month: 12, day: 20},
         show           : true
     },
-    comic_major_igor_grom_27           : {
+    comic_major_igor_grom_27                                             : {
         name           : "Майор Игорь Гром #27 Насмерть, часть 2",
         number         : "27",
         type           : "single",
@@ -17746,7 +17766,18 @@ const comics: Comics = {
         release_at     : {year: 2023, month: 12, day: 22},
         show           : true
     },
-    // Экслибриум. Спецвыпуск - 26 дек 2023
+    comic_exlibrium_second_life_special_happiness_is_somewhere_electronic: {
+        ...comic_exlibrium_second_life_special_happiness_is_somewhere,
+        including_comics: ["comic_exlibrium_second_life_special_happiness_is_somewhere_printed"],
+        previous_comics : ["comic_exlibrium_second_life_41"],
+        show            : false
+    },
+    comic_exlibrium_second_life_special_happiness_is_somewhere_printed   : {
+        ...comic_exlibrium_second_life_special_happiness_is_somewhere,
+        contained_comics: ["comic_exlibrium_second_life_special_happiness_is_somewhere_electronic"],
+        previous_comics : ["comic_exlibrium_second_life_volume_9"],
+        show            : true
+    },
     // Чумной доктор №34 - 29 дек 2023
     // Infinix: Город Героев - -- --- ----
 };
