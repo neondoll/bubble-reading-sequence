@@ -72,7 +72,8 @@ export interface Edge extends vNG.Edge {
 
 interface Image {
     url: string;
-    aspect_ratio: number;
+    width: number;
+    height: number;
 }
 
 export interface Node extends vNG.Node {

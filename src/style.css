@@ -143,19 +143,13 @@ ul {
     color: var(--banner-color, inherit);
 }
 
-.authors__list,
-.characters__list,
-.comics__list,
-.ranges__list {
+.authors__list, .characters__list, .comics__list, .ranges__list {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 16px;
 }
 
-.item-authors,
-.item-characters,
-.item-comics,
-.item-ranges {
+.item-authors, .item-characters, .item-comics, .item-ranges {
     --item-hover-bg: #000000;
     position: relative;
     padding: 0.5rem;
@@ -163,33 +157,21 @@ ul {
     border-radius: 0.5rem;
 }
 
-.item-authors:hover,
-.item-characters:hover,
-.item-comics:hover,
-.item-ranges:hover {
+.item-authors:hover, .item-characters:hover, .item-comics:hover, .item-ranges:hover {
     color: #ffffff;
     background-color: var(--item-hover-bg, #000000);
     border-color: var(--item-hover-bg, #000000);
 }
 
-.item-authors__link,
-.item-characters__link,
-.item-comics__link,
-.item-ranges__link { color: inherit; }
+.item-authors__link, .item-characters__link, .item-comics__link, .item-ranges__link { color: inherit; }
 
-.item-authors__link::before,
-.item-characters__link::before,
-.item-comics__link::before,
-.item-ranges__link::before {
+.item-authors__link::before, .item-characters__link::before, .item-comics__link::before, .item-ranges__link::before {
     content: "";
     position: absolute;
     inset: 0;
 }
 
-.author-page,
-.character-page,
-.comics-page,
-.comic-page { padding: 1rem 0; /* 16px 0 */ }
+.author-page, .character-page, .comics-page, .comic-page { padding: 1rem 0; /* 16px 0 */ }
 
 .comics-page__container {
     display: grid;
@@ -212,17 +194,14 @@ ul {
     pointer-events: none;
 }
 
-.comics-page .comic:hover {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25), 0 9px 20px 0 rgba(0, 0, 0, 0.45);
-}
+.comics-page .comic:hover { box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25), 0 9px 20px 0 rgba(0, 0, 0, 0.45); }
 
 .comics-page .comic:hover > .comic__content {
     transform: rotateY(-25deg);
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.comics-page .comic:before,
-.comics-page .comic:after {
+.comics-page .comic:before, .comics-page .comic:after {
     content: "";
     position: absolute;
     top: 0;
@@ -280,18 +259,18 @@ ul {
     z-index: -1;
 }
 
-.author-page .author,
-.character-page .character,
-.comic-page .comic {
+.author-page .author, .character-page .character, .comic-page .comic {
     display: grid;
     grid-template-columns: 23.6875rem 1fr;
     gap: 1.5rem; /* 24px */
 }
 
-.comic-page .comic { --comic-image-aspect-ratio: calc(379 / 580); }
+.comic-page .comic {
+    --comic-image-aspect-ratio: calc(379 / 580);
+    gap: 136px;
+}
 
-.character-page .character::before,
-.comic-page .comic::before {
+.character-page .character::before, .comic-page .comic::before {
     content: "";
     display: inline-block;
     width: 23.6875rem; /* 379px */
@@ -311,20 +290,21 @@ ul {
     background-position: center;
 }
 
+.comic-page .comic__description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
 .author-page .author__diagram {
     width: 100%;
     height: 500px;
 }
 
-.author-page .author__content,
-.character-page .character__content,
-.comic-page .comic__content {
-    flex: 0 1 0;
-}
+.author-page .author__content, .character-page .character__content, .comic-page .comic__content { flex: 0 1 0; }
 
-.author-page .author__description,
-.character-page .character__description,
-.comic-page .comic__description {
+.author-page .author__description, .character-page .character__description {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -336,9 +316,7 @@ ul {
 
 .comic-page .files-comic__image { width: 100%; }
 
-.author-page .section-author,
-.character-page .section-character,
-.comic-page .section-comic {
+.author-page .section-author, .character-page .section-character, .comic-page .section-comic {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.5rem;
@@ -352,28 +330,29 @@ ul {
     --item-width: 88px;
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--item-width, 88px));
+    justify-content: center;
     gap: 22px;
 }
 
-.author-page .section-author__title,
-.character-page .section-character__title,
-.comic-page .section-comic__title { text-align: right; }
+.author-page .section-author__title, .character-page .section-character__title, .comic-page .section-comic__title { text-align: right; }
 
 .author-page .section-author__title + .section-author__item,
 .author-page .section-author__title + .section-author__list,
 .author-page .section-author__title + .section-author__text,
 .character-page .section-character__title + .section-character__item,
 .character-page .section-character__title + .section-character__list,
-.comic-page .section-comic__title + .section-comic__date,
-.comic-page .section-comic__title + .section-comic__list { align-self: center; }
+.comic-page .section-comic__title + .section-comic__date, .comic-page .section-comic__title + .section-comic__list { align-self: center; }
 
-.author-page .section-author__item,
-.character-page .section-character__item,
-.comic-page .characters-comic__item,
+.author-page .section-author__item, .character-page .section-character__item, .comic-page .characters-comic__item,
 .comic-page .section-comic__item { --border-color: #000000; }
 
-.comic-page .characters-comic__item {
+.comic-page .characters-comic__item, .comic-page .authors-comic__item {
     position: relative;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.comic-page .characters-comic__item {
     display: inline-block;
     width: 100%;
     overflow-wrap: break-word;
@@ -382,36 +361,52 @@ ul {
     hyphens: auto;
 }
 
-.comic-page .characters-comic__item:hover > .characters-comic__image { border-color: var(--border-color, #000000); }
+.comic-page .characters-comic__item:has(.characters-comic__link:hover) > .characters-comic__image { border-color: var(--border-color, #000000); }
 
 .comic-page .characters-comic__image {
     box-sizing: border-box;
     width: 100%;
     object-position: top;
     object-fit: cover;
-    border: 2px solid #ffffff;
-    transition: border-color .3s;
+    border: 2px solid transparent;
+    transition: border-color 300ms;
 }
 
-.comic-page .characters-comic__link::after {
+.comic-page .characters-comic__link, .comic-page .authors-comic__link { pointer-events: auto; }
+
+.comic-page .characters-comic__link::before, .comic-page .authors-comic__link:before {
     content: "";
     position: absolute;
     inset: 0;
+    z-index: -1;
 }
 
 .comic-page .authors-comic {}
 
 .comic-page .authors-comic__list {
-    --item-width: 160px;
+    --item-width: 200px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, var(--item-width, 160px));
+    grid-template-columns: repeat(auto-fill, var(--item-width, 200px));
+    justify-content: center;
     gap: 24px 40px;
 }
 
-.comic-page .authors-comic__item {}
+.comic-page .authors-comic__item {
+    --border-color: lightgray;
+    padding: 2px 2px 2px 56px;
+    font-size: 14px;
+    line-height: normal;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 300ms;
+}
+
+.comic-page .authors-comic__item:has(.authors-comic__link:hover) { border-color: var(--border-color, lightgray); }
 
 .comic-page .authors-comic__item:before {
     content: "";
+    position: absolute;
+    left: 2px;
     display: block;
     width: 36px;
     height: 36px;
@@ -420,36 +415,26 @@ ul {
     border-radius: 9999px;
 }
 
-.author-page .section-author__item,
-.character-page .section-character__item,
-.comic-page .section-comic__item {
-    position: relative;
-}
+.comic-page .authors-comic__subtext { color: rgba(0, 0, 0, 0.4); }
 
-.author-page .section-author__link::before,
-.character-page .section-character__link::before,
+.author-page .section-author__item, .character-page .section-character__item, .comic-page .section-comic__item { position: relative; }
+
+.author-page .section-author__link::before, .character-page .section-character__link::before,
 .comic-page .section-comic__link::before {
     content: "";
     position: absolute;
     inset: 0;
 }
 
-.author-page .section-author__link:hover,
-.author-page .section-author__link:focus-visible,
-.character-page .section-character__link:hover,
-.character-page .section-character__link:focus-visible,
-.comic-page .section-comic__link:hover,
-.comic-page .section-comic__link:focus-visible { color: #ffffff; }
+.author-page .section-author__link:hover, .author-page .section-author__link:focus-visible,
+.character-page .section-character__link:hover, .character-page .section-character__link:focus-visible,
+.comic-page .section-comic__link:hover, .comic-page .section-comic__link:focus-visible { color: #ffffff; }
 
-.author-page .section-author__link:hover::after,
-.author-page .section-author__link:focus-visible::after,
-.character-page .section-character__link:hover::after,
-.character-page .section-character__link:focus-visible::after,
-.comic-page .section-comic__link:hover::after,
-.comic-page .section-comic__link:focus-visible::after { height: 100%; }
+.author-page .section-author__link:hover::after, .author-page .section-author__link:focus-visible::after,
+.character-page .section-character__link:hover::after, .character-page .section-character__link:focus-visible::after,
+.comic-page .section-comic__link:hover::after, .comic-page .section-comic__link:focus-visible::after { height: 100%; }
 
-.author-page .section-author__link::after,
-.character-page .section-character__link::after,
+.author-page .section-author__link::after, .character-page .section-character__link::after,
 .comic-page .section-comic__link::after {
     content: "";
     position: absolute;
@@ -492,8 +477,7 @@ ul {
 @media (min-width: 1024px) {
     .container { max-width: 1024px; }
 
-    .authors__list,
-    .comics__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .authors__list, .comics__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
     .characters__list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 
@@ -511,8 +495,7 @@ ul {
 @media (min-width: 1536px) {
     .container { max-width: 1536px; }
 
-    .authors__list,
-    .comics__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .authors__list, .comics__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
     .characters__list { grid-template-columns: repeat(8, minmax(0, 1fr)); }
 

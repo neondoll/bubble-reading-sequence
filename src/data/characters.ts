@@ -559,6 +559,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/888febe1beb9d2c24ce5a7eb3974b749.png",
         link_to_bubble_website: "https://bubble.ru/characters/109-yakov"
     },
+    character_yan_van                    : {
+        full_name             : "Ян Ван",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/e1b848e70a7b33e383e2e16de255c20b__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/488b98c96a6aff21bca77de4739b720d.png",
+        link_to_bubble_website: "https://bubble.ru/characters/110-yan-van"
+    },
     character_yana                       : {
         full_name             : "Яна",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/b391e1586b7d1df9d6d558102ac975de__168x168.png.webp",

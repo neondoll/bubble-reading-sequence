@@ -68,10 +68,9 @@ watch(route, () => {
                     <RouterLink class="authors-comic__link"
                                 :to="{ name: 'author', params: { authorId: authorIdToNull(author.author_id) } }">
                       {{ authors[author.author_id].full_name }}
-                      <template v-if="author.positions">
-                        ({{ author.positions.map((position) => authorPosition(position)).join(", ") }})
-                      </template>
                     </RouterLink>
+                    <p v-if="author.positions" class="authors-comic__subtext">
+                      {{ author.positions.map((position) => authorPosition(position)).join(", ") }}</p>
                   </li>
                 </template>
               </ul>
