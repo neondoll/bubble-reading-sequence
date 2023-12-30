@@ -379,6 +379,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/a814053e2024d1901523753016a0eedd.png",
         link_to_bubble_website: "https://bubble.ru/characters/75-olga-isaeva"
     },
+    character_otto_shraiber              : {
+        full_name             : "Отто Шрайбер",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/bf41d3a24f656898b722610622a47732__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/4ac79e5342c3cc6ad510c9625531dd45.png",
+        link_to_bubble_website: "https://bubble.ru/characters/76-otto-shraiber"
+    },
     character_pavel_ocheredko            : {
         full_name             : "Павел Очередько",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/ccf72a298caa9f03479bd8a7af13cc67__168x168.png.webp",

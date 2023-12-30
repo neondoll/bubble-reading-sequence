@@ -384,9 +384,9 @@ ul {
 .comic-page .authors-comic {}
 
 .comic-page .authors-comic__list {
-    --item-width: 200px;
+    --item-width: 250px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, var(--item-width, 200px));
+    grid-template-columns: repeat(auto-fill, var(--item-width, 250px));
     justify-content: center;
     gap: 24px 40px;
 }
