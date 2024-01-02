@@ -139,6 +139,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/f71c823f9505626eec0ba4ad68118ac8.png",
         link_to_bubble_website: "https://bubble.ru/characters/26-gamma"
     },
+    character_gelmut_kopfer              : {
+        full_name             : "Гельмут Копфер",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/ba32b20e5c3f3243336c85a052eb0e9b__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/6a3b381a15253f302819b76a75f0de31.png",
+        link_to_bubble_website: "https://bubble.ru/characters/27-gelmut-kopfer"
+    },
     character_genrikus_institor          : {
         full_name             : "Генрикус Инститор",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/88b38132de2d366d1d11657827902e38__168x168.png.webp",
