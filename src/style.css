@@ -384,9 +384,9 @@ ul {
 .comic-page .authors-comic {}
 
 .comic-page .authors-comic__list {
-    --item-width: 250px;
+    --item-width: 270px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, var(--item-width, 250px));
+    grid-template-columns: repeat(auto-fill, var(--item-width, 270px));
     justify-content: center;
     gap: 24px 40px;
 }
@@ -414,6 +414,12 @@ ul {
     background-image: url("/src/assets/images/user.svg");
     border-radius: 9999px;
 }
+
+.comic-page .authors-comic__nickname { padding-left: 4px; }
+
+.comic-page .authors-comic__nickname::before { content: "("; }
+
+.comic-page .authors-comic__nickname::after { content: ")"; }
 
 .comic-page .authors-comic__subtext { color: rgba(0, 0, 0, 0.4); }
 

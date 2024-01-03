@@ -457,11 +457,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_1                                                      : {
-        name            : "Инок #1 Проданная реликвия, часть 1",
+        name            : "Инок #1 Проданная реликвия, часть\n1",
         number          : "1",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-1-sold-relic-part-1.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_artyom_bizyaev", positions: ["artist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_1"],
         next_comics     : ["comic_monk_2"],
         release_at      : {year: 2012, month: 10, day: 15},
@@ -521,11 +525,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_2                                                      : {
-        name            : "Инок #2 Проданная реликвия, часть 2",
+        name            : "Инок #2 Проданная реликвия,\nчасть 2",
         number          : "2",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-2-sold-relic-part-2.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_artyom_bizyaev", positions: ["artist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_1"],
         previous_comics : ["comic_monk_1"],
         next_comics     : ["comic_monk_3"],
@@ -588,11 +596,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_3                                                      : {
-        name            : "Инок #3 Проданная реликвия, часть 3",
+        name            : "Инок #3 Проданная реликвия,\nчасть 3",
         number          : "3",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-3-sold-relic-part-3.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_artyom_bizyaev", positions: ["artist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_1"],
         previous_comics : ["comic_monk_2"],
         next_comics     : ["comic_monk_4"],
@@ -664,6 +676,11 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-4-gift-by-will-of-council.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_bulat_gadzhiev", "character_magistr",
+                           "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_artyom_myasnikov", positions: ["colorist"]},
+                           {author_id: "author_evgeniy_tonchilov", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_1"],
         previous_comics : ["comic_monk_3"],
         next_comics     : ["comic_monk_5"],
@@ -724,11 +741,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_5                                                      : {
-        name            : "Инок #5 Проданная реликвия, часть 4",
+        name            : "Инок #5 Проданная реликвия,\nчасть 4",
         number          : "5",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-5-sold-relic-part-4.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_vyacheslav_doronin", positions: ["artist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_1"],
         previous_comics : ["comic_monk_4"],
         next_comics     : ["comic_monk_6"],
@@ -791,11 +812,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_6                                                      : {
-        name            : "Инок #6 Проданная реликвия, часть 5",
+        name            : "Инок #6 Проданная реликвия,\nчасть 5",
         number          : "6",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-6-sold-relic-part-5.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_vyacheslav_doronin", positions: ["artist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_1"],
         previous_comics : ["comic_monk_5"],
         next_comics     : ["comic_monk_7"],
@@ -858,11 +883,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_7                                                      : {
-        name            : "Инок #7 Проданная реликвия, часть 6",
+        name            : "Инок #7 Проданная реликвия, часть\n6",
         number          : "7",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-7-sold-relic-part-6.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_vyacheslav_doronin", positions: ["artist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_1"],
         previous_comics : ["comic_monk_6"],
         next_comics     : ["comic_monk_8"],
@@ -922,11 +951,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_8                                                      : {
-        name            : "Инок #8 Проданная реликвия, часть 7",
+        name            : "Инок #8 Проданная реликвия,\nчасть 7",
         number          : "8",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-8-sold-relic-part-7.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_katerinich", positions: ["artist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_2"],
         previous_comics : ["comic_monk_7"],
         next_comics     : ["comic_monk_9"],
@@ -986,11 +1019,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_9                                                      : {
-        name            : "Инок #9 Проданная реликвия, часть 8",
+        name            : "Инок #9 Проданная реликвия,\nчасть 8",
         number          : "9",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-9-sold-relic-part-8.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_katerinich", positions: ["artist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_2"],
         previous_comics : ["comic_monk_8"],
         next_comics     : ["comic_monk_10"],
@@ -1055,11 +1092,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_10                                                     : {
-        name            : "Инок #10 Проданная реликвия, часть 9",
+        name            : "Инок #10 Проданная реликвия,\nчасть 9",
         number          : "10",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-10-sold-relic-part-9.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_katerinich", positions: ["artist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_2"],
         previous_comics : ["comic_monk_9"],
         next_comics     : ["comic_monk_11"],
@@ -1127,11 +1168,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_11                                                     : {
-        name            : "Инок #11 Проданная реликвия, часть 10",
+        name            : "Инок #11 Проданная реликвия,\nчасть 10",
         number          : "11",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-11-sold-relic-part-10.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anastasia_katerinich", positions: ["artist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_2"],
         previous_comics : ["comic_monk_10"],
         next_comics     : ["comic_monk_12"],
@@ -1200,11 +1245,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_12                                                     : {
-        name            : "Инок #12 Проданная реликвия, часть 11",
+        name            : "Инок #12 Проданная реликвия,\nчасть 11",
         number          : "12",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-12-sold-relic-part-11.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_2"],
         previous_comics : ["comic_monk_11"],
         next_comics     : ["comic_monk_13"],
@@ -1270,11 +1319,15 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_13                                                     : {
-        name            : "Инок #13 Проданная реликвия, часть 12",
+        name            : "Инок #13 Проданная реликвия,\nчасть 12",
         number          : "13",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-13-sold-relic-part-12.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov_ded", "character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_2"],
         previous_comics : ["comic_monk_12"],
         next_comics     : ["comic_monk_14"],
@@ -1344,11 +1397,19 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_14                                                     : {
-        name            : "Инок #14 Крест; Союз; Чёрный Ворон",
+        name            : "Инок #14 Крест; Союз; Чёрный\nВорон",
         number          : "14",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-14-cross-union-black-raven.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_magistr", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_maria_vasilyeva", positions: ["colorist"]},
+                           {author_id: "author_anastasia_katerinich", positions: ["artist"]},
+                           {author_id: "author_artyom_bizyaev", positions: ["artist"]},
+                           {author_id: "author_vitaly_smirnov", positions: ["colorist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["artist"]},
+                           {author_id: "author_igor_loboda", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_2"],
         previous_comics : ["comic_monk_13"],
         next_comics     : ["comic_besoboy_15"],
@@ -1415,11 +1476,16 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_15                                                     : {
-        name            : "Инок #15 Инок против Бесобоя, часть 2",
+        name            : "Инок #15 Инок против Бесобоя,\nчасть 2",
         number          : "15",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-15-monk-vs-besoboy-part-2.jpg`, width: 379, height: 580},
         ranges          : ["range_monk", "range_crossovers"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_magistr", "character_chyornyi_pyos",
+                           "character_shmyg", "character_besoboi", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_vs_besoboy"],
         previous_comics : ["comic_besoboy_15"],
         next_comics     : ["comic_monk_vs_besoboy_1"],
@@ -1498,11 +1564,16 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_16                                                     : {
-        name            : "Инок #16 Инок против Бесобоя, часть 5",
+        name            : "Инок #16 Инок против Бесобоя,\nчасть 5",
         number          : "16",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-16-monk-vs-besoboy-part-5.jpg`, width: 379, height: 580},
         ranges          : ["range_monk", "range_crossovers"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_magistr", "character_chyornyi_pyos",
+                           "character_shmyg", "character_besoboi", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_vs_besoboy"],
         previous_comics : ["comic_besoboy_16"],
         next_comics     : ["comic_monk_vs_besoboy_2"],
@@ -1581,11 +1652,16 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_17                                                     : {
-        name            : "Инок #17 Инок против Бесобоя, часть 8",
+        name            : "Инок #17 Инок против Бесобоя,\nчасть 8",
         number          : "17",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-17-monk-vs-besoboy-part-8.jpg`, width: 379, height: 580},
         ranges          : ["range_monk", "range_crossovers"],
+        characters      : ["character_avaddon_bezzhalostnyi", "character_magistr", "character_chyornyi_pyos",
+                           "character_shmyg", "character_besoboi", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_vs_besoboy"],
         previous_comics : ["comic_besoboy_17"],
         next_comics     : ["comic_monk_vs_besoboy_3"],
@@ -1669,6 +1745,11 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-18-farewell-part-1.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_grigorii_loktev", "character_koschei", "character_seryi_volk",
+                           "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_3"],
         previous_comics : ["comic_monk_vs_besoboy_3"],
         next_comics     : ["comic_monk_19"],
@@ -1736,6 +1817,11 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-19-farewell-part-2.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov", "character_kseniya_radova"],
+        authors         : [{author_id: "author_alina_erofeeva", positions: ["artist"]},
+                           {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_3"],
         previous_comics : ["comic_monk_18"],
         next_comics     : ["comic_monk_20"],
@@ -1804,6 +1890,10 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-20-farewell-part-3.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_andrei_radov", "character_kseniya_radova"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]},
+                           {author_id: "author_eduard_petrovich", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_3"],
         previous_comics : ["comic_monk_19"],
         next_comics     : ["comic_monk_21"],
@@ -1870,6 +1960,10 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-21-beast-in-me-part-1.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_seryi_volk", "character_yakov", "character_andrei_radov"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]},
+                           {author_id: "author_eduard_petrovich", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_3"],
         previous_comics : ["comic_monk_20"],
         next_comics     : ["comic_monk_22"],
@@ -1948,6 +2042,10 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-22-beast-in-me-part-2.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_seryi_volk", "character_yakov", "character_andrei_radov"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]},
+                           {author_id: "author_eduard_petrovich", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_4"],
         previous_comics : ["comic_monk_21"],
         next_comics     : ["comic_monk_23"],
@@ -2014,6 +2112,10 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-23-beast-in-me-part-3.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_seryi_volk", "character_yakov", "character_andrei_radov"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]},
+                           {author_id: "author_eduard_petrovich", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_4"],
         previous_comics : ["comic_monk_22"],
         next_comics     : ["comic_monk_24"],
@@ -2079,6 +2181,10 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-24-beast-in-me-part-4.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_seryi_volk", "character_yakov", "character_andrei_radov"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]},
+                           {author_id: "author_eduard_petrovich", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_4"],
         previous_comics : ["comic_monk_23"],
         next_comics     : ["comic_monk_25"],
@@ -2228,6 +2334,10 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-25-lord-part-1.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_vladyka", "character_grad_i_shkval", "character_andrei_radov"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_4"],
         previous_comics : ["comic_monk_24"],
         next_comics     : ["comic_monk_26"],
@@ -2337,6 +2447,10 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-26-lord-part-2.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_vladyka", "character_grad_i_shkval", "character_andrei_radov"],
+        authors         : [{author_id: "author_natalia_devova", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_4"],
         previous_comics : ["comic_monk_25"],
         next_comics     : ["comic_monk_27"],
@@ -2440,11 +2554,16 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_27                                                     : {
-        name            : "Инок #27 Высокое напряжение, часть 1",
+        name            : "Инок #27 Высокое напряжение,\nчасть 1",
         number          : "27",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-27-high-voltage-part-1.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_vladyka", "character_genrikus_institor", "character_magistr",
+                           "character_seryi_volk", "character_andrei_radov"],
+        authors         : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_5"],
         previous_comics : ["comic_monk_26"],
         next_comics     : ["comic_monk_28"],
@@ -2637,7 +2756,7 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_28                                                     : {
-        name            : "Инок #28 Высокое напряжение, часть 2; Старый новый гад",
+        name            : "Инок #28 Высокое напряжение,\nчасть 2; Старый новый гад",
         number          : "28",
         type            : "single",
         cover_file      : {
@@ -2646,6 +2765,13 @@ const comics: Comics = {
             height: 580
         },
         ranges          : ["range_monk"],
+        characters      : ["character_vladyka", "character_genrikus_institor", "character_magistr",
+                           "character_seryi_volk", "character_andrei_radov"],
+        authors         : [{author_id: "author_natalya_zaidova", positions: ["artist"]},
+                           {author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]},
+                           {author_id: "author_tatiana_yakubets", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_5"],
         previous_comics : ["comic_monk_27"],
         next_comics     : ["comic_monk_29"],
@@ -2753,11 +2879,16 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_29                                                     : {
-        name            : "Инок #29 Высокое напряжение, часть 3",
+        name            : "Инок #29 Высокое напряжение,\nчасть 3",
         number          : "29",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-29-high-voltage-part-3.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_vladyka", "character_genrikus_institor", "character_magistr",
+                           "character_seryi_volk", "character_andrei_radov"],
+        authors         : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_5"],
         previous_comics : ["comic_monk_28"],
         next_comics     : ["comic_monk_30"],
@@ -2857,11 +2988,16 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_30                                                     : {
-        name            : "Инок #30 Высокое напряжение, часть 4",
+        name            : "Инок #30 Высокое напряжение,\nчасть 4",
         number          : "30",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-30-high-voltage-part-4.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_vladyka", "character_genrikus_institor", "character_magistr",
+                           "character_seryi_volk", "character_andrei_radov"],
+        authors         : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_5"],
         previous_comics : ["comic_monk_29"],
         next_comics     : ["comic_monk_31"],
@@ -3007,11 +3143,16 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_31                                                     : {
-        name            : "Инок #31 Высокое напряжение, часть 5",
+        name            : "Инок #31 Высокое напряжение,\nчасть 5",
         number          : "31",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-31-high-voltage-part-5.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_vladyka", "character_genrikus_institor", "character_magistr",
+                           "character_seryi_volk", "character_andrei_radov"],
+        authors         : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_5"],
         previous_comics : ["comic_monk_30"],
         next_comics     : ["comic_monk_32"],
@@ -3143,6 +3284,11 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-32-kalinov-bridge-part-1.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_baba_yaga", "character_bulat_gadzhiev", "character_magistr",
+                           "character_andrei_radov"],
+        authors         : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["artist"]},
+                           {author_id: "author_igor_loboda", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_6"],
         previous_comics : ["comic_monk_31"],
         next_comics     : ["comic_monk_33"],
@@ -3240,11 +3386,16 @@ const comics: Comics = {
         show            : false
     },
     comic_monk_33                                                     : {
-        name            : "Инок #33 Калинов мост, часть 2; Спаситель",
+        name            : "Инок #33 Калинов мост, часть 2;\nСпаситель",
         number          : "33",
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-33-kalinov-bridge-part-2-savior.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_baba_yaga", "character_bulat_gadzhiev", "character_magistr",
+                           "character_andrei_radov"],
+        authors         : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["artist"]},
+                           {author_id: "author_igor_loboda", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_6"],
         previous_comics : ["comic_monk_32"],
         next_comics     : ["comic_monk_34"],
@@ -3338,6 +3489,11 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-34-kalinov-bridge-part-3.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_baba_yaga", "character_bulat_gadzhiev", "character_magistr",
+                           "character_andrei_radov"],
+        authors         : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["artist"]},
+                           {author_id: "author_igor_loboda", positions: ["colorist"]}],
         including_comics: ["comic_monk_volume_6"],
         previous_comics : ["comic_monk_33"],
         next_comics     : ["comic_monk_35"],
@@ -3435,15 +3591,24 @@ const comics: Comics = {
         show            : true
     },
     comic_red_fury_volume_3                                           : {
-        name            : "Красная Фурия том 3: Тёмное наследие часть 1",
+        name            : "Красная Фурия. Том 3: Тёмное\nнаследие. Часть 1",
         number          : "3",
         type            : "book",
         cover_file      : {
-            url   : `${redFuryImagePath}/red-fury-volume-3-dark-legacy-part-1.jpg`,
-            width : 379,
-            height: 580
+            url   : `${redFuryImagePath}/red-fury-volume-3-dark-legacy-part-1.png`,
+            width : 643,
+            height: 982
         },
         ranges          : ["range_red_fury"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_delta",
+                           "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato",
+                           "character_lotta_lemke", "character_otto_shraiber", "character_rihard_rippe",
+                           "character_helga_lemke", "character_yan_van", "character_nika_chaikina"],
+        authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_vyacheslav_doronin", positions: ["colorist"]},
+                           {author_id: "author_ekaterina_menabde", positions: ["colorist"]}],
         contained_comics: ["comic_red_fury_16", "comic_red_fury_16_1", "comic_red_fury_17", "comic_red_fury_18",
                            "comic_red_fury_19"],
         previous_comics : ["comic_red_fury_volume_2"],
@@ -3490,6 +3655,10 @@ const comics: Comics = {
         type            : "single",
         cover_file      : {url: `${monkImagePath}/monk-35-heart-of-monster-part-1.jpg`, width: 379, height: 580},
         ranges          : ["range_monk"],
+        characters      : ["character_monarh", "character_seryi_volk", "character_andrei_radov"],
+        authors         : [{author_id: "author_roman_kotkov", positions: ["screenwriter"]},
+                           {author_id: "author_igor_loboda", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]}],
         including_comics: ["comic_monk_volume_6"],
         previous_comics : ["comic_monk_34"],
         next_comics     : ["comic_monk_36"],
@@ -3552,15 +3721,23 @@ const comics: Comics = {
         show            : false
     },
     comic_red_fury_volume_4                                           : {
-        name            : "Красная Фурия том 4: Тёмное наследие часть 2",
+        name            : "Красная Фурия. Том 4: Тёмное\nнаследие. Часть 2",
         number          : "4",
         type            : "book",
         cover_file      : {
-            url   : `${redFuryImagePath}/red-fury-volume-4-dark-legacy-part-2.jpg`,
-            width : 379,
-            height: 580
+            url   : `${redFuryImagePath}/red-fury-volume-4-dark-legacy-part-2.png`,
+            width : 670,
+            height: 1024
         },
         ranges          : ["range_red_fury"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_delta",
+                           "character_dzhessi_rodrigez", "character_dzhonni", "character_dzhoshua_donato",
+                           "character_lotta_lemke", "character_otto_shraiber", "character_rihard_rippe",
+                           "character_helga_lemke", "character_yan_van", "character_nika_chaikina"],
+        authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_konstantin_tarasov", positions: ["artist"]},
+                           {author_id: "author_vyacheslav_doronin", positions: ["colorist"]}],
         contained_comics: ["comic_red_fury_20", "comic_red_fury_21", "comic_red_fury_22", "comic_red_fury_23",
                            "comic_red_fury_24"],
         previous_comics : ["comic_red_fury_volume_3"],
@@ -4792,15 +4969,27 @@ const comics: Comics = {
         show            : true
     },
     comic_red_fury_volume_5                                           : {
-        name            : "Красная Фурия том 5: Ничего личного, просто бизнес",
+        name            : "Красная Фурия. Том 5: Ничего\nличного, просто бизнес",
         number          : "5",
         type            : "book",
         cover_file      : {
-            url   : `${redFuryImagePath}/red-fury-volume-5-nothing-personal-just-business.jpg`,
-            width : 1004,
-            height: 1535
+            url   : `${redFuryImagePath}/red-fury-volume-5-nothing-personal-just-business.png`,
+            width : 637,
+            height: 982
         },
         ranges          : ["range_red_fury"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_gamma",
+                           "character_delta", "character_dzhessi_rodrigez", "character_dzhonni",
+                           "character_dzhoshua_donato", "character_lotta_lemke", "character_nika_chaikina",
+                           "character_miko_van_der_holt"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_rud", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["artist", "colorist"]},
+                           {author_id: "author_artyom_myasnikov", positions: ["artist"]},
+                           {author_id: "author_ivan_yelyasov", positions: ["colorist"]},
+                           {author_id: "author_maria_zolotova", positions: ["colorist"]},
+                           {author_id: "author_nina_vakueva", positions: ["artist"]},
+                           {author_id: "author_eduard_petrovich", positions: ["artist"]}],
         contained_comics: ["comic_red_fury_25", "comic_red_fury_26", "comic_red_fury_27", "comic_red_fury_28",
                            "comic_red_fury_29", "comic_red_fury_30", "comic_red_fury_31"],
         previous_comics : ["comic_red_fury_volume_4"],
@@ -5165,11 +5354,22 @@ const comics: Comics = {
         show            : false
     },
     comic_red_fury_volume_6                                           : {
-        name            : "Красная Фурия том 6: Башня ворона",
+        name            : "Красная Фурия. Том 6: Башня\nворона",
         number          : "6",
         type            : "book",
         cover_file      : {url: `${redFuryImagePath}/red-fury-volume-6-raven-tower.jpg`, width: 1004, height: 1535},
         ranges          : ["range_red_fury"],
+        characters      : ["character_avgust_van_der_holt", "character_artur_haksli", "character_gamma",
+                           "character_delta", "character_dzhessi_rodrigez", "character_dzhina_stivens",
+                           "character_dzhonni", "character_dzhoshua_donato", "character_kuth", "character_lotta_lemke",
+                           "character_myordok_makalister", "character_otto_shraiber", "character_rihard_rippe",
+                           "character_svartzhel", "character_helga_lemke", "character_yan_van",
+                           "character_nika_chaikina"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_artyom_myasnikov", positions: ["artist"]},
+                           {author_id: "author_igor_khudaev", positions: ["screenwriter"]},
+                           {author_id: "author_eduard_petrovich", positions: ["artist"]}],
         contained_comics: ["comic_red_fury_32", "comic_red_fury_33", "comic_red_fury_34", "comic_red_fury_35",
                            "comic_red_fury_36", "comic_red_fury_37"],
         previous_comics : ["comic_red_fury_volume_5"],
@@ -5455,7 +5655,7 @@ const comics: Comics = {
         show            : true
     },
     comic_major_grom_and_red_fury_volume_7                            : {
-        name            : "Майор Гром и Красная Фурия том 7: В сердце тьмы",
+        name            : "Майор Гром и Красная Фурия. Том\n7: В сердце тьмы",
         number          : "7",
         type            : "book",
         cover_file      : {
@@ -5943,11 +6143,21 @@ const comics: Comics = {
         show            : false
     },
     comic_red_fury_volume_8                                           : {
-        name            : "Красная Фурия том 8: Агент Симмонс",
+        name            : "Красная Фурия. Том 8: Агент\nСиммонс",
         number          : "8",
         type            : "book",
         cover_file      : {url: `${redFuryImagePath}/red-fury-volume-8-agent-simmons.jpg`, width: 1004, height: 1535},
         ranges          : ["range_red_fury"],
+        characters      : ["character_artur_haksli", "character_gamma", "character_gelmut_kopfer", "character_delta",
+                           "character_dzhonni", "character_dzhoshua_donato", "character_lotta_lemke",
+                           "character_rihard_rippe", "character_helga_lemke", "character_nika_chaikina"],
+        authors         : [{author_id: "author_andrey_vasin", positions: ["artist"]},
+                           {author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_evgeny_eronin", positions: ["screenwriter"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_oleg_ershov", positions: ["colorist"]},
+                           {author_id: "author_oleg_okunev", positions: ["artist"]},
+                           {author_id: "author_roman_titov", positions: ["colorist"]}],
         contained_comics: ["comic_red_fury_42", "comic_red_fury_43", "comic_red_fury_44", "comic_red_fury_45"],
         previous_comics : ["comic_time_of_raven_epilogue_printed", "comic_major_grom_and_red_fury_volume_7"],
         next_comics     : ["comic_red_fury_volume_9"],
@@ -6038,7 +6248,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_1                                                    : {
-        name            : "Союзники #1 Перед рассветом, часть 1",
+        name            : "Союзники #1 Перед рассветом,\nчасть 1",
         number          : "1",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-1-before-dawn-part-1.jpg`, width: 1339, height: 2048},
@@ -6094,7 +6304,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_2                                                    : {
-        name            : "Союзники #2 Перед рассветом, часть 2",
+        name            : "Союзники #2 Перед рассветом,\nчасть 2",
         number          : "2",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-2-before-dawn-part-2.jpg`, width: 1339, height: 2048},
@@ -6220,7 +6430,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_3                                                    : {
-        name            : "Союзники #3 Перед рассветом, часть 3",
+        name            : "Союзники #3 Перед рассветом,\nчасть 3",
         number          : "3",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-3-before-dawn-part-3.jpg`, width: 1339, height: 2048},
@@ -6334,7 +6544,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_4                                                    : {
-        name            : "Союзники #4 Перед рассветом, часть 4",
+        name            : "Союзники #4 Перед рассветом,\nчасть 4",
         number          : "4",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-4-before-dawn-part-4.jpg`, width: 1339, height: 2048},
@@ -6455,7 +6665,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_5                                                    : {
-        name            : "Союзники #5 Естественный отбор, часть 1",
+        name            : "Союзники #5 Естественный отбор,\nчасть 1",
         number          : "5",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-5-natural-selection-part-1.jpg`, width: 1339, height: 2048},
@@ -6586,7 +6796,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_6                                                    : {
-        name            : "Союзники #6 Естественный отбор, часть 2",
+        name            : "Союзники #6 Естественный отбор,\nчасть 2",
         number          : "6",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-6-natural-selection-part-2.jpg`, width: 1339, height: 2048},
@@ -6684,11 +6894,19 @@ const comics: Comics = {
         show            : false
     },
     comic_red_fury_volume_9                                           : {
-        name            : "Красная Фурия том 9: Финальный рывок",
+        name            : "Красная Фурия. Том 9: Финальный\nрывок",
         number          : "9",
         type            : "book",
         cover_file      : {url: `${redFuryImagePath}/red-fury-volume-9-final-charge.jpg`, width: 1004, height: 1535},
         ranges          : ["range_red_fury"],
+        characters      : ["character_artur_haksli", "character_gamma", "character_dzhina_stivens", "character_dzhonni",
+                           "character_dzhoshua_donato", "character_lotta_lemke", "character_otto_shraiber",
+                           "character_rihard_rippe", "character_helga_lemke", "character_nika_chaikina"],
+        authors         : [{author_id: "author_artyom_gabrelyanov", positions: ["screenwriter"]},
+                           {author_id: "author_marina_privalova", positions: ["artist"]},
+                           {author_id: "author_anna_sidorova", positions: ["colorist"]},
+                           {author_id: "author_eduard_petrovich", positions: ["artist"]},
+                           {author_id: "author_yulia_loganova", positions: ["colorist"]}],
         contained_comics: ["comic_red_fury_46", "comic_red_fury_47", "comic_red_fury_48", "comic_red_fury_49",
                            "comic_red_fury_50"],
         previous_comics : ["comic_red_fury_volume_8"],
@@ -6754,7 +6972,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_7                                                    : {
-        name            : "Союзники #7 Естественный отбор, часть 3",
+        name            : "Союзники #7 Естественный отбор,\nчасть 3",
         number          : "7",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-7-natural-selection-part-3.jpg`, width: 1339, height: 2048},
@@ -7121,7 +7339,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_8                                                    : {
-        name            : "Союзники #8 Условный рефлекс, часть 1",
+        name            : "Союзники #8 Условный рефлекс,\nчасть 1",
         number          : "8",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-8-conditioned-reflex-part-1.jpg`, width: 1339, height: 2048},
@@ -7448,7 +7666,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_9                                                    : {
-        name            : "Союзники #9 Условный рефлекс, часть 2",
+        name            : "Союзники #9 Условный рефлекс,\nчасть 2",
         number          : "9",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-9-conditioned-reflex-part-2.jpg`, width: 1339, height: 2048},
@@ -8020,7 +8238,7 @@ const comics: Comics = {
         show           : true
     },
     comic_allies_10                                                   : {
-        name            : "Союзники #10 Условный рефлекс, часть 3",
+        name            : "Союзники #10 Условный рефлекс,\nчасть 3",
         number          : "10",
         type            : "single",
         cover_file      : {
@@ -8169,7 +8387,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_11                                                   : {
-        name            : "Союзники #11 Условный рефлекс, часть 4",
+        name            : "Союзники #11 Условный рефлекс,\nчасть 4",
         number          : "11",
         type            : "single",
         cover_file      : {
@@ -8320,7 +8538,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_12                                                   : {
-        name            : "Союзники #12 Огненная земля, часть 1",
+        name            : "Союзники #12 Огненная земля,\nчасть 1",
         number          : "12",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-12-tierra-del-fuego-part-1.jpg`, width: 1339, height: 2048},
@@ -8477,7 +8695,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_13                                                   : {
-        name            : "Союзники #13 Огненная земля, часть 2",
+        name            : "Союзники #13 Огненная земля,\nчасть 2",
         number          : "13",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-13-tierra-del-fuego-part-2.jpg`, width: 1339, height: 2048},
@@ -9766,7 +9984,7 @@ const comics: Comics = {
         show            : true
     },
     comic_allies_volume_2                                             : {
-        name            : "Союзники. Том 2: Условный рефлекс",
+        name            : "Союзники. Том 2: Условный\nрефлекс",
         number          : "2",
         type            : "book",
         cover_file      : {url: `${alliesImagePath}/allies-volume-2-conditioned-reflex.jpg`, width: 1004, height: 1535},
@@ -9888,7 +10106,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_21                                                   : {
-        name            : "Союзники #21 Оборотная сторона, часть 1",
+        name            : "Союзники #21 Оборотная сторона,\nчасть 1",
         number          : "21",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-21-verso-part-1.jpg`, width: 1339, height: 2048},
@@ -10021,7 +10239,7 @@ const comics: Comics = {
         show      : true
     },
     comic_allies_22                                                   : {
-        name            : "Союзники #22 Оборотная сторона, часть 2",
+        name            : "Союзники #22 Оборотная сторона,\nчасть 2",
         number          : "22",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-22-verso-part-2.jpg`, width: 1339, height: 2048},
@@ -10412,7 +10630,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_23                                                   : {
-        name            : "Союзники #23 Оборотная сторона, часть 3",
+        name            : "Союзники #23 Оборотная сторона,\nчасть 3",
         number          : "23",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-23-verso-part-3.jpg`, width: 1339, height: 2048},
@@ -10577,7 +10795,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_24                                                   : {
-        name            : "Союзники #24 Работа над ошибками, часть 1",
+        name            : "Союзники #24 Работа над\nошибками, часть 1",
         number          : "24",
         type            : "single",
         cover_file      : {
@@ -10820,7 +11038,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_25                                                   : {
-        name            : "Союзники #25 Работа над ошибками, часть 2",
+        name            : "Союзники #25 Работа над\nошибками, часть 2",
         number          : "25",
         type            : "single",
         cover_file      : {
@@ -10948,7 +11166,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_26                                                   : {
-        name            : "Союзники #26 Работа над ошибками, часть 3",
+        name            : "Союзники #26 Работа над\nошибками, часть 3",
         number          : "26",
         type            : "single",
         cover_file      : {
@@ -11048,7 +11266,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_27                                                   : {
-        name            : "Союзники #27 Работа над ошибками, часть 4",
+        name            : "Союзники #27 Работа над\nошибками, часть 4",
         number          : "27",
         type            : "single",
         cover_file      : {
@@ -11183,7 +11401,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_28                                                   : {
-        name            : "Союзники #28 Джали, истребительница упырей",
+        name            : "Союзники #28 Джали,\nистребительница упырей",
         number          : "28",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-28-jali-ghoul-slayer.jpg`, width: 1339, height: 2048},
@@ -11639,7 +11857,7 @@ const comics: Comics = {
         show            : true
     },
     comic_allies_30                                                   : {
-        name            : "Союзники #30 Пожинающий бурю, часть 1",
+        name            : "Союзники #30 Пожинающий бурю,\nчасть 1",
         number          : "30",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-30-reaper-of-storm-part-1.jpg`, width: 1339, height: 2048},
@@ -11688,7 +11906,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_volume_5                                             : {
-        name            : "Союзники. Том 5: Оборотная сторона",
+        name            : "Союзники. Том 5: Оборотная\nсторона",
         number          : "5",
         type            : "book",
         cover_file      : {url: `${alliesImagePath}/allies-volume-5-back-side.jpg`, width: 1004, height: 1535},
@@ -11707,7 +11925,7 @@ const comics: Comics = {
         show            : true
     },
     comic_allies_31                                                   : {
-        name            : "Союзники #31 Пожинающий бурю, часть 2",
+        name            : "Союзники #31 Пожинающий бурю,\nчасть 2",
         number          : "31",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-31-reaper-of-storm-part-2.jpg`, width: 1004, height: 1535},
@@ -11805,7 +12023,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_32                                                   : {
-        name            : "Союзники #32 Цена прощения, часть 1",
+        name            : "Союзники #32 Цена прощения,\nчасть 1",
         number          : "32",
         type            : "single",
         cover_file      : {
@@ -11826,7 +12044,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_33                                                   : {
-        name            : "Союзники #33 Цена прощения, часть 2",
+        name            : "Союзники #33 Цена прощения,\nчасть 2",
         number          : "33",
         type            : "single",
         cover_file      : {
@@ -12006,7 +12224,7 @@ const comics: Comics = {
         show            : true
     },
     comic_allies_volume_6                                             : {
-        name            : "Союзники. Том 6: Работа над ошибками",
+        name            : "Союзники. Том 6: Работа над\nошибками",
         number          : "6",
         type            : "book",
         cover_file      : {url: `${alliesImagePath}/allies-volume-6-working-on-mistakes.jpg`, width: 643, height: 982},
@@ -12110,7 +12328,7 @@ const comics: Comics = {
         show            : true
     },
     comic_allies_34                                                   : {
-        name            : "Союзники #34 На круги своя, часть 1",
+        name            : "Союзники #34 На круги своя, часть\n1",
         number          : "34",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-34-back-to-square-one-part-1.jpg`, width: 500, height: 762},
@@ -12184,7 +12402,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_35                                                   : {
-        name            : "Союзники #35 На круги своя, часть 2",
+        name            : "Союзники #35 На круги своя, часть\n2",
         number          : "35",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-35-back-to-square-one-part-2.jpg`, width: 500, height: 762},
@@ -12263,7 +12481,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_36                                                   : {
-        name            : "Союзники #36 На круги своя, часть 3",
+        name            : "Союзники #36 На круги своя, часть\n3",
         number          : "36",
         type            : "single",
         cover_file      : {
@@ -12403,7 +12621,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_37                                                   : {
-        name            : "Союзники #37 На круги своя, часть 4",
+        name            : "Союзники #37 На круги своя, часть\n4",
         number          : "37",
         type            : "single",
         cover_file      : {
@@ -12497,7 +12715,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_38                                                   : {
-        name            : "Союзники #38 Цепная реакция, часть 1",
+        name            : "Союзники #38 Цепная реакция,\nчасть 1",
         number          : "38",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-38-chain-reaction-part-1.png`, width: 637, height: 975},
@@ -12629,7 +12847,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_39                                                   : {
-        name            : "Союзники #39 Цепная реакция, часть 2",
+        name            : "Союзники #39 Цепная реакция,\nчасть 2",
         number          : "39",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-39-chain-reaction-part-2.jpg`, width: 1339, height: 2048},
@@ -12798,7 +13016,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_40                                                   : {
-        name            : "Союзники #40 Цепная реакция, часть 3",
+        name            : "Союзники #40 Цепная реакция,\nчасть 3",
         number          : "40",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-40-chain-reaction-part-3.jpg`, width: 1339, height: 2048},
@@ -12889,7 +13107,7 @@ const comics: Comics = {
         show            : false
     },
     comic_allies_41                                                   : {
-        name            : "Союзники #41 Цепная реакция, часть 4",
+        name            : "Союзники #41 Цепная реакция,\nчасть 4",
         number          : "41",
         type            : "single",
         cover_file      : {url: `${alliesImagePath}/allies-41-chain-reaction-part-4.jpg`, width: 1339, height: 2048},
@@ -18197,6 +18415,18 @@ const comics: Comics = {
                            "comic_exlibrium_second_life_special_happiness_is_somewhere_electronic"],
         release_at      : {year: 2023, month: 9, day: 27},
         show            : false
+    },
+    comic_fiction_novel_fury                                          : {
+        name      : "Художественный роман «Фурия»",
+        type      : "hardcover_book",
+        cover_file: {url: `${comicImagePath}/fiction-novel-fury.jpg`, width: 795, height: 1211},
+        ranges    : ["range_red_fury"],
+        characters: ["character_nika_chaikina"],
+        authors   : [{author_id: "author_andrey_rodin", positions: ["artist"]},
+                     {author_id: "author_margarita_kablukova", positions: ["artist"]},
+                     {author_id: "author_nadezhda_konovalova", positions: ["screenwriter"]}],
+        release_at: {year: 2023, month: 10, day: 12},
+        show      : true
     },
     comic_rivers_there_is_no_fear_2                                   : {
         name           : "Реки. Страха нет, часть 2",

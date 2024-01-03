@@ -73,6 +73,12 @@ const characters: Characters = {
         link_to_bubble_image  : "https://static.bubble.ru/character/image/7458a5b9f703403c2b84e2d15b71fae6.png",
         link_to_bubble_website: "https://bubble.ru/characters/13-artur-haksli"
     },
+    character_baba_yaga                  : {
+        full_name             : "Баба Яга",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/cae9b027c8476cfe2c66ba37b363cb85__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/e094e67597c2f79064ae28aad1501f1d.png",
+        link_to_bubble_website: "https://bubble.ru/characters/14-baba-yaga"
+    },
     character_balor                      : {
         full_name             : "Балор",
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/6897743852727c4d9a0ba568b01e072e__168x168.png.webp",
@@ -162,6 +168,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/bbc003a48e404080c763ec3c5a4625f0__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/962a7fbeaf1761edf8094bcdd0f80739.png",
         link_to_bubble_website: "https://bubble.ru/characters/31-gleb-zheglov"
+    },
+    character_grad_i_shkval              : {
+        full_name             : "Град и Шквал",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/08916d57631a3219e8ee972e4a87f5d0__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/71e94dbd9c22f7f12b38ed9db4c4fde2.png",
+        link_to_bubble_website: "https://bubble.ru/characters/32-grad-i-shkval"
     },
     character_grigorii_loktev            : {
         full_name             : "Григорий Локтев",
@@ -372,6 +384,12 @@ const characters: Characters = {
         link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/563dc7c8b601b07ab09cd3b364630ba2__168x168.png.webp",
         link_to_bubble_image  : "https://static.bubble.ru/character/image/7051cf5ecc3642c34730164d9c3ebde2.png",
         link_to_bubble_website: "https://bubble.ru/characters/72-myordok-makalister"
+    },
+    character_monarh                     : {
+        full_name             : "Монарх",
+        link_to_bubble_avatar : "https://static.bubble.ru/character/avatar/585dd2b0c2b5d5461f70c3523d92ef90__168x168.png.webp",
+        link_to_bubble_image  : "https://static.bubble.ru/character/image/1f19b5022755005419bfea25d7b2f667.png",
+        link_to_bubble_website: "https://bubble.ru/characters/73-monarh"
     },
     character_oleg_volkov                : {
         full_name             : "Олег Волков",

@@ -2,7 +2,8 @@ import {Authors} from "./interfaces";
 
 const authors: Authors = {
     author_alex_hatchett          : {
-        full_name             : "Алекс Хатчетт (Alex Xatchett)",
+        full_name             : "Алекс Хатчетт",
+        nickname              : "Alex Xatchett",
         positions             : ["screenwriter"],
         link_to_bubble_website: "https://bubble.ru/authors/3-aleks-hatchett/about"
     },
@@ -32,12 +33,14 @@ const authors: Authors = {
         link_to_bubble_website: "https://bubble.ru/authors/14-aleksei-zamskii/about"
     },
     author_alina_erofeeva         : {
-        full_name             : "Алина Ерофеева (Meissdes)",
+        full_name             : "Алина Ерофеева",
+        nickname              : "Meissdes",
         positions             : ["artist"],
         link_to_bubble_website: "https://bubble.ru/authors/18-alina-erofeeva/about"
     },
     author_anastasia_kim          : {
-        full_name             : "Анастасия Ким (Phobs)",
+        full_name             : "Анастасия Ким",
+        nickname              : "Phobs",
         positions             : ["artist"],
         link_to_bubble_website: "https://bubble.ru/authors/24-anastasiya-kim/about"
     },
@@ -47,7 +50,8 @@ const authors: Authors = {
         link_to_bubble_website: "https://bubble.ru/authors/26-andrei-vasin/about"
     },
     author_anna_bulatova          : {
-        full_name             : "Анна Булатова (Pesni_Pameli)",
+        full_name             : "Анна Булатова",
+        nickname              : "Pesni_Pameli",
         positions             : ["screenwriter"],
         link_to_bubble_website: "https://bubble.ru/authors/29-anna-bulatova/about"
     },
@@ -57,7 +61,8 @@ const authors: Authors = {
         link_to_bubble_website: "https://bubble.ru/authors/40-artyom-gabrelyanov/about"
     },
     author_victoria_vinogradova   : {
-        full_name             : "Виктория Виноградова (ядрён карась (carassiusvigorous))",
+        full_name             : "Виктория Виноградова",
+        nickname              : "ядрён карась (carassiusvigorous)",
         positions             : ["colorist"],
         link_to_bubble_website: "https://bubble.ru/authors/45-viktoriya-vinogradova/about"
     },
@@ -77,7 +82,8 @@ const authors: Authors = {
         link_to_bubble_website: "https://bubble.ru/authors/62-evgenii-eronin/about"
     },
     author_evgeny_fedotov         : {
-        full_name             : "Евгений Федотов (Жека Сыр)",
+        full_name             : "Евгений Федотов",
+        nickname              : "Жека Сыр",
         positions             : ["screenwriter"],
         link_to_bubble_website: "https://bubble.ru/authors/64-evgenii-fedotov/about"
     },
@@ -92,12 +98,14 @@ const authors: Authors = {
         link_to_bubble_website: "https://bubble.ru/authors/156-kirill-kutuzov/about"
     },
     author_konstantin_tarasov     : {
-        full_name             : "Константин Тарасов (pixmilk)",
+        full_name             : "Константин Тарасов",
+        nickname              : "pixmilk",
         positions             : ["artist"],
         link_to_bubble_website: "https://bubble.ru/authors/80-konstantin-tarasov/about"
     },
     author_lada_akishina          : {
-        full_name             : "Лада Акишина (Orphen Sirius)",
+        full_name             : "Лада Акишина",
+        nickname              : "Orphen Sirius",
         positions             : ["colorist"],
         link_to_bubble_website: "https://bubble.ru/authors/83-lada-akishina/about"
     },
@@ -107,22 +115,26 @@ const authors: Authors = {
         link_to_bubble_website: "https://bubble.ru/authors/84-madibek-musabekov/about"
     },
     author_marina_privalova       : {
-        full_name             : "Марина Привалова (Мия Кульц)",
+        full_name             : "Марина Привалова",
+        nickname              : "Мия Кульц",
         positions             : ["artist"],
         link_to_bubble_website: "https://bubble.ru/authors/88-marina-privalova/about"
     },
     author_maria_vasilyeva        : {
-        full_name             : "Мария Васильева (Grёmo)",
+        full_name             : "Мария Васильева",
+        nickname              : "Grёmo",
         positions             : ["colorist"],
         link_to_bubble_website: "https://bubble.ru/authors/91-mariya-vasileva/about"
     },
     author_natalia_devova         : {
-        full_name             : "Наталия Девова (noi-albinoi)",
+        full_name             : "Наталия Девова",
+        nickname              : "noi-albinoi",
         positions             : ["screenwriter"],
         link_to_bubble_website: "https://bubble.ru/authors/98-nataliya-devova/about"
     },
     author_natalya_zaidova        : {
-        full_name             : "Наталья Заидова (Kay)",
+        full_name             : "Наталья Заидова",
+        nickname              : "Kay",
         positions             : ["artist"],
         link_to_bubble_website: "https://bubble.ru/authors/99-natalya-zaidova/about"
     },
@@ -174,8 +186,8 @@ const authors: Authors = {
     author_valentin_potkin        : {full_name: "Валентин Поткин", positions: ["artist"]},
     author_valeria_frantseva      : {full_name: "Валерия Францева", positions: ["screenwriter"]},
     author_vasily_snigirev        : {full_name: "Василий Снигирев", positions: ["screenwriter"]},
-    author_victoria_bykova        : {full_name: "Виктория Быкова (Lennigen)", positions: ["artist"]},
-    author_victoria_tirtilova     : {full_name: "Виктория Тиртилова (Expie Ai)", positions: ["colorist"]},
+    author_victoria_bykova        : {full_name: "Виктория Быкова", nickname: "Lennigen", positions: ["artist"]},
+    author_victoria_tirtilova     : {full_name: "Виктория Тиртилова", nickname: "Expie Ai", positions: ["colorist"]},
     author_vitaly_smirnov         : {full_name: "Виталий Смирнов", positions: ["artist"]},
     author_vyacheslav_doronin     : {full_name: "Вячеслав Доронин", positions: ["colorist"]},
     author_gilbert_brissen        : {full_name: "Гилберт Бриссен", positions: ["screenwriter"]},
@@ -193,6 +205,7 @@ const authors: Authors = {
     author_evgeniy_bornyakov      : {full_name: "Евгений Борняков", positions: ["artist"]},
     author_evgeniy_kiyamov        : {full_name: "Евгений Киямов", positions: ["artist"]},
     author_evgeniy_pivnev         : {full_name: "Евгений Пивнев", positions: ["artist"]},
+    author_evgeniy_tonchilov      : {full_name: "Евгений Тончилов", positions: ["artist"]},
     author_evgeniy_frantsev       : {full_name: "Евгений Францев", positions: ["artist"]},
     author_egor_gafidov           : {full_name: "Егор Гафидов", positions: ["artist"]},
     author_egor_gerasimov         : {full_name: "Егор Герасимов", positions: ["artist"]},
@@ -206,7 +219,7 @@ const authors: Authors = {
     author_elizaveta_valikova     : {full_name: "Елизавета Валикова", positions: ["artist"]},
     author_elizaveta_polyaeva     : {full_name: "Елизавета Поляева", positions: ["colorist"]},
     author_ivan_dovbnya           : {full_name: "Иван Довбня", positions: ["artist"]},
-    author_ivan_yelyasov          : {full_name: "Иван Елясов", positions: ["artist"]},
+    author_ivan_yelyasov          : {full_name: "Иван Елясов", positions: ["colorist"]},
     author_ivan_skorokhodov       : {full_name: "Иван Скороходов", positions: ["screenwriter"]},
     author_igor_kislitsyn         : {full_name: "Игорь Кислицын", positions: ["screenwriter"]},
     author_igor_loboda            : {full_name: "Игорь Лобода", positions: ["colorist"]},
@@ -257,9 +270,9 @@ const authors: Authors = {
     author_eduard_petrovich       : {full_name: "Эдуард Петрович", positions: ["artist"]},
     author_eric_bragalyan         : {full_name: "Эрик Брагалян", positions: ["artist"]},
     author_yulia_garibova         : {full_name: "Юлия Гарибова"},
-    author_yulia_kazanina         : {full_name: "Юлия Казанина (Варасаби)", positions: ["artist"]},
+    author_yulia_kazanina         : {full_name: "Юлия Казанина", nickname: "Варасаби", positions: ["artist"]},
     author_yulia_loganova         : {full_name: "Юлия Логанова", positions: ["colorist"]},
-    author_yulia_smirnova         : {full_name: "Юлия Смирнова (Tororo)", positions: ["colorist"]},
+    author_yulia_smirnova         : {full_name: "Юлия Смирнова", nickname: "Tororo", positions: ["colorist"]},
     author_yulia_shevtsova        : {full_name: "Юлия Шевцова", positions: ["colorist"]},
     author_yulia_yastrebova       : {full_name: "Юлия Ястребова", positions: ["colorist"]},
     author_yuri_nekrasov          : {full_name: "Юрий Некрасов", positions: ["screenwriter"]}

@@ -69,7 +69,9 @@ watch(route, () => {
                   <li class="authors-comic__item" :style="{ '--border-color': authorColor(author.author_id) }">
                     <RouterLink class="authors-comic__link"
                                 :to="{ name: 'author', params: { authorId: authorIdToNull(author.author_id) } }">
-                      {{ authors[author.author_id].full_name }}
+                      <span class="authors-comic__full-name">{{ authors[author.author_id].full_name }}</span>
+                      <span v-if="authors[author.author_id].nickname"
+                            class="authors-comic__nickname">{{ authors[author.author_id].nickname }}</span>
                     </RouterLink>
                     <p v-if="author.positions" class="authors-comic__subtext">
                       {{ author.positions.map((position) => authorPosition(position)).join(", ") }}</p>
