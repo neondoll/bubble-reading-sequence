@@ -1,4 +1,5 @@
 import * as vNG from "v-network-graph";
+import rangesGroups from "./rangesGroups";
 
 export interface Author {
     full_name: string;
@@ -84,7 +85,18 @@ export interface Node extends vNG.Node {
 
 interface Range {
     name: string;
-    release_at: Date;
+    linkToBubbleImageBg?: string;
+    linkToBubbleImageBg2x?: string;
+    linkToBubbleImageLogo?: string;
+    releaseAt: Date;
 }
 
 export type Ranges = Record<string, Range>;
+
+interface RangesGroup {
+    name: string;
+    containedRangesGroups?: string[];
+    containedRanges?: string[];
+}
+
+export type RangesGroups = Record<string, RangesGroup>;

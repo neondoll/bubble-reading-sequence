@@ -5,6 +5,7 @@ import BubbleUniverseMap from "./pages/BubbleUniverseMap.vue";
 import Character from "./pages/Character.vue";
 import Characters from "./pages/Characters.vue";
 import Comic from "./pages/Comic.vue";
+import Comics from "./pages/Comics.vue";
 import Home from "./pages/Home.vue";
 import Range from "./pages/Range.vue";
 import Ranges from "./pages/Ranges.vue";
@@ -16,6 +17,7 @@ const routes = [
   {path: "/bubble-universe-map", name: "bubbleUniverseMap", component: BubbleUniverseMap},
   {path: "/characters", name: "characters", component: Characters},
   {path: "/characters/:characterId", name: "character", component: Character},
+  {path: "/comics", name: "comics", component: Comics},
   {path: "/ranges", name: "ranges", component: Ranges},
   {path: "/ranges/:rangeId", name: "range", component: Range},
   {path: "/ranges/:rangeId/comics/:comicId", name: "comic", component: Comic}

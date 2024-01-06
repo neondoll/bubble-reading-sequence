@@ -27,7 +27,7 @@ const range_evgeny_yakovlev = {y: difference.y * 51};
 const range_exlibrium = {y: difference.y * 27};
 const range_exlibrium_second_life = {y: difference.y * 29};
 const range_friends_comics = {y: difference.y * 41};
-const range_gam = {y: difference.y * 70};
+const range_bubble_gam = {y: difference.y * 70};
 const range_igor_grom = {y: difference.y * 19};
 const range_igor_grom_hardcover_book = {y: range_igor_grom.y + difference.y * 2};
 const range_igor_ugor = {y: difference.y * 40};
@@ -374,7 +374,7 @@ export default {
     range_bubble_school,
     range_exlibrium,
     range_exlibrium_second_life,
-    range_gam,
+    range_bubble_gam,
     range_igor_grom,
     range_major_grom,
     range_major_igor_grom,

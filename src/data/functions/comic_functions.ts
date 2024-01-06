@@ -11,7 +11,9 @@ const comicColor = (comicId: string): string => {
     const comic: Comic = comics[comicId];
     let authorColors: string[] = [];
 
-    if (comic.ranges.indexOf("range_authors_comics") !== -1 && comic.authors) {
+    if (comic.ranges.indexOf("range_jackets_and_revolvers") !== -1 &&
+        comic.ranges.indexOf("range_unicorn_conspiracy") !== -1 &&
+        comic.ranges.indexOf("range_other_authors_comics") !== -1 && comic.authors) {
         authorColors = comic.authors
             .filter((author) => Object.keys(colors).indexOf(author.author_id) !== -1)
             .map((author) => colors[author.author_id]);

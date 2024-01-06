@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const menuNavbarList = [
   {title: "Главная", to: {name: "home"}},
-  {title: "Серии", to: {name: "ranges"}},
+  {title: "Комиксы", to: {name: "comics"}},
   {title: "Герои", to: {name: "characters"}},
   {title: "Авторы", to: {name: "authors"}},
   {title: "Карта вселенной BUBBLE", to: {name: "bubbleUniverseMap"}}
@@ -12,13 +12,15 @@ const menuNavbarList = [
   <header class="header">
     <div class="header__container container">
       <div class="navbar">
-        <!--<a class="navbar__link" href="#"><img class="navbar__logo" src="" alt=""></a>-->
+        <a class="navbar__link" href="#">BUBBLE fan-made</a>
         <nav class="navbar__menu menu-navbar">
           <!--<span class="menu-navbar__btn-close"></span>-->
           <ul class="menu-navbar__list">
             <template v-for="menuNavbarItem in menuNavbarList">
               <li class="menu-navbar__item">
-                <RouterLink class="menu-navbar__link" :to="menuNavbarItem.to">{{ menuNavbarItem.title }}</RouterLink>
+                <RouterLink class="menu-navbar__link" active-class="active" :to="menuNavbarItem.to">
+                  {{ menuNavbarItem.title }}
+                </RouterLink>
               </li>
             </template>
           </ul>
@@ -26,7 +28,7 @@ const menuNavbarList = [
       </div>
     </div>
   </header>
-  <main>
+  <main class="main">
     <RouterView/>
   </main>
 </template>
