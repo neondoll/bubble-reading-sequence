@@ -10,16 +10,16 @@ const props = defineProps({rangesIds: {required: true, type: Array}});
     <ul class="ranges-groups-level-3__list">
       <template v-for="rangeId in rangesIds">
         <li class="ranges-groups-level-3__item">
-          <div v-if="ranges[rangeId].linkToBubbleImageBg" class="ranges-groups-level-3__avatar">
-            <img v-if="ranges[rangeId].linkToBubbleImageBg"
+          <div v-if="ranges[rangeId].cover" class="ranges-groups-level-3__avatar">
+            <img v-if="ranges[rangeId].cover"
                  class="ranges-groups-level-3__image"
-                 :src="ranges[rangeId].linkToBubbleImageBg"
-                 :srcset="ranges[rangeId].linkToBubbleImageBg2x ? `${ranges[rangeId].linkToBubbleImageBg2x} 2x` : undefined"
+                 :src="ranges[rangeId].cover"
+                 :srcset="ranges[rangeId].cover2x ? `${ranges[rangeId].cover2x} 2x` : undefined"
                  :alt="ranges[rangeId].name">
             <div class="ranges-groups-level-3__logo">
-              <img v-if="ranges[rangeId].linkToBubbleImageLogo"
+              <img v-if="ranges[rangeId].logo"
                    class="ranges-groups-level-3__image"
-                   :src="ranges[rangeId].linkToBubbleImageLogo"
+                   :src="ranges[rangeId].logo"
                    :alt="ranges[rangeId].name">
               <h3 v-else class="ranges-groups-level-3__title">{{ ranges[rangeId].name }}</h3>
             </div>

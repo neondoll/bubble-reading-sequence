@@ -1,5 +1,6 @@
 const path: string = "/src/assets/images";
 const pathComics: string = `${path}/comics`;
+const pathRanges: string = `${path}/ranges`;
 
 const imagePaths: Record<string, Record<string, string>> = {
     comics: {
@@ -59,6 +60,43 @@ const imagePaths: Record<string, Record<string, string>> = {
         yarkhStepForward           : `${pathComics}/yarkh_step_forward`,
         ziggyAndShmyg              : `${pathComics}/ziggy_and_shmyg`,
         ziggySpaceHamster          : `${pathComics}/ziggy_space_hamster`
+    },
+    ranges: {
+        _                    : pathRanges,
+        allies               : `${pathRanges}/allies`,
+        besoboy              : `${pathRanges}/besoboy`,
+        besoboyVol2          : `${pathRanges}/besoboy_vol_2`,
+        bubbleGam            : `${pathRanges}/bubble_gam`,
+        bubbleLegends        : `${pathRanges}/bubble_legends`,
+        bubbleManga          : `${pathRanges}/bubble_manga`,
+        bubbleSchool         : `${pathRanges}/bubble_school`,
+        cheaters             : `${pathRanges}/cheaters`,
+        childrensComics      : `${pathRanges}/childrens_comics`,
+        crossovers           : `${pathRanges}/crossovers`,
+        exlibrium            : `${pathRanges}/exlibrium`,
+        exlibriumSecondLife  : `${pathRanges}/exlibrium_second_life`,
+        gloom                : `${pathRanges}/gloom`,
+        grayHound            : `${pathRanges}/gray_hound`,
+        igorGrom             : `${pathRanges}/igor_grom`,
+        igorUgor             : `${pathRanges}/igor_ugor`,
+        jacketsAndRevolvers  : `${pathRanges}/jackets_and_revolvers`,
+        krutiks              : `${pathRanges}/krutiks`,
+        licorice             : `${pathRanges}/licorice`,
+        majorGrom            : `${pathRanges}/major_grom`,
+        majorIgorGrom        : `${pathRanges}/major_igor_grom`,
+        meteora              : `${pathRanges}/meteora`,
+        mir                  : `${pathRanges}/mir`,
+        monk                 : `${pathRanges}/monk`,
+        otherAuthorsComics   : `${pathRanges}/other_authors_comics`,
+        otherInadequateComics: `${pathRanges}/other_inadequate_comics`,
+        plagueDoctor         : `${pathRanges}/plague_doctor`,
+        planeswalkers        : `${pathRanges}/planeswalkers`,
+        redFury              : `${pathRanges}/red_fury`,
+        specialIssues        : `${pathRanges}/special_issues`,
+        tagar                : `${pathRanges}/tagar`,
+        thiefOfShadows       : `${pathRanges}/thief_of_shadows`,
+        unicornConspiracy    : `${pathRanges}/unicorn_conspiracy`,
+        witch                : `${pathRanges}/witch`
     }
 };
 

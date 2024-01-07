@@ -3,7 +3,7 @@ import {comicColor} from "./comic_functions";
 import colors from "../colors";
 import comics from "../comics";
 
-const getRangeIdForLink = (rangeId: string): string => rangeId.replace("range_", "").replace(/_/g, '-');
+const getRangeIdForLink = (rangeId: string): string => rangeId.replace("range_", "").replace(/_/g, "-");
 const rangeColor = (rangeId: string): string => {
     if (Object.keys(colors).indexOf(rangeId) !== -1) {
         return colors[rangeId];

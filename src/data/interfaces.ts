@@ -83,11 +83,12 @@ export interface Node extends vNG.Node {
     size: number;
 }
 
-interface Range {
+export interface Range {
     name: string;
-    linkToBubbleImageBg?: string;
-    linkToBubbleImageBg2x?: string;
-    linkToBubbleImageLogo?: string;
+    banner?: string;
+    cover: string;
+    cover2x: string;
+    logo?: string;
     releaseAt: Date;
 }
 
