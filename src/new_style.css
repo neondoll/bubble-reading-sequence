@@ -161,6 +161,8 @@ body { font-family: var(--font-family, sans-serif); }
     height: 100%;
 }
 
+.ranges-groups-level-1, .ranges-groups-level-1::after { background-color: #f4f4f8; }
+
 .ranges-groups-level-1, .ranges-groups-level-2 {
     width: 100%;
     max-width: 270px;
@@ -169,7 +171,19 @@ body { font-family: var(--font-family, sans-serif); }
     padding-bottom: 60px;
 }
 
-.ranges-groups-level-1 { background-color: #f4f4f8; }
+.ranges-groups-level-1 {
+    position: relative;
+}
+
+.ranges-groups-level-1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    display: block;
+    width: 50vw;
+    height: 100%;
+}
 
 .ranges-groups-level-1__list {}
 
@@ -224,6 +238,7 @@ body { font-family: var(--font-family, sans-serif); }
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding-bottom: 5px;
 }
 
 .ranges-groups-level-3__avatar { position: relative; }

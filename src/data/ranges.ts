@@ -227,6 +227,13 @@ const ranges: Ranges = {
         linkToBubbleImageBg  : "https://bubblefiles.storage.yandexcloud.net/130503/conversions/%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0_%D1%81%D0%BF%D0%B5%D1%86%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA%D0%B8-%284%29-preview.webp",
         linkToBubbleImageBg2x: "https://bubblefiles.storage.yandexcloud.net/130503/conversions/%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0_%D1%81%D0%BF%D0%B5%D1%86%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA%D0%B8-%284%29-preview_retina.webp",
         releaseAt            : {year: 2023}
+    },
+    range_cheaters               : {
+        name                 : "Читеры",
+        linkToBubbleImageBg  : "https://bubblefiles.storage.yandexcloud.net/131688/conversions/700-700-%2828%29-preview.webp",
+        linkToBubbleImageBg2x: "https://bubblefiles.storage.yandexcloud.net/131688/conversions/700-700-%2828%29-preview_retina.webp",
+        linkToBubbleImageLogo: "https://bubblefiles.storage.yandexcloud.net/131687/4iteri-700x700.png",
+        releaseAt            : {year: 2023}
     }
 };
 

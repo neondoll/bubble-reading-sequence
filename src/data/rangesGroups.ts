@@ -6,7 +6,7 @@ const rangesGroups: RangesGroups = {
         containedRangesGroups: ["ranges_group_major_grom", "ranges_group_plague_doctor", "ranges_group_exlibrium",
                                 "ranges_group_red_fury", "ranges_group_besoboy", "ranges_group_meteora",
                                 "ranges_group_mir", "ranges_group_monk", "ranges_group_gloom", "ranges_group_school",
-                                "ranges_group_witch", "ranges_group_bubble_gam"]
+                                "ranges_group_witch", "ranges_group_bubble_gam", "ranges_group_cheaters"]
     },
     ranges_group_major_grom       : {
         name           : "Майор Гром",
@@ -44,7 +44,8 @@ const rangesGroups: RangesGroups = {
         containedRanges: ["range_igor_ugor", "range_thief_of_shadows", "range_other_inadequate_comics"]
     },
     ranges_group_crossovers       : {name: "Кроссоверы", containedRanges: ["range_crossovers"]},
-    ranges_group_special_issues   : {name: "Спецвыпуски", containedRanges: ["range_special_issues"]}
+    ranges_group_special_issues   : {name: "Спецвыпуски", containedRanges: ["range_special_issues"]},
+    ranges_group_cheaters         : {name: "Читеры", containedRanges: ["range_cheaters"]}
 };
 
 export default rangesGroups;
