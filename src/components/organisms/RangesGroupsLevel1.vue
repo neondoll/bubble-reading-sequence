@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useRoute} from "vue-router";
+import {RouterLinkWithEndCap} from "../atoms";
 import rangesGroups from "../../data/rangesGroups.js";
 
 const props = defineProps({
@@ -7,7 +7,6 @@ const props = defineProps({
   rangesGroupEnter : {required: true, type: Function},
   rangesGroupIds   : {required: true, type: Array}
 });
-const route = useRoute();
 </script>
 
 <template>
@@ -15,11 +14,9 @@ const route = useRoute();
     <ul class="ranges-groups-level-1__list">
       <template v-for="rangesGroupId in rangesGroupIds">
         <li class="ranges-groups-level-1__item" :class="{'active': rangesGroupActive(rangesGroupId)}">
-          <RouterLink class="ranges-groups-level-1__link"
-                      :to="route.fullPath"
-                      @mouseenter="rangesGroupEnter(rangesGroupId)">
+          <RouterLinkWithEndCap class="ranges-groups-level-1__link" @mouseenter="rangesGroupEnter(rangesGroupId)">
             {{ rangesGroups[rangesGroupId].name }}
-          </RouterLink>
+          </RouterLinkWithEndCap>
           <svg class="ranges-groups-level-1__icon">
             <use xlink:href="#svg-chevron-right"/>
           </svg>

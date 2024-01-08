@@ -1,19 +1,31 @@
 <script setup lang="ts">
-import {Comics, Range} from "../data/interfaces";
+import {Book, Breadcrumbs, RouterLinkWithEndCap} from "../components/atoms";
+import {Comic, Comics, ComicType, Range} from "../data/interfaces";
+import {getComicIdForLink} from "../data/functions/comic_functions";
 import {useRoute} from "vue-router";
 import comics from "../data/comics";
+import comicTypes from "../data/comicTypes";
 import ranges from "../data/ranges";
-import Breadcrumbs from "../components/atoms/Breadcrumbs.vue";
+import {ref} from "vue";
 
 const route = useRoute();
+
 const rangeId: string = `range_${route.params.rangeId.replace(/-/g, "_")}`;
 const range: Range = ranges[rangeId];
 const rangeComicIds: string[] = Object.keys(comics)
     .filter((comicId: string): boolean => comics[comicId].ranges && comics[comicId].ranges.indexOf(rangeId) !== -1);
-let rangeComics: Comics = {};
+const rangeComics: Record<ComicType, Comics> = {book: {}, hardcover_book: {}, single: {}};
+
+let currentComicType = ref("book");
+
+const checkComicType = (value: string): boolean => currentComicType.value === value;
+const setComicType = (value: string): void => {
+  currentComicType.value = value;
+};
 
 rangeComicIds.forEach((comicId: string): void => {
-  rangeComics[comicId] = comics[comicId];
+  const comic: Comic = comics[comicId];
+  rangeComics[comic.type][comicId] = comic;
 });
 
 document.querySelector("title").text = range.name;
@@ -34,11 +46,42 @@ document.querySelector("title").text = range.name;
       </div>
     </div>
     <div class="comics-range-page__container container">
-      <div class="comics-range-page__comics">
-        <template v-for="(comic, comicId) in rangeComics">
-          <article class="comics-range-page__comic">{{ comic }}</article>
-        </template>
+      <div class="comics-range-page__filter">
+        <div class="comics-range-page__comic-types comic-types">
+          <ul class="comic-types__list">
+            <template v-for="(comicType, comicTypeId) in comicTypes">
+              <li v-if="Object.keys(rangeComics[comicTypeId]).length" class="comic-types__item">
+                <RouterLinkWithEndCap class="comic-types__link"
+                                      :class="{'active': checkComicType(comicTypeId)}"
+                                      @click="setComicType(comicTypeId)">
+                  {{ comicType.valueMany }}
+                </RouterLinkWithEndCap>
+                <span class="comic-types__count">{{ Object.keys(rangeComics[comicTypeId]).length }}</span>
+              </li>
+            </template>
+          </ul>
+        </div>
       </div>
+      <template v-for="(comicType, comicTypeId) in comicTypes">
+        <div v-show="checkComicType(comicTypeId)" class="comics-range-page__comics">
+          <template v-for="(comic, comicId) in rangeComics[comicTypeId]">
+            <article class="comics-range-page__comic comic">
+              <Book class="comic__book"
+                    :image="comic.cover_file.url"
+                    :aspect-ratio="comic.cover_file.width / comic.cover_file.height"/>
+              <div class="comic__description">
+                <p class="comic__type">{{ comicType.value }}</p>
+                <h2 class="comic__title">
+                  <RouterLink class="comic__link"
+                              :to="{name: 'comic', params: {rangeId: route.params.rangeId, comicId: getComicIdForLink(comicId)}}">
+                    {{ comic.name }}
+                  </RouterLink>
+                </h2>
+              </div>
+            </article>
+          </template>
+        </div>
+      </template>
     </div>
   </div>
 </template>

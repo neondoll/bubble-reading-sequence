@@ -28,5 +28,6 @@ const comicColor = (comicId: string): string => {
     return anyColorsLength ? anyColorsLength > 1 ? colorMixingHex(anyColors) : anyColors[0] : undefined;
 };
 const comicIdToNull = (comicId: string): string => comicId.replace("comic_", "");
+const getComicIdForLink = (comicId: string): string => comicId.replace("comic_", "").replace(/_/g, "-");
 
-export {comicColor, comicIdToNull};
+export {comicColor, comicIdToNull, getComicIdForLink};

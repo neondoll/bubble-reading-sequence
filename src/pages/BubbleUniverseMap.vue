@@ -42,7 +42,9 @@ document.querySelector("title").text = "Карта вселенной BUBBLE";
 </script>
 
 <template>
-  <VNetworkGraph class="bubble-universe-map" :nodes="nodes" :edges="edges" :layouts="layouts" :configs="configs"/>
+  <div class="bubble-universe-map-page">
+    <VNetworkGraph class="bubble-universe-map-page__graph" :nodes="nodes" :edges="edges" :layouts="layouts" :configs="configs"/>
+  </div>
 </template>
 
 <style scoped lang="scss">
