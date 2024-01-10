@@ -1,11 +1,10 @@
 import * as vNG from "v-network-graph";
-import rangesGroups from "./rangesGroups";
 
 export interface Author {
-    full_name: string;
+    fullName: string;
     nickname?: string;
     positions?: AuthorPosition[];
-    link_to_bubble_website?: string;
+    linkToBubbleWebsite?: string;
 }
 
 export type AuthorPosition = "artist" | "colorist" | "screenwriter";
@@ -13,10 +12,10 @@ export type AuthorPosition = "artist" | "colorist" | "screenwriter";
 export type Authors = Record<string, Author>;
 
 export interface Character {
-    full_name: string;
-    link_to_bubble_avatar?: string;
-    link_to_bubble_image?: string;
-    link_to_bubble_website: string;
+    fullName: string;
+    linkToBubbleAvatar?: string;
+    linkToBubbleImage?: string;
+    linkToBubbleWebsite: string;
 }
 
 export type Characters = Record<string, Character>;
@@ -25,21 +24,21 @@ export interface Comic {
     name: string;
     number?: string;
     type: ComicType;
-    cover_file?: Image;
-    content_files?: Image[];
+    coverFile?: Image;
+    contentFiles?: Image[];
     ranges: string[];
     characters?: string[];
     authors?: ComicAuthor[];
-    including_comics?: string[];
-    contained_comics?: string[];
-    previous_comics?: string[];
-    next_comics?: string[];
-    release_at: Date;
+    includingComics?: string[];
+    containedComics?: string[];
+    previousComics?: string[];
+    nextComics?: string[];
+    releaseAt: Date;
     show?: boolean
 }
 
-interface ComicAuthor {
-    author_id: string;
+export interface ComicAuthor {
+    authorId: string;
     positions: AuthorPosition[];
 }
 

@@ -1,4 +1,5 @@
-import {createRouter, createWebHashHistory} from "vue-router";
+import {RouterView, createRouter, createWebHashHistory} from "vue-router";
+import {h} from "vue";
 import Author from "./pages/Author.vue";
 import Authors from "./pages/Authors.vue";
 import BubbleUniverseMap from "./pages/BubbleUniverseMap.vue";
@@ -8,8 +9,6 @@ import Comic from "./pages/Comic.vue";
 import Comics from "./pages/Comics.vue";
 import ComicsRange from "./pages/ComicsRange.vue";
 import Home from "./pages/Home.vue";
-import Range from "./pages/Range.vue";
-import Ranges from "./pages/Ranges.vue";
 
 const routes = [
   {path: "/", name: "home", component: Home},
@@ -18,11 +17,13 @@ const routes = [
   {path: "/bubble-universe-map", name: "bubbleUniverseMap", component: BubbleUniverseMap},
   {path: "/characters", name: "characters", component: Characters},
   {path: "/characters/:characterId", name: "character", component: Character},
-  {path: "/comics", name: "comics", component: Comics},
-  {path: "/comics/:rangeId", name: "comicsRange", component: ComicsRange},
-  {path: "/ranges", name: "ranges", component: Ranges},
-  {path: "/ranges/:rangeId", name: "range", component: Range},
-  {path: "/ranges/:rangeId/comics/:comicId", name: "comic", component: Comic}
+  {
+    path: "/comics", component: {render: () => h(RouterView)}, children: [
+      {path: "", name: "comics", component: Comics},
+      {path: ":rangeId", name: "comicsRange", component: ComicsRange},
+      {path: ":rangeId/:comicId", name: "comic", component: Comic}
+    ]
+  }
 ];
 
 const router = createRouter({history: createWebHashHistory(), routes});
