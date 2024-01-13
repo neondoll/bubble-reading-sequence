@@ -2,15 +2,16 @@
 import {Book, Breadcrumbs, RouterLinkWithEndCap} from "../components/atoms";
 import {Comic, Comics, ComicType, Range} from "../data/interfaces";
 import {getComicIdForLink} from "../data/functions/comic_functions";
+import {getRangeIdFromLink} from "../data/functions/range_functions";
+import {ref} from "vue";
 import {useRoute} from "vue-router";
 import comics from "../data/comics";
 import comicTypes from "../data/comicTypes";
 import ranges from "../data/ranges";
-import {ref} from "vue";
 
 const route = useRoute();
 
-const rangeId: string = `range_${route.params.rangeId.replace(/-/g, "_")}`;
+const rangeId: string = getRangeIdFromLink(route.params.rangeId);
 const range: Range = ranges[rangeId];
 const rangeComicIds: string[] = Object.keys(comics)
     .filter((comicId: string): boolean => comics[comicId].ranges && comics[comicId].ranges.indexOf(rangeId) !== -1);
@@ -67,8 +68,8 @@ document.querySelector("title").text = range.name;
           <template v-for="(comic, comicId) in rangeComics[comicTypeId]">
             <article class="comics-range-page__comic comic">
               <Book class="comic__book"
-                    :image="comic.cover_file.url"
-                    :aspect-ratio="comic.cover_file.width / comic.cover_file.height"/>
+                    :image="comic.coverFile.url"
+                    :aspect-ratio="comic.coverFile.width / comic.coverFile.height"/>
               <div class="comic__description">
                 <p class="comic__type">{{ comicType.value }}</p>
                 <h2 class="comic__title">

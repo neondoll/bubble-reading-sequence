@@ -1,4 +1,4 @@
-import {Comic} from "../interfaces";
+import {Comic, ComicAuthor} from "../interfaces";
 import {colorMixingHex} from "./color_functions";
 import colors from "../colors";
 import comics from "../comics";
@@ -15,8 +15,8 @@ const comicColor = (comicId: string): string => {
         comic.ranges.indexOf("range_unicorn_conspiracy") !== -1 &&
         comic.ranges.indexOf("range_other_authors_comics") !== -1 && comic.authors) {
         authorColors = comic.authors
-            .filter((author) => Object.keys(colors).indexOf(author.author_id) !== -1)
-            .map((author) => colors[author.author_id]);
+            .filter((author: ComicAuthor): boolean => Object.keys(colors).indexOf(author.authorId) !== -1)
+            .map((author: ComicAuthor) => colors[author.authorId]);
     }
 
     const rangeColors: string[] = comic.ranges
@@ -29,5 +29,6 @@ const comicColor = (comicId: string): string => {
 };
 const comicIdToNull = (comicId: string): string => comicId.replace("comic_", "");
 const getComicIdForLink = (comicId: string): string => comicId.replace("comic_", "").replace(/_/g, "-");
+const getComicIdFromLink = (comicId: string): string => `comic_${comicId.replace(/-/g, "_")}`;
 
-export {comicColor, comicIdToNull, getComicIdForLink};
+export {comicColor, comicIdToNull, getComicIdForLink, getComicIdFromLink};

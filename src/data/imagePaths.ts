@@ -1,9 +1,11 @@
 const path: string = "/src/assets/images";
+const pathCharacters: string = `${path}/characters`;
 const pathComics: string = `${path}/comics`;
 const pathRanges: string = `${path}/ranges`;
 
 const imagePaths: Record<string, Record<string, string>> = {
-    comics: {
+    characters: {_: pathCharacters, dmitriiDubin: `${pathCharacters}/dmitrii_dubin`},
+    comics    : {
         _                          : pathComics,
         allies                     : `${pathComics}/allies`,
         anna                       : `${pathComics}/anna`,
@@ -61,7 +63,7 @@ const imagePaths: Record<string, Record<string, string>> = {
         ziggyAndShmyg              : `${pathComics}/ziggy_and_shmyg`,
         ziggySpaceHamster          : `${pathComics}/ziggy_space_hamster`
     },
-    ranges: {
+    ranges    : {
         _                    : pathRanges,
         allies               : `${pathRanges}/allies`,
         besoboy              : `${pathRanges}/besoboy`,

@@ -1,9 +1,9 @@
-import {AuthorPosition} from "../interfaces";
+import {AuthorPosition, ComicAuthor} from "../interfaces";
 import {colorMixingHex} from "./color_functions";
 import {comicColor} from "./comic_functions";
 import authorPositions from "../authorPositions";
-import comics from "../comics";
 import colors from "../colors";
+import comics from "../comics";
 
 const authorColor = (authorId: string): string => {
     if (Object.keys(colors).indexOf(authorId) !== -1) {
@@ -11,7 +11,7 @@ const authorColor = (authorId: string): string => {
     }
 
     const comicColors: string[] = Object.keys(comics)
-        .filter((comicId: string): boolean => comics[comicId].authors && comics[comicId].authors.map((author) => author.author_id).indexOf(authorId) !== -1)
+        .filter((comicId: string): boolean => comics[comicId].authors && comics[comicId].authors.map((author: ComicAuthor) => author.authorId).indexOf(authorId) !== -1)
         .map((comicId: string): string => comicColor(comicId))
         .filter((comicColor: string): boolean => comicColor !== undefined);
     const comicColorsLength: number = comicColors.length;

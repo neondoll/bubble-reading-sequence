@@ -1,4 +1,7 @@
 import {Characters} from "./interfaces";
+import imagePaths from "./imagePaths";
+
+const paths: Record<string, string> = imagePaths.characters;
 
 const characters: Characters = {
     character_avaddon_bezzhalostnyi      : {
@@ -224,10 +227,12 @@ const characters: Characters = {
         linkToBubbleWebsite: "https://bubble.ru/characters/41-dimitrios"
     },
     character_dmitrii_dubin              : {
-        fullName           : "Дмитрий Дубин",
-        linkToBubbleAvatar : "https://static.bubble.ru/character/avatar/158e5f98c3885b9392b0f6ca27ba91af__168x168.png.webp",
-        linkToBubbleImage  : "https://static.bubble.ru/character/image/8717acde9eba71f2b692b3f17b5dd445.png",
-        linkToBubbleWebsite: "https://bubble.ru/characters/42-dmitrii-dubin"
+        fullName               : "Дмитрий Дубин",
+        images                 : {small: `${paths.dmitriiDubin}/dmitrii-dubin-128x170.webp`},
+        linkToBubbleAvatar     : "https://static.bubble.ru/character/avatar/158e5f98c3885b9392b0f6ca27ba91af__168x168.png.webp",
+        linkToBubbleImage      : "https://static.bubble.ru/character/image/8717acde9eba71f2b692b3f17b5dd445.png",
+        linkToBubbleWebsite    : "https://bubble.ru/characters/42-dmitrii-dubin",
+        linkToTestBubbleWebsite: "https://test.bubble.ru/characters/dmitrii-dubin"
     },
     character_durgal_ashgaur             : {
         fullName           : "Дургал аш'Гаур",

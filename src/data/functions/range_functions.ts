@@ -4,6 +4,7 @@ import colors from "../colors";
 import comics from "../comics";
 
 const getRangeIdForLink = (rangeId: string): string => rangeId.replace("range_", "").replace(/_/g, "-");
+const getRangeIdFromLink = (rangeId: string): string => `range_${rangeId.replace(/-/g, "_")}`;
 const rangeColor = (rangeId: string): string => {
     if (Object.keys(colors).indexOf(rangeId) !== -1) {
         return colors[rangeId];
@@ -19,4 +20,4 @@ const rangeColor = (rangeId: string): string => {
 };
 const rangeIdToNull = (rangeId: string): string => rangeId.replace("range_", "");
 
-export {getRangeIdForLink, rangeColor, rangeIdToNull}
+export {getRangeIdForLink, getRangeIdFromLink, rangeColor, rangeIdToNull};

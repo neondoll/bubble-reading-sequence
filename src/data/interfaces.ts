@@ -13,9 +13,11 @@ export type Authors = Record<string, Author>;
 
 export interface Character {
     fullName: string;
+    images?: Record<string, string>;
     linkToBubbleAvatar?: string;
     linkToBubbleImage?: string;
     linkToBubbleWebsite: string;
+    linkToTestBubbleWebsite?: string;
 }
 
 export type Characters = Record<string, Character>;

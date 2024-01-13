@@ -15,7 +15,10 @@ ol, ul { list-style-type: none; }
 
 :root { --body-font-family: "Open Sans", sans-serif; }
 
-body { font-family: var(--body-font-family, sans-serif); }
+body {
+    font-family: var(--body-font-family, sans-serif);
+    color: #1a1a1a;
+}
 
 /* App.vue ---------------------------------------------------------------------------------------------------------- */
 
@@ -497,7 +500,7 @@ body { font-family: var(--body-font-family, sans-serif); }
 
 .comics-range-page__comic {}
 
-.comic {
+.comics-range-page .comic {
     position: relative;
     z-index: 0;
     pointer-events: none;
@@ -569,46 +572,226 @@ body { font-family: var(--body-font-family, sans-serif); }
     background-size: contain;
 }
 
-.comic__book {
+.comics-range-page .comic__book {
     --book-width: 270px;
 }
 
-.comic__description {
+.comics-range-page .comic__description {
     padding: 13px 10px;
 }
 
-.comic__type, .comic__title {
+.comics-range-page .comic__type, .comics-range-page .comic__title {
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
 }
 
-.comic__type {
+.comics-range-page .comic__type {
     font-family: "PT Sans Narrow", var(--body-font-family, sans-serif);
     text-transform: uppercase;
     color: #2067fb;
 }
 
-.comic__title {
+.comics-range-page .comic__title {
     min-height: 45px;
     margin-top: 8px;
     color: #1a1a1a;
 }
 
-.comic__link {
+.comics-range-page .comic__link {
     pointer-events: auto;
 }
 
-.comic__link:hover {
+.comics-range-page .comic__link:hover {
     color: #747474;
 }
 
-.comic__link::before {
+.comics-range-page .comic__link::before {
     content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
 }
+
+/* pages/Comic.vue -------------------------------------------------------------------------------------------------- */
+
+.comic-page {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.comic-page__container {}
+
+.comic-page .comic {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.comic-page .comic__images {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.comic-page .comic__image {
+    width: 370px;
+    max-width: 370px;
+}
+
+.comic-page .comic__description {}
+
+.comic-page .comic__header {
+    padding-bottom: 25px;
+}
+
+.comic-page .comic__title, .comic-page .comic__type {
+    font-family: "PT Sans Narrow", var(--body-font-family, sans-serif);
+    font-weight: 700;
+}
+
+.comic-page .comic__title {
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 1;
+}
+
+.comic-page .comic__type {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #2067fb;
+}
+
+.comic-page .comic__authors, .comic-page .comic__characters, .comic-page .comic__comics { padding-bottom: 40px; }
+
+.comic-page .authors-comic {}
+
+.comic-page .authors-comic__title, .comic-page .characters-comic__title, .comic-page .comics-comic__title {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-family: "PT Sans Narrow", var(--body-font-family, sans-serif);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    border-bottom: 1px solid #ededed;
+}
+
+.comic-page .authors-comic__list, .comic-page .characters-comic__list, .comic-page .comics-comic__list {
+    display: grid;
+    gap: 15px 30px;
+}
+
+.comic-page .authors-comic__list, .comic-page .characters-comic__list { grid-template-columns: repeat(auto-fill, 270px); }
+
+.comic-page .authors-comic__item, .comic-page .characters-comic__item, .comic-page .comics-comic__item {
+    position: relative;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.comic-page .authors-comic__item, .comic-page .characters-comic__item {
+    display: flex;
+    align-items: center;
+}
+
+.comic-page .authors-comic__item {
+    --author-color: lightgray;
+    gap: 30px;
+    line-height: 1.3;
+}
+
+.comic-page .authors-comic__item:before {
+    content: "";
+    display: block;
+    flex: 0 0 auto;
+    width: 70px;
+    height: 70px;
+    background-color: var(--author-color, lightgray);
+    background-image: url("/src/assets/images/user.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 9999px;
+}
+
+.comic-page .authors-comic__description {}
+
+.comic-page .authors-comic__link, .comic-page .characters-comic__link, .comic-page .comics-comic__link {
+    font-family: "PT Sans Narrow", var(--body-font-family, sans-serif);
+    font-size: 18px;
+    font-weight: 700;
+    pointer-events: auto;
+    transition: color 300ms;
+}
+
+.comic-page .authors-comic__link:hover, .comic-page .characters-comic__link:hover,
+.comic-page .comics-comic__link:hover {
+    color: #747474;
+}
+
+.comic-page .authors-comic__link::before, .comic-page .characters-comic__link::before,
+.comic-page .comics-comic__link::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.comic-page .authors-comic__subtext {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.comic-page .comic__characters {}
+
+.comic-page .characters-comic {}
+
+.comic-page .characters-comic__title {}
+
+.comic-page .characters-comic__list {}
+
+.comic-page .characters-comic__item {}
+
+.comic-page .characters-comic__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 70px;
+    height: 70px;
+    background-image: url("https://test.bubble.ru/build/assets/bg-hero-min.6536dee8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comic-page .characters-comic__image {
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.comic-page .characters-comic__description {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.comic-page .characters-comic__link { line-height: 24px; }
+
+.comic-page .comic__comics {}
+
+.comic-page .comics-comic {}
+
+.comic-page .comics-comic__title {}
+
+.comic-page .comics-comic__list { grid-template-columns: repeat(auto-fill, 180px); }
+
+.comic-page .comics-comic__item {}
+
+.comic-page .comics-comic__image { width: 100%; }
+
+.comic-page .comics-comic__link { line-height: 1.3; }
 
 /* pages/BubbleUniverseMap.vue -------------------------------------------------------------------------------------- */
 
