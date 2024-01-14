@@ -702,12 +702,15 @@ body {
     line-height: 1.3;
 }
 
-.comic-page .authors-comic__item:before {
-    content: "";
-    display: block;
+.comic-page .authors-comic__item:before, .comic-page .characters-comic__avatar {
     flex: 0 0 auto;
     width: 70px;
     height: 70px;
+}
+
+.comic-page .authors-comic__item:before {
+    content: "";
+    display: block;
     background-color: var(--author-color, lightgray);
     background-image: url("/src/assets/images/user.svg");
     background-position: center;
@@ -758,8 +761,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 70px;
-    height: 70px;
     background-image: url("https://test.bubble.ru/build/assets/bg-hero-min.6536dee8.jpg");
     background-position: center;
     background-repeat: no-repeat;

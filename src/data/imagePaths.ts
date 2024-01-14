@@ -4,7 +4,11 @@ const pathComics: string = `${path}/comics`;
 const pathRanges: string = `${path}/ranges`;
 
 const imagePaths: Record<string, Record<string, string>> = {
-    characters: {_: pathCharacters, dmitriiDubin: `${pathCharacters}/dmitrii_dubin`},
+    characters: {
+        _                : pathCharacters,
+        dmitriiDubin     : `${pathCharacters}/dmitrii_dubin`,
+        igorGromMaiorGrom: `${pathCharacters}/igor_grom_maior_grom`
+    },
     comics    : {
         _                          : pathComics,
         allies                     : `${pathComics}/allies`,

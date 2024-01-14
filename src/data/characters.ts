@@ -624,11 +624,13 @@ const characters: Characters = {
         linkToBubbleImage  : "https://static.bubble.ru/character/image/08952eaf2223502fee5263225059fbc9.png",
         linkToBubbleWebsite: "https://bubble.ru/characters/114-nika-chaikina"
     },
-    character_igor_grom                  : {
-        fullName           : "Игорь Гром",
-        linkToBubbleAvatar : "https://static.bubble.ru/character/avatar/0e20e0f9a1b97e86d9793a9a3dae77c3__168x168.png.webp",
-        linkToBubbleImage  : "https://static.bubble.ru/character/image/1793001b690d994799d93c0cc6629e5b.png",
-        linkToBubbleWebsite: "https://bubble.ru/characters/115-igor-grom"
+    character_igor_grom_maior_grom       : {
+        fullName               : "Игорь Гром (Майор Гром)",
+        images                 : {small: `${paths.igorGromMaiorGrom}/igor-grom-maior-grom-128x170.webp`},
+        linkToBubbleAvatar     : "https://static.bubble.ru/character/avatar/0e20e0f9a1b97e86d9793a9a3dae77c3__168x168.png.webp",
+        linkToBubbleImage      : "https://static.bubble.ru/character/image/1793001b690d994799d93c0cc6629e5b.png",
+        linkToBubbleWebsite    : "https://bubble.ru/characters/115-igor-grom",
+        linkToTestBubbleWebsite: "https://test.bubble.ru/characters/igor-grom-maior-grom"
     },
     character_alyona_kuznetsova          : {
         fullName           : "Алёна Кузнецова",
