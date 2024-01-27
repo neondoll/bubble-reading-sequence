@@ -169,16 +169,6 @@ const comicGromDifficultChildhoodRisingOfAnubis: Comic = {
                  comicAuthors.artyomGabrelyanov.screenwriter],
     releaseAt : {year: 2022, month: 12, day: 16}
 };
-const comicHeroesAndMonsters: Comic = {
-    name      : "Герои и монстры",
-    type      : "single",
-    coverFile : {url: `${paths._}/heroes-and-monsters.jpg`, width: 1004, height: 1536},
-    ranges    : ["range_crossovers", "range_plague_doctor", "range_mir", "range_major_igor_grom"],
-    characters: ["character_valeriya_makarova", "character_mir"],
-    authors   : [comicAuthors.annaAntoshchenkova.colorist, comicAuthors.evgeniyBornyakov.artist,
-                 comicAuthors.evgenyEronin.screenwriter, comicAuthors.romanKotkov.screenwriter],
-    releaseAt : {year: 2023, month: 1, day: 31}
-};
 const comicAlliesSpecialIdyll: Comic = {
     name      : "Союзники. Спецвыпуск. Идиллия",
     type      : "single",
@@ -2804,7 +2794,7 @@ const comics: Comics = {
         authors        : [comicAuthors.andreyVasin.artist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.natalyaNesterenko.colorist, comicAuthors.ninaVakueva.colorist],
         includingComics: ["comic_chronicles_of_monk_storm_of_berlin"],
-        nextComics     : ["comic_major_grom_like_in_war_1", "comic_major_grom_stories"],
+        nextComics     : ["comic_major_grom_like_in_war_1", "comic_major_grom_like_in_war"],
         releaseAt      : {year: 2015, month: 5, day: 1},
         show           : false
     },
@@ -6138,7 +6128,7 @@ const comics: Comics = {
         nextComics     : ["comic_major_grom_chance_printed", "comic_igor_grom_book_1", "comic_igor_grom_volume_1",
                           "comic_major_grom_1939", "comic_major_grom_hero_forever",
                           "comic_major_grom_childrens_games_coloring_printed",
-                          "comic_grom_difficult_childhood_rising_of_anubis_printed"],
+                          "comic_grom_difficult_childhood_rising_of_anubis_printed", "comic_major_grom_stories"],
         releaseAt      : {year: 2017, month: 6, day: 1},
         show           : true
     },
@@ -11445,8 +11435,8 @@ const comics: Comics = {
                           comicAuthors.kirillKutuzov.screenwriter, comicAuthors.olegChudakov.artist],
         containedComics: ["comic_major_grom_like_in_war_1", "comic_major_grom_like_in_war_2",
                           "comic_major_grom_like_in_war_3", "comic_major_grom_like_in_war_4"],
-        previousComics : ["comic_major_grom_stories"],
-        nextComics     : ["comic_major_grom_volume_1"],
+        previousComics : ["comic_monk_and_major_grom_storm_of_berlin"],
+        nextComics     : ["comic_major_grom_volume_1", "comic_caligari_datura"],
         releaseAt      : {year: 2020, month: 2, day: 23},
         show           : true
     },
@@ -11776,6 +11766,7 @@ const comics: Comics = {
         authors        : [comicAuthors.anastasiaKim.screenwriter, comicAuthors.mariaVasilyeva.colorist,
                           comicAuthors.nataliaVorontsova.screenwriter, comicAuthors.natalyaZaidova.artist],
         includingComics: ["comic_plague_doctor_volume_1"],
+        previousComics : ["comic_winter_special_plague_doctor"],
         nextComics     : ["comic_plague_doctor_2"],
         releaseAt      : {year: 2020, month: 5, day: 4},
         show           : false
@@ -12644,23 +12635,6 @@ const comics: Comics = {
         releaseAt      : {year: 2020, month: 11, day: 29},
         show           : false
     },
-    comic_plague_doctor_volume_1                                      : {
-        name           : "Чумной Доктор. Том 1: Капкан",
-        number         : "1",
-        type           : "book",
-        coverFile      : {url: `${paths.plagueDoctor}/plague-doctor-volume-1-trap.jpg`, width: 1339, height: 2048},
-        ranges         : ["range_plague_doctor"],
-        characters     : ["character_oleg_volkov", "character_sergei_razumovskii", "character_valeriya_makarova",
-                          "character_kirill_makarov"],
-        authors        : [comicAuthors.anastasiaKim.screenwriter, comicAuthors.victoriaVinogradova.colorist,
-                          comicAuthors.mariaVasilyeva.colorist, comicAuthors.nataliaVorontsova.screenwriter,
-                          comicAuthors.natalyaZaidova.artist],
-        containedComics: ["comic_plague_doctor_1", "comic_plague_doctor_2", "comic_plague_doctor_3",
-                          "comic_plague_doctor_4"],
-        nextComics     : ["comic_plague_doctor_volume_2"],
-        releaseAt      : {year: 2020, month: 12},
-        show           : true
-    },
     comic_tagar_volume_3_chapter_1                                    : {
         name           : "Тагар. Том 3, глава 1",
         number         : "1",
@@ -12766,6 +12740,24 @@ const comics: Comics = {
         previousComics : ["comic_tagar_volume_2"],
         nextComics     : ["comic_tagar_volume_4"],
         releaseAt      : {year: 2020, month: 12, day: 9},
+        show           : true
+    },
+    comic_plague_doctor_volume_1                                      : {
+        name           : "Чумной Доктор. Том 1: Капкан",
+        number         : "1",
+        type           : "book",
+        coverFile      : {url: `${paths.plagueDoctor}/plague-doctor-volume-1-trap.jpg`, width: 1339, height: 2048},
+        ranges         : ["range_plague_doctor"],
+        characters     : ["character_oleg_volkov", "character_sergei_razumovskii", "character_valeriya_makarova",
+                          "character_kirill_makarov"],
+        authors        : [comicAuthors.anastasiaKim.screenwriter, comicAuthors.victoriaVinogradova.colorist,
+                          comicAuthors.mariaVasilyeva.colorist, comicAuthors.nataliaVorontsova.screenwriter,
+                          comicAuthors.natalyaZaidova.artist],
+        containedComics: ["comic_plague_doctor_1", "comic_plague_doctor_2", "comic_plague_doctor_3",
+                          "comic_plague_doctor_4"],
+        previousComics : ["comic_winter_special_plague_doctor"],
+        nextComics     : ["comic_plague_doctor_volume_2"],
+        releaseAt      : {year: 2020, month: 12, day: 14},
         show           : true
     },
     comic_chosen_of_moon_6                                            : {
@@ -12919,8 +12911,8 @@ const comics: Comics = {
         authors        : [comicAuthors.anastasiaTroitskaya.artist, comicAuthors.nataliaVorontsova.screenwriter,
                           comicAuthors.romanKotkov.screenwriter, comicAuthors.tayaMakarevich.colorist],
         includingComics: ["comic_plague_doctor_volume_3"],
-        previousComics : ["comic_plague_doctor_10"],
-        nextComics     : ["comic_major_igor_grom_x_plague_doctor_11"],
+        previousComics : ["comic_plague_doctor_special_altan"],
+        nextComics     : ["comic_plague_doctor_1", "comic_plague_doctor_volume_1"],
         releaseAt      : {year: 2021, month: 1, day: 13},
         show           : false
     },
@@ -13193,7 +13185,7 @@ const comics: Comics = {
                           comicAuthors.romanKotkov.screenwriter, comicAuthors.tayaMakarevich.artist],
         includingComics: ["comic_igor_grom_volume_10"],
         previousComics : ["comic_igor_grom_49"],
-        nextComics     : ["comic_caligari_datura", "comic_major_igor_grom_1", "comic_rivers_there_is_no_fear_1"],
+        nextComics     : ["comic_caligari_datura", "comic_rivers_there_is_no_fear_1"],
         releaseAt      : {year: 2021, month: 5, day: 10},
         show           : false
     },
@@ -13298,7 +13290,7 @@ const comics: Comics = {
         containedComics: ["comic_igor_grom_45", "comic_igor_grom_46", "comic_igor_grom_47", "comic_igor_grom_48",
                           "comic_igor_grom_49", "comic_igor_grom_50"],
         previousComics : ["comic_igor_grom_volume_9"],
-        nextComics     : ["comic_major_igor_grom_volume_1", "comic_caligari_datura"],
+        nextComics     : ["comic_caligari_datura", "comic_major_grom_stories"],
         releaseAt      : {year: 2021, month: 6, day: 18},
         show           : true
     },
@@ -13348,7 +13340,7 @@ const comics: Comics = {
         authors        : [comicAuthors.alexeyVolkov.screenwriter, comicAuthors.evgenyEronin.screenwriter,
                           comicAuthors.natalyaNesterenko.colorist, comicAuthors.olegChudakov.artist],
         includingComics: ["comic_major_igor_grom_volume_1"],
-        previousComics : ["comic_igor_grom_50"],
+        previousComics : ["comic_special_prokopenko_grom_at_sunrise"],
         nextComics     : ["comic_major_igor_grom_2"],
         releaseAt      : {year: 2021, month: 7, day: 2},
         show           : false
@@ -13685,7 +13677,7 @@ const comics: Comics = {
                           comicAuthors.nataliaVorontsova.screenwriter, comicAuthors.tayaMakarevich.artist],
         includingComics: ["comic_plague_doctor_volume_3"],
         previousComics : ["comic_plague_doctor_9"],
-        nextComics     : ["comic_winter_special_plague_doctor"],
+        nextComics     : ["comic_major_igor_grom_x_plague_doctor_11"],
         releaseAt      : {year: 2021, month: 9, day: 29},
         show           : false
     },
@@ -13752,7 +13744,7 @@ const comics: Comics = {
                           comicAuthors.olegChudakov.artist],
         containedComics: ["comic_major_igor_grom_1", "comic_major_igor_grom_2", "comic_major_igor_grom_3",
                           "comic_major_igor_grom_4"],
-        previousComics : ["comic_igor_grom_volume_10"],
+        previousComics : ["comic_special_prokopenko_grom_at_sunrise"],
         nextComics     : ["comic_major_igor_grom_volume_2"],
         releaseAt      : {year: 2021, month: 10, day: 7},
         show           : true
@@ -13843,7 +13835,7 @@ const comics: Comics = {
         characters     : ["character_igor_grom_maior_grom", "character_sergei_razumovskii"],
         authors        : [comicAuthors.anastasiaKim.artist_screenwriter, comicAuthors.ladaAkishina.colorist],
         includingComics: ["comic_major_igor_grom_x_plague_doctor_volume_4"],
-        previousComics : ["comic_winter_special_plague_doctor", "comic_major_igor_grom_8"],
+        previousComics : ["comic_plague_doctor_10", "comic_major_igor_grom_8"],
         nextComics     : ["comic_major_igor_grom_x_plague_doctor_12"],
         releaseAt      : {year: 2021, month: 10, day: 30},
         show           : false
@@ -13857,7 +13849,7 @@ const comics: Comics = {
         authors        : [comicAuthors.ekaterinaGrishchenko.artist, comicAuthors.nataliaVorontsova.screenwriter],
         includingComics: ["comic_major_grom_stories"],
         previousComics : ["comic_major_grom_24", "comic_major_grom_volume_4"],
-        nextComics     : ["comic_major_grom_25", "comic_major_grom_volume_5"],
+        nextComics     : ["comic_major_grom_25", "comic_major_grom_volume_5", "comic_plague_doctor_special_altan"],
         releaseAt      : {year: 2021, month: 10, day: 30},
         show           : false
     },
@@ -13986,6 +13978,8 @@ const comics: Comics = {
         authors        : [comicAuthors.evgeniyBornyakov.artist, comicAuthors.kirillKutuzov.screenwriter,
                           comicAuthors.natalyaMartinovich.colorist],
         includingComics: ["comic_major_grom_stories"],
+        previousComics : ["comic_caligari_datura"],
+        nextComics     : ["comic_major_igor_grom_1", "comic_major_igor_grom_volume_1"],
         releaseAt      : {year: 2021, month: 12},
         show           : false
     },
@@ -14403,7 +14397,7 @@ const comics: Comics = {
         containedComics: ["comic_major_igor_grom_x_plague_doctor_11", "comic_major_igor_grom_x_plague_doctor_12",
                           "comic_major_igor_grom_x_plague_doctor_13", "comic_major_igor_grom_x_plague_doctor_14"],
         previousComics : ["comic_plague_doctor_volume_3", "comic_major_igor_grom_volume_2"],
-        nextComics     : ["comic_major_igor_grom_volume_3", "comic_plague_doctor_volume_5"],
+        nextComics     : ["comic_plague_doctor_volume_5", "comic_major_igor_grom_volume_3"],
         releaseAt      : {year: 2022, month: 3, day: 31},
         show           : true
     },
@@ -14479,8 +14473,7 @@ const comics: Comics = {
         },
         ranges         : ["range_major_igor_grom"],
         characters     : ["character_dmitrii_dubin", "character_igor_grom_maior_grom",
-                          "character_valentin_kaligari_gashparov",
-                          "character_irina_sharlotta"],
+                          "character_valentin_kaligari_gashparov", "character_irina_sharlotta"],
         authors        : [comicAuthors.alexeyEfremov.artist, comicAuthors.alexeyZamsky.screenwriter,
                           comicAuthors.evgenyEronin.screenwriter, comicAuthors.natalyaMartinovich.colorist],
         includingComics: ["comic_major_igor_grom_volume_3"],
@@ -14681,8 +14674,7 @@ const comics: Comics = {
         },
         ranges         : ["range_major_igor_grom"],
         characters     : ["character_dmitrii_dubin", "character_igor_grom_maior_grom",
-                          "character_valentin_kaligari_gashparov",
-                          "character_irina_sharlotta"],
+                          "character_valentin_kaligari_gashparov", "character_irina_sharlotta"],
         authors        : [comicAuthors.alexeyEfremov.artist, comicAuthors.alexeyZamsky.screenwriter,
                           comicAuthors.evgenyEronin.screenwriter, comicAuthors.natalyaMartinovich.colorist],
         includingComics: ["comic_major_igor_grom_volume_3"],
@@ -14854,7 +14846,7 @@ const comics: Comics = {
                           comicAuthors.romanKotkov.screenwriter, comicAuthors.tayaMakarevich.artist],
         includingComics: ["comic_mir_volume_7"],
         previousComics : ["comic_mir_13"],
-        nextComics     : ["comic_heroes_and_monsters_electronic"],
+        nextComics     : ["comic_heroes_and_monsters"],
         releaseAt      : {year: 2022, month: 8, day: 3},
         show           : false
     },
@@ -14960,7 +14952,7 @@ const comics: Comics = {
                           comicAuthors.tayaMakarevich.artist],
         includingComics: ["comic_plague_doctor_volume_5"],
         previousComics : ["comic_plague_doctor_19"],
-        nextComics     : ["comic_heroes_and_monsters_electronic"],
+        nextComics     : ["comic_plague_doctor_21"],
         releaseAt      : {year: 2022, month: 8, day: 31},
         show           : false
     },
@@ -15156,7 +15148,7 @@ const comics: Comics = {
         characters     : ["character_valeriya_makarova"],
         authors        : [comicAuthors.anastasiaKim.artist_screenwriter, comicAuthors.ekaterinaGrishchenko.artist],
         includingComics: ["comic_plague_doctor_volume_6"],
-        previousComics : ["comic_heroes_and_monsters_electronic"],
+        previousComics : ["comic_plague_doctor_20"],
         nextComics     : ["comic_plague_doctor_22"],
         releaseAt      : {year: 2022, month: 9, day: 30},
         show           : false
@@ -15185,7 +15177,7 @@ const comics: Comics = {
                           comicAuthors.tayaMakarevich.artist],
         containedComics: ["comic_mir_13", "comic_mir_14"],
         previousComics : ["comic_mir_volume_6"],
-        nextComics     : ["comic_heroes_and_monsters_printed"],
+        nextComics     : ["comic_heroes_and_monsters"],
         releaseAt      : {year: 2022, month: 10, day: 1},
         show           : true
     },
@@ -15207,7 +15199,7 @@ const comics: Comics = {
         containedComics: ["comic_plague_doctor_15", "comic_plague_doctor_16", "comic_plague_doctor_17",
                           "comic_plague_doctor_18", "comic_plague_doctor_19", "comic_plague_doctor_20"],
         previousComics : ["comic_major_igor_grom_x_plague_doctor_volume_4"],
-        nextComics     : ["comic_heroes_and_monsters_printed"],
+        nextComics     : ["comic_plague_doctor_volume_6"],
         releaseAt      : {year: 2022, month: 10, day: 1},
         show           : true
     },
@@ -15288,7 +15280,8 @@ const comics: Comics = {
         authors        : [comicAuthors.jamilyaZulpikarova.artist, comicAuthors.karinaAkhmetvalieva.colorist,
                           comicAuthors.nataliaVorontsova.screenwriter],
         includingComics: ["comic_major_grom_stories"],
-        previousComics : ["comic_igor_grom_50", "comic_igor_grom_volume_10"],
+        previousComics : ["comic_major_grom_like_in_war", "comic_igor_grom_50", "comic_igor_grom_volume_10"],
+        nextComics     : ["comic_special_prokopenko_grom_at_sunrise"],
         releaseAt      : {year: 2022, month: 10, day: 24},
         show           : false
     },
@@ -15423,7 +15416,7 @@ const comics: Comics = {
                           comicAuthors.kirillKutuzov.screenwriter, comicAuthors.mariaVasilyeva.colorist],
         includingComics: ["comic_major_igor_grom_volume_4"],
         previousComics : ["comic_major_igor_grom_15"],
-        nextComics     : ["comic_heroes_and_monsters_electronic"],
+        nextComics     : ["comic_major_igor_grom_special_duty"],
         releaseAt      : {year: 2022, month: 11, day: 25},
         show           : false
     },
@@ -15483,16 +15476,18 @@ const comics: Comics = {
         show           : false
     },
     comic_major_igor_grom_special_duty                                : {
-        name          : "Майор Игорь Гром. Спецвыпуск. Долг",
-        type          : "single",
-        coverFile     : {url: `${paths.majorIgorGrom}/major-igor-grom-special-duty.jpg`, width: 1339, height: 2048},
-        ranges        : ["range_major_igor_grom"],
-        characters    : ["character_igor_grom_maior_grom"],
-        authors       : [comicAuthors.annaAntoshchenkova.colorist, comicAuthors.evgeniyBornyakov.artist,
-                         comicAuthors.evgenyEronin.screenwriter, comicAuthors.romanKotkov.screenwriter],
-        previousComics: ["comic_major_igor_grom_27"],
-        releaseAt     : {year: 2022, month: 12, day: 6},
-        show          : true
+        name           : "Майор Игорь Гром. Спецвыпуск. Долг",
+        type           : "single",
+        coverFile      : {url: `${paths.majorIgorGrom}/major-igor-grom-special-duty.jpg`, width: 1339, height: 2048},
+        ranges         : ["range_major_igor_grom"],
+        characters     : ["character_igor_grom_maior_grom"],
+        authors        : [comicAuthors.annaAntoshchenkova.colorist, comicAuthors.evgeniyBornyakov.artist,
+                          comicAuthors.evgenyEronin.screenwriter, comicAuthors.romanKotkov.screenwriter],
+        includingComics: ["comic_major_igor_grom_villainy_rule"],
+        previousComics : ["comic_major_igor_grom_16"],
+        nextComics     : ["comic_heroes_and_monsters"],
+        releaseAt      : {year: 2022, month: 12, day: 6},
+        show           : true
     },
     comic_grom_difficult_childhood_rising_of_anubis_electronic        : {
         ...comicGromDifficultChildhoodRisingOfAnubis,
@@ -15620,18 +15615,19 @@ const comics: Comics = {
         releaseAt      : {year: 2023, month: 1, day: 28},
         show           : true
     },
-    comic_heroes_and_monsters_electronic                              : {
-        ...comicHeroesAndMonsters,
-        includingComics: ["comic_heroes_and_monsters_printed"],
-        previousComics : ["comic_mir_14", "comic_plague_doctor_20", "comic_major_igor_grom_16"],
-        nextComics     : ["comic_plague_doctor_21", "comic_major_igor_grom_17", "comic_mir_15"],
-        show           : false
-    },
-    comic_heroes_and_monsters_printed                                 : {
-        ...comicHeroesAndMonsters,
-        containedComics: ["comic_heroes_and_monsters_electronic"],
-        previousComics : ["comic_mir_volume_7", "comic_plague_doctor_volume_5", "comic_major_igor_grom_volume_4"],
-        nextComics     : ["comic_plague_doctor_volume_6", "comic_mir_volume_8", "comic_major_igor_grom_volume_5"],
+    comic_heroes_and_monsters                                         : {
+        name           : "Герои и монстры",
+        type           : "single",
+        coverFile      : {url: `${paths._}/heroes-and-monsters.jpg`, width: 1004, height: 1536},
+        ranges         : ["range_crossovers", "range_plague_doctor", "range_mir", "range_major_igor_grom"],
+        characters     : ["character_valeriya_makarova", "character_mir"],
+        authors        : [comicAuthors.annaAntoshchenkova.colorist, comicAuthors.evgeniyBornyakov.artist,
+                          comicAuthors.evgenyEronin.screenwriter, comicAuthors.romanKotkov.screenwriter],
+        includingComics: ["comic_major_igor_grom_villainy_rule"],
+        previousComics : ["comic_mir_14", "comic_mir_volume_7", "comic_major_igor_grom_special_duty",
+                          "comic_plague_doctor_29", "comic_plague_doctor_volume_7"],
+        nextComics     : ["comic_major_igor_grom_17", "comic_mir_15", "comic_mir_volume_8", "comic_plague_doctor_30"],
+        releaseAt      : {year: 2023, month: 1, day: 31},
         show           : true
     },
     comic_bubble_triptych_1                                           : {
@@ -15676,7 +15672,7 @@ const comics: Comics = {
         containedComics: ["comic_major_igor_grom_13", "comic_major_igor_grom_14", "comic_major_igor_grom_15",
                           "comic_major_igor_grom_16"],
         previousComics : ["comic_major_igor_grom_volume_3"],
-        nextComics     : ["comic_heroes_and_monsters_printed"],
+        nextComics     : ["comic_major_igor_grom_volume_5"],
         releaseAt      : {year: 2023, month: 2, day: 4},
         show           : true
     },
@@ -15692,7 +15688,7 @@ const comics: Comics = {
         ranges         : ["range_plague_doctor"],
         containedComics: ["comic_plague_doctor_21", "comic_plague_doctor_22", "comic_plague_doctor_23",
                           "comic_plague_doctor_24"],
-        previousComics : ["comic_heroes_and_monsters_printed"],
+        previousComics : ["comic_plague_doctor_volume_5"],
         nextComics     : ["comic_plague_doctor_volume_7"],
         releaseAt      : {year: 2023, month: 2, day: 4},
         show           : true
@@ -15771,7 +15767,7 @@ const comics: Comics = {
         authors        : [comicAuthors.anastasiaTroitskaya.colorist, comicAuthors.evgenyEronin.screenwriter,
                           comicAuthors.egorGerasimov.artist],
         includingComics: ["comic_major_igor_grom_volume_5"],
-        previousComics : ["comic_heroes_and_monsters_electronic"],
+        previousComics : ["comic_heroes_and_monsters"],
         nextComics     : ["comic_major_igor_grom_18"],
         releaseAt      : {year: 2023, month: 2, day: 22},
         show           : false
@@ -15815,7 +15811,7 @@ const comics: Comics = {
                           comicAuthors.valentinPotkin.artist, comicAuthors.natalyaMartinovich.colorist,
                           comicAuthors.romanKotkov.screenwriter, comicAuthors.tayaMakarevich.artist],
         includingComics: ["comic_mir_volume_8"],
-        previousComics : ["comic_heroes_and_monsters_electronic"],
+        previousComics : ["comic_heroes_and_monsters"],
         nextComics     : ["comic_mir_16"],
         releaseAt      : {year: 2023, month: 3, day: 3},
         show           : false
@@ -15832,7 +15828,7 @@ const comics: Comics = {
                           comicAuthors.natalyaMartinovich.colorist, comicAuthors.romanKotkov.screenwriter,
                           comicAuthors.tayaMakarevich.artist],
         containedComics: ["comic_mir_15", "comic_mir_16", "comic_mir_17"],
-        previousComics : ["comic_heroes_and_monsters_printed"],
+        previousComics : ["comic_heroes_and_monsters"],
         nextComics     : ["comic_mir_18"],
         releaseAt      : {year: 2023, month: 3, day: 6},
         show           : true
@@ -16218,7 +16214,7 @@ const comics: Comics = {
                           comicAuthors.evgenyEronin.screenwriter, comicAuthors.egorGerasimov.artist],
         containedComics: ["comic_major_igor_grom_17", "comic_major_igor_grom_18", "comic_major_igor_grom_19",
                           "comic_major_igor_grom_20"],
-        previousComics : ["comic_heroes_and_monsters_printed"],
+        previousComics : ["comic_major_igor_grom_volume_4"],
         nextComics     : ["comic_major_igor_grom_volume_6"],
         releaseAt      : {year: 2023, month: 5, day: 23},
         show           : true
@@ -16418,7 +16414,7 @@ const comics: Comics = {
                           comicAuthors.karinaAkhmetvalieva.colorist],
         includingComics: ["comic_plague_doctor_volume_7"],
         previousComics : ["comic_plague_doctor_28"],
-        nextComics     : ["comic_plague_doctor_30"],
+        nextComics     : ["comic_heroes_and_monsters"],
         releaseAt      : {year: 2023, month: 6, day: 30},
         show           : false
     },
@@ -16448,7 +16444,7 @@ const comics: Comics = {
         containedComics: ["comic_plague_doctor_25", "comic_plague_doctor_26", "comic_plague_doctor_27",
                           "comic_plague_doctor_28", "comic_plague_doctor_29"],
         previousComics : ["comic_plague_doctor_volume_6"],
-        nextComics     : ["comic_plague_doctor_30"],
+        nextComics     : ["comic_heroes_and_monsters", "comic_butterfly_catcher"],
         releaseAt      : {year: 2023, month: 7, day: 4},
         show           : true
     },
@@ -16550,9 +16546,20 @@ const comics: Comics = {
         characters    : ["character_valeriya_makarova"],
         authors       : [comicAuthors.anastasiaChebykina.colorist, comicAuthors.irinaIvanova.artist,
                          comicAuthors.nataliaVorontsova.screenwriter],
-        previousComics: ["comic_plague_doctor_29", "comic_plague_doctor_volume_7"],
-        nextComics    : ["comic_apple_saved_electronic", "comic_apple_saved_printed"],
+        previousComics: ["comic_heroes_and_monsters"],
+        nextComics    : ["comic_plague_doctor_31", "comic_apple_saved_electronic", "comic_apple_saved_printed"],
         releaseAt     : {year: 2023, month: 7, day: 31},
+        show          : true
+    },
+    comic_plague_doctor_special_altan                                 : {
+        name          : "Чумной Доктор. Спецвыпуск. Алтан",
+        type          : "book",
+        coverFile     : {url: `${paths.plagueDoctor}/plague-doctor-special-altan.webp`, width: 1339, height: 2048},
+        ranges        : ["range_plague_doctor"],
+        authors       : [comicAuthors.anastasiaKim.screenwriter, comicAuthors.victoriaVinogradova.artist],
+        previousComics: ["comic_special_volkov_inferno"],
+        nextComics    : ["comic_winter_special_plague_doctor"],
+        releaseAt     : {year: 2023, month: 8, day: 1},
         show          : true
     },
     comic_major_igor_grom_23                                          : {
@@ -16593,6 +16600,40 @@ const comics: Comics = {
         nextComics     : ["comic_exlibrium_second_life_41"],
         releaseAt      : {year: 2023, month: 8, day: 29},
         show           : false
+    },
+    comic_plague_doctor_31                                            : {
+        name          : "Чумной Доктор №31 Чужой среди своих, часть 2",
+        number        : "31",
+        type          : "single",
+        coverFile     : {
+            url   : `${paths.plagueDoctor}/plague-doctor-31-stranger-among-our-own-part-2.webp`,
+            width : 1339,
+            height: 2048
+        },
+        ranges        : ["range_plague_doctor"],
+        authors       : [comicAuthors.irinaIvanova.artist, comicAuthors.ladaAkishina.colorist,
+                         comicAuthors.mariaVasilyeva.colorist, comicAuthors.nataliaVorontsova.screenwriter],
+        previousComics: ["comic_plague_doctor_30"],
+        nextComics    : ["comic_plague_doctor_32"],
+        releaseAt     : {year: 2023, month: 8, day: 31},
+        show          : true
+    },
+    comic_plague_doctor_32                                            : {
+        name     : "Чумной Доктор №32 Чужой среди своих, часть 3",
+        number   : "32",
+        type     : "single",
+        coverFile: {
+            url   : ""/*`${paths.plagueDoctor}/plague-doctor-31-stranger-among-our-own-part-2.webp`*/,
+            width : 1339,
+            height: 2048
+        },
+        ranges   : ["range_plague_doctor"],
+        /*authors       : [comicAuthors.irinaIvanova.artist, comicAuthors.ladaAkishina.colorist,
+                         comicAuthors.mariaVasilyeva.colorist, comicAuthors.nataliaVorontsova.screenwriter],*/
+        previousComics: ["comic_plague_doctor_31"],
+        nextComics    : ["comic_plague_doctor_33"],
+        releaseAt     : {year: 2023},
+        show          : true
     },
     comic_major_igor_grom_24                                          : {
         name           : "Майор Игорь Гром #24 Правда, часть 4",
@@ -16679,7 +16720,7 @@ const comics: Comics = {
         includingComics: ["comic_major_igor_grom_volume_6"],
         previousComics : ["comic_major_igor_grom_24"],
         nextComics     : ["comic_major_igor_grom_26"],
-        releaseAt      : {year: 2023, month: 10, day: 25},
+        releaseAt      : {year: 2023, month: 10, day: 22},
         show           : false
     },
     comic_rivers_there_is_no_fear                                     : {
@@ -16691,14 +16732,12 @@ const comics: Comics = {
                           comicAuthors.mariaVasilyeva.colorist, comicAuthors.natalyaZaidova.artist],
         containedComics: ["comic_rivers_there_is_no_fear_1", "comic_rivers_there_is_no_fear_2",
                           "comic_rivers_there_is_no_fear_3", "comic_rivers_there_is_no_fear_4"],
-        previousComics : ["comic_major_grom_stories"],
         nextComics     : ["comic_igor_grom_volume_1"],
         releaseAt      : {year: 2023, month: 10, day: 28},
         show           : true
     },
     // Серая Гончая. Том 1. №5 - 3 ноя 2023
-    // Тагар. Том 5. №2 - 10 ноя 2023
-    comic_major_igor_grom_volume_6      : {
+    comic_major_igor_grom_volume_6: {
         name           : "Майор Игорь Гром. Том 6. Правда",
         number         : "6",
         type           : "book",
@@ -16711,10 +16750,11 @@ const comics: Comics = {
         containedComics: ["comic_major_igor_grom_21", "comic_major_igor_grom_22", "comic_major_igor_grom_23",
                           "comic_major_igor_grom_24", "comic_major_igor_grom_25"],
         previousComics : ["comic_major_igor_grom_volume_5"],
-        nextComics     : ["comic_major_igor_grom_26"],
-        releaseAt      : {year: 2023, month: 11, day: 10},
+        nextComics     : ["comic_major_igor_grom_villainy_rule", "comic_major_grom_stories"],
+        releaseAt      : {year: 2023, month: 11, day: 6},
         show           : true
     },
+    // Тагар. Том 5. №2 - 10 ноя 2023
     comic_exlibrium_second_life_volume_9: {
         name           : "Экслибриум. Жизнь вторая. Том 9: Будущее — светло",
         number         : "9",
@@ -16773,12 +16813,29 @@ const comics: Comics = {
         characters    : ["character_igor_grom_maior_grom", "character_irina_sharlotta"],
         authors       : [comicAuthors.anastasiaTroitskaya.colorist, comicAuthors.evgenyEronin.screenwriter,
                          comicAuthors.egorGerasimov.artist],
-        previousComics: ["comic_major_igor_grom_25", "comic_major_igor_grom_volume_6"],
+        previousComics: ["comic_major_igor_grom_25"],
         nextComics    : ["comic_major_igor_grom_27"],
-        releaseAt     : {year: 2023, month: 11, day: 24},
+        releaseAt     : {year: 2023, month: 11, day: 18},
         show          : true
     },
-    // Чумной Доктор №33 - 30 ноя 2023
+    comic_plague_doctor_33              : {
+        name          : "Чумной Доктор №33 Чужой среди своих, часть 4",
+        number        : "33",
+        type          : "single",
+        coverFile     : {
+            url   : `${paths.plagueDoctor}/plague-doctor-33-stranger-among-our-own-part-4.webp`,
+            width : 1339,
+            height: 2048
+        },
+        ranges        : ["range_plague_doctor"],
+        authors       : [comicAuthors.annaAntoshchenkova.colorist, comicAuthors.irinaIvanova.artist,
+                         comicAuthors.ladaAkishina.colorist, comicAuthors.mariaVasilyeva.colorist,
+                         comicAuthors.nataliaVorontsova.screenwriter],
+        previousComics: ["comic_plague_doctor_32"],
+        nextComics    : ["comic_plague_doctor_34"],
+        releaseAt     : {year: 2023, month: 11, day: 27},
+        show          : true
+    },
     // Тагар. Том 5. №3 - 5 дек 2023
     comic_rivers_there_is_no_fear_4                                      : {
         name           : "Реки. Страха нет, часть 4",
@@ -16800,17 +16857,19 @@ const comics: Comics = {
         show           : false
     },
     comic_major_igor_grom_villainy_rule                                  : {
-        name          : "Майор Игорь Гром. Закон подлости",
-        type          : "book",
-        coverFile     : {url: `${paths.majorIgorGrom}/major-igor-grom-villainy-rule.jpg`, width: 1339, height: 2048},
-        ranges        : ["range_major_igor_grom"],
-        authors       : [comicAuthors.alexeyVolkov.screenwriter, comicAuthors.anastasiaKim.screenwriter,
-                         comicAuthors.anastasiaTroitskaya.colorist, comicAuthors.annaAntoshchenkova.colorist,
-                         comicAuthors.evgeniyBornyakov.artist, comicAuthors.evgenyEronin.screenwriter,
-                         comicAuthors.karinaAkhmetvalieva.colorist, comicAuthors.romanKotkov.screenwriter],
-        previousComics: ["comic_major_igor_grom_27"],
-        releaseAt     : {year: 2023, month: 12, day: 20},
-        show          : true
+        name           : "Майор Игорь Гром. Закон подлости",
+        type           : "book",
+        coverFile      : {url: `${paths.majorIgorGrom}/major-igor-grom-villainy-rule.jpg`, width: 1339, height: 2048},
+        ranges         : ["range_major_igor_grom"],
+        authors        : [comicAuthors.alexeyVolkov.screenwriter, comicAuthors.anastasiaKim.screenwriter,
+                          comicAuthors.anastasiaTroitskaya.colorist, comicAuthors.annaAntoshchenkova.colorist,
+                          comicAuthors.evgeniyBornyakov.artist, comicAuthors.evgenyEronin.screenwriter,
+                          comicAuthors.karinaAkhmetvalieva.colorist, comicAuthors.romanKotkov.screenwriter],
+        containedComics: ["comic_major_igor_grom_special_duty", "comic_heroes_and_monsters",
+                          "comic_major_igor_grom_special_novak_and_sons"],
+        previousComics : ["comic_major_igor_grom_volume_6"],
+        releaseAt      : {year: 2023, month: 12, day: 19},
+        show           : true
     },
     comic_major_igor_grom_27                                             : {
         name          : "Майор Игорь Гром #27 Насмерть, часть 2",
@@ -16826,8 +16885,26 @@ const comics: Comics = {
         authors       : [comicAuthors.anastasiaTroitskaya.colorist, comicAuthors.evgenyEronin.screenwriter,
                          comicAuthors.egorGerasimov.artist],
         previousComics: ["comic_major_igor_grom_26"],
-        nextComics    : ["comic_major_igor_grom_special_duty", "comic_major_igor_grom_villainy_rule"],
-        releaseAt     : {year: 2023, month: 12, day: 22},
+        nextComics    : ["comic_major_igor_grom_special_novak_and_sons"],
+        releaseAt     : {year: 2023, month: 12, day: 20},
+        show          : true
+    },
+    comic_plague_doctor_34                                               : {
+        name          : "Чумной Доктор №34 Чужой среди своих, часть 5",
+        number        : "34",
+        type          : "single",
+        coverFile     : {
+            url   : `${paths.plagueDoctor}/plague-doctor-34-stranger-among-our-own-part-5.webp`,
+            width : 1339,
+            height: 2048
+        },
+        ranges        : ["range_plague_doctor"],
+        authors       : [comicAuthors.anastasiaSyomysheva.colorist, comicAuthors.elenaDoronina.colorist,
+                         comicAuthors.irinaIvanova.artist, comicAuthors.ladaAkishina.colorist,
+                         comicAuthors.mariaVasilyeva.colorist, comicAuthors.nataliaVorontsova.screenwriter,
+                         comicAuthors.natalyaMartinovich.colorist],
+        previousComics: ["comic_plague_doctor_33"],
+        releaseAt     : {year: 2023, month: 12, day: 24},
         show          : true
     },
     comic_exlibrium_second_life_special_happiness_is_somewhere_electronic: {
@@ -16842,9 +16919,8 @@ const comics: Comics = {
         previousComics : ["comic_exlibrium_second_life_volume_9"],
         show           : true
     },
-    // Чумной доктор №34 - 29 дек 2023
     // Infinix: Город Героев - -- --- ----
-    comic_major_grom_stories               : {
+    comic_major_grom_stories                    : {
         name           : "Майор Гром. Рассказы",
         type           : "book",
         coverFile      : {url: `${paths.majorGrom}/major-grom-stories.webp`, width: 1339, height: 2048},
@@ -16856,12 +16932,38 @@ const comics: Comics = {
                           comicAuthors.natalyaMartinovich.colorist, comicAuthors.olegChudakov.artist],
         containedComics: ["comic_special_prokopenko_grom_at_sunrise", "comic_special_volkov_inferno",
                           "comic_caligari_datura", "comic_rubinstein_what_i_was_looking_for"],
-        previousComics : ["comic_monk_and_major_grom_storm_of_berlin"],
-        nextComics     : ["comic_major_grom_like_in_war", "comic_rivers_there_is_no_fear"],
+        previousComics : ["comic_major_grom_volume_8", "comic_igor_grom_volume_10", "comic_major_igor_grom_volume_6"],
         releaseAt      : {year: 2024},
         show           : true
     },
-    comic_rubinstein_what_i_was_looking_for: {
+    comic_major_igor_grom_special_novak_and_sons: {
+        name           : "Майор Игорь Гром. Спецвыпуск. Новак и сыновья",
+        type           : "single",
+        coverFile      : {
+            url   : `${paths.majorIgorGrom}/major-igor-grom-special-novak-and-sons.webp`,
+            width : 1339,
+            height: 2048
+        },
+        ranges         : ["range_major_igor_grom"],
+        authors        : [comicAuthors.anastasiaTroitskaya.colorist, comicAuthors.evgeniyBornyakov.artist,
+                          comicAuthors.evgenyEronin.screenwriter, comicAuthors.karinaAkhmetvalieva.colorist,
+                          comicAuthors.romanKotkov.screenwriter],
+        includingComics: ["comic_major_igor_grom_villainy_rule"],
+        previousComics : ["comic_major_igor_grom_27"],
+        releaseAt      : {year: 2024, month: 1, day: 10},
+        show           : false
+    },
+    comic_butterfly_catcher                     : {
+        name          : "Ловец бабочек",
+        type          : "book",
+        coverFile     : {url: `${paths._}/butterfly-catcher.webp`, width: 643, height: 983},
+        ranges        : ["range_plague_doctor"],
+        authors       : [comicAuthors.anastasiaKim.artist_screenwriter],
+        previousComics: ["comic_plague_doctor_volume_7"],
+        releaseAt     : {year: 2024, month: 1, day: 21},
+        show          : true
+    },
+    comic_rubinstein_what_i_was_looking_for     : {
         name           : "Рубинштейн. То, что искал",
         type           : "single",
         coverFile      : {url: `${paths._}/rubinstein-what-i-was-looking-for.webp`, width: 1339, height: 2048},

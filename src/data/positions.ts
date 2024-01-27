@@ -34,7 +34,7 @@ const range_igor_ugor = {y: difference.y * 40};
 const range_madibek_musabekov = {y: difference.y * 66};
 const range_major_grom = {y: difference.y}/*{y: difference.y * 17}*/;
 const range_major_grom_book = {y: range_major_grom.y + difference.y}
-const range_major_igor_grom = {y: difference.y * 21};
+const range_major_igor_grom = {y: difference.y * 5}/*{y: difference.y * 21}*/;
 const range_meteora = {y: difference.y * 31};
 const range_meteora_book = {y: range_meteora.y + difference.y};
 const range_mir = {y: difference.y * 25};
@@ -49,7 +49,7 @@ const range_new_bubble_heroes_line_3 = {y: difference.y * 59};
 const range_new_bubble_heroes_line_4 = {y: difference.y * 60};
 const range_planeswalkers = {y: difference.y * 8};
 const range_planeswalkers_hardcover_book = {y: range_planeswalkers.y + difference.y * 2};
-const range_plague_doctor = {y: difference.y * 23};
+const range_plague_doctor = {y: difference.y * 7}/*{y: difference.y * 23}*/;
 const range_point_of_no_return = {y: difference.y * 39};
 const range_red_fury = {y: difference.y * 12};
 const range_thief_of_shadows = {y: difference.y * 53};
@@ -72,6 +72,13 @@ const comic_major_grom_and_red_fury = {y: (range_major_grom.y + range_red_fury.y
 const comic_monk_vs_besoboy = {y: (range_besoboy.y + range_monk.y) / 2};
 const comic_unicorn_conspiracy = {y: difference.y * 43};
 const comic_witch_hunt = {y: (range_allies.y + range_besoboy_vol_2.y + range_igor_grom.y + range_planeswalkers.y) / 4};
+
+const comic_special_prokopenko_grom_at_sunrise = {y: range_major_igor_grom.y + difference.y / 2};
+const comic_caligari_datura = {y: (range_igor_grom.y + comic_special_prokopenko_grom_at_sunrise.y) / 2};
+const comic_major_grom_like_in_war = {y: (range_major_grom.y + difference.y + comic_caligari_datura.y) / 2}/*{y: range_major_grom.y + difference.y}*/;
+
+const comic_winter_special_plague_doctor = {y: range_plague_doctor.y + difference.y / 2};
+const comic_plague_doctor_special_altan = comic_winter_special_plague_doctor;
 
 export default {
     comic_adventures_of_kochi_and_friends_funny_sketches            : range_childrens_comics,
@@ -100,7 +107,8 @@ export default {
     comic_bubble_triptych_1                                         : range_bubble_triptych,
     comic_bubble_triptych_2                                         : range_bubble_triptych,
     comic_bubble_triptych_3                                         : range_bubble_triptych,
-    comic_caligari_datura                                           : {y: difference.y * 3.5},
+    comic_butterfly_catcher                                         : {y: range_plague_doctor.y + difference.y},
+    comic_caligari_datura,
     comic_cat_and_mouse_volume_1                                    : range_evgeny_fedotov,
     comic_cat_and_mouse_volume_2                                    : range_evgeny_fedotov,
     comic_cat_and_mouse_volume_3                                    : range_evgeny_fedotov,
@@ -144,11 +152,11 @@ export default {
     comic_devilry_2                                                 : range_bubble_legends,
     comic_devilry_3                                                 : range_bubble_legends,
     comic_devilry_4                                                 : range_bubble_legends,
-    comic_dubin_dima_provincial_holidays                            : {y: difference.y * 4}/*range_major_grom_book*/,
-    comic_dubin_dima_provincial_holidays_1                          : {y: difference.y * 3}/*range_major_grom*/,
-    comic_dubin_dima_provincial_holidays_2                          : {y: difference.y * 3}/*range_major_grom*/,
-    comic_dubin_dima_provincial_holidays_3                          : {y: difference.y * 3}/*range_major_grom*/,
-    comic_dubin_dima_provincial_holidays_4                          : {y: difference.y * 3}/*range_major_grom*/,
+    comic_dubin_dima_provincial_holidays                            : {y: range_igor_grom.y + difference.y}/*range_major_grom_book*/,
+    comic_dubin_dima_provincial_holidays_1                          : range_igor_grom/*range_major_grom*/,
+    comic_dubin_dima_provincial_holidays_2                          : range_igor_grom/*range_major_grom*/,
+    comic_dubin_dima_provincial_holidays_3                          : range_igor_grom/*range_major_grom*/,
+    comic_dubin_dima_provincial_holidays_4                          : range_igor_grom/*range_major_grom*/,
     comic_dont_be_reckless_quatrefoil                               : range_new_bubble_heroes_line_2,
     comic_editor_signal_instance                                    : range_new_bubble_heroes_line_2,
     comic_exlibrium_blank_sheet_electronic                          : comic_exlibriums,
@@ -196,6 +204,7 @@ export default {
     comic_friends_comics_26                                         : range_friends_comics,
     comic_friends_comics_27                                         : range_friends_comics,
     comic_gray_hound_volume_1_chapter_1                             : range_bubble_manga_line_2,
+    comic_heroes_and_monsters                                       : {y: (range_major_igor_grom.y + range_plague_doctor.y + difference.y) / 2},
     comic_hourly_time_against                                       : range_besoboy_book,
     //comic_igor_grom_15                                              : comic_witch_hunt,
     comic_igor_grom_book_1               : range_igor_grom_hardcover_book,
@@ -204,6 +213,14 @@ export default {
     comic_igor_ugor_volume_1             : range_igor_ugor,
     comic_igor_ugor_volume_2             : range_igor_ugor,
     comic_igor_ugor_volume_3             : range_igor_ugor,
+    comic_impulse_heros_voice            : range_new_bubble_heroes_line_2,
+    comic_impulse_premiere               : range_new_bubble_heroes_line_2,
+    comic_impulse_volume_1               : range_new_bubble_heroes_line_2_book,
+    comic_ink_prince_and_book_knight     : range_bubble_manga_line_3_book,
+    comic_ink_prince_and_book_knight_1   : range_bubble_manga_line_3,
+    comic_ink_prince_and_book_knight_2   : range_bubble_manga_line_3,
+    comic_ink_prince_and_book_knight_3   : range_bubble_manga_line_3,
+    comic_ink_prince_and_book_knight_4   : range_bubble_manga_line_3,
     comic_jackets_and_revolvers_volume_1 : comic_jackets_and_revolvers,
     comic_jackets_and_revolvers_volume_2 : comic_jackets_and_revolvers,
     comic_jackets_and_revolvers_volume_3 : comic_jackets_and_revolvers,
@@ -253,43 +270,46 @@ export default {
         },
         y     : range_major_grom_book.y
     },
-    comic_major_grom_like_in_war                   : {y: range_major_grom.y + difference.y},
+    comic_major_grom_like_in_war,
     comic_major_grom_like_in_war_1                 : range_major_grom,
     comic_major_grom_like_in_war_2                 : range_major_grom,
     comic_major_grom_like_in_war_3                 : range_major_grom,
     comic_major_grom_like_in_war_4                 : range_major_grom,
     comic_major_grom_promise                       : range_igor_grom,
-    comic_major_grom_stories                       : {y: difference.y * 3},
+    comic_major_grom_stories                       : {y: (range_major_grom.y + range_major_igor_grom.y) / 2 + difference.y},
     comic_master_death_is_just_beginning_electronic: range_monk,
     comic_master_death_is_just_beginning_printed   : range_monk_book,
     comic_memento_mori_call_of_void                : range_new_bubble_heroes_line_2,
     comic_monk_15                                  : comic_monk_vs_besoboy,
     comic_monk_16                                  : comic_monk_vs_besoboy,
     comic_monk_17                                  : comic_monk_vs_besoboy,
-    comic_monk_and_major_grom_storm_of_berlin      : {y: difference.y * 1.5}/*range_monk*/,
+    comic_monk_and_major_grom_storm_of_berlin      : {y: (range_major_grom.y + comic_major_grom_like_in_war.y) / 2}/*range_monk*/,
     comic_monk_king_of_parties                     : range_monk_king_of_parties,
     comic_monk_king_of_parties_no_more_parties     : range_monk_king_of_parties,
+    comic_plague_doctor_special_altan,
+    comic_plague_doctor_volume_3                   : {
+        x_func: (layoutsNodes, comicId) => {
+            return (layoutsNodes["node_plague_doctor_9"].x + layoutsNodes["node_plague_doctor_10"].x) / 2;
+        }
+    },
     comic_planeswalkers_15                         : comic_witch_hunt,
     comic_planeswalkers_book_1                     : range_planeswalkers_hardcover_book,
     comic_planeswalkers_book_2                     : range_planeswalkers_hardcover_book,
     comic_plush_policeman_perfect_plan             : range_new_bubble_heroes_line_3,
     comic_point_of_no_return                       : range_point_of_no_return,
-    comic_impulse_heros_voice                      : range_new_bubble_heroes_line_2,
-    comic_impulse_premiere                         : range_new_bubble_heroes_line_2,
-    comic_impulse_volume_1                         : range_new_bubble_heroes_line_2_book,
     comic_red_fury_38                              : comic_major_grom_and_red_fury,
     comic_red_fury_39                              : comic_major_grom_and_red_fury,
     comic_red_fury_40                              : comic_major_grom_and_red_fury,
     comic_red_fury_41                              : comic_major_grom_and_red_fury,
-    comic_rivers_there_is_no_fear                  : {y: difference.y * 4},
-    comic_rubinstein_what_i_was_looking_for        : {y: difference.y * 3},
+    comic_rivers_there_is_no_fear                  : {y: range_igor_grom.y + difference.y},
+    comic_rubinstein_what_i_was_looking_for        : range_igor_grom,
     comic_russian_folk_tales_in_comics             : range_evgeny_yakovlev,
     comic_seven_sons_jaykarn                       : range_anastasia_kim,
     comic_sister_kukki                             : range_new_bubble_heroes_line_2_book,
     comic_sister_kukki_1                           : range_new_bubble_heroes_line_2,
     comic_soyuzmultcomics                          : range_childrens_comics,
-    comic_special_prokopenko_grom_at_sunrise       : {y: difference.y},
-    comic_special_volkov_inferno                   : {y: difference.y * 1.5},
+    comic_special_prokopenko_grom_at_sunrise,
+    comic_special_volkov_inferno                   : {y: (range_major_grom.y + comic_plague_doctor_special_altan.y) / 2},
     comic_tagar_volume_1                           : range_bubble_manga_line_1_book,
     comic_tagar_volume_1_prologue                  : range_bubble_manga_line_1,
     comic_tagar_volume_1_chapter_1                 : range_bubble_manga_line_1,
@@ -322,32 +342,28 @@ export default {
     comic_teo_crop_circles_2                       : range_meteora,
     comic_teo_crop_circles_3                       : range_meteora,
     comic_teo_crop_circles_4                       : range_meteora,
-    comic_ink_prince_and_book_knight               : range_bubble_manga_line_3_book,
-    comic_ink_prince_and_book_knight_1             : range_bubble_manga_line_3,
-    comic_ink_prince_and_book_knight_2             : range_bubble_manga_line_3,
-    comic_ink_prince_and_book_knight_3             : range_bubble_manga_line_3,
-    comic_ink_prince_and_book_knight_4             : range_bubble_manga_line_3,
     comic_time_of_raven                            : {
         x_func: (layoutsNodes, comicId) => {
             return (layoutsNodes["node_time_of_raven_prologue"].x + layoutsNodes["node_time_of_raven_5"].x + difference.x) / 2;
         },
-        y     : difference.y * 2
+        y     : range_major_grom.y + difference.y
     }/*{y: range_time_of_raven.y + difference.y}*/,
-    comic_time_of_raven_1                          : {y: difference.y}/*range_time_of_raven*/,
-    comic_time_of_raven_2                          : {y: difference.y}/*range_time_of_raven*/,
-    comic_time_of_raven_3                          : {y: difference.y}/*range_time_of_raven*/,
-    comic_time_of_raven_4                          : {y: difference.y}/*range_time_of_raven*/,
-    comic_time_of_raven_5                          : {y: difference.y}/*range_time_of_raven*/,
-    comic_time_of_raven_backstory                  : {y: difference.y * 1.5}/*{y: range_time_of_raven.y + difference.y * 0.5}*/,
-    comic_time_of_raven_epilogue                   : {y: difference.y * 1.5}/*{y: range_time_of_raven.y + difference.y * 0.5}*/,
-    comic_time_of_raven_prologue                   : {y: difference.y}/*range_time_of_raven*/,
+    comic_time_of_raven_1                          : range_major_grom/*range_time_of_raven*/,
+    comic_time_of_raven_2                          : range_major_grom/*range_time_of_raven*/,
+    comic_time_of_raven_3                          : range_major_grom/*range_time_of_raven*/,
+    comic_time_of_raven_4                          : range_major_grom/*range_time_of_raven*/,
+    comic_time_of_raven_5                          : range_major_grom/*range_time_of_raven*/,
+    comic_time_of_raven_backstory                  : {y: range_major_grom.y + difference.y / 2}/*{y: range_time_of_raven.y + difference.y * 0.5}*/,
+    comic_time_of_raven_epilogue                   : {y: range_major_grom.y + difference.y / 2}/*{y: range_time_of_raven.y + difference.y * 0.5}*/,
+    comic_time_of_raven_prologue                   : range_major_grom/*range_time_of_raven*/,
     comic_turbocarp                                : range_turbocarp,
     comic_unicorn_conspiracy_volume_1              : comic_unicorn_conspiracy,
     comic_unicorn_conspiracy_volume_2              : comic_unicorn_conspiracy,
     comic_vera_wolf                                : range_bubble_legends,
-    comic_witch_hunt                               : {y: difference.y * 4}/*{y: comic_witch_hunt.y + difference.y}*/,
-    comic_witch_hunt_finale                        : {y: difference.y * 3}/*comic_witch_hunt*/,
-    comic_witch_hunt_prologue                      : {y: difference.y * 3}/*comic_witch_hunt*/,
+    comic_winter_special_plague_doctor,
+    comic_witch_hunt                               : {y: range_igor_grom.y + difference.y}/*{y: comic_witch_hunt.y + difference.y}*/,
+    comic_witch_hunt_finale                        : range_igor_grom/*comic_witch_hunt*/,
+    comic_witch_hunt_prologue                      : range_igor_grom/*comic_witch_hunt*/,
     comic_yarkh_step_forward                       : range_besoboy_book,
     comic_yarkh_step_forward_1                     : range_besoboy,
     comic_yarkh_step_forward_2                     : range_besoboy,
