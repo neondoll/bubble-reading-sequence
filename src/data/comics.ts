@@ -4,49 +4,6 @@ import imagePaths from "./imagePaths";
 
 const paths: Record<string, string> = imagePaths.comics;
 
-const comicTimeOfRavenBackstory: Comic = {
-    name      : "Время Ворона: Предыстория",
-    type      : "book",
-    coverFile : {url: `${paths.timeOfRaven}/time-of-raven-backstory.jpg`, width: 1339, height: 2048},
-    ranges    : ["range_crossovers"],
-    characters: ["character_bulat_gadzhiev", "character_dzhina_stivens", "character_dimitrios", "character_kuth",
-                 "character_magistr", "character_svartzhel", "character_chumnoi_doktor", "character_nika_chaikina",
-                 "character_igor_grom_maior_grom", "character_besoboi", "character_andrei_radov"],
-    authors   : [comicAuthors.alexHatchett.screenwriter, comicAuthors.anastasiaKaterinich.artist,
-                 comicAuthors.anastasiaKim.artist, comicAuthors.andreyVasin.artist, comicAuthors.annaRud.artist,
-                 comicAuthors.annaSidorova.colorist, comicAuthors.artyomBizyaev.artist,
-                 comicAuthors.artyomGabrelyanov.screenwriter, comicAuthors.artyomMyasnikov.artist,
-                 comicAuthors.vitalySmirnov.artist, comicAuthors.ivanYelyasov.artist,
-                 comicAuthors.igorKhudaev.screenwriter, comicAuthors.kirillPerepelitsyn.colorist,
-                 comicAuthors.ladaAkishina.colorist, comicAuthors.mariaVasilyeva.colorist,
-                 comicAuthors.natalyaZaidova.artist, comicAuthors.ninaVakueva.artist,
-                 comicAuthors.romanKotkov.screenwriter, comicAuthors.tatianaYakubets.colorist,
-                 comicAuthors.eduardPetrovich.artist],
-    releaseAt : {year: 2015, month: 10, day: 1}
-};
-const comicTimeOfRavenEpilogue: Comic = {
-    name      : "Время Ворона: Эпилог",
-    type      : "book",
-    coverFile : {url: `${paths.timeOfRaven}/time-of-raven-epilogue.jpg`, width: 1339, height: 2048},
-    ranges    : ["range_crossovers"],
-    characters: ["character_avgust_van_der_holt", "character_angelina_evgenevna", "character_antihrist",
-                 "character_bulat_gadzhiev", "character_dzhessi_rodrigez", "character_dmitrii_dubin",
-                 "character_koschei", "character_magistr", "character_myordok_makalister", "character_semiaza",
-                 "character_tatyana_aleksandrovna", "character_feliks_dzerzhinskii", "character_chumnoi_doktor",
-                 "character_shebu_predvechnyi", "character_yarh_smertonosnyi", "character_nika_chaikina",
-                 "character_igor_grom_maior_grom", "character_alyona_kuznetsova", "character_besoboi", "character_andrei_radov"],
-    authors   : [comicAuthors.alexHatchett.screenwriter, comicAuthors.anastasiaKim.artist,
-                 comicAuthors.anastasiaTroitskaya.colorist, comicAuthors.andreyVasin.artist,
-                 comicAuthors.andreyRodin.artist, comicAuthors.annaRud.artist, comicAuthors.annaSidorova.colorist,
-                 comicAuthors.artyomBizyaev.artist, comicAuthors.artyomGabrelyanov.screenwriter,
-                 comicAuthors.victoriaTirtilova.colorist, comicAuthors.evgenyFedotov.screenwriter,
-                 comicAuthors.igorLoboda.colorist, comicAuthors.igorKhudaev.screenwriter,
-                 comicAuthors.konstantinTarasov.artist, comicAuthors.ladaAkishina.colorist,
-                 comicAuthors.margaritaKablukova.colorist, comicAuthors.nataliaDevova.screenwriter,
-                 comicAuthors.natalyaMartinovich.colorist, comicAuthors.ninaVakueva.artist,
-                 comicAuthors.romanKotkov.screenwriter, comicAuthors.eduardPetrovich.artist],
-    releaseAt : {year: 2016, month: 3, day: 13}
-};
 const comicMajorGromChance: Comic = {
     name     : "Майор Гром: Шанс",
     type     : "single",
@@ -103,17 +60,6 @@ const comicBalorAndYanaDreamCatcher: Comic = {
                  comicAuthors.margaritaKablukova.colorist],
     releaseAt : {year: 2019, month: 10, day: 3}
 };
-const comicMajorGrom1939: Comic = {
-    name      : "Майор Гром: 1939",
-    type      : "book",
-    coverFile : {url: `${paths.majorGrom}/major-grom-1939.jpg`, width: 1339, height: 2047},
-    ranges    : ["range_major_grom"],
-    characters: ["character_dmitrii_dubin", "character_chumnoi_doktor", "character_uliya_pchyolkina",
-                 "character_igor_grom_maior_grom"],
-    authors   : [comicAuthors.alexeyVolkov.screenwriter, comicAuthors.alexeyGorbut.artist,
-                 comicAuthors.natalyaMartinovich.colorist],
-    releaseAt : {year: 2019, month: 10, day: 21}
-};
 const comicQuarantineBook: Comic = {
     name      : "Карантинная книга",
     type      : "book",
@@ -148,25 +94,6 @@ const comicExlibriumRedLine: Comic = {
                  comicAuthors.karinaAkhmetvalieva.colorist, comicAuthors.nataliaDevova.screenwriter,
                  comicAuthors.yuliaZhuravleva.artist],
     releaseAt : {year: 2021, month: 7, day: 30}
-};
-const comicSpecialVolkovInferno: Comic = {
-    name      : "Спецвыпуск \"Волков. Пекло\"",
-    type      : "single",
-    coverFile : {url: `${paths._}/special-volkov-inferno.jpg`, width: 1339, height: 2048},
-    ranges    : ["range_plague_doctor"],
-    characters: ["character_dzhessi_rodrigez", "character_oleg_volkov"],
-    authors   : [comicAuthors.ekaterinaGrishchenko.artist, comicAuthors.nataliaVorontsova.screenwriter],
-    releaseAt : {year: 2021, month: 10, day: 30}
-};
-const comicSpecialProkopenkoGromAtSunrise: Comic = {
-    name      : "Спецвыпуск «Прокопенко. Гром на восходе»",
-    type      : "single",
-    coverFile : {url: `${paths._}/special-prokopenko-grom-at-sunrise.jpg`, width: 1339, height: 2048},
-    ranges    : ["range_major_grom", "range_bubble_legends", "range_major_igor_grom"],
-    characters: ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom_maior_grom"],
-    authors   : [comicAuthors.evgeniyBornyakov.artist, comicAuthors.kirillKutuzov.screenwriter,
-                 comicAuthors.natalyaMartinovich.colorist],
-    releaseAt : {year: 2021, month: 12}
 };
 const comicMeteoraSpaceColoring: Comic = {
     name      : "Метеора. Космическая раскраска",
@@ -222,16 +149,6 @@ const comicRedFury1966: Comic = {
     authors  : [comicAuthors.alexeyVolkov.screenwriter, comicAuthors.anastasiaTroitskaya.colorist,
                 comicAuthors.valentinPotkin.artist],
     releaseAt: {year: 2022, month: 10, day: 14}
-};
-const comicCaligariDatura: Comic = {
-    name      : "Калигари. Дурман",
-    type      : "single",
-    coverFile : {url: `${paths._}/caligari-datura.jpg`, width: 1339, height: 2048},
-    ranges    : ["range_bubble_legends", "range_igor_grom"],
-    characters: ["character_valentin_kaligari_gashparov"],
-    authors   : [comicAuthors.jamilyaZulpikarova.artist, comicAuthors.karinaAkhmetvalieva.colorist,
-                 comicAuthors.nataliaVorontsova.screenwriter],
-    releaseAt : {year: 2022, month: 10, day: 24}
 };
 const comicMajorGromChildrensGamesColoring: Comic = {
     name      : "Майор Гром. Детские игры. Раскраска",
@@ -336,6 +253,7 @@ const comics: Comics = {
         authors        : [comicAuthors.alexandraShchastlivaya.colorist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.konstantinTarasov.artist],
         includingComics: ["comic_major_grom_volume_1"],
+        previousComics : ["comic_major_grom_like_in_war_4"],
         nextComics     : ["comic_major_grom_2"],
         releaseAt      : {year: 2012, month: 10, day: 8},
         show           : false
@@ -1894,7 +1812,7 @@ const comics: Comics = {
                           comicAuthors.margaritaKablukova.colorist],
         includingComics: ["comic_major_grom_volume_4"],
         previousComics : ["comic_major_grom_23"],
-        nextComics     : ["comic_major_grom_25"],
+        nextComics     : ["comic_special_volkov_inferno"],
         releaseAt      : {year: 2014, month: 9, day: 8},
         show           : false
     },
@@ -1977,6 +1895,7 @@ const comics: Comics = {
                           comicAuthors.evgenyFedotov.screenwriter, comicAuthors.konstantinTarasov.artist],
         containedComics: ["comic_major_grom_1", "comic_major_grom_2", "comic_major_grom_3", "comic_major_grom_4",
                           "comic_major_grom_5", "comic_major_grom_6"],
+        previousComics : ["comic_major_grom_like_in_war"],
         nextComics     : ["comic_major_grom_volume_2"],
         releaseAt      : {year: 2014, month: 10, day: 1},
         show           : true
@@ -2029,7 +1948,7 @@ const comics: Comics = {
         authors        : [comicAuthors.anastasiaKim.artist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.margaritaKablukova.colorist],
         includingComics: ["comic_major_grom_volume_5"],
-        previousComics : ["comic_major_grom_24"],
+        previousComics : ["comic_special_volkov_inferno"],
         nextComics     : ["comic_major_grom_26"],
         releaseAt      : {year: 2014, month: 10, day: 5},
         show           : false
@@ -2130,7 +2049,8 @@ const comics: Comics = {
         coverFile      : {url: `${paths.majorGrom}/major-grom-26-game-part-2.jpg`, width: 379, height: 580},
         ranges         : ["range_major_grom"],
         characters     : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor",
-                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom", "character_sergei_razumovskii"],
+                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom",
+                          "character_sergei_razumovskii"],
         authors        : [comicAuthors.anastasiaKim.artist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.tatianaYakubets.colorist],
         includingComics: ["comic_major_grom_volume_5"],
@@ -2236,7 +2156,8 @@ const comics: Comics = {
         coverFile      : {url: `${paths.majorGrom}/major-grom-27-game-part-3.jpg`, width: 379, height: 580},
         ranges         : ["range_major_grom"],
         characters     : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor",
-                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom", "character_sergei_razumovskii"],
+                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom",
+                          "character_sergei_razumovskii"],
         authors        : [comicAuthors.anastasiaKim.artist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.ladaAkishina.colorist],
         includingComics: ["comic_major_grom_volume_5"],
@@ -2331,7 +2252,8 @@ const comics: Comics = {
         },
         ranges         : ["range_major_grom"],
         characters     : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor",
-                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom", "character_sergei_razumovskii"],
+                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom",
+                          "character_sergei_razumovskii"],
         authors        : [comicAuthors.alexandraShchastlivaya.colorist, comicAuthors.alenaKarpova.colorist,
                           comicAuthors.anastasiaKim.artist, comicAuthors.annaRud.artist,
                           comicAuthors.artyomGabrelyanov.screenwriter, comicAuthors.evgenyFedotov.screenwriter,
@@ -2419,7 +2341,8 @@ const comics: Comics = {
         coverFile      : {url: `${paths.majorGrom}/major-grom-28-game-part-4.jpg`, width: 379, height: 580},
         ranges         : ["range_major_grom"],
         characters     : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor",
-                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom", "character_sergei_razumovskii"],
+                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom",
+                          "character_sergei_razumovskii"],
         authors        : [comicAuthors.anastasiaKim.artist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.ladaAkishina.colorist],
         includingComics: ["comic_major_grom_volume_5"],
@@ -2533,7 +2456,8 @@ const comics: Comics = {
         coverFile      : {url: `${paths.majorGrom}/major-grom-29-game-part-5.jpg`, width: 379, height: 580},
         ranges         : ["range_major_grom"],
         characters     : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor",
-                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom", "character_sergei_razumovskii"],
+                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom",
+                          "character_sergei_razumovskii"],
         authors        : [comicAuthors.anastasiaKim.artist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.ladaAkishina.colorist],
         includingComics: ["comic_major_grom_volume_5"],
@@ -2636,7 +2560,8 @@ const comics: Comics = {
         coverFile      : {url: `${paths.majorGrom}/major-grom-30-game-part-6.jpg`, width: 379, height: 580},
         ranges         : ["range_major_grom"],
         characters     : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor",
-                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom", "character_sergei_razumovskii"],
+                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom",
+                          "character_sergei_razumovskii"],
         authors        : [comicAuthors.anastasiaKim.artist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.ladaAkishina.colorist],
         includingComics: ["comic_major_grom_volume_5"],
@@ -2705,7 +2630,8 @@ const comics: Comics = {
         },
         ranges         : ["range_major_grom"],
         characters     : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_chumnoi_doktor",
-                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom", "character_sergei_razumovskii"],
+                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom",
+                          "character_sergei_razumovskii"],
         authors        : [comicAuthors.alenaKarpova.colorist, comicAuthors.anastasiaKim.artist,
                           comicAuthors.artyomGabrelyanov.screenwriter, comicAuthors.ivanSkorokhodov.screenwriter,
                           comicAuthors.tatianaYakubets.colorist, comicAuthors.yuliaZhuravleva.artist],
@@ -2776,7 +2702,8 @@ const comics: Comics = {
         coverFile      : {url: `${paths.majorGrom}/major-grom-31-game-part-7.jpg`, width: 379, height: 580},
         ranges         : ["range_major_grom"],
         characters     : ["character_dmitrii_dubin", "character_oleg_volkov", "character_chumnoi_doktor",
-                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom", "character_sergei_razumovskii"],
+                          "character_uliya_pchyolkina", "character_igor_grom_maior_grom",
+                          "character_sergei_razumovskii"],
         authors        : [comicAuthors.anastasiaKim.artist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.ladaAkishina.colorist],
         includingComics: ["comic_major_grom_volume_5"],
@@ -2870,14 +2797,14 @@ const comics: Comics = {
     },
     comic_monk_and_major_grom_storm_of_berlin                         : {
         name           : "Инок и Майор Гром. Штурм Берлина",
-        type           : "single",
+        type           : "book",
         coverFile      : {url: `${paths._}/monk-and-major-grom-storm-of-berlin.png`, width: 454, height: 695},
         ranges         : ["range_crossovers", "range_bubble_legends"],
         characters     : ["character_andrei_radov_ded", "character_igor_grom_ded"],
         authors        : [comicAuthors.andreyVasin.artist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.natalyaNesterenko.colorist, comicAuthors.ninaVakueva.colorist],
         includingComics: ["comic_chronicles_of_monk_storm_of_berlin"],
-        previousComics : ["comic_monk_50"],
+        nextComics     : ["comic_major_grom_like_in_war_1", "comic_major_grom_stories"],
         releaseAt      : {year: 2015, month: 5, day: 1},
         show           : false
     },
@@ -3456,7 +3383,7 @@ const comics: Comics = {
                           comicAuthors.kirillPerepelitsyn.colorist],
         includingComics: ["comic_major_grom_volume_6"],
         previousComics : ["comic_major_grom_36"],
-        nextComics     : ["comic_time_of_raven_1", "comic_major_grom_38"],
+        nextComics     : ["comic_time_of_raven_backstory"],
         releaseAt      : {year: 2015, month: 10, day: 1},
         show           : false
     },
@@ -3518,7 +3445,7 @@ const comics: Comics = {
         containedComics: ["comic_major_grom_19", "comic_major_grom_20", "comic_major_grom_21", "comic_major_grom_22",
                           "comic_major_grom_23", "comic_major_grom_24"],
         previousComics : ["comic_major_grom_volume_3"],
-        nextComics     : ["comic_major_grom_volume_5"],
+        nextComics     : ["comic_special_volkov_inferno"],
         releaseAt      : {year: 2015, month: 10, day: 1},
         show           : true
     },
@@ -3563,17 +3490,29 @@ const comics: Comics = {
         releaseAt      : {year: 2015, month: 10, day: 1},
         show           : true
     },
-    comic_time_of_raven_backstory_electronic                          : {
-        ...comicTimeOfRavenBackstory,
-        includingComics: ["comic_time_of_raven_backstory_printed"],
-        nextComics     : ["comic_time_of_raven_prologue"],
-        show           : false
-    },
-    comic_time_of_raven_backstory_printed                             : {
-        ...comicTimeOfRavenBackstory,
-        containedComics: ["comic_time_of_raven_backstory_electronic"],
-        nextComics     : ["comic_time_of_raven"],
-        show           : true
+    comic_time_of_raven_backstory                                     : {
+        name          : "Время Ворона: Предыстория",
+        type          : "book",
+        coverFile     : {url: `${paths.timeOfRaven}/time-of-raven-backstory.jpg`, width: 1339, height: 2048},
+        ranges        : ["range_crossovers"],
+        characters    : ["character_bulat_gadzhiev", "character_dzhina_stivens", "character_dimitrios",
+                         "character_kuth", "character_magistr", "character_svartzhel", "character_chumnoi_doktor",
+                         "character_nika_chaikina", "character_igor_grom_maior_grom", "character_besoboi",
+                         "character_andrei_radov"],
+        authors       : [comicAuthors.alexHatchett.screenwriter, comicAuthors.anastasiaKaterinich.artist,
+                         comicAuthors.anastasiaKim.artist, comicAuthors.andreyVasin.artist, comicAuthors.annaRud.artist,
+                         comicAuthors.annaSidorova.colorist, comicAuthors.artyomBizyaev.artist,
+                         comicAuthors.artyomGabrelyanov.screenwriter, comicAuthors.artyomMyasnikov.artist,
+                         comicAuthors.vitalySmirnov.artist, comicAuthors.ivanYelyasov.artist,
+                         comicAuthors.igorKhudaev.screenwriter, comicAuthors.kirillPerepelitsyn.colorist,
+                         comicAuthors.ladaAkishina.colorist, comicAuthors.mariaVasilyeva.colorist,
+                         comicAuthors.natalyaZaidova.artist, comicAuthors.ninaVakueva.artist,
+                         comicAuthors.romanKotkov.screenwriter, comicAuthors.tatianaYakubets.colorist,
+                         comicAuthors.eduardPetrovich.artist],
+        previousComics: ["comic_major_grom_37", "comic_major_grom_volume_6"],
+        nextComics    : ["comic_time_of_raven_prologue", "comic_major_grom_and_red_fury_volume_7"],
+        releaseAt     : {year: 2015, month: 10, day: 1},
+        show          : true
     },
     comic_time_of_raven_prologue                                      : {
         name           : "Время Ворона: Пролог",
@@ -3585,7 +3524,7 @@ const comics: Comics = {
         authors        : [comicAuthors.evgenyFedotov.screenwriter, comicAuthors.mariaVasilyeva.colorist,
                           comicAuthors.natalyaZaidova.artist, comicAuthors.romanKotkov.screenwriter],
         includingComics: ["comic_time_of_raven"],
-        previousComics : ["comic_besoboy_37", "comic_time_of_raven_backstory_electronic"],
+        previousComics : ["comic_besoboy_37", "comic_time_of_raven_backstory"],
         nextComics     : ["comic_time_of_raven_1", "comic_besoboy_38"],
         releaseAt      : {year: 2015, month: 10, day: 1},
         show           : false
@@ -3654,14 +3593,15 @@ const comics: Comics = {
         type           : "single",
         coverFile      : {url: `${paths.timeOfRaven}/time-of-raven-1.jpg`, width: 379, height: 580},
         ranges         : ["range_crossovers"],
-        characters     : ["character_kuth", "character_magistr", "character_chumnoi_doktor", "character_igor_grom_maior_grom"],
+        characters     : ["character_kuth", "character_magistr", "character_chumnoi_doktor",
+                          "character_igor_grom_maior_grom"],
         authors        : [comicAuthors.anastasiaKim.artist, comicAuthors.evgenyFedotov.screenwriter,
                           comicAuthors.ladaAkishina.colorist, comicAuthors.mariaVasilyeva.colorist,
                           comicAuthors.mariaZalogina.colorist, comicAuthors.natalyaZaidova.artist,
                           comicAuthors.romanKotkov.screenwriter],
         includingComics: ["comic_time_of_raven"],
-        previousComics : ["comic_major_grom_37", "comic_time_of_raven_prologue", "comic_red_fury_37"],
-        nextComics     : ["comic_major_grom_38", "comic_monk_38", "comic_red_fury_38", "comic_time_of_raven_2"],
+        previousComics : ["comic_time_of_raven_prologue", "comic_red_fury_37"],
+        nextComics     : ["comic_major_grom_38", "comic_monk_38", "comic_red_fury_38"],
         releaseAt      : {year: 2015, month: 10, day: 28},
         show           : false
     },
@@ -3691,7 +3631,7 @@ const comics: Comics = {
         authors        : [comicAuthors.artyomGabrelyanov.screenwriter, comicAuthors.natalyaMartinovich.colorist,
                           comicAuthors.ninaVakueva.artist],
         includingComics: ["comic_major_grom_and_red_fury_volume_7"],
-        previousComics : ["comic_major_grom_37", "comic_red_fury_37", "comic_time_of_raven_1"],
+        previousComics : ["comic_red_fury_37", "comic_time_of_raven_1"],
         nextComics     : ["comic_red_fury_38", "comic_time_of_raven_2"],
         releaseAt      : {year: 2015, month: 11, day: 5},
         show           : false
@@ -3772,8 +3712,8 @@ const comics: Comics = {
                           comicAuthors.mariaZalogina.colorist, comicAuthors.natalyaZaidova.artist,
                           comicAuthors.romanKotkov.screenwriter],
         includingComics: ["comic_time_of_raven"],
-        previousComics : ["comic_time_of_raven_1", "comic_major_grom_38", "comic_monk_38", "comic_red_fury_38"],
-        nextComics     : ["comic_major_grom_39", "comic_red_fury_39", "comic_time_of_raven_3"],
+        previousComics : ["comic_major_grom_38", "comic_monk_38", "comic_red_fury_38"],
+        nextComics     : ["comic_major_grom_39", "comic_red_fury_39"],
         releaseAt      : {year: 2015, month: 11, day: 27},
         show           : false
     },
@@ -3916,14 +3856,15 @@ const comics: Comics = {
         characters     : ["character_avgust_van_der_holt", "character_artur_haksli", "character_dzhessi_rodrigez",
                           "character_dzhoshua_donato", "character_kuth", "character_lotta_lemke", "character_magistr",
                           "character_myordok_makalister", "character_svartzhel", "character_chyornyi_pyos",
-                          "character_shmyg", "character_nika_chaikina", "character_igor_grom_maior_grom", "character_besoboi",
+                          "character_shmyg", "character_nika_chaikina", "character_igor_grom_maior_grom",
+                          "character_besoboi",
                           "character_andrei_radov"],
         authors        : [comicAuthors.artyomBizyaev.artist, comicAuthors.victoriaVinogradova.colorist,
                           comicAuthors.evgenyFedotov.screenwriter, comicAuthors.mariaVasilyeva.colorist,
                           comicAuthors.natalyaZaidova.artist, comicAuthors.romanKotkov.screenwriter],
         includingComics: ["comic_time_of_raven"],
-        previousComics : ["comic_time_of_raven_2", "comic_besoboy_39", "comic_major_grom_39", "comic_red_fury_39"],
-        nextComics     : ["comic_besoboy_40", "comic_major_grom_40", "comic_time_of_raven_4"],
+        previousComics : ["comic_besoboy_39", "comic_major_grom_39", "comic_red_fury_39"],
+        nextComics     : ["comic_besoboy_40", "comic_major_grom_40"],
         releaseAt      : {year: 2015, month: 12, day: 28},
         show           : false
     },
@@ -4055,7 +3996,7 @@ const comics: Comics = {
                           comicAuthors.ninaVakueva.artist],
         includingComics: ["comic_major_grom_and_red_fury_volume_7"],
         previousComics : ["comic_red_fury_39", "comic_time_of_raven_3"],
-        nextComics     : ["comic_red_fury_40"],
+        nextComics     : ["comic_red_fury_40", "comic_time_of_raven_4"],
         releaseAt      : {year: 2016, month: 1, day: 18},
         show           : false
     },
@@ -4132,8 +4073,8 @@ const comics: Comics = {
                           comicAuthors.mariaVasilyeva.colorist, comicAuthors.natalyaZaidova.artist,
                           comicAuthors.romanKotkov.screenwriter],
         includingComics: ["comic_time_of_raven"],
-        previousComics : ["comic_time_of_raven_3", "comic_red_fury_40", "comic_besoboy_41"],
-        nextComics     : ["comic_red_fury_41", "comic_major_grom_41", "comic_time_of_raven_5"],
+        previousComics : ["comic_major_grom_40", "comic_red_fury_40", "comic_besoboy_41"],
+        nextComics     : ["comic_red_fury_41", "comic_major_grom_41"],
         releaseAt      : {year: 2016, month: 1, day: 30},
         show           : false
     },
@@ -4193,7 +4134,7 @@ const comics: Comics = {
                           comicAuthors.ninaVakueva.artist],
         includingComics: ["comic_major_grom_and_red_fury_volume_7"],
         previousComics : ["comic_time_of_raven_4", "comic_red_fury_41"],
-        nextComics     : ["comic_time_of_raven_5", "comic_red_fury_42", "comic_major_grom_42"],
+        nextComics     : ["comic_time_of_raven_5", "comic_red_fury_42"],
         releaseAt      : {year: 2016, month: 2, day: 15},
         show           : false
     },
@@ -4215,7 +4156,7 @@ const comics: Comics = {
                           comicAuthors.margaritaKablukova.colorist, comicAuthors.nataliaDevova.screenwriter],
         includingComics: ["comic_exlibrium_volume_3"],
         previousComics : ["comic_exlibrium_16"],
-        nextComics     : ["comic_time_of_raven_epilogue_electronic", "comic_exlibrium_18"],
+        nextComics     : ["comic_time_of_raven_epilogue", "comic_exlibrium_18"],
         releaseAt      : {year: 2016, month: 2, day: 19},
         show           : false
     },
@@ -4250,8 +4191,8 @@ const comics: Comics = {
                           comicAuthors.natalyaZaidova.artist, comicAuthors.natalyaMartinovich.colorist,
                           comicAuthors.romanKotkov.screenwriter],
         includingComics: ["comic_time_of_raven"],
-        previousComics : ["comic_time_of_raven_4", "comic_red_fury_41", "comic_major_grom_41"],
-        nextComics     : ["comic_time_of_raven_epilogue_electronic", "comic_besoboy_42"],
+        previousComics : ["comic_red_fury_41", "comic_major_grom_41"],
+        nextComics     : ["comic_time_of_raven_epilogue", "comic_besoboy_42"],
         releaseAt      : {year: 2016, month: 3, day: 13},
         show           : false
     },
@@ -4303,7 +4244,7 @@ const comics: Comics = {
         containedComics: ["comic_major_grom_25", "comic_major_grom_26", "comic_major_grom_27", "comic_major_grom_28",
                           "comic_major_grom_29", "comic_major_grom_30", "comic_major_grom_31", "comic_major_grom_32",
                           "comic_major_grom_33"],
-        previousComics : ["comic_major_grom_volume_4"],
+        previousComics : ["comic_special_volkov_inferno"],
         nextComics     : ["comic_major_grom_volume_6"],
         releaseAt      : {year: 2016, month: 3, day: 13},
         show           : true
@@ -4327,20 +4268,36 @@ const comics: Comics = {
         releaseAt      : {year: 2016, month: 3, day: 13},
         show           : true
     },
-    comic_time_of_raven_epilogue_electronic                           : {
-        ...comicTimeOfRavenEpilogue,
-        includingComics: ["comic_time_of_raven_epilogue_printed"],
-        previousComics : ["comic_exlibrium_17", "comic_time_of_raven_5"],
-        nextComics     : ["comic_red_fury_42", "comic_major_grom_42", "comic_exlibrium_18", "comic_monk_43"],
-        show           : false
-    },
-    comic_time_of_raven_epilogue_printed                              : {
-        ...comicTimeOfRavenEpilogue,
-        containedComics: ["comic_time_of_raven_epilogue_electronic"],
-        previousComics : ["comic_exlibrium_volume_3"],
-        nextComics     : ["comic_red_fury_volume_8", "comic_major_grom_volume_8", "comic_monk_volume_8",
-                          "comic_exlibrium_volume_4"],
-        show           : true
+    comic_time_of_raven_epilogue                                      : {
+        name          : "Время Ворона: Эпилог",
+        type          : "book",
+        coverFile     : {url: `${paths.timeOfRaven}/time-of-raven-epilogue.jpg`, width: 1339, height: 2048},
+        ranges        : ["range_crossovers"],
+        characters    : ["character_avgust_van_der_holt", "character_angelina_evgenevna", "character_antihrist",
+                         "character_bulat_gadzhiev", "character_dzhessi_rodrigez", "character_dmitrii_dubin",
+                         "character_koschei", "character_magistr", "character_myordok_makalister", "character_semiaza",
+                         "character_tatyana_aleksandrovna", "character_feliks_dzerzhinskii", "character_chumnoi_doktor",
+                         "character_shebu_predvechnyi", "character_yarh_smertonosnyi", "character_nika_chaikina",
+                         "character_igor_grom_maior_grom", "character_alyona_kuznetsova", "character_besoboi",
+                         "character_andrei_radov"],
+        authors       : [comicAuthors.alexHatchett.screenwriter, comicAuthors.anastasiaKim.artist,
+                         comicAuthors.anastasiaTroitskaya.colorist, comicAuthors.andreyVasin.artist,
+                         comicAuthors.andreyRodin.artist, comicAuthors.annaRud.artist,
+                         comicAuthors.annaSidorova.colorist, comicAuthors.artyomBizyaev.artist,
+                         comicAuthors.artyomGabrelyanov.screenwriter, comicAuthors.victoriaTirtilova.colorist,
+                         comicAuthors.evgenyFedotov.screenwriter, comicAuthors.igorLoboda.colorist,
+                         comicAuthors.igorKhudaev.screenwriter, comicAuthors.konstantinTarasov.artist,
+                         comicAuthors.ladaAkishina.colorist, comicAuthors.margaritaKablukova.colorist,
+                         comicAuthors.nataliaDevova.screenwriter, comicAuthors.natalyaMartinovich.colorist,
+                         comicAuthors.ninaVakueva.artist, comicAuthors.romanKotkov.screenwriter,
+                         comicAuthors.eduardPetrovich.artist],
+        previousComics: ["comic_exlibrium_17", "comic_time_of_raven_5", "comic_exlibrium_volume_3",
+                         "comic_time_of_raven"],
+        nextComics    : ["comic_red_fury_42", "comic_major_grom_42", "comic_exlibrium_18", "comic_monk_43",
+                         "comic_red_fury_volume_8", "comic_major_grom_volume_8", "comic_monk_volume_8",
+                         "comic_exlibrium_volume_4"],
+        releaseAt     : {year: 2016, month: 3, day: 13},
+        show          : true
     },
     comic_red_fury_42                                                 : {
         name           : "Красная Фурия #42 Агент Симмонс,\nчасть 1",
@@ -4353,7 +4310,7 @@ const comics: Comics = {
         authors        : [comicAuthors.andreyVasin.artist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.olegErshov.colorist],
         includingComics: ["comic_red_fury_volume_8"],
-        previousComics : ["comic_major_grom_41", "comic_time_of_raven_epilogue_electronic"],
+        previousComics : ["comic_major_grom_41", "comic_time_of_raven_epilogue"],
         nextComics     : ["comic_red_fury_43"],
         releaseAt      : {year: 2016, month: 3, day: 15},
         show           : false
@@ -4401,7 +4358,7 @@ const comics: Comics = {
         authors        : [comicAuthors.annaSidorova.colorist, comicAuthors.artyomGabrelyanov.screenwriter,
                           comicAuthors.eduardPetrovich.artist],
         includingComics: ["comic_major_grom_volume_8", "comic_major_grom_riddle_of_sphinx"],
-        previousComics : ["comic_major_grom_41", "comic_time_of_raven_epilogue_electronic"],
+        previousComics : ["comic_time_of_raven_epilogue"],
         nextComics     : ["comic_major_grom_43"],
         releaseAt      : {year: 2016, month: 4, day: 4},
         show           : false
@@ -4433,7 +4390,7 @@ const comics: Comics = {
         authors        : [comicAuthors.alinaErofeeva.artist, comicAuthors.victoriaVinogradova.colorist,
                           comicAuthors.mariaVasilyeva.colorist, comicAuthors.nataliaDevova.screenwriter],
         includingComics: ["comic_exlibrium_volume_4"],
-        previousComics : ["comic_exlibrium_17", "comic_time_of_raven_epilogue_electronic"],
+        previousComics : ["comic_exlibrium_17", "comic_time_of_raven_epilogue"],
         nextComics     : ["comic_exlibrium_19"],
         releaseAt      : {year: 2016, month: 4, day: 16},
         show           : false
@@ -4550,7 +4507,7 @@ const comics: Comics = {
         coverFile      : {url: `${paths.monk}/monk-43-path-to-immortality-part-1.jpg`, width: 379, height: 580},
         ranges         : ["range_monk"],
         includingComics: ["comic_monk_volume_8"],
-        previousComics : ["comic_time_of_raven_epilogue_electronic", "comic_monk_42"],
+        previousComics : ["comic_time_of_raven_epilogue", "comic_monk_42"],
         nextComics     : ["comic_monk_44"],
         releaseAt      : {year: 2016, month: 5, day: 10},
         show           : false
@@ -4760,7 +4717,7 @@ const comics: Comics = {
                           comicAuthors.margaritaKablukova.colorist],
         containedComics: ["comic_major_grom_34", "comic_major_grom_35", "comic_major_grom_36", "comic_major_grom_37"],
         previousComics : ["comic_major_grom_volume_5"],
-        nextComics     : ["comic_major_grom_and_red_fury_volume_7", "comic_time_of_raven"],
+        nextComics     : ["comic_time_of_raven_backstory"],
         releaseAt      : {year: 2016, month: 7, day: 4},
         show           : true
     },
@@ -5115,8 +5072,8 @@ const comics: Comics = {
                           comicAuthors.natalyaMartinovich.colorist, comicAuthors.ninaVakueva.artist],
         containedComics: ["comic_major_grom_38", "comic_red_fury_38", "comic_major_grom_39", "comic_red_fury_39",
                           "comic_major_grom_40", "comic_red_fury_40", "comic_red_fury_41", "comic_major_grom_41"],
-        previousComics : ["comic_major_grom_volume_6", "comic_red_fury_volume_6"],
-        nextComics     : ["comic_red_fury_volume_8", "comic_major_grom_volume_8"],
+        previousComics : ["comic_time_of_raven_backstory", "comic_red_fury_volume_6"],
+        nextComics     : ["comic_time_of_raven", "comic_red_fury_volume_8"],
         releaseAt      : {year: 2016, month: 9, day: 19},
         show           : true
     },
@@ -5199,7 +5156,7 @@ const comics: Comics = {
         containedComics: ["comic_exlibrium_11", "comic_exlibrium_12", "comic_exlibrium_13", "comic_exlibrium_14",
                           "comic_exlibrium_15", "comic_exlibrium_16", "comic_exlibrium_17"],
         previousComics : ["comic_exlibrium_volume_2"],
-        nextComics     : ["comic_time_of_raven_epilogue_printed", "comic_exlibrium_volume_4"],
+        nextComics     : ["comic_time_of_raven_epilogue", "comic_exlibrium_volume_4"],
         releaseAt      : {year: 2016, month: 9, day: 29},
         show           : true
     },
@@ -5241,9 +5198,9 @@ const comics: Comics = {
                           comicAuthors.natalyaMartinovich.colorist, comicAuthors.romanKotkov.screenwriter],
         containedComics: ["comic_time_of_raven_prologue", "comic_time_of_raven_1", "comic_time_of_raven_2",
                           "comic_time_of_raven_3", "comic_time_of_raven_4", "comic_time_of_raven_5"],
-        previousComics : ["comic_time_of_raven_backstory_printed", "comic_monk_volume_5", "comic_besoboy_volume_6",
-                          "comic_major_grom_volume_6", "comic_red_fury_volume_6"],
-        nextComics     : ["comic_time_of_raven_epilogue_printed", "comic_besoboy_volume_8"],
+        previousComics : ["comic_monk_volume_5", "comic_besoboy_volume_6", "comic_red_fury_volume_6",
+                          "comic_major_grom_and_red_fury_volume_7"],
+        nextComics     : ["comic_time_of_raven_epilogue", "comic_besoboy_volume_8"],
         releaseAt      : {year: 2016, month: 9, day: 29},
         show           : true
     },
@@ -5493,11 +5450,8 @@ const comics: Comics = {
                           comicAuthors.natalyaNesterenko.colorist],
         includingComics: ["comic_major_grom_volume_8"],
         previousComics : ["comic_major_grom_49"],
-        nextComics     : ["comic_igor_grom_1", "comic_major_grom_chance_electronic",
-                          "comic_dubin_dima_provincial_holidays_1", "comic_major_grom_1939_electronic",
-                          "comic_major_grom_like_in_war_1", "comic_major_grom_hero_forever_1",
-                          "comic_special_prokopenko_grom_at_sunrise_electronic",
-                          "comic_major_grom_childrens_games_coloring_electronic",
+        nextComics     : ["comic_igor_grom_1", "comic_major_grom_chance_electronic", "comic_major_grom_1939",
+                          "comic_major_grom_hero_forever_1", "comic_major_grom_childrens_games_coloring_electronic",
                           "comic_grom_difficult_childhood_rising_of_anubis_electronic"],
         releaseAt      : {year: 2016, month: 12, day: 24},
         show           : false
@@ -5510,8 +5464,8 @@ const comics: Comics = {
         ranges         : ["range_monk"],
         includingComics: ["comic_monk_volume_8"],
         previousComics : ["comic_monk_49"],
-        nextComics     : ["comic_monk_and_major_grom_storm_of_berlin", "comic_planeswalkers_1",
-                          "comic_master_death_is_just_beginning_electronic", "comic_monk_legacy_electronic"],
+        nextComics     : ["comic_planeswalkers_1", "comic_master_death_is_just_beginning_electronic",
+                          "comic_monk_legacy_electronic"],
         releaseAt      : {year: 2016, month: 12, day: 24},
         show           : false
     },
@@ -5561,7 +5515,7 @@ const comics: Comics = {
                           comicAuthors.olegErshov.colorist, comicAuthors.olegOkunev.artist,
                           comicAuthors.romanTitov.colorist],
         containedComics: ["comic_red_fury_42", "comic_red_fury_43", "comic_red_fury_44", "comic_red_fury_45"],
-        previousComics : ["comic_time_of_raven_epilogue_printed", "comic_major_grom_and_red_fury_volume_7"],
+        previousComics : ["comic_time_of_raven_epilogue", "comic_major_grom_and_red_fury_volume_7"],
         nextComics     : ["comic_red_fury_volume_9"],
         releaseAt      : {year: 2016, month: 12, day: 24},
         show           : true
@@ -5620,7 +5574,7 @@ const comics: Comics = {
         authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.mariaVasilyeva.colorist,
                           comicAuthors.natalyaZaidova.artist],
         includingComics: ["comic_igor_grom_book_1", "comic_igor_grom_volume_1"],
-        previousComics : ["comic_major_grom_50"],
+        previousComics : ["comic_major_grom_50", "comic_rubinstein_what_i_was_looking_for"],
         nextComics     : ["comic_igor_grom_2"],
         releaseAt      : {year: 2017, month: 1, day: 20},
         show           : false
@@ -6180,11 +6134,9 @@ const comics: Comics = {
         containedComics: ["comic_major_grom_42", "comic_major_grom_43", "comic_major_grom_44", "comic_major_grom_45",
                           "comic_major_grom_46", "comic_major_grom_47", "comic_major_grom_48", "comic_major_grom_49",
                           "comic_major_grom_50"],
-        previousComics : ["comic_time_of_raven_epilogue_printed", "comic_major_grom_and_red_fury_volume_7"],
+        previousComics : ["comic_time_of_raven_epilogue"],
         nextComics     : ["comic_major_grom_chance_printed", "comic_igor_grom_book_1", "comic_igor_grom_volume_1",
-                          "comic_dubin_dima_provincial_holidays", "comic_major_grom_1939_printed",
-                          "comic_major_grom_like_in_war", "comic_major_grom_hero_forever",
-                          "comic_special_prokopenko_grom_at_sunrise_printed",
+                          "comic_major_grom_1939", "comic_major_grom_hero_forever",
                           "comic_major_grom_childrens_games_coloring_printed",
                           "comic_grom_difficult_childhood_rising_of_anubis_printed"],
         releaseAt      : {year: 2017, month: 6, day: 1},
@@ -6198,7 +6150,7 @@ const comics: Comics = {
         ranges         : ["range_monk"],
         containedComics: ["comic_monk_43", "comic_monk_44", "comic_monk_45", "comic_monk_46", "comic_monk_47",
                           "comic_monk_48", "comic_monk_49", "comic_monk_50"],
-        previousComics : ["comic_time_of_raven_epilogue_printed", "comic_monk_volume_7"],
+        previousComics : ["comic_time_of_raven_epilogue", "comic_monk_volume_7"],
         nextComics     : ["comic_chronicles_of_monk_storm_of_berlin", "comic_planeswalkers_book_1",
                           "comic_planeswalkers_volume_1", "comic_master_death_is_just_beginning_printed",
                           "comic_monk_legacy_printed"],
@@ -6618,7 +6570,7 @@ const comics: Comics = {
                           comicAuthors.nataliaDevova.screenwriter, comicAuthors.yuliaZhuravleva.artist],
         containedComics: ["comic_exlibrium_18", "comic_exlibrium_19", "comic_exlibrium_20", "comic_exlibrium_21",
                           "comic_exlibrium_22", "comic_exlibrium_23"],
-        previousComics : ["comic_time_of_raven_epilogue_printed", "comic_exlibrium_volume_3"],
+        previousComics : ["comic_time_of_raven_epilogue", "comic_exlibrium_volume_3"],
         nextComics     : ["comic_exlibrium_volume_5"],
         releaseAt      : {year: 2017, month: 7, day: 28},
         show           : true
@@ -6772,7 +6724,8 @@ const comics: Comics = {
         coverFile      : {url: `${paths.igorGrom}/igor-grom-8-hungry-ghosts-part-2.jpg`, width: 1339, height: 2048},
         ranges         : ["range_igor_grom"],
         characters     : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya",
-                          "character_igor_grom_maior_grom", "character_valentin_kaligari_gashparov", "character_irina_sharlotta"],
+                          "character_igor_grom_maior_grom", "character_valentin_kaligari_gashparov",
+                          "character_irina_sharlotta"],
         authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.mariaVasilyeva.colorist,
                           comicAuthors.natalyaZaidova.artist],
         includingComics: ["comic_igor_grom_book_2", "comic_igor_grom_volume_2"],
@@ -7234,7 +7187,7 @@ const comics: Comics = {
                           comicAuthors.natalyaMartinovich.colorist],
         containedComics: ["comic_igor_grom_1", "comic_igor_grom_2", "comic_igor_grom_3", "comic_igor_grom_4",
                           "comic_igor_grom_5", "comic_igor_grom_6"],
-        previousComics : ["comic_major_grom_volume_8"],
+        previousComics : ["comic_major_grom_volume_8", "comic_rivers_there_is_no_fear"],
         nextComics     : ["comic_igor_grom_volume_2"],
         releaseAt      : {year: 2017, month: 9, day: 28},
         show           : true
@@ -8114,7 +8067,7 @@ const comics: Comics = {
                           comicAuthors.natalyaNesterenko.colorist],
         includingComics: ["comic_igor_grom_book_2", "comic_igor_grom_volume_3"],
         previousComics : ["comic_igor_grom_13"],
-        nextComics     : ["comic_igor_grom_15"],
+        nextComics     : ["comic_witch_hunt_prologue"],
         releaseAt      : {year: 2018, month: 2, day: 9},
         show           : false
     },
@@ -8197,7 +8150,8 @@ const comics: Comics = {
         authors        : [comicAuthors.alinaErofeeva.artist, comicAuthors.victoriaVinogradova.colorist,
                           comicAuthors.evgenyEronin.screenwriter, comicAuthors.romanKotkov.screenwriter],
         includingComics: ["comic_witch_hunt"],
-        nextComics     : ["comic_allies_15"],
+        previousComics : ["comic_igor_grom_14"],
+        nextComics     : ["comic_allies_15", "comic_igor_grom_15"],
         releaseAt      : {year: 2018, month: 3, day: 1},
         show           : false
     },
@@ -8259,8 +8213,8 @@ const comics: Comics = {
         authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.mariaVasilyeva.colorist,
                           comicAuthors.oksanaTurlyay.artist],
         includingComics: ["comic_witch_hunt"],
-        previousComics : ["comic_igor_grom_14", "comic_besoboy_vol_2_15"],
-        nextComics     : ["comic_planeswalkers_15", "comic_igor_grom_16"],
+        previousComics : ["comic_witch_hunt_prologue", "comic_besoboy_vol_2_15"],
+        nextComics     : ["comic_planeswalkers_15", "comic_witch_hunt_finale"],
         releaseAt      : {year: 2018, month: 3, day: 9},
         show           : false
     },
@@ -8332,7 +8286,8 @@ const comics: Comics = {
         coverFile      : {url: `${paths.witchHunt}/witch-hunt-finale.jpg`, width: 1339, height: 2048},
         ranges         : ["range_crossovers"],
         includingComics: ["comic_witch_hunt"],
-        previousComics : ["comic_planeswalkers_15"],
+        previousComics : ["comic_igor_grom_15", "comic_planeswalkers_15"],
+        nextComics     : ["comic_igor_grom_16"],
         releaseAt      : {year: 2018, month: 4, day: 1},
         show           : false
     },
@@ -8457,7 +8412,7 @@ const comics: Comics = {
         authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.anastasiaTroitskaya.colorist,
                           comicAuthors.marinaPrivalova.artist],
         includingComics: ["comic_igor_grom_volume_4"],
-        previousComics : ["comic_igor_grom_15"],
+        previousComics : ["comic_witch_hunt_finale"],
         nextComics     : ["comic_igor_grom_17"],
         releaseAt      : {year: 2018, month: 4, day: 9},
         show           : false
@@ -8654,7 +8609,7 @@ const comics: Comics = {
         characters     : ["character_dmitrii_dubin"],
         authors        : [comicAuthors.artyomBizyaev.artist_colorist_screenwriter],
         includingComics: ["comic_dubin_dima_provincial_holidays"],
-        previousComics : ["comic_major_grom_50"],
+        previousComics : ["comic_igor_grom_21"],
         nextComics     : ["comic_dubin_dima_provincial_holidays_2"],
         releaseAt      : {year: 2018, month: 5, day: 28},
         show           : false
@@ -9234,6 +9189,7 @@ const comics: Comics = {
         authors        : [comicAuthors.artyomBizyaev.artist_colorist_screenwriter],
         includingComics: ["comic_dubin_dima_provincial_holidays"],
         previousComics : ["comic_dubin_dima_provincial_holidays_3"],
+        nextComics     : ["comic_igor_grom_22"],
         releaseAt      : {year: 2018, month: 8, day: 28},
         show           : false
     },
@@ -9297,7 +9253,7 @@ const comics: Comics = {
                           comicAuthors.tayaMakarevich.artist],
         includingComics: ["comic_igor_grom_volume_4"],
         previousComics : ["comic_igor_grom_20"],
-        nextComics     : ["comic_igor_grom_22"],
+        nextComics     : ["comic_dubin_dima_provincial_holidays_1"],
         releaseAt      : {year: 2018, month: 9, day: 10},
         show           : false
     },
@@ -9418,7 +9374,7 @@ const comics: Comics = {
         authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.annaSidorova.colorist,
                           comicAuthors.jamilyaZulpikarova.artist],
         includingComics: ["comic_igor_grom_volume_5"],
-        previousComics : ["comic_igor_grom_21"],
+        previousComics : ["comic_dubin_dima_provincial_holidays_4"],
         nextComics     : ["comic_igor_grom_23"],
         releaseAt      : {year: 2018, month: 10, day: 4},
         show           : false
@@ -9502,7 +9458,8 @@ const comics: Comics = {
         authors        : [comicAuthors.artyomBizyaev.artist_colorist_screenwriter],
         containedComics: ["comic_dubin_dima_provincial_holidays_1", "comic_dubin_dima_provincial_holidays_2",
                           "comic_dubin_dima_provincial_holidays_3", "comic_dubin_dima_provincial_holidays_4"],
-        previousComics : ["comic_major_grom_volume_8"],
+        previousComics : ["comic_igor_grom_volume_4"],
+        nextComics     : ["comic_igor_grom_volume_5"],
         releaseAt      : {year: 2018, month: 10, day: 4},
         show           : true
     },
@@ -10681,7 +10638,7 @@ const comics: Comics = {
         containedComics: ["comic_igor_grom_16", "comic_igor_grom_17", "comic_igor_grom_18", "comic_igor_grom_19",
                           "comic_igor_grom_20", "comic_igor_grom_21"],
         previousComics : ["comic_witch_hunt"],
-        nextComics     : ["comic_igor_grom_volume_5"],
+        nextComics     : ["comic_dubin_dima_provincial_holidays"],
         releaseAt      : {year: 2019, month: 5, day: 22},
         show           : true
     },
@@ -10983,7 +10940,7 @@ const comics: Comics = {
         authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.annaSidorova.colorist,
                           comicAuthors.jamilyaZulpikarova.artist],
         containedComics: ["comic_igor_grom_22", "comic_igor_grom_23", "comic_igor_grom_24", "comic_igor_grom_25"],
-        previousComics : ["comic_igor_grom_volume_4"],
+        previousComics : ["comic_dubin_dima_provincial_holidays"],
         nextComics     : ["comic_igor_grom_volume_6"],
         releaseAt      : {year: 2019, month: 9, day: 12},
         show           : true
@@ -11156,17 +11113,18 @@ const comics: Comics = {
         releaseAt      : {year: 2019, month: 10, day: 5},
         show           : false
     },
-    comic_major_grom_1939_electronic                                  : {
-        ...comicMajorGrom1939,
-        includingComics: ["comic_major_grom_1939_printed"],
-        previousComics : ["comic_major_grom_50"],
-        show           : false
-    },
-    comic_major_grom_1939_printed                                     : {
-        ...comicMajorGrom1939,
-        containedComics: ["comic_major_grom_1939_electronic"],
-        previousComics : ["comic_major_grom_volume_8"],
-        show           : true
+    comic_major_grom_1939                                             : {
+        name          : "Майор Гром: 1939",
+        type          : "book",
+        coverFile     : {url: `${paths.majorGrom}/major-grom-1939.jpg`, width: 1339, height: 2047},
+        ranges        : ["range_major_grom"],
+        characters    : ["character_dmitrii_dubin", "character_chumnoi_doktor", "character_uliya_pchyolkina",
+                         "character_igor_grom_maior_grom"],
+        authors       : [comicAuthors.alexeyVolkov.screenwriter, comicAuthors.alexeyGorbut.artist,
+                         comicAuthors.natalyaMartinovich.colorist],
+        previousComics: ["comic_major_grom_50", "comic_major_grom_volume_8"],
+        releaseAt     : {year: 2019, month: 10, day: 21},
+        show          : true
     },
     comic_allies_34                                                   : {
         name           : "Союзники #34 На круги своя, часть\n1",
@@ -11229,7 +11187,7 @@ const comics: Comics = {
         authors        : [comicAuthors.annaSidorova.colorist, comicAuthors.kirillKutuzov.screenwriter,
                           comicAuthors.olegChudakov.artist],
         includingComics: ["comic_major_grom_like_in_war"],
-        previousComics : ["comic_major_grom_50"],
+        previousComics : ["comic_monk_and_major_grom_storm_of_berlin"],
         nextComics     : ["comic_major_grom_like_in_war_2"],
         releaseAt      : {year: 2019, month: 12},
         show           : false
@@ -11374,6 +11332,7 @@ const comics: Comics = {
                           comicAuthors.kirillKutuzov.screenwriter, comicAuthors.olegChudakov.artist],
         includingComics: ["comic_major_grom_like_in_war"],
         previousComics : ["comic_major_grom_like_in_war_3"],
+        nextComics     : ["comic_major_grom_1"],
         releaseAt      : {year: 2020},
         show           : false
     },
@@ -11486,7 +11445,8 @@ const comics: Comics = {
                           comicAuthors.kirillKutuzov.screenwriter, comicAuthors.olegChudakov.artist],
         containedComics: ["comic_major_grom_like_in_war_1", "comic_major_grom_like_in_war_2",
                           "comic_major_grom_like_in_war_3", "comic_major_grom_like_in_war_4"],
-        previousComics : ["comic_major_grom_volume_8"],
+        previousComics : ["comic_major_grom_stories"],
+        nextComics     : ["comic_major_grom_volume_1"],
         releaseAt      : {year: 2020, month: 2, day: 23},
         show           : true
     },
@@ -12017,7 +11977,8 @@ const comics: Comics = {
         type           : "single",
         coverFile      : {url: `${paths.igorGrom}/igor-grom-42-dead-water-part-3.jpg`, width: 1339, height: 2048},
         ranges         : ["range_igor_grom"],
-        characters     : ["character_dmitrii_dubin", "character_igor_grom_maior_grom", "character_aheron", "character_kocit",
+        characters     : ["character_dmitrii_dubin", "character_igor_grom_maior_grom", "character_aheron",
+                          "character_kocit",
                           "character_stiks", "character_flegeton"],
         authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.anastasiaTroitskaya.colorist,
                           comicAuthors.andreyVasin.artist],
@@ -12969,7 +12930,8 @@ const comics: Comics = {
         type           : "book",
         coverFile      : {url: `${paths.igorGrom}/igor-grom-volume-9-dead-water.jpg`, width: 1004, height: 1535},
         ranges         : ["range_igor_grom"],
-        characters     : ["character_igor_grom_maior_grom", "character_irina_sharlotta", "character_aheron", "character_kocit",
+        characters     : ["character_igor_grom_maior_grom", "character_irina_sharlotta", "character_aheron",
+                          "character_kocit",
                           "character_stiks", "character_flegeton"],
         authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.anastasiaTroitskaya.colorist,
                           comicAuthors.andreyVasin.artist],
@@ -13221,7 +13183,8 @@ const comics: Comics = {
         coverFile      : {url: `${paths.igorGrom}/igor-grom-50-tomorrow.jpg`, width: 1339, height: 2048},
         ranges         : ["range_igor_grom"],
         characters     : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya",
-                          "character_igor_grom_maior_grom", "character_valentin_kaligari_gashparov", "character_irina_sharlotta"],
+                          "character_igor_grom_maior_grom", "character_valentin_kaligari_gashparov",
+                          "character_irina_sharlotta"],
         authors        : [comicAuthors.alexandraBizyaeva.artist_colorist, comicAuthors.alexeyZamsky.screenwriter,
                           comicAuthors.anastasiaTroitskaya.colorist, comicAuthors.andreyVasin.artist,
                           comicAuthors.artyomBizyaev.artist_colorist_screenwriter,
@@ -13230,8 +13193,7 @@ const comics: Comics = {
                           comicAuthors.romanKotkov.screenwriter, comicAuthors.tayaMakarevich.artist],
         includingComics: ["comic_igor_grom_volume_10"],
         previousComics : ["comic_igor_grom_49"],
-        nextComics     : ["comic_major_igor_grom_1", "comic_caligari_datura_electronic",
-                          "comic_rivers_there_is_no_fear_1"],
+        nextComics     : ["comic_caligari_datura", "comic_major_igor_grom_1", "comic_rivers_there_is_no_fear_1"],
         releaseAt      : {year: 2021, month: 5, day: 10},
         show           : false
     },
@@ -13328,15 +13290,15 @@ const comics: Comics = {
         },
         ranges         : ["range_igor_grom"],
         characters     : ["character_dmitrii_dubin", "character_liliya_abramenko", "character_ulya",
-                          "character_igor_grom_maior_grom", "character_valentin_kaligari_gashparov", "character_irina_sharlotta",
-                          "character_umnyj_chelovek"],
+                          "character_igor_grom_maior_grom", "character_valentin_kaligari_gashparov",
+                          "character_irina_sharlotta", "character_umnyj_chelovek"],
         authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.anastasiaTroitskaya.colorist,
                           comicAuthors.andreyVasin.artist, comicAuthors.jamilyaZulpikarova.artist,
                           comicAuthors.karinaAkhmetvalieva.colorist],
         containedComics: ["comic_igor_grom_45", "comic_igor_grom_46", "comic_igor_grom_47", "comic_igor_grom_48",
                           "comic_igor_grom_49", "comic_igor_grom_50"],
         previousComics : ["comic_igor_grom_volume_9"],
-        nextComics     : ["comic_major_igor_grom_volume_1", "comic_caligari_datura_printed"],
+        nextComics     : ["comic_major_igor_grom_volume_1", "comic_caligari_datura"],
         releaseAt      : {year: 2021, month: 6, day: 18},
         show           : true
     },
@@ -13746,7 +13708,8 @@ const comics: Comics = {
         type      : "single",
         coverFile : {url: `${paths._}/bubble-halloween.jpg`, width: 1339, height: 2048},
         ranges    : ["range_bubble_legends"],
-        characters: ["character_ziggi", "character_shmyg", "character_igor_grom_maior_grom", "character_liliya_romanova",
+        characters: ["character_ziggi", "character_shmyg", "character_igor_grom_maior_grom",
+                     "character_liliya_romanova",
                      "character_besoboi", "character_valeriya_makarova"],
         releaseAt : {year: 2021, month: 10},
         show      : true
@@ -13885,17 +13848,18 @@ const comics: Comics = {
         releaseAt      : {year: 2021, month: 10, day: 30},
         show           : false
     },
-    comic_special_volkov_inferno_electronic                           : {
-        ...comicSpecialVolkovInferno,
-        includingComics: ["comic_special_volkov_inferno_printed"],
-        previousComics : ["comic_plague_doctor_30"],
+    comic_special_volkov_inferno                                      : {
+        name           : "Спецвыпуск \"Волков. Пекло\"",
+        type           : "single",
+        coverFile      : {url: `${paths._}/special-volkov-inferno.jpg`, width: 1339, height: 2048},
+        ranges         : ["range_plague_doctor"],
+        characters     : ["character_dzhessi_rodrigez", "character_oleg_volkov"],
+        authors        : [comicAuthors.ekaterinaGrishchenko.artist, comicAuthors.nataliaVorontsova.screenwriter],
+        includingComics: ["comic_major_grom_stories"],
+        previousComics : ["comic_major_grom_24", "comic_major_grom_volume_4"],
+        nextComics     : ["comic_major_grom_25", "comic_major_grom_volume_5"],
+        releaseAt      : {year: 2021, month: 10, day: 30},
         show           : false
-    },
-    comic_special_volkov_inferno_printed                              : {
-        ...comicSpecialVolkovInferno,
-        containedComics: ["comic_special_volkov_inferno_electronic"],
-        previousComics : ["comic_plague_doctor_30"],
-        show           : true
     },
     comic_mir_volume_5                                                : {
         name           : "МИР. Том 5: Второе солнце",
@@ -14013,17 +13977,17 @@ const comics: Comics = {
         releaseAt      : {year: 2021, month: 11, day: 30},
         show           : false
     },
-    comic_special_prokopenko_grom_at_sunrise_electronic               : {
-        ...comicSpecialProkopenkoGromAtSunrise,
-        includingComics: ["comic_special_prokopenko_grom_at_sunrise_printed"],
-        previousComics : ["comic_major_grom_50", "comic_major_igor_grom_27"],
+    comic_special_prokopenko_grom_at_sunrise                          : {
+        name           : "Спецвыпуск «Прокопенко. Гром на восходе»",
+        type           : "single",
+        coverFile      : {url: `${paths._}/special-prokopenko-grom-at-sunrise.jpg`, width: 1339, height: 2048},
+        ranges         : ["range_major_grom", "range_bubble_legends", "range_major_igor_grom"],
+        characters     : ["character_dmitrii_dubin", "character_fyodor_prokopenko", "character_igor_grom_maior_grom"],
+        authors        : [comicAuthors.evgeniyBornyakov.artist, comicAuthors.kirillKutuzov.screenwriter,
+                          comicAuthors.natalyaMartinovich.colorist],
+        includingComics: ["comic_major_grom_stories"],
+        releaseAt      : {year: 2021, month: 12},
         show           : false
-    },
-    comic_special_prokopenko_grom_at_sunrise_printed                  : {
-        ...comicSpecialProkopenkoGromAtSunrise,
-        containedComics: ["comic_special_prokopenko_grom_at_sunrise_electronic"],
-        previousComics : ["comic_major_grom_volume_8", "comic_major_igor_grom_27"],
-        show           : true
     },
     comic_soyuzmultcomics                                             : {
         name     : "СоюзМультКомикс",
@@ -14090,7 +14054,7 @@ const comics: Comics = {
     },
     comic_fiction_novel_major_grom                                    : {
         name      : "Художественный роман \"Майор Гром\"",
-        type      : "hardcover_book",
+        type      : "book",
         coverFile : {url: `${paths._}/fiction-novel-major-grom.jpg`, width: 1202, height: 1831},
         ranges    : ["range_major_grom"],
         characters: ["character_dmitrii_dubin", "character_uliya_pchyolkina", "character_igor_grom_maior_grom"],
@@ -14514,7 +14478,8 @@ const comics: Comics = {
             height: 2048
         },
         ranges         : ["range_major_igor_grom"],
-        characters     : ["character_dmitrii_dubin", "character_igor_grom_maior_grom", "character_valentin_kaligari_gashparov",
+        characters     : ["character_dmitrii_dubin", "character_igor_grom_maior_grom",
+                          "character_valentin_kaligari_gashparov",
                           "character_irina_sharlotta"],
         authors        : [comicAuthors.alexeyEfremov.artist, comicAuthors.alexeyZamsky.screenwriter,
                           comicAuthors.evgenyEronin.screenwriter, comicAuthors.natalyaMartinovich.colorist],
@@ -14715,7 +14680,8 @@ const comics: Comics = {
             height: 2048
         },
         ranges         : ["range_major_igor_grom"],
-        characters     : ["character_dmitrii_dubin", "character_igor_grom_maior_grom", "character_valentin_kaligari_gashparov",
+        characters     : ["character_dmitrii_dubin", "character_igor_grom_maior_grom",
+                          "character_valentin_kaligari_gashparov",
                           "character_irina_sharlotta"],
         authors        : [comicAuthors.alexeyEfremov.artist, comicAuthors.alexeyZamsky.screenwriter,
                           comicAuthors.evgenyEronin.screenwriter, comicAuthors.natalyaMartinovich.colorist],
@@ -15045,7 +15011,8 @@ const comics: Comics = {
             height: 2048
         },
         ranges         : ["range_major_igor_grom"],
-        characters     : ["character_igor_grom_maior_grom", "character_valentin_kaligari_gashparov", "character_irina_sharlotta"],
+        characters     : ["character_igor_grom_maior_grom", "character_valentin_kaligari_gashparov",
+                          "character_irina_sharlotta"],
         authors        : [comicAuthors.alexeyEfremov.artist, comicAuthors.alexeyZamsky.screenwriter,
                           comicAuthors.evgenyEronin.screenwriter, comicAuthors.natalyaMartinovich.colorist],
         containedComics: ["comic_major_igor_grom_9", "comic_major_igor_grom_10", "comic_major_igor_grom_11",
@@ -15312,35 +15279,37 @@ const comics: Comics = {
         releaseAt      : {year: 2022, month: 10, day: 19},
         show           : false
     },
-    comic_caligari_datura_electronic                                  : {
-        ...comicCaligariDatura,
-        includingComics: ["comic_caligari_datura_printed"],
-        previousComics : ["comic_igor_grom_50"],
+    comic_caligari_datura                                             : {
+        name           : "Калигари. Дурман",
+        type           : "single",
+        coverFile      : {url: `${paths._}/caligari-datura.jpg`, width: 1339, height: 2048},
+        ranges         : ["range_bubble_legends", "range_igor_grom"],
+        characters     : ["character_valentin_kaligari_gashparov"],
+        authors        : [comicAuthors.jamilyaZulpikarova.artist, comicAuthors.karinaAkhmetvalieva.colorist,
+                          comicAuthors.nataliaVorontsova.screenwriter],
+        includingComics: ["comic_major_grom_stories"],
+        previousComics : ["comic_igor_grom_50", "comic_igor_grom_volume_10"],
+        releaseAt      : {year: 2022, month: 10, day: 24},
         show           : false
     },
-    comic_caligari_datura_printed                                     : {
-        ...comicCaligariDatura,
-        containedComics: ["comic_caligari_datura_electronic"],
-        previousComics : ["comic_igor_grom_volume_10"],
-        show           : true
-    },
     comic_rivers_there_is_no_fear_1                                   : {
-        name          : "Реки. Страха нет, часть 1",
-        number        : "1",
-        type          : "single",
-        coverFile     : {
+        name           : "Реки. Страха нет, часть 1",
+        number         : "1",
+        type           : "single",
+        coverFile      : {
             url   : `${paths.riversThereIsNoFear}/rivers-there-is-no-fear-part-1.jpg`,
             width : 1339,
             height: 2048
         },
-        ranges        : ["range_bubble_legends", "range_igor_grom"],
-        characters    : ["character_aheron", "character_kocit", "character_stiks", "character_flegeton"],
-        authors       : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.andreyVasin.artist,
-                         comicAuthors.mariaVasilyeva.colorist, comicAuthors.natalyaZaidova.artist],
-        previousComics: ["comic_igor_grom_50"],
-        nextComics    : ["comic_rivers_there_is_no_fear_2"],
-        releaseAt     : {year: 2022, month: 10, day: 24},
-        show          : true
+        ranges         : ["range_bubble_legends", "range_igor_grom"],
+        characters     : ["character_aheron", "character_kocit", "character_stiks", "character_flegeton"],
+        authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.andreyVasin.artist,
+                          comicAuthors.mariaVasilyeva.colorist, comicAuthors.natalyaZaidova.artist],
+        previousComics : ["comic_igor_grom_50"],
+        includingComics: ["comic_rivers_there_is_no_fear"],
+        nextComics     : ["comic_rivers_there_is_no_fear_2"],
+        releaseAt      : {year: 2022, month: 10, day: 24},
+        show           : false
     },
     comic_ink_prince_and_book_knight                                  : {
         name           : "Чернильный принц и Книжный рыцарь",
@@ -16051,7 +16020,7 @@ const comics: Comics = {
     },
     comic_fiction_novel_razumovsky                                    : {
         name      : "Художественный роман \"Разумовский\"",
-        type      : "hardcover_book",
+        type      : "book",
         coverFile : {url: `${paths._}/fiction-novel-razumovsky.jpg`, width: 1050, height: 1600},
         ranges    : ["range_major_grom"],
         characters: ["character_sergei_razumovskii"],
@@ -16582,8 +16551,7 @@ const comics: Comics = {
         authors       : [comicAuthors.anastasiaChebykina.colorist, comicAuthors.irinaIvanova.artist,
                          comicAuthors.nataliaVorontsova.screenwriter],
         previousComics: ["comic_plague_doctor_29", "comic_plague_doctor_volume_7"],
-        nextComics    : ["comic_special_volkov_inferno_electronic", "comic_special_volkov_inferno_printed",
-                         "comic_apple_saved_electronic", "comic_apple_saved_printed"],
+        nextComics    : ["comic_apple_saved_electronic", "comic_apple_saved_printed"],
         releaseAt     : {year: 2023, month: 7, day: 31},
         show          : true
     },
@@ -16678,21 +16646,22 @@ const comics: Comics = {
         show      : true
     },
     comic_rivers_there_is_no_fear_2                                   : {
-        name          : "Реки. Страха нет, часть 2",
-        number        : "2",
-        type          : "single",
-        coverFile     : {
+        name           : "Реки. Страха нет, часть 2",
+        number         : "2",
+        type           : "single",
+        coverFile      : {
             url   : `${paths.riversThereIsNoFear}/rivers-there-is-no-fear-part-2.jpg`,
             width : 1339,
             height: 2048
         },
-        ranges        : ["range_igor_grom"],
-        authors       : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.andreyVasin.artist,
-                         comicAuthors.mariaVasilyeva.colorist, comicAuthors.natalyaZaidova.artist],
-        previousComics: ["comic_rivers_there_is_no_fear_1"],
-        nextComics    : ["comic_rivers_there_is_no_fear_3"],
-        releaseAt     : {year: 2023, month: 10, day: 18},
-        show          : true
+        ranges         : ["range_igor_grom"],
+        authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.andreyVasin.artist,
+                          comicAuthors.mariaVasilyeva.colorist, comicAuthors.natalyaZaidova.artist],
+        includingComics: ["comic_rivers_there_is_no_fear"],
+        previousComics : ["comic_rivers_there_is_no_fear_1"],
+        nextComics     : ["comic_rivers_there_is_no_fear_3"],
+        releaseAt      : {year: 2023, month: 10, day: 18},
+        show           : false
     },
     comic_major_igor_grom_25                                          : {
         name           : "Майор Игорь Гром #25 Добрый вечер, Айса Тагировна",
@@ -16712,6 +16681,20 @@ const comics: Comics = {
         nextComics     : ["comic_major_igor_grom_26"],
         releaseAt      : {year: 2023, month: 10, day: 25},
         show           : false
+    },
+    comic_rivers_there_is_no_fear                                     : {
+        name           : "Реки. Страха нет",
+        type           : "book",
+        coverFile      : {url: `${paths.riversThereIsNoFear}/rivers-there-is-no-fear.webp`, width: 837, height: 1280},
+        ranges         : ["range_igor_grom"],
+        authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.andreyVasin.artist,
+                          comicAuthors.mariaVasilyeva.colorist, comicAuthors.natalyaZaidova.artist],
+        containedComics: ["comic_rivers_there_is_no_fear_1", "comic_rivers_there_is_no_fear_2",
+                          "comic_rivers_there_is_no_fear_3", "comic_rivers_there_is_no_fear_4"],
+        previousComics : ["comic_major_grom_stories"],
+        nextComics     : ["comic_igor_grom_volume_1"],
+        releaseAt      : {year: 2023, month: 10, day: 28},
+        show           : true
     },
     // Серая Гончая. Том 1. №5 - 3 ноя 2023
     // Тагар. Том 5. №2 - 10 ноя 2023
@@ -16759,22 +16742,23 @@ const comics: Comics = {
         show           : true
     }, // TODO: Надо уточнить содержащиеся комиксы
     comic_rivers_there_is_no_fear_3     : {
-        name          : "Реки. Страха нет, часть 3",
-        number        : "3",
-        type          : "single",
-        coverFile     : {
+        name           : "Реки. Страха нет, часть 3",
+        number         : "3",
+        type           : "single",
+        coverFile      : {
             url   : `${paths.riversThereIsNoFear}/rivers-there-is-no-fear-part-3.jpg`,
             width : 1339,
             height: 2048
         },
-        ranges        : ["range_igor_grom"],
-        authors       : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.andreyVasin.artist,
-                         comicAuthors.karinaAkhmetvalieva.colorist, comicAuthors.mariaVasilyeva.colorist,
-                         comicAuthors.nadezhdaShevchenko.colorist, comicAuthors.natalyaZaidova.artist],
-        previousComics: ["comic_rivers_there_is_no_fear_2"],
-        nextComics    : ["comic_rivers_there_is_no_fear_4"],
-        releaseAt     : {year: 2023, month: 11, day: 17},
-        show          : true
+        ranges         : ["range_igor_grom"],
+        authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.andreyVasin.artist,
+                          comicAuthors.karinaAkhmetvalieva.colorist, comicAuthors.mariaVasilyeva.colorist,
+                          comicAuthors.nadezhdaShevchenko.colorist, comicAuthors.natalyaZaidova.artist],
+        includingComics: ["comic_rivers_there_is_no_fear"],
+        previousComics : ["comic_rivers_there_is_no_fear_2"],
+        nextComics     : ["comic_rivers_there_is_no_fear_4"],
+        releaseAt      : {year: 2023, month: 11, day: 17},
+        show           : false
     },
     comic_major_igor_grom_26            : {
         name          : "Майор Игорь Гром #26 Насмерть, часть 1",
@@ -16797,22 +16781,23 @@ const comics: Comics = {
     // Чумной Доктор №33 - 30 ноя 2023
     // Тагар. Том 5. №3 - 5 дек 2023
     comic_rivers_there_is_no_fear_4                                      : {
-        name          : "Реки. Страха нет, часть 4",
-        number        : "4",
-        type          : "single",
-        coverFile     : {
+        name           : "Реки. Страха нет, часть 4",
+        number         : "4",
+        type           : "single",
+        coverFile      : {
             url   : `${paths.riversThereIsNoFear}/rivers-there-is-no-fear-part-4.jpg`,
             width : 1339,
             height: 2048
         },
-        ranges        : ["range_igor_grom"],
-        authors       : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.andreyVasin.artist,
-                         comicAuthors.karinaAkhmetvalieva.colorist, comicAuthors.mariaVasilyeva.colorist,
-                         comicAuthors.natalyaZaidova.artist, comicAuthors.olegChudakov.artist,
-                         comicAuthors.yuliaYastrebova.colorist],
-        previousComics: ["comic_rivers_there_is_no_fear_3"],
-        releaseAt     : {year: 2023, month: 12, day: 12},
-        show          : true
+        ranges         : ["range_igor_grom"],
+        authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.andreyVasin.artist,
+                          comicAuthors.karinaAkhmetvalieva.colorist, comicAuthors.mariaVasilyeva.colorist,
+                          comicAuthors.natalyaZaidova.artist, comicAuthors.olegChudakov.artist,
+                          comicAuthors.yuliaYastrebova.colorist],
+        includingComics: ["comic_rivers_there_is_no_fear"],
+        previousComics : ["comic_rivers_there_is_no_fear_3"],
+        releaseAt      : {year: 2023, month: 12, day: 12},
+        show           : false
     },
     comic_major_igor_grom_villainy_rule                                  : {
         name          : "Майор Игорь Гром. Закон подлости",
@@ -16841,9 +16826,7 @@ const comics: Comics = {
         authors       : [comicAuthors.anastasiaTroitskaya.colorist, comicAuthors.evgenyEronin.screenwriter,
                          comicAuthors.egorGerasimov.artist],
         previousComics: ["comic_major_igor_grom_26"],
-        nextComics    : ["comic_special_prokopenko_grom_at_sunrise_electronic",
-                         "comic_special_prokopenko_grom_at_sunrise_printed", "comic_major_igor_grom_special_duty",
-                         "comic_major_igor_grom_villainy_rule"],
+        nextComics    : ["comic_major_igor_grom_special_duty", "comic_major_igor_grom_villainy_rule"],
         releaseAt     : {year: 2023, month: 12, day: 22},
         show          : true
     },
@@ -16861,6 +16844,35 @@ const comics: Comics = {
     },
     // Чумной доктор №34 - 29 дек 2023
     // Infinix: Город Героев - -- --- ----
+    comic_major_grom_stories               : {
+        name           : "Майор Гром. Рассказы",
+        type           : "book",
+        coverFile      : {url: `${paths.majorGrom}/major-grom-stories.webp`, width: 1339, height: 2048},
+        ranges         : ["range_major_grom"],
+        authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.annaAntoshchenkova.colorist,
+                          comicAuthors.jamilyaZulpikarova.artist, comicAuthors.evgeniyBornyakov.artist,
+                          comicAuthors.ekaterinaGrishchenko.artist, comicAuthors.karinaAkhmetvalieva.colorist,
+                          comicAuthors.kirillKutuzov.screenwriter, comicAuthors.nataliaVorontsova.screenwriter,
+                          comicAuthors.natalyaMartinovich.colorist, comicAuthors.olegChudakov.artist],
+        containedComics: ["comic_special_prokopenko_grom_at_sunrise", "comic_special_volkov_inferno",
+                          "comic_caligari_datura", "comic_rubinstein_what_i_was_looking_for"],
+        previousComics : ["comic_monk_and_major_grom_storm_of_berlin"],
+        nextComics     : ["comic_major_grom_like_in_war", "comic_rivers_there_is_no_fear"],
+        releaseAt      : {year: 2024},
+        show           : true
+    },
+    comic_rubinstein_what_i_was_looking_for: {
+        name           : "Рубинштейн. То, что искал",
+        type           : "single",
+        coverFile      : {url: `${paths._}/rubinstein-what-i-was-looking-for.webp`, width: 1339, height: 2048},
+        ranges         : ["range_igor_grom"],
+        authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.annaAntoshchenkova.colorist,
+                          comicAuthors.olegChudakov.artist],
+        includingComics: ["comic_major_grom_stories"],
+        nextComics     : ["comic_igor_grom_1"],
+        releaseAt      : {year: 2024, month: 1, day: 22},
+        show           : false
+    }
 };
 
 export default comics;

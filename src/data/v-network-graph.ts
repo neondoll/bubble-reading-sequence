@@ -96,8 +96,47 @@ function offsetOfNodesThatCoincideInXAndY(comic_id: string) {
     }
 }
 
-Object.keys(comics).forEach((comic_id) => {
-    //if (comic_id === "comic_rivers_no_fear_1") {
+const comicIds: string[] = [
+    "comic_monk_and_major_grom_storm_of_berlin", "comic_major_grom_stories", "comic_major_grom_like_in_war_1",
+    "comic_major_grom_like_in_war_2", "comic_major_grom_like_in_war_3", "comic_major_grom_like_in_war_4",
+    "comic_major_grom_like_in_war", "comic_major_grom_1", "comic_major_grom_2", "comic_major_grom_3",
+    "comic_major_grom_4", "comic_major_grom_5", "comic_major_grom_6", "comic_major_grom_volume_1", "comic_major_grom_7",
+    "comic_major_grom_8", "comic_major_grom_9", "comic_major_grom_10", "comic_major_grom_volume_2",
+    "comic_major_grom_11", "comic_major_grom_12", "comic_major_grom_13", "comic_major_grom_14", "comic_major_grom_15",
+    "comic_major_grom_16", "comic_major_grom_17", "comic_major_grom_18", "comic_major_grom_volume_3",
+    "comic_major_grom_19", "comic_major_grom_20", "comic_major_grom_21", "comic_major_grom_22", "comic_major_grom_23",
+    "comic_major_grom_24", "comic_major_grom_volume_4", "comic_special_volkov_inferno", "comic_major_grom_25",
+    "comic_major_grom_26", "comic_major_grom_27", "comic_major_grom_28", "comic_major_grom_29", "comic_major_grom_30",
+    "comic_major_grom_31", "comic_major_grom_32", "comic_major_grom_33", "comic_major_grom_volume_5",
+    "comic_major_grom_34", "comic_major_grom_35", "comic_major_grom_36", "comic_major_grom_37",
+    "comic_major_grom_volume_6", "comic_time_of_raven_backstory", "comic_time_of_raven_prologue",
+    "comic_time_of_raven_1", "comic_major_grom_38", "comic_time_of_raven_2", "comic_major_grom_39",
+    "comic_time_of_raven_3", "comic_major_grom_40", "comic_time_of_raven_4", "comic_major_grom_41",
+    "comic_time_of_raven_5", "comic_major_grom_and_red_fury_volume_7", "comic_time_of_raven",
+    "comic_time_of_raven_epilogue", "comic_rivers_there_is_no_fear", "comic_rubinstein_what_i_was_looking_for",
+    "comic_major_grom_42", "comic_major_grom_43", "comic_major_grom_44", "comic_major_grom_45", "comic_major_grom_46",
+    "comic_major_grom_47", "comic_major_grom_48", "comic_major_grom_49", "comic_major_grom_50",
+    "comic_major_grom_volume_8", "comic_major_grom_1939", "comic_igor_grom_1", "comic_igor_grom_2", "comic_igor_grom_3",
+    "comic_igor_grom_4", "comic_igor_grom_5", "comic_igor_grom_6", "comic_igor_grom_volume_1", "comic_igor_grom_7",
+    "comic_igor_grom_8", "comic_igor_grom_9", "comic_igor_grom_10", "comic_igor_grom_volume_2", "comic_igor_grom_11",
+    "comic_igor_grom_12", "comic_igor_grom_13", "comic_igor_grom_14", "comic_igor_grom_volume_3",
+    "comic_witch_hunt_prologue", "comic_igor_grom_15", "comic_witch_hunt_finale", "comic_witch_hunt",
+    "comic_igor_grom_16", "comic_igor_grom_17", "comic_igor_grom_18", "comic_igor_grom_19", "comic_igor_grom_20",
+    "comic_igor_grom_21", "comic_igor_grom_volume_4", "comic_dubin_dima_provincial_holidays_1",
+    "comic_dubin_dima_provincial_holidays_2", "comic_dubin_dima_provincial_holidays_3",
+    "comic_dubin_dima_provincial_holidays_4", "comic_dubin_dima_provincial_holidays", "comic_igor_grom_22",
+    "comic_igor_grom_23", "comic_igor_grom_24", "comic_igor_grom_25", "comic_igor_grom_volume_5", "comic_igor_grom_26",
+    "comic_igor_grom_27", "comic_igor_grom_28", "comic_igor_grom_29", "comic_igor_grom_30", "comic_igor_grom_volume_6",
+    "comic_igor_grom_31", "comic_igor_grom_32", "comic_igor_grom_33", "comic_igor_grom_34", "comic_major_grom_promise",
+    "comic_igor_grom_volume_7", "comic_igor_grom_35", "comic_igor_grom_36", "comic_igor_grom_37", "comic_igor_grom_38",
+    "comic_igor_grom_39", "comic_igor_grom_volume_8", "comic_igor_grom_40", "comic_igor_grom_41", "comic_igor_grom_42",
+    "comic_igor_grom_43", "comic_igor_grom_44", "comic_igor_grom_volume_9", "comic_igor_grom_45", "comic_igor_grom_46",
+    "comic_igor_grom_47", "comic_igor_grom_48", "comic_igor_grom_49", "comic_igor_grom_50", "comic_igor_grom_volume_10",
+    "comic_caligari_datura"
+]/* Object.keys(comics) */;
+
+for (let comic_id of comicIds) {
+    //if (comic_id === "comic_special_volkov_inferno") {
     //    debugger;
     //}
 
@@ -154,7 +193,15 @@ Object.keys(comics).forEach((comic_id) => {
     if (positionsKeys.indexOf(comic_id) !== -1 && positions[comic_id].x_func) {
         node_x = positions[comic_id].x_func(layouts.nodes, comic_id);
     } else {
-        if (comic.containedComics) {
+        if (comic.containedComics && [
+            "comic_dubin_dima_provincial_holidays", "comic_igor_grom_volume_1", "comic_igor_grom_volume_2",
+            "comic_igor_grom_volume_3", "comic_igor_grom_volume_4", "comic_igor_grom_volume_5",
+            "comic_igor_grom_volume_6", "comic_igor_grom_volume_7", "comic_igor_grom_volume_8",
+            "comic_igor_grom_volume_9", "comic_igor_grom_volume_10", "comic_major_grom_like_in_war",
+            "comic_major_grom_volume_1", "comic_major_grom_volume_2", "comic_major_grom_volume_3",
+            "comic_major_grom_volume_4", "comic_major_grom_volume_5", "comic_major_grom_volume_6",
+            "comic_major_grom_volume_8", "comic_witch_hunt"
+        ].indexOf(comic_id) !== -1) {
             const contained_nodes_x = comic.containedComics
                 .map((contained_comic_id) => comicIdToNodeId(contained_comic_id))
                 .filter((contained_node_id) => layouts_nodes_id.indexOf(contained_node_id) !== -1)
@@ -205,7 +252,7 @@ Object.keys(comics).forEach((comic_id) => {
                         .map((previous_node_id) => layouts.nodes[previous_node_id].x)
                     : [];
 
-                node_x = maxOfArray(previous_nodes_x) + positions.difference.x;
+                node_x = maxOfArray(previous_nodes_x.length ? previous_nodes_x : [0]) + positions.difference.x;
             } else {
                 if (layouts_nodes_id.length) {
                     if (comic.previousComics) {
@@ -226,7 +273,6 @@ Object.keys(comics).forEach((comic_id) => {
                     node_x = positions.difference.x;
                 }
             }
-
         }
     }
 
@@ -258,8 +304,8 @@ Object.keys(comics).forEach((comic_id) => {
 
     offsetOfNextNodes(comic_id);
 
-    offsetOfIncludingNodes(comic_id);
-});
+    //offsetOfIncludingNodes(comic_id);
+}
 
 console.log(nodes);
 console.log(edges);

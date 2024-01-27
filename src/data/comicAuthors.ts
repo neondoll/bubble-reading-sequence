@@ -58,7 +58,10 @@ const comicAuthors: Record<string, Record<string, ComicAuthor>> = {
     andreyMuravyov        : {colorist: {authorId: "author_andrey_muravyov", positions: ["colorist"]}},
     andreyRodin           : {artist: {authorId: "author_andrey_rodin", positions: ["artist"]}},
     andreyTevlyukov       : {screenwriter: {authorId: "author_andrey_tevlyukov", positions: ["screenwriter"]}},
-    annaAntoshchenkova    : {colorist: {authorId: "author_anna_antoshchenkova", positions: ["colorist"]}},
+    annaAntoshchenkova    : {
+        artist  : {authorId: "author_anna_antoshchenkova", positions: ["artist"]},
+        colorist: {authorId: "author_anna_antoshchenkova", positions: ["colorist"]}
+    },
     annaBulatova          : {
         artist      : {authorId: "author_anna_bulatova", positions: ["artist"]},
         screenwriter: {authorId: "author_anna_bulatova", positions: ["screenwriter"]}
