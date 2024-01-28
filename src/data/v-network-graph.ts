@@ -139,8 +139,7 @@ const comicIds: string[] = [
     "comic_major_grom_34",
     "comic_major_grom_35",
     "comic_major_grom_36",
-    "comic_major_grom_37",
-    "comic_major_grom_volume_6",
+    "comic_major_grom_37", "comic_major_grom_volume_6",
     "comic_time_of_raven_backstory",
     "comic_time_of_raven_prologue",
     "comic_time_of_raven_1",
@@ -161,8 +160,7 @@ const comicIds: string[] = [
     "comic_major_grom_47",
     "comic_major_grom_48",
     "comic_major_grom_49",
-    "comic_major_grom_50", "comic_rubinstein_what_i_was_looking_for", "comic_major_grom_volume_8",
-    "comic_rivers_there_is_no_fear",
+    "comic_major_grom_50", "comic_rubinstein_what_i_was_looking_for", "comic_major_grom_volume_8", "comic_rivers_there_is_no_fear",
     "comic_major_grom_1939", "comic_igor_grom_1",
     "comic_igor_grom_2",
     "comic_igor_grom_3",
@@ -266,9 +264,9 @@ const comicIds: string[] = [
 ]/* Object.keys(comics) */;
 
 for (let comic_id of comicIds) {
-    //if (comic_id === "comic_special_volkov_inferno") {
-    //    debugger;
-    //}
+    if (comic_id === "comic_monk_and_major_grom_storm_of_berlin") {
+        //debugger;
+    }
 
     const comic = comics[comic_id];
     const node_id = comicIdToNodeId(comic_id);
@@ -318,79 +316,42 @@ for (let comic_id of comicIds) {
             .filter((next_node_id) => layouts_nodes_id.indexOf(next_node_id) !== -1)
         : [];
 
-    let node_x, node_y;
+    let node_x = positions.difference.x,
+        node_y = positions.difference.y;
 
-    if (positionsKeys.indexOf(comic_id) !== -1 && positions[comic_id].x_func) {
-        node_x = positions[comic_id].x_func(layouts.nodes, comic_id);
-    } else {
-        if (comic.containedComics && [
-            "comic_dubin_dima_provincial_holidays", "comic_igor_grom_volume_1", "comic_igor_grom_volume_2",
-            "comic_igor_grom_volume_3", "comic_igor_grom_volume_4", "comic_igor_grom_volume_5",
-            "comic_igor_grom_volume_6", "comic_igor_grom_volume_7", "comic_igor_grom_volume_8",
-            "comic_igor_grom_volume_9", "comic_igor_grom_volume_10", "comic_major_igor_grom_x_plague_doctor_volume_4",
-            "comic_major_igor_grom_volume_1", "comic_major_igor_grom_volume_2", "comic_major_igor_grom_volume_3",
-            "comic_major_igor_grom_volume_4", "comic_major_igor_grom_volume_5", "comic_major_igor_grom_volume_6",
-            "comic_major_grom_like_in_war", "comic_major_grom_volume_1", "comic_major_grom_volume_2",
-            "comic_major_grom_volume_3", "comic_major_grom_volume_4", "comic_major_grom_volume_5",
-            "comic_major_grom_volume_6", "comic_major_grom_volume_8", "comic_plague_doctor_volume_1",
-            "comic_plague_doctor_volume_2", "comic_plague_doctor_volume_5", "comic_plague_doctor_volume_6",
-            "comic_plague_doctor_volume_7", "comic_witch_hunt"
-        ].indexOf(comic_id) !== -1) {
-            const contained_nodes_x = comic.containedComics
-                .map((contained_comic_id) => comicIdToNodeId(contained_comic_id))
-                .filter((contained_node_id) => layouts_nodes_id.indexOf(contained_node_id) !== -1)
-                .map((contained_node_id) => layouts.nodes[contained_node_id].x);
+    const comicIdInPositions = comic_id in positions;
 
-            node_x = (minOfArray(contained_nodes_x) + maxOfArray(contained_nodes_x)) / 2;
-        } else {
-            /*if (comic.previous_comics) {
-                const previous_nodes_x = comic.previous_comics
-                    .map((previous_comic_id) => comicIdToNodeId(previous_comic_id))
-                    .filter((previous_node_id) => layouts_nodes_id.indexOf(previous_node_id) !== -1)
-                    .map((previous_node_id) => layouts.nodes[previous_node_id].x);
+    switch (true) {
+        case comicIdInPositions && "x" in positions[comic_id]:
+            node_x = positions[comic_id].x;
+            break;
+        case comicIdInPositions && "x_func" in positions[comic_id]:
+            node_x = positions[comic_id].x_func(layouts.nodes, comic_id);
+            break;
+        default:
+            if (comic.containedComics && [
+                "comic_dubin_dima_provincial_holidays", "comic_igor_grom_volume_1", "comic_igor_grom_volume_2",
+                "comic_igor_grom_volume_3", "comic_igor_grom_volume_4", "comic_igor_grom_volume_5",
+                "comic_igor_grom_volume_6", "comic_igor_grom_volume_7", "comic_igor_grom_volume_8",
+                "comic_igor_grom_volume_9", "comic_igor_grom_volume_10",
+                "comic_major_igor_grom_x_plague_doctor_volume_4",
+                "comic_major_igor_grom_volume_1", "comic_major_igor_grom_volume_2", "comic_major_igor_grom_volume_3",
+                "comic_major_igor_grom_volume_4", "comic_major_igor_grom_volume_5", "comic_major_igor_grom_volume_6",
+                "comic_major_grom_like_in_war", "comic_major_grom_volume_1", "comic_major_grom_volume_2",
+                "comic_major_grom_volume_3", "comic_major_grom_volume_4", "comic_major_grom_volume_5",
+                "comic_major_grom_volume_6", "comic_major_grom_volume_8", "comic_plague_doctor_volume_1",
+                "comic_plague_doctor_volume_2", "comic_plague_doctor_volume_5", "comic_plague_doctor_volume_6",
+                "comic_plague_doctor_volume_7", "comic_witch_hunt"
+            ].indexOf(comic_id) !== -1) {
+                const contained_nodes_x = comic.containedComics
+                    .map((contained_comic_id) => comicIdToNodeId(contained_comic_id))
+                    .filter((contained_node_id) => layouts_nodes_id.indexOf(contained_node_id) !== -1)
+                    .map((contained_node_id) => layouts.nodes[contained_node_id].x);
 
-                node_x = maxOfArray(previous_nodes_x) + positions.difference.x;
-
-                if (!next_nodes_id.length && node_x < max_layouts_node_x) {
-                    node_x = max_layouts_node_x
-                }
+                node_x = (minOfArray(contained_nodes_x) + maxOfArray(contained_nodes_x)) / 2;
             } else {
-                if (layouts_nodes_id.length) {
-                    node_x = max_layouts_node_x;
-                } else {
-                    node_x = positions.difference.x;
-                }
-            }*/
-            //let check_not_first_comic = false;
-//
-            //if (comic.includingComics) {
-            //    comic.includingComics.forEach((including_comic_id) => {
-            //        const including_comic = comics[including_comic_id];
-            //        const comic_index = including_comic.containedComics.indexOf(comic_id);
-//
-            //        if (comic_index !== -1) {
-            //            check_not_first_comic = check_not_first_comic || comic_index !== 0;
-            //        }
-            //    });
-            //}
-
-            const layouts_nodes_x = layouts_nodes_id
-                .map((layouts_node_id) => layouts.nodes[layouts_node_id].x);
-            const max_layouts_node_x = maxOfArray(layouts_nodes_x);
-
-            //if (check_not_first_comic) {
-            //    const previous_nodes_x = comic.previousComics
-            //        ? comic.previousComics
-            //            .map((previous_comic_id) => comicIdToNodeId(previous_comic_id))
-            //            .filter((previous_node_id) => layouts_nodes_id.indexOf(previous_node_id) !== -1)
-            //            .map((previous_node_id) => layouts.nodes[previous_node_id].x)
-            //        : [];
-//
-            //    node_x = maxOfArray(previous_nodes_x.length ? previous_nodes_x : [0]) + positions.difference.x;
-            //} else {
-            if (layouts_nodes_id.length) {
-                if (comic.previousComics) {
-                    const previous_nodes_x = comic.previousComics
+                /*if (comic.previous_comics) {
+                    const previous_nodes_x = comic.previous_comics
                         .map((previous_comic_id) => comicIdToNodeId(previous_comic_id))
                         .filter((previous_node_id) => layouts_nodes_id.indexOf(previous_node_id) !== -1)
                         .map((previous_node_id) => layouts.nodes[previous_node_id].x);
@@ -401,35 +362,84 @@ for (let comic_id of comicIds) {
                         node_x = max_layouts_node_x
                     }
                 } else {
-                    node_x = max_layouts_node_x;
+                    if (layouts_nodes_id.length) {
+                        node_x = max_layouts_node_x;
+                    } else {
+                        node_x = positions.difference.x;
+                    }
+                }*/
+                //let check_not_first_comic = false;
+//
+                //if (comic.includingComics) {
+                //    comic.includingComics.forEach((including_comic_id) => {
+                //        const including_comic = comics[including_comic_id];
+                //        const comic_index = including_comic.containedComics.indexOf(comic_id);
+//
+                //        if (comic_index !== -1) {
+                //            check_not_first_comic = check_not_first_comic || comic_index !== 0;
+                //        }
+                //    });
+                //}
+
+                const layouts_nodes_x = layouts_nodes_id
+                    .map((layouts_node_id) => layouts.nodes[layouts_node_id].x);
+                const max_layouts_node_x = maxOfArray(layouts_nodes_x);
+
+                //if (check_not_first_comic) {
+                //    const previous_nodes_x = comic.previousComics
+                //        ? comic.previousComics
+                //            .map((previous_comic_id) => comicIdToNodeId(previous_comic_id))
+                //            .filter((previous_node_id) => layouts_nodes_id.indexOf(previous_node_id) !== -1)
+                //            .map((previous_node_id) => layouts.nodes[previous_node_id].x)
+                //        : [];
+//
+                //    node_x = maxOfArray(previous_nodes_x.length ? previous_nodes_x : [0]) + positions.difference.x;
+                //} else {
+                if (layouts_nodes_id.length) {
+                    if (comic.previousComics) {
+                        const previous_nodes_x = comic.previousComics
+                            .map((previous_comic_id) => comicIdToNodeId(previous_comic_id))
+                            .filter((previous_node_id) => layouts_nodes_id.indexOf(previous_node_id) !== -1)
+                            .map((previous_node_id) => layouts.nodes[previous_node_id].x);
+
+                        node_x = maxOfArray(previous_nodes_x) + positions.difference.x;
+
+                        if (!next_nodes_id.length && node_x < max_layouts_node_x) {
+                            node_x = max_layouts_node_x
+                        }
+                    } else {
+                        node_x = max_layouts_node_x;
+                    }
+                } else {
+                    node_x = positions.difference.x;
                 }
-            } else {
-                node_x = positions.difference.x;
+                //}
             }
-            //}
-        }
+            break;
     }
 
-    if (positionsKeys.indexOf(comic_id) !== -1 && positions[comic_id].y) {
-        node_y = positions[comic_id].y;
-    } else {
-        const comic_positions_y = comic.ranges
-            .filter((range_id) => positionsKeys.indexOf(range_id) !== -1 && positions[range_id].y)
-            .map((range_id) => positions[range_id].y);
-
-        if (comic_positions_y.length) {
-            node_y = (minOfArray(comic_positions_y) + maxOfArray(comic_positions_y)) / 2;
-        } else {
-            const positions_y = Object.keys(ranges)
+    switch (true) {
+        case comicIdInPositions && "y" in positions[comic_id]:
+            node_y = positions[comic_id].y;
+            break;
+        case comicIdInPositions && "y_func" in positions[comic_id]:
+            node_y = positions[comic_id].y_func(layouts.nodes, comic_id);
+            break;
+        default:
+            const comic_positions_y = comic.ranges
                 .filter((range_id) => positionsKeys.indexOf(range_id) !== -1 && positions[range_id].y)
                 .map((range_id) => positions[range_id].y);
 
-            node_y = maxOfArray(positions_y) + positions.difference.y;
-        }
+            if (comic_positions_y.length) {
+                node_y = (minOfArray(comic_positions_y) + maxOfArray(comic_positions_y)) / 2;
+            } else {
+                const positions_y = Object.keys(ranges)
+                    .filter((range_id) => positionsKeys.indexOf(range_id) !== -1 && positions[range_id].y)
+                    .map((range_id) => positions[range_id].y);
 
-        if (comic.containedComics) {
-            node_y += positions.difference.y;
-        }
+                node_y = maxOfArray(positions_y) + positions.difference.y;
+            }
+            break;
     }
 
     layouts.nodes[node_id] = {x: node_x, y: node_y};
@@ -441,9 +451,9 @@ for (let comic_id of comicIds) {
     //offsetOfIncludingNodes(comic_id);
 }
 
-console.log(nodes);
-console.log(edges);
-console.log(layouts);
-console.log(paths);
+console.log("nodes", nodes);
+console.log("edges", edges);
+console.log("layouts", layouts);
+console.log("paths", paths);
 
 export default {nodes, edges, layouts, paths};
