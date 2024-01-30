@@ -15,84 +15,84 @@ const layouts: vNG.Layouts = {nodes: {}};
 const paths: vNG.Paths = {};
 const positionsKeys: string[] = Object.keys(positions);
 
-function offsetOfIncludingNodes(comic_id: string) {
-    const comic = comics[comic_id];
-    const layouts_nodes_id = Object.keys(layouts.nodes);
+function offsetOfIncludingNodes(comicId: string) {
+    const comic = comics[comicId];
+    const layoutsNodesId = Object.keys(layouts.nodes);
     const including_nodes_id = comic.includingComics
         ? comic.includingComics
-            .map((including_comic_id) => comicIdToNodeId(including_comic_id))
-            .filter((including_node_id) => layouts_nodes_id.indexOf(including_node_id) !== -1)
+            .map((includingComicId) => comicIdToNodeId(includingComicId))
+            .filter((including_nodeId) => layoutsNodesId.indexOf(including_nodeId) !== -1)
         : [];
 
     if (including_nodes_id.length) {
-        including_nodes_id.forEach((including_node_id) => {
-            const contained_comics = comics[nodeIdToComicId(including_node_id)].containedComics;
+        including_nodes_id.forEach((including_nodeId) => {
+            const contained_comics = comics[nodeIdToComicId(including_nodeId)].containedComics;
             const contained_nodes_x = contained_comics
-                .map((contained_comic_id) => comicIdToNodeId(contained_comic_id))
-                .filter((contained_node_id) => layouts_nodes_id.indexOf(contained_node_id) !== -1)
-                .map((contained_node_id) => layouts.nodes[contained_node_id].x);
+                .map((contained_comicId) => comicIdToNodeId(contained_comicId))
+                .filter((contained_nodeId) => layoutsNodesId.indexOf(contained_nodeId) !== -1)
+                .map((contained_nodeId) => layouts.nodes[contained_nodeId].x);
 
-            layouts.nodes[including_node_id].x = (minOfArray(contained_nodes_x) + maxOfArray(contained_nodes_x)) / 2;
+            layouts.nodes[including_nodeId].x = (minOfArray(contained_nodes_x) + maxOfArray(contained_nodes_x)) / 2;
         });
     }
 }
 
-function offsetOfNextNodes(comic_id: string) {
-    const comic = comics[comic_id];
-    const layouts_nodes_id = Object.keys(layouts.nodes);
-    const next_nodes_id = comic.nextComics
+function offsetOfNextNodes(comicId: string) {
+    const comic = comics[comicId];
+    const layoutsNodesId = Object.keys(layouts.nodes);
+    const nextNodesId = comic.nextComics
         ? comic.nextComics
-            .map((next_comic_id) => comicIdToNodeId(next_comic_id))
-            .filter((next_node_id) => layouts_nodes_id.indexOf(next_node_id) !== -1)
+            .map((nextComicId) => comicIdToNodeId(nextComicId))
+            .filter((next_nodeId) => layoutsNodesId.indexOf(next_nodeId) !== -1)
         : [];
 
-    if (next_nodes_id.length) {
-        const layouts_node = layouts.nodes[comicIdToNodeId(comic_id)];
+    if (nextNodesId.length) {
+        const layouts_node = layouts.nodes[comicIdToNodeId(comicId)];
 
-        next_nodes_id.forEach((next_node_id) => {
-            if (layouts.nodes[next_node_id].x <= layouts_node.x) {
-                layouts.nodes[next_node_id].x = layouts_node.x + positions.difference.x;
+        nextNodesId.forEach((next_nodeId) => {
+            if (layouts.nodes[next_nodeId].x <= layouts_node.x) {
+                layouts.nodes[next_nodeId].x = layouts_node.x + positions.difference.x;
 
-                offsetOfNodesThatCoincideInXAndY(nodeIdToComicId(next_node_id));
+                offsetOfNodesThatCoincideInXAndY(nodeIdToComicId(next_nodeId));
 
-                const including_comics = comics[nodeIdToComicId(next_node_id)].includingComics;
+                const including_comics = comics[nodeIdToComicId(next_nodeId)].includingComics;
                 const including_nodes_id = including_comics
                     ? including_comics
-                        .map((including_comic_id) => comicIdToNodeId(including_comic_id))
-                        .filter((including_node_id) => layouts_nodes_id.indexOf(including_node_id) !== -1)
+                        .map((includingComicId) => comicIdToNodeId(includingComicId))
+                        .filter((including_nodeId) => layoutsNodesId.indexOf(including_nodeId) !== -1)
                     : [];
 
-                including_nodes_id.forEach((including_node_id) => {
-                    const contained_comics = comics[nodeIdToComicId(including_node_id)].containedComics;
+                including_nodes_id.forEach((including_nodeId) => {
+                    const contained_comics = comics[nodeIdToComicId(including_nodeId)].containedComics;
                     const contained_nodes_x = contained_comics
-                        .map((contained_comic_id) => comicIdToNodeId(contained_comic_id))
-                        .filter((contained_node_id) => layouts_nodes_id.indexOf(contained_node_id) !== -1)
-                        .map((contained_node_id) => layouts.nodes[contained_node_id].x);
+                        .map((contained_comicId) => comicIdToNodeId(contained_comicId))
+                        .filter((contained_nodeId) => layoutsNodesId.indexOf(contained_nodeId) !== -1)
+                        .map((contained_nodeId) => layouts.nodes[contained_nodeId].x);
 
-                    layouts.nodes[including_node_id].x = (minOfArray(contained_nodes_x) + maxOfArray(contained_nodes_x)) / 2;
+                    layouts.nodes[including_nodeId].x = (minOfArray(contained_nodes_x) + maxOfArray(contained_nodes_x)) / 2;
                 });
 
-                offsetOfNextNodes(nodeIdToComicId(next_node_id));
+                offsetOfNextNodes(nodeIdToComicId(next_nodeId));
             }
         });
     }
 }
 
-function offsetOfNodesThatCoincideInXAndY(comic_id: string) {
-    const node_id = comicIdToNodeId(comic_id);
-    const matched_nodes = Object.keys(layouts.nodes).filter((layouts_node_id) => {
-        return layouts_node_id !== node_id &&
-            layouts.nodes[layouts_node_id].x === layouts.nodes[node_id].x &&
-            layouts.nodes[layouts_node_id].y === layouts.nodes[node_id].y && (
-                !comics[comic_id].nextComics ||
-                comics[comic_id].nextComics.indexOf(nodeIdToComicId(layouts_node_id)) !== -1
+function offsetOfNodesThatCoincideInXAndY(comicId: string) {
+    const nodeId = comicIdToNodeId(comicId);
+    const matched_nodes = Object.keys(layouts.nodes).filter((layoutsNodeId) => {
+        return layoutsNodeId !== nodeId &&
+            layouts.nodes[layoutsNodeId].x === layouts.nodes[nodeId].x &&
+            layouts.nodes[layoutsNodeId].y === layouts.nodes[nodeId].y && (
+                !comics[comicId].nextComics ||
+                comics[comicId].nextComics.indexOf(nodeIdToComicId(layoutsNodeId)) !== -1
             );
     });
 
     if (matched_nodes.length > 0) {
-        layouts.nodes[node_id].x += positions.difference.x;
+        layouts.nodes[nodeId].x += positions.difference.x;
 
-        offsetOfNodesThatCoincideInXAndY(comic_id);
+        offsetOfNodesThatCoincideInXAndY(comicId);
     }
 }
 
@@ -157,10 +157,10 @@ const comicIds: string[] = [
     "comic_major_grom_44",
     "comic_major_grom_45",
     "comic_major_grom_46",
-    "comic_major_grom_47",
-    "comic_major_grom_48",
-    "comic_major_grom_49",
-    "comic_major_grom_50", "comic_rubinstein_what_i_was_looking_for", "comic_major_grom_volume_8", "comic_rivers_there_is_no_fear",
+    "comic_major_grom_47", "comic_rivers_there_is_no_fear_1",
+    "comic_major_grom_48", "comic_rivers_there_is_no_fear_2",
+    "comic_major_grom_49", "comic_rivers_there_is_no_fear_3",
+    "comic_major_grom_50", "comic_rubinstein_what_i_was_looking_for", "comic_rivers_there_is_no_fear_4", "comic_major_grom_volume_8", "comic_rivers_there_is_no_fear",
     "comic_major_grom_1939", "comic_igor_grom_1",
     "comic_igor_grom_2",
     "comic_igor_grom_3",
@@ -227,8 +227,7 @@ const comicIds: string[] = [
     "comic_major_igor_grom_5", "comic_plague_doctor_7",
     "comic_major_igor_grom_6", "comic_plague_doctor_8", "comic_plague_doctor_volume_2",
     "comic_major_igor_grom_7", "comic_plague_doctor_9",
-    "comic_major_igor_grom_8", "comic_plague_doctor_10", "comic_major_igor_grom_volume_2",
-    "comic_plague_doctor_volume_3",
+    "comic_major_igor_grom_8", "comic_plague_doctor_10", "comic_major_igor_grom_volume_2", "comic_plague_doctor_volume_3",
     "comic_major_igor_grom_x_plague_doctor_11",
     "comic_major_igor_grom_x_plague_doctor_12",
     "comic_major_igor_grom_x_plague_doctor_13",
@@ -263,21 +262,21 @@ const comicIds: string[] = [
     "comic_major_igor_grom_special_novak_and_sons", "comic_major_grom_stories", "comic_major_igor_grom_villainy_rule"
 ]/* Object.keys(comics) */;
 
-for (let comic_id of comicIds) {
-    if (comic_id === "comic_monk_and_major_grom_storm_of_berlin") {
+for (let comicId of comicIds) {
+    if (comicId === "comic_monk_and_major_grom_storm_of_berlin") {
         //debugger;
     }
 
-    const comic = comics[comic_id];
-    const node_id = comicIdToNodeId(comic_id);
+    const comic = comics[comicId];
+    const nodeId = comicIdToNodeId(comicId);
 
     // -----------------------------------------------------------------------------
     // nodes
     // -----------------------------------------------------------------------------
 
-    nodes[node_id] = {
+    nodes[nodeId] = {
         name : comic.name.length > 19 ? textWrapping(comic.name, 19) : comic.name,
-        color: comicColor(comic_id) || "#000000",
+        color: comicColor(comicId) || "#000000",
         size : sizes[comic.type]
     };
 
@@ -286,21 +285,18 @@ for (let comic_id of comicIds) {
     // -----------------------------------------------------------------------------
 
     if (comic.includingComics) {
-        comic.includingComics.forEach((including_comic_id) => {
-            edges[comicsIdToEdgeId(comic_id, including_comic_id)] = {
-                source: node_id,
-                target: comicIdToNodeId(including_comic_id),
+        comic.includingComics.forEach((includingComicId) => {
+            edges[comicsIdToEdgeId(comicId, includingComicId)] = {
+                source: nodeId,
+                target: comicIdToNodeId(includingComicId),
                 dashed: true
             };
         });
     }
 
     if (comic.nextComics) {
-        comic.nextComics.forEach((next_comic_id) => {
-            edges[comicsIdToEdgeId(comic_id, next_comic_id)] = {
-                source: node_id,
-                target: comicIdToNodeId(next_comic_id)
-            };
+        comic.nextComics.forEach((nextComicId) => {
+            edges[comicsIdToEdgeId(comicId, nextComicId)] = {source: nodeId, target: comicIdToNodeId(nextComicId)};
         });
     }
 
@@ -308,147 +304,78 @@ for (let comic_id of comicIds) {
     // layouts
     // -----------------------------------------------------------------------------
 
-    const layouts_nodes_id = Object.keys(layouts.nodes);
+    const layoutsNodesId = Object.keys(layouts.nodes);
 
-    const next_nodes_id = comic.nextComics
-        ? comic.nextComics
-            .map((next_comic_id) => comicIdToNodeId(next_comic_id))
-            .filter((next_node_id) => layouts_nodes_id.indexOf(next_node_id) !== -1)
-        : [];
+    let nodeX = positions.difference.x,
+        nodeY = positions.difference.y;
 
-    let node_x = positions.difference.x,
-        node_y = positions.difference.y;
-
-    const comicIdInPositions = comic_id in positions;
+    const comicIdInPositions = comicId in positions;
 
     switch (true) {
-        case comicIdInPositions && "x" in positions[comic_id]:
-            node_x = positions[comic_id].x;
+        case comicIdInPositions && "x" in positions[comicId]:
+            nodeX = positions[comicId].x;
             break;
-        case comicIdInPositions && "x_func" in positions[comic_id]:
-            node_x = positions[comic_id].x_func(layouts.nodes, comic_id);
+        case comicIdInPositions && "x_func" in positions[comicId]:
+            nodeX = positions[comicId].x_func(layouts.nodes, comicId);
             break;
         default:
-            if (comic.containedComics && [
-                "comic_dubin_dima_provincial_holidays", "comic_igor_grom_volume_1", "comic_igor_grom_volume_2",
-                "comic_igor_grom_volume_3", "comic_igor_grom_volume_4", "comic_igor_grom_volume_5",
-                "comic_igor_grom_volume_6", "comic_igor_grom_volume_7", "comic_igor_grom_volume_8",
-                "comic_igor_grom_volume_9", "comic_igor_grom_volume_10",
-                "comic_major_igor_grom_x_plague_doctor_volume_4",
-                "comic_major_igor_grom_volume_1", "comic_major_igor_grom_volume_2", "comic_major_igor_grom_volume_3",
-                "comic_major_igor_grom_volume_4", "comic_major_igor_grom_volume_5", "comic_major_igor_grom_volume_6",
-                "comic_major_grom_like_in_war", "comic_major_grom_volume_1", "comic_major_grom_volume_2",
-                "comic_major_grom_volume_3", "comic_major_grom_volume_4", "comic_major_grom_volume_5",
-                "comic_major_grom_volume_6", "comic_major_grom_volume_8", "comic_plague_doctor_volume_1",
-                "comic_plague_doctor_volume_2", "comic_plague_doctor_volume_5", "comic_plague_doctor_volume_6",
-                "comic_plague_doctor_volume_7", "comic_witch_hunt"
-            ].indexOf(comic_id) !== -1) {
-                const contained_nodes_x = comic.containedComics
-                    .map((contained_comic_id) => comicIdToNodeId(contained_comic_id))
-                    .filter((contained_node_id) => layouts_nodes_id.indexOf(contained_node_id) !== -1)
-                    .map((contained_node_id) => layouts.nodes[contained_node_id].x);
+            if (layoutsNodesId.length) {
+                const layoutsNodesX = layoutsNodesId
+                    .map((layoutsNodeId) => layouts.nodes[layoutsNodeId].x);
+                const maxLayoutsNodeX = maxOfArray(layoutsNodesX);
 
-                node_x = (minOfArray(contained_nodes_x) + maxOfArray(contained_nodes_x)) / 2;
-            } else {
-                /*if (comic.previous_comics) {
-                    const previous_nodes_x = comic.previous_comics
-                        .map((previous_comic_id) => comicIdToNodeId(previous_comic_id))
-                        .filter((previous_node_id) => layouts_nodes_id.indexOf(previous_node_id) !== -1)
-                        .map((previous_node_id) => layouts.nodes[previous_node_id].x);
+                if (comic.previousComics) {
+                    const previousNodesX = comic.previousComics
+                        .map((previousComicId) => comicIdToNodeId(previousComicId))
+                        .filter((previousNodeId) => previousNodeId in layouts.nodes)
+                        .map((previousNodeId) => layouts.nodes[previousNodeId].x);
 
-                    node_x = maxOfArray(previous_nodes_x) + positions.difference.x;
+                    nodeX = maxOfArray(previousNodesX) + positions.difference.x;
 
-                    if (!next_nodes_id.length && node_x < max_layouts_node_x) {
-                        node_x = max_layouts_node_x
+                    const nextNodesId = comic.nextComics
+                        ? comic.nextComics
+                            .map((nextComicId) => comicIdToNodeId(nextComicId))
+                            .filter((next_nodeId) => layoutsNodesId.indexOf(next_nodeId) !== -1)
+                        : [];
+
+                    if (!nextNodesId.length && nodeX < maxLayoutsNodeX) {
+                        nodeX = maxLayoutsNodeX
                     }
                 } else {
-                    if (layouts_nodes_id.length) {
-                        node_x = max_layouts_node_x;
-                    } else {
-                        node_x = positions.difference.x;
-                    }
-                }*/
-                //let check_not_first_comic = false;
-//
-                //if (comic.includingComics) {
-                //    comic.includingComics.forEach((including_comic_id) => {
-                //        const including_comic = comics[including_comic_id];
-                //        const comic_index = including_comic.containedComics.indexOf(comic_id);
-//
-                //        if (comic_index !== -1) {
-                //            check_not_first_comic = check_not_first_comic || comic_index !== 0;
-                //        }
-                //    });
-                //}
-
-                const layouts_nodes_x = layouts_nodes_id
-                    .map((layouts_node_id) => layouts.nodes[layouts_node_id].x);
-                const max_layouts_node_x = maxOfArray(layouts_nodes_x);
-
-                //if (check_not_first_comic) {
-                //    const previous_nodes_x = comic.previousComics
-                //        ? comic.previousComics
-                //            .map((previous_comic_id) => comicIdToNodeId(previous_comic_id))
-                //            .filter((previous_node_id) => layouts_nodes_id.indexOf(previous_node_id) !== -1)
-                //            .map((previous_node_id) => layouts.nodes[previous_node_id].x)
-                //        : [];
-//
-                //    node_x = maxOfArray(previous_nodes_x.length ? previous_nodes_x : [0]) + positions.difference.x;
-                //} else {
-                if (layouts_nodes_id.length) {
-                    if (comic.previousComics) {
-                        const previous_nodes_x = comic.previousComics
-                            .map((previous_comic_id) => comicIdToNodeId(previous_comic_id))
-                            .filter((previous_node_id) => layouts_nodes_id.indexOf(previous_node_id) !== -1)
-                            .map((previous_node_id) => layouts.nodes[previous_node_id].x);
-
-                        node_x = maxOfArray(previous_nodes_x) + positions.difference.x;
-
-                        if (!next_nodes_id.length && node_x < max_layouts_node_x) {
-                            node_x = max_layouts_node_x
-                        }
-                    } else {
-                        node_x = max_layouts_node_x;
-                    }
-                } else {
-                    node_x = positions.difference.x;
+                    nodeX = maxLayoutsNodeX;
                 }
-                //}
+            } else {
+                nodeX = positions.difference.x;
             }
             break;
     }
 
     switch (true) {
-        case comicIdInPositions && "y" in positions[comic_id]:
-            node_y = positions[comic_id].y;
+        case comicIdInPositions && "y" in positions[comicId]:
+            nodeY = positions[comicId].y;
             break;
-        case comicIdInPositions && "y_func" in positions[comic_id]:
-            node_y = positions[comic_id].y_func(layouts.nodes, comic_id);
+        case comicIdInPositions && "y_func" in positions[comicId]:
+            nodeY = positions[comicId].y_func(layouts.nodes, comicId);
             break;
         default:
-            const comic_positions_y = comic.ranges
-                .filter((range_id) => positionsKeys.indexOf(range_id) !== -1 && positions[range_id].y)
-                .map((range_id) => positions[range_id].y);
+            if (layoutsNodesId.length) {
+                const layoutsNodesY = layoutsNodesId
+                    .map((layoutsNodeId) => layouts.nodes[layoutsNodeId].y);
 
-            if (comic_positions_y.length) {
-                node_y = (minOfArray(comic_positions_y) + maxOfArray(comic_positions_y)) / 2;
+                nodeY = maxOfArray(layoutsNodesY);
             } else {
-                const positions_y = Object.keys(ranges)
-                    .filter((range_id) => positionsKeys.indexOf(range_id) !== -1 && positions[range_id].y)
-                    .map((range_id) => positions[range_id].y);
-
-                node_y = maxOfArray(positions_y) + positions.difference.y;
+                nodeY = positions.difference.y;
             }
             break;
     }
 
-    layouts.nodes[node_id] = {x: node_x, y: node_y};
+    layouts.nodes[nodeId] = {x: nodeX, y: nodeY};
 
-    offsetOfNodesThatCoincideInXAndY(comic_id);
+    offsetOfNodesThatCoincideInXAndY(comicId);
 
-    offsetOfNextNodes(comic_id);
+    offsetOfNextNodes(comicId);
 
-    //offsetOfIncludingNodes(comic_id);
+    //offsetOfIncludingNodes(comicId);
 }
 
 console.log("nodes", nodes);

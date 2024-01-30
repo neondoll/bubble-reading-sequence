@@ -5564,7 +5564,8 @@ const comics: Comics = {
         authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.mariaVasilyeva.colorist,
                           comicAuthors.natalyaZaidova.artist],
         includingComics: ["comic_igor_grom_book_1", "comic_igor_grom_volume_1"],
-        previousComics : ["comic_major_grom_50", "comic_rubinstein_what_i_was_looking_for"],
+        previousComics : ["comic_major_grom_50", "comic_rivers_there_is_no_fear_4",
+                          "comic_rubinstein_what_i_was_looking_for"],
         nextComics     : ["comic_igor_grom_2"],
         releaseAt      : {year: 2017, month: 1, day: 20},
         show           : false
@@ -13185,7 +13186,7 @@ const comics: Comics = {
                           comicAuthors.romanKotkov.screenwriter, comicAuthors.tayaMakarevich.artist],
         includingComics: ["comic_igor_grom_volume_10"],
         previousComics : ["comic_igor_grom_49"],
-        nextComics     : ["comic_caligari_datura", "comic_rivers_there_is_no_fear_1"],
+        nextComics     : ["comic_caligari_datura"],
         releaseAt      : {year: 2021, month: 5, day: 10},
         show           : false
     },
@@ -15298,7 +15299,6 @@ const comics: Comics = {
         characters     : ["character_aheron", "character_kocit", "character_stiks", "character_flegeton"],
         authors        : [comicAuthors.alexeyZamsky.screenwriter, comicAuthors.andreyVasin.artist,
                           comicAuthors.mariaVasilyeva.colorist, comicAuthors.natalyaZaidova.artist],
-        previousComics : ["comic_igor_grom_50"],
         includingComics: ["comic_rivers_there_is_no_fear"],
         nextComics     : ["comic_rivers_there_is_no_fear_2"],
         releaseAt      : {year: 2022, month: 10, day: 24},
@@ -16853,6 +16853,7 @@ const comics: Comics = {
                           comicAuthors.yuliaYastrebova.colorist],
         includingComics: ["comic_rivers_there_is_no_fear"],
         previousComics : ["comic_rivers_there_is_no_fear_3"],
+        nextComics     : ["comic_igor_grom_1"],
         releaseAt      : {year: 2023, month: 12, day: 12},
         show           : false
     },
