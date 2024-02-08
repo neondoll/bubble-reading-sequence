@@ -2236,7 +2236,7 @@ const comics: Comics = {
         number         : "2",
         type           : "book",
         coverFile      : {
-            url   : `${paths.majorGrom}/major-grom-volume-2-plague-doctor-part-2.jpg`,
+            url   : `${paths.majorGrom}/major-grom-volume-2-plague-doctor-part-2.webp`,
             width : 1004,
             height: 1535
         },
